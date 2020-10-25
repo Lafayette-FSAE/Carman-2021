@@ -1,0 +1,34 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#(c) SnapEDA 2016 (snapeda.com)
+#This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA) with Design Exception 1.0
+#
+# LT1763CS8-3.3PBF
+#
+DEF LT1763CS8-3.3PBF U 0 40 Y Y 1 L N
+F0 "U" -186 660 50 H V L BNN
+F1 "LT1763CS8-3.3PBF" -223 559 50 H V L BNN
+F2 "SOIC127P600X175-8N" 0 0 50 H I L BNN
+F3 "Voltage stabiliser; LDO, fixed; 3.3V; 500mA; SO8; SMD" 0 0 50 H I L BNN
+F4 "Linear Technology/Analog" 0 0 50 H I L BNN
+F5 "SOIC-8 Linear Technology" 0 0 50 H I L BNN
+F6 "LT1763CS8-3.3#PBF" 0 0 50 H I L BNN
+F7 "None" 0 0 50 H I L BNN
+F8 "Unavailable" 0 0 50 H I L BNN
+DRAW
+P 2 0 0 16 -500 500 -500 -700 N
+P 2 0 0 16 -500 -700 500 -700 N
+P 2 0 0 16 500 -700 500 500 N
+P 2 0 0 16 500 500 -500 500 N
+X IN 8 -700 300 200 R 40 40 0 0 I 
+X SENSE 2 -700 100 200 R 40 40 0 0 I 
+X BYP 4 -700 0 200 R 40 40 0 0 P 
+X ~SHDN 5 -700 -100 200 R 40 40 0 0 I 
+X GND_2 3 -700 -300 200 R 40 40 0 0 P 
+X GND_3 7 -700 -400 200 R 40 40 0 0 P 
+X GND 6 -700 -500 200 R 40 40 0 0 P 
+X OUT 1 700 300 200 L 40 40 0 0 O 
+ENDDRAW
+ENDDEF
+#
+# End Library
