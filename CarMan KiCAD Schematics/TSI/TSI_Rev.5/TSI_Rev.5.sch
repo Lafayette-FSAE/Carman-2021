@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 1
+Sheet 1 2
 Title ""
 Date ""
 Rev ""
@@ -16,529 +16,542 @@ $EndDescr
 $Comp
 L CarMan_KiCAD_Library:4PinPort U?
 U 1 1 5F94CC41
-P 1600 950
-F 0 "U?" H 1600 1265 50  0000 C CNN
-F 1 "4PinPort" H 1600 1174 50  0000 C CNN
-F 2 "" H 1500 1050 50  0001 C CNN
-F 3 "" H 1500 1050 50  0001 C CNN
-	1    1600 950 
+P 4300 1900
+F 0 "U?" H 4300 2215 50  0001 C CNN
+F 1 "TSI J12" H 4300 2124 50  0000 C CNN
+F 2 "" H 4200 2000 50  0001 C CNN
+F 3 "" H 4200 2000 50  0001 C CNN
+	1    4300 1900
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1950 900  1800 900 
-Wire Wire Line
-	1950 1050 1800 1050
-Wire Wire Line
-	1250 1050 1400 1050
-Wire Wire Line
-	1250 900  1400 900 
-Text Label 1950 900  0    50   ~ 0
+Text Label 4550 1850 0    50   ~ 0
 X
-Text Label 1950 1050 0    50   ~ 0
+Text Label 4550 2000 0    50   ~ 0
 GPIO_I2C_RTN
-Text Label 1250 1050 2    50   ~ 0
+Text Label 4050 2000 2    50   ~ 0
 SCL
-Text Label 1250 900  2    50   ~ 0
+Text Label 4050 1850 2    50   ~ 0
 SDA
-Text Notes 1650 1250 2    50   ~ 0
-J12\n
-$Comp
-L CarMan_KiCAD_Library:6PinPort U?
-U 1 1 5F94DCD0
-P 3900 950
-F 0 "U?" H 3900 1365 50  0000 C CNN
-F 1 "6PinPort" H 3900 1274 50  0000 C CNN
-F 2 "" H 3900 950 50  0001 C CNN
-F 3 "" H 3900 950 50  0001 C CNN
-	1    3900 950 
-	1    0    0    -1  
-$EndComp
+Text Notes 4700 2350 2    50   ~ 0
+I2C Connection \nbetween Logic & TSI\n\n
 $Comp
 L CarMan_KiCAD_Library:2PinPortLeft U?
 U 1 1 5F94E93F
-P 5800 900
-F 0 "U?" H 5928 971 50  0000 L CNN
-F 1 "2PinPortLeft" H 5928 880 50  0000 L CNN
-F 2 "" H 5800 900 50  0001 C CNN
-F 3 "" H 5800 900 50  0001 C CNN
-	1    5800 900 
+P 2300 1850
+F 0 "U?" H 2428 1921 50  0001 L CNN
+F 1 "TSI J10" H 2428 1830 50  0000 L CNN
+F 2 "" H 2300 1850 50  0001 C CNN
+F 3 "" H 2300 1850 50  0001 C CNN
+	1    2300 1850
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4300 800  4100 800 
-Wire Wire Line
-	4300 950  4100 950 
-Wire Wire Line
-	4300 1100 4100 1100
-Wire Wire Line
-	3450 1100 3700 1100
-Wire Wire Line
-	3450 950  3700 950 
-Wire Wire Line
-	3450 800  3700 800 
-Text Label 3450 800  2    50   ~ 0
+Text Label 2350 950  2    50   ~ 0
 Flowrate
-Text Label 3450 950  2    50   ~ 0
+Text Label 2350 1100 2    50   ~ 0
 Flowrate_5V
-Text Label 3450 1100 2    50   ~ 0
+Text Label 2350 1250 2    50   ~ 0
 Flowrate_RTN
-Text Label 4300 800  0    50   ~ 0
+Text Label 2850 950  0    50   ~ 0
 X
-Text Label 4300 950  0    50   ~ 0
+Text Label 2850 1100 0    50   ~ 0
 CoolTemp_RTN
-Text Label 4300 1100 0    50   ~ 0
+Text Label 2850 1250 0    50   ~ 0
 CoolTemp
-Wire Wire Line
-	5350 800  5600 800 
-Wire Wire Line
-	5350 950  5600 950 
-Text Label 5350 800  2    50   ~ 0
+Text Label 2050 1750 2    50   ~ 0
 24V
-Text Label 5350 950  2    50   ~ 0
-24V_RTN
-Text Notes 3850 1300 0    50   ~ 0
-J2\n
-Text Notes 5750 1150 0    50   ~ 0
-J10\n
-$Comp
-L CarMan_KiCAD_Library:4PinPort U?
-U 1 1 5F952543
-P 7450 850
-F 0 "U?" H 7450 1165 50  0000 C CNN
-F 1 "4PinPort" H 7450 1074 50  0000 C CNN
-F 2 "" H 7350 950 50  0001 C CNN
-F 3 "" H 7350 950 50  0001 C CNN
-	1    7450 850 
-	1    0    0    -1  
-$EndComp
-$Comp
-L CarMan_KiCAD_Library:2PinPortLeft U?
-U 1 1 5F954138
-P 9150 800
-F 0 "U?" H 9278 871 50  0000 L CNN
-F 1 "2PinPortLeft" H 9278 780 50  0000 L CNN
-F 2 "" H 9150 800 50  0001 C CNN
-F 3 "" H 9150 800 50  0001 C CNN
-	1    9150 800 
-	1    0    0    -1  
-$EndComp
+Text Notes 2050 2100 0    50   ~ 0
+Cooling Power\n
 $Comp
 L CarMan_KiCAD_Library:2PinPortLeft U?
 U 1 1 5F954DEE
-P 10600 800
-F 0 "U?" H 10728 871 50  0000 L CNN
-F 1 "2PinPortLeft" H 10728 780 50  0000 L CNN
-F 2 "" H 10600 800 50  0001 C CNN
-F 3 "" H 10600 800 50  0001 C CNN
-	1    10600 800 
+P 10500 1000
+F 0 "U?" H 10628 1071 50  0001 L CNN
+F 1 "TSI J8" H 10628 980 50  0000 L CNN
+F 2 "" H 10500 1000 50  0001 C CNN
+F 3 "" H 10500 1000 50  0001 C CNN
+	1    10500 1000
 	1    0    0    -1  
 $EndComp
-Text Label 10300 850  2    50   ~ 0
+Text Label 10250 1050 2    50   ~ 0
 DC_RELAY-
-Wire Wire Line
-	10300 850  10400 850 
-Wire Wire Line
-	10300 700  10400 700 
-Text Label 10300 700  2    50   ~ 0
+Text Label 10250 900  2    50   ~ 0
 DC_RELAY+
-Text Notes 8850 1300 0    50   ~ 0
-Precharge Relay\n (Relay Board)\n\n\n
-Text Label 8850 850  2    50   ~ 0
-PC_RELAY-
-Wire Wire Line
-	8850 850  8950 850 
-Wire Wire Line
-	8850 700  8950 700 
-Text Label 8850 700  2    50   ~ 0
-PC_RELAY+
-Text Notes 10300 1300 0    50   ~ 0
-Disharge Relay\n (Relay Board)\n\n\n
-Wire Wire Line
-	7800 800  7650 800 
-Wire Wire Line
-	7800 950  7650 950 
-Wire Wire Line
-	7100 800  7250 800 
-Wire Wire Line
-	7100 950  7250 950 
-Text Notes 7400 1150 0    50   ~ 0
-J15\n
-Text Label 7100 800  2    50   ~ 0
-MRESET_CONTACT
-Text Label 7100 950  2    50   ~ 0
-MRESET_COIL
-Text Label 7800 800  0    50   ~ 0
-GLV_RTN
-Text Label 7800 950  0    50   ~ 0
-AIRS+
-$Comp
-L CarMan_KiCAD_Library:2PinPortLeft U?
-U 1 1 5F964084
-P 10600 1500
-F 0 "U?" H 10728 1571 50  0000 L CNN
-F 1 "2PinPortLeft" H 10728 1480 50  0000 L CNN
-F 2 "" H 10600 1500 50  0001 C CNN
-F 3 "" H 10600 1500 50  0001 C CNN
-	1    10600 1500
-	1    0    0    -1  
-$EndComp
-Text Label 10300 1550 2    50   ~ 0
-ISO_RTN
-Wire Wire Line
-	10300 1550 10400 1550
-Wire Wire Line
-	10300 1400 10400 1400
-Text Label 10300 1400 2    50   ~ 0
-24V_ISO
-Text Notes 10550 2000 0    50   ~ 0
-J16\n\n\n\n
+Text Notes 10200 1250 0    50   ~ 0
+Disharge Relay
 $Comp
 L CarMan_KiCAD_Library:4PinPort U?
 U 1 1 5F9673CF
-P 8500 1450
-F 0 "U?" H 8500 1765 50  0000 C CNN
-F 1 "4PinPort" H 8500 1674 50  0000 C CNN
-F 2 "" H 8400 1550 50  0001 C CNN
-F 3 "" H 8400 1550 50  0001 C CNN
-	1    8500 1450
+P 2500 2650
+F 0 "U?" H 2500 2965 50  0001 C CNN
+F 1 "TSI J25" H 2500 2874 50  0000 C CNN
+F 2 "" H 2400 2750 50  0001 C CNN
+F 3 "" H 2400 2750 50  0001 C CNN
+	1    2500 2650
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8850 1400 8700 1400
-Wire Wire Line
-	8850 1550 8700 1550
-Wire Wire Line
-	8150 1400 8300 1400
-Wire Wire Line
-	8150 1550 8300 1550
-Text Notes 8300 1750 0    50   ~ 0
-Relay Board ??
-Text Label 8150 1400 2    50   ~ 0
+Text Notes 2300 3050 0    50   ~ 0
+TSV Current \nSensor (RB)\n
+Text Label 2250 2600 2    50   ~ 0
 A1_HV
-Text Label 8150 1550 2    50   ~ 0
+Text Label 2250 2750 2    50   ~ 0
 A2_HV
-Text Label 8850 1400 0    50   ~ 0
+Text Label 2750 2600 0    50   ~ 0
 5HV
-Text Label 8850 1550 0    50   ~ 0
+Text Label 2750 2750 0    50   ~ 0
 IO_Ground
-$Comp
-L CarMan_KiCAD_Library:4PinPort U?
-U 1 1 5F968CED
-P 6900 1450
-F 0 "U?" H 6900 1765 50  0000 C CNN
-F 1 "4PinPort" H 6900 1674 50  0000 C CNN
-F 2 "" H 6800 1550 50  0001 C CNN
-F 3 "" H 6800 1550 50  0001 C CNN
-	1    6900 1450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7250 1400 7100 1400
-Wire Wire Line
-	7250 1550 7100 1550
-Wire Wire Line
-	6550 1400 6700 1400
-Wire Wire Line
-	6550 1550 6700 1550
-Text Notes 6500 1950 0    50   ~ 0
-Pins 1,3,4 - TSI J6\nPin 2 - CARMAN J16.2\n\n
-Text Label 6550 1400 2    50   ~ 0
-SL1_Out
-Text Label 6550 1550 2    50   ~ 0
-BOT_Out
-Text Label 7250 1400 0    50   ~ 0
-AIRS_RTN
-Text Label 7250 1550 0    50   ~ 0
-AIRS
-$Comp
-L CarMan_KiCAD_Library:6PinPort U?
-U 1 1 5F96BDB7
-P 4950 1600
-F 0 "U?" H 4950 2015 50  0000 C CNN
-F 1 "6PinPort" H 4950 1924 50  0000 C CNN
-F 2 "" H 4950 1600 50  0001 C CNN
-F 3 "" H 4950 1600 50  0001 C CNN
-	1    4950 1600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5350 1450 5150 1450
-Wire Wire Line
-	5350 1600 5150 1600
-Wire Wire Line
-	5350 1750 5150 1750
-Wire Wire Line
-	4500 1750 4750 1750
-Wire Wire Line
-	4500 1600 4750 1600
-Wire Wire Line
-	4500 1450 4750 1450
-Text Label 4500 1450 2    50   ~ 0
-24V
-Text Label 4500 1600 2    50   ~ 0
-24V_RTN
-Text Label 4500 1750 2    50   ~ 0
-AMS_FAULT_LED
-Text Label 5350 1450 0    50   ~ 0
-FAULT_LED_RTN
-Text Label 5350 1600 0    50   ~ 0
-IMD_FAULT_LED
-Text Label 5350 1750 0    50   ~ 0
-FAULT_LED_RTN
-Text Notes 4050 2150 0    50   ~ 0
-Pins 1,2 - CARMAN - Dash Power (GLV J5)\nPins 3,4,5,6 - CARMAN - Dashboard (TSI J14)\n\n
 $Comp
 L CarMan_KiCAD_Library:8PinPort U?
 U 1 1 5F970776
-P 1300 1800
-F 0 "U?" H 1300 2215 50  0000 C CNN
-F 1 "8PinPort" H 1300 2124 50  0000 C CNN
-F 2 "" H 1300 1800 50  0001 C CNN
-F 3 "" H 1300 1800 50  0001 C CNN
-	1    1300 1800
+P 8900 1050
+F 0 "U?" H 8900 1465 50  0001 C CNN
+F 1 "TSI J7" H 8900 1374 50  0000 C CNN
+F 2 "" H 8900 1050 50  0001 C CNN
+F 3 "" H 8900 1050 50  0001 C CNN
+	1    8900 1050
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	950  1650 1100 1650
-Wire Wire Line
-	950  1800 1100 1800
-Wire Wire Line
-	950  1950 1100 1950
-Wire Wire Line
-	950  2100 1100 2100
-Wire Wire Line
-	1650 2100 1500 2100
-Wire Wire Line
-	1650 1950 1500 1950
-Wire Wire Line
-	1650 1800 1500 1800
-Wire Wire Line
-	1650 1650 1500 1650
-Text Label 950  1650 2    50   ~ 0
+Text Label 8650 900  2    50   ~ 0
 GLV_RTN
-Text Label 950  1800 2    50   ~ 0
+Text Label 8650 1050 2    50   ~ 0
 24V+
-Text Label 950  1950 2    50   ~ 0
+Text Label 8650 1200 2    50   ~ 0
 GLV_RTN
-Text Label 950  2100 2    50   ~ 0
+Text Label 8650 1350 2    50   ~ 0
 GLV_RTN
-Text Label 1650 1650 0    50   ~ 0
+Text Label 9150 900  0    50   ~ 0
 IMD_STATUS
-Text Label 1650 1800 0    50   ~ 0
+Text Label 9150 1050 0    50   ~ 0
 X
-Text Label 1650 1950 0    50   ~ 0
+Text Label 9150 1200 0    50   ~ 0
 X
-Text Label 1650 2100 0    50   ~ 0
+Text Label 9150 1350 0    50   ~ 0
 IMD_MHS
-Text Notes 1350 2300 2    50   ~ 0
+Text Notes 8950 1550 2    50   ~ 0
 IMD\n
-Wire Wire Line
-	1050 3150 1200 3150
-Wire Wire Line
-	1050 3300 1200 3300
-Wire Wire Line
-	1050 3450 1200 3450
-Wire Wire Line
-	1050 3600 1200 3600
-Wire Wire Line
-	1750 3600 1600 3600
-Wire Wire Line
-	1750 3300 1600 3300
-Wire Wire Line
-	1750 3150 1600 3150
-Text Label 1050 3450 2    50   ~ 0
+Text Label 3500 2900 2    50   ~ 0
 IO_GND
-Text Label 1050 3600 2    50   ~ 0
+Text Label 3500 3050 2    50   ~ 0
 X
-Text Label 1750 3150 0    50   ~ 0
+Text Label 4000 2600 0    50   ~ 0
 BP_HV
-Text Label 1750 3600 0    50   ~ 0
+Text Label 4000 3050 0    50   ~ 0
 Throttle_HV
 $Comp
 L CarMan_KiCAD_Library:8PinPort U?
 U 1 1 5F986A39
-P 1400 3300
-F 0 "U?" H 1400 3715 50  0000 C CNN
-F 1 "8PinPort" H 1400 3624 50  0000 C CNN
-F 2 "" H 1400 3300 50  0001 C CNN
-F 3 "" H 1400 3300 50  0001 C CNN
-	1    1400 3300
+P 3750 2750
+F 0 "U?" H 3750 3165 50  0001 C CNN
+F 1 "TSI J32" H 3750 3074 50  0000 C CNN
+F 2 "" H 3750 2750 50  0001 C CNN
+F 3 "" H 3750 2750 50  0001 C CNN
+	1    3750 2750
 	1    0    0    -1  
 $EndComp
-Text Notes 1900 3900 2    50   ~ 0
-CARMAN - P/C D/C Circuit\nTSI J32
+Text Notes 10150 6250 2    50   ~ 0
+P/C D/C Circuit
 $Comp
 L Device:Fuse F?
 U 1 1 5F98CB55
-P 1900 3450
-F 0 "F?" H 1960 3496 50  0000 L CNN
-F 1 "Fuse" V 1960 3405 50  0000 L CNN
-F 2 "" V 1830 3450 50  0001 C CNN
-F 3 "~" H 1900 3450 50  0001 C CNN
-	1    1900 3450
+P 4150 2900
+F 0 "F?" H 4210 2946 50  0001 L CNN
+F 1 "Fuse" V 4210 2855 50  0000 L CNN
+F 2 "" V 4080 2900 50  0001 C CNN
+F 3 "~" H 4150 2900 50  0001 C CNN
+	1    4150 2900
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:Fuse F?
 U 1 1 5F98DC72
-P 1900 3300
-F 0 "F?" H 1960 3346 50  0000 L CNN
-F 1 "Fuse" H 1960 3255 50  0000 C CNN
-F 2 "" V 1830 3300 50  0001 C CNN
-F 3 "~" H 1900 3300 50  0001 C CNN
-	1    1900 3300
+P 4150 2750
+F 0 "F?" H 4210 2796 50  0001 L CNN
+F 1 "Fuse" V 4210 2705 50  0000 L CNN
+F 2 "" V 4080 2750 50  0001 C CNN
+F 3 "~" H 4150 2750 50  0001 C CNN
+	1    4150 2750
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	1750 3450 1600 3450
+	4300 2750 4300 2850
 Wire Wire Line
-	2050 3300 2050 3400
+	4400 2850 4300 2850
+Connection ~ 4300 2850
 Wire Wire Line
-	2150 3400 2050 3400
-Connection ~ 2050 3400
-Wire Wire Line
-	2050 3400 2050 3450
-Text Label 2150 3400 0    50   ~ 0
+	4300 2850 4300 2900
+Text Label 4400 2850 0    50   ~ 0
 IO_Ground
-Text Label 1050 3150 2    50   ~ 0
+Text Label 3500 2600 2    50   ~ 0
 IGNI_GND
-Text Label 1050 3300 2    50   ~ 0
+Text Label 3500 2750 2    50   ~ 0
 IGNI_VCC
-Wire Wire Line
-	3950 3050 3800 3050
-Wire Wire Line
-	3950 3200 3800 3200
-Wire Wire Line
-	3250 3200 3400 3200
-Wire Wire Line
-	3250 3050 3400 3050
-Text Label 3950 3050 0    50   ~ 0
+Text Label 1500 2600 0    50   ~ 0
 X
-Text Label 3950 3200 0    50   ~ 0
+Text Label 1500 2750 0    50   ~ 0
 Drive_RTN
-Text Label 3250 3200 2    50   ~ 0
+Text Label 1000 2750 2    50   ~ 0
 Drive_LED
-Text Label 3250 3050 2    50   ~ 0
+Text Label 1000 2600 2    50   ~ 0
 Drive_BTN
-$Comp
-L CarMan_KiCAD_Library:4PinPort U?
-U 1 1 5F9B4E49
-P 5300 3100
-F 0 "U?" H 5300 3415 50  0000 C CNN
-F 1 "4PinPort" H 5300 3324 50  0000 C CNN
-F 2 "" H 5200 3200 50  0001 C CNN
-F 3 "" H 5200 3200 50  0001 C CNN
-	1    5300 3100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5650 3050 5500 3050
-Wire Wire Line
-	5650 3200 5500 3200
-Wire Wire Line
-	4950 3200 5100 3200
-Wire Wire Line
-	4950 3050 5100 3050
-Text Label 5650 3050 0    50   ~ 0
+Text Label 1350 1050 0    50   ~ 0
 X
-Text Label 5650 3200 0    50   ~ 0
+Text Label 1350 1200 0    50   ~ 0
 HV+
-Text Label 4950 3200 2    50   ~ 0
-HV-
-Text Label 4950 3050 2    50   ~ 0
-MC+
-Text Notes 3850 3500 2    50   ~ 0
-CARMAN - COCKPIT\nTSI J24
+Text Notes 1400 2950 2    50   ~ 0
+COCKPIT\n
 $Comp
 L CarMan_KiCAD_Library:4PinPort U?
 U 1 1 5F9B29AD
-P 3600 3100
-F 0 "U?" H 3600 3415 50  0000 C CNN
-F 1 "4PinPort" H 3600 3324 50  0000 C CNN
-F 2 "" H 3500 3200 50  0001 C CNN
-F 3 "" H 3500 3200 50  0001 C CNN
-	1    3600 3100
+P 1250 2650
+F 0 "U?" H 1250 2965 50  0001 C CNN
+F 1 "TSI J24" H 1250 2874 50  0000 C CNN
+F 2 "" H 1150 2750 50  0001 C CNN
+F 3 "" H 1150 2750 50  0001 C CNN
+	1    1250 2650
 	1    0    0    -1  
 $EndComp
-Text Notes 5500 3500 2    50   ~ 0
-CARMAN - HV\nTSI J1
-$Comp
-L CarMan_KiCAD_Library:2PinPortLeft U?
-U 1 1 5F9C7975
-P 9750 2250
-F 0 "U?" H 9878 2321 50  0000 L CNN
-F 1 "2PinPortLeft" H 9878 2230 50  0000 L CNN
-F 2 "" H 9750 2250 50  0001 C CNN
-F 3 "" H 9750 2250 50  0001 C CNN
-	1    9750 2250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9450 2300 9550 2300
-Wire Wire Line
-	9450 2150 9550 2150
-Text Label 9450 2150 2    50   ~ 0
+Text Label 6050 950  2    50   ~ 0
 BRAKE_SWITCH(24V)
-Wire Wire Line
-	7350 2250 7450 2250
-Text Label 7350 2250 2    50   ~ 0
-BOT_Out
-Text Notes 9400 2600 0    50   ~ 0
-CARMAN - Brake Pedal\nTSI J4
-Wire Wire Line
-	7350 2400 7450 2400
-Text Label 7350 2400 2    50   ~ 0
-BOT_In
-Text Label 9450 2300 2    50   ~ 0
+Text Notes 6200 1400 0    50   ~ 0
+Brake \nPedals\n
+Text Label 6050 1100 2    50   ~ 0
 BP(BRAKE_SWITCH_RTN)
-$Comp
-L CarMan_KiCAD_Library:2PinPortLeft U?
-U 1 1 5F9C796F
-P 7650 2350
-F 0 "U?" H 7778 2421 50  0000 L CNN
-F 1 "2PinPortLeft" H 7778 2330 50  0000 L CNN
-F 2 "" H 7650 2350 50  0001 C CNN
-F 3 "" H 7650 2350 50  0001 C CNN
-	1    7650 2350
-	1    0    0    -1  
-$EndComp
-Text Notes 7000 2800 0    50   ~ 0
-Pin 1 - CARMAN J16.2\nPin 2 - CARMAN - BP/SLOOP (TSI J6)\n\n
-Text Label 8450 3200 0    50   ~ 0
+Text Notes 7150 1350 0    50   ~ 0
+SL->Accumulator\n
+Text Label 4550 950  0    50   ~ 0
 APPS2_RTN
-Text Label 8450 3350 0    50   ~ 0
+Text Label 4550 1100 0    50   ~ 0
 APPS2
-Text Label 8450 3500 0    50   ~ 0
+Text Label 4550 1250 0    50   ~ 0
 APPS2_5V
-Text Label 7600 3500 2    50   ~ 0
+Text Label 4050 1250 2    50   ~ 0
 APPS1_RTN
-Text Label 7600 3350 2    50   ~ 0
+Text Label 4050 1100 2    50   ~ 0
 APPS1
-Text Label 7600 3200 2    50   ~ 0
+Text Label 4050 950  2    50   ~ 0
 APPS1_10V
-Wire Wire Line
-	7600 3200 7850 3200
-Wire Wire Line
-	7600 3350 7850 3350
-Wire Wire Line
-	7600 3500 7850 3500
-Wire Wire Line
-	8450 3500 8250 3500
-Wire Wire Line
-	8450 3350 8250 3350
-Wire Wire Line
-	8450 3200 8250 3200
 $Comp
 L CarMan_KiCAD_Library:6PinPort U?
 U 1 1 5F9E27FE
-P 8050 3350
-F 0 "U?" H 8050 3765 50  0000 C CNN
-F 1 "6PinPort" H 8050 3674 50  0000 C CNN
-F 2 "" H 8050 3350 50  0001 C CNN
-F 3 "" H 8050 3350 50  0001 C CNN
-	1    8050 3350
+P 4300 1100
+F 0 "U?" H 4300 1515 50  0001 C CNN
+F 1 "TSI J3" H 4300 1424 50  0000 C CNN
+F 2 "" H 4300 1100 50  0001 C CNN
+F 3 "" H 4300 1100 50  0001 C CNN
+	1    4300 1100
 	1    0    0    -1  
 $EndComp
-Text Notes 7500 3800 0    50   ~ 0
-CARMAN - Throttle Plausiblity\nTSI J3
+Text Notes 4150 1550 0    50   ~ 0
+Throttle \nPlausiblity
+Text Notes 1150 1400 2    50   ~ 0
+HV
+Text Label 850  1050 2    50   ~ 0
+MC+
+Text Label 850  1200 2    50   ~ 0
+HV-
+$Comp
+L CarMan_KiCAD_Library:4PinPort -
+U 1 1 5F9B4E49
+P 1100 1100
+F 0 "-" H 1100 1415 50  0001 C CNN
+F 1 "TSI J1" H 1100 1324 50  0000 C CNN
+F 2 "" H 1000 1200 50  0001 C CNN
+F 3 "" H 1000 1200 50  0001 C CNN
+	1    1100 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	850  1050 900  1050
+Wire Wire Line
+	850  1200 900  1200
+Wire Wire Line
+	1350 1200 1300 1200
+Wire Wire Line
+	1350 1050 1300 1050
+Wire Wire Line
+	2350 950  2400 950 
+Wire Wire Line
+	2350 1100 2400 1100
+Wire Wire Line
+	2350 1250 2400 1250
+Wire Wire Line
+	2850 950  2800 950 
+Wire Wire Line
+	2850 1100 2800 1100
+Wire Wire Line
+	2850 1250 2800 1250
+Wire Wire Line
+	4550 1250 4500 1250
+Wire Wire Line
+	4550 1100 4500 1100
+Wire Wire Line
+	4550 950  4500 950 
+Wire Wire Line
+	4050 950  4100 950 
+Wire Wire Line
+	4050 1100 4100 1100
+Wire Wire Line
+	4050 1250 4100 1250
+Wire Wire Line
+	6050 950  6100 950 
+Wire Wire Line
+	6050 1100 6100 1100
+$Comp
+L CarMan_KiCAD_Library:6PinPort U?
+U 1 1 5F94DCD0
+P 2600 1100
+F 0 "U?" H 2600 1515 50  0001 C CNN
+F 1 "TSI J2" H 2600 1424 50  0000 C CNN
+F 2 "" H 2600 1100 50  0001 C CNN
+F 3 "" H 2600 1100 50  0001 C CNN
+	1    2600 1100
+	1    0    0    -1  
+$EndComp
+Text Notes 2450 1600 0    50   ~ 0
+Cooling\nControl\n\n
+$Comp
+L CarMan_KiCAD_Library:2PinPortLeft U?
+U 1 1 5F9C7975
+P 6300 1050
+F 0 "U?" H 6428 1121 50  0001 L CNN
+F 1 "TSI J4" H 6428 1030 50  0000 L CNN
+F 2 "" H 6300 1050 50  0001 C CNN
+F 3 "" H 6300 1050 50  0001 C CNN
+	1    6300 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 1750 2100 1750
+Wire Wire Line
+	2050 1900 2100 1900
+Wire Wire Line
+	8650 900  8700 900 
+Wire Wire Line
+	8650 1050 8700 1050
+Wire Wire Line
+	8650 1200 8700 1200
+Wire Wire Line
+	8650 1350 8700 1350
+Wire Wire Line
+	9150 1350 9100 1350
+Wire Wire Line
+	9150 1200 9100 1200
+Wire Wire Line
+	9150 1050 9100 1050
+Wire Wire Line
+	9150 900  9100 900 
+Wire Wire Line
+	1000 2600 1050 2600
+Wire Wire Line
+	1000 2750 1050 2750
+Wire Wire Line
+	1500 2600 1450 2600
+Wire Wire Line
+	1500 2750 1450 2750
+Wire Wire Line
+	4050 1850 4100 1850
+Wire Wire Line
+	4050 2000 4100 2000
+Wire Wire Line
+	4550 1850 4500 1850
+Wire Wire Line
+	4550 2000 4500 2000
+Wire Wire Line
+	10250 900  10300 900 
+Wire Wire Line
+	10250 1050 10300 1050
+Wire Wire Line
+	2250 2600 2300 2600
+Wire Wire Line
+	2250 2750 2300 2750
+Wire Wire Line
+	2750 2600 2700 2600
+Wire Wire Line
+	2750 2750 2700 2750
+Wire Wire Line
+	3500 2600 3550 2600
+Wire Wire Line
+	3500 2750 3550 2750
+Wire Wire Line
+	3500 2900 3550 2900
+Wire Wire Line
+	3500 3050 3550 3050
+Wire Wire Line
+	4000 2750 3950 2750
+Wire Wire Line
+	4000 2600 3950 2600
+Wire Wire Line
+	4000 2900 3950 2900
+Wire Wire Line
+	4000 3050 3950 3050
+$Comp
+L CarMan_KiCAD_Library:4PinPort U?
+U 1 1 5FC2D273
+P 7500 1050
+F 0 "U?" H 7500 1365 50  0001 C CNN
+F 1 "TSI J6" H 7500 1273 50  0000 C CNN
+F 2 "" H 7400 1150 50  0001 C CNN
+F 3 "" H 7400 1150 50  0001 C CNN
+	1    7500 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7250 1150 7300 1150
+Text Label 7250 1000 2    50   ~ 0
+SL1_Out
+Text Label 7250 1150 2    50   ~ 0
+BOT_In
+Wire Wire Line
+	7300 1000 7250 1000
+Wire Wire Line
+	7750 1000 7700 1000
+Wire Wire Line
+	7750 1150 7700 1150
+Text Label 7750 1000 0    50   ~ 0
+AIRS_RTN
+Text Label 7750 1150 0    50   ~ 0
+AIRS
+Text Notes 6000 2250 0    50   ~ 0
+Dashboard\n
+$Comp
+L CarMan_KiCAD_Library:4PinPort U?
+U 1 1 5FC4D91A
+P 6250 1950
+F 0 "U?" H 6250 2265 50  0001 C CNN
+F 1 "TSI J14" H 6250 2173 50  0000 C CNN
+F 2 "" H 6150 2050 50  0001 C CNN
+F 3 "" H 6150 2050 50  0001 C CNN
+	1    6250 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 2050 6050 2050
+Text Label 6000 1900 2    50   ~ 0
+AMS_FAULT_LED
+Text Label 6000 2050 2    50   ~ 0
+FAULT_LED_RTN
+Wire Wire Line
+	6050 1900 6000 1900
+Wire Wire Line
+	6500 1900 6450 1900
+Wire Wire Line
+	6500 2050 6450 2050
+Text Label 6500 1900 0    50   ~ 0
+IMD_FAULT_LED
+Text Label 6500 2050 0    50   ~ 0
+FAULT_LED_RTN
+Wire Wire Line
+	950  1900 1000 1900
+Wire Wire Line
+	950  1750 1000 1750
+Text Label 950  1750 2    50   ~ 0
+PC_RELAY+
+Text Label 950  1900 2    50   ~ 0
+PC_RELAY-
+Text Notes 900  2250 0    50   ~ 0
+Precharge Relay\n\n\n
+$Comp
+L CarMan_KiCAD_Library:2PinPortLeft U?
+U 1 1 5F954138
+P 1200 1850
+F 0 "U?" H 1328 1921 50  0001 L CNN
+F 1 "TSI J9" H 1328 1830 50  0000 L CNN
+F 2 "" H 1200 1850 50  0001 C CNN
+F 3 "" H 1200 1850 50  0001 C CNN
+	1    1200 1850
+	1    0    0    -1  
+$EndComp
+Text Label 2050 1900 2    50   ~ 0
+24V_RTN
+Wire Wire Line
+	8450 2050 8400 2050
+Wire Wire Line
+	8450 1900 8400 1900
+Wire Wire Line
+	7950 2050 8000 2050
+Wire Wire Line
+	7950 1900 8000 1900
+$Comp
+L CarMan_KiCAD_Library:4PinPort U?
+U 1 1 5F952543
+P 8200 1950
+F 0 "U?" H 8200 2265 50  0001 C CNN
+F 1 "TSI J15" H 8200 2174 50  0000 C CNN
+F 2 "" H 8100 2050 50  0001 C CNN
+F 3 "" H 8100 2050 50  0001 C CNN
+	1    8200 1950
+	1    0    0    -1  
+$EndComp
+Text Label 7950 1900 2    50   ~ 0
+MRESET_CONTACT
+Text Label 7950 2050 2    50   ~ 0
+MRESET_COIL
+Text Label 8450 1900 0    50   ~ 0
+GLV_RTN
+Text Label 8450 2050 0    50   ~ 0
+AIRS+
+Wire Wire Line
+	9300 2050 9350 2050
+Wire Wire Line
+	9300 1900 9350 1900
+Text Notes 9350 2350 0    50   ~ 0
+TSI Power \nfrom GLV\n
+Text Label 9300 1900 2    50   ~ 0
+24V_ISO
+Text Label 9300 2050 2    50   ~ 0
+ISO_RTN
+$Comp
+L CarMan_KiCAD_Library:2PinPortLeft U?
+U 1 1 5F964084
+P 9550 2000
+F 0 "U?" H 9678 2071 50  0001 L CNN
+F 1 "TSI J16" H 9678 1980 50  0000 L CNN
+F 2 "" H 9550 2000 50  0001 C CNN
+F 3 "" H 9550 2000 50  0001 C CNN
+	1    9550 2000
+	1    0    0    -1  
+$EndComp
+Text Notes 7900 2350 0    50   ~ 0
+Sloop & AIRS\nto TSI
+Text HLabel 2500 3900 0    50   Input ~ 0
+24V
+Wire Wire Line
+	2600 3900 2500 3900
+Text GLabel 2600 3900 2    50   Input ~ 0
+24V
+Text HLabel 2500 4000 0    50   Input ~ 0
+10V
+Text HLabel 2500 4200 0    50   Input ~ 0
+GLV_RTN
+Text HLabel 2500 4100 0    50   Input ~ 0
+5V
+Text HLabel 2500 4300 0    50   Input ~ 0
+Throttle_SEL
+Text HLabel 2500 4400 0    50   Input ~ 0
+SDA
+Text HLabel 2500 4500 0    50   Input ~ 0
+SCL
+Text HLabel 2500 4600 0    50   Input ~ 0
+PC_Ready
+Text HLabel 1100 3900 2    50   Output ~ 0
+APPS
+Text HLabel 1100 4000 2    50   Output ~ 0
+SDA
+Text HLabel 1100 4100 2    50   Output ~ 0
+SCL
+Text HLabel 1100 4200 2    50   Output ~ 0
+BrakePressed
+Text HLabel 1100 4300 2    50   Output ~ 0
+Brake_Pressed_RTN
+Text HLabel 1100 4600 2    50   Output ~ 0
+Throttle_LV
+Text HLabel 1100 4400 2    50   Output ~ 0
+BrakePressed_uC
+Text HLabel 1100 4500 2    50   Output ~ 0
+Throttle_PL
+$Sheet
+S 1100 3800 1400 950 
+U 5FC85F57
+F0 "TSI-TP" 50
+F1 "TSI_Throttle_Plausibility.sch" 50
+$EndSheet
 $EndSCHEMATC
