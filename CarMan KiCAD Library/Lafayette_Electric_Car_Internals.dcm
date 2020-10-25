@@ -1,0 +1,346 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ACHS-7121
+D Isolated Current Sensor
+K Current Sensor CellMan Isolated TSV AMS
+F https://www.mouser.com/datasheet/2/678/ACHS-712x-DS101_2018-02-28-1386725.pdf
+$ENDCMP
+#
+$CMP ACHS-7122
+D Isolated Current Sensor
+K Current Sensor CellMan Isolated TSV AMS
+F https://www.mouser.com/datasheet/2/678/ACHS-712x-DS101_2018-02-28-1386725.pdf
+$ENDCMP
+#
+$CMP ACHS-7123
+D Isolated Current Sensor
+K Current Sensor CellMan Isolated TSV AMS
+F https://www.mouser.com/datasheet/2/678/ACHS-712x-DS101_2018-02-28-1386725.pdf
+$ENDCMP
+#
+$CMP AD8479
+D General Purpose Amplifier 1 Circuit Rail-to-Rail 8-SOIC
+F https://www.analog.com/media/en/technical-documentation/data-sheets/AD8479.PDF
+$ENDCMP
+#
+$CMP ADC128D818
+D Analog to Digital Converter I2C enabled, 8 Channel
+K ADC TSV CellMan AMS
+F http://www.ti.com/lit/ds/symlink/adc128d818.pdf
+$ENDCMP
+#
+$CMP ADM6320
+D Watchdog/Reset controller
+F https://www.analog.com/media/en/technical-documentation/data-sheets/ADM6316_6318_6319_6320_6321_6322.pdf
+$ENDCMP
+#
+$CMP ADR510
+D Shunt Voltage Reference IC  ±0.35%  SOT-23-3
+K Regulator CellMan
+F https://www.analog.com/media/en/technical-documentation/data-sheets/ADR510.pdf
+$ENDCMP
+#
+$CMP AVX-IDC
+D CONN WIRE IDC 2POS 18AWG SMD
+K Connector
+F https://media.digikey.com/pdf/Data%20Sheets/AVX%20PDFs/00917600x7xxxx6%20dwg.pdf
+$ENDCMP
+#
+$CMP BSS138W
+D Logic Level N-Channel MOSFET
+K TSV AMS CellMan MOSFET NMOS Transistor
+F https://www.mouser.com/datasheet/2/308/BSS138W-1305267.pdf
+$ENDCMP
+#
+$CMP C1206C104KARECAUTO
+D CAP CER 1206 0.1UF 250V X7R
+K CAP CellMan
+F https://content.kemet.com/datasheets/KEM_C1090_X7R_ESD.pdf
+$ENDCMP
+#
+$CMP E-ink_Connector
+D Connector Header Surface Mount, Right Angle 8 position 0.079" (2.00mm) (Connects to E-ink display)
+K Display PacMan Eink E-ink
+F http://www.jst-mfg.com/product/pdf/eng/ePH.pdf
+$ENDCMP
+#
+$CMP EEE-1HA010NR
+D CAP ALUM 1UF 20% 50V SMD
+K Capacitor Electrolytic CellMan Balance
+F https://media.digikey.com/pdf/Data%20Sheets/Panasonic%20Electronic%20Components/S_Series,Type_V_Rev2018.pdf
+$ENDCMP
+#
+$CMP ESP32_DEVKITC
+D Don't pull GPIO12 high. GPIO2 connected to onboard LED. GPIO0, 5, 14, 15 output PWM during boot. GPIO3 high during boot. GPIO1 debug output during boot.
+F https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf
+$ENDCMP
+#
+$CMP ESP32_TTGO_PSRAM
+D Don't pull GPIO12 high. GPIO2 connected to onboard LED. GPIO0, 5, 14, 15 output PWM during boot. GPIO3 high during boot. GPIO1 debug output during boot.
+$ENDCMP
+#
+$CMP ESP8266NodeMCUDevKit
+D Nodemcu dev kit for an ESP8266 module
+F https://github.com/nodemcu/nodemcu-devkit-v1.0
+$ENDCMP
+#
+$CMP FlybackTransformer
+D Flyback Converters For For DC/DC Converters SMPS Transformer 1500Vrms Isolation  Surface Mount
+K CellMan TSV Power Balancing
+F https://www.we-online.de/katalog/datasheet/750313457.pdf
+$ENDCMP
+#
+$CMP G5LE-1-E
+D Relay
+K Relay GLV
+F https://media.digikey.com/pdf/Data%20Sheets/Omron%20PDFs/G5LE-E_G.pdf
+$ENDCMP
+#
+$CMP HCNR200
+D Analog Opto-Isolator
+K OptoIsolator TSV AMS CellMan
+F http://www.mouser.com/ds/2/678/V02-0886EN_DS_HCNR200_2014-01-071-908546.pdf
+$ENDCMP
+#
+$CMP IDC-06pin
+D CONN HEADER VERT 6POS 2.54MM
+K CellMan AMS Connector IDC
+F https://cdn.amphenol-icc.com/media/wysiwyg/files/drawing/75869.pdf
+$ENDCMP
+#
+$CMP IDC-16pin
+D Connector Header Through Hole 16 position 0.100" (2.54mm)
+F https://cdn.amphenol-icc.com/media/wysiwyg/files/drawing/75869.pdf
+$ENDCMP
+#
+$CMP INA592
+D High-Precision, Wide-Bandwidth Difference Amplifier
+F http://www.ti.com/lit/ds/symlink/ina592.pdf
+$ENDCMP
+#
+$CMP L7833CD-TR
+D Linear Voltage Regulator 3.3V 100mA
+F https://www.mouser.com/datasheet/2/389/l78l-974102.pdf
+$ENDCMP
+#
+$CMP L78L05CD13TR
+D Linear Voltage Regulator 5V 100mA
+F https://www.mouser.com/datasheet/2/389/l78l-974102.pdf
+$ENDCMP
+#
+$CMP LED_Green
+D Red  Green Indication - Discrete 2V 0805 (2012 Metric)
+K LED CellMan
+F https://vcclite.com/wp-content/uploads/wpallimport/files/files/CMD1721Seriesver3.pdf
+$ENDCMP
+#
+$CMP LED_Red
+D Red  LED Indication - Discrete 2V 0805 (2012 Metric)
+F https://vcclite.com/wp-content/uploads/wpallimport/files/files/CMD1721Seriesver3.pdf
+$ENDCMP
+#
+$CMP LM2902
+D Low-Power, Quad-Operational Amplifiers, DIP-14/SOIC-14/SSOP-14
+K quad opamp
+F http://www.ti.com/lit/ds/symlink/lm2902-n.pdf
+$ENDCMP
+#
+$CMP LM2931
+D Linear Voltage Regulator 3.3V 100mA
+K CellMan TSV Power Voltage Regulator
+F https://www.mouser.com/datasheet/2/389/lm2931-974141.pdf
+$ENDCMP
+#
+$CMP LT3990-5
+F https://www.analog.com/media/en/technical-documentation/data-sheets/3990fa.pdf
+$ENDCMP
+#
+$CMP LT8584
+F https://www.analog.com/media/en/technical-documentation/data-sheets/8584fb.pdf
+$ENDCMP
+#
+$CMP LTC4151
+D High Voltage I2C Current and Voltage Monitor
+F https://www.analog.com/media/en/technical-documentation/data-sheets/4151ff.pdf
+$ENDCMP
+#
+$CMP LTC6804-2
+D Battery Monitoring Circuit
+K TSV Battery LT AMS BMS CellMan
+F https://www.analog.com/media/en/technical-documentation/data-sheets/680412fc.pdf
+$ENDCMP
+#
+$CMP LTC6820
+D isoSPI Interface
+F https://www.analog.com/media/en/technical-documentation/data-sheets/LTC6820.pdf
+$ENDCMP
+#
+$CMP LittelfuseHolder
+D FUSE BOARD MNT 500MA 125VAC/VDC
+K Fuse SMD CellMan TSV
+F https://www.littelfuse.com/~/media/electronics/datasheets/fuses/littelfuse_fuse_154_154t_154l_154tl_datasheet.pdf.pdf
+$ENDCMP
+#
+$CMP MCP1253-33X50I_MS
+F MCP1253-33X50I/MS-ND
+$ENDCMP
+#
+$CMP MCP23008
+D I2C IO Expander
+K TSV CellMan AMS
+F https://www.mouser.com/datasheet/2/268/21919b-65915.pdf
+$ENDCMP
+#
+$CMP MCP6004
+F http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf
+$ENDCMP
+#
+$CMP MCP9808
+D I2C Temperature Sensor
+K Temp Temperature I2C CellMan TSV AMS
+F http://ww1.microchip.com/downloads/en/DeviceDoc/25095A.pdf
+$ENDCMP
+#
+$CMP MEF1S2405SP3C
+D Isolated DC-DC Converter Module, 22.8-25.2Vin, 5Vout, 150mA
+F https://www.cui.com/product/resource/vifsd1-sip-series.pdf
+$ENDCMP
+#
+$CMP Molex_0705430001
+D Connector Header Through Hole 2 position 0.100" (2.54mm)
+F https://www.molex.com/pdm_docs/sd/705430001_sd.pdf
+$ENDCMP
+#
+$CMP NRVTS260ESFT1G
+D DIODE SCHOTTKY 60V 2A SOD123FL
+K Diode CellMan Balance 60V 2A
+F https://www.onsemi.com/pub/Collateral/NTS260ESF-D.PDF
+$ENDCMP
+#
+$CMP NTCS0603
+D THERMISTOR NTC 2KOHM 3420K 0603
+K CellMan TempSensor Temperature TSV NTC Thermistor
+F http://www.vishay.com/docs/29056/ntcs0603e3t.pdf
+$ENDCMP
+#
+$CMP OPA347
+D Low Power OpAmp
+K CellMan TSV AMS OpAmp Amplifier
+F http://www.ti.com/lit/ds/symlink/opa2347.pdf
+$ENDCMP
+#
+$CMP PCA9536
+D I2C IO Expander
+K TSV CellMan AMS I2C IO
+F https://www.mouser.com/datasheet/2/302/PCA9536-1127758.pdf
+$ENDCMP
+#
+$CMP PDQE10-Q24-S9-D
+D Isolated DC-DC Converter Module, 9-36Vin, 9Vout, 1111mA
+F https://www.cui.com/product/resource/pdqe10-d.pdf
+$ENDCMP
+#
+$CMP PDQE10-Q48-S24-D
+D Isolated DC-DC Converter Module, 18-75Vin, 24Vout, 416mA
+F https://www.cui.com/product/resource/pdqe10-d.pdf
+$ENDCMP
+#
+$CMP PIC16LF1826
+F https://www.mouser.com/datasheet/2/268/41391D-277976.pdf#%5B%7B%22num%22%3A644%2C%22gen%22%3A0%7D%2C%7B%22name%22%3A%22XYZ%22%7D%2C80%2C723%2Cnull%5D
+$ENDCMP
+#
+$CMP PMEG3020DEP,115
+D Diode Schottky 30V 2A Surface Mount CFP5
+K CellMan Diode Shottky Flyback Balance
+F https://assets.nexperia.com/documents/data-sheet/PMEG3020DEP.pdf
+$ENDCMP
+#
+$CMP PushButton
+D Tactile Switch SPST-NO Top Actuated Surface Mount
+F https://media.digikey.com/pdf/Data%20Sheets/RAFI%20PDF's/Racon_PCB_Tactile_Switches_Cat.pdf
+$ENDCMP
+#
+$CMP SI8605AC
+D Bidirectional I2C and Digital Isolator
+F https://www.silabs.com/documents/public/data-sheets/Si860x.pdf
+$ENDCMP
+#
+$CMP SMT-Standoff
+D Round Standoff Threaded #4-40 Steel 0.250" (6.35mm) 1/4"
+F http://www.keyelco.com/product-pdf.cfm?p=14255
+$ENDCMP
+#
+$CMP SP8K24FRATB
+D Mosfet Array 2 N-Channel (Dual) 45V 6A (Ta) 2W Surface Mount 8-SOP
+K MOS MOSFET Transistor TSV AMS CellMan Power NMOS
+F https://www.mouser.com/datasheet/2/348/sp8k24fra-1266146.pdf
+$ENDCMP
+#
+$CMP STM32F103DevBluePill
+D Blue Pill STM32 Development Kit
+$ENDCMP
+#
+$CMP STM8S003F3
+D IC MCU 8BIT 8KB FLASH 20TSSOP
+K CellMan
+F https://www.mouser.com/datasheet/2/389/stm8s003f3-956285.pdf
+$ENDCMP
+#
+$CMP STS8DN6LF6AG
+D Dual N-Channel Power MOSFET
+K MOS MOSFET Transistor TSV AMS CellMan Power NMOS
+F https://www.mouser.com/datasheet/2/389/sts8dn6lf6ag-1114209.pdf
+$ENDCMP
+#
+$CMP SW_DIP_x04
+D SWITCH SLIDE DIP SPST 25MA 24V
+F https://omronfs.omron.com/en_US/ecb/products/pdf/en-a6h.pdf
+$ENDCMP
+#
+$CMP SW_DIP_x06
+D Dip Switch x06
+F https://omronfs.omron.com/en_US/ecb/products/pdf/en-a6h.pdf
+$ENDCMP
+#
+$CMP Si8600AC
+D Bidirectional I2C Isolator
+F https://www.silabs.com/documents/public/data-sheets/Si860x.pdf
+$ENDCMP
+#
+$CMP T9AS1D12
+D 30A Contact NO Relay
+F https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1308242_T9A&DocType=DS&DocLang=English
+$ENDCMP
+#
+$CMP TEC3-2419
+F https://assets.tracopower.com/20200109160327/TEC3/documents/tec3-datasheet.pdf
+$ENDCMP
+#
+$CMP V7805-500
+F https://www.cui.com/product/resource/v78-500.pdf
+$ENDCMP
+#
+$CMP VIFSD1-S24-S5-SIP
+D Isolated DC-DC Converter Module, 22.8-25.2Vin, 5Vout, 150mA
+F https://www.cui.com/product/resource/vifsd1-sip-series.pdf
+$ENDCMP
+#
+$CMP VOM617A
+D Non Linear Opto-Isolator
+K CellMan TSV AMS
+F https://www.mouser.com/datasheet/2/427/vom617a-67135.pdf
+$ENDCMP
+#
+$CMP X0202
+D Silicon controlled rectifier, cathode/anode/anode/gate
+K SCR thyristor
+F https://www.st.com/content/ccc/resource/technical/document/datasheet/2d/c1/ab/c5/67/cd/4b/d4/CD00002274.pdf/files/CD00002274.pdf/jcr:content/translations/en.CD00002274.pdf
+$ENDCMP
+#
+$CMP standoff_smt
+D Round Standoff Threaded M2x0.4 Steel 0.138" (3.50mm)
+K Standoff
+F https://media.digikey.com/pdf/Data%20Sheets/Wurth%20Electronics%20PDFs/WA-SMSx_Performance_Flyer.pdf
+$ENDCMP
+#
+#End Doc Library
