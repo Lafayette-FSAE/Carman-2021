@@ -1,0 +1,29 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#(c) SnapEDA 2016 (snapeda.com)
+#This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA) with Design Exception 1.0
+#
+# PYB20-Q24-S5
+#
+DEF PYB20-Q24-S5 U 0 40 Y Y 1 L N
+F0 "U" -402 503 50 H V L BNN
+F1 "PYB20-Q24-S5" -402 -603 50 H V L BNN
+F2 "CONV_PYB20-Q24-S5" 0 0 50 H I L BNN
+F3 "CUI Inc" 0 0 50 H I L BNN
+F4 "1.04" 0 0 50 H I L BNN
+F5 "Manufacturer Recommendations" 0 0 50 H I L BNN
+DRAW
+P 2 0 0 10 -400 -500 -400 500 N
+P 2 0 0 10 -400 500 400 500 N
+P 2 0 0 10 400 500 400 -500 N
+P 2 0 0 10 400 -500 -400 -500 N
+X VIN 2 -600 300 200 R 40 40 0 0 I 
+X GND 1 -600 -300 200 R 40 40 0 0 W 
+X +VO 3 600 300 200 L 40 40 0 0 O 
+X 0V 5 600 -300 200 L 40 40 0 0 W 
+X CTRL 6 -600 100 200 R 40 40 0 0 I 
+X TRIM 4 600 -100 200 L 40 40 0 0 P 
+ENDDRAW
+ENDDEF
+#
+# End Library
