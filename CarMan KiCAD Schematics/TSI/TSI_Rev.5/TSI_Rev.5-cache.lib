@@ -1,6 +1,20 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
+# CarMan_KiCAD_Library_2PinPortLeft
+#
+DEF CarMan_KiCAD_Library_2PinPortLeft U 0 40 Y Y 1 F N
+F0 "U" 0 250 50 H V C CNN
+F1 "CarMan_KiCAD_Library_2PinPortLeft" 0 -200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -100 200 100 -150 0 1 0 N
+X ~ 1 -200 100 150 R 50 50 1 1 I
+X ~ 2 -200 -50 150 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
 # CarMan_KiCAD_Library_4PinPort
 #
 DEF CarMan_KiCAD_Library_4PinPort U 0 40 Y Y 1 F N
@@ -14,6 +28,62 @@ X ~ 1 -200 50 150 R 50 50 1 1 I
 X ~ 2 -200 -100 150 R 50 50 1 1 I
 X ~ 3 200 -100 150 L 50 50 1 1 I
 X ~ 4 200 50 150 L 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# CarMan_KiCAD_Library_6PinPort
+#
+DEF CarMan_KiCAD_Library_6PinPort U 0 40 Y Y 1 F N
+F0 "U" 0 300 50 H V C CNN
+F1 "CarMan_KiCAD_Library_6PinPort" 0 -300 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -100 250 100 -250 0 1 0 N
+X ~ 1 -200 150 150 R 50 50 1 1 I
+X ~ 2 -200 0 150 R 50 50 1 1 I
+X ~ 3 -200 -150 150 R 50 50 1 1 I
+X ~ 4 200 -150 150 L 50 50 1 1 I
+X ~ 5 200 0 150 L 50 50 1 1 I
+X ~ 6 200 150 150 L 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# CarMan_KiCAD_Library_8PinPort
+#
+DEF CarMan_KiCAD_Library_8PinPort U 0 40 Y Y 1 F N
+F0 "U" 0 300 50 H V C CNN
+F1 "CarMan_KiCAD_Library_8PinPort" 0 -450 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -100 250 100 -400 0 1 0 N
+X ~ 1 -200 150 150 R 50 50 1 1 I
+X ~ 2 -200 0 150 R 50 50 1 1 I
+X ~ 3 -200 -150 150 R 50 50 1 1 I
+X ~ 4 -200 -300 150 R 50 50 1 1 I
+X ~ 5 200 -300 150 L 50 50 1 1 I
+X ~ 6 200 -150 150 L 50 50 1 1 I
+X ~ 7 200 0 150 L 50 50 1 1 I
+X ~ 8 200 150 150 L 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# Device_Fuse
+#
+DEF Device_Fuse F 0 0 N Y 1 F N
+F0 "F" 80 0 50 V V C CNN
+F1 "Device_Fuse" -75 0 50 V V C CNN
+F2 "" -70 0 50 V I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ *Fuse*
+$ENDFPLIST
+DRAW
+S -30 -100 30 100 0 1 10 N
+P 2 0 1 0 0 100 0 -100 N
+X ~ 1 0 150 50 D 50 50 1 1 P
+X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
