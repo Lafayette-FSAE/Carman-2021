@@ -512,10 +512,6 @@ F 3 "" H 9550 2000 50  0001 C CNN
 $EndComp
 Text Notes 7900 2350 0    50   ~ 0
 Sloop & AIRS\nto TSI
-Text GLabel 3150 4150 0    50   Input ~ 0
-24V
-Text GLabel 3150 4250 0    50   Input ~ 0
-10V
 Text HLabel 2500 3900 0    50   Input ~ 0
 24V
 Wire Wire Line
