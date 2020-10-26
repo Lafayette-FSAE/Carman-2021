@@ -492,7 +492,7 @@ SDA
 Text HLabel 1100 4100 2    50   Output ~ 0
 SCL
 Text HLabel 1100 4200 2    50   Output ~ 0
-BrakePressed
+Brake_Pressed
 Text HLabel 1100 4300 2    50   Output ~ 0
 Brake_Pressed_RTN
 Text HLabel 1100 4600 2    50   Output ~ 0
