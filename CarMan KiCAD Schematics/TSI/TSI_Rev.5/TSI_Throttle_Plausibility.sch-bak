@@ -907,17 +907,6 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 5500 3400 50 
 	5    5450 3200
 	1    0    0    -1  
 $EndComp
-$Comp
-L CarMan_KiCAD_Library:74ACT11030 U?
-U 1 1 5FBC23CB
-P 7750 3150
-F 0 "U?" H 8394 3201 50  0000 L CNN
-F 1 "MCP6004" H 8394 3110 50  0000 L CNN
-F 2 "" H 7750 3150 50  0000 C CNN
-F 3 "" H 7750 3150 50  0000 C CNN
-	1    7750 3150
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5050 3700 5050 4050
 $Comp
@@ -1016,22 +1005,15 @@ GND
 Connection ~ 5050 4050
 Wire Wire Line
 	5750 3200 7150 3200
-Connection ~ 7150 2800
-Wire Wire Line
-	7150 2800 7150 2900
 Wire Wire Line
 	7150 2650 7550 2650
 Wire Wire Line
 	7550 2650 7550 2850
-Wire Wire Line
-	7150 2650 7150 2800
 Text Label 7150 2500 2    50   ~ 0
 5V
 Wire Wire Line
 	7150 2500 7150 2650
 Connection ~ 7150 2650
-Text Label 7550 3450 0    50   ~ 0
-GND
 Wire Wire Line
 	6750 2050 6750 3100
 Wire Wire Line
@@ -1164,4 +1146,108 @@ Text Label 4550 4350 2    50   ~ 0
 10V
 Text Label 4550 4850 2    50   ~ 0
 GND
+Text Notes 4550 3350 2    50   ~ 0
+Open/Short Window\n(90% Travel)
+Text Notes 7000 1050 0    50   ~ 0
+Plausibility Window\n(0.5V)\n
+Wire Wire Line
+	8350 800  8350 900 
+$Comp
+L pspice:CAP C?
+U 1 1 5FDC04B0
+P 8350 1150
+F 0 "C?" V 8450 1000 50  0000 C CNN
+F 1 "0.1u" V 8450 1300 50  0000 C CNN
+F 2 "" H 8350 1150 50  0001 C CNN
+F 3 "~" H 8350 1150 50  0001 C CNN
+	1    8350 1150
+	1    0    0    -1  
+$EndComp
+Text Label 8350 800  2    50   ~ 0
+24V
+$Comp
+L Amplifier_Operational:TS912 U2
+U 2 1 5FE04112
+P 9900 6200
+F 0 "U2" H 9950 6350 50  0000 C CNN
+F 1 "MCP6004" H 10050 6050 50  0000 C CNN
+F 2 "" H 9900 6200 50  0001 C CNN
+F 3 "www.st.com/resource/en/datasheet/ts912.pdf" H 9900 6200 50  0001 C CNN
+	2    9900 6200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9400 6100 9600 6100
+Wire Wire Line
+	9550 6300 9550 6450
+Wire Wire Line
+	9550 6450 10350 6450
+Wire Wire Line
+	10350 6450 10350 6200
+Wire Wire Line
+	10350 6200 10200 6200
+Wire Wire Line
+	9550 6300 9600 6300
+Text Label 9400 6100 2    50   ~ 0
+Throttle_PL
+$Comp
+L Device:R R1
+U 1 1 5FE36C1A
+P 10500 6200
+F 0 "R1" V 10400 6200 50  0000 C CNN
+F 1 "500" V 10500 6200 50  0000 C CNN
+F 2 "" V 10430 6200 50  0001 C CNN
+F 3 "~" H 10500 6200 50  0001 C CNN
+	1    10500 6200
+	0    1    1    0   
+$EndComp
+Connection ~ 10350 6200
+$Comp
+L Device:LED_ALT D5
+U 1 1 5FE3E975
+P 10800 6200
+F 0 "D5" H 10800 6300 50  0000 C CNN
+F 1 "RED LED TP" H 10800 6050 50  0000 C CNN
+F 2 "" H 10800 6200 50  0001 C CNN
+F 3 "~" H 10800 6200 50  0001 C CNN
+	1    10800 6200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	11000 6200 10950 6200
+Text Label 11000 6200 0    50   ~ 0
+GND
+Text Notes 9750 5850 0    59   ~ 0
+RED LED STATUS LIGHT
+Text Notes 8750 700  0    50   ~ 0
+Brake Pressed\n
+$Comp
+L Isolator:TLP291-4 U23
+U 1 1 5FE7E884
+P 9450 1100
+F 0 "U23" H 9450 1425 50  0000 C CNN
+F 1 "TLP291-4" H 9450 1334 50  0000 C CNN
+F 2 "Package_SO:SOIC-16_4.55x10.3mm_P1.27mm" H 9250 900 50  0001 L CIN
+F 3 "https://toshiba.semicon-storage.com/info/docget.jsp?did=12858&prodName=TLP291-4" H 9450 1100 50  0001 L CNN
+	1    9450 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 2650 7150 2800
+Wire Wire Line
+	7150 2800 7150 2900
+Connection ~ 7150 2800
+Text Label 7550 3450 0    50   ~ 0
+GND
+$Comp
+L CarMan_KiCAD_Library:74ACT11030 U?
+U 1 1 5FBC23CB
+P 7750 3150
+F 0 "U?" H 8394 3201 50  0000 L CNN
+F 1 "MCP6004" H 8394 3110 50  0000 L CNN
+F 2 "" H 7750 3150 50  0000 C CNN
+F 3 "" H 7750 3150 50  0000 C CNN
+	1    7750 3150
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
