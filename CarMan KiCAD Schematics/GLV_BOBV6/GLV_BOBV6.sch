@@ -14,10 +14,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Label 1750 1000 1    50   ~ 0
-24V
-Text Label 1900 1000 1    50   ~ 0
-GLV_RTN
 Text Label 4700 1100 2    50   ~ 0
 SDA
 Text Label 4700 1250 2    50   ~ 0
@@ -25,47 +21,6 @@ SCL
 Text Label 5100 1100 0    50   ~ 0
 GLV_I2C_RTN
 NoConn ~ 5100 1250
-Text Label 1350 1000 1    50   ~ 0
-24V
-Text Label 1500 1000 1    50   ~ 0
-GLV_RTN
-Text Label 950  1000 1    50   ~ 0
-24V
-Text Label 1100 1000 1    50   ~ 0
-GLV_RTN
-$Comp
-L CarMan_KiCAD_Library:2PinPortRight J2
-U 1 1 5F95111F
-P 1800 1200
-F 0 "J2" V 1650 1250 50  0000 R CNN
-F 1 "2PinPortRight" V 1813 972 50  0001 R CNN
-F 2 "" H 1800 1200 50  0001 C CNN
-F 3 "" H 1800 1200 50  0001 C CNN
-	1    1800 1200
-	0    -1   -1   0   
-$EndComp
-$Comp
-L CarMan_KiCAD_Library:2PinPortRight J7
-U 1 1 5F9514DC
-P 1400 1200
-F 0 "J7" V 1250 1250 50  0000 R CNN
-F 1 "2PinPortRight" V 1413 972 50  0001 R CNN
-F 2 "" H 1400 1200 50  0001 C CNN
-F 3 "" H 1400 1200 50  0001 C CNN
-	1    1400 1200
-	0    -1   -1   0   
-$EndComp
-$Comp
-L CarMan_KiCAD_Library:2PinPortRight J5
-U 1 1 5F95169D
-P 1000 1200
-F 0 "J5" V 850 1250 50  0000 R CNN
-F 1 "2PinPortRight" V 1013 972 50  0001 R CNN
-F 2 "" H 1000 1200 50  0001 C CNN
-F 3 "" H 1000 1200 50  0001 C CNN
-	1    1000 1200
-	0    -1   -1   0   
-$EndComp
 Text Label 3500 1000 1    50   ~ 0
 BATT+
 Text Label 3650 1000 1    50   ~ 0
@@ -349,10 +304,12 @@ Connection ~ 2600 3600
 Connection ~ 2600 3900
 Text Label 2400 3250 2    50   ~ 0
 24V
-Text Label 2150 1000 1    50   ~ 0
-24V
-Text Label 2300 1000 1    50   ~ 0
-GLV_RTN
+Wire Wire Line
+	2600 4400 5400 4400
+Wire Wire Line
+	2600 3900 2600 4400
+Wire Wire Line
+	5400 3900 5400 4400
 $Comp
 L CarMan_KiCAD_Library:2PinPortRight J8
 U 1 1 5F97AF06
@@ -364,12 +321,55 @@ F 3 "" H 2200 1200 50  0001 C CNN
 	1    2200 1200
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	2600 4400 5400 4400
-Wire Wire Line
-	2600 3900 2600 4400
-Wire Wire Line
-	5400 3900 5400 4400
+Text Label 2300 1000 1    50   ~ 0
+GLV_RTN
+Text Label 2150 1000 1    50   ~ 0
+24V
+$Comp
+L CarMan_KiCAD_Library:2PinPortRight J5
+U 1 1 5F95169D
+P 1000 1200
+F 0 "J5" V 850 1250 50  0000 R CNN
+F 1 "2PinPortRight" V 1013 972 50  0001 R CNN
+F 2 "" H 1000 1200 50  0001 C CNN
+F 3 "" H 1000 1200 50  0001 C CNN
+	1    1000 1200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CarMan_KiCAD_Library:2PinPortRight J7
+U 1 1 5F9514DC
+P 1400 1200
+F 0 "J7" V 1250 1250 50  0000 R CNN
+F 1 "2PinPortRight" V 1413 972 50  0001 R CNN
+F 2 "" H 1400 1200 50  0001 C CNN
+F 3 "" H 1400 1200 50  0001 C CNN
+	1    1400 1200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CarMan_KiCAD_Library:2PinPortRight J2
+U 1 1 5F95111F
+P 1800 1200
+F 0 "J2" V 1650 1250 50  0000 R CNN
+F 1 "2PinPortRight" V 1813 972 50  0001 R CNN
+F 2 "" H 1800 1200 50  0001 C CNN
+F 3 "" H 1800 1200 50  0001 C CNN
+	1    1800 1200
+	0    -1   -1   0   
+$EndComp
+Text Label 1100 1000 1    50   ~ 0
+GLV_RTN
+Text Label 950  1000 1    50   ~ 0
+24V
+Text Label 1500 1000 1    50   ~ 0
+GLV_RTN
+Text Label 1350 1000 1    50   ~ 0
+24V
+Text Label 1900 1000 1    50   ~ 0
+GLV_RTN
+Text Label 1750 1000 1    50   ~ 0
+24V
 Text Notes 8250 3100 0    50   ~ 0
 GLV_I2C_RTN = 5V_ISO_RTN
 $EndSCHEMATC
