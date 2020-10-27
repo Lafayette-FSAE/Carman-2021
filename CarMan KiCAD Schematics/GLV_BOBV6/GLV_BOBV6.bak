@@ -18,13 +18,13 @@ Text Label 1750 1000 1    50   ~ 0
 24V
 Text Label 1900 1000 1    50   ~ 0
 GLV_RTN
-Text Label 4750 1150 2    50   ~ 0
+Text Label 4700 1100 2    50   ~ 0
 SDA
-Text Label 4750 1300 2    50   ~ 0
+Text Label 4700 1250 2    50   ~ 0
 SCL
-Text Label 5150 1150 0    50   ~ 0
+Text Label 5100 1100 0    50   ~ 0
 GLV_I2C_RTN
-NoConn ~ 5150 1300
+NoConn ~ 5100 1250
 Text Label 1350 1000 1    50   ~ 0
 24V
 Text Label 1500 1000 1    50   ~ 0
@@ -84,12 +84,12 @@ $EndComp
 $Comp
 L CarMan_KiCAD_Library:4PinPort J4
 U 1 1 5F96011A
-P 4950 1200
-F 0 "J4" H 4950 1515 50  0000 C CNN
-F 1 "4PinPort" H 4950 1424 50  0000 C CNN
-F 2 "" H 4850 1300 50  0001 C CNN
-F 3 "" H 4850 1300 50  0001 C CNN
-	1    4950 1200
+P 4900 1150
+F 0 "J4" H 4900 1465 50  0000 C CNN
+F 1 "4PinPort" H 4900 1374 50  0000 C CNN
+F 2 "" H 4800 1250 50  0001 C CNN
+F 3 "" H 4800 1250 50  0001 C CNN
+	1    4900 1150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -312,12 +312,8 @@ Wire Wire Line
 Connection ~ 5400 3600
 Text Label 5550 3300 0    50   ~ 0
 5V_NOT_ISO
-Wire Wire Line
-	5400 3900 5400 4200
-Wire Wire Line
-	5400 4200 5550 4200
 Connection ~ 5400 3900
-Text Label 5550 4200 0    50   ~ 0
+Text Label 5400 4400 0    50   ~ 0
 GLV_RTN
 Wire Wire Line
 	3150 3850 3050 3850
@@ -350,13 +346,28 @@ Wire Wire Line
 Wire Wire Line
 	2600 3250 2400 3250
 Connection ~ 2600 3600
-Wire Wire Line
-	2600 3900 2600 4050
 Connection ~ 2600 3900
-Wire Wire Line
-	2600 4050 2400 4050
 Text Label 2400 3250 2    50   ~ 0
 24V
-Text Label 2400 4050 2    50   ~ 0
+Text Label 2150 1000 1    50   ~ 0
+24V
+Text Label 2300 1000 1    50   ~ 0
 GLV_RTN
+$Comp
+L CarMan_KiCAD_Library:2PinPortRight J8
+U 1 1 5F97AF06
+P 2200 1200
+F 0 "J8" V 2050 1250 50  0000 R CNN
+F 1 "2PinPortRight" V 2213 972 50  0001 R CNN
+F 2 "" H 2200 1200 50  0001 C CNN
+F 3 "" H 2200 1200 50  0001 C CNN
+	1    2200 1200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2600 4400 5400 4400
+Wire Wire Line
+	2600 3900 2600 4400
+Wire Wire Line
+	5400 3900 5400 4400
 $EndSCHEMATC
