@@ -261,10 +261,10 @@ F 3 "https://www.st.com/resource/en/datasheet/l78l.pdf" H 3150 3750 60  0001 C C
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C?
+L Device:C C6
 U 1 1 5F9993A2
 P 5400 3750
-F 0 "C?" H 5515 3796 50  0000 L CNN
+F 0 "C6" H 5515 3796 50  0000 L CNN
 F 1 "0.1uF" H 5515 3705 50  0000 L CNN
 F 2 "" H 5438 3600 50  0001 C CNN
 F 3 "~" H 5400 3750 50  0001 C CNN
@@ -305,10 +305,10 @@ Wire Wire Line
 Wire Wire Line
 	3050 3950 3150 3950
 $Comp
-L Device:C C?
+L Device:C C5
 U 1 1 5F9A004E
 P 2600 3750
-F 0 "C?" H 2715 3796 50  0000 L CNN
+F 0 "C5" H 2715 3796 50  0000 L CNN
 F 1 "0.33uF" H 2715 3705 50  0000 L CNN
 F 2 "" H 2638 3600 50  0001 C CNN
 F 3 "~" H 2600 3750 50  0001 C CNN
@@ -404,10 +404,10 @@ F 3 "http://static.vcclite.com/pdf/VAOL-S8GT4-LED-0805-green.pdf" H 9600 2200 50
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED D?
+L Device:LED D2
 U 1 1 5F9B456F
 P 10100 2200
-F 0 "D?" V 10139 2082 50  0000 R CNN
+F 0 "D2" V 10139 2082 50  0000 R CNN
 F 1 "LED" V 10048 2082 50  0000 R CNN
 F 2 "" H 10100 2200 50  0001 C CNN
 F 3 "http://static.vcclite.com/pdf/VAOL-S8GT4-LED-0805-green.pdf" H 10100 2200 50  0001 C CNN
@@ -415,10 +415,10 @@ F 3 "http://static.vcclite.com/pdf/VAOL-S8GT4-LED-0805-green.pdf" H 10100 2200 5
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED D?
+L Device:LED D3
 U 1 1 5F9B4BC9
 P 10600 2200
-F 0 "D?" V 10639 2082 50  0000 R CNN
+F 0 "D3" V 10639 2082 50  0000 R CNN
 F 1 "LED" V 10548 2082 50  0000 R CNN
 F 2 "" H 10600 2200 50  0001 C CNN
 F 3 "http://static.vcclite.com/pdf/VAOL-S8GT4-LED-0805-green.pdf" H 10600 2200 50  0001 C CNN

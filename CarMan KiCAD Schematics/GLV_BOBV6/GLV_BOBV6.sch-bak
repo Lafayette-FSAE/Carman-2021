@@ -4,12 +4,12 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 2
-Title "Grounded Low Voltage GLV BOB"
+Title "Grounded Low Voltage (GLV) BOB"
 Date "2020-10-27"
 Rev "V6"
 Comp ""
-Comment1 "Troy Coleman, Zachary Martin"
-Comment2 ""
+Comment1 "Authors: Troy Coleman, Zachary Martin"
+Comment2 "ECE 491"
 Comment3 ""
 Comment4 ""
 $EndDescr
@@ -565,4 +565,19 @@ Text Notes 4600 4850 2    79   ~ 16
 Isolated DC/DC 24V to 5V
 Text Notes 9250 3550 2    79   ~ 16
 Current/Voltage Sensor and I2C Isolator
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 5F9DCEB0
+P 5850 2300
+F 0 "H1" H 5950 2349 50  0000 L CNN
+F 1 "MountingHole_Pad" H 5950 2258 50  0000 L CNN
+F 2 "" H 5850 2300 50  0001 C CNN
+F 3 "~" H 5850 2300 50  0001 C CNN
+	1    5850 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 2400 5850 2550
+Text Label 5850 2550 0    39   ~ 8
+CHASS_GND
 $EndSCHEMATC
