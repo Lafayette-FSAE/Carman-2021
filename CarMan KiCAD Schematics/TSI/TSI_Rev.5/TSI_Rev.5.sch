@@ -820,9 +820,93 @@ Throttle_LV
 Text Label 2950 4150 0    50   ~ 0
 Brake_Pressed_uC
 $Sheet
-S 4700 4300 950  900 
+S 4550 5500 1500 1100
 U 5F98EBE9
 F0 "Sensors_Throttle_Voltage" 50
 F1 "Sensors-Throttle.sch" 50
 $EndSheet
+Text HLabel 4550 5800 2    50   Input ~ 0
+1.24V_REF
+Text HLabel 4550 6000 2    50   Input ~ 0
+IO_Ground
+Text HLabel 4550 5900 2    50   Input ~ 0
+5HV
+Text HLabel 4550 6500 2    50   Input ~ 0
+Throttle_HV
+Wire Wire Line
+	4350 6000 4550 6000
+Text Label 4350 6000 2    50   ~ 0
+IO_Ground
+Wire Wire Line
+	4350 6500 4550 6500
+Text Label 4350 6500 2    50   ~ 0
+Throttle_HV
+Wire Wire Line
+	4350 5900 4550 5900
+Wire Wire Line
+	4550 5800 4350 5800
+Text Label 4350 5800 2    50   ~ 0
+1.24V_REF
+Text Label 4350 5900 2    50   ~ 0
+5HV
+Text Label 4350 6300 2    50   ~ 0
+HV+
+Wire Wire Line
+	4350 6300 4550 6300
+Text Label 4350 6200 2    50   ~ 0
+TSV_Voltage
+Text Label 4350 6100 2    50   ~ 0
+MC_Voltage
+Wire Wire Line
+	4350 6100 4550 6100
+Wire Wire Line
+	4350 6200 4550 6200
+Text HLabel 4550 6200 2    50   Input ~ 0
+TSV_Voltage
+Text HLabel 4550 6100 2    50   Input ~ 0
+MC_Voltage
+Text HLabel 4550 6300 2    50   Input ~ 0
+HV+
+Text Label 4350 6400 2    50   ~ 0
+HV-
+Wire Wire Line
+	4350 6400 4550 6400
+Text HLabel 4550 6400 2    50   Input ~ 0
+HV+
+Text Label 6250 6050 0    50   ~ 0
+GLV_RTN
+Wire Wire Line
+	6250 6050 6050 6050
+Text Label 6250 6350 0    50   ~ 0
+Throttle_LV
+Wire Wire Line
+	6250 6350 6050 6350
+Text Label 6250 5950 0    50   ~ 0
+5V
+Wire Wire Line
+	6250 5950 6050 5950
+Text HLabel 6050 6050 0    50   Input ~ 0
+GLV_RTN
+Text HLabel 6050 5950 0    50   Input ~ 0
+5V
+Text Label 6250 6250 0    50   ~ 0
+SDA
+Text Label 6250 6150 0    50   ~ 0
+SCL
+Wire Wire Line
+	6250 6150 6050 6150
+Wire Wire Line
+	6250 6250 6050 6250
+Text HLabel 6050 6250 0    50   Input ~ 0
+SDA
+Text HLabel 6050 6150 0    50   Input ~ 0
+SCL
+Text HLabel 6050 6350 0    50   Input ~ 0
+Throttle_LV
+Wire Notes Line
+	5300 6900 5300 5300
+Text Notes 5400 5650 0    47   ~ 0
+LOW VOLTAGE
+Text Notes 4650 5650 0    47   ~ 0
+HIGH VOLTAGE
 $EndSCHEMATC
