@@ -239,7 +239,7 @@ Connection ~ 5200 2850
 Wire Wire Line
 	5200 2850 6150 2850
 Text Label 4400 2950 2    47   ~ 0
-1.24VREF
+1.24V_REF
 Connection ~ 3850 2750
 Wire Wire Line
 	3850 2750 4400 2750
@@ -966,10 +966,10 @@ Wire Wire Line
 	7800 6350 7900 6350
 Connection ~ 7800 6350
 $Comp
-L Device:R R70
+L Device:R R108
 U 1 1 5FA46FB9
 P 5700 6350
-F 0 "R70" V 5800 6250 50  0000 L CNN
+F 0 "R108" V 5800 6250 50  0000 L CNN
 F 1 "2.4K" V 5700 6250 50  0000 L CNN
 F 2 "" V 5630 6350 50  0001 C CNN
 F 3 "~" H 5700 6350 50  0001 C CNN
@@ -985,7 +985,7 @@ Wire Wire Line
 Text Label 5400 6350 2    79   ~ 0
 AIRS+
 Text Label 5400 6550 2    79   ~ 0
-AIRS-
+GLV_RTN
 Text Label 7150 6550 0    79   ~ 0
 IO_Ground
 $Comp
@@ -1060,7 +1060,7 @@ Text Label 12450 8600 0    79   ~ 0
 Text Label 12450 9450 0    79   ~ 0
 IO_Ground
 Text Label 13050 9050 0    79   ~ 0
-3.3VREF
+3.3_VREF
 Wire Wire Line
 	12450 9400 12450 9450
 Connection ~ 12450 9400
@@ -1197,10 +1197,10 @@ Wire Wire Line
 Wire Wire Line
 	5500 9500 5550 9500
 $Comp
-L CarMan_KiCAD_Library:TLP293 U?
+L CarMan_KiCAD_Library:TLP293 U37
 U 1 1 5FD6E6F7
 P 6300 8400
-F 0 "U?" H 6400 8600 50  0000 C CNN
+F 0 "U37" H 6400 8600 50  0000 C CNN
 F 1 "TLP293" H 6450 8200 50  0000 C CNN
 F 2 "Package_SO:SOIC-4_4.55x2.6mm_P1.27mm" H 6100 8200 50  0001 L CIN
 F 3 "https://toshiba.semicon-storage.com/info/docget.jsp?did=12884&prodName=TLP291" H 6300 8400 50  0001 L CNN
@@ -1301,9 +1301,6 @@ Wire Wire Line
 	3800 8800 4700 8800
 Wire Wire Line
 	4700 8800 4700 8300
-Connection ~ 4700 8300
-Wire Wire Line
-	4700 8300 6000 8300
 Text Label 4150 8600 0    79   ~ 0
 GLV_RTN
 Text Label 4150 8000 0    79   ~ 0
@@ -1452,7 +1449,7 @@ Wire Wire Line
 	12950 7000 12950 7150
 Connection ~ 12950 7150
 Text Label 12950 7000 0    79   ~ 0
-1.24VREF
+1.24V_REF
 $Comp
 L Device:R R46
 U 1 1 5FFE1CBB
@@ -1635,7 +1632,7 @@ TSV_V
 Text HLabel 1050 1250 0    50   Input ~ 0
 IO_Ground
 Text Label 1250 1550 0    50   ~ 0
-1.24VREF
+1.24V_REF
 Text Label 1250 1450 0    50   ~ 0
 5HV
 Wire Wire Line
@@ -1687,7 +1684,7 @@ Text HLabel 1250 6250 0    50   Input ~ 0
 Text HLabel 1250 6750 0    50   Input ~ 0
 Brake_Pressed
 Text Label 1450 6550 0    50   ~ 0
-AIRS-
+GLV_RTN
 Text Label 1450 6450 0    50   ~ 0
 AIRS+
 Wire Wire Line
@@ -1716,8 +1713,6 @@ Wire Notes Line
 	2100 5800 2100 7050
 Text Notes 6400 10000 0    47   ~ 0
 24V -> 24V\n
-Wire Notes Line
-	6300 5750 6300 11200
 Text Notes 5800 11000 0    47   ~ 0
 5V -> 5V\n
 Text Notes 9800 6800 0    47   ~ 0
@@ -1754,4 +1749,22 @@ Wire Wire Line
 Connection ~ 10300 2050
 Text Notes 12500 10350 0    118  ~ 0
 PRECHARGE & DISCHARGE CIRCUIT
+$Comp
+L Device:R R47
+U 1 1 608786E7
+P 5700 8300
+F 0 "R47" V 5800 8200 50  0000 L CNN
+F 1 "500" V 5700 8200 50  0000 L CNN
+F 2 "" V 5630 8300 50  0001 C CNN
+F 3 "~" H 5700 8300 50  0001 C CNN
+	1    5700 8300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6000 8300 5850 8300
+Wire Wire Line
+	4700 8300 5550 8300
+Connection ~ 4700 8300
+Wire Notes Line
+	6300 5700 6300 11200
 $EndSCHEMATC

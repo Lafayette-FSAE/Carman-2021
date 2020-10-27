@@ -675,10 +675,58 @@ Text HLabel 1300 5100 2    50   Input ~ 0
 10V
 Text HLabel 1300 5000 2    50   Input ~ 0
 24V
+Text Label 5650 5150 0    50   ~ 0
+MC_Voltage
+Text Label 5650 4950 0    50   ~ 0
+HV+
+Wire Wire Line
+	5450 4950 5650 4950
+Wire Wire Line
+	5650 5150 5450 5150
+Text Label 5650 5450 0    50   ~ 0
+Throttle_HV
+Text Label 5650 5350 0    50   ~ 0
+IO_Ground
+Wire Wire Line
+	5650 5350 5450 5350
+Wire Wire Line
+	5650 5450 5450 5450
+Text Label 5650 5050 0    50   ~ 0
+HV-
+Wire Wire Line
+	5650 5050 5450 5050
+Text Label 5650 5250 0    50   ~ 0
+TSV_Voltage
+Wire Wire Line
+	5650 5250 5450 5250
+Text HLabel 5450 5450 0    50   Input ~ 0
+Throttle_HV
+Text HLabel 5450 5150 0    50   Input ~ 0
+MC_V
+Text HLabel 5450 5050 0    50   Input ~ 0
+HV-
+Text HLabel 5450 4950 0    50   Input ~ 0
+HV+
+Text HLabel 5450 5250 0    50   Input ~ 0
+TSV_V
+Text HLabel 5450 5350 0    50   Input ~ 0
+IO_Ground
+Text HLabel 7000 5150 0    50   Input ~ 0
+1.24VREF
+Text HLabel 7000 5000 0    50   Input ~ 0
+5HV
 $Sheet
-S 5450 4900 1550 1200
+S 5450 4850 1550 1200
 U 6196BF15
 F0 "PCDC_Circuit" 79
 F1 "PCDC_Circuit.sch" 79
 $EndSheet
+Wire Wire Line
+	7200 5150 7000 5150
+Wire Wire Line
+	7200 5000 7000 5000
+Text Label 7200 5000 0    50   ~ 0
+5HV
+Text Label 7200 5150 0    50   ~ 0
+1.24V_REF
 $EndSCHEMATC
