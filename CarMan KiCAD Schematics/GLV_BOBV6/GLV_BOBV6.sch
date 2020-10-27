@@ -1,5 +1,6 @@
 EESchema Schematic File Version 4
-EELAYER 30 0
+LIBS:GLV_BOBV6-cache
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -14,9 +15,9 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 Text Label 1750 1000 1    50   ~ 0
-24V_ISO
+24V
 Text Label 1900 1000 1    50   ~ 0
-ISO_RTN
+GLV_RTN
 Text Label 4750 1150 2    50   ~ 0
 SDA
 Text Label 4750 1300 2    50   ~ 0
@@ -24,39 +25,14 @@ SCL
 Text Label 5150 1150 0    50   ~ 0
 GLV_I2C_RTN
 NoConn ~ 5150 1300
-Text Label 1500 1000 1    50   ~ 0
-24V_ISO
 Text Label 1350 1000 1    50   ~ 0
-ISO_RTN
-Text Label 800  1850 2    50   ~ 0
-AIRS+
-Text Label 800  2000 2    50   ~ 0
+24V
+Text Label 1500 1000 1    50   ~ 0
 GLV_RTN
-Text Label 3350 2800 2    50   ~ 0
-AIRS+(FromRP)
-Text Label 3350 2950 2    50   ~ 0
-GLV_RTN
-Text Label 3750 2800 0    50   ~ 0
-MReset_Out
-Text Label 2150 1000 1    50   ~ 0
-24V_ISO
-Text Label 2300 1000 1    50   ~ 0
-ISO_RTN
 Text Label 950  1000 1    50   ~ 0
-24V_ISO
+24V
 Text Label 1100 1000 1    50   ~ 0
-ISO_RTN
-$Comp
-L CarMan_KiCAD_Library:2PinPortRight U?
-U 1 1 5F94DDAF
-P 2200 1200
-F 0 "U?" V 2050 1250 50  0000 R CNN
-F 1 "2PinPortRight" V 2213 972 50  0001 R CNN
-F 2 "" H 2200 1200 50  0001 C CNN
-F 3 "" H 2200 1200 50  0001 C CNN
-	1    2200 1200
-	0    -1   -1   0   
-$EndComp
+GLV_RTN
 $Comp
 L CarMan_KiCAD_Library:2PinPortRight J2
 U 1 1 5F95111F
@@ -90,17 +66,6 @@ F 3 "" H 1000 1200 50  0001 C CNN
 	1    1000 1200
 	0    -1   -1   0   
 $EndComp
-$Comp
-L CarMan_KiCAD_Library:2PinPortLeft J6
-U 1 1 5F954C6A
-P 1000 1950
-F 0 "J6" H 1128 1975 50  0000 L CNN
-F 1 "2PinPortLeft" H 1128 1930 50  0001 L CNN
-F 2 "" H 1000 1950 50  0001 C CNN
-F 3 "" H 1000 1950 50  0001 C CNN
-	1    1000 1950
-	1    0    0    -1  
-$EndComp
 Text Label 3500 1000 1    50   ~ 0
 BATT+
 Text Label 3650 1000 1    50   ~ 0
@@ -127,62 +92,271 @@ F 3 "" H 4850 1300 50  0001 C CNN
 	1    4950 1200
 	1    0    0    -1  
 $EndComp
-NoConn ~ 3750 2950
-$Comp
-L CarMan_KiCAD_Library:4PinPort J3
-U 1 1 5F961CB0
-P 3550 2850
-F 0 "J3" H 3550 3165 50  0000 C CNN
-F 1 "4PinPort" H 3550 3074 50  0000 C CNN
-F 2 "" H 3450 2950 50  0001 C CNN
-F 3 "" H 3450 2950 50  0001 C CNN
-	1    3550 2850
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	5500 5100 6000 5100
+	9650 3500 10150 3500
 Wire Wire Line
-	5500 5250 6000 5250
-Text Label 3450 5100 0    50   ~ 0
+	9650 3650 10150 3650
+Text Label 7600 3500 0    50   ~ 0
 5V_ISO
-Text Label 3450 5250 0    50   ~ 0
-5V_ISO_RTN
-Text Label 3450 5400 0    50   ~ 0
+Text Label 7600 3650 0    50   ~ 0
+GLV_I2C_RTN
+Text Label 7600 3800 0    50   ~ 0
 24V_GLV
-Text Label 3450 5550 0    50   ~ 0
+Text Label 7600 3950 0    50   ~ 0
 GLV_RTN
-Text Label 3450 5700 0    50   ~ 0
+Text Label 7600 4100 0    50   ~ 0
 5V_NOT_ISO
-Text Label 3450 5850 0    50   ~ 0
+Text Label 7600 4250 0    50   ~ 0
 BATTERY+
-Text Label 6000 5100 0    50   ~ 0
+Text Label 10150 3500 0    50   ~ 0
 SDA
-Text Label 6000 5250 0    50   ~ 0
+Text Label 10150 3650 0    50   ~ 0
 SCL
 $Sheet
-S 4100 4950 1400 1900
+S 8250 3350 1400 1900
 U 5F962E37
 F0 "Sensors and I2C ISO" 50
 F1 "sensorGLV.sch" 50
-F2 "5V_ISO" I L 4100 5100 50 
-F3 "5V_ISO_RTN" I L 4100 5250 50 
-F4 "5V_NOT_ISO" I L 4100 5700 50 
-F5 "BATT+" I L 4100 5850 50 
-F6 "GLV_RTN" I L 4100 5550 50 
-F7 "24V_GLV" I L 4100 5400 50 
-F8 "SDA" B R 5500 5100 50 
-F9 "SCL" B R 5500 5250 50 
+F2 "5V_ISO" I L 8250 3500 50 
+F3 "GLV_I2C_RTN" I L 8250 3650 50 
+F4 "5V_NOT_ISO" I L 8250 4100 50 
+F5 "BATT+" I L 8250 4250 50 
+F6 "GLV_RTN" I L 8250 3950 50 
+F7 "24V_GLV" I L 8250 3800 50 
+F8 "SDA" B R 9650 3500 50 
+F9 "SCL" B R 9650 3650 50 
 $EndSheet
 Wire Wire Line
-	3450 5100 4100 5100
+	7600 3500 8250 3500
 Wire Wire Line
-	3450 5250 4100 5250
+	7600 3650 8250 3650
 Wire Wire Line
-	3450 5400 4100 5400
+	7600 3800 8250 3800
 Wire Wire Line
-	3450 5550 4100 5550
+	7600 3950 8250 3950
 Wire Wire Line
-	3450 5700 4100 5700
+	7600 4100 8250 4100
 Wire Wire Line
-	3450 5850 4100 5850
+	7600 4250 8250 4250
+$Comp
+L CarMan_KiCAD_Library:DCR012405U U?
+U 1 1 5F9773EC
+P 2600 5950
+F 0 "U?" H 3900 6337 60  0000 C CNN
+F 1 "DCR012405U" H 3900 6231 60  0000 C CNN
+F 2 "DVB12" H 3900 6190 60  0001 C CNN
+F 3 "" H 2600 5950 60  0000 C CNN
+	1    2600 5950
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5200 5950
+Text Label 2450 5300 2    50   ~ 0
+24V
+NoConn ~ 5200 6150
+Text Label 5400 5300 0    50   ~ 0
+GLV_RTN
+NoConn ~ 2600 6050
+NoConn ~ 5200 6450
+Text Label 1300 6900 2    50   ~ 0
+5V_ISO
+Text Label 1300 6350 2    50   ~ 0
+GLV_I2C_RTN
+$Comp
+L Device:C C?
+U 1 1 5F984C68
+P 1600 6650
+F 0 "C?" H 1715 6696 50  0000 L CNN
+F 1 "0.1uF" H 1715 6605 50  0000 L CNN
+F 2 "" H 1638 6500 50  0001 C CNN
+F 3 "~" H 1600 6650 50  0001 C CNN
+	1    1600 6650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 6350 1850 6350
+Wire Wire Line
+	1600 6350 1600 6500
+Wire Wire Line
+	2600 6450 2150 6450
+Wire Wire Line
+	2150 6450 2150 6900
+Wire Wire Line
+	2150 6900 2050 6900
+Wire Wire Line
+	1600 6900 1600 6800
+Wire Wire Line
+	1600 6900 1300 6900
+Connection ~ 1600 6900
+Wire Wire Line
+	1600 6350 1300 6350
+Connection ~ 1600 6350
+Wire Wire Line
+	5200 6250 5550 6250
+$Comp
+L Device:R R?
+U 1 1 5F98A764
+P 3900 7350
+F 0 "R?" V 3693 7350 50  0000 C CNN
+F 1 "10K" V 3784 7350 50  0000 C CNN
+F 2 "" V 3830 7350 50  0001 C CNN
+F 3 "~" H 3900 7350 50  0001 C CNN
+	1    3900 7350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5550 7350 4050 7350
+Wire Wire Line
+	5550 6250 5550 7350
+Connection ~ 2050 6900
+Wire Wire Line
+	2050 6900 1600 6900
+$Comp
+L Device:C C?
+U 1 1 5F98BD71
+P 1850 6200
+F 0 "C?" H 1965 6246 50  0000 L CNN
+F 1 "1uF" H 1965 6155 50  0000 L CNN
+F 2 "" H 1888 6050 50  0001 C CNN
+F 3 "~" H 1850 6200 50  0001 C CNN
+	1    1850 6200
+	1    0    0    -1  
+$EndComp
+Connection ~ 1850 6350
+Wire Wire Line
+	1850 6350 1600 6350
+Wire Wire Line
+	5200 6350 5900 6350
+Wire Wire Line
+	2600 6250 2300 6250
+Wire Wire Line
+	2300 6250 2300 6050
+Wire Wire Line
+	2300 6050 1850 6050
+Connection ~ 1850 6050
+Wire Wire Line
+	1850 4950 5900 4950
+Wire Wire Line
+	5900 4950 5900 6350
+Wire Wire Line
+	1850 4950 1850 6050
+Wire Wire Line
+	5200 6050 5400 6050
+Wire Wire Line
+	5400 6050 5400 5300
+$Comp
+L Device:C C?
+U 1 1 5F990410
+P 3900 5300
+F 0 "C?" V 3648 5300 50  0000 C CNN
+F 1 "0.47uF" V 3739 5300 50  0000 C CNN
+F 2 "" H 3938 5150 50  0001 C CNN
+F 3 "~" H 3900 5300 50  0001 C CNN
+	1    3900 5300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4050 5300 5400 5300
+Wire Wire Line
+	3750 5300 2450 5300
+Wire Wire Line
+	2450 5300 2450 5950
+Wire Wire Line
+	2450 5950 2600 5950
+Wire Wire Line
+	3750 7350 2050 7350
+Wire Wire Line
+	2050 6900 2050 7350
+$Comp
+L CarMan_KiCAD_Library:L78L05ACD13TR CR?
+U 1 1 5F998589
+P 3150 3750
+F 0 "CR?" H 3950 4137 60  0000 C CNN
+F 1 "L78L05ACD13TR" H 3950 4031 60  0000 C CNN
+F 2 "SO-8_STM" H 3950 3990 60  0001 C CNN
+F 3 "" H 3150 3750 60  0000 C CNN
+	1    3150 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5F9993A2
+P 5400 3750
+F 0 "C?" H 5515 3796 50  0000 L CNN
+F 1 "0.1uF" H 5515 3705 50  0000 L CNN
+F 2 "" H 5438 3600 50  0001 C CNN
+F 3 "~" H 5400 3750 50  0001 C CNN
+	1    5400 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 3850 4850 3850
+Wire Wire Line
+	4850 3850 4850 3900
+Wire Wire Line
+	4850 3950 4750 3950
+Wire Wire Line
+	5400 3900 4850 3900
+Connection ~ 4850 3900
+Wire Wire Line
+	4850 3900 4850 3950
+Wire Wire Line
+	5100 3750 5100 3600
+Wire Wire Line
+	5100 3600 5400 3600
+Wire Wire Line
+	4750 3750 5100 3750
+Wire Wire Line
+	5400 3600 5400 3300
+Wire Wire Line
+	5400 3300 5550 3300
+Connection ~ 5400 3600
+Text Label 5550 3300 0    50   ~ 0
+5V_NOT_ISO
+Wire Wire Line
+	5400 3900 5400 4200
+Wire Wire Line
+	5400 4200 5550 4200
+Connection ~ 5400 3900
+Text Label 5550 4200 0    50   ~ 0
+GLV_RTN
+Wire Wire Line
+	3150 3850 3050 3850
+Wire Wire Line
+	3050 3850 3050 3900
+Wire Wire Line
+	3050 3950 3150 3950
+$Comp
+L Device:C C?
+U 1 1 5F9A004E
+P 2600 3750
+F 0 "C?" H 2715 3796 50  0000 L CNN
+F 1 "0.33uF" H 2715 3705 50  0000 L CNN
+F 2 "" H 2638 3600 50  0001 C CNN
+F 3 "~" H 2600 3750 50  0001 C CNN
+	1    2600 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 3900 2600 3900
+Connection ~ 3050 3900
+Wire Wire Line
+	3050 3900 3050 3950
+Wire Wire Line
+	2600 3600 3150 3600
+Wire Wire Line
+	3150 3600 3150 3750
+Wire Wire Line
+	2600 3600 2600 3250
+Wire Wire Line
+	2600 3250 2400 3250
+Connection ~ 2600 3600
+Wire Wire Line
+	2600 3900 2600 4050
+Connection ~ 2600 3900
+Wire Wire Line
+	2600 4050 2400 4050
+Text Label 2400 3250 2    50   ~ 0
+24V
+Text Label 2400 4050 2    50   ~ 0
+GLV_RTN
 $EndSCHEMATC

@@ -18,12 +18,6 @@ K HCTMOS nand 2-input
 F http://www.ti.com/lit/gpn/sn74hct00
 $ENDCMP
 #
-$CMP 74LS00
-D quad 2-input NAND gate
-K TTL nand 2-input
-F http://www.ti.com/lit/gpn/sn74ls00
-$ENDCMP
-#
 $CMP 74LS00PowerPins
 D quad 2-input NAND gate
 K TTL nand 2-input
