@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 3
+Sheet 1 4
 Title ""
 Date ""
 Rev ""
@@ -819,4 +819,10 @@ Text Label 2950 4350 0    50   ~ 0
 Throttle_LV
 Text Label 2950 4150 0    50   ~ 0
 Brake_Pressed_uC
+$Sheet
+S 4700 4300 950  900 
+U 5F98EBE9
+F0 "Sensors_Throttle_Voltage" 50
+F1 "Sensors-Throttle.sch" 50
+$EndSheet
 $EndSCHEMATC
