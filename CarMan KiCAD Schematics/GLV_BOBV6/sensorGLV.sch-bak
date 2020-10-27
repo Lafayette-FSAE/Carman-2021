@@ -14,13 +14,13 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L CarMan_KiCAD_Library:INA226AIDGSR U?
+L CarMan_KiCAD_Library:INA226AIDGSR U3
 U 1 1 5F965456
 P 6200 4950
-F 0 "U?" H 7400 4163 60  0000 C CNN
+F 0 "U3" H 7400 4163 60  0000 C CNN
 F 1 "INA226AIDGSR" H 7400 4269 60  0000 C CNN
 F 2 "DGS10" H 7400 5190 60  0001 C CNN
-F 3 "" H 6200 4950 60  0000 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/ina226.pdf?ts=1603760421745&ref_url=https%253A%252F%252Fwww.google.com%252F" H 6200 4950 60  0001 C CNN
 	1    6200 4950
 	-1   0    0    1   
 $EndComp
@@ -37,7 +37,7 @@ L Device:R R1
 U 1 1 5F9673CE
 P 2250 4800
 F 0 "R1" H 2320 4846 50  0000 L CNN
-F 1 "0.001K" H 2320 4755 50  0000 L CNN
+F 1 "0.001" H 2320 4755 50  0000 L CNN
 F 2 "" V 2180 4800 50  0001 C CNN
 F 3 "~" H 2250 4800 50  0001 C CNN
 	1    2250 4800
@@ -100,51 +100,34 @@ Wire Wire Line
 	6200 5250 3550 5250
 Connection ~ 6200 4950
 Text HLabel 1900 4650 0    50   Input ~ 0
-24V_GLV
+24V
 Wire Wire Line
 	3550 4650 3550 5250
 Connection ~ 3550 4650
 Wire Wire Line
-	3550 4650 2700 4650
+	3550 4650 3150 4650
 Text Label 4900 5250 0    50   ~ 0
 GLV_RTN
 $Comp
-L CarMan_KiCAD_Library:ISO1541DR U?
+L CarMan_KiCAD_Library:ISO1541DR U4
 U 1 1 5F96D17A
 P 5700 3200
-F 0 "U?" H 6500 2513 60  0000 C CNN
+F 0 "U4" H 6500 2513 60  0000 C CNN
 F 1 "ISO1541DR" H 6500 2619 60  0000 C CNN
 F 2 "D8_TEX" H 6500 3440 60  0001 C CNN
-F 3 "" H 5700 3200 60  0000 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/iso1541.pdf?HQS=TI-null-null-digikeymode-df-pf-null-wwe&ts=1603752749534" H 5700 3200 60  0001 C CNN
 	1    5700 3200
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	4100 2900 3550 2900
-Wire Wire Line
-	3550 2900 3550 4650
-Wire Wire Line
-	2800 3600 3650 3600
-Wire Wire Line
-	3650 3600 3650 3200
-Wire Wire Line
-	3650 3200 4100 3200
+	3150 2900 3150 4650
 Connection ~ 2800 3600
 Wire Wire Line
-	4100 3100 4100 3200
+	6300 3550 6300 3900
 Wire Wire Line
-	4100 3550 6300 3550
-Wire Wire Line
-	6300 3550 6300 4650
-Connection ~ 4100 3200
-Wire Wire Line
-	4100 3200 4100 3550
-Wire Wire Line
-	6200 4550 6200 3650
+	6200 4550 6200 4000
 Wire Wire Line
 	6200 3650 4000 3650
-Wire Wire Line
-	4000 3650 4000 3000
 Wire Wire Line
 	4000 3000 4100 3000
 Wire Wire Line
@@ -226,4 +209,63 @@ Wire Wire Line
 Connection ~ 5800 2450
 Wire Wire Line
 	5800 2450 5800 2250
+Text Label 5750 3550 2    50   ~ 0
+SDA_NOT_ISO
+Text Label 4500 3650 2    50   ~ 0
+SCL_NOT_ISO
+$Comp
+L Device:R R5
+U 1 1 5F988D4B
+P 3400 3750
+F 0 "R5" H 3470 3796 50  0000 L CNN
+F 1 "10K" H 3470 3705 50  0000 L CNN
+F 2 "" V 3330 3750 50  0001 C CNN
+F 3 "~" H 3400 3750 50  0001 C CNN
+	1    3400 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 5F989159
+P 3650 3750
+F 0 "R6" H 3720 3796 50  0000 L CNN
+F 1 "10K" H 3720 3705 50  0000 L CNN
+F 2 "" V 3580 3750 50  0001 C CNN
+F 3 "~" H 3650 3750 50  0001 C CNN
+	1    3650 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 3550 6300 3550
+Connection ~ 3400 3600
+Wire Wire Line
+	2800 3600 3400 3600
+Connection ~ 3150 4650
+Wire Wire Line
+	2700 4650 3150 4650
+Wire Wire Line
+	3150 2900 4100 2900
+Wire Wire Line
+	3400 3900 3400 4000
+Wire Wire Line
+	3400 4000 6200 4000
+Connection ~ 6200 4000
+Wire Wire Line
+	6200 4000 6200 3650
+Wire Wire Line
+	3650 3900 6300 3900
+Connection ~ 6300 3900
+Wire Wire Line
+	6300 3900 6300 4650
+Wire Wire Line
+	4100 3100 4100 3550
+Wire Wire Line
+	4000 3650 4000 3000
+Wire Wire Line
+	3400 3600 3650 3600
+Wire Wire Line
+	3650 3200 4100 3200
+Connection ~ 3650 3600
+Wire Wire Line
+	3650 3600 3650 3200
 $EndSCHEMATC
