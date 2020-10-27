@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 4
+Sheet 1 6
 Title ""
 Date ""
 Rev ""
@@ -909,4 +909,18 @@ Text Notes 5400 5650 0    47   ~ 0
 LOW VOLTAGE
 Text Notes 4650 5650 0    47   ~ 0
 HIGH VOLTAGE
+Text Notes 8250 3600 0    47   ~ 0
+Where it starts to get funky
+$Sheet
+S 8150 3800 1150 1050
+U 5FE1DCBA
+F0 "StatusLights_Cockpit" 47
+F1 "StatusLights_Cockpit.sch" 47
+$EndSheet
+$Sheet
+S 8150 5200 1250 900 
+U 5FE1DE7D
+F0 "CAN_GLV_POWER" 47
+F1 "CAN_GLV_POWER.sch" 47
+$EndSheet
 $EndSCHEMATC
