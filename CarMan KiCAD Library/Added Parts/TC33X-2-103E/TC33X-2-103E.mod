@@ -1,0 +1,50 @@
+PCBNEW-LibModule-V1  
+# encoding utf-8
+Units mm
+$INDEX
+35WR
+$EndINDEX
+$MODULE 35WR
+Po 0 0 0 15 00000000 00000000 ~~
+Li 35WR
+Cd 
+Sc 00000000
+At SMD
+Op 0 0 0
+.SolderMask 0
+.SolderPaste 0
+T0 -3.81485 -1e-05 1.00128 1.00128 900 0.05 N V 21 "35WR"
+T1 3.81007 -0.63501 1.00002 1.00002 900 0.05 N V 21 "VAL**"
+DS 2 -2.35 -2 -2.35 0.254 27
+DS -2 -2.35 -2 2.35 0.254 27
+DS -2 2.35 2 2.35 0.254 27
+DS 2 2.35 2 -2.35 0.254 27
+DS 1.25 -2.35 2 -2.35 0.254 21
+DS 2 -2.35 2 2.35 0.254 21
+DS -2 2.35 -2 -2.35 0.254 21
+DS -2 -2.35 -1.25 -2.35 0.254 21
+$PAD
+Sh "1" R 1.2 1.2 0 0 0
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po -1 1.6
+$EndPAD
+$PAD
+Sh "3" R 1.2 1.2 0 0 0
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po 1 1.6
+$EndPAD
+$PAD
+Sh "2" R 1.6 1.5 0 0 0
+At SMD N 00888000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po 0 -1.65
+$EndPAD
+$EndMODULE 35WR
