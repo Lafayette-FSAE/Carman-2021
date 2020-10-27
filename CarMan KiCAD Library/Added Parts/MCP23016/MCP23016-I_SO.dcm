@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP MCP23016-I_SO
+D I/O Port Expander 16-Bit I2C SOIC28
+K
+F http://docs-emea.rs-online.com/webdocs/0d2a/0900766b80d2a855.pdf
+$ENDCMP
+#
+#End Doc Library
