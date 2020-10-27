@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 2
+Sheet 1 3
 Title ""
 Date ""
 Rev ""
@@ -118,8 +118,6 @@ F 3 "" H 3650 2450 50  0001 C CNN
 	1    3650 2450
 	1    0    0    -1  
 $EndComp
-Text Notes 10150 6250 2    50   ~ 0
-P/C D/C Circuit
 $Comp
 L Device:Fuse F?
 U 1 1 5F98CB55
@@ -467,54 +465,32 @@ F 3 "" H 10700 1750 50  0001 C CNN
 $EndComp
 Text Notes 8950 2100 0    50   ~ 0
 Sloop & AIRS\nto TSI
-Text HLabel 2500 3900 0    50   Input ~ 0
-24V
 Wire Wire Line
-	2600 3900 2500 3900
-Text HLabel 2500 4000 0    50   Input ~ 0
-10V
-Text HLabel 2500 4200 0    50   Input ~ 0
-GLV_RTN
-Text HLabel 2500 4100 0    50   Input ~ 0
-5V
-Text HLabel 2500 4300 0    50   Input ~ 0
-Throttle_SEL
-Text HLabel 2500 4400 0    50   Input ~ 0
-SDA
-Text HLabel 2500 4500 0    50   Input ~ 0
-SCL
-Text HLabel 2500 4600 0    50   Input ~ 0
-PC_Ready
-Text HLabel 1100 3900 2    50   Output ~ 0
+	2700 5200 2800 5200
+Text HLabel 2700 5000 0    50   Output ~ 0
 APPS
-Text HLabel 1100 4000 2    50   Output ~ 0
+Text HLabel 2700 5100 0    50   Output ~ 0
 SDA
-Text HLabel 1100 4100 2    50   Output ~ 0
+Text HLabel 2700 5200 0    50   Output ~ 0
 SCL
-Text HLabel 1100 4200 2    50   Output ~ 0
+Text HLabel 2700 5300 0    50   Output ~ 0
 Brake_Pressed
-Text HLabel 1100 4300 2    50   Output ~ 0
+Text HLabel 2700 5400 0    50   Output ~ 0
 Brake_Pressed_RTN
-Text HLabel 1100 4600 2    50   Output ~ 0
+Text HLabel 2700 5700 0    50   Output ~ 0
 Throttle_LV
-Text HLabel 1100 4400 2    50   Output ~ 0
+Text HLabel 2700 5500 0    50   Output ~ 0
 BrakePressed_uC
-Text HLabel 1100 4500 2    50   Output ~ 0
+Text HLabel 2700 5600 0    50   Output ~ 0
 Throttle_PL
-$Sheet
-S 1100 3800 1400 950 
-U 5FC85F57
-F0 "TSI-TP" 50
-F1 "TSI_Throttle_Plausibility.sch" 50
-$EndSheet
 Wire Wire Line
-	2600 4400 2500 4400
+	2700 5100 2800 5100
 Wire Wire Line
-	2600 4500 2500 4500
-Text Label 2600 4400 0    50   ~ 0
-SDA
-Text Label 2600 4500 0    50   ~ 0
-SCL
+	2700 5000 2800 5000
+Text Label 2800 5100 0    50   ~ 0
+SDA_TP
+Text Label 2800 5200 0    50   ~ 0
+SCL_TP
 $Comp
 L CarMan_KiCAD_Library:4PinPort U?
 U 1 1 5F984D71
@@ -649,4 +625,60 @@ F 3 "" H 6000 1700 50  0001 C CNN
 $EndComp
 Text Notes 3450 3050 0    50   ~ 0
 Motor Controller\nPins
+Wire Wire Line
+	2700 5500 2800 5500
+Wire Wire Line
+	2700 5400 2800 5400
+Wire Wire Line
+	2700 5300 2800 5300
+Wire Wire Line
+	2700 5700 2800 5700
+Wire Wire Line
+	2700 5600 2800 5600
+Wire Wire Line
+	1200 5200 1300 5200
+Wire Wire Line
+	1200 5100 1300 5100
+Wire Wire Line
+	1200 5000 1300 5000
+Wire Wire Line
+	1200 5500 1300 5500
+Wire Wire Line
+	1200 5400 1300 5400
+Wire Wire Line
+	1200 5300 1300 5300
+Wire Wire Line
+	1200 5700 1300 5700
+Wire Wire Line
+	1200 5600 1300 5600
+Text Notes 1450 6050 0    79   ~ 0
+TSI J3 & TSI J4\n
+$Sheet
+S 1300 4900 1400 950 
+U 5FC85F57
+F0 "TSI-TP" 50
+F1 "TSI_Throttle_Plausibility.sch" 50
+$EndSheet
+Text HLabel 1300 5700 2    50   Input ~ 0
+PC_Ready
+Text HLabel 1300 5600 2    50   Input ~ 0
+SCL
+Text HLabel 1300 5500 2    50   Input ~ 0
+SDA
+Text HLabel 1300 5400 2    50   Input ~ 0
+Throttle_SEL
+Text HLabel 1300 5200 2    50   Input ~ 0
+5V
+Text HLabel 1300 5300 2    50   Input ~ 0
+GLV_RTN
+Text HLabel 1300 5100 2    50   Input ~ 0
+10V
+Text HLabel 1300 5000 2    50   Input ~ 0
+24V
+$Sheet
+S 5450 4900 1550 1200
+U 6196BF15
+F0 "PCDC_Circuit" 79
+F1 "PCDC_Circuit.sch" 79
+$EndSheet
 $EndSCHEMATC
