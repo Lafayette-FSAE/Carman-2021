@@ -367,7 +367,7 @@ Text Notes 800  2650 0    50   ~ 10
 Connection to Logic Board for the I2C line. Runs on Carman's internal W9 wire.
 Text Notes 2350 1600 0    50   ~ 10
 From LSP
-Text Notes 3000 1600 0    50   ~ 10
+Text Notes 3100 1600 0    50   ~ 10
 24V to TSI/Analog Board
 Text Notes 4250 1600 0    50   ~ 10
 24V to Dash/EPAL
@@ -568,16 +568,33 @@ Current/Voltage Sensor and I2C Isolator
 $Comp
 L Mechanical:MountingHole_Pad H1
 U 1 1 5F9DCEB0
-P 5850 2300
-F 0 "H1" H 5950 2349 50  0000 L CNN
-F 1 "MountingHole_Pad" H 5950 2258 50  0000 L CNN
-F 2 "" H 5850 2300 50  0001 C CNN
-F 3 "~" H 5850 2300 50  0001 C CNN
-	1    5850 2300
+P 7450 2300
+F 0 "H1" H 7550 2349 50  0000 L CNN
+F 1 "MountingHole_Pad" H 7550 2258 50  0000 L CNN
+F 2 "" H 7450 2300 50  0001 C CNN
+F 3 "~" H 7450 2300 50  0001 C CNN
+	1    7450 2300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5850 2400 5850 2550
-Text Label 5850 2550 0    39   ~ 8
+	7450 2400 7450 2550
+Text Label 7450 2550 0    39   ~ 8
 CHASS_GND
+Text Label 5750 2100 1    50   ~ 0
+24V
+Text Label 5900 2100 1    50   ~ 0
+GLV_RTN
+$Comp
+L CarMan_KiCAD_Library:2PinPortRight J10
+U 1 1 5F98EB64
+P 5800 2300
+F 0 "J10" V 5650 2350 50  0000 R CNB
+F 1 "2PinPortRight" V 5813 2072 50  0001 R CNN
+F 2 "" H 5800 2300 50  0001 C CNN
+F 3 "" H 5800 2300 50  0001 C CNN
+	1    5800 2300
+	0    -1   -1   0   
+$EndComp
+Text Notes 6400 2650 2    50   ~ 10
+24V to Cooling for switchable power
 $EndSCHEMATC
