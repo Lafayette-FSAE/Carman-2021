@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 6
+Sheet 2 6
 Title ""
 Date ""
 Rev ""
@@ -150,7 +150,7 @@ Spare_Blue
 Text Label 8800 2200 0    50   ~ 0
 LV_RTN
 $Comp
-L TSI_Rev.5-rescue:TLP293-CarMan_KiCAD_Library U?
+L TSI_Rev.5-rescue:TLP293-CarMan_KiCAD_Library-TSI_Rev.5-rescue U?
 U 1 1 5F9A966C
 P 4550 2350
 F 0 "U?" H 4550 2675 50  0000 C CNN
@@ -161,7 +161,7 @@ F 3 "" H 4550 2350 50  0001 L CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TSI_Rev.5-rescue:TLP293-CarMan_KiCAD_Library U?
+L TSI_Rev.5-rescue:TLP293-CarMan_KiCAD_Library-TSI_Rev.5-rescue U?
 U 1 1 5F9AA400
 P 4550 3150
 F 0 "U?" H 4550 3475 50  0000 C CNN
@@ -377,7 +377,7 @@ Wire Wire Line
 Wire Wire Line
 	4250 1300 3800 1300
 $Comp
-L TSI_Rev.5-rescue:TLP293-CarMan_KiCAD_Library U?
+L TSI_Rev.5-rescue:TLP293-CarMan_KiCAD_Library-TSI_Rev.5-rescue U?
 U 1 1 5F9B7294
 P 4550 1400
 F 0 "U?" H 4550 1725 50  0000 C CNN
