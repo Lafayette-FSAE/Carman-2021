@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 5
+Sheet 1 6
 Title ""
 Date ""
 Rev ""
@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L CarMan_KiCAD_Library:4PinPort U?
+L TSI_Rev.5-rescue:4PinPort-CarMan_KiCAD_Library U?
 U 1 1 5F94CC41
 P 4500 1650
 F 0 "U?" H 4500 1965 50  0001 C CNN
@@ -35,7 +35,7 @@ SDA
 Text Notes 4900 2100 2    50   ~ 0
 I2C Connection \nbetween Logic & TSI\n\n
 $Comp
-L CarMan_KiCAD_Library:2PinPortLeft U?
+L TSI_Rev.5-rescue:2PinPortLeft-CarMan_KiCAD_Library U?
 U 1 1 5F94E93F
 P 2150 1700
 F 0 "U?" H 2278 1771 50  0001 L CNN
@@ -62,7 +62,7 @@ Text Label 1900 1600 2    50   ~ 0
 Text Notes 1900 1950 0    50   ~ 0
 Cooling Power\n
 $Comp
-L CarMan_KiCAD_Library:2PinPortLeft U?
+L TSI_Rev.5-rescue:2PinPortLeft-CarMan_KiCAD_Library U?
 U 1 1 5F954DEE
 P 10900 850
 F 0 "U?" H 11028 921 50  0001 L CNN
@@ -79,7 +79,7 @@ DC_RELAY+
 Text Notes 10600 1100 0    50   ~ 0
 Disharge Relay
 $Comp
-L CarMan_KiCAD_Library:4PinPort U?
+L TSI_Rev.5-rescue:4PinPort-CarMan_KiCAD_Library U?
 U 1 1 5F9673CF
 P 2400 2350
 F 0 "U?" H 2400 2665 50  0001 C CNN
@@ -108,7 +108,7 @@ BP_HV
 Text Label 3900 2750 0    50   ~ 0
 Throttle_HV
 $Comp
-L CarMan_KiCAD_Library:8PinPort U?
+L TSI_Rev.5-rescue:8PinPort-CarMan_KiCAD_Library U?
 U 1 1 5F986A39
 P 3650 2450
 F 0 "U?" H 3650 2865 50  0001 C CNN
@@ -168,7 +168,7 @@ HV+
 Text Notes 1300 2650 2    50   ~ 0
 COCKPIT\n
 $Comp
-L CarMan_KiCAD_Library:4PinPort U?
+L TSI_Rev.5-rescue:4PinPort-CarMan_KiCAD_Library U?
 U 1 1 5F9B29AD
 P 1150 2350
 F 0 "U?" H 1150 2665 50  0001 C CNN
@@ -199,7 +199,7 @@ APPS1
 Text Label 3550 750  2    50   ~ 0
 APPS1_10V
 $Comp
-L CarMan_KiCAD_Library:6PinPort U?
+L TSI_Rev.5-rescue:6PinPort-CarMan_KiCAD_Library U?
 U 1 1 5F9E27FE
 P 3800 900
 F 0 "U?" H 3800 1315 50  0001 C CNN
@@ -218,7 +218,7 @@ MC+
 Text Label 750  950  2    50   ~ 0
 HV-
 $Comp
-L CarMan_KiCAD_Library:4PinPort -
+L TSI_Rev.5-rescue:4PinPort-CarMan_KiCAD_Library -
 U 1 1 5F9B4E49
 P 1000 850
 F 0 "-" H 1000 1165 50  0001 C CNN
@@ -265,7 +265,7 @@ Wire Wire Line
 Wire Wire Line
 	5500 900  5550 900 
 $Comp
-L CarMan_KiCAD_Library:6PinPort U?
+L TSI_Rev.5-rescue:6PinPort-CarMan_KiCAD_Library U?
 U 1 1 5F94DCD0
 P 2300 900
 F 0 "U?" H 2300 1315 50  0001 C CNN
@@ -278,7 +278,7 @@ $EndComp
 Text Notes 2150 1400 0    50   ~ 0
 Cooling\nControl\n\n
 $Comp
-L CarMan_KiCAD_Library:2PinPortLeft U?
+L TSI_Rev.5-rescue:2PinPortLeft-CarMan_KiCAD_Library U?
 U 1 1 5F9C7975
 P 5750 850
 F 0 "U?" H 5878 921 50  0001 L CNN
@@ -337,7 +337,7 @@ Wire Wire Line
 Wire Wire Line
 	3900 2750 3850 2750
 $Comp
-L CarMan_KiCAD_Library:4PinPort U?
+L TSI_Rev.5-rescue:4PinPort-CarMan_KiCAD_Library U?
 U 1 1 5FC2D273
 P 8100 800
 F 0 "U?" H 8100 1115 50  0001 C CNN
@@ -366,7 +366,7 @@ AIRS
 Text Notes 7100 2000 0    50   ~ 0
 Dashboard\n
 $Comp
-L CarMan_KiCAD_Library:4PinPort U?
+L TSI_Rev.5-rescue:4PinPort-CarMan_KiCAD_Library U?
 U 1 1 5FC4D91A
 P 7300 1700
 F 0 "U?" H 7300 2015 50  0001 C CNN
@@ -403,7 +403,7 @@ PC_RELAY-
 Text Notes 900  2100 0    50   ~ 0
 Precharge Relay\n\n\n
 $Comp
-L CarMan_KiCAD_Library:2PinPortLeft U?
+L TSI_Rev.5-rescue:2PinPortLeft-CarMan_KiCAD_Library U?
 U 1 1 5F954138
 P 1200 1700
 F 0 "U?" H 1328 1771 50  0001 L CNN
@@ -424,7 +424,7 @@ Wire Wire Line
 Wire Wire Line
 	9000 1650 9050 1650
 $Comp
-L CarMan_KiCAD_Library:4PinPort U?
+L TSI_Rev.5-rescue:4PinPort-CarMan_KiCAD_Library U?
 U 1 1 5F952543
 P 9250 1700
 F 0 "U?" H 9250 2015 50  0001 C CNN
@@ -453,7 +453,7 @@ Text Label 10450 1650 2    50   ~ 0
 Text Label 10450 1800 2    50   ~ 0
 ISO_RTN
 $Comp
-L CarMan_KiCAD_Library:2PinPortLeft U?
+L TSI_Rev.5-rescue:2PinPortLeft-CarMan_KiCAD_Library U?
 U 1 1 5F964084
 P 10700 1750
 F 0 "U?" H 10828 1821 50  0001 L CNN
@@ -492,7 +492,7 @@ SDA_TP
 Text Label 2950 3850 0    50   ~ 0
 SCL_TP
 $Comp
-L CarMan_KiCAD_Library:4PinPort U?
+L TSI_Rev.5-rescue:4PinPort-CarMan_KiCAD_Library U?
 U 1 1 5F984D71
 P 3300 1650
 F 0 "U?" H 3300 1965 50  0001 C CNN
@@ -545,7 +545,7 @@ Wire Wire Line
 Wire Wire Line
 	6950 1050 6900 1050
 $Comp
-L CarMan_KiCAD_Library:6PinPort U?
+L TSI_Rev.5-rescue:6PinPort-CarMan_KiCAD_Library U?
 U 1 1 5F9E1E44
 P 6700 900
 F 0 "U?" H 6700 1315 50  0001 C CNN
@@ -592,7 +592,7 @@ Text Label 9150 900  2    50   ~ 0
 Text Label 9150 750  2    50   ~ 0
 GLV_RTN
 $Comp
-L CarMan_KiCAD_Library:8PinPort U?
+L TSI_Rev.5-rescue:8PinPort-CarMan_KiCAD_Library U?
 U 1 1 5F970776
 P 9400 900
 F 0 "U?" H 9400 1315 50  0001 C CNN
@@ -613,7 +613,7 @@ TSAL
 Text Label 5750 1750 2    50   ~ 0
 TSAL_RTN
 $Comp
-L CarMan_KiCAD_Library:2PinPortLeft U?
+L TSI_Rev.5-rescue:2PinPortLeft-CarMan_KiCAD_Library U?
 U 1 1 5FA0CB48
 P 6000 1700
 F 0 "U?" H 6128 1771 50  0001 L CNN
@@ -911,16 +911,202 @@ Text Notes 4650 5650 0    47   ~ 0
 HIGH VOLTAGE
 Text Notes 8250 3600 0    47   ~ 0
 Where it starts to get funky
+Text HLabel 8150 4450 2    50   Input ~ 0
+Heartbeat
+Text HLabel 8150 4550 2    50   Input ~ 0
+Spare_Red
+Text HLabel 8150 4650 2    50   Input ~ 0
+Spare_Blue
+Text HLabel 9300 3850 0    50   Input ~ 0
++24V
+Text HLabel 9300 3950 0    50   Input ~ 0
+LV_RTN
+Text HLabel 9300 4150 0    50   Input ~ 0
++3.3V
+Text HLabel 9300 4250 0    50   Input ~ 0
+PC_ready
+Text HLabel 9300 4450 0    50   Input ~ 0
++5V
+Wire Wire Line
+	8150 4450 8000 4450
+Wire Wire Line
+	8150 4550 8000 4550
+Wire Wire Line
+	8150 4650 8000 4650
+Wire Wire Line
+	9300 3850 9450 3850
+Wire Wire Line
+	9300 3950 9450 3950
+Wire Wire Line
+	9300 4150 9450 4150
+Wire Wire Line
+	9300 4250 9450 4250
+Wire Wire Line
+	9300 4450 9450 4450
+Text Label 8000 4450 2    50   ~ 0
+Heartbeat
+Text Label 8000 4550 2    50   ~ 0
+Spare_Red
+Text Label 8000 4650 2    50   ~ 0
+Spare_Blue
+Text Label 9450 3850 0    50   ~ 0
++24V
+Text Label 9450 3950 0    50   ~ 0
+LV_RTN
+Text Label 9450 4150 0    50   ~ 0
++3.3V
+Text Label 9450 4250 0    50   ~ 0
+Cooling_CTRL
+Text Label 9450 4450 0    50   ~ 0
++5V
 $Sheet
-S 8150 3800 1150 1050
+S 8150 3800 1150 1200
 U 5FE1DCBA
 F0 "StatusLights_Cockpit" 47
 F1 "StatusLights_Cockpit.sch" 47
 $EndSheet
+Text Label 8000 4350 2    50   ~ 0
+SPARE_LED_CTRL
+Text Label 8000 4250 2    50   ~ 0
+D_LED_CTRL
+Text Label 8000 4150 2    50   ~ 0
+RTDS_CTRL
+Text Label 8000 4050 2    50   ~ 0
+IMD_Status
+Text Label 8000 3950 2    50   ~ 0
+BP_RTN
+Text Label 8000 3850 2    50   ~ 0
+BP
+Wire Wire Line
+	8150 4350 8000 4350
+Wire Wire Line
+	8150 4250 8000 4250
+Wire Wire Line
+	8150 4150 8000 4150
+Wire Wire Line
+	8150 4050 8000 4050
+Wire Wire Line
+	8150 3950 8000 3950
+Wire Wire Line
+	8150 3850 8000 3850
+Text HLabel 8150 4350 2    50   Input ~ 0
+SPARE_LED_CTRL
+Text HLabel 8150 4250 2    50   Input ~ 0
+D_LED_CTRL
+Text HLabel 8150 4150 2    50   Input ~ 0
+RTDS_CTRL
+Text HLabel 8150 4050 2    50   Input ~ 0
+IMD_Status
+Text HLabel 8150 3950 2    50   Input ~ 0
+BP_RTN
+Text HLabel 8150 3850 2    50   Input ~ 0
+BP
+Wire Notes Line
+	8150 4800 9300 4800
+Text Notes 8750 4750 2    50   ~ 0
+LV\n
+Text Notes 8750 4900 2    50   ~ 0
+HV
+Text HLabel 8150 4850 2    50   Input ~ 0
+HV+
+Text HLabel 8150 4950 2    50   Input ~ 0
+HV-
+Wire Wire Line
+	8150 4850 8000 4850
+Wire Wire Line
+	8150 4950 8000 4950
+Text Label 8000 4850 2    50   ~ 0
+HV+
+Text Label 8000 4950 2    50   ~ 0
+HV-
+Text HLabel 8300 5500 2    50   Output ~ 0
+CANTX
+Text HLabel 8300 5600 2    50   Output ~ 0
+CANRX
+Text HLabel 8300 5900 2    50   Output ~ 0
++10V
+Text HLabel 8300 6000 2    50   Output ~ 0
++5V
+Text HLabel 8300 6100 2    50   Output ~ 0
++3.3V
+Text HLabel 8300 6200 2    50   Output ~ 0
++24V
+Text HLabel 8300 6300 2    50   Output ~ 0
+LV_RTN
+Text HLabel 8300 6400 2    50   Output ~ 0
+CH_gnd
+Wire Wire Line
+	8300 5500 8150 5500
+Wire Wire Line
+	8300 5600 8150 5600
+Wire Wire Line
+	8300 5900 8150 5900
+Wire Wire Line
+	8300 6000 8150 6000
+Wire Wire Line
+	8300 6100 8150 6100
+Wire Wire Line
+	8300 6200 8150 6200
+Wire Wire Line
+	8300 6300 8150 6300
+Wire Wire Line
+	8300 6400 8150 6400
+Text Label 8150 5500 2    50   ~ 0
+CANTX
+Text Label 8150 5600 2    50   ~ 0
+CANRX
+Text Label 8150 5900 2    50   ~ 0
++10DC
+Text Label 8150 6000 2    50   ~ 0
++5DC
+Text Label 8150 6100 2    50   ~ 0
+V3.3
+Text Label 8150 6200 2    50   ~ 0
++24V
+Text Label 8150 6300 2    50   ~ 0
+LV_RTN
+Text Label 8150 6400 2    50   ~ 0
+CH_gnd
+Text HLabel 8300 5700 2    50   Output ~ 0
+AIRs+
+Text HLabel 8300 5800 2    50   Output ~ 0
+AIRs-
+Wire Wire Line
+	8300 5700 8150 5700
+Wire Wire Line
+	8300 5800 8150 5800
+Text Label 8150 5700 2    50   ~ 0
+AIRs+
+Text Label 8150 5800 2    50   ~ 0
+AIRs-
+Text Label 9700 5500 0    50   ~ 0
+Cooling_CTRL
+Text HLabel 9550 5500 0    50   Input ~ 0
+Cooling_CTRL
+Wire Wire Line
+	9700 5500 9550 5500
 $Sheet
-S 8150 5200 1250 900 
+S 8300 5450 1250 900 
 U 5FE1DE7D
 F0 "CAN_GLV_POWER" 47
 F1 "CAN_GLV_POWER.sch" 47
 $EndSheet
+Text Label 9700 6200 0    50   ~ 0
+IMD_Status
+Text Label 9700 6100 0    50   ~ 0
+Safety_Loop
+Wire Wire Line
+	9700 6200 9550 6200
+Wire Wire Line
+	9700 6100 9550 6100
+Text HLabel 9550 6200 0    50   Output ~ 0
+IMD_Status
+Text HLabel 9550 6100 0    50   Output ~ 0
+Safety_Loop
+Text HLabel 9550 6300 0    50   Output ~ 0
+Cooling_power
+Wire Wire Line
+	9700 6300 9550 6300
+Text Label 9700 6300 0    50   ~ 0
+Cooling_power
 $EndSCHEMATC

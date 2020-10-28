@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 2 5
+Sheet 2 6
 Title ""
 Date ""
 Rev ""
@@ -111,7 +111,7 @@ Connection ~ 1300 6350
 Wire Wire Line
 	1300 6350 1600 6350
 $Comp
-L CarMan_KiCAD_Library:TL431PS D10
+L TSI_Rev.5-rescue:TL431PS-CarMan_KiCAD_Library D10
 U 1 1 60A1FD4B
 P 1700 6350
 F 0 "D10" V 1800 6500 50  0000 R CNN
@@ -363,7 +363,7 @@ Wire Wire Line
 	2050 4750 2200 4750
 NoConn ~ 8650 5550
 $Comp
-L CarMan_KiCAD_Library:MCP23016-I_SO U7
+L TSI_Rev.5-rescue:MCP23016-I_SO-CarMan_KiCAD_Library U7
 U 1 1 6097B17D
 P 9450 6450
 F 0 "U7" H 9450 7715 50  0000 C CNN
@@ -961,7 +961,7 @@ Text Label 14600 5100 0    50   ~ 0
 Text Notes 13750 4850 0    50   ~ 0
 Binary Address:\n1001101\n
 $Comp
-L CarMan_KiCAD_Library:TS5A3159-Q1 SW2
+L TSI_Rev.5-rescue:TS5A3159-Q1-CarMan_KiCAD_Library SW2
 U 1 1 607E8FA8
 P 14100 4050
 F 0 "SW2" H 14100 4250 50  0000 C CNN
@@ -994,7 +994,7 @@ Wire Wire Line
 Text Notes 13850 3750 0    63   ~ 0
 AUTO TURN\nOFF SWITCH
 $Comp
-L CarMan_KiCAD_Library:DAC5574IDGS U30
+L TSI_Rev.5-rescue:DAC5574IDGS-CarMan_KiCAD_Library U30
 U 1 1 609B748C
 P 13900 5300
 F 0 "U30" H 13900 5650 50  0000 C CNN
@@ -1347,7 +1347,7 @@ APPS1
 Text Label 11900 850  2    50   ~ 0
 APPS1_10V
 $Comp
-L CarMan_KiCAD_Library:6PinPort U?
+L TSI_Rev.5-rescue:6PinPort-CarMan_KiCAD_Library U?
 U 1 1 5FCCFFAA
 P 12150 1000
 AR Path="/5FCCFFAA" Ref="U?"  Part="1" 
@@ -1378,7 +1378,7 @@ Wire Wire Line
 Wire Wire Line
 	10700 1000 10750 1000
 $Comp
-L CarMan_KiCAD_Library:2PinPortLeft U?
+L TSI_Rev.5-rescue:2PinPortLeft-CarMan_KiCAD_Library U?
 U 1 1 5FCD0DD5
 P 10950 950
 AR Path="/5FCD0DD5" Ref="U?"  Part="1" 
@@ -1808,7 +1808,7 @@ Wire Wire Line
 Wire Wire Line
 	15450 7600 15400 7600
 $Comp
-L CarMan_KiCAD_Library:TLP293 U23
+L TSI_Rev.5-rescue:TLP293-CarMan_KiCAD_Library U23
 U 1 1 60D50797
 P 15100 7700
 F 0 "U23" H 15100 8025 50  0000 C CNN

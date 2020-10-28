@@ -154,7 +154,7 @@ F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 6450 2950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CarMan_KiCAD_Library:74LS00PowerPins U?
+L TSI_Rev.5-rescue:74LS00PowerPins-CarMan_KiCAD_Library U?
 U 1 1 619B0A27
 P 6450 2950
 F 0 "U?" H 6394 2950 50  0001 L CNN
@@ -297,7 +297,7 @@ Connection ~ 7900 3050
 Text Notes 8550 3050 2    55   ~ 0
 5V
 $Comp
-L CarMan_KiCAD_Library:SN74LVC1G08DCKR U29
+L TSI_Rev.5-rescue:SN74LVC1G08DCKR-CarMan_KiCAD_Library U29
 U 1 1 61A02EF8
 P 5800 4250
 F 0 "U29" H 5750 4500 55  0000 C CNN
@@ -476,7 +476,7 @@ IGNI_VCC
 Text Label 9200 800  2    50   ~ 0
 IGNI_GND
 $Comp
-L CarMan_KiCAD_Library:8PinPort U?
+L TSI_Rev.5-rescue:8PinPort-CarMan_KiCAD_Library U?
 U 1 1 61A9B90B
 P 9450 950
 AR Path="/61A9B90B" Ref="U?"  Part="1" 
@@ -497,7 +497,7 @@ X
 Text Label 9200 1100 2    50   ~ 0
 IO_GND
 $Comp
-L CarMan_KiCAD_Library:2PinPortLeft U?
+L TSI_Rev.5-rescue:2PinPortLeft-CarMan_KiCAD_Library U?
 U 1 1 61A9B915
 P 8100 950
 AR Path="/61A9B915" Ref="U?"  Part="1" 
@@ -530,7 +530,7 @@ DC_RELAY+
 Text Label 6700 1000 2    50   ~ 0
 DC_RELAY-
 $Comp
-L CarMan_KiCAD_Library:2PinPortLeft U?
+L TSI_Rev.5-rescue:2PinPortLeft-CarMan_KiCAD_Library U?
 U 1 1 61A9B925
 P 6950 950
 AR Path="/61A9B925" Ref="U?"  Part="1" 
@@ -591,7 +591,7 @@ Text Label 9550 4250 2    55   ~ 0
 Text Label 9550 2050 2    50   ~ 0
 24HV
 $Comp
-L CarMan_KiCAD_Library:STN3NF06L Q4
+L TSI_Rev.5-rescue:STN3NF06L-CarMan_KiCAD_Library Q4
 U 1 1 5FA4478A
 P 9600 3050
 F 0 "Q4" H 9750 3050 55  0000 L CNN
@@ -879,7 +879,7 @@ IO_Ground
 Text Notes 2350 6000 0    197  ~ 0
 LOW VOLTAGE\n
 $Comp
-L CarMan_KiCAD_Library:TLP293 U34
+L TSI_Rev.5-rescue:TLP293-CarMan_KiCAD_Library U34
 U 1 1 5F9E712D
 P 6300 6450
 F 0 "U34" H 6400 6650 50  0000 C CNN
@@ -1096,7 +1096,7 @@ Wire Wire Line
 	5700 10600 5700 10550
 Connection ~ 5700 10600
 $Comp
-L CarMan_KiCAD_Library:TLP293 U32
+L TSI_Rev.5-rescue:TLP293-CarMan_KiCAD_Library U32
 U 1 1 5FB4F426
 P 6300 10700
 F 0 "U32" H 6100 10950 50  0000 C CNN
@@ -1169,7 +1169,7 @@ F 3 "~" H 5200 9100 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L CarMan_KiCAD_Library:THN_30-2415WI PS1
+L TSI_Rev.5-rescue:THN_30-2415WI-CarMan_KiCAD_Library PS1
 U 1 1 5FBB1814
 P 6350 9650
 F 0 "PS1" H 6325 10081 79  0000 C CNN
@@ -1197,7 +1197,7 @@ Wire Wire Line
 Wire Wire Line
 	5500 9500 5550 9500
 $Comp
-L CarMan_KiCAD_Library:TLP293 U37
+L TSI_Rev.5-rescue:TLP293-CarMan_KiCAD_Library U37
 U 1 1 5FD6E6F7
 P 6300 8400
 F 0 "U37" H 6400 8600 50  0000 C CNN
@@ -1266,7 +1266,7 @@ Wire Wire Line
 Wire Wire Line
 	7050 7150 6600 7150
 $Comp
-L CarMan_KiCAD_Library:TLP293 U31
+L TSI_Rev.5-rescue:TLP293-CarMan_KiCAD_Library U31
 U 1 1 5FA8091D
 P 6300 7250
 F 0 "U31" H 6400 7450 50  0000 C CNN
@@ -1363,7 +1363,7 @@ Connection ~ 3300 8200
 Wire Wire Line
 	3300 8200 3650 8200
 $Comp
-L CarMan_KiCAD_Library:MC7805BDTRKG U20
+L TSI_Rev.5-rescue:MC7805BDTRKG-CarMan_KiCAD_Library U20
 U 1 1 5FEDF126
 P 15000 8900
 F 0 "U20" H 15000 9308 79  0000 C CNN
@@ -1418,7 +1418,7 @@ Text Notes 14500 9750 0    79   ~ 0
 Text Notes 15200 9050 0    79   ~ 0
 25mA\n
 $Comp
-L CarMan_KiCAD_Library:TS431ILT IC4
+L TSI_Rev.5-rescue:TS431ILT-CarMan_KiCAD_Library IC4
 U 1 1 5FF9DD5A
 P 13600 7650
 F 0 "IC4" H 13600 8081 79  0000 C CNN
@@ -1508,7 +1508,7 @@ DC_RELAY+
 Text Label 9600 6850 2    50   ~ 0
 DC_RELAY-
 $Comp
-L CarMan_KiCAD_Library:2PinPortLeft U?
+L TSI_Rev.5-rescue:2PinPortLeft-CarMan_KiCAD_Library U?
 U 1 1 60120F02
 P 9850 6800
 AR Path="/60120F02" Ref="U?"  Part="1" 
@@ -1718,7 +1718,7 @@ Text Notes 5800 11000 0    47   ~ 0
 Text Notes 9800 6800 0    47   ~ 0
 NC
 $Comp
-L CarMan_KiCAD_Library:2PinPortLeft U?
+L TSI_Rev.5-rescue:2PinPortLeft-CarMan_KiCAD_Library U?
 U 1 1 607BAD51
 P 11500 2500
 AR Path="/607BAD51" Ref="U?"  Part="1" 

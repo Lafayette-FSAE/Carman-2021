@@ -735,7 +735,7 @@ Wire Wire Line
 Wire Wire Line
 	14600 5400 14650 5400
 $Comp
-L CarMan_KiCAD_Library:Current_Sensor J25
+L TSI_Rev.5-rescue:Current_Sensor-CarMan_KiCAD_Library J25
 U 1 1 5FB0E179
 P 11950 1900
 F 0 "J25" H 11950 1900 50  0000 C CNN
@@ -760,7 +760,7 @@ IO_Ground
 Text Label 12500 2450 0    50   ~ 0
 5HV
 $Comp
-L CarMan_KiCAD_Library:NCD9830DBR2G U25
+L TSI_Rev.5-rescue:NCD9830DBR2G-CarMan_KiCAD_Library U25
 U 1 1 5FB6F4DE
 P 7500 5550
 F 0 "U25" H 7500 6250 50  0000 C CNN
@@ -813,7 +813,7 @@ Wire Wire Line
 Text Label 6750 6000 2    50   ~ 0
 5HV
 $Comp
-L CarMan_KiCAD_Library:TS431ILT IC1
+L TSI_Rev.5-rescue:TS431ILT-CarMan_KiCAD_Library IC1
 U 1 1 5FBACDB3
 P 14400 8900
 F 0 "IC1" H 14400 9150 79  0000 C CNN
@@ -871,7 +871,7 @@ Wire Notes Line
 Wire Notes Line
 	2950 11150 3000 11150
 $Comp
-L CarMan_KiCAD_Library:SI8600AB-B-IS U5
+L TSI_Rev.5-rescue:SI8600AB-B-IS-CarMan_KiCAD_Library U5
 U 1 1 5FBF8C01
 P 3950 5450
 F 0 "U5" H 4150 5850 50  0000 C CNN
@@ -917,7 +917,7 @@ Wire Wire Line
 Text Label 3400 5750 2    50   ~ 0
 GLV_Return
 $Comp
-L CarMan_KiCAD_Library:ACPL-C870 U4
+L TSI_Rev.5-rescue:ACPL-C870-CarMan_KiCAD_Library U4
 U 1 1 5FC68EC7
 P 4000 2150
 F 0 "U4" H 4150 2500 50  0000 C CNN
