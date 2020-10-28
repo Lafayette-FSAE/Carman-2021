@@ -231,10 +231,10 @@ Text Label 1150 6550 2    50   ~ 0
 24V
 Text Label 1150 6950 2    50   ~ 0
 GLV_RTN
-Text Notes 2400 6200 0    50   ~ 0
-High Voltage
-Text Notes 2400 6350 0    50   ~ 0
-Low Voltage
+Text Notes 1900 6200 0    50   ~ 0
+HIGH VOLTAGE\n
+Text Notes 1900 6350 0    50   ~ 0
+LOW VOLTAGE\n
 Text Label 1250 3400 2    50   ~ 0
 24V
 Text Label 1250 3500 2    50   ~ 0
@@ -634,66 +634,6 @@ F12 "MC_Voltage" I L 4450 6650 50
 F13 "HV+" I L 4450 6850 50 
 F14 "HV-" I L 4450 6950 50 
 $EndSheet
-Wire Wire Line
-	5050 2650 5050 2700
-Text Label 5050 2650 0    50   ~ 0
-IO_Ground
-Wire Wire Line
-	4650 2950 5300 2950
-Wire Wire Line
-	4650 2800 4800 2800
-$Comp
-L Device:Jumper_NC_Dual JP?
-U 1 1 5FCC6F9A
-P 5050 2800
-AR Path="/6196BF15/5FCC6F9A" Ref="JP?"  Part="1" 
-AR Path="/5FCC6F9A" Ref="JP?"  Part="1" 
-F 0 "JP?" H 5350 2750 50  0000 C CNN
-F 1 "Jumper_NC_Dual" H 4300 3200 50  0001 C CNN
-F 2 "" H 5050 2800 50  0001 C CNN
-F 3 "~" H 5050 2800 50  0001 C CNN
-	1    5050 2800
-	-1   0    0    1   
-$EndComp
-Text Label 4200 2950 2    50   ~ 0
-IO_Ground
-Text Label 4200 3100 2    50   ~ 0
-X
-Text Label 4700 2650 0    50   ~ 0
-BP_HV
-Text Label 4700 3100 0    50   ~ 0
-Throttle_HV
-$Comp
-L TSI_Rev.5-rescue:8PinPort-CarMan_KiCAD_Library-TSI_Rev.5-rescue U?
-U 1 1 5FCC6F90
-P 4450 2800
-AR Path="/5FCC6F90" Ref="U?"  Part="1" 
-AR Path="/6196BF15/5FCC6F90" Ref="U?"  Part="1" 
-F 0 "U?" H 4450 3215 50  0001 C CNN
-F 1 "TSI J32" H 4450 3124 50  0000 C CNN
-F 2 "" H 4450 2800 50  0001 C CNN
-F 3 "" H 4450 2800 50  0001 C CNN
-	1    4450 2800
-	1    0    0    -1  
-$EndComp
-Text Label 4200 2650 2    50   ~ 0
-IGNI_GND
-Text Label 4200 2800 2    50   ~ 0
-IGNI_VCC
-Wire Wire Line
-	4200 2650 4250 2650
-Wire Wire Line
-	4200 2800 4250 2800
-Wire Wire Line
-	4200 2950 4250 2950
-Wire Wire Line
-	4200 3100 4250 3100
-Wire Wire Line
-	4700 2650 4650 2650
-Wire Wire Line
-	4700 3100 4650 3100
-Text Notes 4250 3400 0    50   ~ 0
-Motor Controller\nPins
 Text Notes 1350 7650 0    79   ~ 0
 TSI J8, TSI J9 & TSI J32\n
 $Sheet
@@ -732,8 +672,6 @@ Text Label 1150 6650 2    50   ~ 0
 5V
 Wire Wire Line
 	1150 6650 1350 6650
-Wire Notes Line
-	1100 6250 3100 6250
 Text Label 1150 7250 2    50   ~ 0
 GLV_RTN
 Text Label 1150 6850 2    50   ~ 0
@@ -990,12 +928,59 @@ Wire Wire Line
 Connection ~ 9700 900 
 Wire Wire Line
 	9700 900  9700 1050
-Wire Wire Line
-	4600 2950 4600 2800
-Wire Wire Line
-	5300 2800 5300 2950
 Text Notes 4250 7600 0    79   ~ 0
 TSI J1 & TSI J25 (Current Sensor)\n
 Wire Notes Line
 	5200 6050 5200 7250
+Wire Notes Line
+	1350 6250 2900 6250
+Text Label 4000 2950 2    50   ~ 0
+IO_Ground
+Text Label 4500 3050 0    50   ~ 0
+Throttle_HV
+Text Label 4000 2750 2    50   ~ 0
+IGNI_GND
+Text Label 4000 2850 2    50   ~ 0
+IGNI_VCC
+Text Notes 4050 3300 0    50   ~ 0
+Motor Controller\nPins
+$Comp
+L Connector_Generic:Conn_02x04_Counter_Clockwise J?
+U 1 1 6068B997
+P 4200 2850
+AR Path="/6196BF15/6068B997" Ref="J?"  Part="1" 
+AR Path="/6068B997" Ref="J?"  Part="1" 
+F 0 "J?" H 4250 3167 50  0001 C CNN
+F 1 "TSI J32" H 4250 3075 50  0000 C CNN
+F 2 "" H 4200 2850 50  0001 C CNN
+F 3 "~" H 4200 2850 50  0001 C CNN
+	1    4200 2850
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4000 3050
+Text Label 4500 2750 0    50   ~ 0
+BP_HV
+$Comp
+L Device:Jumper_NC_Dual JP?
+U 1 1 6068B99F
+P 5350 2850
+AR Path="/6196BF15/6068B99F" Ref="JP?"  Part="1" 
+AR Path="/6068B99F" Ref="JP?"  Part="1" 
+F 0 "JP?" H 5650 2800 50  0000 C CNN
+F 1 "Jumper_NC_Dual" H 4600 3250 50  0001 C CNN
+F 2 "" H 5350 2850 50  0001 C CNN
+F 3 "~" H 5350 2850 50  0001 C CNN
+	1    5350 2850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4500 2950 5600 2950
+Wire Wire Line
+	5100 2850 4500 2850
+Wire Wire Line
+	5350 2700 5350 2750
+Text Label 5350 2700 0    50   ~ 0
+IGNI_GND
+Wire Wire Line
+	5600 2850 5600 2950
 $EndSCHEMATC
