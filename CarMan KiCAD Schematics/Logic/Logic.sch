@@ -48,19 +48,6 @@ F 3 "~" H 1000 5700 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L PYB20-Q24-S5:PYB20-Q24-S5 U2
-U 1 1 5F997454
-P 2300 7000
-F 0 "U2" H 2300 7667 50  0000 C CNN
-F 1 "PYB20-Q24-S5" H 2300 7576 50  0000 C CNN
-F 2 "CONV_PYB20-Q24-S5" H 2300 7000 50  0001 L BNN
-F 3 "CUI Inc" H 2300 7000 50  0001 L BNN
-F 4 "1.04" H 2300 7000 50  0001 L BNN "Field4"
-F 5 "Manufacturer Recommendations" H 2300 7000 50  0001 L BNN "Field5"
-	1    2300 7000
-	1    0    0    -1  
-$EndComp
-$Comp
 L Lafayette_Electric_Car_Internals:LT1763CS8-3.3PBF U4
 U 1 1 5F997AAE
 P 5000 6900
@@ -76,23 +63,6 @@ F 8 "Unavailable" H 5000 6900 50  0001 L BNN "Field8"
 	1    5000 6900
 	1    0    0    -1  
 $EndComp
-NoConn ~ 1700 6900
-Wire Wire Line
-	850  6800 1150 6800
-Text Label 850  6700 0    50   ~ 0
-24V_iso
-Text Label 850  6800 0    50   ~ 0
-24V_iso_rtn
-Wire Wire Line
-	850  6700 1450 6700
-Wire Wire Line
-	1150 6800 1150 7300
-Wire Wire Line
-	2900 7300 2900 7600
-Wire Wire Line
-	1650 7600 1650 7300
-NoConn ~ 2900 7100
-Connection ~ 2900 7300
 Text Label 3150 6700 0    50   ~ 0
 5V
 Text Label 3150 7300 0    50   ~ 0
@@ -109,13 +79,9 @@ Wire Wire Line
 	4200 7400 4300 7400
 Connection ~ 4200 7300
 Wire Wire Line
-	2900 7300 3050 7300
-Wire Wire Line
 	4050 7000 4050 6700
 Wire Wire Line
 	4050 6600 4300 6600
-Wire Wire Line
-	2900 6700 3050 6700
 Connection ~ 4050 6700
 Wire Wire Line
 	4050 6700 4050 6600
@@ -127,32 +93,6 @@ Wire Wire Line
 	4200 6050 4200 6800
 Wire Wire Line
 	4200 6800 4300 6800
-Connection ~ 1650 7300
-Wire Wire Line
-	1650 7300 1700 7300
-Wire Wire Line
-	1150 7300 1450 7300
-$Comp
-L Device:C C1
-U 1 1 5F99E44C
-P 1450 7000
-F 0 "C1" H 1565 7046 50  0000 L CNN
-F 1 "0.1uF" H 1565 6955 50  0000 L CNN
-F 2 "" H 1488 6850 50  0001 C CNN
-F 3 "~" H 1450 7000 50  0001 C CNN
-	1    1450 7000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1450 6850 1450 6700
-Connection ~ 1450 6700
-Wire Wire Line
-	1450 6700 1700 6700
-Wire Wire Line
-	1450 7150 1450 7300
-Connection ~ 1450 7300
-Wire Wire Line
-	1450 7300 1650 7300
 $Comp
 L Device:C C3
 U 1 1 5F99F0F5
@@ -166,10 +106,8 @@ F 3 "~" H 3050 7000 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3050 7150 3050 7300
-Connection ~ 3050 7300
 Wire Wire Line
 	3050 6850 3050 6700
-Connection ~ 3050 6700
 Wire Wire Line
 	3050 6700 4050 6700
 $Comp
@@ -943,8 +881,6 @@ Wire Wire Line
 	550  2900 1000 2900
 Wire Wire Line
 	550  3000 1200 3000
-Wire Wire Line
-	2900 7600 1650 7600
 $Sheet
 S 7900 3900 900  500 
 U 5F9A7CF0
@@ -1034,9 +970,9 @@ Wire Wire Line
 Wire Wire Line
 	5950 6900 5950 6600
 Text Label 6850 6050 1    50   ~ 0
-24V_iso
+5V_iso
 Text Label 6750 6050 1    50   ~ 0
-24V_iso_rtn
+5V_iso_rtn
 Text Label 6650 6050 1    50   ~ 0
 SCL_uc
 Text Label 6550 6050 1    50   ~ 0
@@ -1060,8 +996,6 @@ Throttle_SEL
 Text Label 6150 6650 3    50   ~ 0
 CoolTemp
 Text Label 6250 6650 3    50   ~ 0
-PC_ready
-Text Label 6350 6650 3    50   ~ 0
 PC_ready
 Text Label 6450 6650 3    50   ~ 0
 Flowrate
@@ -1110,7 +1044,6 @@ NoConn ~ 6350 2600
 NoConn ~ 6350 2900
 NoConn ~ 6350 3400
 NoConn ~ 6350 3500
-NoConn ~ 6350 3600
 NoConn ~ 6350 3800
 NoConn ~ 6350 3900
 NoConn ~ 6350 4000
@@ -1151,4 +1084,20 @@ Text Label 1050 4050 0    50   ~ 0
 PGEC
 Text Label 1050 4150 0    50   ~ 0
 PGED
+Wire Wire Line
+	6350 3600 6850 3600
+Text Label 6500 3600 0    50   ~ 0
+D_LED_CTRL
+Text Label 6350 6650 3    50   ~ 0
+D_LED_CTRL
+Wire Wire Line
+	3050 6700 2600 6700
+Connection ~ 3050 6700
+Wire Wire Line
+	3050 7300 2600 7300
+Connection ~ 3050 7300
+Text Label 2600 7300 0    50   ~ 0
+5V_iso_rtn
+Text Label 2600 6700 0    50   ~ 0
+5V_iso
 $EndSCHEMATC
