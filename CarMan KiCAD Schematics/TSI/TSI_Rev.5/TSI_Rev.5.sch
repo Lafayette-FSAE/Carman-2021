@@ -143,12 +143,8 @@ Text Label 8400 850  2    50   ~ 0
 24V+
 Text Label 8400 750  2    50   ~ 0
 GLV_RTN
-Text Notes 4550 2150 0    50   ~ 0
-TSI Power \nfrom GLV\n
-Text Label 4500 1800 2    50   ~ 0
-TSAL
-Text Label 4500 1900 2    50   ~ 0
-TSAL_RTN
+Text Notes 4650 2200 0    50   ~ 0
+TSAL Power
 Wire Wire Line
 	2750 4100 2850 4100
 Wire Wire Line
@@ -321,104 +317,12 @@ Text Notes 4550 6200 0    47   ~ 0
 HIGH VOLTAGE
 Text Notes 9100 3500 0    47   ~ 0
 Where it starts to get funky
-Text HLabel 9000 4350 2    50   Input ~ 0
-Heartbeat
-Text HLabel 9000 4450 2    50   Input ~ 0
-Spare_Red
-Text HLabel 9000 4550 2    50   Input ~ 0
-Spare_Blue
-Text HLabel 10150 3750 0    50   Input ~ 0
-+24V
-Text HLabel 10150 3850 0    50   Input ~ 0
-LV_RTN
-Text HLabel 10150 4050 0    50   Input ~ 0
-+3.3V
-Text HLabel 10150 4150 0    50   Input ~ 0
-PC_ready
-Text HLabel 10150 4350 0    50   Input ~ 0
-+5V
-Wire Wire Line
-	9000 4350 8850 4350
-Wire Wire Line
-	9000 4450 8850 4450
-Wire Wire Line
-	9000 4550 8850 4550
-Wire Wire Line
-	10150 3750 10300 3750
-Wire Wire Line
-	10150 3850 10300 3850
-Wire Wire Line
-	10150 4050 10300 4050
-Wire Wire Line
-	10150 4150 10300 4150
-Wire Wire Line
-	10150 4350 10300 4350
-Text Label 8850 4350 2    50   ~ 0
-Heartbeat
-Text Label 8850 4450 2    50   ~ 0
-Spare_Red
-Text Label 8850 4550 2    50   ~ 0
-Spare_Blue
-Text Label 10300 3750 0    50   ~ 0
-+24V
-Text Label 10300 3850 0    50   ~ 0
-LV_RTN
-Text Label 10300 4050 0    50   ~ 0
-+3.3V
-Text Label 10300 4350 0    50   ~ 0
-+5V
-$Sheet
-S 9000 3700 1150 1200
-U 5FE1DCBA
-F0 "StatusLights_Cockpit" 47
-F1 "StatusLights_Cockpit.sch" 47
-$EndSheet
-Text Label 8850 4250 2    50   ~ 0
-SPARE_LED_CTRL
-Text Label 8850 4150 2    50   ~ 0
-D_LED_CTRL
-Text Label 8850 4050 2    50   ~ 0
-RTDS_CTRL
-Text Label 8850 3950 2    50   ~ 0
-IMD_Status
-Text Label 8850 3850 2    50   ~ 0
-BP_RTN
-Text Label 8850 3750 2    50   ~ 0
-BP
-Wire Wire Line
-	9000 4250 8850 4250
-Wire Wire Line
-	9000 4150 8850 4150
-Wire Wire Line
-	9000 4050 8850 4050
-Wire Wire Line
-	9000 3950 8850 3950
-Wire Wire Line
-	9000 3850 8850 3850
-Wire Wire Line
-	9000 3750 8850 3750
-Text HLabel 9000 4250 2    50   Input ~ 0
-SPARE_LED_CTRL
-Text HLabel 9000 4150 2    50   Input ~ 0
-D_LED_CTRL
-Text HLabel 9000 4050 2    50   Input ~ 0
-RTDS_CTRL
-Text HLabel 9000 3950 2    50   Input ~ 0
-IMD_Status
-Text HLabel 9000 3850 2    50   Input ~ 0
-BP_RTN
-Text HLabel 9000 3750 2    50   Input ~ 0
-BP
 Wire Notes Line
 	9000 4700 10150 4700
 Text Notes 9600 4650 2    50   ~ 0
 LV\n
 Text Notes 9600 4800 2    50   ~ 0
 HV
-Text HLabel 9000 4750 2    50   Input ~ 0
-HV+
-Text HLabel 9000 4850 2    50   Input ~ 0
-HV-
 Wire Wire Line
 	9000 4750 8850 4750
 Wire Wire Line
@@ -521,8 +425,8 @@ $Comp
 L Connector_Generic:Conn_02x10_Counter_Clockwise J?
 U 1 1 5F99B7E9
 P 7000 3150
-F 0 "J?" H 7050 3767 50  0000 C CNN
-F 1 "Conn_02x10_Counter_Clockwise" H 7050 3676 50  0000 C CNN
+F 0 "J?" H 7050 3767 50  0001 C CNN
+F 1 "J26" H 7050 3676 50  0000 C CNN
 F 2 "" H 7000 3150 50  0001 C CNN
 F 3 "~" H 7000 3150 50  0001 C CNN
 	1    7000 3150
@@ -684,7 +588,7 @@ L Connector_Generic:Conn_01x04 J?
 U 1 1 5FC3F568
 P 1000 800
 F 0 "J?" H 1080 792 50  0001 L CNN
-F 1 "TSI J1" H 900 1000 50  0000 L CNN
+F 1 "J1" H 950 1000 50  0000 L CNN
 F 2 "" H 1000 800 50  0001 C CNN
 F 3 "~" H 1000 800 50  0001 C CNN
 	1    1000 800 
@@ -772,7 +676,7 @@ L Connector_Generic:Conn_01x04 J?
 U 1 1 5FF93FA5
 P 2350 1850
 F 0 "J?" H 2430 1842 50  0001 L CNN
-F 1 "TSI J11" H 2250 2050 50  0000 L CNN
+F 1 "J11" H 2300 2050 50  0000 L CNN
 F 2 "" H 2350 1850 50  0001 C CNN
 F 3 "~" H 2350 1850 50  0001 C CNN
 	1    2350 1850
@@ -783,7 +687,7 @@ L Connector_Generic:Conn_01x04 J?
 U 1 1 5FFF16D2
 P 3550 1850
 F 0 "J?" H 3630 1842 50  0001 L CNN
-F 1 "TSI J12" H 3450 2050 50  0000 L CNN
+F 1 "J12" H 3500 2050 50  0000 L CNN
 F 2 "" H 3550 1850 50  0001 C CNN
 F 3 "~" H 3550 1850 50  0001 C CNN
 	1    3550 1850
@@ -797,22 +701,11 @@ Text Label 3350 1850 2    50   ~ 0
 SCL
 NoConn ~ 3350 2050
 $Comp
-L Connector_Generic:Conn_01x02 J?
-U 1 1 60068740
-P 4700 1800
-F 0 "J?" H 4780 1792 50  0001 L CNN
-F 1 "TSI J13" H 4600 1950 50  0000 L CNN
-F 2 "" H 4700 1800 50  0001 C CNN
-F 3 "~" H 4700 1800 50  0001 C CNN
-	1    4700 1800
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector_Generic:Conn_01x04 J?
 U 1 1 600AD6CD
 P 6150 1850
 F 0 "J?" H 6230 1842 50  0001 L CNN
-F 1 "TSI J14" H 6000 2100 50  0000 L CNN
+F 1 "J14" H 6100 2050 50  0000 L CNN
 F 2 "" H 6150 1850 50  0001 C CNN
 F 3 "~" H 6150 1850 50  0001 C CNN
 	1    6150 1850
@@ -983,4 +876,98 @@ Text Label 5350 2700 0    50   ~ 0
 IGNI_GND
 Wire Wire Line
 	5600 2850 5600 2950
+$Comp
+L Connector_Generic:Conn_01x04 J?
+U 1 1 60794552
+P 4850 1850
+F 0 "J?" H 4930 1842 50  0001 L CNN
+F 1 "J13" H 4800 2050 50  0000 L CNN
+F 2 "" H 4850 1850 50  0001 C CNN
+F 3 "~" H 4850 1850 50  0001 C CNN
+	1    4850 1850
+	1    0    0    -1  
+$EndComp
+Text Label 4650 1750 2    50   ~ 0
+TSAL
+Text Label 4650 1850 2    50   ~ 0
+TSAL_RTN
+Text Label 4650 1950 2    50   ~ 0
+TSAL_Cockpit
+Text Label 4650 2050 2    50   ~ 0
+TSAL_RTN
+Wire Wire Line
+	10150 4450 10300 4450
+Wire Wire Line
+	10150 4550 10300 4550
+Wire Wire Line
+	10150 4650 10300 4650
+Text Label 10300 4450 0    50   ~ 0
+TSAL
+Text Label 10300 4650 0    50   ~ 0
+TSAL_RTN
+Text Label 10300 4550 0    50   ~ 0
+TSAL_Cockpit
+Wire Wire Line
+	9000 3750 8850 3750
+Wire Wire Line
+	9000 3850 8850 3850
+Wire Wire Line
+	9000 3950 8850 3950
+Wire Wire Line
+	9000 4050 8850 4050
+Wire Wire Line
+	9000 4150 8850 4150
+Wire Wire Line
+	9000 4250 8850 4250
+Text Label 8850 3750 2    50   ~ 0
+BP
+Text Label 8850 3850 2    50   ~ 0
+BP_RTN
+Text Label 8850 3950 2    50   ~ 0
+IMD_Status
+Text Label 8850 4050 2    50   ~ 0
+RTDS_CTRL
+Text Label 8850 4150 2    50   ~ 0
+D_LED_CTRL
+Text Label 8850 4250 2    50   ~ 0
+SPARE_LED_CTRL
+Text Label 10300 3850 0    50   ~ 0
+5V
+Text Label 10300 3950 0    50   ~ 0
+3.3V
+Text Label 10300 4050 0    50   ~ 0
+GLV_RTN
+Text Label 10300 3750 0    50   ~ 0
+24V
+Wire Wire Line
+	10150 3850 10300 3850
+Wire Wire Line
+	10150 3950 10300 3950
+Wire Wire Line
+	10150 4050 10300 4050
+Wire Wire Line
+	10150 3750 10300 3750
+$Sheet
+S 9000 3700 1150 1250
+U 5FE1DCBA
+F0 "StatusLights_Cockpit" 47
+F1 "StatusLights_Cockpit.sch" 47
+F2 "BP" I L 9000 3750 50 
+F3 "BP_RTN" I L 9000 3850 50 
+F4 "IMD_Status" I L 9000 3950 50 
+F5 "RTDS_CTRL" I L 9000 4050 50 
+F6 "D_LED_CTRL" I L 9000 4150 50 
+F7 "SPARE_LED_CTRL" I L 9000 4250 50 
+F8 "24V" I R 10150 3750 50 
+F9 "GLV_RTN" I R 10150 4050 50 
+F10 "3.3V" I R 10150 3950 50 
+F11 "5V" I R 10150 3850 50 
+F12 "HV+" I L 9000 4750 50 
+F13 "HV-" I L 9000 4850 50 
+F14 "TSAL" I R 10150 4450 50 
+F15 "TSAL_RTN" I R 10150 4650 50 
+F16 "TSAL_Cockpit" I R 10150 4550 50 
+$EndSheet
+Text Notes 6650 3800 0    50   ~ 0
+TSI-Logic Connection\n
 $EndSCHEMATC

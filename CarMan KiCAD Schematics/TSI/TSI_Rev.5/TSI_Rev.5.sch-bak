@@ -143,11 +143,11 @@ Text Label 8400 850  2    50   ~ 0
 24V+
 Text Label 8400 750  2    50   ~ 0
 GLV_RTN
-Text Notes 4550 2150 0    50   ~ 0
-TSI Power \nfrom GLV\n
-Text Label 4500 1800 2    50   ~ 0
-TSAL
+Text Notes 4500 2250 0    50   ~ 0
+TSAL Power\nRoll Hoop
 Text Label 4500 1900 2    50   ~ 0
+TSAL
+Text Label 4500 2000 2    50   ~ 0
 TSAL_RTN
 Wire Wire Line
 	2750 4100 2850 4100
@@ -684,7 +684,7 @@ L Connector_Generic:Conn_01x04 J?
 U 1 1 5FC3F568
 P 1000 800
 F 0 "J?" H 1080 792 50  0001 L CNN
-F 1 "TSI J1" H 900 1000 50  0000 L CNN
+F 1 "J1" H 950 1000 50  0000 L CNN
 F 2 "" H 1000 800 50  0001 C CNN
 F 3 "~" H 1000 800 50  0001 C CNN
 	1    1000 800 
@@ -772,7 +772,7 @@ L Connector_Generic:Conn_01x04 J?
 U 1 1 5FF93FA5
 P 2350 1850
 F 0 "J?" H 2430 1842 50  0001 L CNN
-F 1 "TSI J11" H 2250 2050 50  0000 L CNN
+F 1 "J11" H 2300 2050 50  0000 L CNN
 F 2 "" H 2350 1850 50  0001 C CNN
 F 3 "~" H 2350 1850 50  0001 C CNN
 	1    2350 1850
@@ -799,12 +799,12 @@ NoConn ~ 3350 2050
 $Comp
 L Connector_Generic:Conn_01x02 J?
 U 1 1 60068740
-P 4700 1800
-F 0 "J?" H 4780 1792 50  0001 L CNN
-F 1 "TSI J13" H 4600 1950 50  0000 L CNN
-F 2 "" H 4700 1800 50  0001 C CNN
-F 3 "~" H 4700 1800 50  0001 C CNN
-	1    4700 1800
+P 4700 1900
+F 0 "J?" H 4780 1892 50  0001 L CNN
+F 1 "TSI J13" H 4600 2050 50  0000 L CNN
+F 2 "" H 4700 1900 50  0001 C CNN
+F 3 "~" H 4700 1900 50  0001 C CNN
+	1    4700 1900
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -948,6 +948,8 @@ $Comp
 L Connector_Generic:Conn_02x04_Counter_Clockwise J?
 U 1 1 6068B997
 P 4200 2850
+AR Path="/6196BF15/6068B997" Ref="J?"  Part="1" 
+AR Path="/6068B997" Ref="J?"  Part="1" 
 F 0 "J?" H 4250 3167 50  0001 C CNN
 F 1 "TSI J32" H 4250 3075 50  0000 C CNN
 F 2 "" H 4200 2850 50  0001 C CNN
@@ -981,4 +983,6 @@ Text Label 5350 2700 0    50   ~ 0
 IGNI_GND
 Wire Wire Line
 	5600 2850 5600 2950
+Text HLabel 10650 4650 0    50   Input ~ 0
+LV_RTN
 $EndSCHEMATC

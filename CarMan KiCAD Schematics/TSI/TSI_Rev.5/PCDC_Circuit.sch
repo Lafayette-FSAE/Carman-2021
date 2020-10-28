@@ -1580,8 +1580,8 @@ Wire Notes Line
 	550  5800 550  7050
 Wire Notes Line
 	2100 5800 2100 7050
-Text Notes 6400 10000 0    47   ~ 0
-24V -> 24V\n
+Text Notes 5850 10000 0    47   ~ 0
+24V (GLV) --> 24V (ISO)\n
 Text Notes 5800 11000 0    47   ~ 0
 5V -> 5V\n
 Text Label 11950 2550 0    50   ~ 0
