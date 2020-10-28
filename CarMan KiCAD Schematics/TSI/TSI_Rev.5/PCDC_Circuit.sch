@@ -373,25 +373,25 @@ Wire Wire Line
 $Comp
 L pspice:CAP C?
 U 1 1 61A271FD
-P 1400 2950
+P 1350 3250
 AR Path="/5FC85F57/61A271FD" Ref="C?"  Part="1" 
 AR Path="/6196BF15/61A271FD" Ref="C5"  Part="1" 
-F 0 "C5" H 1500 2850 50  0000 C CNN
-F 1 "0.1u" H 1500 3050 50  0000 C CNN
-F 2 "" H 1400 2950 50  0001 C CNN
-F 3 "~" H 1400 2950 50  0001 C CNN
-	1    1400 2950
+F 0 "C5" H 1450 3150 50  0000 C CNN
+F 1 "0.1u" H 1450 3350 50  0000 C CNN
+F 2 "" H 1350 3250 50  0001 C CNN
+F 3 "~" H 1350 3250 50  0001 C CNN
+	1    1350 3250
 	1    0    0    -1  
 $EndComp
-Text Notes 1700 3450 2    55   ~ 0
+Text Notes 1650 3750 2    55   ~ 0
 Bypass Cap for U21\n
 Wire Wire Line
-	1400 3300 1400 3200
+	1350 3600 1350 3500
 Wire Wire Line
-	1400 2600 1400 2700
-Text Label 1400 2600 2    55   ~ 0
+	1350 2900 1350 3000
+Text Label 1350 2900 2    55   ~ 0
 5HV
-Text Label 1400 3300 2    55   ~ 0
+Text Label 1350 3600 2    55   ~ 0
 IO_Ground
 Connection ~ 5200 3650
 Wire Wire Line
@@ -419,10 +419,6 @@ Wire Wire Line
 Connection ~ 6300 4250
 Wire Wire Line
 	6300 4250 6550 4250
-Wire Notes Line
-	1850 500  500  500 
-Wire Notes Line
-	1350 2400 2700 2400
 Text Label 1250 1050 0    50   ~ 0
 MC_Voltage
 Text Label 1250 850  0    50   ~ 0
@@ -1395,7 +1391,7 @@ Text Notes 12400 8050 0    79   ~ 0
 Adjustable Voltage Reference\n
 Text Notes 11800 6550 0    138  ~ 0
 VOLTAGE REFERENCES & REGULATORS
-Text Label 9600 6700 2    50   ~ 0
+Text Label 9600 6750 2    50   ~ 0
 DC_RELAY+
 Text Label 9600 6850 2    50   ~ 0
 DC_RELAY-
@@ -1419,11 +1415,9 @@ $EndComp
 Wire Wire Line
 	8200 6650 8450 6650
 Wire Wire Line
-	8750 6700 8750 6650
-Wire Wire Line
 	8750 6650 8450 6650
 Wire Wire Line
-	8750 6700 9650 6700
+	8750 6750 9650 6750
 Connection ~ 8450 6650
 Wire Wire Line
 	8050 6950 8450 6950
@@ -1522,8 +1516,6 @@ Text HLabel 1050 1550 0    50   Input ~ 0
 1.24VREF
 Text HLabel 1050 1450 0    50   Input ~ 0
 5HV
-Wire Notes Line
-	500  500  500  1650
 Text Label 1450 6850 0    50   ~ 0
 GLV_RTN
 Text Label 1450 6150 0    50   ~ 0
@@ -1594,16 +1586,14 @@ Text Notes 5800 11000 0    47   ~ 0
 5V -> 5V\n
 Text Label 11250 2550 2    50   ~ 0
 PC_RELAY-
-Text Label 11250 2400 2    50   ~ 0
+Text Label 11250 2450 2    50   ~ 0
 PC_RELAY+
 Wire Wire Line
-	10750 2400 11300 2400
+	10750 2450 11300 2450
 Wire Wire Line
 	10750 2550 10750 2850
 Wire Wire Line
 	10750 2550 11300 2550
-Wire Wire Line
-	10750 2400 10750 2050
 Wire Wire Line
 	10750 2050 10300 2050
 Connection ~ 10300 2050
@@ -1675,4 +1665,89 @@ Text HLabel 1050 2350 0    50   Input ~ 0
 Throttle_HV
 Text HLabel 1050 2250 0    50   Input ~ 0
 BP_HV
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 603CAC09
+P 9850 6750
+F 0 "J?" H 9930 6742 50  0001 L CNN
+F 1 "TSI J8" H 9750 6900 50  0000 L CNN
+F 2 "" H 9850 6750 50  0001 C CNN
+F 3 "~" H 9850 6750 50  0001 C CNN
+	1    9850 6750
+	1    0    0    -1  
+$EndComp
+Text Notes 9550 7000 0    50   ~ 0
+Disharge Relay
+Text Notes 11150 2850 0    50   ~ 0
+Precharge Relay\n\n\n
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 603CAC11
+P 11500 2450
+F 0 "J?" H 11580 2442 50  0001 L CNN
+F 1 "TSI J9" H 11400 2600 50  0000 L CNN
+F 2 "" H 11500 2450 50  0001 C CNN
+F 3 "~" H 11500 2450 50  0001 C CNN
+	1    11500 2450
+	1    0    0    -1  
+$EndComp
+Text Label 8650 1100 2    50   ~ 0
+IO_Ground
+Text Label 9150 1200 0    50   ~ 0
+Throttle_HV
+Text Label 8650 900  2    50   ~ 0
+IGNI_GND
+Text Label 8650 1000 2    50   ~ 0
+IGNI_VCC
+Text Notes 8700 1450 0    50   ~ 0
+Motor Controller\nPins
+Wire Wire Line
+	8750 6650 8750 6750
+Wire Wire Line
+	10750 2050 10750 2450
+Wire Notes Line
+	500  500  1900 500 
+Wire Notes Line
+	500  2450 1900 2450
+Wire Notes Line
+	1900 500  1900 2450
+Wire Notes Line
+	500  500  500  2450
+$Comp
+L Connector_Generic:Conn_02x04_Counter_Clockwise J?
+U 1 1 605228B1
+P 8850 1000
+F 0 "J?" H 8900 1317 50  0001 C CNN
+F 1 "TSI J32" H 8900 1225 50  0000 C CNN
+F 2 "" H 8850 1000 50  0001 C CNN
+F 3 "~" H 8850 1000 50  0001 C CNN
+	1    8850 1000
+	1    0    0    -1  
+$EndComp
+NoConn ~ 8650 1200
+Text Label 9150 900  0    50   ~ 0
+BP_HV
+$Comp
+L Device:Jumper_NC_Dual JP?
+U 1 1 605F6EA0
+P 10000 1000
+AR Path="/6196BF15/605F6EA0" Ref="JP?"  Part="1" 
+AR Path="/605F6EA0" Ref="JP?"  Part="1" 
+F 0 "JP?" H 10300 950 50  0000 C CNN
+F 1 "Jumper_NC_Dual" H 9250 1400 50  0001 C CNN
+F 2 "" H 10000 1000 50  0001 C CNN
+F 3 "~" H 10000 1000 50  0001 C CNN
+	1    10000 1000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9150 1100 10250 1100
+Wire Wire Line
+	10250 1100 10250 1000
+Wire Wire Line
+	9750 1000 9150 1000
+Wire Wire Line
+	10000 850  10000 900 
+Text Label 10000 850  0    50   ~ 0
+IGNI_GND
 $EndSCHEMATC

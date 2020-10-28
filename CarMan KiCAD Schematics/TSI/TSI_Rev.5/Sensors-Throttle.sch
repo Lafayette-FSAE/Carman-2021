@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 6 6
+Sheet 5 6
 Title ""
 Date ""
 Rev ""
@@ -1364,4 +1364,16 @@ Text Notes 6950 6600 0    98   ~ 0
 Binary Address:\n1001010
 Text Notes 12100 10450 0    157  ~ 0
 V/I/TEMP MEASUREMENT\n& THROTTLE VOLTAGE ISOLATOR
+$Comp
+L Connector_Generic:Conn_01x04 J?
+U 1 1 6035F3A1
+P 14850 5500
+F 0 "J?" H 14930 5492 50  0001 L CNN
+F 1 "TSI J1" H 14750 5700 50  0000 L CNN
+F 2 "" H 14850 5500 50  0001 C CNN
+F 3 "~" H 14850 5500 50  0001 C CNN
+	1    14850 5500
+	1    0    0    -1  
+$EndComp
+NoConn ~ 14650 5700
 $EndSCHEMATC

@@ -108,7 +108,7 @@ Text Label 8550 1700 2    50   ~ 0
 Text Label 8550 1800 2    50   ~ 0
 GLV_RTN
 Wire Wire Line
-	2850 3650 2950 3650
+	2750 3400 2850 3400
 Text Label 2150 2050 2    50   ~ 0
 RTDS_RTN
 Text Label 2150 1750 2    50   ~ 0
@@ -150,176 +150,174 @@ TSAL
 Text Label 4500 1900 2    50   ~ 0
 TSAL_RTN
 Wire Wire Line
-	2850 4350 2950 4350
+	2750 4100 2850 4100
 Wire Wire Line
-	2850 4250 2950 4250
+	2750 4000 2850 4000
 Wire Wire Line
-	2850 4150 2950 4150
+	2750 3900 2850 3900
 Wire Wire Line
-	2850 4550 2950 4550
+	2750 4300 2850 4300
 Wire Wire Line
-	2850 4450 2950 4450
+	2750 4200 2850 4200
 Wire Wire Line
-	1350 3850 1450 3850
+	1250 3600 1350 3600
 Wire Wire Line
-	1350 3750 1450 3750
+	1250 3500 1350 3500
 Wire Wire Line
-	1350 4150 1450 4150
+	1250 3900 1350 3900
 Wire Wire Line
-	1350 4050 1450 4050
+	1250 3800 1350 3800
 Wire Wire Line
-	1350 3950 1450 3950
+	1250 3700 1350 3700
 Wire Wire Line
-	1350 4350 1450 4350
+	1250 4100 1350 4100
 Wire Wire Line
-	1350 4250 1450 4250
-Text Notes 1700 5100 0    79   ~ 0
+	1250 4000 1350 4000
+Text Notes 1600 4850 0    79   ~ 0
 TSI J3 & TSI J4\n
-Text Label 1150 5600 2    50   ~ 0
+Text Label 1150 5450 2    50   ~ 0
 MC_Voltage
-Text Label 1150 5400 2    50   ~ 0
+Text Label 1150 5250 2    50   ~ 0
 HV+
 Wire Wire Line
-	1350 5400 1150 5400
+	1350 5250 1150 5250
 Wire Wire Line
-	1150 5600 1350 5600
-Text Label 1150 5900 2    50   ~ 0
+	1150 5450 1350 5450
+Text Label 1150 5750 2    50   ~ 0
 Throttle_HV
-Text Label 1150 5800 2    50   ~ 0
+Text Label 1150 5650 2    50   ~ 0
 IO_Ground
 Wire Wire Line
-	1150 5800 1350 5800
+	1150 5650 1350 5650
 Wire Wire Line
-	1150 5900 1350 5900
-Text Label 1150 5500 2    50   ~ 0
+	1150 5750 1350 5750
+Text Label 1150 5350 2    50   ~ 0
 HV-
 Wire Wire Line
-	1150 5500 1350 5500
-Text Label 1150 5700 2    50   ~ 0
+	1150 5350 1350 5350
+Text Label 1150 5550 2    50   ~ 0
 TSV_Voltage
 Wire Wire Line
-	1150 5700 1350 5700
+	1150 5550 1350 5550
 Wire Wire Line
-	3100 5800 2900 5800
+	3100 5650 2900 5650
 Wire Wire Line
-	3100 5900 2900 5900
-Text Label 3100 5900 0    50   ~ 0
+	3100 5750 2900 5750
+Text Label 3100 5750 0    50   ~ 0
 5HV
-Text Label 3100 5800 0    50   ~ 0
+Text Label 3100 5650 0    50   ~ 0
 1.24V_REF
-Text Label 3100 7000 0    50   ~ 0
+Text Label 3100 6850 0    50   ~ 0
 PC_Ready
 Wire Wire Line
-	3100 7000 2900 7000
+	3100 6850 2900 6850
 Wire Wire Line
-	1150 7200 1350 7200
+	1150 7050 1350 7050
 Wire Wire Line
-	1150 6900 1350 6900
+	1150 6750 1350 6750
 Wire Wire Line
-	1150 7000 1350 7000
+	1150 6850 1350 6850
 Wire Wire Line
-	1150 7300 1350 7300
-Text Label 1150 7300 2    50   ~ 0
+	1150 7150 1350 7150
+Text Label 1150 7150 2    50   ~ 0
 Brake_Pressed
-Text Label 1150 7200 2    50   ~ 0
+Text Label 1150 7050 2    50   ~ 0
 Safety_Loop
 Wire Wire Line
-	1150 7100 1350 7100
+	1150 6950 1350 6950
 Wire Wire Line
-	1350 6700 1150 6700
-Text Label 1150 6700 2    50   ~ 0
+	1350 6550 1150 6550
+Text Label 1150 6550 2    50   ~ 0
 24V
-Text Label 1150 7100 2    50   ~ 0
+Text Label 1150 6950 2    50   ~ 0
 GLV_RTN
-Text Notes 2400 6350 0    50   ~ 0
+Text Notes 2400 6200 0    50   ~ 0
 High Voltage
-Text Notes 2400 6500 0    50   ~ 0
+Text Notes 2400 6350 0    50   ~ 0
 Low Voltage
-Text Label 1350 3650 2    50   ~ 0
+Text Label 1250 3400 2    50   ~ 0
 24V
-Text Label 1350 3750 2    50   ~ 0
+Text Label 1250 3500 2    50   ~ 0
 10V
-Text Label 1350 3950 2    50   ~ 0
+Text Label 1250 3700 2    50   ~ 0
 GLV_RTN
-Text Label 1350 3850 2    50   ~ 0
+Text Label 1250 3600 2    50   ~ 0
 5V
-Text Label 1350 4050 2    50   ~ 0
+Text Label 1250 3800 2    50   ~ 0
 Throttle_SEL
-Text Label 1350 4150 2    50   ~ 0
+Text Label 1250 3900 2    50   ~ 0
 SDA_uC
-Text Label 1350 4350 2    50   ~ 0
+Text Label 1250 4100 2    50   ~ 0
 PC_Ready
-Text Label 1350 4250 2    50   ~ 0
+Text Label 1250 4000 2    50   ~ 0
 SCL_uC
-Text Label 2950 4150 0    50   ~ 0
+Text Label 2850 3900 0    50   ~ 0
 Brake_Pressed
-Text Label 2950 4250 0    50   ~ 0
+Text Label 2850 4000 0    50   ~ 0
 Brake_Pressed_RTN
-Text Label 2950 3650 0    50   ~ 0
+Text Label 2850 3400 0    50   ~ 0
 APPS
-Text Label 2950 4450 0    50   ~ 0
+Text Label 2850 4200 0    50   ~ 0
 Throttle_LP
-Text Label 2950 4550 0    50   ~ 0
+Text Label 2850 4300 0    50   ~ 0
 Throttle_LV
-Text Label 2950 4350 0    50   ~ 0
+Text Label 2850 4100 0    50   ~ 0
 Brake_Pressed_uC
 Wire Wire Line
-	4350 6000 4550 6000
-Text Label 4350 6000 2    50   ~ 0
+	4250 6550 4450 6550
+Text Label 4250 6550 2    50   ~ 0
 IO_Ground
 Wire Wire Line
-	4350 6500 4550 6500
-Text Label 4350 6500 2    50   ~ 0
+	4250 7050 4450 7050
+Text Label 4250 7050 2    50   ~ 0
 Throttle_HV
 Wire Wire Line
-	4350 5900 4550 5900
+	4250 6450 4450 6450
 Wire Wire Line
-	4550 5800 4350 5800
-Text Label 4350 5800 2    50   ~ 0
+	4450 6350 4250 6350
+Text Label 4250 6350 2    50   ~ 0
 1.24V_REF
-Text Label 4350 5900 2    50   ~ 0
+Text Label 4250 6450 2    50   ~ 0
 5HV
-Text Label 4350 6300 2    50   ~ 0
+Text Label 4250 6850 2    50   ~ 0
 HV+
 Wire Wire Line
-	4350 6300 4550 6300
-Text Label 4350 6200 2    50   ~ 0
+	4250 6850 4450 6850
+Text Label 4250 6750 2    50   ~ 0
 TSV_Voltage
-Text Label 4350 6100 2    50   ~ 0
+Text Label 4250 6650 2    50   ~ 0
 MC+
 Wire Wire Line
-	4350 6100 4550 6100
+	4250 6650 4450 6650
 Wire Wire Line
-	4350 6200 4550 6200
-Text Label 4350 6400 2    50   ~ 0
+	4250 6750 4450 6750
+Text Label 4250 6950 2    50   ~ 0
 HV-
 Wire Wire Line
-	4350 6400 4550 6400
-Text Label 6250 6050 0    50   ~ 0
+	4250 6950 4450 6950
+Text Label 6150 6600 0    50   ~ 0
 GLV_RTN
 Wire Wire Line
-	6250 6050 6050 6050
-Text Label 6250 6350 0    50   ~ 0
+	6150 6600 5950 6600
+Text Label 6150 6900 0    50   ~ 0
 Throttle_LV
 Wire Wire Line
-	6250 6350 6050 6350
-Text Label 6250 5950 0    50   ~ 0
+	6150 6900 5950 6900
+Text Label 6150 6500 0    50   ~ 0
 5V
 Wire Wire Line
-	6250 5950 6050 5950
-Text Label 6250 6250 0    50   ~ 0
+	6150 6500 5950 6500
+Text Label 6150 6800 0    50   ~ 0
 SDA_uC
-Text Label 6250 6150 0    50   ~ 0
+Text Label 6150 6700 0    50   ~ 0
 SCL_uC
 Wire Wire Line
-	6250 6150 6050 6150
+	6150 6700 5950 6700
 Wire Wire Line
-	6250 6250 6050 6250
-Wire Notes Line
-	5300 6900 5300 5300
-Text Notes 5400 5650 0    47   ~ 0
+	6150 6800 5950 6800
+Text Notes 5300 6200 0    47   ~ 0
 LOW VOLTAGE
-Text Notes 4650 5650 0    47   ~ 0
+Text Notes 4550 6200 0    47   ~ 0
 HIGH VOLTAGE
 Text Notes 9100 3500 0    47   ~ 0
 Where it starts to get funky
@@ -583,58 +581,58 @@ Flowrate_RTN
 Text Label 1450 2850 0    50   ~ 0
 GLV_RTN
 $Sheet
-S 1450 3550 1400 1300
+S 1350 3300 1400 1300
 U 5FC85F57
 F0 "TSI-TP" 50
 F1 "TSI_Throttle_Plausibility.sch" 50
-F2 "24V" I L 1450 3650 50 
-F3 "10V" I L 1450 3750 50 
-F4 "GLV_RTN" I L 1450 3950 50 
-F5 "5V" I L 1450 3850 50 
-F6 "Throttle_SEL" I L 1450 4050 50 
-F7 "SDA" I L 1450 4150 50 
-F8 "SCL" I L 1450 4250 50 
-F9 "PC_Ready" I L 1450 4350 50 
-F10 "Throttle_PL" O R 2850 4350 50 
-F11 "BrakePressed_uC" O R 2850 4750 50 
-F12 "Throttle_LV" O R 2850 4450 50 
-F13 "Brake_Pressed_RTN" O R 2850 4650 50 
-F14 "Brake_Pressed" O R 2850 4550 50 
-F15 "APPS" O R 2850 3650 50 
-F16 "BRAKE_SWITCH(24V)" I L 1450 4450 50 
-F17 "APPS1" I R 2850 3750 50 
-F18 "APPS1_RTN" I R 2850 3850 50 
-F19 "APPS1_10V" I R 2850 4250 50 
-F20 "APPS2_RTN" I R 2850 4050 50 
-F21 "APPS2" I R 2850 3950 50 
-F22 "APPS2_5V" I R 2850 4150 50 
+F2 "24V" I L 1350 3400 50 
+F3 "10V" I L 1350 3500 50 
+F4 "GLV_RTN" I L 1350 3700 50 
+F5 "5V" I L 1350 3600 50 
+F6 "Throttle_SEL" I L 1350 3800 50 
+F7 "SDA" I L 1350 3900 50 
+F8 "SCL" I L 1350 4000 50 
+F9 "PC_Ready" I L 1350 4100 50 
+F10 "Throttle_PL" O R 2750 4100 50 
+F11 "BrakePressed_uC" O R 2750 4500 50 
+F12 "Throttle_LV" O R 2750 4200 50 
+F13 "Brake_Pressed_RTN" O R 2750 4400 50 
+F14 "Brake_Pressed" O R 2750 4300 50 
+F15 "APPS" O R 2750 3400 50 
+F16 "BRAKE_SWITCH(24V)" I L 1350 4200 50 
+F17 "APPS1" I R 2750 3500 50 
+F18 "APPS1_RTN" I R 2750 3600 50 
+F19 "APPS1_10V" I R 2750 4000 50 
+F20 "APPS2_RTN" I R 2750 3800 50 
+F21 "APPS2" I R 2750 3700 50 
+F22 "APPS2_5V" I R 2750 3900 50 
 $EndSheet
 Wire Wire Line
-	1450 4450 800  4450
+	1350 4200 700  4200
 Wire Wire Line
-	800  4450 800  3650
+	700  4200 700  3400
 Wire Wire Line
-	800  3650 1450 3650
+	700  3400 1350 3400
 Text Label 9800 900  0    50   ~ 0
 GLV_RTN
 $Sheet
-S 4550 5500 1500 1650
+S 4450 6050 1500 1200
 U 5F98EBE9
 F0 "Sensors_Throttle_Voltage" 50
 F1 "Sensors-Throttle.sch" 50
-F2 "GLV_RTN" I R 6050 6050 50 
-F3 "5V" I R 6050 5950 50 
-F4 "SDA" I R 6050 6250 50 
-F5 "SCL" I R 6050 6150 50 
-F6 "Throttle_LV" I R 6050 6350 50 
-F7 "1.24V_REF" I L 4550 5800 50 
-F8 "IO_Ground" I L 4550 6000 50 
-F9 "5HV" I L 4550 5900 50 
-F10 "Throttle_HV" I L 4550 6500 50 
-F11 "TSV_Voltage" I L 4550 6200 50 
-F12 "MC_Voltage" I L 4550 6100 50 
-F13 "HV+" I L 4550 6300 50 
-F14 "HV-" I L 4550 6400 50 
+F2 "GLV_RTN" I R 5950 6600 50 
+F3 "5V" I R 5950 6500 50 
+F4 "SDA" I R 5950 6800 50 
+F5 "SCL" I R 5950 6700 50 
+F6 "Throttle_LV" I R 5950 6900 50 
+F7 "1.24V_REF" I L 4450 6350 50 
+F8 "IO_Ground" I L 4450 6550 50 
+F9 "5HV" I L 4450 6450 50 
+F10 "Throttle_HV" I L 4450 7050 50 
+F11 "TSV_Voltage" I L 4450 6750 50 
+F12 "MC_Voltage" I L 4450 6650 50 
+F13 "HV+" I L 4450 6850 50 
+F14 "HV-" I L 4450 6950 50 
 $EndSheet
 Wire Wire Line
 	5050 2650 5050 2700
@@ -696,52 +694,52 @@ Wire Wire Line
 	4700 3100 4650 3100
 Text Notes 4250 3400 0    50   ~ 0
 Motor Controller\nPins
-Text Notes 1350 7750 0    79   ~ 0
+Text Notes 1350 7650 0    79   ~ 0
 TSI J8, TSI J9 & TSI J32\n
 $Sheet
-S 1350 5300 1550 2200
+S 1350 5150 1550 2200
 U 6196BF15
 F0 "PCDC_Circuit" 79
 F1 "PCDC_Circuit.sch" 79
-F2 "Throttle_HV" I L 1350 5900 50 
-F3 "MC_V" I L 1350 5600 50 
-F4 "HV-" I L 1350 5500 50 
-F5 "HV+" I L 1350 5400 50 
-F6 "TSV_V" I L 1350 5700 50 
-F7 "IO_Ground" I L 1350 5800 50 
-F8 "1.24VREF" I R 2900 5800 50 
-F9 "5HV" I R 2900 5900 50 
-F10 "Safety_Loop" I L 1350 7200 50 
-F11 "GLV_RTN" I L 1350 7100 50 
-F12 "24V" I L 1350 6700 50 
-F13 "5V" I L 1350 6800 50 
-F14 "Brake_Pressed" I L 1350 7300 50 
-F15 "AIRS-" I L 1350 7400 50 
-F16 "AIRS+" I L 1350 7000 50 
-F17 "3.3V" I L 1350 6900 50 
-F18 "PC_Ready" I R 2900 7000 50 
-F19 "DC_RELAY-" I R 2900 5650 50 
-F20 "DC_RELAY+" I R 2900 5550 50 
-F21 "PC_RELAY-" I R 2900 5450 50 
-F22 "PC_RELAY+" I R 2900 5350 50 
-F23 "IGNI_VCC" I L 1350 6000 50 
-F24 "IGNI_GND" I L 1350 6100 50 
-F25 "BP_HV" I L 1350 6200 50 
+F2 "Throttle_HV" I L 1350 5750 50 
+F3 "MC_V" I L 1350 5450 50 
+F4 "HV-" I L 1350 5350 50 
+F5 "HV+" I L 1350 5250 50 
+F6 "TSV_V" I L 1350 5550 50 
+F7 "IO_Ground" I L 1350 5650 50 
+F8 "1.24VREF" I R 2900 5650 50 
+F9 "5HV" I R 2900 5750 50 
+F10 "Safety_Loop" I L 1350 7050 50 
+F11 "GLV_RTN" I L 1350 6950 50 
+F12 "24V" I L 1350 6550 50 
+F13 "5V" I L 1350 6650 50 
+F14 "Brake_Pressed" I L 1350 7150 50 
+F15 "AIRS-" I L 1350 7250 50 
+F16 "AIRS+" I L 1350 6850 50 
+F17 "3.3V" I L 1350 6750 50 
+F18 "PC_Ready" I R 2900 6850 50 
+F19 "DC_RELAY-" I R 2900 5500 50 
+F20 "DC_RELAY+" I R 2900 5400 50 
+F21 "PC_RELAY-" I R 2900 5300 50 
+F22 "PC_RELAY+" I R 2900 5200 50 
+F23 "IGNI_VCC" I L 1350 5850 50 
+F24 "IGNI_GND" I L 1350 5950 50 
+F25 "BP_HV" I L 1350 6050 50 
 $EndSheet
-Text Label 1150 6900 2    50   ~ 0
+Text Label 1150 6750 2    50   ~ 0
 3.3V
-Text Label 1150 6800 2    50   ~ 0
+Text Label 1150 6650 2    50   ~ 0
 5V
 Wire Wire Line
-	1150 6800 1350 6800
+	1150 6650 1350 6650
 Wire Notes Line
-	1100 6400 3100 6400
-Text Label 1150 7400 2    50   ~ 0
+	1100 6250 3100 6250
+Text Label 1150 7250 2    50   ~ 0
 GLV_RTN
-Text Label 1150 7000 2    50   ~ 0
+Text Label 1150 6850 2    50   ~ 0
 AIRS+
 Wire Wire Line
-	1150 7400 1350 7400
+	1150 7250 1350 7250
 NoConn ~ 800  1000
 $Comp
 L Connector_Generic:Conn_01x04 J?
@@ -994,4 +992,10 @@ Wire Wire Line
 	9700 900  9700 1050
 Wire Wire Line
 	4600 2950 4600 2800
+Wire Wire Line
+	5300 2800 5300 2950
+Text Notes 4250 7600 0    79   ~ 0
+TSI J1 & TSI J25 (Current Sensor)\n
+Wire Notes Line
+	5200 6050 5200 7250
 $EndSCHEMATC
