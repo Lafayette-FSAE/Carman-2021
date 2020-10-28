@@ -1,5 +1,6 @@
 EESchema Schematic File Version 4
-EELAYER 30 0
+LIBS:TSI_Rev.5-cache
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -434,7 +435,7 @@ CAN_H
 Text Label 4300 2700 0    50   ~ 0
 CAN_L
 $Comp
-L TSI_Rev.5-rescue:TLP293-CarMan_KiCAD_Library U?
+L TSI_Rev.5-rescue:TLP293-CarMan_KiCAD_Library-TSI_Rev.5-rescue U?
 U 1 1 5FB6227C
 P 9600 3100
 F 0 "U?" H 9600 3425 50  0000 C CNN
@@ -762,4 +763,16 @@ Text Notes 3600 5900 2    89   ~ 0
 Cooling Control\n
 Text Notes 6950 3600 2    89   ~ 0
 3.3V Regulator
+Text HLabel 8250 1050 2    50   Output ~ 0
+SL1_Out
+Wire Wire Line
+	8250 1050 8100 1050
+Text Label 8100 1050 2    50   ~ 0
+SL1_Out
+Text HLabel 8250 1200 2    50   Output ~ 0
+SL1_In
+Wire Wire Line
+	8250 1200 8100 1200
+Text Label 8100 1200 2    50   ~ 0
+SL1_In
 $EndSCHEMATC

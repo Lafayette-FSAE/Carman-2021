@@ -1,9 +1,10 @@
 EESchema Schematic File Version 4
-EELAYER 30 0
+LIBS:TSI_Rev.5-cache
+EELAYER 29 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 2 6
+Sheet 4 6
 Title ""
 Date ""
 Rev ""
@@ -13,60 +14,56 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 1050 850  0    50   Input ~ 0
+Text HLabel 1600 850  0    50   Input ~ 0
 24V
-Text HLabel 1050 950  0    50   Input ~ 0
+Text HLabel 1600 950  0    50   Input ~ 0
 10V
-Text HLabel 1050 1150 0    50   Input ~ 0
+Text HLabel 1600 1150 0    50   Input ~ 0
 GLV_RTN
-Text HLabel 1050 1050 0    50   Input ~ 0
+Text HLabel 1600 1050 0    50   Input ~ 0
 5V
-Text HLabel 1050 1250 0    50   Input ~ 0
+Text HLabel 1600 1250 0    50   Input ~ 0
 Throttle_SEL
-Text HLabel 1050 1350 0    50   Input ~ 0
+Text HLabel 1600 1350 0    50   Input ~ 0
 SDA
-Text HLabel 1050 1450 0    50   Input ~ 0
+Text HLabel 1600 1450 0    50   Input ~ 0
 SCL
-Text HLabel 1050 1550 0    50   Input ~ 0
+Text HLabel 1600 1550 0    50   Input ~ 0
 PC_Ready
 Text Notes 950  650  0    79   ~ 0
 INPUTS\n
 Wire Wire Line
-	1250 1150 1050 1150
-Text Label 1250 1150 0    50   ~ 0
+	1800 1150 1600 1150
+Text Label 1800 1150 0    50   ~ 0
 GND
 Wire Wire Line
-	1250 950  1050 950 
-Text Label 1250 950  0    50   ~ 0
+	1800 950  1600 950 
+Text Label 1800 950  0    50   ~ 0
 10V
 Wire Wire Line
-	1250 1350 1050 1350
+	1800 1350 1600 1350
 Wire Wire Line
-	1250 1250 1050 1250
-Text Label 1250 1250 0    50   ~ 0
+	1800 1250 1600 1250
+Text Label 1800 1250 0    50   ~ 0
 Throttle_SEL
-Text Label 1250 1350 0    50   ~ 0
+Text Label 1800 1350 0    50   ~ 0
 SDA_uC
-Text Label 1250 1450 0    50   ~ 0
+Text Label 1800 1450 0    50   ~ 0
 SCL_uC
 Wire Wire Line
-	1050 1450 1250 1450
+	1600 1450 1800 1450
 Wire Wire Line
-	1250 1050 1050 1050
+	1800 1050 1600 1050
 Wire Wire Line
-	1050 850  1250 850 
-Text Label 1250 850  0    50   ~ 0
+	1600 850  1800 850 
+Text Label 1800 850  0    50   ~ 0
 24V
-Text Label 1250 1050 0    50   ~ 0
+Text Label 1800 1050 0    50   ~ 0
 5V
 Wire Wire Line
-	1250 1550 1050 1550
-Text Label 1250 1550 0    50   ~ 0
+	1800 1550 1600 1550
+Text Label 1800 1550 0    50   ~ 0
 PC_Ready
-Wire Notes Line
-	500  1700 1850 1700
-Wire Notes Line
-	1850 1700 1850 500 
 Wire Notes Line
 	1850 500  500  500 
 Wire Notes Line
@@ -89,8 +86,6 @@ Text Notes 750  5200 0    47   ~ 0
 Wire Notes Line
 	500  2800 500  5250
 Wire Notes Line
-	2900 2800 2900 5250
-Wire Notes Line
 	550  5450 550  7300
 Wire Notes Line
 	2900 5450 550  5450
@@ -111,7 +106,7 @@ Connection ~ 1300 6350
 Wire Wire Line
 	1300 6350 1600 6350
 $Comp
-L TSI_Rev.5-rescue:TL431PS-CarMan_KiCAD_Library D10
+L TSI_Rev.5-rescue:TL431PS-CarMan_KiCAD_Library-TSI_Rev.5-rescue D10
 U 1 1 60A1FD4B
 P 1700 6350
 F 0 "D10" V 1800 6500 50  0000 R CNN
@@ -121,10 +116,6 @@ F 3 "http://www.ti.com/lit/ds/symlink/tl431.pdf" H 1700 6350 50  0001 C CIN
 	1    1700 6350
 	0    -1   -1   0   
 $EndComp
-Text Notes 1150 3100 0    79   ~ 0
-APPS1 STEPDOWN\n\n
-Wire Notes Line
-	2900 2800 500  2800
 Wire Notes Line
 	500  5250 2900 5250
 $Comp
@@ -363,7 +354,7 @@ Wire Wire Line
 	2050 4750 2200 4750
 NoConn ~ 8650 5550
 $Comp
-L TSI_Rev.5-rescue:MCP23016-I_SO-CarMan_KiCAD_Library U7
+L TSI_Rev.5-rescue:MCP23016-I_SO-CarMan_KiCAD_Library-TSI_Rev.5-rescue U7
 U 1 1 6097B17D
 P 9450 6450
 F 0 "U7" H 9450 7715 50  0000 C CNN
@@ -404,7 +395,7 @@ Connection ~ 8300 4100
 Wire Wire Line
 	8300 4100 8300 5850
 Text Label 8650 5650 2    50   ~ 0
-SDA_TP
+SDA_uC
 Wire Wire Line
 	7700 4600 8100 4600
 Connection ~ 8100 3150
@@ -487,9 +478,11 @@ Convert to 0-3.3V\nRATIO 3/5\n
 Text Notes 11550 3900 0    39   ~ 0
 Used for R2R on 5V\n
 $Comp
-L 74act11030:74ACT11030 U8
+L TSI_Rev.5-rescue:74ACT11030-74act11030 U8
 U 1 1 604CB1E4
 P 9150 4250
+AR Path="/604CB1E4" Ref="U8"  Part="1" 
+AR Path="/5FC85F57/604CB1E4" Ref="U8"  Part="1" 
 F 0 "U8" H 9050 4350 50  0000 L CNN
 F 1 "74ACT11030" H 8900 4150 50  0000 L CNN
 F 2 "" H 9150 4250 50  0000 C CNN
@@ -840,7 +833,7 @@ Wire Wire Line
 Wire Wire Line
 	7800 4300 7800 6350
 Text Label 10250 5850 0    50   ~ 0
-SCL_TP
+SCL_uC
 Text Label 10300 5550 0    50   ~ 0
 5V
 Wire Wire Line
@@ -961,7 +954,7 @@ Text Label 14600 5100 0    50   ~ 0
 Text Notes 13750 4850 0    50   ~ 0
 Binary Address:\n1001101\n
 $Comp
-L TSI_Rev.5-rescue:TS5A3159-Q1-CarMan_KiCAD_Library SW2
+L TSI_Rev.5-rescue:TS5A3159-Q1-CarMan_KiCAD_Library-TSI_Rev.5-rescue SW2
 U 1 1 607E8FA8
 P 14100 4050
 F 0 "SW2" H 14100 4250 50  0000 C CNN
@@ -994,7 +987,7 @@ Wire Wire Line
 Text Notes 13850 3750 0    63   ~ 0
 AUTO TURN\nOFF SWITCH
 $Comp
-L TSI_Rev.5-rescue:DAC5574IDGS-CarMan_KiCAD_Library U30
+L TSI_Rev.5-rescue:DAC5574IDGS-CarMan_KiCAD_Library-TSI_Rev.5-rescue U30
 U 1 1 609B748C
 P 13900 5300
 F 0 "U30" H 13900 5650 50  0000 C CNN
@@ -1340,56 +1333,14 @@ Wire Wire Line
 	5500 2650 5650 2650
 Wire Wire Line
 	5500 2850 5650 2850
-Text Label 11900 1150 2    50   ~ 0
+Text Label 1800 1850 0    50   ~ 0
 APPS1_RTN
-Text Label 11900 1000 2    50   ~ 0
+Text Label 1800 1950 0    50   ~ 0
 APPS1
-Text Label 11900 850  2    50   ~ 0
+Text Label 1800 2050 0    50   ~ 0
 APPS1_10V
-$Comp
-L TSI_Rev.5-rescue:6PinPort-CarMan_KiCAD_Library U?
-U 1 1 5FCCFFAA
-P 12150 1000
-AR Path="/5FCCFFAA" Ref="U?"  Part="1" 
-AR Path="/5FC85F57/5FCCFFAA" Ref="U?"  Part="1" 
-F 0 "U?" H 12150 1415 50  0001 C CNN
-F 1 "TSI J3" H 12150 1324 50  0000 C CNN
-F 2 "" H 12150 1000 50  0001 C CNN
-F 3 "" H 12150 1000 50  0001 C CNN
-	1    12150 1000
-	1    0    0    -1  
-$EndComp
-Text Notes 12000 1450 0    50   ~ 0
-Throttle \nPlausiblity
-Wire Wire Line
-	11900 850  11950 850 
-Wire Wire Line
-	11900 1000 11950 1000
-Wire Wire Line
-	11900 1150 11950 1150
-Text Label 10700 850  2    50   ~ 0
+Text Label 1800 1750 0    50   ~ 0
 BRAKE_SWITCH(24V)
-Text Notes 10850 1350 0    50   ~ 0
-Brake \nPedals\n
-Text Label 10700 1000 2    50   ~ 0
-BP(BRAKE_SWITCH_RTN)
-Wire Wire Line
-	10700 850  10750 850 
-Wire Wire Line
-	10700 1000 10750 1000
-$Comp
-L TSI_Rev.5-rescue:2PinPortLeft-CarMan_KiCAD_Library U?
-U 1 1 5FCD0DD5
-P 10950 950
-AR Path="/5FCD0DD5" Ref="U?"  Part="1" 
-AR Path="/5FC85F57/5FCD0DD5" Ref="U?"  Part="1" 
-F 0 "U?" H 11078 1021 50  0001 L CNN
-F 1 "TSI J4" H 10800 1200 50  0000 L CNN
-F 2 "" H 10950 950 50  0001 C CNN
-F 3 "" H 10950 950 50  0001 C CNN
-	1    10950 950 
-	1    0    0    -1  
-$EndComp
 Wire Notes Line
 	14200 500  14200 1600
 Wire Notes Line
@@ -1422,26 +1373,8 @@ Wire Wire Line
 	15000 1500 15200 1500
 Wire Wire Line
 	15000 1400 15200 1400
-Text Label 15000 1000 2    50   ~ 0
-SCL_TP
-Text Label 15000 900  2    50   ~ 0
-SDA_TP
-Wire Wire Line
-	15000 1000 15200 1000
-Wire Wire Line
-	15000 900  15200 900 
-Wire Wire Line
-	12400 850  12350 850 
-Wire Wire Line
-	12400 1000 12350 1000
-Wire Wire Line
-	12400 1150 12350 1150
-Text Label 12400 1150 0    50   ~ 0
-APPS2_5V
-Text Label 12400 1000 0    50   ~ 0
+Text Label 1800 2250 0    50   ~ 0
 APPS2
-Text Label 12400 850  0    50   ~ 0
-APPS2_RTN
 Text Notes 14900 750  0    79   ~ 0
 OUTPUTS\n\n
 Text HLabel 15200 1400 2    50   Output ~ 0
@@ -1454,10 +1387,6 @@ Text HLabel 15200 1200 2    50   Output ~ 0
 Brake_Pressed_RTN
 Text HLabel 15200 1100 2    50   Output ~ 0
 Brake_Pressed
-Text HLabel 15200 1000 2    50   Output ~ 0
-SCL
-Text HLabel 15200 900  2    50   Output ~ 0
-SDA
 Text HLabel 15200 800  2    50   Output ~ 0
 APPS
 Wire Wire Line
@@ -1769,7 +1698,6 @@ F 3 "~" H 14600 7600 50  0001 C CNN
 	1    14600 7600
 	0    1    1    0   
 $EndComp
-Connection ~ 13900 7600
 Wire Wire Line
 	13900 7600 14450 7600
 Wire Wire Line
@@ -1808,7 +1736,7 @@ Wire Wire Line
 Wire Wire Line
 	15450 7600 15400 7600
 $Comp
-L TSI_Rev.5-rescue:TLP293-CarMan_KiCAD_Library U23
+L TSI_Rev.5-rescue:TLP293-CarMan_KiCAD_Library-TSI_Rev.5-rescue U23
 U 1 1 60D50797
 P 15100 7700
 F 0 "U23" H 15100 8025 50  0000 C CNN
@@ -1835,30 +1763,8 @@ Wire Wire Line
 	13350 8350 13900 8350
 Wire Wire Line
 	13900 7600 13900 7750
-$Comp
-L Device:LED D?
-U 1 1 60BC42BC
-P 13900 7900
-F 0 "D?" V 13939 7782 50  0001 R CNN
-F 1 "Brake Lights" V 13893 7782 50  0000 R CNN
-F 2 "" H 13900 7900 50  0001 C CNN
-F 3 "~" H 13900 7900 50  0001 C CNN
-	1    13900 7900
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	13350 7200 13900 7200
-$Comp
-L Switch:SW_Push SW?
-U 1 1 60B6D3B2
-P 13900 7400
-F 0 "SW?" V 13854 7548 50  0001 L CNN
-F 1 "Brake" V 13900 7548 50  0000 L CNN
-F 2 "" H 13900 7600 50  0001 C CNN
-F 3 "~" H 13900 7600 50  0001 C CNN
-	1    13900 7400
-	0    1    1    0   
-$EndComp
 Wire Notes Line
 	13550 9000 15800 9000
 Wire Notes Line
@@ -1925,4 +1831,46 @@ F 3 "www.st.com/resource/en/datasheet/ts912.pdf" H 14500 9450 50  0001 C CNN
 $EndComp
 Text Label 13350 7350 2    50   ~ 0
 24V
+Text HLabel 1600 1750 0    50   Input ~ 0
+BRAKE_SWITCH(24V)
+Text HLabel 1600 1950 0    50   Input ~ 0
+APPS1
+Text HLabel 1600 1850 0    50   Input ~ 0
+APPS1_RTN
+Text HLabel 1600 2050 0    50   Input ~ 0
+APPS1_10V
+Text HLabel 1600 2150 0    50   Input ~ 0
+APPS2_RTN
+Text HLabel 1600 2250 0    50   Input ~ 0
+APPS2
+Text HLabel 1600 2350 0    50   Input ~ 0
+APPS2_5V
+Wire Wire Line
+	1800 1950 1600 1950
+Wire Wire Line
+	1800 1750 1600 1750
+Wire Wire Line
+	1800 2150 1600 2150
+Wire Wire Line
+	1800 2050 1600 2050
+Wire Wire Line
+	1600 2250 1800 2250
+Wire Wire Line
+	1800 1850 1600 1850
+Wire Wire Line
+	1800 2350 1600 2350
+Wire Notes Line
+	2900 2800 500  2800
+Text Notes 1150 3100 0    79   ~ 0
+APPS1 STEPDOWN\n\n
+Wire Notes Line
+	2900 2800 2900 5250
+Wire Notes Line
+	3150 2600 3150 1400
+Wire Notes Line
+	1800 2600 3150 2600
+Text Label 1800 2150 0    50   ~ 0
+APPS2_RTN
+Text Label 1800 2350 0    50   ~ 0
+APPS2_5V
 $EndSCHEMATC

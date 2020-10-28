@@ -1,9 +1,10 @@
 EESchema Schematic File Version 4
-EELAYER 30 0
+LIBS:TSI_Rev.5-cache
+EELAYER 29 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 3 6
+Sheet 6 6
 Title ""
 Date ""
 Rev ""
@@ -154,7 +155,7 @@ F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 6450 2950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TSI_Rev.5-rescue:74LS00PowerPins-CarMan_KiCAD_Library U?
+L TSI_Rev.5-rescue:74LS00PowerPins-CarMan_KiCAD_Library-TSI_Rev.5-rescue U?
 U 1 1 619B0A27
 P 6450 2950
 F 0 "U?" H 6394 2950 50  0001 L CNN
@@ -297,7 +298,7 @@ Connection ~ 7900 3050
 Text Notes 8550 3050 2    55   ~ 0
 5V
 $Comp
-L TSI_Rev.5-rescue:SN74LVC1G08DCKR-CarMan_KiCAD_Library U29
+L TSI_Rev.5-rescue:SN74LVC1G08DCKR-CarMan_KiCAD_Library-TSI_Rev.5-rescue U29
 U 1 1 61A02EF8
 P 5800 4250
 F 0 "U29" H 5750 4500 55  0000 C CNN
@@ -422,7 +423,7 @@ Wire Wire Line
 Wire Notes Line
 	1850 500  500  500 
 Wire Notes Line
-	500  1650 1850 1650
+	1350 2400 2700 2400
 Text Label 1250 1050 0    50   ~ 0
 MC_Voltage
 Text Label 1250 850  0    50   ~ 0
@@ -457,91 +458,6 @@ Text HLabel 1050 950  0    50   Input ~ 0
 HV-
 Text HLabel 1050 850  0    50   Input ~ 0
 HV+
-Text Notes 9250 1550 0    50   ~ 0
-Motor Controller\nPins
-Wire Wire Line
-	9700 1250 9650 1250
-Wire Wire Line
-	9700 800  9650 800 
-Wire Wire Line
-	9200 1250 9250 1250
-Wire Wire Line
-	9200 1100 9250 1100
-Wire Wire Line
-	9200 950  9250 950 
-Wire Wire Line
-	9200 800  9250 800 
-Text Label 9200 950  2    50   ~ 0
-IGNI_VCC
-Text Label 9200 800  2    50   ~ 0
-IGNI_GND
-$Comp
-L TSI_Rev.5-rescue:8PinPort-CarMan_KiCAD_Library U?
-U 1 1 61A9B90B
-P 9450 950
-AR Path="/61A9B90B" Ref="U?"  Part="1" 
-AR Path="/6196BF15/61A9B90B" Ref="U?"  Part="1" 
-F 0 "U?" H 9450 1365 50  0001 C CNN
-F 1 "TSI J32" H 9450 1274 50  0000 C CNN
-F 2 "" H 9450 950 50  0001 C CNN
-F 3 "" H 9450 950 50  0001 C CNN
-	1    9450 950 
-	1    0    0    -1  
-$EndComp
-Text Label 9700 1250 0    50   ~ 0
-Throttle_HV
-Text Label 9700 800  0    50   ~ 0
-BP_HV
-Text Label 9200 1250 2    50   ~ 0
-X
-Text Label 9200 1100 2    50   ~ 0
-IO_GND
-$Comp
-L TSI_Rev.5-rescue:2PinPortLeft-CarMan_KiCAD_Library U?
-U 1 1 61A9B915
-P 8100 950
-AR Path="/61A9B915" Ref="U?"  Part="1" 
-AR Path="/6196BF15/61A9B915" Ref="U?"  Part="1" 
-F 0 "U?" H 8228 1021 50  0001 L CNN
-F 1 "TSI J9" H 8000 1200 50  0000 L CNN
-F 2 "" H 8100 950 50  0001 C CNN
-F 3 "" H 8100 950 50  0001 C CNN
-	1    8100 950 
-	1    0    0    -1  
-$EndComp
-Text Notes 7800 1350 0    50   ~ 0
-Precharge Relay\n\n\n
-Text Label 7850 1000 2    50   ~ 0
-PC_RELAY-
-Text Label 7850 850  2    50   ~ 0
-PC_RELAY+
-Wire Wire Line
-	7850 850  7900 850 
-Wire Wire Line
-	7850 1000 7900 1000
-Wire Wire Line
-	6700 1000 6750 1000
-Wire Wire Line
-	6700 850  6750 850 
-Text Notes 6650 1200 0    50   ~ 0
-Disharge Relay
-Text Label 6700 850  2    50   ~ 0
-DC_RELAY+
-Text Label 6700 1000 2    50   ~ 0
-DC_RELAY-
-$Comp
-L TSI_Rev.5-rescue:2PinPortLeft-CarMan_KiCAD_Library U?
-U 1 1 61A9B925
-P 6950 950
-AR Path="/61A9B925" Ref="U?"  Part="1" 
-AR Path="/6196BF15/61A9B925" Ref="U?"  Part="1" 
-F 0 "U?" H 7078 1021 50  0001 L CNN
-F 1 "TSI J8" H 6850 1200 50  0000 L CNN
-F 2 "" H 6950 950 50  0001 C CNN
-F 3 "" H 6950 950 50  0001 C CNN
-	1    6950 950 
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:R R56
 U 1 1 61AD7DCD
@@ -591,7 +507,7 @@ Text Label 9550 4250 2    55   ~ 0
 Text Label 9550 2050 2    50   ~ 0
 24HV
 $Comp
-L TSI_Rev.5-rescue:STN3NF06L-CarMan_KiCAD_Library Q4
+L TSI_Rev.5-rescue:STN3NF06L-CarMan_KiCAD_Library-TSI_Rev.5-rescue Q4
 U 1 1 5FA4478A
 P 9600 3050
 F 0 "Q4" H 9750 3050 55  0000 L CNN
@@ -703,7 +619,7 @@ Wire Notes Line
 Text Notes 9050 2650 0    79   ~ 0
 Pre-Charge\nSwitch
 $Comp
-L Transistor_FET:IRLML0030 Q5
+L TSI_Rev.5-rescue:IRLML0030-Transistor_FET Q5
 U 1 1 5F997DCB
 P 10550 4150
 F 0 "Q5" H 10755 4196 50  0000 L CNN
@@ -855,31 +771,10 @@ Text Notes 10300 2350 0    35   ~ 0
 Protection\nDiode
 Wire Notes Line
 	500  5700 6300 5700
-$Comp
-L Device:Jumper_NC_Dual JP3
-U 1 1 5F995C52
-P 10050 950
-F 0 "JP3" H 10350 900 50  0000 C CNN
-F 1 "Jumper_NC_Dual" H 9300 1350 50  0001 C CNN
-F 2 "" H 10050 950 50  0001 C CNN
-F 3 "~" H 10050 950 50  0001 C CNN
-	1    10050 950 
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	9650 950  9800 950 
-Wire Wire Line
-	10300 1100 10300 950 
-Wire Wire Line
-	9650 1100 10300 1100
-Wire Wire Line
-	10050 800  10050 850 
-Text Label 10050 800  0    50   ~ 0
-IO_Ground
 Text Notes 2350 6000 0    197  ~ 0
 LOW VOLTAGE\n
 $Comp
-L TSI_Rev.5-rescue:TLP293-CarMan_KiCAD_Library U34
+L TSI_Rev.5-rescue:TLP293-CarMan_KiCAD_Library-TSI_Rev.5-rescue U34
 U 1 1 5F9E712D
 P 6300 6450
 F 0 "U34" H 6400 6650 50  0000 C CNN
@@ -947,7 +842,7 @@ Connection ~ 7150 6350
 Wire Wire Line
 	7150 6350 7000 6350
 $Comp
-L Transistor_FET:IRLML0030 Q?
+L TSI_Rev.5-rescue:IRLML0030-Transistor_FET Q?
 U 1 1 5FA32730
 P 8100 6350
 F 0 "Q?" H 8305 6396 50  0000 L CNN
@@ -1096,7 +991,7 @@ Wire Wire Line
 	5700 10600 5700 10550
 Connection ~ 5700 10600
 $Comp
-L TSI_Rev.5-rescue:TLP293-CarMan_KiCAD_Library U32
+L TSI_Rev.5-rescue:TLP293-CarMan_KiCAD_Library-TSI_Rev.5-rescue U32
 U 1 1 5FB4F426
 P 6300 10700
 F 0 "U32" H 6100 10950 50  0000 C CNN
@@ -1169,7 +1064,7 @@ F 3 "~" H 5200 9100 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L TSI_Rev.5-rescue:THN_30-2415WI-CarMan_KiCAD_Library PS1
+L TSI_Rev.5-rescue:THN_30-2415WI-CarMan_KiCAD_Library-TSI_Rev.5-rescue PS1
 U 1 1 5FBB1814
 P 6350 9650
 F 0 "PS1" H 6325 10081 79  0000 C CNN
@@ -1197,7 +1092,7 @@ Wire Wire Line
 Wire Wire Line
 	5500 9500 5550 9500
 $Comp
-L TSI_Rev.5-rescue:TLP293-CarMan_KiCAD_Library U37
+L TSI_Rev.5-rescue:TLP293-CarMan_KiCAD_Library-TSI_Rev.5-rescue U37
 U 1 1 5FD6E6F7
 P 6300 8400
 F 0 "U37" H 6400 8600 50  0000 C CNN
@@ -1266,7 +1161,7 @@ Wire Wire Line
 Wire Wire Line
 	7050 7150 6600 7150
 $Comp
-L TSI_Rev.5-rescue:TLP293-CarMan_KiCAD_Library U31
+L TSI_Rev.5-rescue:TLP293-CarMan_KiCAD_Library-TSI_Rev.5-rescue U31
 U 1 1 5FA8091D
 P 6300 7250
 F 0 "U31" H 6400 7450 50  0000 C CNN
@@ -1363,7 +1258,7 @@ Connection ~ 3300 8200
 Wire Wire Line
 	3300 8200 3650 8200
 $Comp
-L TSI_Rev.5-rescue:MC7805BDTRKG-CarMan_KiCAD_Library U20
+L TSI_Rev.5-rescue:MC7805BDTRKG-CarMan_KiCAD_Library-TSI_Rev.5-rescue U20
 U 1 1 5FEDF126
 P 15000 8900
 F 0 "U20" H 15000 9308 79  0000 C CNN
@@ -1418,7 +1313,7 @@ Text Notes 14500 9750 0    79   ~ 0
 Text Notes 15200 9050 0    79   ~ 0
 25mA\n
 $Comp
-L TSI_Rev.5-rescue:TS431ILT-CarMan_KiCAD_Library IC4
+L TSI_Rev.5-rescue:TS431ILT-CarMan_KiCAD_Library-TSI_Rev.5-rescue IC4
 U 1 1 5FF9DD5A
 P 13600 7650
 F 0 "IC4" H 13600 8081 79  0000 C CNN
@@ -1501,25 +1396,10 @@ Text Notes 12400 8050 0    79   ~ 0
 Adjustable Voltage Reference\n
 Text Notes 11800 6550 0    138  ~ 0
 VOLTAGE REFERENCES & REGULATORS
-Text Notes 9550 7050 0    50   ~ 0
-Disharge Relay
 Text Label 9600 6700 2    50   ~ 0
 DC_RELAY+
 Text Label 9600 6850 2    50   ~ 0
 DC_RELAY-
-$Comp
-L TSI_Rev.5-rescue:2PinPortLeft-CarMan_KiCAD_Library U?
-U 1 1 60120F02
-P 9850 6800
-AR Path="/60120F02" Ref="U?"  Part="1" 
-AR Path="/6196BF15/60120F02" Ref="U?"  Part="1" 
-F 0 "U?" H 9978 6871 50  0001 L CNN
-F 1 "TSI J8" H 9750 7050 50  0000 L CNN
-F 2 "" H 9850 6800 50  0001 C CNN
-F 3 "" H 9850 6800 50  0001 C CNN
-	1    9850 6800
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	8200 6550 8200 6650
 Wire Wire Line
@@ -1644,8 +1524,6 @@ Text HLabel 1050 1550 0    50   Input ~ 0
 Text HLabel 1050 1450 0    50   Input ~ 0
 5HV
 Wire Notes Line
-	1850 500  1850 1650
-Wire Notes Line
 	500  500  500  1650
 Text Label 1450 6850 0    50   ~ 0
 GLV_RTN
@@ -1715,23 +1593,6 @@ Text Notes 6400 10000 0    47   ~ 0
 24V -> 24V\n
 Text Notes 5800 11000 0    47   ~ 0
 5V -> 5V\n
-Text Notes 9800 6800 0    47   ~ 0
-NC
-$Comp
-L TSI_Rev.5-rescue:2PinPortLeft-CarMan_KiCAD_Library U?
-U 1 1 607BAD51
-P 11500 2500
-AR Path="/607BAD51" Ref="U?"  Part="1" 
-AR Path="/6196BF15/607BAD51" Ref="U?"  Part="1" 
-F 0 "U?" H 11628 2571 50  0001 L CNN
-F 1 "TSI J9" H 11400 2750 50  0000 L CNN
-F 2 "" H 11500 2500 50  0001 C CNN
-F 3 "" H 11500 2500 50  0001 C CNN
-	1    11500 2500
-	1    0    0    -1  
-$EndComp
-Text Notes 11200 2900 0    50   ~ 0
-Precharge Relay\n\n\n
 Text Label 11250 2550 2    50   ~ 0
 PC_RELAY-
 Text Label 11250 2400 2    50   ~ 0
@@ -1767,4 +1628,52 @@ Wire Wire Line
 Connection ~ 4700 8300
 Wire Notes Line
 	6300 5700 6300 11200
+Text Label 1250 1750 0    50   ~ 0
+DC_RELAY-
+Text Label 1250 1650 0    50   ~ 0
+DC_RELAY+
+Wire Wire Line
+	1250 1650 1050 1650
+Wire Wire Line
+	1250 1750 1050 1750
+Text HLabel 1050 1750 0    50   Input ~ 0
+DC_RELAY-
+Text HLabel 1050 1650 0    50   Input ~ 0
+DC_RELAY+
+Text Label 1250 1950 0    50   ~ 0
+PC_RELAY-
+Text Label 1250 1850 0    50   ~ 0
+PC_RELAY+
+Wire Wire Line
+	1250 1850 1050 1850
+Wire Wire Line
+	1250 1950 1050 1950
+Text HLabel 1050 1950 0    50   Input ~ 0
+PC_RELAY-
+Text HLabel 1050 1850 0    50   Input ~ 0
+PC_RELAY+
+Text Label 1250 2150 0    50   ~ 0
+IGNI_VCC
+Text Label 1250 2050 0    50   ~ 0
+IGNI_GND
+Wire Wire Line
+	1250 2050 1050 2050
+Wire Wire Line
+	1250 2150 1050 2150
+Text HLabel 1050 2150 0    50   Input ~ 0
+IGNI_VCC
+Text HLabel 1050 2050 0    50   Input ~ 0
+IGNI_GND
+Text Label 1250 2350 0    50   ~ 0
+Throttle_HV
+Text Label 1250 2250 0    50   ~ 0
+BP_HV
+Wire Wire Line
+	1250 2250 1050 2250
+Wire Wire Line
+	1250 2350 1050 2350
+Text HLabel 1050 2350 0    50   Input ~ 0
+Throttle_HV
+Text HLabel 1050 2250 0    50   Input ~ 0
+BP_HV
 $EndSCHEMATC
