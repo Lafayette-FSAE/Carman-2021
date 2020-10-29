@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 5 6
+Sheet 4 6
 Title ""
 Date ""
 Rev ""
@@ -723,31 +723,6 @@ Wire Wire Line
 Wire Wire Line
 	14600 5400 14650 5400
 $Comp
-L TSI_Rev.5-rescue:Current_Sensor-CarMan_KiCAD_Library-TSI_Rev.5-rescue J25
-U 1 1 5FB0E179
-P 11950 1900
-F 0 "J25" H 11950 1900 50  0000 C CNN
-F 1 "Current_Sensor" H 11950 1100 50  0000 C CNN
-F 2 "" H 11950 1900 50  0001 C CNN
-F 3 "" H 11950 1900 50  0001 C CNN
-	1    11950 1900
-	1    0    0    -1  
-$EndComp
-NoConn ~ 12350 2550
-NoConn ~ 12350 2050
-Wire Wire Line
-	12500 2150 12350 2150
-Wire Wire Line
-	12500 2250 12350 2250
-Wire Wire Line
-	12500 2350 12350 2350
-Wire Wire Line
-	12500 2450 12350 2450
-Text Label 12500 2350 0    50   ~ 0
-IO_Ground
-Text Label 12500 2450 0    50   ~ 0
-5HV
-$Comp
 L TSI_Rev.5-rescue:NCD9830DBR2G-CarMan_KiCAD_Library-TSI_Rev.5-rescue U25
 U 1 1 5FB6F4DE
 P 7500 5550
@@ -787,10 +762,6 @@ Wire Wire Line
 	8200 5550 8100 5550
 Wire Wire Line
 	8200 5700 8100 5700
-Text Label 12500 2250 0    50   ~ 0
-A2_HV
-Text Label 12500 2150 0    50   ~ 0
-A1_HV
 Text Label 8200 5700 0    50   ~ 0
 A2_HV
 Text Label 8200 5550 0    50   ~ 0
@@ -1327,9 +1298,9 @@ Wire Wire Line
 Text HLabel 5750 9400 0    50   Input ~ 0
 HV-
 Wire Notes Line
-	6600 9600 5050 9600
+	6650 9800 5100 9800
 Wire Notes Line
-	6600 8350 6600 9600
+	6650 8550 6650 9800
 Wire Notes Line
 	5050 8350 5050 9600
 Wire Notes Line
@@ -1364,16 +1335,16 @@ Text Notes 6950 6600 0    98   ~ 0
 Binary Address:\n1001010
 Text Notes 12100 10450 0    157  ~ 0
 V/I/TEMP MEASUREMENT\n& THROTTLE VOLTAGE ISOLATOR
-$Comp
-L Connector_Generic:Conn_01x04 J?
-U 1 1 6035F3A1
-P 14850 5500
-F 0 "J?" H 14930 5492 50  0001 L CNN
-F 1 "TSI J1" H 14750 5700 50  0000 L CNN
-F 2 "" H 14850 5500 50  0001 C CNN
-F 3 "~" H 14850 5500 50  0001 C CNN
-	1    14850 5500
-	1    0    0    -1  
-$EndComp
-NoConn ~ 14650 5700
+Text Label 5950 9700 0    50   ~ 0
+A2_HV
+Text Label 5950 9600 0    50   ~ 0
+A1_HV
+Wire Wire Line
+	5950 9700 5750 9700
+Wire Wire Line
+	5950 9600 5750 9600
+Text HLabel 5750 9600 0    50   Input ~ 0
+A1_HV
+Text HLabel 5750 9700 0    50   Input ~ 0
+A2_HV
 $EndSCHEMATC

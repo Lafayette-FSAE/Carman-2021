@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:TSI_Rev.5-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -1024,8 +1023,24 @@ Wire Wire Line
 	2750 3500 2850 3500
 Wire Wire Line
 	2750 3800 2850 3800
+Text Label 10500 5600 0    50   ~ 0
+SL1_In
+Text Label 10500 5500 0    50   ~ 0
+SL1_Out
+Wire Wire Line
+	10500 5600 10350 5600
+Wire Wire Line
+	10500 5500 10350 5500
+Wire Wire Line
+	10500 5700 10350 5700
+Text Label 10500 5700 0    50   ~ 0
+CAN_H
+Text Label 10500 5800 0    50   ~ 0
+CAN_L
+Wire Wire Line
+	10500 5800 10350 5800
 $Sheet
-S 9150 5350 1200 1000
+S 9150 5350 1200 1050
 U 5FE1DE7D
 F0 "CAN_GLV_POWER" 47
 F1 "CAN_GLV_POWER.sch" 47
@@ -1048,20 +1063,4 @@ F17 "SL1_In" O R 10350 5600 50
 F18 "CAN_H" O R 10350 5700 50 
 F19 "CAN_L" O R 10350 5800 50 
 $EndSheet
-Text Label 10500 5600 0    50   ~ 0
-SL1_In
-Text Label 10500 5500 0    50   ~ 0
-SL1_Out
-Wire Wire Line
-	10500 5600 10350 5600
-Wire Wire Line
-	10500 5500 10350 5500
-Wire Wire Line
-	10500 5700 10350 5700
-Text Label 10500 5700 0    50   ~ 0
-CAN_H
-Text Label 10500 5800 0    50   ~ 0
-CAN_L
-Wire Wire Line
-	10500 5800 10350 5800
 $EndSCHEMATC
