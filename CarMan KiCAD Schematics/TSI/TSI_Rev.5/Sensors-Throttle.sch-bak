@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 4 6
+Sheet 5 7
 Title ""
 Date ""
 Rev ""
@@ -1289,20 +1289,12 @@ Text HLabel 5750 9100 0    50   Input ~ 0
 MC_Voltage
 Text HLabel 5750 9300 0    50   Input ~ 0
 HV+
-Wire Notes Line
-	6600 8350 5050 8350
 Text Label 5950 9400 0    50   ~ 0
 HV-
 Wire Wire Line
 	5950 9400 5750 9400
 Text HLabel 5750 9400 0    50   Input ~ 0
 HV-
-Wire Notes Line
-	6650 9800 5100 9800
-Wire Notes Line
-	6650 8550 6650 9800
-Wire Notes Line
-	5050 8350 5050 9600
 Wire Notes Line
 	12650 9650 15850 9650
 Wire Notes Line
@@ -1347,4 +1339,12 @@ Text HLabel 5750 9600 0    50   Input ~ 0
 A1_HV
 Text HLabel 5750 9700 0    50   Input ~ 0
 A2_HV
+Wire Notes Line
+	5050 9800 6650 9800
+Wire Notes Line
+	5050 8350 5050 9800
+Wire Notes Line
+	5050 8350 6650 8350
+Wire Notes Line
+	6650 8350 6650 9800
 $EndSCHEMATC

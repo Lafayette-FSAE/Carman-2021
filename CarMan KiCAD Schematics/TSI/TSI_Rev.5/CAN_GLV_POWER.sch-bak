@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 6
+Sheet 6 7
 Title ""
 Date ""
 Rev ""
@@ -13,8 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Notes 7500 6950 0    197  ~ 0
-CAN and GLV Power
 $Comp
 L Mechanical:MountingHole H?
 U 1 1 5FB208C3
@@ -53,7 +51,7 @@ L Mechanical:MountingHole H?
 U 1 1 5FB23CBE
 P 1650 1800
 F 0 "H?" H 1750 1846 50  0000 L CNN
-F 1 "ChassisGround" H 1400 1650 50  0000 L CNN
+F 1 "ChassisGND" H 1400 1650 50  0000 L CNN
 F 2 "" H 1650 1800 50  0001 C CNN
 F 3 "~" H 1650 1800 50  0001 C CNN
 	1    1650 1800
@@ -93,7 +91,7 @@ L pspice:CAP C?
 U 1 1 5FB293CD
 P 1350 3900
 F 0 "C?" H 1528 3946 50  0000 L CNN
-F 1 "10u" H 1528 3855 50  0000 L CNN
+F 1 "CAP" H 1528 3855 50  0000 L CNN
 F 2 "" H 1350 3900 50  0001 C CNN
 F 3 "~" H 1350 3900 50  0001 C CNN
 	1    1350 3900
@@ -494,58 +492,6 @@ AIRs+
 Text Label 8500 3200 0    50   ~ 0
 AIRs-
 $Comp
-L Relay:FINDER-32.21-x300 K?
-U 1 1 5FB71AE8
-P 9650 4600
-F 0 "K?" H 10080 4646 50  0000 L CNN
-F 1 "G6B-1174P-US-DC24" H 10080 4555 50  0000 L CNN
-F 2 "Relay_THT:Relay_SPST_Finder_32.21-x300" H 10920 4570 50  0001 C CNN
-F 3 "http://gfinder.findernet.com/assets/Series/355/S32EN.pdf" H 9650 4600 50  0001 C CNN
-	1    9650 4600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9950 4300 9950 4100
-Wire Wire Line
-	9450 4900 9450 5100
-Wire Wire Line
-	9450 4300 9450 4200
-$Comp
-L Diode:1N4001 D?
-U 1 1 5FB7BA94
-P 8750 4600
-F 0 "D?" V 8704 4680 50  0000 L CNN
-F 1 "1N4001" V 8795 4680 50  0000 L CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 8750 4425 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 8750 4600 50  0001 C CNN
-	1    8750 4600
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	8750 4450 8750 4200
-Wire Wire Line
-	8750 4200 9450 4200
-Wire Wire Line
-	8750 4750 8750 5100
-Wire Wire Line
-	8750 5100 9450 5100
-Connection ~ 9450 5100
-Text Label 9450 5250 0    50   ~ 0
-GLV_RTN
-Wire Wire Line
-	9450 5100 9450 5250
-Wire Wire Line
-	9850 4900 9850 5250
-Text Label 9850 5250 0    50   ~ 0
-SL1_In
-Text Label 9950 4100 0    50   ~ 0
-SL1_Out
-Text Label 9450 4100 0    50   ~ 0
-IMD_Status
-Connection ~ 9450 4200
-Wire Wire Line
-	9450 4100 9450 4200
-$Comp
 L CarMan_KiCAD_Library:D_Schottky D?
 U 1 1 5FB9F820
 P 2600 6400
@@ -751,13 +697,11 @@ Wire Wire Line
 Wire Wire Line
 	1650 1800 2150 1800
 Text Label 2150 1800 0    50   ~ 0
-ChassisGround
+ChassisGND
 Text Notes 6450 1050 2    118  ~ 0
 CAN Transceiver
 Text Notes 10500 3400 2    89   ~ 0
 AIRs power on SL closed
-Text Notes 10100 5500 2    89   ~ 0
-IMD Relay
 Text Notes 3600 5900 2    89   ~ 0
 Cooling Control\n
 Text Notes 6950 3600 2    89   ~ 0
@@ -786,4 +730,183 @@ Text Label 9300 1450 2    50   ~ 0
 CAN_H
 Text Label 9300 1550 2    50   ~ 0
 CAN_L
+Text HLabel 9800 1800 2    50   Output ~ 0
+SR_CTRL
+Wire Wire Line
+	9800 1800 9650 1800
+Text Label 9650 1800 2    50   ~ 0
+SR_CTRL
+Text Notes 7500 6950 0    197  ~ 0
+CAN and GLV Power
+$Comp
+L Relay:FINDER-32.21-x300 K?
+U 1 1 5FB71AE8
+P 9600 4100
+F 0 "K?" H 10030 4146 50  0000 L CNN
+F 1 "G6B-1174P-US-DC24" H 10030 4055 50  0000 L CNN
+F 2 "Relay_THT:Relay_SPST_Finder_32.21-x300" H 10870 4070 50  0001 C CNN
+F 3 "http://gfinder.findernet.com/assets/Series/355/S32EN.pdf" H 9600 4100 50  0001 C CNN
+	1    9600 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9900 3800 9900 3600
+Wire Wire Line
+	9400 4400 9400 4600
+Wire Wire Line
+	9400 3800 9400 3700
+$Comp
+L Diode:1N4001 D?
+U 1 1 5FB7BA94
+P 8700 4100
+F 0 "D?" V 8654 4180 50  0000 L CNN
+F 1 "1N4001" V 8745 4180 50  0000 L CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 8700 3925 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 8700 4100 50  0001 C CNN
+	1    8700 4100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8700 3950 8700 3700
+Wire Wire Line
+	8700 3700 9400 3700
+Wire Wire Line
+	8700 4250 8700 4600
+Wire Wire Line
+	8700 4600 9400 4600
+Connection ~ 9400 4600
+Text Label 9400 4750 0    50   ~ 0
+GLV_RTN
+Wire Wire Line
+	9400 4600 9400 4750
+Wire Wire Line
+	9800 4400 9800 4750
+Text Label 9800 4750 0    50   ~ 0
+SL1_In
+Text Label 9900 3600 0    50   ~ 0
+SL1_Out
+Text Label 9400 3600 0    50   ~ 0
+IMD_Status
+Connection ~ 9400 3700
+Wire Wire Line
+	9400 3600 9400 3700
+Text Notes 10050 5000 2    89   ~ 0
+IMD Relay
+$Comp
+L Lafayette_Electric_Car_Internals:G5LE-1-E RL?
+U 1 1 5FB466B1
+P 5600 6350
+F 0 "RL?" V 6167 6350 50  0000 C CNN
+F 1 "G5LE-1-E" V 6076 6350 50  0000 C CNN
+F 2 "" H 5850 6950 50  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Omron%20PDFs/G5LE-E_G.pdf" H 5850 6950 50  0001 C CNN
+	1    5600 6350
+	0    -1   -1   0   
+$EndComp
+Text Label 5300 6550 2    50   ~ 0
+GLV
+$Comp
+L Isolator:PS8802-2 U?
+U 1 1 5FB4BE00
+P 8650 5700
+F 0 "U?" H 8650 6217 50  0000 C CNN
+F 1 "PS8802-2" H 8650 6126 50  0000 C CNN
+F 2 "Package_SO:SSOP-8_3.95x5.21x3.27mm_P1.27mm" H 8450 5300 50  0001 L CIN
+F 3 "http://www.cel.com/pdf/datasheets/ps8802.pdf" H 8605 5900 50  0001 L CNN
+	1    8650 5700
+	1    0    0    -1  
+$EndComp
+Text Notes 9250 5100 2    50   ~ 0
+We need to get the actual lda 210
+Text Label 8350 5400 2    50   ~ 0
+SR_CTRL
+Text Label 7450 5600 2    50   ~ 0
+5V_ISO_RTN
+Text Label 8950 5400 0    50   ~ 0
+GLV_RTN
+Text Label 8950 5500 0    50   ~ 0
+SR_CTRL_Boosted
+$Comp
+L Device:R R?
+U 1 1 5FB503D5
+P 8050 5600
+F 0 "R?" V 7950 5600 50  0000 C CNN
+F 1 "2.1K" V 8150 5600 50  0000 C CNN
+F 2 "" V 7980 5600 50  0001 C CNN
+F 3 "~" H 8050 5600 50  0001 C CNN
+	1    8050 5600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8350 5600 8200 5600
+Wire Wire Line
+	7900 5600 7450 5600
+Wire Wire Line
+	8950 6000 9300 6000
+$Comp
+L Device:R R?
+U 1 1 5FB768D2
+P 9300 6150
+F 0 "R?" V 9200 6150 50  0000 C CNN
+F 1 "100K" H 9450 6150 50  0000 C CNN
+F 2 "" V 9230 6150 50  0001 C CNN
+F 3 "~" H 9300 6150 50  0001 C CNN
+	1    9300 6150
+	1    0    0    -1  
+$EndComp
+Text Label 9300 6300 2    50   ~ 0
+5V_ISO_RTN
+NoConn ~ 8950 5900
+NoConn ~ 8350 5800
+NoConn ~ 8350 6000
+Text Label 5900 6550 0    50   ~ 0
+SR_CTRL_Boosted
+$Comp
+L Device:D_Schottky D?
+U 1 1 5FB8F043
+P 5600 7100
+F 0 "D?" H 5600 7316 50  0000 C CNN
+F 1 "D_Schottky" H 5600 7225 50  0000 C CNN
+F 2 "" H 5600 7100 50  0001 C CNN
+F 3 "~" H 5600 7100 50  0001 C CNN
+	1    5600 7100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 6550 5050 6550
+Wire Wire Line
+	5050 6550 5050 7100
+Wire Wire Line
+	5050 7100 5450 7100
+Wire Wire Line
+	5900 6550 6250 6550
+Wire Wire Line
+	6250 6550 6250 7100
+Wire Wire Line
+	6250 7100 5750 7100
+Text Label 5900 6150 0    50   ~ 0
+BOT_In
+NoConn ~ 5300 6050
+Text Label 5300 6250 2    50   ~ 0
+MRESET_Contact
+Text HLabel 9700 1950 2    50   Output ~ 0
+MRESET_Contact
+Text HLabel 9700 2050 2    50   Output ~ 0
+5V_ISO_RTN
+Wire Wire Line
+	9700 1950 9550 1950
+Wire Wire Line
+	9700 2050 9550 2050
+Text Label 9550 1950 2    50   ~ 0
+MRESET_Contact
+Text Label 9550 2050 2    50   ~ 0
+5V_ISO_RTN
+Text HLabel 9700 2200 2    50   Output ~ 0
+BOT_In
+Wire Wire Line
+	9700 2200 9550 2200
+Text Label 9550 2200 2    50   ~ 0
+BOT_In
+Text Notes 8150 5900 2    50   ~ 0
+Zacky bear doesn't like
 $EndSCHEMATC

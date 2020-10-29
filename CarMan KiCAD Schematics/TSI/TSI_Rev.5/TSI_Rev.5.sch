@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:TSI_Rev.5-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -734,8 +733,6 @@ Wire Wire Line
 Text Notes 4250 7600 0    79   ~ 0
 TSI J1 & TSI J25 (Current Sensor)\n
 Wire Notes Line
-	5200 6050 5200 7250
-Wire Notes Line
 	1350 6250 2900 6250
 Text Label 4000 2950 2    50   ~ 0
 IO_Ground
@@ -1125,4 +1122,6 @@ Text Label 5500 3600 0    50   ~ 0
 BP_CAN-
 Text Label 5200 3600 2    50   ~ 0
 CAN-_Logic
+Wire Notes Line
+	5200 6050 5200 7400
 $EndSCHEMATC
