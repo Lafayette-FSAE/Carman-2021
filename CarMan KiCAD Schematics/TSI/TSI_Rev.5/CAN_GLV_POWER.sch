@@ -1,9 +1,10 @@
 EESchema Schematic File Version 4
-EELAYER 30 0
+LIBS:TSI_Rev.5-cache
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 6
+Sheet 6 6
 Title ""
 Date ""
 Rev ""
@@ -122,9 +123,9 @@ Wire Wire Line
 	1350 3650 1000 3650
 Connection ~ 1350 3650
 Text Label 1000 3650 2    50   ~ 0
-+24V
+24V
 Text Label 1000 4150 2    50   ~ 0
-LV_RTN
+GLV_RTN
 Wire Wire Line
 	3650 4000 4050 4000
 Wire Wire Line
@@ -139,9 +140,9 @@ Wire Wire Line
 Wire Wire Line
 	3650 3800 4050 3800
 Text Label 4050 3800 0    50   ~ 0
-+10DC
+10V
 Text Label 4050 3900 0    50   ~ 0
-+5DC
+5V
 $Comp
 L pspice:CAP C?
 U 1 1 5FB2BB97
@@ -271,9 +272,9 @@ Wire Wire Line
 Wire Wire Line
 	5250 4700 5250 5400
 Text Label 6050 5400 0    50   ~ 0
-LV_RTN
+GLV_RTN
 Text Label 5250 5400 2    50   ~ 0
-LV_RTN
+GLV_RTN
 $Comp
 L Connector:TestPoint 5V_TP1
 U 1 1 5FB3F147
@@ -289,7 +290,7 @@ Connection ~ 4950 3900
 Wire Wire Line
 	4950 3900 5300 3900
 Text Label 7650 4200 2    50   ~ 0
-V3.3
+3.3V
 $Comp
 L Connector:TestPoint 3.3V_TP1
 U 1 1 5FB412A8
@@ -327,7 +328,7 @@ Wire Wire Line
 Wire Wire Line
 	7300 4850 7300 5050
 Text Label 7300 5050 0    50   ~ 0
-LV_RTN
+GLV_RTN
 $Comp
 L Interface_CAN_LIN:MCP2551-I-SN U?
 U 1 1 5FB471DB
@@ -342,11 +343,11 @@ $EndComp
 Wire Wire Line
 	5850 1500 5850 1250
 Text Label 5850 1250 2    50   ~ 0
-+5DC
+5V
 Wire Wire Line
 	5850 2300 5850 2450
 Text Label 5850 2450 2    50   ~ 0
-LV_RTN
+GLV_RTN
 Wire Wire Line
 	6350 1700 6550 1700
 Wire Wire Line
@@ -390,9 +391,9 @@ Wire Wire Line
 	7450 2100 7700 2100
 Connection ~ 7450 2100
 Text Label 7700 2100 0    50   ~ 0
-LV_RTN
+GLV_RTN
 Text Label 7450 1450 0    50   ~ 0
-+5DC
+5V
 Wire Wire Line
 	4300 1800 4600 1800
 Wire Wire Line
@@ -469,9 +470,9 @@ Wire Wire Line
 Text Label 10000 2650 0    50   ~ 0
 Safety_Loop
 Text Label 10750 3000 0    50   ~ 0
-+5DC
+5V
 Text Label 10250 3200 0    50   ~ 0
-LV_RTN
+GLV_RTN
 $Comp
 L Device:R R?
 U 1 1 5FB6AA77
@@ -531,7 +532,7 @@ Wire Wire Line
 	8750 5100 9450 5100
 Connection ~ 9450 5100
 Text Label 9450 5250 0    50   ~ 0
-LV_RTN
+GLV_RTN
 Wire Wire Line
 	9450 5100 9450 5250
 Wire Wire Line
@@ -621,7 +622,7 @@ Wire Wire Line
 Text Label 1300 6700 2    50   ~ 0
 Cooling_CTRL
 Text Label 1300 6950 2    50   ~ 0
-V3.3
+3.3V
 $Comp
 L Device:Q_PMOS_GSD Q?
 U 1 1 5FBB866A
@@ -661,25 +662,25 @@ Wire Wire Line
 Text Label 4500 7000 2    50   ~ 0
 Cooling_power
 Text Label 4500 7350 2    50   ~ 0
-LV_RTN
+GLV_RTN
 Wire Wire Line
 	3250 6150 3250 6050
 Text Label 3250 6050 2    50   ~ 0
-+24V
+24V
 Text HLabel 10800 750  2    50   Output ~ 0
 CANRX
 Text HLabel 10800 950  2    50   Output ~ 0
-+10V
+10V
 Text HLabel 10800 1050 2    50   Output ~ 0
-+5V
+5V
 Text HLabel 10800 1150 2    50   Output ~ 0
-+3.3V
+3.3V
 Text HLabel 10800 1350 2    50   Output ~ 0
-+24V
+24V
 Text HLabel 10800 1450 2    50   Output ~ 0
-LV_RTN
+GLV_RTN
 Text HLabel 10800 1550 2    50   Output ~ 0
-CH_gnd
+Chassis_GND
 Wire Wire Line
 	10800 650  10650 650 
 Wire Wire Line
@@ -701,17 +702,17 @@ CANTX
 Text Label 10650 750  2    50   ~ 0
 CANRX
 Text Label 10650 950  2    50   ~ 0
-+10DC
+10V
 Text Label 10650 1050 2    50   ~ 0
-+5DC
+5V
 Text Label 10650 1150 2    50   ~ 0
-V3.3
+3.3V
 Text Label 10650 1350 2    50   ~ 0
-+24V
+24V
 Text Label 10650 1450 2    50   ~ 0
-LV_RTN
+GLV_RTN
 Text Label 10650 1550 2    50   ~ 0
-CH_gnd
+Chassis_GND
 Text HLabel 9750 650  2    50   Output ~ 0
 AIRs+
 Text HLabel 9750 750  2    50   Output ~ 0
@@ -751,7 +752,7 @@ Wire Wire Line
 Wire Wire Line
 	1650 1800 2150 1800
 Text Label 2150 1800 0    50   ~ 0
-CH_gnd
+ChassisGround
 Text Notes 6450 1050 2    118  ~ 0
 CAN Transceiver
 Text Notes 10500 3400 2    89   ~ 0
@@ -774,4 +775,16 @@ Wire Wire Line
 	8250 1200 8100 1200
 Text Label 8100 1200 2    50   ~ 0
 SL1_In
+Text HLabel 9450 1450 2    50   Output ~ 0
+CAN_H
+Text HLabel 9450 1550 2    50   Output ~ 0
+CAN_L
+Wire Wire Line
+	9450 1450 9300 1450
+Wire Wire Line
+	9450 1550 9300 1550
+Text Label 9300 1450 2    50   ~ 0
+CAN_H
+Text Label 9300 1550 2    50   ~ 0
+CAN_L
 $EndSCHEMATC

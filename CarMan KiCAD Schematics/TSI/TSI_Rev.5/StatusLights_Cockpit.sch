@@ -1,5 +1,6 @@
 EESchema Schematic File Version 4
-EELAYER 30 0
+LIBS:TSI_Rev.5-cache
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -552,7 +553,7 @@ Wire Wire Line
 Wire Wire Line
 	7600 5350 7350 5350
 Text Label 7350 5000 2    50   ~ 0
-+3.3V
+3.3V
 Text Label 7350 5350 2    50   ~ 0
 Drive_BTN
 Wire Wire Line
@@ -566,7 +567,7 @@ Wire Wire Line
 Text Label 8750 5000 0    50   ~ 0
 Drive_BTN_RTN
 Text Label 8700 5000 2    50   ~ 0
-LV_RTN
+GLV_RTN
 Wire Notes Line
 	8050 5000 8100 5000
 Wire Notes Line
@@ -629,4 +630,16 @@ Text Label 1600 3350 0    50   ~ 0
 FAULT_LED_RTN
 Text Label 1600 3250 0    50   ~ 0
 AMS_FAULT_LED
+Text HLabel 1200 2300 0    50   Input ~ 0
+Drive_BTN_RTN
+Wire Wire Line
+	1200 2300 1350 2300
+Text Label 1350 2300 0    50   ~ 0
+Drive_BTN_RTN
+Text HLabel 1200 2200 0    50   Input ~ 0
+Drive_BTN
+Wire Wire Line
+	1200 2200 1350 2200
+Text Label 1350 2200 0    50   ~ 0
+Drive_BTN
 $EndSCHEMATC
