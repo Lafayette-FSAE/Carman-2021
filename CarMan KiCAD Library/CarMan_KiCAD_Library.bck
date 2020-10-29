@@ -30,6 +30,12 @@ K TTL nand 2-input buffer
 F http://www.ti.com/lit/gpn/sn74ls37
 $ENDCMP
 #
+$CMP D_Schottky
+D Schottky diode
+K diode Schottky
+F ~
+$ENDCMP
+#
 $CMP TL431PS
 D Shunt Regulator, MSOP-8
 K diode device shunt regulator

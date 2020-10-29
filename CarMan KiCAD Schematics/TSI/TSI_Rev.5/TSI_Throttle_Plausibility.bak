@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 4 6
+Sheet 3 6
 Title ""
 Date ""
 Rev ""
@@ -1346,7 +1346,7 @@ Wire Wire Line
 Wire Wire Line
 	1550 2600 1750 2600
 Text Label 1550 2800 2    50   ~ 0
-BP_uC
+Brake_Pressed_uC
 Wire Wire Line
 	1550 2800 1750 2800
 Text Label 1550 2500 2    50   ~ 0
@@ -1364,7 +1364,7 @@ APPS2
 Text HLabel 1750 2900 2    50   Output ~ 0
 Throttle_PL
 Text HLabel 1750 2800 2    50   Output ~ 0
-BrakePressed_uC
+Brake_Pressed_uC
 Text HLabel 1750 3000 2    50   Output ~ 0
 Throttle_LV
 Text HLabel 1750 2700 2    50   Output ~ 0
@@ -1712,7 +1712,7 @@ $EndComp
 Text Label 15600 9200 0    50   ~ 0
 GND
 Text Label 15600 9000 0    50   ~ 0
-BP_uC
+Brake_Pressed_uC
 Wire Wire Line
 	15600 9200 15550 9200
 Wire Wire Line
@@ -1863,48 +1863,4 @@ Wire Notes Line
 	500  500  500  3150
 Wire Notes Line
 	500  3150 2750 3150
-Text Label 15000 900  2    50   ~ 0
-BRAKE_SWITCH(24V)
-Text Notes 15100 1250 0    50   ~ 0
-Brake \nPedals\n
-Text Label 15000 1000 2    50   ~ 0
-BP(BRAKE_SWITCH_RTN)
-Text Label 13600 1400 2    50   ~ 0
-APPS2_RTN
-Text Label 13600 1300 2    50   ~ 0
-APPS2
-Text Label 13600 1200 2    50   ~ 0
-APPS2_5V
-Text Label 13600 1100 2    50   ~ 0
-APPS1_RTN
-Text Label 13600 1000 2    50   ~ 0
-APPS1
-Text Label 13600 900  2    50   ~ 0
-APPS1_10V
-$Comp
-L Connector_Generic:Conn_01x06 J?
-U 1 1 60390690
-P 13800 1100
-AR Path="/60390690" Ref="J?"  Part="1" 
-AR Path="/5FC85F57/60390690" Ref="J?"  Part="1" 
-F 0 "J?" H 13880 1092 50  0001 L CNN
-F 1 "TSI J3" H 13700 1450 50  0000 L CNN
-F 2 "" H 13800 1100 50  0001 C CNN
-F 3 "~" H 13800 1100 50  0001 C CNN
-	1    13800 1100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x02 J?
-U 1 1 60390696
-P 15200 900
-AR Path="/60390696" Ref="J?"  Part="1" 
-AR Path="/5FC85F57/60390696" Ref="J?"  Part="1" 
-F 0 "J?" H 15280 892 50  0001 L CNN
-F 1 "TSI J4" H 15100 1050 50  0000 L CNN
-F 2 "" H 15200 900 50  0001 C CNN
-F 3 "~" H 15200 900 50  0001 C CNN
-	1    15200 900 
-	1    0    0    -1  
-$EndComp
 $EndSCHEMATC

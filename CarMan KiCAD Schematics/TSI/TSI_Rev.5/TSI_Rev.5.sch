@@ -1,9 +1,10 @@
 EESchema Schematic File Version 4
-EELAYER 30 0
+LIBS:TSI_Rev.5-cache
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 6
+Sheet 1 7
 Title ""
 Date ""
 Rev ""
@@ -84,7 +85,7 @@ FAULT_LED_RTN
 Text Notes 800  2250 0    50   ~ 0
 Precharge Relay\n\n\n
 Text Label 7400 1700 2    50   ~ 0
-MRESET_CONTACT
+MRESET_Contact
 Text Label 7400 2000 2    50   ~ 0
 GLV_RTN
 Text Label 7400 1900 2    50   ~ 0
@@ -316,9 +317,13 @@ HV+
 Text Label 8850 4850 2    50   ~ 0
 HV-
 Wire Wire Line
-	9150 5400 9000 5400
+	9150 5200 9000 5200
 Wire Wire Line
-	9150 5500 9000 5500
+	9150 5300 9000 5300
+Wire Wire Line
+	9150 5600 9000 5600
+Wire Wire Line
+	9150 5700 9000 5700
 Wire Wire Line
 	9150 5800 9000 5800
 Wire Wire Line
@@ -327,100 +332,85 @@ Wire Wire Line
 	9150 6000 9000 6000
 Wire Wire Line
 	9150 6100 9000 6100
-Wire Wire Line
-	9150 6200 9000 6200
-Wire Wire Line
-	9150 6300 9000 6300
-Text Label 9000 5400 2    50   ~ 0
+Text Label 9000 5200 2    50   ~ 0
 CANTX
-Text Label 9000 5500 2    50   ~ 0
+Text Label 9000 5300 2    50   ~ 0
 CANRX
-Text Label 9000 5800 2    50   ~ 0
+Text Label 9000 5600 2    50   ~ 0
 10V
-Text Label 9000 5900 2    50   ~ 0
+Text Label 9000 5700 2    50   ~ 0
 5V
-Text Label 9000 6000 2    50   ~ 0
+Text Label 9000 5800 2    50   ~ 0
 3.3V
-Text Label 9000 6100 2    50   ~ 0
+Text Label 9000 5900 2    50   ~ 0
 24V
-Text Label 9000 6200 2    50   ~ 0
+Text Label 9000 6000 2    50   ~ 0
 GLV_RTN
-Text Label 9000 6300 2    50   ~ 0
+Text Label 9000 6100 2    50   ~ 0
 Chassis_GND
 Wire Wire Line
-	9150 5600 9000 5600
+	9150 5400 9000 5400
 Wire Wire Line
-	9150 5700 9000 5700
-Text Label 9000 5600 2    50   ~ 0
+	9150 5500 9000 5500
+Text Label 9000 5400 2    50   ~ 0
 AIRs+
-Text Label 9000 5700 2    50   ~ 0
+Text Label 9000 5500 2    50   ~ 0
 AIRs-
-Text Label 10500 5400 0    50   ~ 0
+Text Label 10500 5200 0    50   ~ 0
 Cooling_CTRL
 Wire Wire Line
-	10500 5400 10350 5400
-Text Label 10500 6100 0    50   ~ 0
+	10500 5200 10350 5200
+Text Label 10500 5900 0    50   ~ 0
 IMD_Status
-Text Label 10500 6000 0    50   ~ 0
+Text Label 10500 5800 0    50   ~ 0
 Safety_Loop
 Wire Wire Line
-	10500 6100 10350 6100
+	10500 5900 10350 5900
+Wire Wire Line
+	10500 5800 10350 5800
 Wire Wire Line
 	10500 6000 10350 6000
-Wire Wire Line
-	10500 6200 10350 6200
-Text Label 10500 6200 0    50   ~ 0
+Text Label 10500 6000 0    50   ~ 0
 Cooling_power
-$Comp
-L Connector_Generic:Conn_02x10_Counter_Clockwise J?
-U 1 1 5F99B7E9
-P 7000 3150
-F 0 "J?" H 7050 3767 50  0001 C CNN
-F 1 "J26" H 7050 3676 50  0000 C CNN
-F 2 "" H 7000 3150 50  0001 C CNN
-F 3 "~" H 7000 3150 50  0001 C CNN
-	1    7000 3150
-	1    0    0    -1  
-$EndComp
-Text Label 6800 2750 2    50   ~ 0
+Text Label 6750 2700 2    50   ~ 0
 5V_ISO
-Text Label 6800 2850 2    50   ~ 0
+Text Label 6750 2800 2    50   ~ 0
 5V_ISO_RTN
-Text Label 6800 2950 2    50   ~ 0
+Text Label 6750 2900 2    50   ~ 0
 SCL_UC
-Text Label 6800 3050 2    50   ~ 0
+Text Label 6750 3000 2    50   ~ 0
 SDA_UC
-Text Label 6800 3150 2    50   ~ 0
+Text Label 6750 3100 2    50   ~ 0
 TSI_I2C_RTN
-Text Label 6800 3250 2    50   ~ 0
+Text Label 6750 3200 2    50   ~ 0
 Safety_Loop
-Text Label 6800 3350 2    50   ~ 0
+Text Label 6750 3300 2    50   ~ 0
 Cooling_CTRL
-Text Label 6800 3450 2    50   ~ 0
+Text Label 6750 3400 2    50   ~ 0
 Throttle_PL_3.3
-Text Label 6800 3550 2    50   ~ 0
+Text Label 6750 3500 2    50   ~ 0
 IMD_Status_3.3
-Text Label 6800 3650 2    50   ~ 0
+Text Label 6750 3600 2    50   ~ 0
 Break_Pressed_uC
-Text Label 7300 3650 0    50   ~ 0
+Text Label 6750 3700 2    50   ~ 0
 APPS
-Text Label 7300 3550 0    50   ~ 0
+Text Label 7250 3700 0    50   ~ 0
 Throttle_SEL
-Text Label 7300 3450 0    50   ~ 0
+Text Label 7250 3600 0    50   ~ 0
 CoolTemp
-Text Label 7300 3350 0    50   ~ 0
+Text Label 7250 3500 0    50   ~ 0
 PC_Ready
-Text Label 7300 3250 0    50   ~ 0
+Text Label 7250 3400 0    50   ~ 0
 D_LED_CTRL
-Text Label 7300 3150 0    50   ~ 0
+Text Label 7250 3300 0    50   ~ 0
 Flowrate
-Text Label 7300 3050 0    50   ~ 0
+Text Label 7250 3200 0    50   ~ 0
 RTDS_CTRL
-Text Label 7300 2950 0    50   ~ 0
+Text Label 7250 3100 0    50   ~ 0
 Drive_BTN
-Text Label 7300 2850 0    50   ~ 0
+Text Label 7250 3000 0    50   ~ 0
 CAN+_Logic
-Text Label 7300 2750 0    50   ~ 0
+Text Label 7250 2900 0    50   ~ 0
 CAN-_Logic
 Wire Wire Line
 	1000 2700 1450 2700
@@ -755,7 +745,7 @@ Text Label 4000 2750 2    50   ~ 0
 IGNI_GND
 Text Label 4000 2850 2    50   ~ 0
 IGNI_VCC
-Text Notes 4050 3300 0    50   ~ 0
+Text Notes 4100 3300 0    50   ~ 0
 Motor Controller\nPins
 $Comp
 L Connector_Generic:Conn_02x04_Counter_Clockwise J?
@@ -893,7 +883,7 @@ F19 "FAULT_LED_RTN" I L 9000 4550 50
 F20 "Drive_BTN_RTN" I R 10150 4150 50 
 F21 "Drive_BTN" I R 10150 4250 50 
 $EndSheet
-Text Notes 6650 3800 0    50   ~ 0
+Text Notes 6550 3900 0    50   ~ 0
 TSI-Logic Connection\n
 Text Label 8650 2450 2    50   ~ 0
 BP_CAN+
@@ -1023,44 +1013,116 @@ Wire Wire Line
 	2750 3500 2850 3500
 Wire Wire Line
 	2750 3800 2850 3800
-Text Label 10500 5600 0    50   ~ 0
-SL1_In
-Text Label 10500 5500 0    50   ~ 0
-SL1_Out
-Wire Wire Line
-	10500 5600 10350 5600
-Wire Wire Line
-	10500 5500 10350 5500
-Wire Wire Line
-	10500 5700 10350 5700
-Text Label 10500 5700 0    50   ~ 0
-CAN_H
-Text Label 10500 5800 0    50   ~ 0
-CAN_L
-Wire Wire Line
-	10500 5800 10350 5800
 $Sheet
-S 9150 5350 1200 1050
+S 9150 5150 1200 1300
 U 5FE1DE7D
 F0 "CAN_GLV_POWER" 47
 F1 "CAN_GLV_POWER.sch" 47
-F2 "CANTX" O L 9150 5400 50 
-F3 "CANRX" O L 9150 5500 50 
-F4 "10V" O L 9150 5800 50 
-F5 "5V" O L 9150 5900 50 
-F6 "3.3V" O L 9150 6000 50 
-F7 "24V" O L 9150 6100 50 
-F8 "GLV_RTN" O L 9150 6200 50 
-F9 "Chassis_GND" O L 9150 6300 50 
-F10 "AIRs+" O L 9150 5600 50 
-F11 "AIRs-" O L 9150 5700 50 
-F12 "Safety_Loop" O R 10350 6000 50 
-F13 "IMD_Status" O R 10350 6100 50 
-F14 "Cooling_power" O R 10350 6200 50 
-F15 "Cooling_CTRL" I R 10350 5400 50 
-F16 "SL1_Out" O R 10350 5500 50 
-F17 "SL1_In" O R 10350 5600 50 
-F18 "CAN_H" O R 10350 5700 50 
-F19 "CAN_L" O R 10350 5800 50 
+F2 "CANTX" O L 9150 5200 50 
+F3 "CANRX" O L 9150 5300 50 
+F4 "10V" O L 9150 5600 50 
+F5 "5V" O L 9150 5700 50 
+F6 "3.3V" O L 9150 5800 50 
+F7 "24V" O L 9150 5900 50 
+F8 "GLV_RTN" O L 9150 6000 50 
+F9 "Chassis_GND" O L 9150 6100 50 
+F10 "AIRs+" O L 9150 5400 50 
+F11 "AIRs-" O L 9150 5500 50 
+F12 "Safety_Loop" O R 10350 5800 50 
+F13 "IMD_Status" O R 10350 5900 50 
+F14 "Cooling_power" O R 10350 6000 50 
+F15 "Cooling_CTRL" I R 10350 5200 50 
+F16 "SL1_Out" O R 10350 5300 50 
+F17 "SL1_In" O R 10350 5400 50 
+F18 "CAN_H" O R 10350 5500 50 
+F19 "CAN_L" O R 10350 5600 50 
+F20 "SR_CTRL" O R 10350 5700 50 
+F21 "MRESET_Contact" O L 9150 6200 50 
+F22 "5V_ISO_RTN" O R 10350 6100 50 
+F23 "BOT_In" O R 10350 6200 50 
 $EndSheet
+Text Label 10500 5400 0    50   ~ 0
+SL1_In
+Text Label 10500 5300 0    50   ~ 0
+SL1_Out
+Wire Wire Line
+	10500 5400 10350 5400
+Wire Wire Line
+	10500 5300 10350 5300
+Wire Wire Line
+	10500 5500 10350 5500
+Text Label 10500 5500 0    50   ~ 0
+CAN_H
+Text Label 10500 5600 0    50   ~ 0
+CAN_L
+Wire Wire Line
+	10500 5600 10350 5600
+$Comp
+L Connector_Generic:Conn_02x11_Counter_Clockwise J26
+U 1 1 5FB00FE8
+P 6950 3200
+F 0 "J26" H 7000 3917 50  0000 C CNN
+F 1 "Conn_02x11_Counter_Clockwise" H 7000 3826 50  0000 C CNN
+F 2 "" H 6950 3200 50  0001 C CNN
+F 3 "~" H 6950 3200 50  0001 C CNN
+	1    6950 3200
+	1    0    0    -1  
+$EndComp
+Text Label 7250 2800 0    50   ~ 0
+SR_CTRL
+NoConn ~ 7250 2700
+Wire Wire Line
+	10500 5700 10350 5700
+Text Label 10500 5700 0    50   ~ 0
+SR_CTRL
+Text Label 10500 6100 0    50   ~ 0
+5V_ISO_RTN
+Wire Wire Line
+	10500 6100 10350 6100
+Wire Wire Line
+	10500 6200 10350 6200
+Text Label 10500 6200 0    50   ~ 0
+BOT_In
+Wire Wire Line
+	9150 6200 9000 6200
+Text Label 9000 6200 2    50   ~ 0
+MRESET_Contact
+$Sheet
+S 4700 4150 1500 1150
+U 5FBC10B0
+F0 "Logic_Power_And_CAN_Isolators" 50
+F1 "Logic_Power_And_CAN_Isolators.sch" 50
+F2 "24V" I L 4700 4350 50 
+F3 "GLV_RTN" I L 4700 4450 50 
+F4 "5V_ISO" I L 4700 4550 50 
+F5 "5V_ISO_RTN" I L 4700 4650 50 
+$EndSheet
+Wire Wire Line
+	4700 4350 4550 4350
+Wire Wire Line
+	4700 4450 4550 4450
+Wire Wire Line
+	4700 4550 4550 4550
+Wire Wire Line
+	4700 4650 4550 4650
+Text Label 4550 4350 2    50   ~ 0
+24V
+Text Label 4550 4450 2    50   ~ 0
+GLV_RTN
+Text Label 4550 4550 2    50   ~ 0
+5V_ISO
+Text Label 4550 4650 2    50   ~ 0
+5V_ISO_RTN
+Wire Wire Line
+	5200 3500 5500 3500
+Wire Wire Line
+	5200 3600 5500 3600
+Text Label 5200 3500 2    50   ~ 0
+CAN+_Logic
+Text Label 5500 3500 0    50   ~ 0
+BP_CAN+
+Text Label 5500 3600 0    50   ~ 0
+BP_CAN-
+Text Label 5200 3600 2    50   ~ 0
+CAN-_Logic
 $EndSCHEMATC
