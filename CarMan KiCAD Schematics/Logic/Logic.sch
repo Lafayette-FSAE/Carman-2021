@@ -590,56 +590,16 @@ Text Label 7650 5150 2    50   ~ 0
 Connection ~ 7050 5150
 Wire Wire Line
 	6550 5150 7050 5150
-Text Label 8150 3050 3    50   ~ 0
-5V_rtn
-Text Label 8700 2900 2    50   ~ 0
-5V
-Wire Wire Line
-	8150 3050 8150 2900
-Wire Wire Line
-	8550 2900 8700 2900
-$Comp
-L Device:C C11
-U 1 1 5FB903EB
-P 8400 2900
-F 0 "C11" H 8285 2854 50  0000 R CNN
-F 1 "0.1uF" H 8285 2945 50  0000 R CNN
-F 2 "" H 8438 2750 50  0001 C CNN
-F 3 "~" H 8400 2900 50  0001 C CNN
-	1    8400 2900
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	8150 2900 8250 2900
-Connection ~ 8150 2900
-Wire Wire Line
-	8150 2800 8150 2900
-$Comp
-L Device:R R5
-U 1 1 5FB903F4
-P 8150 2650
-F 0 "R5" V 8050 2650 50  0000 C CNN
-F 1 "1k" V 8150 2650 50  0000 C CNN
-F 2 "" V 8080 2650 50  0001 C CNN
-F 3 "~" H 8150 2650 50  0001 C CNN
-	1    8150 2650
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	8150 2350 8150 2500
-NoConn ~ 8050 2350
 Wire Wire Line
 	6800 3100 6800 2850
 Wire Wire Line
 	6350 3100 6800 3100
 Wire Wire Line
 	6700 2750 6700 3000
-Text Label 8600 1850 2    50   ~ 0
+Text Label 7650 2600 1    50   ~ 0
 5V_rtn
 Wire Wire Line
-	8350 1850 8600 1850
-Text Label 7000 1850 2    50   ~ 0
-5V
+	7650 2350 7650 2600
 Wire Wire Line
 	6350 3000 6700 3000
 Wire Wire Line
@@ -837,39 +797,16 @@ Wire Wire Line
 Wire Wire Line
 	1650 1550 1550 1550
 Wire Wire Line
-	7000 1850 7550 1850
-$Comp
-L Interface_CAN_LIN:MCP2551-I-SN U?
-U 1 1 5FB90407
-P 7950 1850
-AR Path="/5F9673C9/5FB90407" Ref="U?"  Part="1" 
-AR Path="/5FB90407" Ref="U5"  Part="1" 
-F 0 "U5" H 8300 2200 50  0000 C CNN
-F 1 "MCP2551-I-SN" H 7500 2200 50  0000 C CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 7950 1350 50  0001 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/devicedoc/21667d.pdf" H 7950 1850 50  0001 C CNN
-	1    7950 1850
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
 	6700 2750 7750 2750
 Wire Wire Line
 	7750 2750 7750 2350
 Wire Wire Line
-	6800 2850 7850 2850
-Wire Wire Line
-	7850 2850 7850 2350
-Wire Wire Line
-	8050 1350 8050 850 
-Wire Wire Line
-	7850 850  7850 1350
+	7750 1550 7750 1050
 Wire Wire Line
 	1200 5700 1550 5700
 Wire Wire Line
 	1200 5800 1550 5800
-Text Label 7850 1150 1    50   ~ 0
-CAN_H
-Text Label 8050 1150 1    50   ~ 0
+Text Label 7750 1350 1    50   ~ 0
 CAN_L
 Text Label 2550 1650 0    50   ~ 0
 3.3V
@@ -1026,10 +963,6 @@ Text Label 5500 7000 3    50   ~ 0
 CAN+
 Text Label 5600 7000 3    50   ~ 0
 CAN-
-Wire Wire Line
-	5500 6500 5500 7300
-Wire Wire Line
-	5600 6500 5600 7300
 NoConn ~ 6350 2500
 NoConn ~ 6350 2600
 NoConn ~ 6350 2900
@@ -1125,4 +1058,81 @@ Text Label 7850 4400 2    50   ~ 0
 5V_non_iso
 Text Label 7850 4500 2    50   ~ 0
 GLV_rtn
+Wire Wire Line
+	5500 6500 5500 7550
+Wire Wire Line
+	5600 6500 5600 7550
+Text Label 5500 7300 3    50   ~ 0
+CAN_H
+Text Label 5600 7300 3    50   ~ 0
+CAN_L
+$Comp
+L Interface_CAN_LIN:ISO1050DUB U5
+U 1 1 5F9EC23F
+P 7850 1950
+F 0 "U5" V 7896 2180 50  0000 L CNN
+F 1 "ISO1050DUB" V 7805 2180 50  0000 L CNN
+F 2 "Package_SO:SOP-8_6.62x9.15mm_P2.54mm" H 7850 1600 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/iso1050.pdf" H 7850 1900 50  0001 C CNN
+	1    7850 1950
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5FA132AF
+P 8100 2650
+AR Path="/5F9A7CF0/5FA132AF" Ref="C?"  Part="1" 
+AR Path="/5FA132AF" Ref="C11"  Part="1" 
+F 0 "C11" H 8215 2696 50  0000 L CNN
+F 1 "0.1uF" H 8215 2605 50  0000 L CNN
+F 2 "" H 8138 2500 50  0001 C CNN
+F 3 "~" H 8100 2650 50  0001 C CNN
+	1    8100 2650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8250 2650 8300 2650
+Wire Wire Line
+	8300 2650 8300 2550
+Text Label 8300 2550 1    50   ~ 0
+5V_rtn
+Text Label 7950 2550 1    50   ~ 0
+5V
+Wire Wire Line
+	7950 2650 7950 2350
+Wire Wire Line
+	7850 2850 7850 2350
+Wire Wire Line
+	6800 2850 7850 2850
+Text Label 7850 1350 1    50   ~ 0
+CAN_H
+Wire Wire Line
+	7850 1050 7850 1550
+$Comp
+L Device:C C?
+U 1 1 5FADD500
+P 8150 1450
+AR Path="/5F9A7CF0/5FADD500" Ref="C?"  Part="1" 
+AR Path="/5FADD500" Ref="C12"  Part="1" 
+F 0 "C12" H 8265 1496 50  0000 L CNN
+F 1 "0.1uF" H 8265 1405 50  0000 L CNN
+F 2 "" H 8188 1300 50  0001 C CNN
+F 3 "~" H 8150 1450 50  0001 C CNN
+	1    8150 1450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8000 1450 7950 1450
+Wire Wire Line
+	7950 1450 7950 1550
+Text Label 8300 1550 3    50   ~ 0
+GLV_rtn
+Text Label 7950 1550 1    50   ~ 0
+5V_non_iso
+Wire Wire Line
+	8300 1450 8300 1750
+Text Label 7650 1450 1    50   ~ 0
+GLV_rtn
+Wire Wire Line
+	7650 1550 7650 1250
 $EndSCHEMATC
