@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:TSI_Rev.5-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
@@ -492,7 +491,7 @@ Wire Wire Line
 Text Notes 14500 7050 2    89   ~ 0
 IMD Relay
 $Comp
-L Lafayette_Electric_Car_Internals:G5LE-1-E RL?
+L TSI_Rev.5-rescue:G5LE-1-E-Lafayette_Electric_Car_Internals RL?
 U 1 1 5FB466B1
 P 6200 9250
 AR Path="/5FB466B1" Ref="RL?"  Part="1" 

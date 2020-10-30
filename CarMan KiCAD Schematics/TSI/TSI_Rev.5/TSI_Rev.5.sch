@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:TSI_Rev.5-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -245,60 +244,60 @@ Throttle_PL
 Text Label 2850 4200 0    50   ~ 0
 Throttle_LV
 Wire Wire Line
-	4250 6550 4450 6550
-Text Label 4250 6550 2    50   ~ 0
+	4550 6600 4750 6600
+Text Label 4550 6600 2    50   ~ 0
 IO_Ground
 Wire Wire Line
-	4250 7050 4450 7050
-Text Label 4250 7050 2    50   ~ 0
+	4550 7100 4750 7100
+Text Label 4550 7100 2    50   ~ 0
 Throttle_HV
 Wire Wire Line
-	4250 6450 4450 6450
+	4550 6500 4750 6500
 Wire Wire Line
-	4450 6350 4250 6350
-Text Label 4250 6350 2    50   ~ 0
+	4750 6400 4550 6400
+Text Label 4550 6400 2    50   ~ 0
 1.24V_REF
-Text Label 4250 6450 2    50   ~ 0
+Text Label 4550 6500 2    50   ~ 0
 5HV
-Text Label 4250 6850 2    50   ~ 0
+Text Label 4550 6900 2    50   ~ 0
 HV+
 Wire Wire Line
-	4250 6850 4450 6850
-Text Label 4250 6750 2    50   ~ 0
+	4550 6900 4750 6900
+Text Label 4550 6800 2    50   ~ 0
 TSV_Voltage
-Text Label 4250 6650 2    50   ~ 0
+Text Label 4550 6700 2    50   ~ 0
 MC+
 Wire Wire Line
-	4250 6650 4450 6650
+	4550 6700 4750 6700
 Wire Wire Line
-	4250 6750 4450 6750
-Text Label 4250 6950 2    50   ~ 0
+	4550 6800 4750 6800
+Text Label 4550 7000 2    50   ~ 0
 HV-
 Wire Wire Line
-	4250 6950 4450 6950
-Text Label 6150 6600 0    50   ~ 0
+	4550 7000 4750 7000
+Text Label 6450 6650 0    50   ~ 0
 GLV_RTN
 Wire Wire Line
-	6150 6600 5950 6600
-Text Label 6150 6900 0    50   ~ 0
+	6450 6650 6250 6650
+Text Label 6450 6950 0    50   ~ 0
 Throttle_LV
 Wire Wire Line
-	6150 6900 5950 6900
-Text Label 6150 6500 0    50   ~ 0
+	6450 6950 6250 6950
+Text Label 6450 6550 0    50   ~ 0
 5V
 Wire Wire Line
-	6150 6500 5950 6500
-Text Label 6150 6800 0    50   ~ 0
+	6450 6550 6250 6550
+Text Label 6450 6850 0    50   ~ 0
 SDA_uC
-Text Label 6150 6700 0    50   ~ 0
+Text Label 6450 6750 0    50   ~ 0
 SCL_uC
 Wire Wire Line
-	6150 6700 5950 6700
+	6450 6750 6250 6750
 Wire Wire Line
-	6150 6800 5950 6800
-Text Notes 5300 6200 0    47   ~ 0
+	6450 6850 6250 6850
+Text Notes 5600 6250 0    47   ~ 0
 LOW VOLTAGE
-Text Notes 4550 6200 0    47   ~ 0
+Text Notes 4850 6250 0    47   ~ 0
 HIGH VOLTAGE
 Text Notes 9100 3500 0    47   ~ 0
 Where it starts to get funky
@@ -731,7 +730,7 @@ Wire Wire Line
 Connection ~ 9700 900 
 Wire Wire Line
 	9700 900  9700 1050
-Text Notes 4250 7600 0    79   ~ 0
+Text Notes 4400 7700 0    79   ~ 0
 TSI J1 & TSI J25 (Current Sensor)\n
 Wire Notes Line
 	1350 6250 2900 6250
@@ -955,34 +954,34 @@ A2_HV
 Text Label 10300 2550 0    50   ~ 0
 A1_HV
 $Sheet
-S 4450 6050 1500 1350
+S 4750 6100 1500 1350
 U 5F98EBE9
 F0 "Sensors_Throttle_Voltage" 50
 F1 "Sensors-Throttle.sch" 50
-F2 "GLV_RTN" I R 5950 6600 50 
-F3 "5V" I R 5950 6500 50 
-F4 "SDA" I R 5950 6800 50 
-F5 "SCL" I R 5950 6700 50 
-F6 "Throttle_LV" I R 5950 6900 50 
-F7 "1.24V_REF" I L 4450 6350 50 
-F8 "IO_Ground" I L 4450 6550 50 
-F9 "5HV" I L 4450 6450 50 
-F10 "Throttle_HV" I L 4450 7050 50 
-F11 "TSV_Voltage" I L 4450 6750 50 
-F12 "MC_Voltage" I L 4450 6650 50 
-F13 "HV+" I L 4450 6850 50 
-F14 "HV-" I L 4450 6950 50 
-F15 "A1_HV" I L 4450 7150 50 
-F16 "A2_HV" I L 4450 7250 50 
+F2 "GLV_RTN" I R 6250 6650 50 
+F3 "5V" I R 6250 6550 50 
+F4 "SDA" I R 6250 6850 50 
+F5 "SCL" I R 6250 6750 50 
+F6 "Throttle_LV" I R 6250 6950 50 
+F7 "1.24V_REF" I L 4750 6400 50 
+F8 "IO_Ground" I L 4750 6600 50 
+F9 "5HV" I L 4750 6500 50 
+F10 "Throttle_HV" I L 4750 7100 50 
+F11 "TSV_Voltage" I L 4750 6800 50 
+F12 "MC_Voltage" I L 4750 6700 50 
+F13 "HV+" I L 4750 6900 50 
+F14 "HV-" I L 4750 7000 50 
+F15 "A1_HV" I L 4750 7200 50 
+F16 "A2_HV" I L 4750 7300 50 
 $EndSheet
 Wire Wire Line
-	4250 7250 4450 7250
-Text Label 4250 7250 2    50   ~ 0
+	4550 7300 4750 7300
+Text Label 4550 7300 2    50   ~ 0
 A2_HV
-Text Label 4250 7150 2    50   ~ 0
+Text Label 4550 7200 2    50   ~ 0
 A1_HV
 Wire Wire Line
-	4250 7150 4450 7150
+	4550 7200 4750 7200
 Wire Wire Line
 	2750 4500 2850 4500
 Wire Wire Line
@@ -1075,7 +1074,7 @@ Wire Wire Line
 Text Label 9000 6200 2    50   ~ 0
 MRESET_Contact
 $Sheet
-S 4700 4150 1500 1150
+S 4700 4150 1000 750 
 U 5FBC10B0
 F0 "Logic_Power_And_CAN_Isolators" 50
 F1 "Logic_Power_And_CAN_Isolators.sch" 50
@@ -1101,19 +1100,19 @@ Text Label 4550 4550 2    50   ~ 0
 Text Label 4550 4650 2    50   ~ 0
 5V_ISO_RTN
 Wire Wire Line
-	5200 3500 5500 3500
+	5100 3750 5400 3750
 Wire Wire Line
-	5200 3600 5500 3600
-Text Label 5200 3500 2    50   ~ 0
+	5100 3850 5400 3850
+Text Label 5100 3750 2    50   ~ 0
 CAN+_Logic
-Text Label 5500 3500 0    50   ~ 0
+Text Label 5400 3750 0    50   ~ 0
 BP_CAN+
-Text Label 5500 3600 0    50   ~ 0
+Text Label 5400 3850 0    50   ~ 0
 BP_CAN-
-Text Label 5200 3600 2    50   ~ 0
+Text Label 5100 3850 2    50   ~ 0
 CAN-_Logic
 Wire Notes Line
-	5200 6050 5200 7400
+	5500 6100 5500 7450
 Text Notes 10800 2050 0    50   ~ 0
 Cooling\nPower
 Text Label 10750 1700 2    50   ~ 0
@@ -1143,13 +1142,74 @@ F 3 "~" H 6950 3200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 7250 2900 0    50   ~ 0
-5V_Non_ISO
+5V
 Text Label 7250 2800 0    50   ~ 0
 GLV_RTN
+Text Notes 5000 3600 0    50   ~ 0
+Battery Pack\nCAN Lines\n
+Wire Notes Line
+	4600 3900 5800 3900
+Wire Notes Line
+	5800 3400 4600 3400
+Wire Notes Line
+	4600 3400 4600 3900
+Wire Notes Line
+	5800 3400 5800 3900
+Wire Wire Line
+	5950 2300 6250 2300
+Text Label 6250 2300 0    50   ~ 0
+GLV_RTN
+Text Label 5950 2300 2    50   ~ 0
+FAULT_LED_RTN
+Text Label 7950 5050 0    47   ~ 0
+24V
+Text Label 7950 4650 0    47   ~ 0
+Safety_Loop
+Text Label 7950 4750 0    47   ~ 0
+Sloop_EN1
+Text Label 7950 4850 0    47   ~ 0
+Sloop_EN2
+Text Label 7950 4950 0    47   ~ 0
+IMD_Status
+Text Label 7950 5250 0    47   ~ 0
+AMS_FAULT_LED
+Text Label 7950 5350 0    47   ~ 0
+IMD_FAULT_LED
+Wire Wire Line
+	7800 4650 7950 4650
+Wire Wire Line
+	7800 4750 7950 4750
+Wire Wire Line
+	7800 4850 7950 4850
+Wire Wire Line
+	7800 4950 7950 4950
+Wire Wire Line
+	7800 5050 7950 5050
+Wire Wire Line
+	7800 5150 7950 5150
+Wire Wire Line
+	7800 5250 7950 5250
+Wire Wire Line
+	7800 5350 7950 5350
+Wire Wire Line
+	6600 4700 6750 4700
 $Sheet
-S 6750 4550 1350 1100
+S 6750 4550 1050 950 
 U 5FA7A30E
 F0 "Fault_Logic_And_Timing_Circuit" 50
 F1 "Fault_Logic_And_Timing_Circuit.sch" 50
+F2 "Safety_Loop" I R 7800 4650 50 
+F3 "Sloop_EN1" I R 7800 4750 50 
+F4 "Sloop_EN2" I R 7800 4850 50 
+F5 "IMD_Status" I R 7800 4950 50 
+F6 "24V" I R 7800 5050 50 
+F7 "GLV_RTN" I R 7800 5150 50 
+F8 "AMS_FAULT_LED" O R 7800 5250 50 
+F9 "IMD_FAULT_LED" O R 7800 5350 50 
+F10 "5V" I L 6750 4700 50 
 $EndSheet
+Text Label 7950 5150 0    47   ~ 0
+GLV_RTN
+Text Label 6600 4700 2    47   ~ 0
+5V
 $EndSCHEMATC
