@@ -29,21 +29,21 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21801e.pdf" H 6850 2300 50 
 $EndComp
 Text HLabel 1200 3850 0    50   Input ~ 0
 5V_rtn
-Text HLabel 2250 2800 0    50   Input ~ 0
+Text HLabel 2050 2750 0    50   Input ~ 0
 CAN-
-Text HLabel 2250 2600 0    50   Input ~ 0
+Text HLabel 2050 2550 0    50   Input ~ 0
 CAN+
 Wire Wire Line
-	2250 2600 2500 2600
+	2050 2550 2300 2550
 Wire Wire Line
-	2250 2800 2400 2800
+	2050 2750 2200 2750
 Wire Wire Line
 	1200 1400 1600 1400
 Wire Wire Line
 	1200 3850 1550 3850
-Text Label 2850 2600 0    50   ~ 0
+Text Label 2650 2550 0    50   ~ 0
 CAN+
-Text Label 2850 2800 0    50   ~ 0
+Text Label 2650 2750 0    50   ~ 0
 CAN-
 Text Label 1600 1400 0    50   ~ 0
 5V
@@ -52,173 +52,68 @@ Text Label 1550 3850 0    50   ~ 0
 $Comp
 L Connector:Conn_01x02_Male J7
 U 1 1 5F9AE3B8
-P 2500 1700
-F 0 "J7" V 2562 1744 50  0000 L CNN
-F 1 "Conn_01x02_Male" V 2653 1744 50  0000 L CNN
-F 2 "" H 2500 1700 50  0001 C CNN
-F 3 "~" H 2500 1700 50  0001 C CNN
-	1    2500 1700
+P 2300 1650
+F 0 "J7" V 2362 1694 50  0000 L CNN
+F 1 "Conn_01x02_Male" V 2453 1694 50  0000 L CNN
+F 2 "" H 2300 1650 50  0001 C CNN
+F 3 "~" H 2300 1650 50  0001 C CNN
+	1    2300 1650
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R R7
 U 1 1 5F9AF7D2
-P 2500 2050
-F 0 "R7" H 2570 2096 50  0000 L CNN
-F 1 "120" V 2500 2000 50  0000 L CNN
-F 2 "" V 2430 2050 50  0001 C CNN
-F 3 "~" H 2500 2050 50  0001 C CNN
-	1    2500 2050
+P 2300 2000
+F 0 "R7" H 2370 2046 50  0000 L CNN
+F 1 "120" V 2300 1950 50  0000 L CNN
+F 2 "" V 2230 2000 50  0001 C CNN
+F 3 "~" H 2300 2000 50  0001 C CNN
+	1    2300 2000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2500 2200 2500 2600
-Connection ~ 2500 2600
+	2300 2150 2300 2550
+Connection ~ 2300 2550
 Wire Wire Line
-	2500 2600 3100 2600
+	2300 2550 2900 2550
 Wire Wire Line
-	2400 1900 2400 2800
-Connection ~ 2400 2800
+	2200 1850 2200 2750
+Connection ~ 2200 2750
 Wire Wire Line
-	2400 2800 2450 2800
-Wire Wire Line
-	3600 2300 3600 1850
-Wire Wire Line
-	3600 1850 3900 1850
+	4100 1750 4400 1750
 $Comp
 L Device:C C14
 U 1 1 5F9B08F3
-P 3900 2000
-F 0 "C14" H 4015 2046 50  0000 L CNN
-F 1 "0.1uF" H 4015 1955 50  0000 L CNN
-F 2 "" H 3938 1850 50  0001 C CNN
-F 3 "~" H 3900 2000 50  0001 C CNN
-	1    3900 2000
+P 4400 1900
+F 0 "C14" H 4515 1946 50  0000 L CNN
+F 1 "0.1uF" H 4515 1855 50  0000 L CNN
+F 2 "" H 4438 1750 50  0001 C CNN
+F 3 "~" H 4400 1900 50  0001 C CNN
+	1    4400 1900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3900 2150 3900 2200
+	4400 2050 4400 2100
 Wire Wire Line
-	3900 2200 4000 2200
-Text Label 3700 1850 0    50   ~ 0
+	4400 2100 4500 2100
+Text Label 4200 1750 0    50   ~ 0
 5V
-Text Label 4000 2200 0    50   ~ 0
+Text Label 4500 2100 0    50   ~ 0
 5V_rtn
-Text Label 3700 3250 0    50   ~ 0
+Text Label 4150 2800 0    50   ~ 0
 5V_rtn
 Wire Wire Line
-	3600 3100 3600 3250
-Wire Wire Line
-	3600 3250 3700 3250
-$Comp
-L Device:R R6
-U 1 1 5F9B1617
-P 2450 3200
-F 0 "R6" H 2520 3246 50  0000 L CNN
-F 1 "100" V 2450 3150 50  0000 L CNN
-F 2 "" V 2380 3200 50  0001 C CNN
-F 3 "~" H 2450 3200 50  0001 C CNN
-	1    2450 3200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C12
-U 1 1 5F9B20E3
-P 2450 3500
-F 0 "C12" H 2250 3550 50  0000 L CNN
-F 1 "560pF" H 2100 3450 50  0000 L CNN
-F 2 "" H 2488 3350 50  0001 C CNN
-F 3 "~" H 2450 3500 50  0001 C CNN
-	1    2450 3500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R8
-U 1 1 5F9B2DC0
-P 2750 3200
-F 0 "R8" H 2820 3246 50  0000 L CNN
-F 1 "100" V 2750 3150 50  0000 L CNN
-F 2 "" V 2680 3200 50  0001 C CNN
-F 3 "~" H 2750 3200 50  0001 C CNN
-	1    2750 3200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C13
-U 1 1 5F9B3945
-P 2750 3500
-F 0 "C13" H 2865 3546 50  0000 L CNN
-F 1 "560pF" H 2865 3455 50  0000 L CNN
-F 2 "" H 2788 3350 50  0001 C CNN
-F 3 "~" H 2750 3500 50  0001 C CNN
-	1    2750 3500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3600 3250 3600 3650
-Wire Wire Line
-	3600 3650 2750 3650
-Connection ~ 3600 3250
-Wire Wire Line
-	2450 3650 2750 3650
-Connection ~ 2750 3650
-Wire Wire Line
-	2750 3050 2750 2800
-Connection ~ 2750 2800
-Wire Wire Line
-	2750 2800 3100 2800
-Wire Wire Line
-	2450 3050 2450 2800
-Connection ~ 2450 2800
-Wire Wire Line
-	2450 2800 2750 2800
-Wire Wire Line
-	4100 2900 4250 2900
-Wire Wire Line
-	4250 2900 4250 3100
-$Comp
-L Device:R R9
-U 1 1 5F9B562B
-P 4250 3250
-F 0 "R9" H 4320 3296 50  0000 L CNN
-F 1 "4k7" V 4250 3200 50  0000 L CNN
-F 2 "" V 4180 3250 50  0001 C CNN
-F 3 "~" H 4250 3250 50  0001 C CNN
-	1    4250 3250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4250 3400 4250 3650
-Wire Wire Line
-	4250 3650 3600 3650
-Connection ~ 3600 3650
-Wire Wire Line
-	4100 2500 5200 2500
-Wire Wire Line
-	5200 2500 5200 2600
-Wire Wire Line
-	5200 2600 6150 2600
-Wire Wire Line
-	4100 2600 5050 2600
-Wire Wire Line
-	5050 2600 5050 2550
-Wire Wire Line
-	5050 2550 5350 2550
-Wire Wire Line
-	5350 2550 5350 2500
-Wire Wire Line
-	5350 2500 6150 2500
-NoConn ~ 4100 2800
+	4050 2800 4150 2800
 NoConn ~ 7350 3500
 $Comp
 L Interface_CAN_LIN:MCP2551-I-P U7
 U 1 1 5F9A8A6F
-P 3600 2700
-F 0 "U7" H 3300 3050 50  0000 C CNN
-F 1 "MCP2551-I-P" H 4000 3050 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W7.62mm" H 3600 2200 50  0001 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/devicedoc/21667d.pdf" H 3600 2700 50  0001 C CNN
-	1    3600 2700
+P 5600 4750
+F 0 "U7" H 5300 5100 50  0000 C CNN
+F 1 "MCP2551-I-P" H 6000 5100 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 5600 4250 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/devicedoc/21667d.pdf" H 5600 4750 50  0001 C CNN
+	1    5600 4750
 	-1   0    0    -1  
 $EndComp
 Text Label 6850 4050 0    50   ~ 0
@@ -362,4 +257,80 @@ Text HLabel 7850 2700 2    50   Input ~ 0
 PI_SPI_CEO
 Text HLabel 7850 2800 2    50   Input ~ 0
 PI_SPI_SCLK
+$Comp
+L Interface_CAN_LIN:ISO1050DUB U2
+U 1 1 5FAD2713
+P 3650 2600
+F 0 "U2" H 3650 2967 50  0000 C CNN
+F 1 "ISO1050DUB" H 3650 2876 50  0000 C CNN
+F 2 "Package_SO:SOP-8_6.62x9.15mm_P2.54mm" H 3650 2250 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/iso1050.pdf" H 3650 2550 50  0001 C CNN
+	1    3650 2600
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 2500 4050 2500
+Wire Wire Line
+	4100 1750 4100 2500
+Wire Wire Line
+	4050 2700 5850 2700
+Wire Wire Line
+	5850 2700 5850 2600
+Wire Wire Line
+	5850 2600 6150 2600
+Wire Wire Line
+	4050 2600 5750 2600
+Wire Wire Line
+	5750 2600 5750 2500
+Wire Wire Line
+	5750 2500 6150 2500
+Wire Wire Line
+	3250 1700 3550 1700
+$Comp
+L Device:C C1
+U 1 1 5FADAB07
+P 3550 1850
+F 0 "C1" H 3665 1896 50  0000 L CNN
+F 1 "0.1uF" H 3665 1805 50  0000 L CNN
+F 2 "" H 3588 1700 50  0001 C CNN
+F 3 "~" H 3550 1850 50  0001 C CNN
+	1    3550 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 2000 3550 2050
+Wire Wire Line
+	3550 2050 3650 2050
+Text Label 3350 1700 0    50   ~ 0
+5v_non_iso
+Text Label 3650 2050 0    50   ~ 0
+GLV_rtn
+Text HLabel 2700 4200 0    50   Input ~ 0
+5V_non_iso
+Wire Wire Line
+	2700 4200 3050 4200
+Text Label 3050 4200 0    50   ~ 0
+5V_non_iso
+Wire Wire Line
+	2200 2750 2900 2750
+Wire Wire Line
+	3250 2600 2900 2600
+Wire Wire Line
+	2900 2600 2900 2550
+Wire Wire Line
+	2900 2750 2900 2700
+Wire Wire Line
+	2900 2700 3250 2700
+Wire Wire Line
+	3250 1700 3250 2500
+Text HLabel 2700 4350 0    50   Input ~ 0
+GLV_rtn
+Wire Wire Line
+	2700 4350 3050 4350
+Text Label 3050 4350 0    50   ~ 0
+GLV_rtn
+Text Label 3250 2900 3    50   ~ 0
+GLV_rtn
+Wire Wire Line
+	3250 2800 3250 2900
 $EndSCHEMATC
