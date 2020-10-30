@@ -1,9 +1,10 @@
 EESchema Schematic File Version 4
-EELAYER 30 0
+LIBS:TSI_Rev.5-cache
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 7
+Sheet 1 8
 Title ""
 Date ""
 Rev ""
@@ -393,23 +394,23 @@ Text Label 6750 3600 2    50   ~ 0
 Break_Pressed_uC
 Text Label 6750 3700 2    50   ~ 0
 APPS
-Text Label 7250 3700 0    50   ~ 0
+Text Label 6750 3800 2    50   ~ 0
 Throttle_SEL
-Text Label 7250 3600 0    50   ~ 0
+Text Label 7250 3800 0    50   ~ 0
 CoolTemp
-Text Label 7250 3500 0    50   ~ 0
+Text Label 7250 3700 0    50   ~ 0
 PC_Ready
-Text Label 7250 3400 0    50   ~ 0
+Text Label 7250 3600 0    50   ~ 0
 D_LED_CTRL
-Text Label 7250 3300 0    50   ~ 0
+Text Label 7250 3500 0    50   ~ 0
 Flowrate
-Text Label 7250 3200 0    50   ~ 0
+Text Label 7250 3400 0    50   ~ 0
 RTDS_CTRL
-Text Label 7250 3100 0    50   ~ 0
+Text Label 7250 3300 0    50   ~ 0
 Drive_BTN
-Text Label 7250 3000 0    50   ~ 0
+Text Label 7250 3200 0    50   ~ 0
 CAN+_Logic
-Text Label 7250 2900 0    50   ~ 0
+Text Label 7250 3100 0    50   ~ 0
 CAN-_Logic
 Wire Wire Line
 	1000 2700 1450 2700
@@ -880,7 +881,7 @@ F19 "FAULT_LED_RTN" I L 9000 4550 50
 F20 "Drive_BTN_RTN" I R 10150 4150 50 
 F21 "Drive_BTN" I R 10150 4250 50 
 $EndSheet
-Text Notes 6550 3900 0    50   ~ 0
+Text Notes 6550 3950 0    50   ~ 0
 TSI-Logic Connection\n
 Text Label 8650 2450 2    50   ~ 0
 BP_CAN+
@@ -1054,18 +1055,7 @@ Text Label 10500 5600 0    50   ~ 0
 CAN_L
 Wire Wire Line
 	10500 5600 10350 5600
-$Comp
-L Connector_Generic:Conn_02x11_Counter_Clockwise J26
-U 1 1 5FB00FE8
-P 6950 3200
-F 0 "J26" H 7000 3917 50  0000 C CNN
-F 1 "Conn_02x11_Counter_Clockwise" H 7000 3826 50  0000 C CNN
-F 2 "" H 6950 3200 50  0001 C CNN
-F 3 "~" H 6950 3200 50  0001 C CNN
-	1    6950 3200
-	1    0    0    -1  
-$EndComp
-Text Label 7250 2800 0    50   ~ 0
+Text Label 7250 3000 0    50   ~ 0
 SR_CTRL
 NoConn ~ 7250 2700
 Wire Wire Line
@@ -1124,4 +1114,42 @@ Text Label 5200 3600 2    50   ~ 0
 CAN-_Logic
 Wire Notes Line
 	5200 6050 5200 7400
+Text Notes 10800 2050 0    50   ~ 0
+Cooling\nPower
+Text Label 10750 1700 2    50   ~ 0
+Cooling_Power
+Text Label 10750 1800 2    50   ~ 0
+GLV_RTN
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5F9C2850
+P 10950 1700
+F 0 "J?" H 11030 1692 50  0001 L CNN
+F 1 "JTroy" H 10850 1850 50  0000 L CNN
+F 2 "" H 10950 1700 50  0001 C CNN
+F 3 "~" H 10950 1700 50  0001 C CNN
+	1    10950 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x12_Counter_Clockwise J26
+U 1 1 5FA6A834
+P 6950 3200
+F 0 "J26" H 7000 3917 50  0000 C CNN
+F 1 "Conn_02x12_Counter_Clockwise" H 7000 3826 50  0000 C CNN
+F 2 "" H 6950 3200 50  0001 C CNN
+F 3 "~" H 6950 3200 50  0001 C CNN
+	1    6950 3200
+	1    0    0    -1  
+$EndComp
+Text Label 7250 2900 0    50   ~ 0
+5V_Non_ISO
+Text Label 7250 2800 0    50   ~ 0
+GLV_RTN
+$Sheet
+S 6750 4550 1350 1100
+U 5FA7A30E
+F0 "Fault_Logic_And_Timing_Circuit" 50
+F1 "Fault_Logic_And_Timing_Circuit.sch" 50
+$EndSheet
 $EndSCHEMATC
