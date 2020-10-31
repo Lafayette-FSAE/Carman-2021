@@ -114,8 +114,6 @@ F 3 "~" H 8800 3250 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8900 2800 8900 3050
-Wire Wire Line
-	8900 3450 8900 3850
 Text Notes 8800 4000 0    50   ~ 0
 Drain -> Cockpit
 Text Label 8900 3850 0    50   ~ 0
@@ -158,18 +156,8 @@ Wire Wire Line
 	7100 4400 7100 4600
 Wire Wire Line
 	7650 4650 7750 4650
-Text Label 6700 5300 2    50   ~ 0
-Sloop_EN1
-Wire Wire Line
-	6700 5300 6850 5300
-Wire Wire Line
-	6700 5500 6850 5500
-Text Label 6700 5500 2    50   ~ 0
-Sloop_EN2
 Wire Wire Line
 	7750 4850 7450 4850
-Wire Wire Line
-	7450 4850 7450 5400
 Wire Wire Line
 	8500 4750 8350 4750
 $Comp
@@ -211,7 +199,7 @@ Wire Wire Line
 Wire Wire Line
 	2250 3350 2400 3350
 Text Label 3650 3650 2    50   ~ 0
-IMD_Status
+IMD_Status_5V
 Wire Wire Line
 	3000 3250 3650 3250
 Text Label 3650 3450 2    50   ~ 0
@@ -270,17 +258,6 @@ F 1 "74HC02" H 6750 4500 50  0000 C CNN
 F 2 "" H 6600 4700 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74hc02" H 6600 4700 50  0001 C CNN
 	4    6600 4700
-	1    0    0    -1  
-$EndComp
-$Comp
-L CarMan_KiCAD_Library:74HC00 U?
-U 2 1 5FA8940E
-P 7150 5400
-F 0 "U?" H 7150 5400 50  0000 C CNN
-F 1 "74HC00" H 7300 5200 50  0000 C CNN
-F 2 "" H 7150 5400 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 7150 5400 50  0001 C CNN
-	2    7150 5400
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -352,16 +329,6 @@ Text Label 5500 6800 0    50   ~ 0
 Sloop_EN2_5V
 Text Label 2750 6800 0    50   ~ 0
 Sloop_EN1_5V
-Text Notes 2700 5850 0    50   ~ 0
-Do we need this for IMD_Status?
-Wire Notes Line
-	2650 5650 2650 5950
-Wire Notes Line
-	2650 5950 4100 5950
-Wire Notes Line
-	4100 5950 4100 5650
-Wire Notes Line
-	4100 5650 2800 5650
 Text Label 1950 1100 0    50   ~ 0
 5V
 Text Label 1950 1750 0    50   ~ 0
@@ -448,7 +415,7 @@ L Device:R R?
 U 1 1 5FB88DEA
 P 4700 900
 F 0 "R?" H 4770 946 50  0000 L CNN
-F 1 "10K" V 4700 850 50  0000 L CNN
+F 1 "1.3M" V 4700 830 50  0000 L CNN
 F 2 "" V 4630 900 50  0001 C CNN
 F 3 "~" H 4700 900 50  0001 C CNN
 	1    4700 900 
@@ -459,7 +426,7 @@ L Device:R R?
 U 1 1 5FB89B59
 P 5250 900
 F 0 "R?" H 5320 946 50  0000 L CNN
-F 1 "10K" V 5250 850 50  0000 L CNN
+F 1 "1M" V 5250 850 50  0000 L CNN
 F 2 "" V 5180 900 50  0001 C CNN
 F 3 "~" H 5250 900 50  0001 C CNN
 	1    5250 900 
@@ -470,7 +437,7 @@ L pspice:CAP C?
 U 1 1 5FB8A940
 P 4700 1700
 F 0 "C?" H 4750 1800 50  0000 L CNN
-F 1 "100u" H 4750 1600 50  0000 L CNN
+F 1 "200u" H 4750 1600 50  0000 L CNN
 F 2 "" H 4700 1700 50  0001 C CNN
 F 3 "~" H 4700 1700 50  0001 C CNN
 	1    4700 1700
@@ -534,7 +501,7 @@ L Device:R R?
 U 1 1 5FBB8BC8
 P 6350 950
 F 0 "R?" H 6420 996 50  0000 L CNN
-F 1 "10K" V 6350 900 50  0000 L CNN
+F 1 "1.3M" V 6350 869 50  0000 L CNN
 F 2 "" V 6280 950 50  0001 C CNN
 F 3 "~" H 6350 950 50  0001 C CNN
 	1    6350 950 
@@ -545,7 +512,7 @@ L Device:R R?
 U 1 1 5FBB8BCE
 P 6900 950
 F 0 "R?" H 6970 996 50  0000 L CNN
-F 1 "10K" V 6900 900 50  0000 L CNN
+F 1 "1M" V 6900 900 50  0000 L CNN
 F 2 "" V 6830 950 50  0001 C CNN
 F 3 "~" H 6900 950 50  0001 C CNN
 	1    6900 950 
@@ -556,7 +523,7 @@ L pspice:CAP C?
 U 1 1 5FBB8BD4
 P 6350 1750
 F 0 "C?" H 6400 1850 50  0000 L CNN
-F 1 "100u" H 6400 1650 50  0000 L CNN
+F 1 "200u" H 6400 1650 50  0000 L CNN
 F 2 "" H 6350 1750 50  0001 C CNN
 F 3 "~" H 6350 1750 50  0001 C CNN
 	1    6350 1750
@@ -620,4 +587,110 @@ F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 2700 3250 50  0001 C CNN
 	3    2700 3250
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:R R?
+U 1 1 5F9E6F79
+P 8900 3600
+F 0 "R?" H 8970 3646 50  0000 L CNN
+F 1 "R" H 8970 3555 50  0000 L CNN
+F 2 "" V 8830 3600 50  0001 C CNN
+F 3 "~" H 8900 3600 50  0001 C CNN
+	1    8900 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8900 3750 8900 3850
+Text Notes 2850 7550 0    50   ~ 0
+Level Shifters for Sloop_En signals
+$Comp
+L CarMan_KiCAD_Library:L78L05ACD13TR CR?
+U 1 1 5F9F52BF
+P 2800 5350
+F 0 "CR?" H 3600 4663 60  0000 C CNN
+F 1 "L78L05ACD13TR" H 3600 4769 60  0000 C CNN
+F 2 "SO-8_STM" H 3600 5590 60  0001 C CNN
+F 3 "" H 2800 5350 60  0000 C CNN
+	1    2800 5350
+	-1   0    0    1   
+$EndComp
+NoConn ~ 1200 5050
+NoConn ~ 2800 5050
+Wire Wire Line
+	1200 5150 1200 5200
+Connection ~ 1200 5200
+Wire Wire Line
+	1200 5200 1200 5250
+Text Label 600  5200 0    50   ~ 0
+GLV_RTN
+Text Label 650  5550 0    50   ~ 0
+IMD_Status
+Wire Wire Line
+	2800 5150 2800 5200
+Wire Wire Line
+	2800 5200 2900 5200
+Connection ~ 2800 5200
+Wire Wire Line
+	2800 5200 2800 5250
+Text Label 2950 5200 0    50   ~ 0
+GLV_RTN
+Wire Wire Line
+	600  5200 650  5200
+Wire Wire Line
+	2800 5350 2800 5500
+Wire Wire Line
+	2800 5500 2900 5500
+Text Label 3100 5500 0    50   ~ 0
+IMD_Status_5V
+Wire Wire Line
+	1200 5350 1200 5550
+Wire Wire Line
+	1200 5550 650  5550
+$Comp
+L Device:C C?
+U 1 1 5FA18C24
+P 650 5400
+F 0 "C?" H 765 5446 50  0000 L CNN
+F 1 "0.33uF" H 765 5355 50  0000 L CNN
+F 2 "" H 688 5250 50  0001 C CNN
+F 3 "~" H 650 5400 50  0001 C CNN
+	1    650  5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5FA196B8
+P 2900 5350
+F 0 "C?" H 3015 5396 50  0000 L CNN
+F 1 "0.1uF" H 3015 5305 50  0000 L CNN
+F 2 "" H 2938 5200 50  0001 C CNN
+F 3 "~" H 2900 5350 50  0001 C CNN
+	1    2900 5350
+	1    0    0    -1  
+$EndComp
+Connection ~ 2900 5200
+Wire Wire Line
+	2900 5200 2950 5200
+Connection ~ 2900 5500
+Wire Wire Line
+	2900 5500 3100 5500
+Wire Wire Line
+	650  5250 650  5200
+Connection ~ 650  5200
+Wire Wire Line
+	650  5200 1200 5200
+Text Label 7450 5100 0    50   ~ 0
+IMD_Status_5V
+Wire Wire Line
+	7450 5100 7450 4850
+Text Notes 1500 5700 0    50   ~ 0
+Convert 22V IMD_Status to 5V.
+Text Label 4000 2400 0    50   ~ 0
+5V
+NoConn ~ 4650 4650
+NoConn ~ 4650 4350
+NoConn ~ 4650 3950
+NoConn ~ 3650 3850
+NoConn ~ 3650 4050
+NoConn ~ 3650 4250
+NoConn ~ 3650 4450
 $EndSCHEMATC
