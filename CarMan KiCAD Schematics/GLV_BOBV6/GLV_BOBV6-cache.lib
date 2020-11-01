@@ -1,50 +1,6 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# CarMan_KiCAD_Library_2PinPortLeft
-#
-DEF CarMan_KiCAD_Library_2PinPortLeft U 0 40 Y Y 1 F N
-F0 "U" 0 250 50 H V C CNN
-F1 "CarMan_KiCAD_Library_2PinPortLeft" 0 -200 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-S -100 200 100 -150 0 1 0 N
-X ~ 1 -200 100 150 R 50 50 1 1 I
-X ~ 2 -200 -50 150 R 50 50 1 1 I
-ENDDRAW
-ENDDEF
-#
-# CarMan_KiCAD_Library_2PinPortRight
-#
-DEF CarMan_KiCAD_Library_2PinPortRight U 0 40 Y Y 1 F N
-F0 "U" 0 200 50 H V C CNN
-F1 "CarMan_KiCAD_Library_2PinPortRight" 0 -250 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-S -100 150 100 -200 0 1 0 N
-X ~ 1 200 50 150 L 50 50 1 1 I
-X ~ 2 200 -100 150 L 50 50 1 1 I
-ENDDRAW
-ENDDEF
-#
-# CarMan_KiCAD_Library_4PinPort
-#
-DEF CarMan_KiCAD_Library_4PinPort U 0 40 Y Y 1 F N
-F0 "U" 0 200 50 H V C CNN
-F1 "CarMan_KiCAD_Library_4PinPort" 0 -250 50 H V C CNN
-F2 "" -100 100 50 H I C CNN
-F3 "" -100 100 50 H I C CNN
-DRAW
-S -100 150 100 -200 0 1 0 N
-X ~ 1 -200 50 150 R 50 50 1 1 I
-X ~ 2 -200 -100 150 R 50 50 1 1 I
-X ~ 3 200 -100 150 L 50 50 1 1 I
-X ~ 4 200 50 150 L 50 50 1 1 I
-ENDDRAW
-ENDDEF
-#
 # CarMan_KiCAD_Library_DCR012405U
 #
 DEF CarMan_KiCAD_Library_DCR012405U U 0 10 Y Y 1 L N
@@ -160,6 +116,48 @@ X NC 5 1600 -300 300 L 59 59 1 1 N
 X GND 6 1600 -200 300 L 59 59 1 1 W
 X GND 7 1600 -100 300 L 59 59 1 1 W
 X VIN 8 1600 0 300 L 59 59 1 1 I
+ENDDRAW
+ENDDEF
+#
+# Connector_Generic_Conn_01x02
+#
+DEF Connector_Generic_Conn_01x02 J 0 40 Y N 1 F N
+F0 "J" 0 100 50 H V C CNN
+F1 "Connector_Generic_Conn_01x02" 0 -200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_1x??_*
+$ENDFPLIST
+DRAW
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 50 50 -150 1 1 10 f
+X Pin_1 1 -200 0 150 R 50 50 1 1 P
+X Pin_2 2 -200 -100 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Connector_Generic_Conn_01x04
+#
+DEF Connector_Generic_Conn_01x04 J 0 40 Y N 1 F N
+F0 "J" 0 200 50 H V C CNN
+F1 "Connector_Generic_Conn_01x04" 0 -300 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_1x??_*
+$ENDFPLIST
+DRAW
+S -50 -195 0 -205 1 1 6 N
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 105 0 95 1 1 6 N
+S -50 150 50 -250 1 1 10 f
+X Pin_1 1 -200 100 150 R 50 50 1 1 P
+X Pin_2 2 -200 0 150 R 50 50 1 1 P
+X Pin_3 3 -200 -100 150 R 50 50 1 1 P
+X Pin_4 4 -200 -200 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
