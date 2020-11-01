@@ -848,4 +848,6 @@ F 3 "~" H 9700 9550 50  0001 C CNN
 	1    9700 9550
 	0    1    1    0   
 $EndComp
+Text Notes 6000 8500 0    50   ~ 0
+SCADA Relay\n
 $EndSCHEMATC

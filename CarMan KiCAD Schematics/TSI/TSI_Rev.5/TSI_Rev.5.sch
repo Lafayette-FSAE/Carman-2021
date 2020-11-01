@@ -13,125 +13,113 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Label 3350 1950 2    50   ~ 0
+Text Label 5800 1850 2    50   ~ 0
 GPIO_I2C_RTN
-Text Label 2200 700  2    50   ~ 0
+Text Label 5800 700  2    50   ~ 0
 Flowrate
-Text Label 2200 800  2    50   ~ 0
+Text Label 5800 800  2    50   ~ 0
 Flowrate_5V
-Text Label 2200 900  2    50   ~ 0
+Text Label 5800 900  2    50   ~ 0
 Flowrate_RTN
-Text Label 2200 1100 2    50   ~ 0
+Text Label 5800 1100 2    50   ~ 0
 CoolTemp_RTN
-Text Label 2200 1000 2    50   ~ 0
+Text Label 5800 1000 2    50   ~ 0
 CoolTemp
-Text Label 10700 900  2    50   ~ 0
+Text Label 1650 850  2    50   ~ 0
 DC_RELAY-
-Text Label 10700 800  2    50   ~ 0
+Text Label 1650 750  2    50   ~ 0
 DC_RELAY+
-Text Label 9800 1850 2    50   ~ 0
+Text Label 2550 2650 2    50   ~ 0
 Drive_RTN
-Text Label 9800 1750 2    50   ~ 0
+Text Label 2550 2550 2    50   ~ 0
 Drive_LED
-Text Label 9800 1650 2    50   ~ 0
+Text Label 2550 2450 2    50   ~ 0
 Drive_BTN
-Text Notes 10150 2100 2    50   ~ 0
+Text Notes 2900 2900 2    50   ~ 0
 COCKPIT\n
-Text Label 4950 700  2    50   ~ 0
+Text Label 7800 700  2    50   ~ 0
 BRAKE_SWITCH(24V)
-Text Notes 5050 1050 0    50   ~ 0
-Brake \nPedals\n
-Text Label 4950 800  2    50   ~ 0
+Text Label 7800 800  2    50   ~ 0
 BP(BRAKE_SWITCH_RTN)
-Text Notes 7250 1250 0    50   ~ 0
+Text Notes 9300 1200 0    50   ~ 0
 SL->Accumulator\n
-Text Label 3550 1200 2    50   ~ 0
+Text Label 6650 1200 2    50   ~ 0
 APPS2_RTN
-Text Label 3550 1100 2    50   ~ 0
+Text Label 6650 1100 2    50   ~ 0
 APPS2
-Text Label 3550 1000 2    50   ~ 0
+Text Label 6650 1000 2    50   ~ 0
 APPS2_5V
-Text Label 3550 900  2    50   ~ 0
+Text Label 6650 900  2    50   ~ 0
 APPS1_RTN
-Text Label 3550 800  2    50   ~ 0
+Text Label 6650 800  2    50   ~ 0
 APPS1
-Text Label 3550 700  2    50   ~ 0
+Text Label 6650 700  2    50   ~ 0
 APPS1_10V
-Text Notes 3600 1450 0    50   ~ 0
+Text Notes 6700 1450 0    50   ~ 0
 Throttle \nPlausiblity
 Text Notes 1050 1150 2    50   ~ 0
 HV
-Text Notes 2250 1500 0    50   ~ 0
+Text Notes 5850 1500 0    50   ~ 0
 Cooling\nControl\n\n
-Text Label 7400 750  2    50   ~ 0
+Text Label 9450 700  2    50   ~ 0
 SL1_Out
-Text Label 7400 850  2    50   ~ 0
+Text Label 9450 800  2    50   ~ 0
 BOT_In
-Text Label 7400 1050 2    50   ~ 0
+Text Label 9450 1000 2    50   ~ 0
 AIRS_RTN
-Text Label 7400 950  2    50   ~ 0
+Text Label 9450 900  2    50   ~ 0
 AIRS
-Text Notes 5900 2200 0    50   ~ 0
+Text Notes 7750 2100 0    50   ~ 0
 Dashboard\n
-Text Label 5950 1750 2    50   ~ 0
+Text Label 7800 1650 2    50   ~ 0
 AMS_FAULT_LED
-Text Label 5950 1850 2    50   ~ 0
+Text Label 7800 1750 2    50   ~ 0
 FAULT_LED_RTN
-Text Label 5950 2050 2    50   ~ 0
+Text Label 7800 1950 2    50   ~ 0
 IMD_FAULT_LED
-Text Label 5950 1950 2    50   ~ 0
+Text Label 7800 1850 2    50   ~ 0
 FAULT_LED_RTN
-Text Notes 800  2250 0    50   ~ 0
+Text Notes 2450 1150 0    50   ~ 0
 Precharge Relay\n\n\n
-Text Label 7400 1700 2    50   ~ 0
+Text Label 8950 1700 2    50   ~ 0
 MRESET_Contact
-Text Label 7400 2000 2    50   ~ 0
+Text Label 8950 2000 2    50   ~ 0
 GLV_RTN
-Text Label 7400 1900 2    50   ~ 0
+Text Label 8950 1900 2    50   ~ 0
 AIRS+
-Text Notes 8600 2050 0    50   ~ 0
+Text Notes 9800 2050 0    50   ~ 0
 TSI Power \nfrom GLV\n
-Text Label 8550 1700 2    50   ~ 0
+Text Label 9750 1700 2    50   ~ 0
 24V
-Text Label 8550 1800 2    50   ~ 0
+Text Label 9750 1800 2    50   ~ 0
 GLV_RTN
 Wire Wire Line
 	2750 3400 2850 3400
-Text Label 2150 2050 2    50   ~ 0
-RTDS_RTN
-Text Label 2150 1750 2    50   ~ 0
-Brake_Light
-Text Notes 2600 2200 2    50   ~ 0
-Status Lights
-Text Label 2150 1950 2    50   ~ 0
-RTDS
-Text Label 2150 1850 2    50   ~ 0
-Brake_Light_RTN
-Text Label 6300 700  2    50   ~ 0
+Text Label 8750 700  2    50   ~ 0
 SDA
-Text Label 6300 900  2    50   ~ 0
+Text Label 8750 900  2    50   ~ 0
 PC_Ready
-Text Label 6300 1200 2    50   ~ 0
+Text Label 8750 1200 2    50   ~ 0
 Throttle_SEL
-Text Label 6300 1100 2    50   ~ 0
+Text Label 8750 1100 2    50   ~ 0
 IMD_Status
-Text Label 6300 1000 2    50   ~ 0
+Text Label 8750 1000 2    50   ~ 0
 SafetyLoop_1
-Text Notes 8700 1200 2    50   ~ 0
+Text Notes 2800 2150 2    50   ~ 0
 IMD\n
-Text Label 8900 1050 0    50   ~ 0
+Text Label 3000 2000 0    50   ~ 0
 IMD_MHS
-Text Label 8900 750  0    50   ~ 0
+Text Label 3000 1700 0    50   ~ 0
 IMD_STATUS
-Text Label 8400 1050 2    50   ~ 0
+Text Label 2500 2000 2    50   ~ 0
 GLV_RTN
-Text Label 8400 950  2    50   ~ 0
+Text Label 2500 1900 2    50   ~ 0
 GLV_RTN
-Text Label 8400 850  2    50   ~ 0
+Text Label 2500 1800 2    50   ~ 0
 24V
-Text Label 8400 750  2    50   ~ 0
+Text Label 2500 1700 2    50   ~ 0
 GLV_RTN
-Text Notes 4650 2200 0    50   ~ 0
+Text Notes 6750 2100 0    50   ~ 0
 TSAL Power
 Wire Wire Line
 	2750 4100 2850 4100
@@ -412,16 +400,16 @@ CAN+_Logic
 Text Label 7250 3100 0    50   ~ 0
 CAN-_Logic
 Wire Wire Line
-	1000 2700 1450 2700
-Text Label 1000 2700 2    50   ~ 0
+	1000 3000 1450 3000
+Text Label 1000 3000 2    50   ~ 0
 Flowrate_5V
-Text Label 1450 2700 0    50   ~ 0
+Text Label 1450 3000 0    50   ~ 0
 5V
 Wire Wire Line
-	1000 2850 1450 2850
-Text Label 1000 2850 2    50   ~ 0
+	1000 3150 1450 3150
+Text Label 1000 3150 2    50   ~ 0
 Flowrate_RTN
-Text Label 1450 2850 0    50   ~ 0
+Text Label 1450 3150 0    50   ~ 0
 GLV_RTN
 $Sheet
 S 1350 3300 1400 1300
@@ -456,7 +444,7 @@ Wire Wire Line
 	700  4200 700  3400
 Wire Wire Line
 	700  3400 1350 3400
-Text Label 9800 900  0    50   ~ 0
+Text Label 3900 1850 0    50   ~ 0
 GLV_RTN
 Text Notes 1350 7650 0    79   ~ 0
 TSI J8, TSI J9 & TSI J32\n
@@ -523,284 +511,262 @@ HV+
 $Comp
 L Connector_Generic:Conn_01x06 J?
 U 1 1 5FCAFAF8
-P 2400 900
-F 0 "J?" H 2480 892 50  0001 L CNN
-F 1 "TSI J2" H 2300 1250 50  0000 L CNN
-F 2 "" H 2400 900 50  0001 C CNN
-F 3 "~" H 2400 900 50  0001 C CNN
-	1    2400 900 
+P 6000 900
+F 0 "J?" H 6080 892 50  0001 L CNN
+F 1 "TSI J2" H 5900 1250 50  0000 L CNN
+F 2 "" H 6000 900 50  0001 C CNN
+F 3 "~" H 6000 900 50  0001 C CNN
+	1    6000 900 
 	1    0    0    -1  
 $EndComp
-NoConn ~ 2200 1200
+NoConn ~ 5800 1200
 $Comp
 L Connector_Generic:Conn_01x06 J?
 U 1 1 5FD3B6EB
-P 3750 900
-F 0 "J?" H 3830 892 50  0001 L CNN
-F 1 "TSI J3" H 3650 1250 50  0000 L CNN
-F 2 "" H 3750 900 50  0001 C CNN
-F 3 "~" H 3750 900 50  0001 C CNN
-	1    3750 900 
+P 6850 900
+F 0 "J?" H 6930 892 50  0001 L CNN
+F 1 "TSI J3" H 6750 1250 50  0000 L CNN
+F 2 "" H 6850 900 50  0001 C CNN
+F 3 "~" H 6850 900 50  0001 C CNN
+	1    6850 900 
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector_Generic:Conn_01x02 J?
-U 1 1 5FDBCF20
-P 5150 700
-F 0 "J?" H 5230 692 50  0001 L CNN
-F 1 "TSI J4" H 5050 850 50  0000 L CNN
-F 2 "" H 5150 700 50  0001 C CNN
-F 3 "~" H 5150 700 50  0001 C CNN
-	1    5150 700 
-	1    0    0    -1  
-$EndComp
-Text Label 6300 800  2    50   ~ 0
+Text Label 8750 800  2    50   ~ 0
 SCL
 $Comp
 L Connector_Generic:Conn_01x06 J?
 U 1 1 5FE0EFE1
-P 6500 900
-F 0 "J?" H 6580 892 50  0001 L CNN
-F 1 "TSI J5" H 6400 1250 50  0000 L CNN
-F 2 "" H 6500 900 50  0001 C CNN
-F 3 "~" H 6500 900 50  0001 C CNN
-	1    6500 900 
+P 8950 900
+F 0 "J?" H 9030 892 50  0001 L CNN
+F 1 "TSI J5" H 8850 1250 50  0000 L CNN
+F 2 "" H 8950 900 50  0001 C CNN
+F 3 "~" H 8950 900 50  0001 C CNN
+	1    8950 900 
 	1    0    0    -1  
 $EndComp
-Text Notes 6400 1500 0    50   ~ 0
+Text Notes 8850 1500 0    50   ~ 0
 Testing\nConnector\n\n
 $Comp
 L Connector_Generic:Conn_01x04 J?
 U 1 1 5FE96F39
-P 7600 850
-F 0 "J?" H 7680 842 50  0001 L CNN
-F 1 "TSI J6" H 7500 1100 50  0000 L CNN
-F 2 "" H 7600 850 50  0001 C CNN
-F 3 "~" H 7600 850 50  0001 C CNN
-	1    7600 850 
+P 9650 800
+F 0 "J?" H 9730 792 50  0001 L CNN
+F 1 "TSI J6" H 9550 1050 50  0000 L CNN
+F 2 "" H 9650 800 50  0001 C CNN
+F 3 "~" H 9650 800 50  0001 C CNN
+	1    9650 800 
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x02 J?
 U 1 1 5FF3B112
-P 1150 1850
-F 0 "J?" H 1230 1842 50  0001 L CNN
-F 1 "TSI J9" H 1050 2000 50  0000 L CNN
-F 2 "" H 1150 1850 50  0001 C CNN
-F 3 "~" H 1150 1850 50  0001 C CNN
-	1    1150 1850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x04 J?
-U 1 1 5FF93FA5
-P 2350 1850
-F 0 "J?" H 2430 1842 50  0001 L CNN
-F 1 "J11" H 2300 2050 50  0000 L CNN
-F 2 "" H 2350 1850 50  0001 C CNN
-F 3 "~" H 2350 1850 50  0001 C CNN
-	1    2350 1850
+P 2750 750
+F 0 "J?" H 2830 742 50  0001 L CNN
+F 1 "TSI J9" H 2650 900 50  0000 L CNN
+F 2 "" H 2750 750 50  0001 C CNN
+F 3 "~" H 2750 750 50  0001 C CNN
+	1    2750 750 
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x04 J?
 U 1 1 5FFF16D2
-P 3550 1850
-F 0 "J?" H 3630 1842 50  0001 L CNN
-F 1 "J12" H 3500 2050 50  0000 L CNN
-F 2 "" H 3550 1850 50  0001 C CNN
-F 3 "~" H 3550 1850 50  0001 C CNN
-	1    3550 1850
+P 6000 1750
+F 0 "J?" H 6080 1742 50  0001 L CNN
+F 1 "J12" H 5950 1950 50  0000 L CNN
+F 2 "" H 6000 1750 50  0001 C CNN
+F 3 "~" H 6000 1750 50  0001 C CNN
+	1    6000 1750
 	1    0    0    -1  
 $EndComp
-Text Notes 3200 2350 0    50   ~ 0
+Text Notes 5650 2250 0    50   ~ 0
 I2C Connection \nbetween Logic & TSI\n\n
-Text Label 3350 1750 2    50   ~ 0
+Text Label 5800 1650 2    50   ~ 0
 SDA
-Text Label 3350 1850 2    50   ~ 0
+Text Label 5800 1750 2    50   ~ 0
 SCL
-NoConn ~ 3350 2050
+NoConn ~ 5800 1950
 $Comp
 L Connector_Generic:Conn_01x04 J?
 U 1 1 600AD6CD
-P 6150 1850
-F 0 "J?" H 6230 1842 50  0001 L CNN
-F 1 "J14" H 6100 2050 50  0000 L CNN
-F 2 "" H 6150 1850 50  0001 C CNN
-F 3 "~" H 6150 1850 50  0001 C CNN
-	1    6150 1850
+P 8000 1750
+F 0 "J?" H 8080 1742 50  0001 L CNN
+F 1 "J14" H 7950 1950 50  0000 L CNN
+F 2 "" H 8000 1750 50  0001 C CNN
+F 3 "~" H 8000 1750 50  0001 C CNN
+	1    8000 1750
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x04 J?
 U 1 1 60109F6F
-P 7600 1800
-F 0 "J?" H 7680 1792 50  0001 L CNN
-F 1 "J15" H 7450 2050 50  0000 L CNN
-F 2 "" H 7600 1800 50  0001 C CNN
-F 3 "~" H 7600 1800 50  0001 C CNN
-	1    7600 1800
+P 9150 1800
+F 0 "J?" H 9230 1792 50  0001 L CNN
+F 1 "J15" H 9000 2050 50  0000 L CNN
+F 2 "" H 9150 1800 50  0001 C CNN
+F 3 "~" H 9150 1800 50  0001 C CNN
+	1    9150 1800
 	1    0    0    -1  
 $EndComp
-Text Notes 7350 2250 0    50   ~ 0
+Text Notes 8900 2250 0    50   ~ 0
 Sloop & AIRS\nto TSI
 $Comp
 L Connector_Generic:Conn_01x02 J?
 U 1 1 5FEF06C9
-P 10900 800
-F 0 "J?" H 10980 792 50  0001 L CNN
-F 1 "TSI J8" H 10800 950 50  0000 L CNN
-F 2 "" H 10900 800 50  0001 C CNN
-F 3 "~" H 10900 800 50  0001 C CNN
-	1    10900 800 
+P 1850 750
+F 0 "J?" H 1930 742 50  0001 L CNN
+F 1 "TSI J8" H 1750 900 50  0000 L CNN
+F 2 "" H 1850 750 50  0001 C CNN
+F 3 "~" H 1850 750 50  0001 C CNN
+	1    1850 750 
 	1    0    0    -1  
 $EndComp
-Text Label 950  1950 2    50   ~ 0
+Text Label 2550 850  2    50   ~ 0
 PC_RELAY-
-Text Label 950  1850 2    50   ~ 0
+Text Label 2550 750  2    50   ~ 0
 PC_RELAY+
-Text Notes 10600 1050 0    50   ~ 0
-Disharge Relay
+Text Notes 1500 1000 0    50   ~ 0
+Discharge Relay
 $Comp
 L Connector_Generic:Conn_01x02 J?
 U 1 1 60187F86
-P 8750 1700
-F 0 "J?" H 8830 1692 50  0001 L CNN
-F 1 "J16" H 8650 1850 50  0000 L CNN
-F 2 "" H 8750 1700 50  0001 C CNN
-F 3 "~" H 8750 1700 50  0001 C CNN
-	1    8750 1700
+P 9950 1700
+F 0 "J?" H 10030 1692 50  0001 L CNN
+F 1 "J16" H 9850 1850 50  0000 L CNN
+F 2 "" H 9950 1700 50  0001 C CNN
+F 3 "~" H 9950 1700 50  0001 C CNN
+	1    9950 1700
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x04 J?
 U 1 1 601D2101
-P 10000 1750
-F 0 "J?" H 10080 1742 50  0001 L CNN
-F 1 "J24" H 9900 2000 50  0000 L CNN
-F 2 "" H 10000 1750 50  0001 C CNN
-F 3 "~" H 10000 1750 50  0001 C CNN
-	1    10000 1750
+P 2750 2550
+F 0 "J?" H 2830 2542 50  0001 L CNN
+F 1 "J24" H 2650 2800 50  0000 L CNN
+F 2 "" H 2750 2550 50  0001 C CNN
+F 3 "~" H 2750 2550 50  0001 C CNN
+	1    2750 2550
 	1    0    0    -1  
 $EndComp
-NoConn ~ 9800 1950
+NoConn ~ 2550 2750
 $Comp
 L Connector_Generic:Conn_02x04_Counter_Clockwise J?
 U 1 1 60243E54
-P 8600 850
-F 0 "J?" H 8650 1167 50  0001 C CNN
-F 1 "TSI J7" H 8650 1075 50  0000 C CNN
-F 2 "" H 8600 850 50  0001 C CNN
-F 3 "~" H 8600 850 50  0001 C CNN
-	1    8600 850 
+P 2700 1800
+F 0 "J?" H 2750 2117 50  0001 C CNN
+F 1 "TSI J7" H 2750 2025 50  0000 C CNN
+F 2 "" H 2700 1800 50  0001 C CNN
+F 3 "~" H 2700 1800 50  0001 C CNN
+	1    2700 1800
 	1    0    0    -1  
 $EndComp
-NoConn ~ 8900 850 
-NoConn ~ 8900 950 
+NoConn ~ 3000 1800
+NoConn ~ 3000 1900
 $Comp
 L Device:R R?
 U 1 1 60268C5E
-P 9550 1050
-F 0 "R?" V 9650 1000 50  0000 L CNN
-F 1 "2.2K" V 9550 950 50  0000 L CNN
-F 2 "" V 9480 1050 50  0001 C CNN
-F 3 "~" H 9550 1050 50  0001 C CNN
-	1    9550 1050
+P 3650 2000
+F 0 "R?" V 3750 1950 50  0000 L CNN
+F 1 "2.2K" V 3650 1900 50  0000 L CNN
+F 2 "" V 3580 2000 50  0001 C CNN
+F 3 "~" H 3650 2000 50  0001 C CNN
+	1    3650 2000
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R R?
 U 1 1 6026E67B
-P 9550 750
-F 0 "R?" V 9650 700 50  0000 L CNN
-F 1 "2.2K" V 9550 650 50  0000 L CNN
-F 2 "" V 9480 750 50  0001 C CNN
-F 3 "~" H 9550 750 50  0001 C CNN
-	1    9550 750 
+P 3650 1700
+F 0 "R?" V 3750 1650 50  0000 L CNN
+F 1 "2.2K" V 3650 1600 50  0000 L CNN
+F 2 "" V 3580 1700 50  0001 C CNN
+F 3 "~" H 3650 1700 50  0001 C CNN
+	1    3650 1700
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	8900 750  9400 750 
+	3000 1700 3500 1700
 Wire Wire Line
-	8900 1050 9400 1050
+	3000 2000 3500 2000
 Wire Wire Line
-	9700 750  9700 900 
+	3800 1700 3800 1850
 Wire Wire Line
-	9800 900  9700 900 
-Connection ~ 9700 900 
+	3900 1850 3800 1850
+Connection ~ 3800 1850
 Wire Wire Line
-	9700 900  9700 1050
+	3800 1850 3800 2000
 Text Notes 4400 7700 0    79   ~ 0
 TSI J1 & TSI J25 (Current Sensor)\n
 Wire Notes Line
 	1350 6250 2900 6250
-Text Label 4000 2950 2    50   ~ 0
+Text Label 3500 900  2    50   ~ 0
 IO_Ground
-Text Label 4500 3050 0    50   ~ 0
+Text Label 4000 1000 0    50   ~ 0
 Throttle_HV
-Text Label 4000 2750 2    50   ~ 0
+Text Label 3500 700  2    50   ~ 0
 IGNI_GND
-Text Label 4000 2850 2    50   ~ 0
+Text Label 3500 800  2    50   ~ 0
 IGNI_VCC
-Text Notes 4100 3300 0    50   ~ 0
+Text Notes 3600 1250 0    50   ~ 0
 Motor Controller\nPins
 $Comp
 L Connector_Generic:Conn_02x04_Counter_Clockwise J?
 U 1 1 6068B997
-P 4200 2850
+P 3700 800
 AR Path="/6196BF15/6068B997" Ref="J?"  Part="1" 
 AR Path="/6068B997" Ref="J?"  Part="1" 
-F 0 "J?" H 4250 3167 50  0001 C CNN
-F 1 "TSI J32" H 4250 3075 50  0000 C CNN
-F 2 "" H 4200 2850 50  0001 C CNN
-F 3 "~" H 4200 2850 50  0001 C CNN
-	1    4200 2850
+F 0 "J?" H 3750 1117 50  0001 C CNN
+F 1 "TSI J32" H 3750 1025 50  0000 C CNN
+F 2 "" H 3700 800 50  0001 C CNN
+F 3 "~" H 3700 800 50  0001 C CNN
+	1    3700 800 
 	1    0    0    -1  
 $EndComp
-NoConn ~ 4000 3050
-Text Label 4500 2750 0    50   ~ 0
+NoConn ~ 3500 1000
+Text Label 4000 700  0    50   ~ 0
 BP_HV
 $Comp
 L Device:Jumper_NC_Dual JP?
 U 1 1 6068B99F
-P 5350 2850
+P 4850 800
 AR Path="/6196BF15/6068B99F" Ref="JP?"  Part="1" 
 AR Path="/6068B99F" Ref="JP?"  Part="1" 
-F 0 "JP?" H 5650 2800 50  0000 C CNN
-F 1 "Jumper_NC_Dual" H 4600 3250 50  0001 C CNN
-F 2 "" H 5350 2850 50  0001 C CNN
-F 3 "~" H 5350 2850 50  0001 C CNN
-	1    5350 2850
+F 0 "JP?" H 5150 750 50  0000 C CNN
+F 1 "Jumper_NC_Dual" H 4100 1200 50  0001 C CNN
+F 2 "" H 4850 800 50  0001 C CNN
+F 3 "~" H 4850 800 50  0001 C CNN
+	1    4850 800 
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	4500 2950 5600 2950
+	4000 900  5100 900 
 Wire Wire Line
-	5100 2850 4500 2850
+	4600 800  4000 800 
 Wire Wire Line
-	5350 2700 5350 2750
-Text Label 5350 2700 0    50   ~ 0
+	4850 650  4850 700 
+Text Label 4850 650  0    50   ~ 0
 IGNI_GND
 Wire Wire Line
-	5600 2850 5600 2950
+	5100 800  5100 900 
 $Comp
 L Connector_Generic:Conn_01x04 J?
 U 1 1 60794552
-P 4850 1850
-F 0 "J?" H 4930 1842 50  0001 L CNN
-F 1 "J13" H 4800 2050 50  0000 L CNN
-F 2 "" H 4850 1850 50  0001 C CNN
-F 3 "~" H 4850 1850 50  0001 C CNN
-	1    4850 1850
+P 6950 1750
+F 0 "J?" H 7030 1742 50  0001 L CNN
+F 1 "J13" H 6900 1950 50  0000 L CNN
+F 2 "" H 6950 1750 50  0001 C CNN
+F 3 "~" H 6950 1750 50  0001 C CNN
+	1    6950 1750
 	1    0    0    -1  
 $EndComp
-Text Label 4650 1750 2    50   ~ 0
+Text Label 6750 1650 2    50   ~ 0
 TSAL
-Text Label 4650 1850 2    50   ~ 0
+Text Label 6750 1750 2    50   ~ 0
 TSAL_RTN
-Text Label 4650 1950 2    50   ~ 0
+Text Label 6750 1850 2    50   ~ 0
 TSAL_Cockpit
-Text Label 4650 2050 2    50   ~ 0
+Text Label 6750 1950 2    50   ~ 0
 TSAL_RTN
 Wire Wire Line
 	10150 4450 10300 4450
@@ -882,32 +848,32 @@ F21 "Drive_BTN" I R 10150 4250 50
 $EndSheet
 Text Notes 6550 3950 0    50   ~ 0
 TSI-Logic Connection\n
-Text Label 8650 2450 2    50   ~ 0
+Text Label 10750 1700 2    50   ~ 0
 BP_CAN+
-Text Label 8650 2650 2    50   ~ 0
+Text Label 10750 1900 2    50   ~ 0
 CAN_Shield
-Text Label 8650 2950 2    50   ~ 0
+Text Label 10750 2200 2    50   ~ 0
 Sloop_EN2
-Text Label 8650 2850 2    50   ~ 0
+Text Label 10750 2100 2    50   ~ 0
 Sloop_EN1
-Text Label 8650 2750 2    50   ~ 0
+Text Label 10750 2000 2    50   ~ 0
 Chassis_GND
-Text Label 8650 2550 2    50   ~ 0
+Text Label 10750 1800 2    50   ~ 0
 BP_CAN-
 $Comp
 L Connector_Generic:Conn_01x06 J?
 U 1 1 5F9A4488
-P 8850 2650
-F 0 "J?" H 8930 2642 50  0001 L CNN
-F 1 "TSI J20" H 8750 3000 50  0000 L CNN
-F 2 "" H 8850 2650 50  0001 C CNN
-F 3 "~" H 8850 2650 50  0001 C CNN
-	1    8850 2650
+P 10950 1900
+F 0 "J?" H 11030 1892 50  0001 L CNN
+F 1 "TSI J20" H 10850 2250 50  0000 L CNN
+F 2 "" H 10950 1900 50  0001 C CNN
+F 3 "~" H 10950 1900 50  0001 C CNN
+	1    10950 1900
 	1    0    0    -1  
 $EndComp
-Text Notes 8750 3250 0    50   ~ 0
+Text Notes 10650 2550 0    50   ~ 0
 Battery Pack\nto TSI\n\n
-NoConn ~ 7400 1800
+NoConn ~ 8950 1800
 Wire Wire Line
 	10150 4150 10300 4150
 Wire Wire Line
@@ -925,33 +891,33 @@ FAULT_LED_RTN
 $Comp
 L TSI_Rev.5-rescue:Current_Sensor-CarMan_KiCAD_Library-TSI_Rev.5-rescue J?
 U 1 1 5FA558BE
-P 9750 2300
+P 950 1300
 AR Path="/5F98EBE9/5FA558BE" Ref="J?"  Part="1" 
 AR Path="/5FA558BE" Ref="J25"  Part="1" 
-F 0 "J25" H 9750 2300 50  0000 C CNN
-F 1 "Current_Sensor" H 9750 1500 50  0000 C CNN
-F 2 "" H 9750 2300 50  0001 C CNN
-F 3 "" H 9750 2300 50  0001 C CNN
-	1    9750 2300
+F 0 "J25" H 950 1300 50  0000 C CNN
+F 1 "Current_Sensor" H 950 500 50  0000 C CNN
+F 2 "" H 950 1300 50  0001 C CNN
+F 3 "" H 950 1300 50  0001 C CNN
+	1    950  1300
 	1    0    0    -1  
 $EndComp
-NoConn ~ 10150 2950
-NoConn ~ 10150 2450
+NoConn ~ 1350 1950
+NoConn ~ 1350 1450
 Wire Wire Line
-	10300 2550 10150 2550
+	1500 1550 1350 1550
 Wire Wire Line
-	10300 2650 10150 2650
+	1500 1650 1350 1650
 Wire Wire Line
-	10300 2750 10150 2750
+	1500 1750 1350 1750
 Wire Wire Line
-	10300 2850 10150 2850
-Text Label 10300 2750 0    50   ~ 0
+	1500 1850 1350 1850
+Text Label 1500 1750 0    50   ~ 0
 IO_Ground
-Text Label 10300 2850 0    50   ~ 0
+Text Label 1500 1850 0    50   ~ 0
 5HV
-Text Label 10300 2650 0    50   ~ 0
+Text Label 1500 1650 0    50   ~ 0
 A2_HV
-Text Label 10300 2550 0    50   ~ 0
+Text Label 1500 1550 0    50   ~ 0
 A1_HV
 $Sheet
 S 4750 6100 1500 1350
@@ -1113,21 +1079,21 @@ Text Label 5100 3850 2    50   ~ 0
 CAN-_Logic
 Wire Notes Line
 	5500 6100 5500 7450
-Text Notes 10800 2050 0    50   ~ 0
+Text Notes 3500 2800 0    50   ~ 0
 Cooling\nPower
-Text Label 10750 1700 2    50   ~ 0
+Text Label 3450 2450 2    50   ~ 0
 Cooling_Power
-Text Label 10750 1800 2    50   ~ 0
+Text Label 3450 2550 2    50   ~ 0
 GLV_RTN
 $Comp
 L Connector_Generic:Conn_01x02 J?
 U 1 1 5F9C2850
-P 10950 1700
-F 0 "J?" H 11030 1692 50  0001 L CNN
-F 1 "JTroy" H 10850 1850 50  0000 L CNN
-F 2 "" H 10950 1700 50  0001 C CNN
-F 3 "~" H 10950 1700 50  0001 C CNN
-	1    10950 1700
+P 3650 2450
+F 0 "J?" H 3730 2442 50  0001 L CNN
+F 1 "JTroy" H 3550 2600 50  0000 L CNN
+F 2 "" H 3650 2450 50  0001 C CNN
+F 3 "~" H 3650 2450 50  0001 C CNN
+	1    3650 2450
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1156,10 +1122,10 @@ Wire Notes Line
 Wire Notes Line
 	5800 3400 5800 3900
 Wire Wire Line
-	5950 2300 6250 2300
-Text Label 6250 2300 0    50   ~ 0
+	5200 3100 5500 3100
+Text Label 5500 3100 0    50   ~ 0
 GLV_RTN
-Text Label 5950 2300 2    50   ~ 0
+Text Label 5200 3100 2    50   ~ 0
 FAULT_LED_RTN
 Text Label 7950 5050 0    47   ~ 0
 24V
@@ -1212,4 +1178,48 @@ Text Label 7950 5150 0    47   ~ 0
 GLV_RTN
 Text Label 6600 4700 2    47   ~ 0
 5V
+$Comp
+L Connector_Generic:Conn_01x04 J?
+U 1 1 5FF93FA5
+P 5100 1750
+F 0 "J?" H 5180 1742 50  0001 L CNN
+F 1 "J11" H 5050 1950 50  0000 L CNN
+F 2 "" H 5100 1750 50  0001 C CNN
+F 3 "~" H 5100 1750 50  0001 C CNN
+	1    5100 1750
+	1    0    0    -1  
+$EndComp
+Text Label 4900 1750 2    50   ~ 0
+Brake_Light_RTN
+Text Label 4900 1850 2    50   ~ 0
+RTDS
+Text Notes 5350 2100 2    50   ~ 0
+Status Lights
+Text Label 4900 1650 2    50   ~ 0
+Brake_Light
+Text Label 4900 1950 2    50   ~ 0
+RTDS_RTN
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5FDBCF20
+P 8000 700
+F 0 "J?" H 8080 692 50  0001 L CNN
+F 1 "TSI J4" H 7900 850 50  0000 L CNN
+F 2 "" H 8000 700 50  0001 C CNN
+F 3 "~" H 8000 700 50  0001 C CNN
+	1    8000 700 
+	1    0    0    -1  
+$EndComp
+Text Notes 7900 1050 0    50   ~ 0
+Brake \nPedals\n
+Wire Notes Line
+	450  2200 1950 2200
+Wire Notes Line
+	1950 2200 1950 1450
+Wire Notes Line
+	1950 1450 5200 1450
+Wire Notes Line
+	5200 1450 5200 450 
+Text Notes 2100 1400 0    89   ~ 18
+High Voltage Connectors
 $EndSCHEMATC

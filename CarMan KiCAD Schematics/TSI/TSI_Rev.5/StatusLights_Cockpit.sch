@@ -423,46 +423,6 @@ Text Label 5350 5000 0    50   ~ 0
 TSAL
 Text Label 5350 4800 0    50   ~ 0
 TSAL_Cockpit
-$Comp
-L Device:R R17
-U 1 1 5FA5E58C
-P 7450 2950
-F 0 "R17" V 7350 2950 50  0000 C CNN
-F 1 "10K" V 7450 2950 50  0000 C CNN
-F 2 "" V 7380 2950 50  0001 C CNN
-F 3 "~" H 7450 2950 50  0001 C CNN
-	1    7450 2950
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	7300 2950 6950 2950
-Text Label 6950 2950 2    50   ~ 0
-IMD_Status
-$Comp
-L Device:Q_PMOS_GDS Q1
-U 1 1 5FA66ED5
-P 8000 2950
-F 0 "Q1" H 8205 2904 50  0000 L CNN
-F 1 "ZVP0545G" H 8205 2995 50  0000 L CNN
-F 2 "" H 8200 3050 50  0001 C CNN
-F 3 "~" H 8000 2950 50  0001 C CNN
-	1    8000 2950
-	1    0    0    1   
-$EndComp
-Wire Wire Line
-	7600 2950 7800 2950
-Wire Wire Line
-	8100 2750 8100 2400
-Wire Wire Line
-	8100 3150 8100 3600
-Wire Wire Line
-	8100 3600 8200 3600
-Text Label 8100 2400 0    50   ~ 0
-24V
-Text Label 8200 3600 0    50   ~ 0
-IMD_Fault_LED
-Text Notes 8200 3450 0    50   ~ 0
-0.3A Id *CHECK THIS FET, specifications\n are likely not correct. Placeholder transistor*
 Text Notes 7200 1200 0    50   ~ 0
 0.2A Id *CHECK THIS FET, specifications\n are likely not correct.\n Placeholder transistor*
 Text Notes 4200 2800 0    50   ~ 0
@@ -567,34 +527,6 @@ Text Label 10200 2350 2    50   ~ 0
 GLV_RTN
 Wire Wire Line
 	10200 1450 10200 1650
-Wire Notes Line
-	800  3500 800  3050
-Wire Notes Line
-	800  3050 2200 3050
-Wire Notes Line
-	2200 3500 800  3500
-Wire Notes Line
-	2200 3050 2200 3500
-Text Notes 1050 3450 0    50   ~ 0
-needs to be addressed\n
-Wire Wire Line
-	1450 3150 1600 3150
-Text HLabel 1450 3150 0    50   Input ~ 0
-IMD_FAULT_LED
-Wire Wire Line
-	1450 3250 1600 3250
-Wire Wire Line
-	1450 3350 1600 3350
-Text HLabel 1450 3250 0    50   Input ~ 0
-AMS_FAULT_LED
-Text HLabel 1450 3350 0    50   Input ~ 0
-FAULT_LED_RTN
-Text Label 1600 3150 0    50   ~ 0
-IMD_FAULT_LED
-Text Label 1600 3350 0    50   ~ 0
-FAULT_LED_RTN
-Text Label 1600 3250 0    50   ~ 0
-AMS_FAULT_LED
 Text HLabel 1200 2300 0    50   Input ~ 0
 Drive_BTN_RTN
 Wire Wire Line
