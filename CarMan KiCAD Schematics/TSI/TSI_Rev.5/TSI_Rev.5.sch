@@ -364,9 +364,9 @@ Text Label 6750 2700 2    50   ~ 0
 Text Label 6750 2800 2    50   ~ 0
 5V_ISO_RTN
 Text Label 6750 2900 2    50   ~ 0
-SCL_UC
+SCL_uc
 Text Label 6750 3000 2    50   ~ 0
-SDA_UC
+SDA_uc
 Text Label 6750 3100 2    50   ~ 0
 TSI_I2C_RTN
 Text Label 6750 3200 2    50   ~ 0
@@ -1090,7 +1090,7 @@ L Connector_Generic:Conn_01x02 J?
 U 1 1 5F9C2850
 P 3650 2450
 F 0 "J?" H 3730 2442 50  0001 L CNN
-F 1 "JTroy" H 3550 2600 50  0000 L CNN
+F 1 "J17" H 3550 2600 50  0000 L CNN
 F 2 "" H 3650 2450 50  0001 C CNN
 F 3 "~" H 3650 2450 50  0001 C CNN
 	1    3650 2450

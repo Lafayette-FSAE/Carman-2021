@@ -87,11 +87,11 @@ Text Label 8950 2000 2    50   ~ 0
 GLV_RTN
 Text Label 8950 1900 2    50   ~ 0
 AIRS+
-Text Notes 9850 2050 0    50   ~ 0
+Text Notes 9800 2050 0    50   ~ 0
 TSI Power \nfrom GLV\n
-Text Label 9800 1700 2    50   ~ 0
+Text Label 9750 1700 2    50   ~ 0
 24V
-Text Label 9800 1800 2    50   ~ 0
+Text Label 9750 1800 2    50   ~ 0
 GLV_RTN
 Wire Wire Line
 	2750 3400 2850 3400
@@ -364,9 +364,9 @@ Text Label 6750 2700 2    50   ~ 0
 Text Label 6750 2800 2    50   ~ 0
 5V_ISO_RTN
 Text Label 6750 2900 2    50   ~ 0
-SCL_UC
+SCL_uC
 Text Label 6750 3000 2    50   ~ 0
-SDA_UC
+SDA_uC
 Text Label 6750 3100 2    50   ~ 0
 TSI_I2C_RTN
 Text Label 6750 3200 2    50   ~ 0
@@ -630,12 +630,12 @@ Discharge Relay
 $Comp
 L Connector_Generic:Conn_01x02 J?
 U 1 1 60187F86
-P 10000 1700
-F 0 "J?" H 10080 1692 50  0001 L CNN
-F 1 "J16" H 9900 1850 50  0000 L CNN
-F 2 "" H 10000 1700 50  0001 C CNN
-F 3 "~" H 10000 1700 50  0001 C CNN
-	1    10000 1700
+P 9950 1700
+F 0 "J?" H 10030 1692 50  0001 L CNN
+F 1 "J16" H 9850 1850 50  0000 L CNN
+F 2 "" H 9950 1700 50  0001 C CNN
+F 3 "~" H 9950 1700 50  0001 C CNN
+	1    9950 1700
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1090,7 +1090,7 @@ L Connector_Generic:Conn_01x02 J?
 U 1 1 5F9C2850
 P 3650 2450
 F 0 "J?" H 3730 2442 50  0001 L CNN
-F 1 "JTroy" H 3550 2600 50  0000 L CNN
+F 1 "J17" H 3550 2600 50  0000 L CNN
 F 2 "" H 3650 2450 50  0001 C CNN
 F 3 "~" H 3650 2450 50  0001 C CNN
 	1    3650 2450
