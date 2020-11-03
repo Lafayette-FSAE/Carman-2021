@@ -1203,4 +1203,22 @@ Text Label 9750 1800 2    50   ~ 0
 GLV_RTN
 Text Label 9750 1900 2    50   ~ 0
 SL1_In
+Text Notes 8000 7000 0    197  ~ 0
+TSI TOP LEVEL\n
+Wire Wire Line
+	3100 5400 2900 5400
+Wire Wire Line
+	3100 5500 2900 5500
+Wire Wire Line
+	3100 5200 2900 5200
+Wire Wire Line
+	3100 5300 2900 5300
+Text Label 3100 5200 0    50   ~ 0
+PC_RELAY+
+Text Label 3100 5300 0    50   ~ 0
+PC_RELAY-
+Text Label 3100 5400 0    50   ~ 0
+DC_RELAY+
+Text Label 3100 5500 0    50   ~ 0
+DC_RELAY-
 $EndSCHEMATC

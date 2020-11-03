@@ -100,4 +100,6 @@ Text Label 9000 1150 2    50   ~ 0
 5V_ISO
 Text Label 9000 1300 2    50   ~ 0
 5V_ISO_RTN
+Text Notes 7400 7050 0    157  ~ 0
+LOGIC POWER  \n&  CAN ISOLATOR
 $EndSCHEMATC

@@ -1102,9 +1102,9 @@ Wire Wire Line
 Wire Wire Line
 	7050 8500 6850 8500
 Text Label 7050 8300 0    79   ~ 0
-Safety_Loop_HV
+5HV
 Text Label 7050 8500 0    79   ~ 0
-Brake_Pressed_HV
+Safety_Loop_HV
 $Comp
 L Device:R R73
 U 1 1 5FD6E701
@@ -1665,16 +1665,6 @@ Text HLabel 1050 2350 0    50   Input ~ 0
 Throttle_HV
 Text HLabel 1050 2250 0    50   Input ~ 0
 BP_HV
-Text Label 10600 1100 2    50   ~ 0
-IO_Ground
-Text Label 11100 1200 0    50   ~ 0
-Throttle_HV
-Text Label 10600 900  2    50   ~ 0
-IGNI_GND
-Text Label 10600 1000 2    50   ~ 0
-IGNI_VCC
-Text Notes 10650 1450 0    50   ~ 0
-Motor Controller\nPins
 Wire Wire Line
 	8750 6650 8750 6750
 Wire Wire Line
@@ -1687,43 +1677,6 @@ Wire Notes Line
 	1900 500  1900 2450
 Wire Notes Line
 	500  500  500  2450
-$Comp
-L Connector_Generic:Conn_02x04_Counter_Clockwise J?
-U 1 1 605228B1
-P 10800 1000
-F 0 "J?" H 10850 1317 50  0001 C CNN
-F 1 "TSI J32" H 10850 1225 50  0000 C CNN
-F 2 "" H 10800 1000 50  0001 C CNN
-F 3 "~" H 10800 1000 50  0001 C CNN
-	1    10800 1000
-	1    0    0    -1  
-$EndComp
-NoConn ~ 10600 1200
-Text Label 11100 900  0    50   ~ 0
-BP_HV
-$Comp
-L Device:Jumper_NC_Dual JP?
-U 1 1 605F6EA0
-P 11950 1000
-AR Path="/6196BF15/605F6EA0" Ref="JP?"  Part="1" 
-AR Path="/605F6EA0" Ref="JP?"  Part="1" 
-F 0 "JP?" H 12250 950 50  0000 C CNN
-F 1 "Jumper_NC_Dual" H 11200 1400 50  0001 C CNN
-F 2 "" H 11950 1000 50  0001 C CNN
-F 3 "~" H 11950 1000 50  0001 C CNN
-	1    11950 1000
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	11100 1100 12200 1100
-Wire Wire Line
-	12200 1100 12200 1000
-Wire Wire Line
-	11700 1000 11100 1000
-Wire Wire Line
-	11950 850  11950 900 
-Text Label 11950 850  0    50   ~ 0
-IGNI_GND
 Text Notes 2350 5600 0    197  ~ 0
 HIGH VOLTAGE\n
 $EndSCHEMATC
