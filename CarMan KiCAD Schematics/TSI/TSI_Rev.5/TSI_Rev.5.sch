@@ -13,8 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Label 5800 1850 2    50   ~ 0
-GPIO_I2C_RTN
 Text Label 5800 700  2    50   ~ 0
 Flowrate
 Text Label 5800 800  2    50   ~ 0
@@ -59,8 +57,6 @@ Text Notes 6700 1450 0    50   ~ 0
 Throttle \nPlausiblity
 Text Notes 1050 1150 2    50   ~ 0
 HV
-Text Notes 5850 1500 0    50   ~ 0
-Cooling\nControl\n\n
 Text Label 9450 700  2    50   ~ 0
 SL1_Out
 Text Label 9450 800  2    50   ~ 0
@@ -547,24 +543,6 @@ F 3 "~" H 2750 750 50  0001 C CNN
 	1    2750 750 
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector_Generic:Conn_01x04 J?
-U 1 1 5FFF16D2
-P 6000 1750
-F 0 "J?" H 6080 1742 50  0001 L CNN
-F 1 "J12" H 5950 1950 50  0000 L CNN
-F 2 "" H 6000 1750 50  0001 C CNN
-F 3 "~" H 6000 1750 50  0001 C CNN
-	1    6000 1750
-	1    0    0    -1  
-$EndComp
-Text Notes 5650 2250 0    50   ~ 0
-I2C Connection \nbetween Logic & TSI\n\n
-Text Label 5800 1650 2    50   ~ 0
-SDA
-Text Label 5800 1750 2    50   ~ 0
-SCL
-NoConn ~ 5800 1950
 $Comp
 L Connector_Generic:Conn_01x04 J?
 U 1 1 60109F6F
