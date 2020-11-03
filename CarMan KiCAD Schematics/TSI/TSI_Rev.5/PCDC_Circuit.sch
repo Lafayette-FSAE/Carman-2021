@@ -419,39 +419,39 @@ Wire Wire Line
 Connection ~ 6950 4250
 Wire Wire Line
 	6950 4250 7200 4250
-Text Label 1250 1050 0    50   ~ 0
+Text Label 1500 1050 0    50   ~ 0
 MC_Voltage
-Text Label 1250 850  0    50   ~ 0
+Text Label 1500 850  0    50   ~ 0
 HV+
 Wire Wire Line
-	1050 850  1250 850 
+	1300 850  1500 850 
 Wire Wire Line
-	1250 1050 1050 1050
-Text Label 1250 1350 0    50   ~ 0
+	1500 1050 1300 1050
+Text Label 1500 1350 0    50   ~ 0
 Throttle_HV
-Text Label 1250 1250 0    50   ~ 0
+Text Label 1500 1250 0    50   ~ 0
 IO_Ground
 Wire Wire Line
-	1250 1250 1050 1250
+	1500 1250 1300 1250
 Wire Wire Line
-	1250 1350 1050 1350
-Text Label 1250 950  0    50   ~ 0
+	1500 1350 1300 1350
+Text Label 1500 950  0    50   ~ 0
 HV-
 Wire Wire Line
-	1250 950  1050 950 
-Text Label 1250 1150 0    50   ~ 0
+	1500 950  1300 950 
+Text Label 1500 1150 0    50   ~ 0
 TSV_Voltage
 Wire Wire Line
-	1250 1150 1050 1150
-Text Notes 850  650  0    79   ~ 0
+	1500 1150 1300 1150
+Text Notes 1100 650  0    79   ~ 0
 HV SIGNALS\n
-Text HLabel 1050 1350 0    50   Input ~ 0
+Text HLabel 1300 1350 0    50   Input ~ 0
 Throttle_HV
-Text HLabel 1050 1050 0    50   Input ~ 0
+Text HLabel 1300 1050 0    50   Input ~ 0
 MC_V
-Text HLabel 1050 950  0    50   Input ~ 0
+Text HLabel 1300 950  0    50   Input ~ 0
 HV-
-Text HLabel 1050 850  0    50   Input ~ 0
+Text HLabel 1300 850  0    50   Input ~ 0
 HV+
 $Comp
 L Device:R R56
@@ -1500,21 +1500,21 @@ Text Notes 13550 950  0    47   ~ 0
 SR Latch Logic\n
 Text Notes 4600 2250 0    47   ~ 0
 95% of Voltage
-Text HLabel 1050 1150 0    50   Input ~ 0
+Text HLabel 1300 1150 0    50   Input ~ 0
 TSV_V
-Text HLabel 1050 1250 0    50   Input ~ 0
+Text HLabel 1300 1250 0    50   Input ~ 0
 IO_Ground
-Text Label 1250 1550 0    50   ~ 0
+Text Label 1500 1550 0    50   ~ 0
 1.24V_REF
-Text Label 1250 1450 0    50   ~ 0
+Text Label 1500 1450 0    50   ~ 0
 5HV
 Wire Wire Line
-	1250 1450 1050 1450
+	1500 1450 1300 1450
 Wire Wire Line
-	1250 1550 1050 1550
-Text HLabel 1050 1550 0    50   Input ~ 0
+	1500 1550 1300 1550
+Text HLabel 1300 1550 0    50   Input ~ 0
 1.24VREF
-Text HLabel 1050 1450 0    50   Input ~ 0
+Text HLabel 1300 1450 0    50   Input ~ 0
 5HV
 Text Label 1450 6850 0    50   ~ 0
 GLV_RTN
@@ -1617,66 +1617,66 @@ Wire Wire Line
 Connection ~ 4700 8300
 Wire Notes Line
 	6300 5700 6300 11200
-Text Label 1250 1750 0    50   ~ 0
+Text Label 1500 1750 0    50   ~ 0
 DC_RELAY-
-Text Label 1250 1650 0    50   ~ 0
+Text Label 1500 1650 0    50   ~ 0
 DC_RELAY+
 Wire Wire Line
-	1250 1650 1050 1650
+	1500 1650 1300 1650
 Wire Wire Line
-	1250 1750 1050 1750
-Text HLabel 1050 1750 0    50   Input ~ 0
+	1500 1750 1300 1750
+Text HLabel 1300 1750 0    50   Input ~ 0
 DC_RELAY-
-Text HLabel 1050 1650 0    50   Input ~ 0
+Text HLabel 1300 1650 0    50   Input ~ 0
 DC_RELAY+
-Text Label 1250 1950 0    50   ~ 0
+Text Label 1500 1950 0    50   ~ 0
 PC_RELAY-
-Text Label 1250 1850 0    50   ~ 0
+Text Label 1500 1850 0    50   ~ 0
 PC_RELAY+
 Wire Wire Line
-	1250 1850 1050 1850
+	1500 1850 1300 1850
 Wire Wire Line
-	1250 1950 1050 1950
-Text HLabel 1050 1950 0    50   Input ~ 0
+	1500 1950 1300 1950
+Text HLabel 1300 1950 0    50   Input ~ 0
 PC_RELAY-
-Text HLabel 1050 1850 0    50   Input ~ 0
+Text HLabel 1300 1850 0    50   Input ~ 0
 PC_RELAY+
-Text Label 1250 2150 0    50   ~ 0
+Text Label 1500 2150 0    50   ~ 0
 IGNI_VCC
-Text Label 1250 2050 0    50   ~ 0
+Text Label 1500 2050 0    50   ~ 0
 IGNI_GND
 Wire Wire Line
-	1250 2050 1050 2050
+	1500 2050 1300 2050
 Wire Wire Line
-	1250 2150 1050 2150
-Text HLabel 1050 2150 0    50   Input ~ 0
+	1500 2150 1300 2150
+Text HLabel 1300 2150 0    50   Input ~ 0
 IGNI_VCC
-Text HLabel 1050 2050 0    50   Input ~ 0
+Text HLabel 1300 2050 0    50   Input ~ 0
 IGNI_GND
-Text Label 1250 2350 0    50   ~ 0
+Text Label 1500 2350 0    50   ~ 0
 Throttle_HV
-Text Label 1250 2250 0    50   ~ 0
-BP_HV
+Text Label 1500 2250 0    50   ~ 0
+Brake_Pressed_HV
 Wire Wire Line
-	1250 2250 1050 2250
+	1500 2250 1300 2250
 Wire Wire Line
-	1250 2350 1050 2350
-Text HLabel 1050 2350 0    50   Input ~ 0
+	1500 2350 1300 2350
+Text HLabel 1300 2350 0    50   Input ~ 0
 Throttle_HV
-Text HLabel 1050 2250 0    50   Input ~ 0
-BP_HV
+Text HLabel 1300 2250 0    50   Input ~ 0
+Brake_Pressed_HV
 Wire Wire Line
 	8750 6650 8750 6750
 Wire Wire Line
 	11400 2050 11400 2450
-Wire Notes Line
-	500  500  1900 500 
-Wire Notes Line
-	500  2450 1900 2450
-Wire Notes Line
-	1900 500  1900 2450
-Wire Notes Line
-	500  500  500  2450
 Text Notes 2350 5600 0    197  ~ 0
 HIGH VOLTAGE\n
+Wire Notes Line
+	500  500  500  2450
+Wire Notes Line
+	500  2450 2350 2450
+Wire Notes Line
+	2350 500  2350 2450
+Wire Notes Line
+	500  500  2350 500 
 $EndSCHEMATC

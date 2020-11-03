@@ -250,8 +250,6 @@ F 3 "~" H 10150 5000 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9950 5000 9950 5150
-Text Label 6750 1850 0    50   ~ 0
-GLV_RTN
 $Comp
 L TSI_Rev.5-rescue:TLP293-CarMan_KiCAD_Library-TSI_Rev.5-rescue U24
 U 1 1 5FB6227C
@@ -559,119 +557,6 @@ Text Label 15050 2050 2    50   ~ 0
 BOT_In
 Text Notes 10050 10050 2    50   ~ 0
 Zacky bear doesn't like
-Text Notes 5750 800  2    118  ~ 0
-CAN Transceiver
-Text Label 3350 2450 0    50   ~ 0
-CAN_L
-Text Label 3350 1550 0    50   ~ 0
-CAN_H
-Wire Wire Line
-	4000 1750 4000 2450
-Wire Wire Line
-	3650 2450 3350 2450
-Connection ~ 3650 2450
-$Comp
-L Device:Jumper JP2
-U 1 1 5FB58FEE
-P 3650 2150
-F 0 "JP2" V 3650 2400 50  0000 R CNN
-F 1 "Jumper" V 3600 2100 50  0001 R CNN
-F 2 "" H 3650 2150 50  0001 C CNN
-F 3 "~" H 3650 2150 50  0001 C CNN
-	1    3650 2150
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	3650 1550 4400 1550
-Connection ~ 3650 1550
-$Comp
-L Device:R R44
-U 1 1 5FB5846D
-P 3650 1700
-F 0 "R44" H 3400 1700 50  0000 L CNN
-F 1 "120" V 3650 1650 50  0000 L CNN
-F 2 "" V 3580 1700 50  0001 C CNN
-F 3 "~" H 3650 1700 50  0001 C CNN
-	1    3650 1700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4000 2450 3650 2450
-Wire Wire Line
-	4400 1750 4000 1750
-Wire Wire Line
-	3350 1550 3650 1550
-Text Label 6250 1200 0    50   ~ 0
-5V
-Wire Wire Line
-	6250 1350 6250 1200
-Wire Wire Line
-	6000 1850 6250 1850
-$Comp
-L pspice:CAP C18
-U 1 1 5FB4FC09
-P 6250 1600
-F 0 "C18" H 6300 1700 50  0000 L CNN
-F 1 "0.1u" H 6300 1500 50  0000 L CNN
-F 2 "" H 6250 1600 50  0001 C CNN
-F 3 "~" H 6250 1600 50  0001 C CNN
-	1    6250 1600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5400 1850 5700 1850
-$Comp
-L Device:R R37
-U 1 1 5FB4E27E
-P 5850 1850
-F 0 "R37" V 5750 1850 50  0000 C CNN
-F 1 "1K" V 5850 1850 50  0000 C CNN
-F 2 "" V 5780 1850 50  0001 C CNN
-F 3 "~" H 5850 1850 50  0001 C CNN
-	1    5850 1850
-	0    1    1    0   
-$EndComp
-NoConn ~ 5600 1750
-Wire Wire Line
-	5400 1750 5600 1750
-Text Label 5600 1450 0    50   ~ 0
-CANTX
-Text Label 5600 1550 0    50   ~ 0
-CANRX
-Wire Wire Line
-	5400 1550 5600 1550
-Wire Wire Line
-	5400 1450 5600 1450
-Text Label 4900 2200 2    50   ~ 0
-GLV_RTN
-Wire Wire Line
-	4900 2050 4900 2200
-Text Label 4900 1000 2    50   ~ 0
-5V
-Wire Wire Line
-	4900 1250 4900 1000
-$Comp
-L Interface_CAN_LIN:MCP2551-I-SN U10
-U 1 1 5FB471DB
-P 4900 1650
-F 0 "U10" H 4600 2000 50  0000 C CNN
-F 1 "MCP2551-I-SN" H 5400 2000 50  0000 C CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 4900 1150 50  0001 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/devicedoc/21667d.pdf" H 4900 1650 50  0001 C CNN
-	1    4900 1650
-	-1   0    0    -1  
-$EndComp
-Connection ~ 6250 1850
-Wire Wire Line
-	6250 1850 6750 1850
-Wire Notes Line
-	3000 2550 7200 2550
-Wire Notes Line
-	7200 2550 7200 600 
-Wire Notes Line
-	7200 600  3000 600 
-Wire Notes Line
-	3000 600  3000 2550
 Text Notes 14800 750  0    98   ~ 0
 SIGNALS
 Wire Notes Line
