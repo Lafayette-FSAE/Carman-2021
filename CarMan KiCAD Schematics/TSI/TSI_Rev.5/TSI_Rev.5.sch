@@ -364,7 +364,7 @@ Throttle_PL_3.3
 Text Label 6750 3500 2    50   ~ 0
 IMD_Status_3.3
 Text Label 6750 3600 2    50   ~ 0
-Break_Pressed_uC
+Brake_Pressed_uC
 Text Label 6750 3700 2    50   ~ 0
 APPS
 Text Label 6750 3800 2    50   ~ 0
@@ -800,7 +800,7 @@ L Connector_Generic:Conn_01x06 J?
 U 1 1 5F9A4488
 P 10950 1900
 F 0 "J?" H 11030 1892 50  0001 L CNN
-F 1 "TSI J20" H 10850 2250 50  0000 L CNN
+F 1 "J20" H 10900 2200 50  0000 L CNN
 F 2 "" H 10950 1900 50  0001 C CNN
 F 3 "~" H 10950 1900 50  0001 C CNN
 	1    10950 1900
