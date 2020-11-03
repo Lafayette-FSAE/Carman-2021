@@ -69,16 +69,8 @@ Text Label 9450 1000 2    50   ~ 0
 AIRS_RTN
 Text Label 9450 900  2    50   ~ 0
 AIRS
-Text Notes 7750 2100 0    50   ~ 0
+Text Notes 7800 2250 0    50   ~ 0
 Dashboard\n
-Text Label 7800 1650 2    50   ~ 0
-AMS_FAULT_LED
-Text Label 7800 1750 2    50   ~ 0
-FAULT_LED_RTN
-Text Label 7800 1950 2    50   ~ 0
-IMD_FAULT_LED
-Text Label 7800 1850 2    50   ~ 0
-FAULT_LED_RTN
 Text Notes 2450 1150 0    50   ~ 0
 Precharge Relay\n\n\n
 Text Label 8950 1700 2    50   ~ 0
@@ -119,8 +111,6 @@ Text Label 2500 1800 2    50   ~ 0
 24V
 Text Label 2500 1700 2    50   ~ 0
 GLV_RTN
-Text Notes 6750 2100 0    50   ~ 0
-TSAL Power
 Wire Wire Line
 	2750 4100 2850 4100
 Wire Wire Line
@@ -364,9 +354,9 @@ Text Label 6750 2700 2    50   ~ 0
 Text Label 6750 2800 2    50   ~ 0
 5V_ISO_RTN
 Text Label 6750 2900 2    50   ~ 0
-SCL_uC
+SCL_uc
 Text Label 6750 3000 2    50   ~ 0
-SDA_uC
+SDA_uc
 Text Label 6750 3100 2    50   ~ 0
 TSI_I2C_RTN
 Text Label 6750 3200 2    50   ~ 0
@@ -513,7 +503,7 @@ L Connector_Generic:Conn_01x06 J?
 U 1 1 5FCAFAF8
 P 6000 900
 F 0 "J?" H 6080 892 50  0001 L CNN
-F 1 "TSI J2" H 5900 1250 50  0000 L CNN
+F 1 "J2" H 5950 1200 50  0000 L CNN
 F 2 "" H 6000 900 50  0001 C CNN
 F 3 "~" H 6000 900 50  0001 C CNN
 	1    6000 900 
@@ -525,7 +515,7 @@ L Connector_Generic:Conn_01x06 J?
 U 1 1 5FD3B6EB
 P 6850 900
 F 0 "J?" H 6930 892 50  0001 L CNN
-F 1 "TSI J3" H 6750 1250 50  0000 L CNN
+F 1 "J3" H 6800 1200 50  0000 L CNN
 F 2 "" H 6850 900 50  0001 C CNN
 F 3 "~" H 6850 900 50  0001 C CNN
 	1    6850 900 
@@ -538,7 +528,7 @@ L Connector_Generic:Conn_01x06 J?
 U 1 1 5FE0EFE1
 P 8950 900
 F 0 "J?" H 9030 892 50  0001 L CNN
-F 1 "TSI J5" H 8850 1250 50  0000 L CNN
+F 1 "J5" H 8900 1200 50  0000 L CNN
 F 2 "" H 8950 900 50  0001 C CNN
 F 3 "~" H 8950 900 50  0001 C CNN
 	1    8950 900 
@@ -546,17 +536,6 @@ F 3 "~" H 8950 900 50  0001 C CNN
 $EndComp
 Text Notes 8850 1500 0    50   ~ 0
 Testing\nConnector\n\n
-$Comp
-L Connector_Generic:Conn_01x04 J?
-U 1 1 5FE96F39
-P 9650 800
-F 0 "J?" H 9730 792 50  0001 L CNN
-F 1 "TSI J6" H 9550 1050 50  0000 L CNN
-F 2 "" H 9650 800 50  0001 C CNN
-F 3 "~" H 9650 800 50  0001 C CNN
-	1    9650 800 
-	1    0    0    -1  
-$EndComp
 $Comp
 L Connector_Generic:Conn_01x02 J?
 U 1 1 5FF3B112
@@ -586,17 +565,6 @@ SDA
 Text Label 5800 1750 2    50   ~ 0
 SCL
 NoConn ~ 5800 1950
-$Comp
-L Connector_Generic:Conn_01x04 J?
-U 1 1 600AD6CD
-P 8000 1750
-F 0 "J?" H 8080 1742 50  0001 L CNN
-F 1 "J14" H 7950 1950 50  0000 L CNN
-F 2 "" H 8000 1750 50  0001 C CNN
-F 3 "~" H 8000 1750 50  0001 C CNN
-	1    8000 1750
-	1    0    0    -1  
-$EndComp
 $Comp
 L Connector_Generic:Conn_01x04 J?
 U 1 1 60109F6F
@@ -749,24 +717,13 @@ Text Label 4850 650  0    50   ~ 0
 IGNI_GND
 Wire Wire Line
 	5100 800  5100 900 
-$Comp
-L Connector_Generic:Conn_01x04 J?
-U 1 1 60794552
-P 6950 1750
-F 0 "J?" H 7030 1742 50  0001 L CNN
-F 1 "J13" H 6900 1950 50  0000 L CNN
-F 2 "" H 6950 1750 50  0001 C CNN
-F 3 "~" H 6950 1750 50  0001 C CNN
-	1    6950 1750
-	1    0    0    -1  
-$EndComp
-Text Label 6750 1650 2    50   ~ 0
-TSAL
 Text Label 6750 1750 2    50   ~ 0
-TSAL_RTN
+TSAL
 Text Label 6750 1850 2    50   ~ 0
+TSAL_RTN
+Text Label 7900 2000 2    50   ~ 0
 TSAL_Cockpit
-Text Label 6750 1950 2    50   ~ 0
+Text Label 7900 2100 2    50   ~ 0
 TSAL_RTN
 Wire Wire Line
 	10150 4450 10300 4450
@@ -1204,7 +1161,7 @@ L Connector_Generic:Conn_01x02 J?
 U 1 1 5FDBCF20
 P 8000 700
 F 0 "J?" H 8080 692 50  0001 L CNN
-F 1 "TSI J4" H 7900 850 50  0000 L CNN
+F 1 "J4" H 7950 800 50  0000 L CNN
 F 2 "" H 8000 700 50  0001 C CNN
 F 3 "~" H 8000 700 50  0001 C CNN
 	1    8000 700 
@@ -1222,4 +1179,47 @@ Wire Notes Line
 	5200 1450 5200 450 
 Text Notes 2100 1400 0    89   ~ 18
 High Voltage Connectors
+Text Notes 6800 2100 0    50   ~ 0
+TSAL Roll \nHoop Power\n
+$Comp
+L Connector_Generic:Conn_01x06 J?
+U 1 1 5FA1229F
+P 8100 1800
+F 0 "J?" H 8180 1792 50  0001 L CNN
+F 1 "J14" H 8050 2100 50  0000 L CNN
+F 2 "" H 8100 1800 50  0001 C CNN
+F 3 "~" H 8100 1800 50  0001 C CNN
+	1    8100 1800
+	1    0    0    -1  
+$EndComp
+Text Label 7900 1800 2    50   ~ 0
+FAULT_LED_RTN
+Text Label 7900 1900 2    50   ~ 0
+IMD_FAULT_LED
+Text Label 7900 1700 2    50   ~ 0
+FAULT_LED_RTN
+Text Label 7900 1600 2    50   ~ 0
+AMS_FAULT_LED
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5FA5AE22
+P 6950 1750
+F 0 "J?" H 7030 1742 50  0001 L CNN
+F 1 "J13" H 6900 1850 50  0000 L CNN
+F 2 "" H 6950 1750 50  0001 C CNN
+F 3 "~" H 6950 1750 50  0001 C CNN
+	1    6950 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J?
+U 1 1 5FE96F39
+P 9650 800
+F 0 "J?" H 9730 792 50  0001 L CNN
+F 1 "J6" H 9600 1000 50  0000 L CNN
+F 2 "" H 9650 800 50  0001 C CNN
+F 3 "~" H 9650 800 50  0001 C CNN
+	1    9650 800 
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
