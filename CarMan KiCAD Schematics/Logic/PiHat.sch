@@ -16,7 +16,7 @@ $EndDescr
 Text HLabel 1200 1400 0    50   Input ~ 0
 5V
 $Comp
-L Interface_CAN_LIN:MCP2515-xSO U8
+L Logic-rescue:MCP2515-xSO-Interface_CAN_LIN-Logic-rescue U8
 U 1 1 5F9A99EE
 P 6750 3100
 F 0 "U8" H 6500 3850 50  0000 C CNN
@@ -49,10 +49,12 @@ Text Label 1600 1400 0    50   ~ 0
 Text Label 1550 3850 0    50   ~ 0
 5V_rtn
 $Comp
-L Connector:Conn_01x02_Male J7
+L Logic-rescue:Conn_01x02_Male-Connector-Logic-rescue J7
 U 1 1 5F9AE3B8
 P 2300 1650
-F 0 "J7" V 2362 1694 50  0000 L CNN
+AR Path="/5F9AE3B8" Ref="J7"  Part="1" 
+AR Path="/5F9A7CF0/5F9AE3B8" Ref="J9"  Part="1" 
+F 0 "J9" V 2362 1694 50  0000 L CNN
 F 1 "Conn_01x02_Male" V 2453 1694 50  0000 L CNN
 F 2 "" H 2300 1650 50  0001 C CNN
 F 3 "~" H 2300 1650 50  0001 C CNN
@@ -60,9 +62,11 @@ F 3 "~" H 2300 1650 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R7
+L Logic-rescue:R-Device-Logic-rescue R7
 U 1 1 5F9AF7D2
 P 2300 2000
+AR Path="/5F9AF7D2" Ref="R7"  Part="1" 
+AR Path="/5F9A7CF0/5F9AF7D2" Ref="R7"  Part="1" 
 F 0 "R7" H 2370 2046 50  0000 L CNN
 F 1 "120" V 2300 1950 50  0000 L CNN
 F 2 "" V 2230 2000 50  0001 C CNN
@@ -81,9 +85,11 @@ Connection ~ 2200 2750
 Wire Wire Line
 	4100 1750 4400 1750
 $Comp
-L Device:C C14
+L Logic-rescue:C-Device-Logic-rescue C14
 U 1 1 5F9B08F3
 P 4400 1900
+AR Path="/5F9B08F3" Ref="C14"  Part="1" 
+AR Path="/5F9A7CF0/5F9B08F3" Ref="C14"  Part="1" 
 F 0 "C14" H 4515 1946 50  0000 L CNN
 F 1 "0.1uF" H 4515 1855 50  0000 L CNN
 F 2 "" H 4438 1750 50  0001 C CNN
@@ -104,17 +110,6 @@ Text Label 4150 2800 0    50   ~ 0
 Wire Wire Line
 	4050 2800 4150 2800
 NoConn ~ 7350 3500
-$Comp
-L Interface_CAN_LIN:MCP2551-I-P U7
-U 1 1 5F9A8A6F
-P 5600 4750
-F 0 "U7" H 5300 5100 50  0000 C CNN
-F 1 "MCP2551-I-P" H 6000 5100 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W7.62mm" H 5600 4250 50  0001 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/devicedoc/21667d.pdf" H 5600 4750 50  0001 C CNN
-	1    5600 4750
-	-1   0    0    -1  
-$EndComp
 Text Label 6850 4050 0    50   ~ 0
 5V_rtn
 Wire Wire Line
@@ -126,9 +121,11 @@ Wire Wire Line
 Wire Wire Line
 	6750 1850 7050 1850
 $Comp
-L Device:C C15
+L Logic-rescue:C-Device-Logic-rescue C15
 U 1 1 5F9BD77C
 P 7050 2000
+AR Path="/5F9BD77C" Ref="C15"  Part="1" 
+AR Path="/5F9A7CF0/5F9BD77C" Ref="C15"  Part="1" 
 F 0 "C15" H 7165 2046 50  0000 L CNN
 F 1 "0.1uF" H 7165 1955 50  0000 L CNN
 F 2 "" H 7088 1850 50  0001 C CNN
@@ -156,9 +153,11 @@ NoConn ~ 6150 3400
 NoConn ~ 6150 3500
 NoConn ~ 6150 3600
 $Comp
-L Device:R R10
+L Logic-rescue:R-Device-Logic-rescue R10
 U 1 1 5F9C01C9
 P 5750 3700
+AR Path="/5F9C01C9" Ref="R10"  Part="1" 
+AR Path="/5F9A7CF0/5F9C01C9" Ref="R10"  Part="1" 
 F 0 "R10" V 5850 3700 50  0000 C CNN
 F 1 "4k7" V 5750 3700 50  0000 C CNN
 F 2 "" V 5680 3700 50  0001 C CNN
@@ -189,7 +188,7 @@ PI_SPI_CEO
 Text Label 7400 2800 0    50   ~ 0
 PI_SPI_SCLK
 $Comp
-L Device:Crystal Y1
+L Logic-rescue:Crystal-Device-Logic-rescue Y1
 U 1 1 5F9C41DC
 P 8150 3350
 F 0 "Y1" V 8104 3481 50  0000 L CNN
@@ -212,9 +211,11 @@ Wire Wire Line
 Wire Wire Line
 	7700 3500 8150 3500
 $Comp
-L Device:C C16
+L Logic-rescue:C-Device-Logic-rescue C16
 U 1 1 5F9C8133
 P 8750 3200
+AR Path="/5F9C8133" Ref="C16"  Part="1" 
+AR Path="/5F9A7CF0/5F9C8133" Ref="C16"  Part="1" 
 F 0 "C16" V 8498 3200 50  0000 C CNN
 F 1 "22pF" V 8589 3200 50  0000 C CNN
 F 2 "" H 8788 3050 50  0001 C CNN
@@ -226,9 +227,11 @@ Wire Wire Line
 	8150 3200 8600 3200
 Connection ~ 8150 3200
 $Comp
-L Device:C C17
+L Logic-rescue:C-Device-Logic-rescue C17
 U 1 1 5F9CA3A5
 P 8750 3500
+AR Path="/5F9CA3A5" Ref="C17"  Part="1" 
+AR Path="/5F9A7CF0/5F9CA3A5" Ref="C17"  Part="1" 
 F 0 "C17" V 9000 3500 50  0000 C CNN
 F 1 "22pF" V 8900 3500 50  0000 C CNN
 F 2 "" H 8788 3350 50  0001 C CNN
@@ -257,7 +260,7 @@ PI_SPI_CEO
 Text HLabel 7850 2800 2    50   Input ~ 0
 PI_SPI_SCLK
 $Comp
-L Interface_CAN_LIN:ISO1050DUB U2
+L Logic-rescue:ISO1050DUB-Interface_CAN_LIN-Logic-rescue U2
 U 1 1 5FAD2713
 P 3650 2600
 F 0 "U2" H 3650 2967 50  0000 C CNN
@@ -286,9 +289,11 @@ Wire Wire Line
 Wire Wire Line
 	3250 1700 3550 1700
 $Comp
-L Device:C C1
+L Logic-rescue:C-Device-Logic-rescue C1
 U 1 1 5FADAB07
 P 3550 1850
+AR Path="/5FADAB07" Ref="C1"  Part="1" 
+AR Path="/5F9A7CF0/5FADAB07" Ref="C1"  Part="1" 
 F 0 "C1" H 3665 1896 50  0000 L CNN
 F 1 "0.1uF" H 3665 1805 50  0000 L CNN
 F 2 "" H 3588 1700 50  0001 C CNN
@@ -301,7 +306,7 @@ Wire Wire Line
 Wire Wire Line
 	3550 2050 3650 2050
 Text Label 3350 1700 0    50   ~ 0
-5v_non_iso
+5V_non_iso
 Text Label 3650 2050 0    50   ~ 0
 GLV_rtn
 Text HLabel 2700 4200 0    50   Input ~ 0
