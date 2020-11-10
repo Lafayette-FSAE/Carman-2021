@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 2
+Sheet 1 3
 Title "Logic Board Schematic"
 Date ""
 Rev ""
@@ -46,80 +46,6 @@ F 3 "~" H 1000 5150 50  0001 C CNN
 	1    1000 5150
 	-1   0    0    1   
 $EndComp
-Text Label 1100 6700 0    50   ~ 0
-5V
-Text Label 1100 7300 0    50   ~ 0
-5V_rtn
-Wire Wire Line
-	2250 7200 2150 7200
-Wire Wire Line
-	2150 7200 2150 7300
-Wire Wire Line
-	2150 7300 2250 7300
-Wire Wire Line
-	2150 7300 2150 7400
-Wire Wire Line
-	2150 7400 2250 7400
-Connection ~ 2150 7300
-Wire Wire Line
-	2000 7000 2000 6700
-Wire Wire Line
-	2000 6600 2250 6600
-Connection ~ 2000 6700
-Wire Wire Line
-	2000 6700 2000 6600
-Wire Wire Line
-	2000 7000 2250 7000
-Wire Wire Line
-	3650 6600 3650 6050
-Wire Wire Line
-	2150 6050 2150 6800
-Wire Wire Line
-	2150 6800 2250 6800
-$Comp
-L Logic-rescue:C-Device-Logic-rescue C3
-U 1 1 5F99F0F5
-P 1000 7000
-F 0 "C3" H 1115 7046 50  0000 L CNN
-F 1 "0.1uF" H 1115 6955 50  0000 L CNN
-F 2 "" H 1038 6850 50  0001 C CNN
-F 3 "~" H 1000 7000 50  0001 C CNN
-	1    1000 7000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1000 7150 1000 7300
-Wire Wire Line
-	1000 6850 1000 6700
-Wire Wire Line
-	1000 6700 1500 6700
-$Comp
-L Logic-rescue:C-Device-Logic-rescue C5
-U 1 1 5F99FFE4
-P 1750 7050
-F 0 "C5" H 1865 7096 50  0000 L CNN
-F 1 "1uF" H 1865 7005 50  0000 L CNN
-F 2 "" H 1788 6900 50  0001 C CNN
-F 3 "~" H 1750 7050 50  0001 C CNN
-	1    1750 7050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2250 6900 2050 6900
-Wire Wire Line
-	2050 6900 2050 7200
-Wire Wire Line
-	2050 7200 1750 7200
-Wire Wire Line
-	1750 6900 1750 6800
-Wire Wire Line
-	1750 6800 2150 6800
-Connection ~ 2150 6800
-Wire Wire Line
-	2150 7400 2150 7750
-Connection ~ 2150 7400
-Text Label 2150 7750 1    50   ~ 0
-3.3V_rtn
 Wire Wire Line
 	1200 5050 1650 5050
 Text Label 1250 5250 0    50   ~ 0
@@ -148,22 +74,6 @@ Wire Wire Line
 	9550 1850 10000 1850
 Wire Wire Line
 	9550 1950 10000 1950
-NoConn ~ 9550 2350
-$Comp
-L Logic-rescue:Conn_01x04-Connector_Generic-Logic-rescue J7
-U 1 1 5F95F4E3
-P 9350 2550
-F 0 "J7" H 9430 2542 50  0000 L CNN
-F 1 "GLV_I2C" H 9430 2451 50  0000 L CNN
-F 2 "" H 9350 2550 50  0001 C CNN
-F 3 "~" H 9350 2550 50  0001 C CNN
-	1    9350 2550
-	-1   0    0    1   
-$EndComp
-Text Label 9650 2550 0    50   ~ 0
-SCL_pi
-Text Label 9650 2650 0    50   ~ 0
-SDA_pi
 Text Label 9650 1650 0    50   ~ 0
 SCL_pi
 Text Label 9650 1850 0    50   ~ 0
@@ -329,8 +239,6 @@ Wire Wire Line
 	9400 5350 9400 5050
 Connection ~ 10700 4750
 Connection ~ 9400 5050
-Text Label 9650 2450 0    50   ~ 0
-GPIO_I2C_rtn
 Text Label 1100 2250 0    50   ~ 0
 3.3V
 Wire Wire Line
@@ -724,10 +632,6 @@ Wire Wire Line
 	9550 1650 10000 1650
 Wire Wire Line
 	9550 1750 10000 1750
-Wire Wire Line
-	9550 2550 10000 2550
-Wire Wire Line
-	9550 2650 10000 2650
 Text Label 9050 3350 2    50   ~ 0
 SCL_pi
 Text Label 9050 3250 2    50   ~ 0
@@ -798,8 +702,6 @@ Text Label 10800 4150 0    50   ~ 0
 GPIO25
 Text Label 10800 4250 0    50   ~ 0
 PI_SPI_CEO
-Text Label 3450 6050 0    50   ~ 0
-3.3V
 Wire Wire Line
 	7900 3950 7400 3950
 Wire Wire Line
@@ -863,15 +765,6 @@ Text Label 1050 4150 0    50   ~ 0
 PGED
 Text Label 6500 3600 0    50   ~ 0
 D_LED_CTRL
-Wire Wire Line
-	1000 6700 550  6700
-Connection ~ 1000 6700
-Wire Wire Line
-	1000 7300 550  7300
-Text Label 550  7300 0    50   ~ 0
-5V_iso_rtn
-Text Label 550  6700 0    50   ~ 0
-5V_iso
 Wire Wire Line
 	8750 4650 8750 4750
 Wire Wire Line
@@ -1020,9 +913,9 @@ SDA_uc
 Text Label 5750 5950 1    50   ~ 0
 SCL_uc
 Text Label 5850 5950 1    50   ~ 0
-5V_iso_rtn
+24V
 Text Label 5950 5950 1    50   ~ 0
-5V_iso
+24V_rtn
 Wire Wire Line
 	4950 5700 4950 6000
 Wire Wire Line
@@ -1098,22 +991,6 @@ F 8 "32 Bit MCU FPU 2MB Flash 512KB RAM 200MHz 64Pin USB-HS ENET CAN Crypto" H 4
 	1    0    0    -1  
 $EndComp
 $Comp
-L Lafayette_Electric_Car_Internals:LT1763CS8-3.3PBF U4
-U 1 1 5F997AAE
-P 2950 6900
-F 0 "U4" H 2950 7570 50  0000 C CNN
-F 1 "LT1763CS8-3.3PBF" H 2950 7479 50  0000 C CNN
-F 2 "SOIC127P600X175-8N" H 2950 6900 50  0001 L BNN
-F 3 "Voltage stabiliser; LDO, fixed; 3.3V; 500mA; SO8; SMD" H 2950 6900 50  0001 L BNN
-F 4 "Linear Technology/Analog" H 2950 6900 50  0001 L BNN "Field4"
-F 5 "SOIC-8 Linear Technology" H 2950 6900 50  0001 L BNN "Field5"
-F 6 "LT1763CS8-3.3#PBF" H 2950 6900 50  0001 L BNN "Field6"
-F 7 "None" H 2950 6900 50  0001 L BNN "Field7"
-F 8 "Unavailable" H 2950 6900 50  0001 L BNN "Field8"
-	1    2950 6900
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:LED D1
 U 1 1 5FAD3933
 P 7200 5950
@@ -1173,20 +1050,6 @@ Wire Wire Line
 	7850 5500 7850 5400
 Text Label 7850 5400 2    50   ~ 0
 SDA_pi
-$Comp
-L power:PWR_FLAG #FLG0101
-U 1 1 5FB1EE6C
-P 1500 6700
-F 0 "#FLG0101" H 1500 6775 50  0001 C CNN
-F 1 "PWR_FLAG" H 1500 6873 50  0000 C CNN
-F 2 "" H 1500 6700 50  0001 C CNN
-F 3 "~" H 1500 6700 50  0001 C CNN
-	1    1500 6700
-	1    0    0    -1  
-$EndComp
-Connection ~ 1500 6700
-Wire Wire Line
-	1500 6700 2000 6700
 Wire Wire Line
 	5750 6500 5750 7050
 Wire Wire Line
@@ -1215,13 +1078,6 @@ F 3 "~" H 5750 7050 50  0001 C CNN
 $EndComp
 Text Label 8750 4750 3    50   ~ 0
 SR_CTRL
-Connection ~ 1000 7300
-Wire Wire Line
-	1000 7300 2150 7300
-Wire Wire Line
-	9550 2450 10450 2450
-Text Label 10450 2450 0    50   ~ 0
-5V_rtn
 Wire Wire Line
 	8800 4050 9500 4050
 Wire Wire Line
@@ -1230,17 +1086,179 @@ Wire Wire Line
 	8800 4250 9500 4250
 Wire Wire Line
 	10550 4250 10800 4250
+Wire Wire Line
+	1000 6800 800  6800
+Wire Wire Line
+	1000 6900 800  6900
+Wire Wire Line
+	2050 6800 1850 6800
+Wire Wire Line
+	2050 6900 1850 6900
+Wire Wire Line
+	2050 7250 1850 7250
+Wire Wire Line
+	2050 7350 1850 7350
+Text Label 800  6800 2    50   ~ 0
+24V
+Text Label 800  6900 2    50   ~ 0
+24V_rtn
+Text Label 2050 6800 0    50   ~ 0
+5V
+Text Label 2050 6900 0    50   ~ 0
+5V_rtn
+Text Label 2050 7250 0    50   ~ 0
+3.3V
+Text Label 2050 7350 0    50   ~ 0
+3.3V_rtn
 $Comp
-L power:PWR_FLAG #FLG0104
-U 1 1 5FB21045
-P 2150 7750
-F 0 "#FLG0104" H 2150 7825 50  0001 C CNN
-F 1 "PWR_FLAG" V 2150 7878 50  0000 L CNN
-F 2 "" H 2150 7750 50  0001 C CNN
-F 3 "~" H 2150 7750 50  0001 C CNN
-	1    2150 7750
-	0    1    1    0   
+L Connector_Generic:Conn_01x02 J7
+U 1 1 5FB70592
+P 9450 2600
+F 0 "J7" H 9368 2275 50  0000 C CNN
+F 1 "GLV_I2C" H 9368 2366 50  0000 C CNN
+F 2 "" H 9450 2600 50  0001 C CNN
+F 3 "~" H 9450 2600 50  0001 C CNN
+	1    9450 2600
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	2150 6050 3650 6050
+	9650 2600 10050 2600
+Wire Wire Line
+	9650 2500 10050 2500
+Text Label 9750 2500 0    50   ~ 0
+GLV_SCL
+Text Label 9750 2600 0    50   ~ 0
+GLV_SDA
+$Sheet
+S 1000 6750 850  850 
+U 5FAD1CB8
+F0 "LogicPower" 50
+F1 "LogicPower.sch" 50
+F2 "24V" I L 1000 6800 50 
+F3 "24V_rtn" I L 1000 6900 50 
+F4 "5V" I R 1850 6800 50 
+F5 "5V_rtn" I R 1850 6900 50 
+F6 "3.3V" I R 1850 7250 50 
+F7 "3.3V_rtn" I R 1850 7350 50 
+$EndSheet
+$Comp
+L CarMan_KiCAD_Library:ISO1541DR U9
+U 1 1 5FBB1A99
+P 2100 5950
+F 0 "U9" H 2900 6337 60  0000 C CNN
+F 1 "ISO1541DR" H 2900 6231 60  0000 C CNN
+F 2 "D8_TEX" H 2900 6190 60  0001 C CNN
+F 3 "" H 2100 5950 60  0000 C CNN
+	1    2100 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 6050 1700 6050
+Wire Wire Line
+	2100 6150 1700 6150
+Text Label 2000 6150 2    50   ~ 0
+GLV_SCL
+Text Label 2000 6050 2    50   ~ 0
+GLV_SDA
+Text Label 4050 6150 2    50   ~ 0
+SCL_pi
+Text Label 4050 6050 2    50   ~ 0
+SDA_pi
+Wire Wire Line
+	4150 6150 3700 6150
+Wire Wire Line
+	4150 6050 3700 6050
+Wire Wire Line
+	7600 3150 8450 3150
+Wire Wire Line
+	7600 3250 8450 3250
+Text Label 8450 3150 2    50   ~ 0
+SDA_pi
+Text Label 8450 3250 2    50   ~ 0
+SCL_pi
+Text Label 7600 3150 0    50   ~ 0
+SDA_uc
+Text Label 7600 3250 0    50   ~ 0
+SCL_uc
+$Comp
+L Device:R R8
+U 1 1 5FC458FA
+P 4000 6900
+F 0 "R8" H 4070 6946 50  0000 L CNN
+F 1 "2k" H 4070 6855 50  0000 L CNN
+F 2 "" V 3930 6900 50  0001 C CNN
+F 3 "~" H 4000 6900 50  0001 C CNN
+	1    4000 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R9
+U 1 1 5FC45D45
+P 4000 7400
+F 0 "R9" H 4070 7446 50  0000 L CNN
+F 1 "3.88k" H 4070 7355 50  0000 L CNN
+F 2 "" V 3930 7400 50  0001 C CNN
+F 3 "~" H 4000 7400 50  0001 C CNN
+	1    4000 7400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 7050 4000 7150
+Wire Wire Line
+	4000 7150 4100 7150
+Connection ~ 4000 7150
+Wire Wire Line
+	4000 7150 4000 7250
+Wire Wire Line
+	4000 6750 4000 6700
+Wire Wire Line
+	4000 7550 4000 7600
+Text Label 4000 6700 0    50   ~ 0
+5V_non_iso
+Text Label 4050 7600 0    50   ~ 0
+GLV_rtn
+Wire Wire Line
+	4000 7600 4050 7600
+Text Label 4100 7150 0    50   ~ 0
+3.3V_non_iso
+Text Label 1700 5950 0    50   ~ 0
+3.3V_non_iso
+Text Label 1700 6250 0    50   ~ 0
+GLV_rtn
+Text Label 3800 5950 0    50   ~ 0
+3.3V
+Text Label 3800 6250 0    50   ~ 0
+3.3V_rtn
+Wire Wire Line
+	2100 5950 1700 5950
+Wire Wire Line
+	2100 6250 1700 6250
+Wire Wire Line
+	3700 5950 4400 5950
+Wire Wire Line
+	3700 6250 4400 6250
+$Comp
+L Device:C C?
+U 1 1 5FD30AC4
+P 4400 6100
+AR Path="/5FAD1CB8/5FD30AC4" Ref="C?"  Part="1" 
+AR Path="/5FD30AC4" Ref="C18"  Part="1" 
+F 0 "C18" H 4515 6146 50  0000 L CNN
+F 1 "0.1uF" H 4515 6055 50  0000 L CNN
+F 2 "" H 4438 5950 50  0001 C CNN
+F 3 "~" H 4400 6100 50  0001 C CNN
+	1    4400 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5FD42FAC
+P 4000 7150
+F 0 "#FLG0102" H 4000 7225 50  0001 C CNN
+F 1 "PWR_FLAG" V 4000 7277 50  0000 L CNN
+F 2 "" H 4000 7150 50  0001 C CNN
+F 3 "~" H 4000 7150 50  0001 C CNN
+	1    4000 7150
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC
