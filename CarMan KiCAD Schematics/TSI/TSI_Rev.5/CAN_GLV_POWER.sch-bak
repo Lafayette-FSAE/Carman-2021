@@ -398,8 +398,6 @@ Text Label 1400 1250 0    50   ~ 0
 ChassisGND
 Text Notes 15100 4600 2    89   ~ 0
 AIRs power on SL closed
-Text Notes 3700 9450 2    89   ~ 0
-Cooling Control\n
 Text Notes 9400 4350 2    89   ~ 0
 3.3V REGULATOR
 Text HLabel 15200 2850 2    50   Output ~ 0
@@ -491,52 +489,38 @@ IMD Relay
 $Comp
 L TSI_Rev.5-rescue:G5LE-1-E-Lafayette_Electric_Car_Internals RL?
 U 1 1 5FB466B1
-P 6200 9250
+P 5650 9150
 AR Path="/5FB466B1" Ref="RL?"  Part="1" 
 AR Path="/5FE1DE7D/5FB466B1" Ref="RL?"  Part="1" 
-F 0 "RL?" V 6767 9250 50  0000 C CNN
-F 1 "G5LE-1-E" V 6676 9250 50  0000 C CNN
-F 2 "" H 6450 9850 50  0001 C CNN
-F 3 "https://media.digikey.com/pdf/Data%20Sheets/Omron%20PDFs/G5LE-E_G.pdf" H 6450 9850 50  0001 C CNN
-	1    6200 9250
+F 0 "RL?" V 6217 9150 50  0000 C CNN
+F 1 "G5LE-1-E" V 6126 9150 50  0000 C CNN
+F 2 "" H 5900 9750 50  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Omron%20PDFs/G5LE-E_G.pdf" H 5900 9750 50  0001 C CNN
+	1    5650 9150
 	0    -1   -1   0   
 $EndComp
-Text Label 5900 9450 2    50   ~ 0
-GLV
 Text Label 9300 9550 2    50   ~ 0
 SR_CTRL
 Text Label 11300 9750 0    50   ~ 0
 GLV_RTN
 Text Label 11300 9550 0    50   ~ 0
 SR_CTRL_Boosted
-Text Label 6500 9450 0    50   ~ 0
-SR_CTRL_Boosted
 $Comp
 L Device:D_Schottky D?
 U 1 1 5FB8F043
-P 6200 10000
-F 0 "D?" H 6200 10216 50  0000 C CNN
-F 1 "D_Schottky" H 6200 10125 50  0000 C CNN
-F 2 "" H 6200 10000 50  0001 C CNN
-F 3 "~" H 6200 10000 50  0001 C CNN
-	1    6200 10000
-	1    0    0    -1  
+P 5650 9650
+F 0 "D?" H 5650 9866 50  0000 C CNN
+F 1 "D_Schottky" H 5650 9775 50  0000 C CNN
+F 2 "" H 5650 9650 50  0001 C CNN
+F 3 "~" H 5650 9650 50  0001 C CNN
+	1    5650 9650
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	5900 9450 5650 9450
-Wire Wire Line
-	5650 9450 5650 10000
-Wire Wire Line
-	5650 10000 6050 10000
-Wire Wire Line
-	6500 9450 6850 9450
-Wire Wire Line
-	6850 9450 6850 10000
-Wire Wire Line
-	6850 10000 6350 10000
-Text Label 6500 9050 0    50   ~ 0
+	5950 9350 6000 9350
+Text Label 5950 8950 0    50   ~ 0
 BOT_In
-NoConn ~ 5900 8950
+NoConn ~ 5350 8850
 Text HLabel 15200 1850 2    50   Output ~ 0
 MRESET_Contact
 Text HLabel 15200 1950 2    50   Output ~ 0
@@ -555,8 +539,6 @@ Wire Wire Line
 	15200 2050 15050 2050
 Text Label 15050 2050 2    50   ~ 0
 BOT_In
-Text Notes 10050 10050 2    50   ~ 0
-Zacky bear doesn't like
 Text Notes 14800 750  0    98   ~ 0
 SIGNALS
 Wire Notes Line
@@ -657,50 +639,8 @@ Wire Notes Line
 	5650 6050 3900 6050
 Wire Notes Line
 	3900 4300 5650 4300
-Text Label 5900 9150 2    50   ~ 0
-MRESET_Contact
-Text Label 4100 9900 2    50   ~ 0
-GLV_RTN
-Text Label 4100 9700 2    50   ~ 0
-Cooling_power
-Wire Wire Line
-	3450 9900 4100 9900
-Wire Wire Line
-	3450 9700 4100 9700
-Text Label 2350 9900 2    50   ~ 0
-5V_ISO_RTN
-$Comp
-L TSI_Rev.5-rescue:TLP293-CarMan_KiCAD_Library-TSI_Rev.5-rescue U?
-U 1 1 5FA22056
-P 3150 9800
-F 0 "U?" H 3150 10000 50  0000 C CNN
-F 1 "TLP293" H 3150 9600 50  0000 C CNN
-F 2 "Package_SO:SOIC-4_4.55x2.6mm_P1.27mm" H 2950 9600 50  0001 L CIN
-F 3 "" H 3150 9800 50  0001 L CNN
-	1    3150 9800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2850 9900 2350 9900
-Text Label 2100 9700 2    50   ~ 0
-Cooling_CTRL
-Wire Wire Line
-	2850 9700 2650 9700
-Wire Wire Line
-	2350 9700 2100 9700
 Text Label 9550 9750 2    50   ~ 0
 5V_ISO_RTN
-$Comp
-L Device:R R?
-U 1 1 5FA34D6C
-P 2500 9700
-F 0 "R?" V 2400 9700 50  0000 C CNN
-F 1 "2.1K" V 2600 9700 50  0000 C CNN
-F 2 "" V 2430 9700 50  0001 C CNN
-F 3 "~" H 2500 9700 50  0001 C CNN
-	1    2500 9700
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	10650 9750 11300 9750
 Wire Wire Line
@@ -733,6 +673,217 @@ F 3 "~" H 9700 9550 50  0001 C CNN
 	1    9700 9550
 	0    1    1    0   
 $EndComp
-Text Notes 6000 8500 0    50   ~ 0
+Text Notes 5400 8450 0    50   ~ 0
 SCADA Relay\n
+$Comp
+L Device:Q_NMOS_GDS Q?
+U 1 1 5FB4C495
+P 4950 9950
+F 0 "Q?" H 5154 9996 50  0000 L CNN
+F 1 "Q_NMOS_GDS" H 5154 9905 50  0000 L CNN
+F 2 "" H 5150 10050 50  0001 C CNN
+F 3 "~" H 4950 9950 50  0001 C CNN
+	1    4950 9950
+	1    0    0    -1  
+$EndComp
+Text Label 4450 9950 2    50   ~ 0
+SR_CTRL_Boosted
+$Comp
+L Device:R R?
+U 1 1 5FA34D6C
+P 1900 7450
+F 0 "R?" V 1800 7450 50  0000 C CNN
+F 1 "2.1K" V 2000 7450 50  0000 C CNN
+F 2 "" V 1830 7450 50  0001 C CNN
+F 3 "~" H 1900 7450 50  0001 C CNN
+	1    1900 7450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1750 7450 1500 7450
+Wire Wire Line
+	2250 7450 2050 7450
+Text Label 1500 7450 2    50   ~ 0
+Cooling_CTRL
+Wire Wire Line
+	2250 7650 1750 7650
+$Comp
+L TSI_Rev.5-rescue:TLP293-CarMan_KiCAD_Library-TSI_Rev.5-rescue U?
+U 1 1 5FA22056
+P 2550 7550
+F 0 "U?" H 2550 7750 50  0000 C CNN
+F 1 "TLP293" H 2550 7350 50  0000 C CNN
+F 2 "Package_SO:SOIC-4_4.55x2.6mm_P1.27mm" H 2350 7350 50  0001 L CIN
+F 3 "" H 2550 7550 50  0001 L CNN
+	1    2550 7550
+	1    0    0    -1  
+$EndComp
+Text Label 1750 7650 2    50   ~ 0
+5V_ISO_RTN
+Wire Wire Line
+	2850 7450 3500 7450
+Wire Wire Line
+	2850 7650 3500 7650
+Text Label 3500 7450 2    50   ~ 0
+Cooling_power
+Text Label 3500 7650 2    50   ~ 0
+GLV_RTN
+Text Label 5350 9050 2    50   ~ 0
+MRESET_Contact
+Text Notes 3100 7200 2    89   ~ 0
+Cooling Control\n
+$Comp
+L Device:R R?
+U 1 1 5FB66337
+P 4750 10200
+F 0 "R?" H 4820 10246 50  0000 L CNN
+F 1 "10K" H 4820 10155 50  0000 L CNN
+F 2 "" V 4680 10200 50  0001 C CNN
+F 3 "~" H 4750 10200 50  0001 C CNN
+	1    4750 10200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FB6696B
+P 4600 9950
+F 0 "R?" V 4393 9950 50  0000 C CNN
+F 1 "1K" V 4484 9950 50  0000 C CNN
+F 2 "" V 4530 9950 50  0001 C CNN
+F 3 "~" H 4600 9950 50  0001 C CNN
+	1    4600 9950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4750 9950 4750 10050
+Text Label 4900 10350 3    50   ~ 0
+GLV_RTN
+Connection ~ 4750 9950
+Wire Wire Line
+	5050 10150 5050 10350
+Wire Wire Line
+	5050 10350 4750 10350
+Wire Wire Line
+	5050 9750 5050 9350
+Wire Wire Line
+	5050 9350 5300 9350
+Text Label 6300 9350 0    50   ~ 0
+24V
+Text Notes 5300 10300 0    79   ~ 16
+Choose Transistor
+Text Notes 4950 9350 0    49   ~ 10
+16.7 mA
+Wire Wire Line
+	5800 9650 6000 9650
+Wire Wire Line
+	6000 9650 6000 9350
+Connection ~ 6000 9350
+Wire Wire Line
+	6000 9350 6300 9350
+Wire Wire Line
+	5500 9650 5300 9650
+Wire Wire Line
+	5300 9650 5300 9350
+Connection ~ 5300 9350
+Wire Wire Line
+	5300 9350 5350 9350
+$Comp
+L TSI_Rev.5-rescue:G5LE-1-E-Lafayette_Electric_Car_Internals RL?
+U 1 1 5FBC5855
+P 2900 8550
+AR Path="/5FBC5855" Ref="RL?"  Part="1" 
+AR Path="/5FE1DE7D/5FBC5855" Ref="RL?"  Part="1" 
+F 0 "RL?" V 3467 8550 50  0000 C CNN
+F 1 "G5LE-1-E" V 3376 8550 50  0000 C CNN
+F 2 "" H 3150 9150 50  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Omron%20PDFs/G5LE-E_G.pdf" H 3150 9150 50  0001 C CNN
+	1    2900 8550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 5FBC585F
+P 2900 9050
+F 0 "D?" H 2900 9266 50  0000 C CNN
+F 1 "D_Schottky" H 2900 9175 50  0000 C CNN
+F 2 "" H 2900 9050 50  0001 C CNN
+F 3 "~" H 2900 9050 50  0001 C CNN
+	1    2900 9050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3200 8750 3250 8750
+Text Label 3200 8350 0    50   ~ 0
+12V
+NoConn ~ 2600 8450
+$Comp
+L Device:Q_NMOS_GDS Q?
+U 1 1 5FBC586C
+P 2200 9350
+F 0 "Q?" H 2404 9396 50  0000 L CNN
+F 1 "Q_NMOS_GDS" H 2404 9305 50  0000 L CNN
+F 2 "" H 2400 9450 50  0001 C CNN
+F 3 "~" H 2200 9350 50  0001 C CNN
+	1    2200 9350
+	1    0    0    -1  
+$EndComp
+Text Label 1700 9350 2    50   ~ 0
+Cooling_power
+Text Label 2600 8250 2    50   ~ 0
+12V_Cooling
+$Comp
+L Device:R R?
+U 1 1 5FBC5878
+P 2000 9600
+F 0 "R?" H 2070 9646 50  0000 L CNN
+F 1 "10K" H 2070 9555 50  0000 L CNN
+F 2 "" V 1930 9600 50  0001 C CNN
+F 3 "~" H 2000 9600 50  0001 C CNN
+	1    2000 9600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FBC5882
+P 1850 9350
+F 0 "R?" V 1643 9350 50  0000 C CNN
+F 1 "1K" V 1734 9350 50  0000 C CNN
+F 2 "" V 1780 9350 50  0001 C CNN
+F 3 "~" H 1850 9350 50  0001 C CNN
+	1    1850 9350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2000 9350 2000 9450
+Text Label 2150 9750 3    50   ~ 0
+GLV_RTN
+Connection ~ 2000 9350
+Wire Wire Line
+	2300 9550 2300 9750
+Wire Wire Line
+	2300 9750 2000 9750
+Wire Wire Line
+	2300 9150 2300 8750
+Wire Wire Line
+	2300 8750 2550 8750
+Text Label 3550 8750 0    50   ~ 0
+24V
+Text Notes 2550 9700 0    79   ~ 16
+Choose Transistor
+Text Notes 2200 8750 0    49   ~ 10
+16.7 mA
+Wire Wire Line
+	3050 9050 3250 9050
+Wire Wire Line
+	3250 9050 3250 8750
+Connection ~ 3250 8750
+Wire Wire Line
+	3250 8750 3550 8750
+Wire Wire Line
+	2750 9050 2550 9050
+Wire Wire Line
+	2550 9050 2550 8750
+Connection ~ 2550 8750
+Wire Wire Line
+	2550 8750 2600 8750
 $EndSCHEMATC

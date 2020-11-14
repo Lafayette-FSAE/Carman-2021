@@ -4,11 +4,11 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 8
-Title ""
+Title "TSI"
 Date ""
 Rev ""
 Comp ""
-Comment1 ""
+Comment1 "Authors: Nate Beal, John Burk, Ethan Miller, Troy Coleman, Zachary Martin"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -898,23 +898,8 @@ Text Label 4950 4100 2    50   ~ 0
 CAN-_Logic
 Wire Notes Line
 	5500 6100 5500 7450
-Text Notes 9600 1000 0    50   ~ 0
+Text Notes 9500 1200 0    50   ~ 0
 TSI to Cooling\nRelay\n
-Text Label 9800 650  2    50   ~ 0
-Cooling_CTRL
-Text Label 9800 750  2    50   ~ 0
-Cooling_CTRL_RTN
-$Comp
-L Connector_Generic:Conn_01x02 J?
-U 1 1 5F9C2850
-P 10000 650
-F 0 "J?" H 10080 642 50  0001 L CNN
-F 1 "J8" H 9950 750 50  0000 L CNN
-F 2 "" H 10000 650 50  0001 C CNN
-F 3 "~" H 10000 650 50  0001 C CNN
-	1    10000 650 
-	1    0    0    -1  
-$EndComp
 $Comp
 L Connector_Generic:Conn_02x12_Counter_Clockwise J13
 U 1 1 5FA6A834
@@ -1072,8 +1057,6 @@ Text Label 10600 750  2    50   ~ 0
 GLV_RTN
 Text Label 10600 850  2    50   ~ 0
 SL1_In
-Text Notes 8000 6900 0    197  ~ 0
-TSI TOP LEVEL\n
 Wire Wire Line
 	3100 5400 2900 5400
 Wire Wire Line
@@ -1223,4 +1206,23 @@ Text Label 9550 1600 2    50   ~ 0
 Flowrate_5V
 Text Label 9550 1500 2    50   ~ 0
 Flowrate
+$Comp
+L Connector_Generic:Conn_01x04 J?
+U 1 1 5FBF6C81
+P 9900 750
+F 0 "J?" H 9980 742 50  0001 L CNN
+F 1 "J8" H 9850 950 50  0000 L CNN
+F 2 "" H 9900 750 50  0001 C CNN
+F 3 "~" H 9900 750 50  0001 C CNN
+	1    9900 750 
+	1    0    0    -1  
+$EndComp
+Text Label 9700 650  2    49   ~ 0
+12V_Cooling
+Text Label 9700 750  2    49   ~ 0
+GLV_RTN
+Text Label 9700 850  2    49   ~ 0
+COOL_24V
+Text Label 9700 950  2    49   ~ 0
+GLV_RTN
 $EndSCHEMATC
