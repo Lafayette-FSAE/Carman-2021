@@ -1,5 +1,6 @@
 EESchema Schematic File Version 4
-EELAYER 30 0
+LIBS:GLV_BOBV6-cache
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -102,11 +103,11 @@ Wire Wire Line
 	2600 3900 2600 4400
 Wire Wire Line
 	5400 3900 5400 4400
-Text Notes 5200 1500 0    50   ~ 10
+Text Notes 5450 1500 0    50   ~ 10
 Connection to Logic Board\nfor the I2C line. \n
 Text Notes 1800 1400 0    50   ~ 10
 From LSP/Ammeter
-Text Notes 2150 2750 0    50   ~ 10
+Text Notes 2200 2700 0    50   ~ 10
 24V to TSI/Analog\nBoard and SL. \nTSI calls SLOOP_TO_IMD Sl1_in
 Text Notes 3350 1450 0    50   ~ 10
 24V to Dash/EPAL
@@ -307,23 +308,6 @@ Text Label 7600 1450 1    50   ~ 0
 BREAKER_IN_GENERAL
 Text Label 7700 1450 1    50   ~ 0
 BREAKER_OUT_GENERAL
-$Comp
-L Connector_Generic:Conn_01x04 J6
-U 1 1 5F9FEFCD
-P 2500 2400
-F 0 "J6" V 2418 2580 50  0000 C BNB
-F 1 "Conn_01x04" H 2580 2301 50  0001 L CNN
-F 2 "" H 2500 2400 50  0001 C CNN
-F 3 "~" H 2500 2400 50  0001 C CNN
-	1    2500 2400
-	0    1    1    0   
-$EndComp
-Text Label 2500 2200 1    50   ~ 0
-GLV_RTN
-Text Label 2400 2200 1    50   ~ 0
-SLOOP_TO_IMD
-Text Label 2600 2200 1    50   ~ 0
-24V
 Text Label 5950 1950 2    50   ~ 0
 BATT+
 Wire Wire Line
@@ -456,7 +440,6 @@ Text Label 3850 2250 1    50   ~ 0
 COOL_24V
 Text Label 3950 2250 1    50   ~ 0
 GLV_RTN
-NoConn ~ 2300 2200
 Wire Notes Line
 	7300 550  7300 2950
 Wire Notes Line
@@ -704,17 +687,6 @@ Wire Wire Line
 Wire Wire Line
 	5850 6400 6200 6400
 Connection ~ 5850 6400
-$Comp
-L Connector_Generic:Conn_01x02 J5
-U 1 1 5FAD8972
-P 5650 1250
-F 0 "J5" V 5568 1330 50  0000 L CNB
-F 1 "Conn_01x02" V 5613 1330 50  0001 L CNN
-F 2 "" H 5650 1250 50  0001 C CNN
-F 3 "~" H 5650 1250 50  0001 C CNN
-	1    5650 1250
-	0    1    1    0   
-$EndComp
 Text Label 1700 2050 3    50   ~ 10
 SLOOP_TO_IMD
 $Comp
@@ -728,8 +700,41 @@ F 3 "~" H 1700 2050 50  0001 C CNN
 	1    1700 2050
 	1    0    0    -1  
 $EndComp
-Text Label 5550 1050 1    50   ~ 0
+$Comp
+L Connector_Generic:Conn_02x02_Odd_Even J5
+U 1 1 5FB21308
+P 5800 1100
+F 0 "J5" H 5850 1225 50  0000 C CNB
+F 1 "Conn_02x02_Odd_Even" H 5850 1226 50  0001 C CNN
+F 2 "" H 5800 1100 50  0001 C CNN
+F 3 "~" H 5800 1100 50  0001 C CNN
+	1    5800 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x02_Odd_Even J8
+U 1 1 5FB2255E
+P 2700 2250
+F 0 "J8" H 2750 2375 50  0000 C CNB
+F 1 "Conn_02x02_Odd_Even" H 2750 2376 50  0001 C CNN
+F 2 "" H 2700 2250 50  0001 C CNN
+F 3 "~" H 2700 2250 50  0001 C CNN
+	1    2700 2250
+	1    0    0    -1  
+$EndComp
+Text Label 5600 1100 2    50   ~ 0
 SCL_NOT_ISO
-Text Label 5650 1050 1    50   ~ 0
+Text Label 6100 1100 0    50   ~ 0
 SDA_NOT_ISO
+Text Label 5600 1200 2    50   ~ 0
+GLV_RTN
+Text Label 6100 1200 0    50   ~ 0
+24V
+NoConn ~ 3000 2350
+Text Label 2500 2250 2    50   ~ 0
+24V
+Text Label 3000 2250 0    50   ~ 0
+GLV_RTN
+Text Label 2500 2350 2    50   ~ 0
+SLOOP_TO_IMD
 $EndSCHEMATC
