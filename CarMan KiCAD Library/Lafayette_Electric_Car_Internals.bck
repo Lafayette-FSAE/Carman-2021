@@ -84,12 +84,6 @@ D Nodemcu dev kit for an ESP8266 module
 F https://github.com/nodemcu/nodemcu-devkit-v1.0
 $ENDCMP
 #
-$CMP FINDER-32.21-x300
-D FINDER 32.21-x300, Single Pole Relay SPST-NO, 6A
-K Single Pole Relay SPST-NO
-F http://gfinder.findernet.com/assets/Series/355/S32EN.pdf
-$ENDCMP
-#
 $CMP FINDER-36.11-4301
 D FINDER 36.11-4301, Single Pole Relay SPST-NO Sugar Cube, 10A
 K Single Pole Relay SPST-NO Sugar Cube
@@ -221,6 +215,11 @@ $ENDCMP
 $CMP Molex_0705430001
 D Connector Header Through Hole 2 position 0.100" (2.54mm)
 F https://www.molex.com/pdm_docs/sd/705430001_sd.pdf
+$ENDCMP
+#
+$CMP NC_PushButton
+D Tactile Switch SPST-NO Top Actuated Surface Mount
+F https://media.digikey.com/pdf/Data%20Sheets/RAFI%20PDF's/Racon_PCB_Tactile_Switches_Cat.pdf
 $ENDCMP
 #
 $CMP NO_RELAY2
