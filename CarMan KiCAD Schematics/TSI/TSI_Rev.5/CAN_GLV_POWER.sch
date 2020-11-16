@@ -1,9 +1,10 @@
 EESchema Schematic File Version 4
-EELAYER 30 0
+LIBS:TSI_Rev.5-cache
+EELAYER 29 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 6 8
+Sheet 6 7
 Title ""
 Date ""
 Rev ""
@@ -888,4 +889,6 @@ Wire Wire Line
 	2350 9250 2400 9250
 Text Notes 2450 8300 0    50   ~ 0
 Cooling Relay\n
+Text Notes 9900 10800 0    79   ~ 0
+Zacky Bear Doesn't Like
 $EndSCHEMATC

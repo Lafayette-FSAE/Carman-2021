@@ -1,9 +1,10 @@
 EESchema Schematic File Version 4
-EELAYER 30 0
+LIBS:TSI_Rev.5-cache
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 8
+Sheet 1 7
 Title "TSI"
 Date ""
 Rev ""
@@ -317,10 +318,6 @@ Wire Wire Line
 	10500 5600 10350 5600
 Text Label 10500 5600 0    50   ~ 0
 Cooling_power
-Text Label 6750 2700 2    50   ~ 0
-5V_ISO
-Text Label 6750 2800 2    50   ~ 0
-5V_ISO_RTN
 Text Label 6750 2900 2    50   ~ 0
 SCL_uc
 Text Label 6750 3000 2    50   ~ 0
@@ -841,7 +838,6 @@ Wire Wire Line
 	10500 5200 10350 5200
 Text Label 7250 3000 0    50   ~ 0
 SR_CTRL
-NoConn ~ 7250 2700
 Wire Wire Line
 	10500 5300 10350 5300
 Text Label 10500 5300 0    50   ~ 0
@@ -858,32 +854,6 @@ Wire Wire Line
 	9150 5800 9000 5800
 Text Label 9000 5800 2    50   ~ 0
 MRESET_Contact
-$Sheet
-S 4500 4850 1000 750 
-U 5FBC10B0
-F0 "Logic_Power_And_CAN_Isolators" 50
-F1 "Logic_Power_And_CAN_Isolators.sch" 50
-F2 "24V" I L 4500 5050 50 
-F3 "GLV_RTN" I L 4500 5150 50 
-F4 "5V_ISO" I L 4500 5250 50 
-F5 "5V_ISO_RTN" I L 4500 5350 50 
-$EndSheet
-Wire Wire Line
-	4500 5050 4350 5050
-Wire Wire Line
-	4500 5150 4350 5150
-Wire Wire Line
-	4500 5250 4350 5250
-Wire Wire Line
-	4500 5350 4350 5350
-Text Label 4350 5050 2    50   ~ 0
-24V
-Text Label 4350 5150 2    50   ~ 0
-GLV_RTN
-Text Label 4350 5250 2    50   ~ 0
-5V_ISO
-Text Label 4350 5350 2    50   ~ 0
-5V_ISO_RTN
 Wire Wire Line
 	4950 4000 5250 4000
 Wire Wire Line
@@ -1225,4 +1195,9 @@ Text Label 9700 850  2    49   ~ 0
 COOL_24V
 Text Label 9700 950  2    49   ~ 0
 GLV_RTN
+Text Label 7250 2700 0    50   ~ 0
+AMS_Fault
+Text Label 6750 2800 2    50   ~ 0
+5V_ISO_RTN
+NoConn ~ 6750 2700
 $EndSCHEMATC

@@ -1,10 +1,9 @@
 EESchema Schematic File Version 4
-LIBS:TSI_Rev.5-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 7
+Sheet 8 8
 Title ""
 Date ""
 Rev ""
@@ -17,7 +16,9 @@ $EndDescr
 Text HLabel 10250 1150 0    50   Input ~ 0
 Safety_Loop
 Text HLabel 10250 1250 0    50   Input ~ 0
-AMS_Fault
+Sloop_EN1
+Text HLabel 10250 1350 0    50   Input ~ 0
+Sloop_EN2
 $Comp
 L 74xGxx:74LVC1GU04DRL U?
 U 1 1 5F9E6A96
@@ -29,6 +30,12 @@ F 3 "http://www.ti.com/lit/ds/symlink/sn74lvc1gu04.pdf" H 5475 3300 50  0001 C C
 	1    5550 3300
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	2250 3150 2400 3150
+Text Label 2250 3150 2    50   ~ 0
+Sloop_EN1_5V
+Text Label 2250 3350 2    50   ~ 0
+Sloop_EN2_5V
 Text Label 3650 3050 2    50   ~ 0
 Safety_Loop
 Text Label 5350 3300 2    50   ~ 0
@@ -69,6 +76,25 @@ F 3 "http://www.ti.com/lit/gpn/sn74hc02" H 8150 3250 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7750 3150 7850 3150
+Text Label 6800 3800 2    50   ~ 0
+Sloop_EN1
+Wire Wire Line
+	6800 3800 6950 3800
+Wire Wire Line
+	6800 4000 6950 4000
+Text Label 6800 4000 2    50   ~ 0
+Sloop_EN2
+$Comp
+L 74xx:74HC00 U?
+U 1 1 5FA1691D
+P 7250 3900
+F 0 "U?" H 7250 3900 50  0000 C CNN
+F 1 "74HC00" H 7400 3700 50  0000 C CNN
+F 2 "" H 7250 3900 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 7250 3900 50  0001 C CNN
+	1    7250 3900
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
 	7850 3350 7550 3350
 Wire Wire Line
@@ -170,6 +196,8 @@ F 3 "~" H 8800 5500 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8800 5850 8800 5650
+Wire Wire Line
+	2250 3350 2400 3350
 Text Label 3650 3650 2    50   ~ 0
 IMD_Status_5V
 Wire Wire Line
@@ -243,7 +271,7 @@ F 3 "http://www.ti.com/lit/gpn/sn74hc02" H 1450 1100 50  0001 C CNN
 	5    1450 1100
 	0    1    1    0   
 $EndComp
-Text HLabel 10250 1350 0    50   Input ~ 0
+Text HLabel 10250 1450 0    50   Input ~ 0
 IMD_Status
 Text Label 5350 4800 2    50   ~ 0
 Safety_Loop
@@ -251,34 +279,56 @@ Text HLabel 10250 850  0    50   Input ~ 0
 24V
 Text HLabel 10250 1050 0    50   Input ~ 0
 GLV_RTN
-Text HLabel 10250 1450 0    50   Output ~ 0
-AMS_FAULT_LED
 Text HLabel 10250 1550 0    50   Output ~ 0
+AMS_FAULT_LED
+Text HLabel 10250 1650 0    50   Output ~ 0
 IMD_FAULT_LED
 $Comp
 L CarMan_KiCAD_Library:SN74LV1T34DCKR U?
 U 1 1 5FAAC151
-P 3500 6650
-F 0 "U?" H 3500 7300 60  0000 C CNN
-F 1 "SN74LV1T34DCKR" H 3550 6000 60  0000 C CNN
-F 2 "DCK0005A_N" H 3500 6590 60  0001 C CNN
-F 3 "" H 3500 6650 60  0000 C CNN
-	1    3500 6650
+P 1950 6800
+F 0 "U?" H 1950 7450 60  0000 C CNN
+F 1 "SN74LV1T34DCKR" H 2000 6150 60  0000 C CNN
+F 2 "DCK0005A_N" H 1950 6740 60  0001 C CNN
+F 3 "" H 1950 6800 60  0000 C CNN
+	1    1950 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L CarMan_KiCAD_Library:SN74LV1T34DCKR U?
+U 1 1 5FAACDDE
+P 4700 6800
+F 0 "U?" H 4750 7450 60  0000 C CNN
+F 1 "SN74LV1T34DCKR" H 4750 6150 60  0000 C CNN
+F 2 "DCK0005A_N" H 4700 6740 60  0001 C CNN
+F 3 "" H 4700 6800 60  0000 C CNN
+	1    4700 6800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2550 6250 2800 6250
-Text Label 2550 6250 2    50   ~ 0
+	1000 6400 1250 6400
+Text Label 1000 6400 2    50   ~ 0
 5V
-Text Label 4300 7050 0    50   ~ 0
-GLV_RTN
-NoConn ~ 2800 7050
 Wire Wire Line
-	2550 6650 2800 6650
-Text Label 2550 6650 2    50   ~ 0
-AMS_Fault
-Text Label 4300 6650 0    50   ~ 0
-AMS_Fault_5V
+	3750 6400 4000 6400
+Text Label 3750 6400 2    50   ~ 0
+5V
+Text Label 2750 7200 0    50   ~ 0
+GLV_RTN
+Text Label 5500 7200 0    50   ~ 0
+GLV_RTN
+NoConn ~ 4000 7200
+NoConn ~ 1250 7200
+Wire Wire Line
+	1000 6800 1250 6800
+Text Label 1000 6800 2    50   ~ 0
+Sloop_EN1
+Text Label 4000 6800 2    50   ~ 0
+Sloop_EN2
+Text Label 5500 6800 0    50   ~ 0
+Sloop_EN2_5V
+Text Label 2750 6800 0    50   ~ 0
+Sloop_EN1_5V
 Text Label 1950 1100 0    50   ~ 0
 5V
 Text Label 1950 1750 0    50   ~ 0
@@ -332,6 +382,8 @@ Wire Wire Line
 	10500 1450 10250 1450
 Wire Wire Line
 	10500 1550 10250 1550
+Wire Wire Line
+	10500 1650 10250 1650
 Text Label 10500 850  0    47   ~ 0
 24V
 Text Label 10500 950  0    47   ~ 0
@@ -341,12 +393,14 @@ GLV_RTN
 Text Label 10500 1150 0    47   ~ 0
 Safety_Loop
 Text Label 10500 1250 0    47   ~ 0
-AMS_Fault
+Sloop_EN1
 Text Label 10500 1350 0    47   ~ 0
-IMD_Status
+Sloop_EN2
 Text Label 10500 1450 0    47   ~ 0
-AMS_FAULT_LED
+IMD_Status
 Text Label 10500 1550 0    47   ~ 0
+AMS_FAULT_LED
+Text Label 10500 1650 0    47   ~ 0
 IMD_FAULT_LED
 Wire Notes Line
 	9550 1750 11150 1750
@@ -523,6 +577,17 @@ Wire Wire Line
 Text Label 7100 1200 0    47   ~ 0
 AMS_IMD
 $Comp
+L CarMan_KiCAD_Library:74HC00 U?
+U 3 1 5FBBFFCD
+P 2700 3250
+F 0 "U?" H 2700 3575 50  0000 C CNN
+F 1 "74HC00" H 2700 3484 50  0000 C CNN
+F 2 "" H 2700 3250 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 2700 3250 50  0001 C CNN
+	3    2700 3250
+	1    0    0    -1  
+$EndComp
+$Comp
 L Device:R R?
 U 1 1 5F9E6F79
 P 8900 3600
@@ -537,10 +602,82 @@ Wire Wire Line
 	8900 3750 8900 3850
 Text Notes 2850 7550 0    50   ~ 0
 Level Shifters for Sloop_En signals
-Text Label 2100 5500 2    50   ~ 0
+$Comp
+L CarMan_KiCAD_Library:L78L05ACD13TR CR?
+U 1 1 5F9F52BF
+P 2800 5350
+F 0 "CR?" H 3600 4663 60  0000 C CNN
+F 1 "L78L05ACD13TR" H 3600 4769 60  0000 C CNN
+F 2 "SO-8_STM" H 3600 5590 60  0001 C CNN
+F 3 "" H 2800 5350 60  0000 C CNN
+	1    2800 5350
+	-1   0    0    1   
+$EndComp
+NoConn ~ 1200 5050
+NoConn ~ 2800 5050
+Wire Wire Line
+	1200 5150 1200 5200
+Connection ~ 1200 5200
+Wire Wire Line
+	1200 5200 1200 5250
+Text Label 600  5200 0    50   ~ 0
 GLV_RTN
-Text Label 1600 4900 2    50   ~ 0
+Text Label 650  5550 0    50   ~ 0
 IMD_Status
+Wire Wire Line
+	2800 5150 2800 5200
+Wire Wire Line
+	2800 5200 2900 5200
+Connection ~ 2800 5200
+Wire Wire Line
+	2800 5200 2800 5250
+Text Label 2950 5200 0    50   ~ 0
+GLV_RTN
+Wire Wire Line
+	600  5200 650  5200
+Wire Wire Line
+	2800 5350 2800 5500
+Wire Wire Line
+	2800 5500 2900 5500
+Text Label 3100 5500 0    50   ~ 0
+IMD_Status_5V
+Wire Wire Line
+	1200 5350 1200 5550
+Wire Wire Line
+	1200 5550 650  5550
+$Comp
+L Device:C C?
+U 1 1 5FA18C24
+P 650 5400
+F 0 "C?" H 765 5446 50  0000 L CNN
+F 1 "0.33uF" H 765 5355 50  0000 L CNN
+F 2 "" H 688 5250 50  0001 C CNN
+F 3 "~" H 650 5400 50  0001 C CNN
+	1    650  5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5FA196B8
+P 2900 5350
+F 0 "C?" H 3015 5396 50  0000 L CNN
+F 1 "0.1uF" H 3015 5305 50  0000 L CNN
+F 2 "" H 2938 5200 50  0001 C CNN
+F 3 "~" H 2900 5350 50  0001 C CNN
+	1    2900 5350
+	1    0    0    -1  
+$EndComp
+Connection ~ 2900 5200
+Wire Wire Line
+	2900 5200 2950 5200
+Connection ~ 2900 5500
+Wire Wire Line
+	2900 5500 3100 5500
+Wire Wire Line
+	650  5250 650  5200
+Connection ~ 650  5200
+Wire Wire Line
+	650  5200 1200 5200
 Text Label 7450 5100 0    50   ~ 0
 IMD_Status_5V
 Wire Wire Line
@@ -558,42 +695,4 @@ NoConn ~ 3650 4250
 NoConn ~ 3650 4450
 Text Notes 7350 7050 0    157  ~ 0
 FAULT LOGIC \n& TIMING CIRCUIT
-$Comp
-L Device:R R?
-U 1 1 5FB5A4D9
-P 2100 5200
-F 0 "R?" H 2170 5246 50  0000 L CNN
-F 1 "2.9k" V 2100 5119 50  0000 L CNN
-F 2 "" V 2030 5200 50  0001 C CNN
-F 3 "~" H 2100 5200 50  0001 C CNN
-	1    2100 5200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5FB59651
-P 1900 4900
-F 0 "R?" H 1970 4946 50  0000 L CNN
-F 1 "10k" V 1900 4800 50  0000 L CNN
-F 2 "" V 1830 4900 50  0001 C CNN
-F 3 "~" H 1900 4900 50  0001 C CNN
-	1    1900 4900
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	2100 4900 2100 5050
-Wire Wire Line
-	1800 4900 1750 4900
-Wire Wire Line
-	2100 5350 2100 5500
-Text Label 2100 4900 0    50   ~ 0
-IMD_Status_5V
-Wire Wire Line
-	1750 4900 1600 4900
-Wire Wire Line
-	2050 4900 2100 4900
-Text Label 3000 3250 2    50   ~ 0
-AMS_Fault_5V
-Text Label 7550 3900 2    50   ~ 0
-AMS_Fault_5V
 $EndSCHEMATC

@@ -189,7 +189,6 @@ NoConn ~ 10550 4650
 NoConn ~ 10550 4450
 NoConn ~ 10550 4350
 NoConn ~ 10550 3950
-NoConn ~ 10550 3850
 NoConn ~ 10550 3650
 NoConn ~ 10550 3550
 NoConn ~ 10550 3450
@@ -853,8 +852,6 @@ Wire Wire Line
 	5550 6500 5550 7550
 Wire Wire Line
 	5450 6500 5450 7550
-Text Label 5850 6550 3    50   ~ 0
-GLV_rtn
 Text Label 5750 6550 3    50   ~ 0
 5V_non_iso
 Text Label 5650 6550 3    50   ~ 0
@@ -1055,17 +1052,6 @@ Wire Wire Line
 	5750 6500 5750 7050
 Wire Wire Line
 	5850 6500 5850 7050
-$Comp
-L power:PWR_FLAG #FLG0105
-U 1 1 5FB4971B
-P 5850 7050
-F 0 "#FLG0105" H 5850 7125 50  0001 C CNN
-F 1 "PWR_FLAG" V 5850 7178 50  0000 L CNN
-F 2 "" H 5850 7050 50  0001 C CNN
-F 3 "~" H 5850 7050 50  0001 C CNN
-	1    5850 7050
-	0    1    1    0   
-$EndComp
 $Comp
 L power:PWR_FLAG #FLG0106
 U 1 1 5FB4B178
@@ -1270,4 +1256,9 @@ Wire Wire Line
 	9550 2550 10000 2550
 Wire Wire Line
 	9550 2650 10000 2650
+NoConn ~ 5850 7050
+Wire Wire Line
+	10550 3850 10850 3850
+Text Label 10850 3850 0    50   ~ 0
+AMS_Fault
 $EndSCHEMATC

@@ -1,5 +1,6 @@
 EESchema Schematic File Version 4
-EELAYER 30 0
+LIBS:Logic-cache
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -975,7 +976,7 @@ Wire Wire Line
 Wire Wire Line
 	6350 2100 6800 2100
 $Comp
-L PIC32MZ2048EFM064-I_PT:PIC32MZ2048EFM064-I_PT U3
+L Logic-rescue:PIC32MZ2048EFM064-I_PT-PIC32MZ2048EFM064-I_PT U3
 U 1 1 5FB90468
 P 4500 3600
 F 0 "U3" H 3000 5350 50  0000 C CNN
@@ -1110,25 +1111,6 @@ Text Label 2050 7250 0    50   ~ 0
 3.3V
 Text Label 2050 7350 0    50   ~ 0
 3.3V_rtn
-$Comp
-L Connector_Generic:Conn_01x02 J7
-U 1 1 5FB70592
-P 9450 2600
-F 0 "J7" H 9368 2275 50  0000 C CNN
-F 1 "GLV_I2C" H 9368 2366 50  0000 C CNN
-F 2 "" H 9450 2600 50  0001 C CNN
-F 3 "~" H 9450 2600 50  0001 C CNN
-	1    9450 2600
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	9650 2600 10050 2600
-Wire Wire Line
-	9650 2500 10050 2500
-Text Label 9750 2500 0    50   ~ 0
-GLV_SCL
-Text Label 9750 2600 0    50   ~ 0
-GLV_SDA
 $Sheet
 S 1000 6750 850  850 
 U 5FAD1CB8
@@ -1261,4 +1243,31 @@ F 3 "~" H 4000 7150 50  0001 C CNN
 	1    4000 7150
 	0    -1   -1   0   
 $EndComp
+$Comp
+L Logic-rescue:Conn_01x04-Connector_Generic-Logic-rescue J7
+U 1 1 5FB30D0C
+P 9350 2550
+F 0 "J7" H 9430 2542 50  0000 L CNN
+F 1 "RTC" H 9430 2451 50  0000 L CNN
+F 2 "" H 9350 2550 50  0001 C CNN
+F 3 "~" H 9350 2550 50  0001 C CNN
+	1    9350 2550
+	-1   0    0    1   
+$EndComp
+Text Label 9550 2650 0    50   ~ 0
+GLV_SCL
+Text Label 9550 2550 0    50   ~ 0
+GLV_SDA
+Text Label 9550 2450 0    50   ~ 0
+GLV_rtn
+Text Label 9550 2350 0    50   ~ 0
+24V
+Wire Wire Line
+	9550 2350 10000 2350
+Wire Wire Line
+	9550 2450 10000 2450
+Wire Wire Line
+	9550 2550 10000 2550
+Wire Wire Line
+	9550 2650 10000 2650
 $EndSCHEMATC

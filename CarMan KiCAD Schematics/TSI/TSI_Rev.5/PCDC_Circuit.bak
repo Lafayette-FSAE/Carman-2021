@@ -1,10 +1,9 @@
 EESchema Schematic File Version 4
-LIBS:TSI_Rev.5-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 3 7
+Sheet 3 8
 Title ""
 Date ""
 Rev ""
@@ -420,39 +419,39 @@ Wire Wire Line
 Connection ~ 6950 4250
 Wire Wire Line
 	6950 4250 7200 4250
-Text Label 1250 1050 0    50   ~ 0
+Text Label 1500 1050 0    50   ~ 0
 MC_Voltage
-Text Label 1250 850  0    50   ~ 0
+Text Label 1500 850  0    50   ~ 0
 HV+
 Wire Wire Line
-	1050 850  1250 850 
+	1300 850  1500 850 
 Wire Wire Line
-	1250 1050 1050 1050
-Text Label 1250 1350 0    50   ~ 0
+	1500 1050 1300 1050
+Text Label 1500 1350 0    50   ~ 0
 Throttle_HV
-Text Label 1250 1250 0    50   ~ 0
+Text Label 1500 1250 0    50   ~ 0
 IO_Ground
 Wire Wire Line
-	1250 1250 1050 1250
+	1500 1250 1300 1250
 Wire Wire Line
-	1250 1350 1050 1350
-Text Label 1250 950  0    50   ~ 0
+	1500 1350 1300 1350
+Text Label 1500 950  0    50   ~ 0
 HV-
 Wire Wire Line
-	1250 950  1050 950 
-Text Label 1250 1150 0    50   ~ 0
+	1500 950  1300 950 
+Text Label 1500 1150 0    50   ~ 0
 TSV_Voltage
 Wire Wire Line
-	1250 1150 1050 1150
-Text Notes 850  650  0    79   ~ 0
+	1500 1150 1300 1150
+Text Notes 1100 650  0    79   ~ 0
 HV SIGNALS\n
-Text HLabel 1050 1350 0    50   Input ~ 0
+Text HLabel 1300 1350 0    50   Input ~ 0
 Throttle_HV
-Text HLabel 1050 1050 0    50   Input ~ 0
+Text HLabel 1300 1050 0    50   Input ~ 0
 MC_V
-Text HLabel 1050 950  0    50   Input ~ 0
+Text HLabel 1300 950  0    50   Input ~ 0
 HV-
-Text HLabel 1050 850  0    50   Input ~ 0
+Text HLabel 1300 850  0    50   Input ~ 0
 HV+
 $Comp
 L Device:R R56
@@ -1103,9 +1102,9 @@ Wire Wire Line
 Wire Wire Line
 	7050 8500 6850 8500
 Text Label 7050 8300 0    79   ~ 0
-Safety_Loop_HV
+5HV
 Text Label 7050 8500 0    79   ~ 0
-Brake_Pressed_HV
+Safety_Loop_HV
 $Comp
 L Device:R R73
 U 1 1 5FD6E701
@@ -1501,21 +1500,21 @@ Text Notes 13550 950  0    47   ~ 0
 SR Latch Logic\n
 Text Notes 4600 2250 0    47   ~ 0
 95% of Voltage
-Text HLabel 1050 1150 0    50   Input ~ 0
+Text HLabel 1300 1150 0    50   Input ~ 0
 TSV_V
-Text HLabel 1050 1250 0    50   Input ~ 0
+Text HLabel 1300 1250 0    50   Input ~ 0
 IO_Ground
-Text Label 1250 1550 0    50   ~ 0
+Text Label 1500 1550 0    50   ~ 0
 1.24V_REF
-Text Label 1250 1450 0    50   ~ 0
+Text Label 1500 1450 0    50   ~ 0
 5HV
 Wire Wire Line
-	1250 1450 1050 1450
+	1500 1450 1300 1450
 Wire Wire Line
-	1250 1550 1050 1550
-Text HLabel 1050 1550 0    50   Input ~ 0
+	1500 1550 1300 1550
+Text HLabel 1300 1550 0    50   Input ~ 0
 1.24VREF
-Text HLabel 1050 1450 0    50   Input ~ 0
+Text HLabel 1300 1450 0    50   Input ~ 0
 5HV
 Text Label 1450 6850 0    50   ~ 0
 GLV_RTN
@@ -1618,113 +1617,66 @@ Wire Wire Line
 Connection ~ 4700 8300
 Wire Notes Line
 	6300 5700 6300 11200
-Text Label 1250 1750 0    50   ~ 0
+Text Label 1500 1750 0    50   ~ 0
 DC_RELAY-
-Text Label 1250 1650 0    50   ~ 0
+Text Label 1500 1650 0    50   ~ 0
 DC_RELAY+
 Wire Wire Line
-	1250 1650 1050 1650
+	1500 1650 1300 1650
 Wire Wire Line
-	1250 1750 1050 1750
-Text HLabel 1050 1750 0    50   Input ~ 0
+	1500 1750 1300 1750
+Text HLabel 1300 1750 0    50   Input ~ 0
 DC_RELAY-
-Text HLabel 1050 1650 0    50   Input ~ 0
+Text HLabel 1300 1650 0    50   Input ~ 0
 DC_RELAY+
-Text Label 1250 1950 0    50   ~ 0
+Text Label 1500 1950 0    50   ~ 0
 PC_RELAY-
-Text Label 1250 1850 0    50   ~ 0
+Text Label 1500 1850 0    50   ~ 0
 PC_RELAY+
 Wire Wire Line
-	1250 1850 1050 1850
+	1500 1850 1300 1850
 Wire Wire Line
-	1250 1950 1050 1950
-Text HLabel 1050 1950 0    50   Input ~ 0
+	1500 1950 1300 1950
+Text HLabel 1300 1950 0    50   Input ~ 0
 PC_RELAY-
-Text HLabel 1050 1850 0    50   Input ~ 0
+Text HLabel 1300 1850 0    50   Input ~ 0
 PC_RELAY+
-Text Label 1250 2150 0    50   ~ 0
+Text Label 1500 2150 0    50   ~ 0
 IGNI_VCC
-Text Label 1250 2050 0    50   ~ 0
+Text Label 1500 2050 0    50   ~ 0
 IGNI_GND
 Wire Wire Line
-	1250 2050 1050 2050
+	1500 2050 1300 2050
 Wire Wire Line
-	1250 2150 1050 2150
-Text HLabel 1050 2150 0    50   Input ~ 0
+	1500 2150 1300 2150
+Text HLabel 1300 2150 0    50   Input ~ 0
 IGNI_VCC
-Text HLabel 1050 2050 0    50   Input ~ 0
+Text HLabel 1300 2050 0    50   Input ~ 0
 IGNI_GND
-Text Label 1250 2350 0    50   ~ 0
+Text Label 1500 2350 0    50   ~ 0
 Throttle_HV
-Text Label 1250 2250 0    50   ~ 0
-BP_HV
+Text Label 1500 2250 0    50   ~ 0
+Brake_Pressed_HV
 Wire Wire Line
-	1250 2250 1050 2250
+	1500 2250 1300 2250
 Wire Wire Line
-	1250 2350 1050 2350
-Text HLabel 1050 2350 0    50   Input ~ 0
+	1500 2350 1300 2350
+Text HLabel 1300 2350 0    50   Input ~ 0
 Throttle_HV
-Text HLabel 1050 2250 0    50   Input ~ 0
-BP_HV
-Text Label 10600 1100 2    50   ~ 0
-IO_Ground
-Text Label 11100 1200 0    50   ~ 0
-Throttle_HV
-Text Label 10600 900  2    50   ~ 0
-IGNI_GND
-Text Label 10600 1000 2    50   ~ 0
-IGNI_VCC
-Text Notes 10650 1450 0    50   ~ 0
-Motor Controller\nPins
+Text HLabel 1300 2250 0    50   Input ~ 0
+Brake_Pressed_HV
 Wire Wire Line
 	8750 6650 8750 6750
 Wire Wire Line
 	11400 2050 11400 2450
-Wire Notes Line
-	500  500  1900 500 
-Wire Notes Line
-	500  2450 1900 2450
-Wire Notes Line
-	1900 500  1900 2450
-Wire Notes Line
-	500  500  500  2450
-$Comp
-L Connector_Generic:Conn_02x04_Counter_Clockwise J?
-U 1 1 605228B1
-P 10800 1000
-F 0 "J?" H 10850 1317 50  0001 C CNN
-F 1 "TSI J32" H 10850 1225 50  0000 C CNN
-F 2 "" H 10800 1000 50  0001 C CNN
-F 3 "~" H 10800 1000 50  0001 C CNN
-	1    10800 1000
-	1    0    0    -1  
-$EndComp
-NoConn ~ 10600 1200
-Text Label 11100 900  0    50   ~ 0
-BP_HV
-$Comp
-L Device:Jumper_NC_Dual JP?
-U 1 1 605F6EA0
-P 11950 1000
-AR Path="/6196BF15/605F6EA0" Ref="JP?"  Part="1" 
-AR Path="/605F6EA0" Ref="JP?"  Part="1" 
-F 0 "JP?" H 12250 950 50  0000 C CNN
-F 1 "Jumper_NC_Dual" H 11200 1400 50  0001 C CNN
-F 2 "" H 11950 1000 50  0001 C CNN
-F 3 "~" H 11950 1000 50  0001 C CNN
-	1    11950 1000
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	11100 1100 12200 1100
-Wire Wire Line
-	12200 1100 12200 1000
-Wire Wire Line
-	11700 1000 11100 1000
-Wire Wire Line
-	11950 850  11950 900 
-Text Label 11950 850  0    50   ~ 0
-IGNI_GND
 Text Notes 2350 5600 0    197  ~ 0
 HIGH VOLTAGE\n
+Wire Notes Line
+	500  500  500  2450
+Wire Notes Line
+	500  2450 2350 2450
+Wire Notes Line
+	2350 500  2350 2450
+Wire Notes Line
+	500  500  2350 500 
 $EndSCHEMATC
