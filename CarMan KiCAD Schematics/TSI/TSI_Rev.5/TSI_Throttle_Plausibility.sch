@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:TSI_Rev.5-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
@@ -949,39 +948,18 @@ Text Label 14600 4550 0    50   ~ 0
 5V
 Text Notes 13750 4300 0    50   ~ 0
 Binary Address:\n1001101\n
-$Comp
-L TSI_Rev.5-rescue:TS5A3159-Q1-CarMan_KiCAD_Library-TSI_Rev.5-rescue SW2
-U 1 1 607E8FA8
-P 14100 3500
-F 0 "SW2" H 14100 3700 50  0000 C CNN
-F 1 "TS5A3159-Q1" H 14100 3200 50  0000 C CNN
-F 2 "" H 14100 3800 50  0001 C CNN
-F 3 "" H 14100 3800 50  0001 C CNN
-	1    14100 3500
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	13200 3600 13200 4550
-Wire Wire Line
-	13300 3350 13700 3350
-Wire Wire Line
-	13700 3650 13700 3500
-Text Label 13700 3600 2    50   ~ 0
+Text Label 15650 3550 0    50   ~ 0
 GND
 Wire Wire Line
-	14600 3500 14500 3500
+	15650 2750 15550 2750
 Wire Wire Line
-	14600 3650 14500 3650
-Text Label 14600 3500 0    50   ~ 0
+	14050 3150 14150 3150
+Text Label 15650 2750 0    50   ~ 0
 5V
-Text Label 14600 3350 0    50   ~ 0
-Throttle_SEL
-Text Label 14600 3650 0    50   ~ 0
+Text Label 14050 3150 2    50   ~ 0
 Throttle_LV
-Wire Wire Line
-	14500 3350 15350 3350
-Text Notes 13850 3200 0    63   ~ 0
-AUTO TURN\nOFF SWITCH
 $Comp
 L TSI_Rev.5-rescue:DAC5574IDGS-CarMan_KiCAD_Library-TSI_Rev.5-rescue U30
 U 1 1 609B748C
@@ -1012,23 +990,6 @@ Text Label 14600 4850 0    50   ~ 0
 SDA_uC
 Text Label 14600 4750 0    50   ~ 0
 SCL_uC
-Text Label 15350 3850 0    50   ~ 0
-GND
-Wire Wire Line
-	15350 3850 15350 3750
-$Comp
-L Device:R R52
-U 1 1 608A2A55
-P 15350 3600
-F 0 "R52" V 15300 3550 50  0000 L BNN
-F 1 "10K" V 15350 3595 50  0000 C CNN
-F 2 "" V 15280 3600 50  0001 C CNN
-F 3 "~" H 15350 3600 50  0001 C CNN
-	1    15350 3600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	15350 3350 15350 3450
 Wire Wire Line
 	8200 1850 8200 3550
 Connection ~ 8200 1850
@@ -1262,17 +1223,6 @@ Wire Wire Line
 Wire Wire Line
 	6750 2200 6800 2200
 Connection ~ 6800 2200
-$Comp
-L Amplifier_Operational:TS912 U18
-U 2 1 5F9A2DA1
-P 6450 2200
-F 0 "U18" H 6450 2200 50  0000 C CNN
-F 1 "MCP6004" H 6450 2450 50  0000 C CNN
-F 2 "" H 6450 2200 50  0001 C CNN
-F 3 "www.st.com/resource/en/datasheet/ts912.pdf" H 6450 2200 50  0001 C CNN
-	2    6450 2200
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5950 2100 6150 2100
 Text Label 5500 2300 2    50   ~ 0
@@ -1865,4 +1815,53 @@ Wire Notes Line
 	500  3150 2750 3150
 Text Notes 12650 10350 0    157  ~ 0
 THROTTLE PLAUSIBILITY
+$Comp
+L Amplifier_Operational:TS912 U18
+U 2 1 5F9A2DA1
+P 6450 2200
+F 0 "U18" H 6450 2200 50  0000 C CNN
+F 1 "MCP6004" H 6450 2450 50  0000 C CNN
+F 2 "" H 6450 2200 50  0001 C CNN
+F 3 "www.st.com/resource/en/datasheet/ts912.pdf" H 6450 2200 50  0001 C CNN
+	2    6450 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L CarMan_KiCAD_Library:TS5A3159DBVT SW2
+U 1 1 5FB86D5A
+P 14850 3150
+F 0 "SW2" H 14850 3550 50  0000 C CNN
+F 1 "TS5A3159DBVT" H 14850 2600 50  0000 C CNN
+F 2 "SOT95P280X145-6N" H 14850 3150 50  0001 L BNN
+F 3 "https://www.ti.com/store/ti/en/p/product/?p=TS5A3159DBVT" H 14850 3150 50  0001 L BNN
+	1    14850 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R52
+U 1 1 608A2A55
+P 13550 2550
+F 0 "R52" V 13500 2500 50  0000 L BNN
+F 1 "10K" V 13550 2545 50  0000 C CNN
+F 2 "" V 13480 2550 50  0001 C CNN
+F 3 "~" H 13550 2550 50  0001 C CNN
+	1    13550 2550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	13550 2300 13550 2400
+Text Label 13550 2300 2    50   ~ 0
+GND
+Text Label 14100 2950 2    50   ~ 0
+Throttle_SEL
+Wire Wire Line
+	15650 3550 15550 3550
+Wire Wire Line
+	13550 2950 14150 2950
+Wire Wire Line
+	13550 2700 13550 2950
+Text Notes 14600 2600 0    63   ~ 0
+AUTO TURN\nOFF SWITCH
+Wire Wire Line
+	13300 3350 14150 3350
 $EndSCHEMATC
