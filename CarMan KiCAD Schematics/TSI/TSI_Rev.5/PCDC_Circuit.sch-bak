@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 3 7
+Sheet 2 7
 Title ""
 Date ""
 Rev ""
@@ -64,10 +64,10 @@ Wire Wire Line
 Wire Wire Line
 	4350 3600 4300 3600
 $Comp
-L Device:R_POT_TRIM RV1
+L Device:R_POT_TRIM RV3
 U 1 1 6197194B
 P 4500 2350
-F 0 "RV1" H 4430 2396 50  0000 R CNN
+F 0 "RV3" H 4430 2396 50  0000 R CNN
 F 1 "R_POT_TRIM" H 4430 2305 50  0000 R CNN
 F 2 "" H 4500 2350 50  0001 C CNN
 F 3 "~" H 4500 2350 50  0001 C CNN
@@ -126,10 +126,10 @@ Wire Wire Line
 Text Label 4250 1800 2    79   ~ 0
 IO_Ground
 $Comp
-L Amplifier_Operational:MCP6004 U?
+L Amplifier_Operational:MCP6004 U9
 U 5 1 61990663
 P 5350 2850
-F 0 "U?" H 5308 2850 50  0001 L CNN
+F 0 "U9" H 5308 2850 50  0001 L CNN
 F 1 "74LS00PowerPins" H 5308 2805 50  0001 L CNN
 F 2 "" H 5300 2950 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 5400 3050 50  0001 C CNN
@@ -154,10 +154,10 @@ F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 7100 2950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TSI_Rev.5-rescue:74LS00PowerPins-CarMan_KiCAD_Library-TSI_Rev.5-rescue U?
+L TSI_Rev.5-rescue:74LS00PowerPins-CarMan_KiCAD_Library-TSI_Rev.5-rescue U10
 U 1 1 619B0A27
 P 7100 2950
-F 0 "U?" H 7044 2950 50  0001 L CNN
+F 0 "U10" H 7044 2950 50  0001 L CNN
 F 1 "74LS00PowerPins" H 7044 2905 50  0001 L CNN
 F 2 "" H 7100 2950 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74ls00" H 7100 2950 50  0001 C CNN
@@ -283,10 +283,10 @@ Buffer\n
 Text Notes 4050 3150 2    55   ~ 0
 Buffer\n
 $Comp
-L Device:R R56
+L Device:R R4
 U 1 1 619ED592
 P 9850 3050
-F 0 "R56" V 9750 3050 50  0000 C CNN
+F 0 "R4" V 9750 3050 50  0000 C CNN
 F 1 "5K" V 9850 3050 50  0000 C CNN
 F 2 "" V 9780 3050 50  0001 C CNN
 F 3 "~" H 9850 3050 50  0001 C CNN
@@ -837,10 +837,10 @@ Connection ~ 7150 6350
 Wire Wire Line
 	7150 6350 7000 6350
 $Comp
-L TSI_Rev.5-rescue:IRLML0030-Transistor_FET Q?
+L TSI_Rev.5-rescue:IRLML0030-Transistor_FET Q1
 U 1 1 5FA32730
 P 8100 6350
-F 0 "Q?" H 8305 6396 50  0000 L CNN
+F 0 "Q1" H 8305 6396 50  0000 L CNN
 F 1 "SI1302DL-T1-E3" H 8305 6305 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 8300 6275 50  0001 L CIN
 F 3 "https://www.infineon.com/dgdl/irlml0030pbf.pdf?fileId=5546d462533600a401535664773825df" H 8100 6350 50  0001 L CNN
@@ -902,10 +902,10 @@ GLV_RTN
 Wire Wire Line
 	7100 7750 6850 7750
 $Comp
-L Reference_Voltage:REF3033 U?
+L Reference_Voltage:REF3033 U12
 U 1 1 5FAD159D
 P 12550 9050
-F 0 "U?" H 12321 9096 50  0000 R CNN
+F 0 "U12" H 12321 9096 50  0000 R CNN
 F 1 "REF3033" H 12321 9005 50  0000 R CIN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 12550 8600 50  0001 C CIN
 F 3 "http://www.ti.com/lit/ds/symlink/ref3033.pdf" H 12650 8700 50  0001 C CIN
@@ -1323,10 +1323,10 @@ Wire Wire Line
 Wire Wire Line
 	12950 7750 13250 7750
 $Comp
-L Device:R_POT_TRIM RV2
+L Device:R_POT_TRIM RV5
 U 1 1 5FFAFAD6
 P 14350 7150
-F 0 "RV2" H 14280 7104 50  0000 R CNN
+F 0 "RV5" H 14280 7104 50  0000 R CNN
 F 1 "R_POT_TRIM" H 14280 7195 50  0000 R CNN
 F 2 "" H 14350 7150 50  0001 C CNN
 F 3 "~" H 14350 7150 50  0001 C CNN

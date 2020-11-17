@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 7 7
+Sheet 6 7
 Title ""
 Date ""
 Rev ""
@@ -114,10 +114,10 @@ $EndComp
 Wire Notes Line
 	550  5950 2950 5950
 $Comp
-L Amplifier_Operational:TS912 U?
+L Amplifier_Operational:TS912 U45
 U 3 1 5FCD2415
 P 1850 4550
-F 0 "U?" H 1808 4550 50  0001 L CNN
+F 0 "U45" H 1808 4550 50  0001 L CNN
 F 1 "MCP6004" H 1808 4505 50  0001 L CNN
 F 2 "" H 1850 4550 50  0001 C CNN
 F 3 "www.st.com/resource/en/datasheet/ts912.pdf" H 1850 4550 50  0001 C CNN
@@ -129,7 +129,7 @@ L Amplifier_Operational:TS912 U18
 U 1 1 5FCD415C
 P 1850 4550
 F 0 "U18" H 1900 4700 50  0000 C BNN
-F 1 "TS912" H 1950 4400 50  0000 C CNN
+F 1 "MCP6004" H 1950 4400 50  0000 C CNN
 F 2 "" H 1850 4550 50  0001 C CNN
 F 3 "www.st.com/resource/en/datasheet/ts912.pdf" H 1850 4550 50  0001 C CNN
 	1    1850 4550
@@ -370,7 +370,6 @@ Wire Wire Line
 Wire Wire Line
 	10250 5400 10250 5600
 Connection ~ 10250 7000
-NoConn ~ 8650 6000
 NoConn ~ 13200 4850
 NoConn ~ 13200 4750
 NoConn ~ 13200 4650
@@ -512,14 +511,14 @@ Pedal_Out
 Wire Wire Line
 	12150 2900 12150 3250
 $Comp
-L Amplifier_Operational:MCP6004 U2
-U 1 1 5FED477E
+L Amplifier_Operational:MCP6004 U50
+U 3 1 5FED477E
 P 11800 2900
-F 0 "U2" H 11850 3050 50  0000 C CNN
+F 0 "U50" H 11850 3050 50  0000 C CNN
 F 1 "MCP6004" H 11950 2750 50  0000 C CNN
 F 2 "" H 11750 3000 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 11850 3100 50  0001 C CNN
-	1    11800 2900
+F 3 "www.st.com/resource/en/datasheet/ts912.pdf" H 11850 3100 50  0001 C CNN
+	3    11800 2900
 	1    0    0    -1  
 $EndComp
 Text Label 11700 2400 2    50   ~ 0
@@ -607,10 +606,10 @@ Wire Wire Line
 Text Label 11700 3200 0    50   ~ 0
 GND
 $Comp
-L Amplifier_Operational:TS912 U?
+L Amplifier_Operational:TS912 U2
 U 3 1 5FD3B9D5
 P 11800 2900
-F 0 "U?" H 11758 2900 50  0001 L CNN
+F 0 "U2" H 11758 2900 50  0001 L CNN
 F 1 "MCP6004" H 11758 2855 50  0001 L CNN
 F 2 "" H 11800 2900 50  0001 C CNN
 F 3 "www.st.com/resource/en/datasheet/ts912.pdf" H 11800 2900 50  0001 C CNN
@@ -652,7 +651,7 @@ Wire Wire Line
 Wire Wire Line
 	6450 4250 6450 4600
 $Comp
-L Amplifier_Operational:TS912 U3
+L Amplifier_Operational:MCP6004 U3
 U 2 1 5FB24032
 P 6850 4500
 F 0 "U3" H 6900 4650 50  0000 C CNN
@@ -750,7 +749,7 @@ P 7200 5500
 F 0 "U3" H 7300 5650 50  0000 C CNN
 F 1 "MCP6004" H 7350 5350 50  0000 C CNN
 F 2 "" H 7150 5600 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 7250 5700 50  0001 C CNN
+F 3 "www.st.com/resource/en/datasheet/ts912.pdf" H 7250 5700 50  0001 C CNN
 	3    7200 5500
 	1    0    0    -1  
 $EndComp
@@ -761,7 +760,7 @@ P 7200 6250
 F 0 "U3" H 7250 6400 50  0000 C CNN
 F 1 "MCP6004" H 7350 6100 50  0000 C CNN
 F 2 "" H 7150 6350 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 7250 6450 50  0001 C CNN
+F 3 "www.st.com/resource/en/datasheet/ts912.pdf" H 7250 6450 50  0001 C CNN
 	4    7200 6250
 	1    0    0    -1  
 $EndComp
@@ -770,10 +769,10 @@ Text Label 6800 4950 2    50   ~ 0
 Wire Wire Line
 	7500 6250 7700 6250
 $Comp
-L pspice:CAP C43
+L pspice:CAP C24
 U 1 1 5FD94AF3
 P 5500 5200
-F 0 "C43" V 5600 5050 50  0000 C CNN
+F 0 "C24" V 5600 5050 50  0000 C CNN
 F 1 "0.1u" V 5600 5350 50  0000 C CNN
 F 2 "" H 5500 5200 50  0001 C CNN
 F 3 "~" H 5500 5200 50  0001 C CNN
@@ -814,7 +813,7 @@ F 3 "~" H 6800 6600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 11100 7000 0    50   ~ 0
-U7_Pin20
+5V
 Text Label 8450 5600 0    28   ~ 0
 U8_Pin13
 Text Label 8450 5700 0    28   ~ 0
@@ -840,17 +839,6 @@ Wire Wire Line
 	10250 6900 10250 7000
 Text Label 10250 7000 0    50   ~ 0
 GND
-$Comp
-L Connector_Generic:Conn_01x08 J40
-U 1 1 5FA0A965
-P 10450 6300
-F 0 "J40" H 10530 6292 50  0000 L CNN
-F 1 "Conn_01x08" H 10200 6700 50  0001 L CNN
-F 2 "" H 10450 6300 50  0001 C CNN
-F 3 "~" H 10450 6300 50  0001 C CNN
-	1    10450 6300
-	1    0    0    -1  
-$EndComp
 Text Label 10500 5700 2    50   ~ 0
 GND
 $Comp
@@ -884,8 +872,6 @@ Wire Wire Line
 	10250 5700 10700 5700
 Wire Wire Line
 	10950 7000 11100 7000
-Text Label 10250 7100 2    50   ~ 0
-X
 $Comp
 L pspice:CAP C45
 U 1 1 600BD44B
@@ -1061,10 +1047,10 @@ F 3 "~" H 6450 4100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Amplifier_Operational:MCP6004 U?
+L Amplifier_Operational:MCP6004 U26
 U 5 1 5FC45A13
 P 6850 3750
-F 0 "U?" H 6808 3796 50  0001 L CNN
+F 0 "U26" H 6808 3796 50  0001 L CNN
 F 1 "MCP6004" H 6808 3750 50  0001 L CNN
 F 2 "" H 6800 3850 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 6900 3950 50  0001 C CNN
@@ -1078,7 +1064,7 @@ P 6850 3750
 F 0 "U3" H 6900 3900 50  0000 C CNN
 F 1 "MCP6004" H 7000 3600 50  0000 C CNN
 F 2 "" H 6800 3850 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 6900 3950 50  0001 C CNN
+F 3 "www.st.com/resource/en/datasheet/ts912.pdf" H 6900 3950 50  0001 C CNN
 	1    6850 3750
 	1    0    0    -1  
 $EndComp
@@ -1160,10 +1146,10 @@ Text Label 7550 1150 0    50   ~ 0
 Text Label 7700 2150 0    50   ~ 0
 GND
 $Comp
-L Amplifier_Operational:TS912 U?
+L Amplifier_Operational:TS912 U18
 U 3 1 5FA00230
 P 7800 1850
-F 0 "U?" H 7758 1850 50  0001 L CNN
+F 0 "U18" H 7758 1850 50  0001 L CNN
 F 1 "MCP6004" H 7758 1805 50  0001 L CNN
 F 2 "" H 7800 1850 50  0001 C CNN
 F 3 "www.st.com/resource/en/datasheet/ts912.pdf" H 7800 1850 50  0001 C CNN
@@ -1287,39 +1273,31 @@ Text Label 1800 1950 0    50   ~ 0
 APPS1_10V
 Text Label 1800 1650 0    50   ~ 0
 BRAKE_SWITCH(24V)
-Text Label 1550 2700 2    50   ~ 0
+Text Label 1600 2950 2    50   ~ 0
 Brake_Pressed_RTN
-Text Label 1550 2600 2    50   ~ 0
+Text Label 1600 2850 2    50   ~ 0
 Brake_Pressed
 Wire Wire Line
-	1550 2700 1750 2700
+	1600 2950 1800 2950
 Wire Wire Line
-	1550 2600 1750 2600
-Text Label 1550 2800 2    50   ~ 0
-Brake_Pressed_uC
-Wire Wire Line
-	1550 2800 1750 2800
-Text Label 1550 2500 2    50   ~ 0
-APPS
-Text Label 1550 3000 2    50   ~ 0
+	1600 2850 1800 2850
+Text Label 1600 3150 2    50   ~ 0
 Throttle_LV
-Text Label 1550 2900 2    50   ~ 0
+Text Label 1600 3050 2    50   ~ 0
 Throttle_PL
 Wire Wire Line
-	1550 3000 1750 3000
+	1600 3150 1800 3150
 Wire Wire Line
-	1550 2900 1750 2900
+	1600 3050 1800 3050
 Text Label 1800 2150 0    50   ~ 0
 APPS2
-Text HLabel 1750 2900 2    50   Output ~ 0
+Text HLabel 1800 3050 2    50   Output ~ 0
 Throttle_PL
-Text HLabel 1750 2800 2    50   Output ~ 0
-Brake_Pressed_uC
-Text HLabel 1750 3000 2    50   Output ~ 0
+Text HLabel 1800 3150 2    50   Output ~ 0
 Throttle_LV
-Text HLabel 1750 2700 2    50   Output ~ 0
+Text HLabel 1800 2950 2    50   Output ~ 0
 Brake_Pressed_RTN
-Text HLabel 1750 2600 2    50   Output ~ 0
+Text HLabel 1800 2850 2    50   Output ~ 0
 Brake_Pressed
 Wire Wire Line
 	4100 9000 4100 9150
@@ -1493,10 +1471,10 @@ F 3 "www.st.com/resource/en/datasheet/ts912.pdf" H 2650 10350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Amplifier_Operational:TS912 U?
+L Amplifier_Operational:TS912 U46
 U 3 1 5FD7E68D
 P 2650 10350
-F 0 "U?" H 2608 10350 50  0001 L CNN
+F 0 "U46" H 2608 10350 50  0001 L CNN
 F 1 "MCP6004" H 2608 10305 50  0001 L CNN
 F 2 "" H 2650 10350 50  0001 C CNN
 F 3 "www.st.com/resource/en/datasheet/ts912.pdf" H 2650 10350 50  0001 C CNN
@@ -1579,10 +1557,10 @@ Wire Wire Line
 Text Label 5100 10250 2    50   ~ 0
 APPS2
 $Comp
-L Amplifier_Operational:TS912 U?
+L Amplifier_Operational:TS912 U47
 U 3 1 5FD2DABD
 P 6050 10350
-F 0 "U?" H 6008 10350 50  0001 L CNN
+F 0 "U47" H 6008 10350 50  0001 L CNN
 F 1 "MCP6004" H 6008 10305 50  0001 L CNN
 F 2 "" H 6050 10350 50  0001 C CNN
 F 3 "www.st.com/resource/en/datasheet/ts912.pdf" H 6050 10350 50  0001 C CNN
@@ -1751,10 +1729,10 @@ Wire Wire Line
 Wire Wire Line
 	8900 10450 9100 10450
 $Comp
-L Amplifier_Operational:TS912 U2
+L Amplifier_Operational:MCP6004 U50
 U 2 1 5FE04112
 P 9400 10550
-F 0 "U2" H 9450 10700 50  0000 C CNN
+F 0 "U50" H 9450 10700 50  0000 C CNN
 F 1 "MCP6004" H 9550 10400 50  0000 C CNN
 F 2 "" H 9400 10550 50  0001 C CNN
 F 3 "www.st.com/resource/en/datasheet/ts912.pdf" H 9400 10550 50  0001 C CNN
@@ -1803,27 +1781,23 @@ Text Label 1800 2250 0    50   ~ 0
 APPS2_5V
 Wire Notes Line
 	500  500  2750 500 
-Text HLabel 1750 2500 2    50   Output ~ 0
-APPS
-Wire Wire Line
-	1550 2500 1750 2500
 Wire Notes Line
 	2750 500  2750 3150
 Wire Notes Line
 	500  500  500  3150
 Wire Notes Line
-	500  3150 2750 3150
+	500  3300 2750 3300
 Text Notes 12650 10350 0    157  ~ 0
 THROTTLE PLAUSIBILITY
 $Comp
-L Amplifier_Operational:TS912 U18
-U 2 1 5F9A2DA1
+L Amplifier_Operational:MCP6004 U50
+U 1 1 5F9A2DA1
 P 6450 2200
-F 0 "U18" H 6450 2200 50  0000 C CNN
+F 0 "U50" H 6450 2200 50  0000 C CNN
 F 1 "MCP6004" H 6450 2450 50  0000 C CNN
 F 2 "" H 6450 2200 50  0001 C CNN
 F 3 "www.st.com/resource/en/datasheet/ts912.pdf" H 6450 2200 50  0001 C CNN
-	2    6450 2200
+	1    6450 2200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1864,47 +1838,60 @@ Text Notes 14600 2600 0    63   ~ 0
 AUTO TURN\nOFF SWITCH
 Wire Wire Line
 	13300 3350 14150 3350
-Text Label 13600 6450 2    50   ~ 0
-Throttle_PL
-$Comp
-L Device:R R?
-U 1 1 5FBE59A7
-P 13600 6600
-F 0 "R?" V 13550 6550 50  0000 L BNN
-F 1 "500" V 13600 6595 50  0000 C CNN
-F 2 "" V 13530 6600 50  0001 C CNN
-F 3 "~" H 13600 6600 50  0001 C CNN
-	1    13600 6600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5FBE62E5
-P 13600 7050
-F 0 "R?" V 13550 7000 50  0000 L BNN
-F 1 "1K" V 13600 7045 50  0000 C CNN
-F 2 "" V 13530 7050 50  0001 C CNN
-F 3 "~" H 13600 7050 50  0001 C CNN
-	1    13600 7050
-	1    0    0    -1  
-$EndComp
+Text HLabel 1600 2350 0    50   Input ~ 0
+IMD_Status
 Wire Wire Line
-	13600 6750 13600 6850
-Text Label 13600 7200 3    50   ~ 0
-GND
+	1600 2350 1800 2350
+Text Label 1800 2350 0    50   ~ 0
+IMD_Status
 Wire Wire Line
-	13600 6850 13750 6850
-Connection ~ 13600 6850
+	8650 6000 8450 6000
+Text Label 8450 6000 2    50   ~ 0
+IMD_Status
+Text Label 10300 6000 0    50   ~ 0
+Brake_Pressed_uC
 Wire Wire Line
-	13600 6850 13600 6900
-Text HLabel 14700 6150 0    49   Input ~ 0
-Throttle_PL_3.3
-Text Label 13750 6850 0    49   ~ 0
-Throttle_PL_3.3
-Text HLabel 1750 3100 2    49   Output ~ 0
-Throttle_PL_3.3
-Text Label 1550 3100 2    49   ~ 0
-Throttle_PL_3.3
+	10300 6000 10250 6000
+Text Label 10350 6100 0    50   ~ 0
+APPS
 Wire Wire Line
-	1550 3100 1750 3100
+	10350 6100 10250 6100
+Text HLabel 1600 2450 0    50   Input ~ 0
+CoolTemp
+Wire Wire Line
+	1600 2450 1800 2450
+Text Label 1800 2450 0    50   ~ 0
+CoolTemp
+Text Label 10350 6200 0    50   ~ 0
+CoolTemp
+Wire Wire Line
+	10350 6200 10250 6200
+Text Label 10350 6300 0    50   ~ 0
+D_LED_CTRL
+Wire Wire Line
+	10250 6300 10350 6300
+Text HLabel 1800 3250 2    50   Output ~ 0
+D_LED_CTRL
+Text Label 1600 3250 2    50   ~ 0
+D_LED_CTRL
+Wire Wire Line
+	1600 3250 1800 3250
+Text HLabel 1600 2550 0    50   Input ~ 0
+Flowrate
+Wire Wire Line
+	1600 2550 1800 2550
+Text Label 1800 2550 0    50   ~ 0
+Flowrate
+Text Label 10350 6400 0    50   ~ 0
+Flowrate
+Wire Wire Line
+	10250 6400 10350 6400
+Wire Wire Line
+	10250 7000 10250 7100
+Text HLabel 1600 2650 0    50   Input ~ 0
+Drive_BTN
+Wire Wire Line
+	1600 2650 1800 2650
+Text Label 1800 2650 0    50   ~ 0
+Drive_BTN
 $EndSCHEMATC

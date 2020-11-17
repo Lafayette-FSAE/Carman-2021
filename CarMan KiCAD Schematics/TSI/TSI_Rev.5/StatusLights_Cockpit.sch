@@ -138,13 +138,13 @@ Text HLabel 1200 1050 0    50   Input ~ 0
 D_LED_CTRL
 Text HLabel 1200 1150 0    50   Input ~ 0
 SPARE_LED_CTRL
-Text HLabel 1200 1400 0    50   Input ~ 0
+Text HLabel 1200 1750 0    50   Input ~ 0
 24V
-Text HLabel 1200 1700 0    50   Input ~ 0
+Text HLabel 1200 2050 0    50   Input ~ 0
 GLV_RTN
-Text HLabel 1200 1600 0    50   Input ~ 0
+Text HLabel 1200 1950 0    50   Input ~ 0
 3.3V
-Text HLabel 1200 1500 0    50   Input ~ 0
+Text HLabel 1200 1850 0    50   Input ~ 0
 5V
 Wire Wire Line
 	1200 650  1350 650 
@@ -159,13 +159,13 @@ Wire Wire Line
 Wire Wire Line
 	1200 1150 1350 1150
 Wire Wire Line
-	1200 1400 1350 1400
+	1200 1750 1350 1750
 Wire Wire Line
-	1200 1700 1350 1700
+	1200 2050 1350 2050
 Wire Wire Line
-	1200 1600 1350 1600
+	1200 1950 1350 1950
 Wire Wire Line
-	1200 1500 1350 1500
+	1200 1850 1350 1850
 Text Label 1350 650  0    50   ~ 0
 BP
 Text Label 1350 750  0    50   ~ 0
@@ -178,13 +178,13 @@ Text Label 1350 1050 0    50   ~ 0
 D_LED_CTRL
 Text Label 1350 1150 0    50   ~ 0
 SPARE_LED_CTRL
-Text Label 1350 1400 0    50   ~ 0
+Text Label 1350 1750 0    50   ~ 0
 24V
-Text Label 1350 1700 0    50   ~ 0
+Text Label 1350 2050 0    50   ~ 0
 GLV_RTN
-Text Label 1350 1600 0    50   ~ 0
+Text Label 1350 1950 0    50   ~ 0
 3.3V
-Text Label 1350 1500 0    50   ~ 0
+Text Label 1350 1850 0    50   ~ 0
 5V
 $Comp
 L Device:R R15
@@ -217,10 +217,10 @@ Connection ~ 6450 600
 Wire Wire Line
 	6450 600  7100 600 
 $Comp
-L TSI_Rev.5-rescue:TLP293-CarMan_KiCAD_Library-TSI_Rev.5-rescue U?
+L TSI_Rev.5-rescue:TLP293-CarMan_KiCAD_Library-TSI_Rev.5-rescue U13
 U 1 1 5F9B7294
 P 4550 1400
-F 0 "U?" H 4550 1725 50  0000 C CNN
+F 0 "U13" H 4550 1725 50  0000 C CNN
 F 1 "TLP293" H 4550 1634 50  0000 C CNN
 F 2 "Package_SO:SOIC-4_4.55x2.6mm_P1.27mm" H 4350 1200 50  0001 L CIN
 F 3 "" H 4550 1400 50  0001 L CNN
@@ -358,10 +358,10 @@ Connection ~ 2250 5000
 Wire Wire Line
 	2250 5000 3000 5000
 $Comp
-L power:PWR_FLAG #FLG?
+L power:PWR_FLAG #FLG01
 U 1 1 5FA42854
 P 1950 5000
-F 0 "#FLG?" H 1950 5075 50  0001 C CNN
+F 0 "#FLG01" H 1950 5075 50  0001 C CNN
 F 1 "PWR_FLAG" H 1950 5173 50  0000 C CNN
 F 2 "" H 1950 5000 50  0001 C CNN
 F 3 "~" H 1950 5000 50  0001 C CNN
@@ -439,10 +439,10 @@ F 3 "~" H 4350 4800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:TestPoint TSAL_RTN
+L Connector:TestPoint TSAL_RTN1
 U 1 1 5FA8198D
 P 4150 5850
-F 0 "TSAL_RTN" H 4092 5876 50  0000 R CNN
+F 0 "TSAL_RTN1" H 4092 5876 50  0000 R CNN
 F 1 "TSAL_RTN" H 4092 5967 50  0000 R CNN
 F 2 "" H 4350 5850 50  0001 C CNN
 F 3 "~" H 4350 5850 50  0001 C CNN
@@ -505,39 +505,39 @@ Wire Notes Line
 	8150 4900 8200 4900
 Wire Notes Line
 	8350 5000 8200 5000
-Text HLabel 1200 1900 0    50   Input ~ 0
+Text HLabel 1200 2250 0    50   Input ~ 0
 TSAL
-Text HLabel 1200 2100 0    50   Input ~ 0
+Text HLabel 1200 2450 0    50   Input ~ 0
 TSAL_RTN
 Wire Wire Line
-	1200 1900 1350 1900
+	1200 2250 1350 2250
 Wire Wire Line
-	1200 2100 1350 2100
-Text Label 1350 1900 0    50   ~ 0
+	1200 2450 1350 2450
+Text Label 1350 2250 0    50   ~ 0
 TSAL
-Text Label 1350 2100 0    50   ~ 0
+Text Label 1350 2450 0    50   ~ 0
 TSAL_RTN
-Text HLabel 1200 2000 0    50   Input ~ 0
+Text HLabel 1200 2350 0    50   Input ~ 0
 TSAL_Cockpit
 Wire Wire Line
-	1200 2000 1350 2000
-Text Label 1350 2000 0    50   ~ 0
+	1200 2350 1350 2350
+Text Label 1350 2350 0    50   ~ 0
 TSAL_Cockpit
 Text Label 10200 2350 2    50   ~ 0
 GLV_RTN
 Wire Wire Line
 	10200 1450 10200 1650
-Text HLabel 1200 2300 0    50   Input ~ 0
+Text HLabel 1200 2650 0    50   Input ~ 0
 Drive_BTN_RTN
 Wire Wire Line
-	1200 2300 1350 2300
-Text Label 1350 2300 0    50   ~ 0
+	1200 2650 1350 2650
+Text Label 1350 2650 0    50   ~ 0
 Drive_BTN_RTN
-Text HLabel 1200 2200 0    50   Input ~ 0
+Text HLabel 1200 2550 0    50   Input ~ 0
 Drive_BTN
 Wire Wire Line
-	1200 2200 1350 2200
-Text Label 1350 2200 0    50   ~ 0
+	1200 2550 1350 2550
+Text Label 1350 2550 0    50   ~ 0
 Drive_BTN
 Wire Wire Line
 	5050 3250 4850 3250
@@ -564,10 +564,10 @@ Wire Wire Line
 Text Notes 7100 6950 0    197  ~ 0
 STATUS LIGHTS & COCKPIT
 $Comp
-L pspice:CAP C?
+L pspice:CAP C6
 U 1 1 5FBC364D
 P 8050 5700
-F 0 "C?" H 8100 5800 50  0000 L CNN
+F 0 "C6" H 8100 5800 50  0000 L CNN
 F 1 "0.1u" H 8100 5600 50  0000 L CNN
 F 2 "" H 8050 5700 50  0001 C CNN
 F 3 "~" H 8050 5700 50  0001 C CNN
@@ -581,4 +581,16 @@ Text Label 8050 6150 0    50   ~ 0
 GLV_RTN
 Wire Wire Line
 	8050 6150 8050 5950
+Text HLabel 1200 1250 0    50   Input ~ 0
+RTDS
+Wire Wire Line
+	1200 1250 1350 1250
+Text Label 1350 1250 0    50   ~ 0
+RTDS
+Text Label 1350 1350 0    50   ~ 0
+RTDS_RTN
+Text HLabel 1200 1350 0    50   Input ~ 0
+RTDS_RTN
+Wire Wire Line
+	1200 1350 1350 1350
 $EndSCHEMATC
