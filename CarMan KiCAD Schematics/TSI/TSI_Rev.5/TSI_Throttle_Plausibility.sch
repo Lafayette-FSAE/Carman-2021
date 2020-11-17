@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 2 7
+Sheet 7 7
 Title ""
 Date ""
 Rev ""
@@ -1864,4 +1864,47 @@ Text Notes 14600 2600 0    63   ~ 0
 AUTO TURN\nOFF SWITCH
 Wire Wire Line
 	13300 3350 14150 3350
+Text Label 13600 6450 2    50   ~ 0
+Throttle_PL
+$Comp
+L Device:R R?
+U 1 1 5FBE59A7
+P 13600 6600
+F 0 "R?" V 13550 6550 50  0000 L BNN
+F 1 "500" V 13600 6595 50  0000 C CNN
+F 2 "" V 13530 6600 50  0001 C CNN
+F 3 "~" H 13600 6600 50  0001 C CNN
+	1    13600 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FBE62E5
+P 13600 7050
+F 0 "R?" V 13550 7000 50  0000 L BNN
+F 1 "1K" V 13600 7045 50  0000 C CNN
+F 2 "" V 13530 7050 50  0001 C CNN
+F 3 "~" H 13600 7050 50  0001 C CNN
+	1    13600 7050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13600 6750 13600 6850
+Text Label 13600 7200 3    50   ~ 0
+GND
+Wire Wire Line
+	13600 6850 13750 6850
+Connection ~ 13600 6850
+Wire Wire Line
+	13600 6850 13600 6900
+Text HLabel 14700 6150 0    49   Input ~ 0
+Throttle_PL_3.3
+Text Label 13750 6850 0    49   ~ 0
+Throttle_PL_3.3
+Text HLabel 1750 3100 2    49   Output ~ 0
+Throttle_PL_3.3
+Text Label 1550 3100 2    49   ~ 0
+Throttle_PL_3.3
+Wire Wire Line
+	1550 3100 1750 3100
 $EndSCHEMATC

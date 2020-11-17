@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:TSI_Rev.5-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -104,7 +103,7 @@ Wire Wire Line
 	1250 4100 1350 4100
 Wire Wire Line
 	1250 4000 1350 4000
-Text Notes 1600 4850 0    79   ~ 0
+Text Notes 1600 4900 0    79   ~ 0
 TSI J3 & TSI J4\n
 Text Label 1150 5450 2    50   ~ 0
 MC_Voltage
@@ -318,17 +317,15 @@ Wire Wire Line
 	10500 5600 10350 5600
 Text Label 10500 5600 0    50   ~ 0
 Cooling_power
-Text Label 6750 2900 2    50   ~ 0
-SCL_uc
+Text Label 6750 2700 2    50   ~ 0
+SCL_TSI
+Text Label 6750 2800 2    50   ~ 0
+SDA_TSI
 Text Label 6750 3000 2    50   ~ 0
-SDA_uc
-Text Label 6750 3100 2    50   ~ 0
-TSI_I2C_RTN
-Text Label 6750 3200 2    50   ~ 0
 Safety_Loop
-Text Label 6750 3300 2    50   ~ 0
+Text Label 6750 3100 2    50   ~ 0
 Cooling_CTRL
-Text Label 6750 3400 2    50   ~ 0
+Text Label 6750 3200 2    50   ~ 0
 Throttle_PL_3.3
 Text Label 6750 3500 2    50   ~ 0
 IMD_Status_3.3
@@ -366,33 +363,6 @@ Text Label 4950 3250 2    50   ~ 0
 Flowrate_RTN
 Text Label 5400 3250 0    50   ~ 0
 GLV_RTN
-$Sheet
-S 1350 3300 1400 1300
-U 5FC85F57
-F0 "TSI-TP" 50
-F1 "TSI_Throttle_Plausibility.sch" 50
-F2 "24V" I L 1350 3400 50 
-F3 "10V" I L 1350 3500 50 
-F4 "GLV_RTN" I L 1350 3700 50 
-F5 "5V" I L 1350 3600 50 
-F6 "Throttle_SEL" I L 1350 3800 50 
-F7 "SDA" I L 1350 3900 50 
-F8 "SCL" I L 1350 4000 50 
-F9 "PC_Ready" I L 1350 4100 50 
-F10 "Throttle_PL" O R 2750 4100 50 
-F11 "Throttle_LV" O R 2750 4200 50 
-F12 "Brake_Pressed_RTN" O R 2750 4400 50 
-F13 "Brake_Pressed" O R 2750 4300 50 
-F14 "APPS" O R 2750 3400 50 
-F15 "BRAKE_SWITCH(24V)" I L 1350 4200 50 
-F16 "APPS1" I R 2750 3500 50 
-F17 "APPS1_RTN" I R 2750 3600 50 
-F18 "APPS1_10V" I R 2750 4000 50 
-F19 "APPS2_RTN" I R 2750 3800 50 
-F20 "APPS2" I R 2750 3700 50 
-F21 "APPS2_5V" I R 2750 3900 50 
-F22 "Brake_Pressed_uC" O R 2750 4500 50 
-$EndSheet
 Wire Wire Line
 	1350 4200 700  4200
 Wire Wire Line
@@ -1126,8 +1096,6 @@ Text Label 4500 1750 2    50   ~ 0
 MRESET_Contact
 Text Label 2650 2050 2    50   ~ 0
 TSAL_Cockpit
-Text Label 2650 2150 2    50   ~ 0
-TSAL_RTN
 $Comp
 L Connector_Generic:Conn_01x06 J?
 U 1 1 5FA1229F
@@ -1140,8 +1108,6 @@ F 3 "~" H 2850 1850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 2650 1850 2    50   ~ 0
-FAULT_LED_RTN
-Text Label 2650 1950 2    50   ~ 0
 IMD_FAULT_LED
 Text Label 2650 1750 2    50   ~ 0
 FAULT_LED_RTN
@@ -1197,7 +1163,78 @@ Text Label 9700 950  2    49   ~ 0
 GLV_RTN
 Text Label 7250 2700 0    50   ~ 0
 AMS_Fault
-Text Label 6750 2800 2    50   ~ 0
+Text Label 2650 1950 2    49   ~ 0
+GEN_Fault_LED
+Text Label 2650 2150 2    50   ~ 0
+Safety_Loop
+Wire Wire Line
+	4700 2850 5450 2850
+Text Label 5450 2850 0    49   ~ 0
+MRESET_Contact
+Text Label 4700 2850 2    49   ~ 0
+GEN_Fault_LED
+Text Label 6750 2900 2    49   ~ 0
 5V_ISO_RTN
-NoConn ~ 6750 2700
+$Sheet
+S 1350 3300 1400 1400
+U 5FC85F57
+F0 "TSI-TP" 50
+F1 "TSI_Throttle_Plausibility.sch" 50
+F2 "24V" I L 1350 3400 50 
+F3 "10V" I L 1350 3500 50 
+F4 "GLV_RTN" I L 1350 3700 50 
+F5 "5V" I L 1350 3600 50 
+F6 "Throttle_SEL" I L 1350 3800 50 
+F7 "SDA" I L 1350 3900 50 
+F8 "SCL" I L 1350 4000 50 
+F9 "PC_Ready" I L 1350 4100 50 
+F10 "Throttle_PL" O R 2750 4100 50 
+F11 "Throttle_LV" O R 2750 4200 50 
+F12 "Brake_Pressed_RTN" O R 2750 4400 50 
+F13 "Brake_Pressed" O R 2750 4300 50 
+F14 "APPS" O R 2750 3400 50 
+F15 "BRAKE_SWITCH(24V)" I L 1350 4200 50 
+F16 "APPS1" I R 2750 3500 50 
+F17 "APPS1_RTN" I R 2750 3600 50 
+F18 "APPS1_10V" I R 2750 4000 50 
+F19 "APPS2_RTN" I R 2750 3800 50 
+F20 "APPS2" I R 2750 3700 50 
+F21 "APPS2_5V" I R 2750 3900 50 
+F22 "Brake_Pressed_uC" O R 2750 4500 50 
+F23 "Throttle_PL_3.3" I R 2750 4600 49 
+$EndSheet
+Text Label 2850 4600 0    50   ~ 0
+Throttle_PL_3.3
+Wire Wire Line
+	2850 4600 2750 4600
+$Comp
+L Device:R R?
+U 1 1 5FC37D9A
+P 5050 4550
+F 0 "R?" H 5120 4596 50  0000 L CNN
+F 1 "3K" H 5120 4505 50  0000 L CNN
+F 2 "" V 4980 4550 50  0001 C CNN
+F 3 "~" H 5050 4550 50  0001 C CNN
+	1    5050 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FC37F53
+P 5050 5000
+F 0 "R?" H 5120 5046 50  0000 L CNN
+F 1 "500" H 5120 4955 50  0000 L CNN
+F 2 "" V 4980 5000 50  0001 C CNN
+F 3 "~" H 5050 5000 50  0001 C CNN
+	1    5050 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 4700 5050 4850
+Text Label 5050 5150 3    49   ~ 0
+GLV_RTN
+Text Label 5050 4800 0    50   ~ 0
+IMD_Status_3.3
+Text Label 5050 4400 0    50   ~ 0
+IMD_STATUS
 $EndSCHEMATC
