@@ -290,9 +290,9 @@ Wire Wire Line
 Wire Wire Line
 	9150 5100 9000 5100
 Text Label 9000 5000 2    50   ~ 0
-AIRs+
+AIRS+
 Text Label 9000 5100 2    50   ~ 0
-AIRs-
+AIRS-
 Text Label 10500 4800 0    50   ~ 0
 Cooling_CTRL
 Wire Wire Line

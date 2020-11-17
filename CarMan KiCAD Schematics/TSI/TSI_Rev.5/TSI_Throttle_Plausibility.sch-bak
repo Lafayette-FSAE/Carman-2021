@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 6 7
+Sheet 5 7
 Title ""
 Date ""
 Rev ""
@@ -34,7 +34,7 @@ SIGNALS\n
 Wire Wire Line
 	1800 1150 1600 1150
 Text Label 1800 1150 0    50   ~ 0
-GND
+GLV_RTN
 Wire Wire Line
 	1800 950  1600 950 
 Text Label 1800 950  0    50   ~ 0
@@ -113,28 +113,6 @@ F 3 "http://www.ti.com/lit/ds/symlink/tl431.pdf" H 1700 7250 50  0001 C CIN
 $EndComp
 Wire Notes Line
 	550  5950 2950 5950
-$Comp
-L Amplifier_Operational:TS912 U45
-U 3 1 5FCD2415
-P 1850 4550
-F 0 "U45" H 1808 4550 50  0001 L CNN
-F 1 "MCP6004" H 1808 4505 50  0001 L CNN
-F 2 "" H 1850 4550 50  0001 C CNN
-F 3 "www.st.com/resource/en/datasheet/ts912.pdf" H 1850 4550 50  0001 C CNN
-	3    1850 4550
-	1    0    0    -1  
-$EndComp
-$Comp
-L Amplifier_Operational:TS912 U18
-U 1 1 5FCD415C
-P 1850 4550
-F 0 "U18" H 1900 4700 50  0000 C BNN
-F 1 "MCP6004" H 1950 4400 50  0000 C CNN
-F 2 "" H 1850 4550 50  0001 C CNN
-F 3 "www.st.com/resource/en/datasheet/ts912.pdf" H 1850 4550 50  0001 C CNN
-	1    1850 4550
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	900  4650 1050 4650
 Wire Wire Line
@@ -146,9 +124,7 @@ APPS1_b
 Wire Wire Line
 	1750 4950 1750 4850
 Text Label 1400 5200 2    50   ~ 0
-GND
-Text Label 1750 4950 0    50   ~ 0
-GND
+GLV_RTN
 Text Label 1750 4100 0    50   ~ 0
 10V
 $Comp
@@ -292,8 +268,6 @@ Wire Wire Line
 	1750 4100 1750 4250
 Wire Wire Line
 	950  4100 1100 4100
-Text Label 950  4100 2    50   ~ 0
-GND
 Text Notes 1050 3950 0    50   ~ 0
 Decoupling Cap for U18\n
 $Comp
@@ -321,8 +295,6 @@ $EndComp
 Connection ~ 2150 6850
 Text Notes 1000 8150 0    50   ~ 0
 *Need 1% tolerance for R27 & R28*\n
-Text Label 1700 7850 0    50   ~ 0
-GND
 Text Label 2350 6850 0    50   ~ 0
 5V_REF
 Wire Wire Line
@@ -514,10 +486,10 @@ $Comp
 L Amplifier_Operational:MCP6004 U50
 U 3 1 5FED477E
 P 11800 2900
-F 0 "U50" H 11850 3050 50  0000 C CNN
+F 0 "U50" H 11800 2900 50  0000 C CNN
 F 1 "MCP6004" H 11950 2750 50  0000 C CNN
 F 2 "" H 11750 3000 50  0001 C CNN
-F 3 "www.st.com/resource/en/datasheet/ts912.pdf" H 11850 3100 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 11850 3100 50  0001 C CNN
 	3    11800 2900
 	1    0    0    -1  
 $EndComp
@@ -530,7 +502,7 @@ Wire Wire Line
 Text Notes 12300 2250 2    50   ~ 0
 Decoupling Cap\n
 Text Label 12400 2400 0    50   ~ 0
-GND
+GLV_RTN
 Wire Wire Line
 	12400 2400 12250 2400
 $Comp
@@ -547,7 +519,7 @@ $EndComp
 Text Label 10800 2450 0    50   ~ 0
 APPS
 Text Label 11150 2600 0    50   ~ 0
-GND
+GLV_RTN
 Wire Wire Line
 	10800 2600 10850 2600
 Connection ~ 10800 2600
@@ -604,24 +576,13 @@ Wire Wire Line
 Wire Wire Line
 	11500 3000 11450 3000
 Text Label 11700 3200 0    50   ~ 0
-GND
-$Comp
-L Amplifier_Operational:TS912 U2
-U 3 1 5FD3B9D5
-P 11800 2900
-F 0 "U2" H 11758 2900 50  0001 L CNN
-F 1 "MCP6004" H 11758 2855 50  0001 L CNN
-F 2 "" H 11800 2900 50  0001 C CNN
-F 3 "www.st.com/resource/en/datasheet/ts912.pdf" H 11800 2900 50  0001 C CNN
-	3    11800 2900
-	1    0    0    -1  
-$EndComp
+GLV_RTN
 Wire Wire Line
 	11250 2800 11500 2800
 Wire Wire Line
 	11250 3050 11250 2800
 Text Label 11250 3500 0    50   ~ 0
-GND
+GLV_RTN
 $Comp
 L Transistor_FET:MMBF170 Q2
 U 1 1 5FCDD9B5
@@ -654,10 +615,10 @@ $Comp
 L Amplifier_Operational:MCP6004 U3
 U 2 1 5FB24032
 P 6850 4500
-F 0 "U3" H 6900 4650 50  0000 C CNN
-F 1 "MCP6004" H 6950 4350 50  0000 C CNN
+F 0 "U3" H 6850 4500 50  0000 C CNN
+F 1 "MCP6004" H 7050 4350 50  0000 C CNN
 F 2 "" H 6850 4500 50  0001 C CNN
-F 3 "www.st.com/resource/en/datasheet/ts912.pdf" H 6850 4500 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 6850 4500 50  0001 C CNN
 	2    6850 4500
 	1    0    0    -1  
 $EndComp
@@ -672,7 +633,7 @@ Wire Wire Line
 Wire Wire Line
 	6450 5100 6450 5000
 Text Label 6450 5100 0    50   ~ 0
-GND
+GLV_RTN
 $Comp
 L Device:R R81
 U 1 1 5FB2401B
@@ -746,22 +707,11 @@ $Comp
 L Amplifier_Operational:MCP6004 U3
 U 3 1 5FCFF335
 P 7200 5500
-F 0 "U3" H 7300 5650 50  0000 C CNN
+F 0 "U3" H 7200 5500 50  0000 C CNN
 F 1 "MCP6004" H 7350 5350 50  0000 C CNN
 F 2 "" H 7150 5600 50  0001 C CNN
-F 3 "www.st.com/resource/en/datasheet/ts912.pdf" H 7250 5700 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 7250 5700 50  0001 C CNN
 	3    7200 5500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Amplifier_Operational:MCP6004 U3
-U 4 1 5FD016E1
-P 7200 6250
-F 0 "U3" H 7250 6400 50  0000 C CNN
-F 1 "MCP6004" H 7350 6100 50  0000 C CNN
-F 2 "" H 7150 6350 50  0001 C CNN
-F 3 "www.st.com/resource/en/datasheet/ts912.pdf" H 7250 6450 50  0001 C CNN
-	4    7200 6250
 	1    0    0    -1  
 $EndComp
 Text Label 6800 4950 2    50   ~ 0
@@ -784,7 +734,7 @@ Decoupling Cap\nfor U3\n\n
 Text Label 5500 4950 2    50   ~ 0
 10V
 Text Label 5500 5450 2    50   ~ 0
-GND
+GLV_RTN
 Text Label 8450 5300 0    28   ~ 0
 U8_Pin3
 Text Label 8450 5400 0    28   ~ 0
@@ -800,7 +750,7 @@ Throttle_PL
 Wire Wire Line
 	6800 6850 6800 6750
 Text Label 6800 6850 0    50   ~ 0
-GND
+GLV_RTN
 $Comp
 L Device:R R83
 U 1 1 5FC854F5
@@ -812,7 +762,7 @@ F 3 "~" H 6800 6600 50  0001 C CNN
 	1    6800 6600
 	1    0    0    -1  
 $EndComp
-Text Label 11100 7000 0    50   ~ 0
+Text Label 11300 7000 0    50   ~ 0
 5V
 Text Label 8450 5600 0    28   ~ 0
 U8_Pin13
@@ -838,9 +788,9 @@ Wire Wire Line
 Wire Wire Line
 	10250 6900 10250 7000
 Text Label 10250 7000 0    50   ~ 0
-GND
-Text Label 10500 5700 2    50   ~ 0
-GND
+GLV_RTN
+Text Label 10250 5700 0    50   ~ 0
+GLV_RTN
 $Comp
 L Device:R R49
 U 1 1 5FB97127
@@ -871,20 +821,18 @@ Wire Wire Line
 Wire Wire Line
 	10250 5700 10700 5700
 Wire Wire Line
-	10950 7000 11100 7000
+	11150 7000 11300 7000
 $Comp
 L pspice:CAP C45
 U 1 1 600BD44B
-P 10700 7000
-F 0 "C45" V 10550 6850 50  0000 C CNN
-F 1 "0.1u" V 10550 7150 50  0000 C CNN
-F 2 "" H 10700 7000 50  0001 C CNN
-F 3 "~" H 10700 7000 50  0001 C CNN
-	1    10700 7000
+P 10900 7000
+F 0 "C45" V 10750 6850 50  0000 C CNN
+F 1 "0.1u" V 10750 7150 50  0000 C CNN
+F 2 "" H 10900 7000 50  0001 C CNN
+F 3 "~" H 10900 7000 50  0001 C CNN
+	1    10900 7000
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	10250 7000 10450 7000
 Wire Wire Line
 	7800 5800 8650 5800
 Wire Wire Line
@@ -937,7 +885,7 @@ Binary Address:\n1001101\n
 Wire Wire Line
 	13200 3600 13200 4550
 Text Label 15650 3550 0    50   ~ 0
-GND
+GLV_RTN
 Wire Wire Line
 	15650 2750 15550 2750
 Wire Wire Line
@@ -986,9 +934,9 @@ Wire Wire Line
 Wire Wire Line
 	7100 2500 7500 2500
 Text Label 8950 4000 0    50   ~ 0
-GND
+GLV_RTN
 Text Label 14650 5150 0    50   ~ 0
-GND
+GLV_RTN
 Wire Wire Line
 	14600 5150 14600 5250
 Connection ~ 14600 5150
@@ -1022,7 +970,7 @@ F 3 "~" H 6450 3500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 6750 4050 0    50   ~ 0
-GND
+GLV_RTN
 Wire Wire Line
 	6550 3850 6100 3850
 Wire Wire Line
@@ -1047,10 +995,10 @@ F 3 "~" H 6450 4100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Amplifier_Operational:MCP6004 U26
+L Amplifier_Operational:MCP6004 U3
 U 5 1 5FC45A13
 P 6850 3750
-F 0 "U26" H 6808 3796 50  0001 L CNN
+F 0 "U3" H 6808 3796 50  0001 L CNN
 F 1 "MCP6004" H 6808 3750 50  0001 L CNN
 F 2 "" H 6800 3850 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 6900 3950 50  0001 C CNN
@@ -1061,17 +1009,17 @@ $Comp
 L Amplifier_Operational:MCP6004 U3
 U 1 1 5FC45A19
 P 6850 3750
-F 0 "U3" H 6900 3900 50  0000 C CNN
-F 1 "MCP6004" H 7000 3600 50  0000 C CNN
+F 0 "U3" H 6900 3750 50  0000 C CNN
+F 1 "MCP6004" H 7050 3600 50  0000 C CNN
 F 2 "" H 6800 3850 50  0001 C CNN
-F 3 "www.st.com/resource/en/datasheet/ts912.pdf" H 6900 3950 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 6900 3950 50  0001 C CNN
 	1    6850 3750
 	1    0    0    -1  
 $EndComp
 Text Label 6600 3350 0    50   ~ 0
 5V
-Text Label 5150 3100 2    50   ~ 0
-GND
+Text Label 5150 3150 0    50   ~ 0
+GLV_RTN
 Text Label 5150 2600 2    50   ~ 0
 10V
 $Comp
@@ -1079,7 +1027,7 @@ L Amplifier_Operational:TS912 U22
 U 2 1 5F9C4EEE
 P 7800 2600
 F 0 "U22" H 7800 2600 50  0000 C CNN
-F 1 "TS372" H 7900 2450 50  0000 C CNN
+F 1 "MCP6004" H 7900 2450 50  0000 C CNN
 F 2 "" H 7800 2600 50  0001 C CNN
 F 3 "www.st.com/resource/en/datasheet/ts912.pdf" H 7800 2600 50  0001 C CNN
 	2    7800 2600
@@ -1110,7 +1058,7 @@ F 3 "~" H 7400 2950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 7400 3200 0    50   ~ 0
-GND
+GLV_RTN
 Wire Wire Line
 	7400 3200 7400 3100
 Connection ~ 7400 2700
@@ -1144,12 +1092,12 @@ $EndComp
 Text Label 7550 1150 0    50   ~ 0
 10V
 Text Label 7700 2150 0    50   ~ 0
-GND
+GLV_RTN
 $Comp
-L Amplifier_Operational:TS912 U18
+L Amplifier_Operational:TS912 U22
 U 3 1 5FA00230
 P 7800 1850
-F 0 "U18" H 7758 1850 50  0001 L CNN
+F 0 "U22" H 7758 1850 50  0001 L CNN
 F 1 "MCP6004" H 7758 1805 50  0001 L CNN
 F 2 "" H 7800 1850 50  0001 C CNN
 F 3 "www.st.com/resource/en/datasheet/ts912.pdf" H 7800 1850 50  0001 C CNN
@@ -1183,7 +1131,7 @@ L Amplifier_Operational:TS912 U22
 U 1 1 5F9CD326
 P 7800 1850
 F 0 "U22" H 7900 1950 50  0000 C BNN
-F 1 "TS372" H 7900 1700 50  0000 C CNN
+F 1 "MCP6004" H 7900 1700 50  0000 C CNN
 F 2 "" H 7800 1850 50  0001 C CNN
 F 3 "www.st.com/resource/en/datasheet/ts912.pdf" H 7800 1850 50  0001 C CNN
 	1    7800 1850
@@ -1210,7 +1158,7 @@ Wire Wire Line
 	6750 2200 6800 2200
 Connection ~ 6800 2200
 Wire Wire Line
-	5950 2100 6150 2100
+	5950 2100 6100 2100
 Text Label 5500 2300 2    50   ~ 0
 APPS2_b
 $Comp
@@ -1300,9 +1248,7 @@ Brake_Pressed_RTN
 Text HLabel 1800 2850 2    50   Output ~ 0
 Brake_Pressed
 Wire Wire Line
-	4100 9000 4100 9150
-Text Label 4100 9000 1    50   ~ 0
-GND
+	1800 9500 1950 9500
 Wire Wire Line
 	6400 10350 6400 10150
 $Comp
@@ -1329,15 +1275,8 @@ F 3 "~" H 3200 10150 50  0001 C CNN
 	1    3000 10150
 	1    0    0    -1  
 $EndComp
-Text Notes 4150 9300 0    50   ~ 0
+Text Notes 2450 9300 2    50   ~ 0
 Decoupling Cap\nfor U6
-Text Label 5950 9750 0    50   ~ 0
-10V
-Wire Wire Line
-	5950 9750 5950 10050
-Wire Wire Line
-	4100 9750 5950 9750
-Connection ~ 4100 9750
 Text Label 4400 9900 2    50   ~ 0
 5V_REF
 Text Label 4650 9900 0    50   ~ 0
@@ -1345,7 +1284,7 @@ APPS2_5V
 Text Label 4450 10600 2    50   ~ 0
 APPS2_RTN
 Text Label 4650 10600 0    50   ~ 0
-GND
+GLV_RTN
 Text Label 1250 10600 0    50   ~ 0
 APPS1_RTN
 Text Label 1000 10600 2    50   ~ 0
@@ -1357,16 +1296,12 @@ APPS1_10V
 Text Label 1000 9900 2    50   ~ 0
 10V
 Wire Wire Line
-	2550 9750 4100 9750
-Wire Wire Line
-	2550 9750 2550 10050
-Wire Wire Line
-	4100 9650 4100 9750
+	2450 9500 2550 9500
 $Comp
 L Amplifier_Operational:TS912 U6
 U 2 1 5FD865B3
 P 6050 10350
-F 0 "U6" H 6100 10500 50  0000 C CNN
+F 0 "U6" H 6050 10350 50  0000 C CNN
 F 1 "TS912" H 6150 10200 50  0000 C CNN
 F 2 "" H 6050 10350 50  0001 C CNN
 F 3 "www.st.com/resource/en/datasheet/ts912.pdf" H 6050 10350 50  0001 C CNN
@@ -1395,13 +1330,13 @@ $EndComp
 $Comp
 L pspice:CAP C7
 U 1 1 5FD7E6B8
-P 4100 9400
-F 0 "C7" V 4200 9250 50  0000 C CNN
-F 1 "0.1u" V 4200 9550 50  0000 C CNN
-F 2 "" H 4100 9400 50  0001 C CNN
-F 3 "~" H 4100 9400 50  0001 C CNN
-	1    4100 9400
-	-1   0    0    1   
+P 2200 9500
+F 0 "C7" V 2300 9350 50  0000 C CNN
+F 1 "0.1u" V 2300 9650 50  0000 C CNN
+F 2 "" H 2200 9500 50  0001 C CNN
+F 3 "~" H 2200 9500 50  0001 C CNN
+	1    2200 9500
+	0    1    1    0   
 $EndComp
 Connection ~ 2050 10250
 Wire Wire Line
@@ -1411,7 +1346,7 @@ Wire Wire Line
 Wire Wire Line
 	2000 10250 2050 10250
 Text Label 2050 11000 0    50   ~ 0
-GND
+GLV_RTN
 Wire Wire Line
 	2050 11000 2050 10800
 $Comp
@@ -1427,7 +1362,7 @@ F 3 "~" H 2050 10550 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2300 10450 2350 10450
-Text Label 2550 9750 2    50   ~ 0
+Text Label 2550 9500 0    50   ~ 0
 10V
 Wire Wire Line
 	3000 10350 3300 10350
@@ -1454,9 +1389,7 @@ F 3 "~" H 1850 10250 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Text Label 2550 10750 0    50   ~ 0
-GND
-Wire Wire Line
-	2550 10750 2550 10650
+GLV_RTN
 Text Label 1700 10250 2    50   ~ 0
 APPS1
 $Comp
@@ -1468,17 +1401,6 @@ F 1 "TS912" H 2750 10200 50  0000 C CNN
 F 2 "" H 2650 10350 50  0001 C CNN
 F 3 "www.st.com/resource/en/datasheet/ts912.pdf" H 2650 10350 50  0001 C CNN
 	1    2650 10350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Amplifier_Operational:TS912 U46
-U 3 1 5FD7E68D
-P 2650 10350
-F 0 "U46" H 2608 10350 50  0001 L CNN
-F 1 "MCP6004" H 2608 10305 50  0001 L CNN
-F 2 "" H 2650 10350 50  0001 C CNN
-F 3 "www.st.com/resource/en/datasheet/ts912.pdf" H 2650 10350 50  0001 C CNN
-	3    2650 10350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1510,7 +1432,7 @@ Wire Wire Line
 Wire Wire Line
 	5400 10250 5450 10250
 Text Label 5450 11000 0    50   ~ 0
-GND
+GLV_RTN
 Wire Wire Line
 	5450 11000 5450 10800
 $Comp
@@ -1551,144 +1473,115 @@ F 3 "~" H 5250 10250 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Text Label 5950 10750 0    50   ~ 0
-GND
+GLV_RTN
 Wire Wire Line
 	5950 10750 5950 10650
 Text Label 5100 10250 2    50   ~ 0
 APPS2
-$Comp
-L Amplifier_Operational:TS912 U47
-U 3 1 5FD2DABD
-P 6050 10350
-F 0 "U47" H 6008 10350 50  0001 L CNN
-F 1 "MCP6004" H 6008 10305 50  0001 L CNN
-F 2 "" H 6050 10350 50  0001 C CNN
-F 3 "www.st.com/resource/en/datasheet/ts912.pdf" H 6050 10350 50  0001 C CNN
-	3    6050 10350
-	1    0    0    -1  
-$EndComp
 Wire Notes Line
-	550  11100 7200 11100
-Wire Notes Line
-	7200 8500 550  8500
-Wire Notes Line
-	7200 8500 7200 11100
-Wire Notes Line
-	550  8500 550  11100
-Text Notes 4650 8650 2    79   ~ 0
+	7200 8800 550  8800
+Text Notes 4650 9000 2    79   ~ 0
 APPS1_b & APPS2_b
-Text Label 13500 8600 0    50   ~ 0
+Text Label 13050 8600 0    50   ~ 0
 BRAKE_SWITCH(24V)
-Text Label 14600 8550 0    50   ~ 0
-GND
+Text Label 14150 8550 0    50   ~ 0
+GLV_RTN
 Wire Wire Line
-	14600 8550 14600 8600
-Connection ~ 14600 9000
+	14150 8550 14150 8600
+Connection ~ 14150 9000
 Wire Wire Line
-	14600 9000 14600 8900
+	14150 9000 14150 8900
 $Comp
 L Device:R R57
 U 1 1 609E809D
-P 14600 8750
-F 0 "R57" V 14500 8750 50  0000 C CNN
-F 1 "100K" V 14600 8750 50  0000 C CNN
-F 2 "" V 14530 8750 50  0001 C CNN
-F 3 "~" H 14600 8750 50  0001 C CNN
-	1    14600 8750
+P 14150 8750
+F 0 "R57" V 14050 8750 50  0000 C CNN
+F 1 "100K" V 14150 8750 50  0000 C CNN
+F 2 "" V 14080 8750 50  0001 C CNN
+F 3 "~" H 14150 8750 50  0001 C CNN
+	1    14150 8750
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R51
 U 1 1 60975D89
-P 14750 9000
-F 0 "R51" V 14650 9000 50  0000 C CNN
-F 1 "2.4K" V 14750 9000 50  0000 C CNN
-F 2 "" V 14680 9000 50  0001 C CNN
-F 3 "~" H 14750 9000 50  0001 C CNN
-	1    14750 9000
+P 14300 9000
+F 0 "R51" V 14200 9000 50  0000 C CNN
+F 1 "2.4K" V 14300 9000 50  0000 C CNN
+F 2 "" V 14230 9000 50  0001 C CNN
+F 3 "~" H 14300 9000 50  0001 C CNN
+	1    14300 9000
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	14050 9000 14600 9000
+	13600 9000 14150 9000
 Wire Wire Line
-	14900 9000 14950 9000
+	14450 9000 14500 9000
 Wire Notes Line
-	13300 8250 13300 9900
-Wire Notes Line
-	16000 8250 13300 8250
-Wire Notes Line
-	16000 9900 16000 8250
-Wire Notes Line
-	13300 9900 16000 9900
-Text Notes 14800 9450 0    50   ~ 0
+	12850 8250 12850 9900
+Text Notes 14350 9450 0    50   ~ 0
 Inv. signal\nCurr. Transfer ratio = 100 %
 Wire Wire Line
-	13500 9750 13500 9450
+	13050 9750 13050 9450
 Wire Wire Line
-	13500 8600 13500 8950
+	13050 8600 13050 8950
 $Comp
 L pspice:CAP C29
 U 1 1 5FDC04B0
-P 13500 9200
-F 0 "C29" H 13600 9050 50  0000 C CNN
-F 1 "0.1u" H 13600 9350 50  0000 C CNN
-F 2 "" H 13500 9200 50  0001 C CNN
-F 3 "~" H 13500 9200 50  0001 C CNN
-	1    13500 9200
+P 13050 9200
+F 0 "C29" H 13150 9050 50  0000 C CNN
+F 1 "0.1u" H 13150 9350 50  0000 C CNN
+F 2 "" H 13050 9200 50  0001 C CNN
+F 3 "~" H 13050 9200 50  0001 C CNN
+	1    13050 9200
 	1    0    0    -1  
 $EndComp
-Text Label 15600 9200 0    50   ~ 0
-GND
-Text Label 15600 9000 0    50   ~ 0
+Text Label 15150 9200 0    50   ~ 0
+GLV_RTN
+Text Label 15150 9000 0    50   ~ 0
 Brake_Pressed_uC
 Wire Wire Line
-	15600 9200 15550 9200
+	15150 9200 15100 9200
 Wire Wire Line
-	15600 9000 15550 9000
+	15150 9000 15100 9000
 $Comp
 L TSI_Rev.5-rescue:TLP293-CarMan_KiCAD_Library-TSI_Rev.5-rescue U23
 U 1 1 60D50797
-P 15250 9100
-F 0 "U23" H 15250 9425 50  0000 C CNN
-F 1 "TLP293" H 15250 9334 50  0000 C CNN
-F 2 "Package_SO:SOIC-4_4.55x2.6mm_P1.27mm" H 15050 8900 50  0001 L CIN
-F 3 "https://toshiba.semicon-storage.com/info/docget.jsp?did=12884&prodName=TLP291" H 15250 9100 50  0001 L CNN
-	1    15250 9100
+P 14800 9100
+F 0 "U23" H 14800 9425 50  0000 C CNN
+F 1 "TLP293" H 14800 9334 50  0000 C CNN
+F 2 "Package_SO:SOIC-4_4.55x2.6mm_P1.27mm" H 14600 8900 50  0001 L CIN
+F 3 "https://toshiba.semicon-storage.com/info/docget.jsp?did=12884&prodName=TLP291" H 14800 9100 50  0001 L CNN
+	1    14800 9100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	14050 9450 14050 9750
-Text Label 14050 9650 0    50   ~ 0
+	13600 9450 13600 9750
+Text Label 13600 9650 0    50   ~ 0
 Brake_Pressed_RTN
-Text Label 14050 9000 0    50   ~ 0
+Text Label 13600 9000 0    50   ~ 0
 Brake_Pressed
-Text Label 14950 9200 2    50   ~ 0
-GND
-Text Label 14050 9850 0    50   ~ 0
-GND
-Connection ~ 14050 9750
+Text Label 14500 9200 2    50   ~ 0
+GLV_RTN
+Text Label 13600 9850 0    50   ~ 0
+GLV_RTN
+Connection ~ 13600 9750
 Wire Wire Line
-	14050 9850 14050 9750
+	13600 9850 13600 9750
 Wire Wire Line
-	13500 9750 14050 9750
+	13050 9750 13600 9750
 Wire Wire Line
-	14050 9000 14050 9150
+	13600 9000 13600 9150
 Wire Wire Line
-	13500 8600 14050 8600
-Wire Notes Line
-	8450 10100 10700 10100
+	13050 8600 13600 8600
 Wire Notes Line
 	8450 10850 8450 10100
-Wire Notes Line
-	10700 10850 8450 10850
-Wire Notes Line
-	10700 10100 10700 10850
-Text Notes 14200 8400 0    87   ~ 0
+Text Notes 13750 8400 0    87   ~ 0
 BRAKE PRESSED
 Text Notes 9050 10200 0    59   ~ 0
 RED LED STATUS LIGHT
 Text Label 10500 10550 0    50   ~ 0
-GND
+GLV_RTN
 Wire Wire Line
 	10500 10550 10450 10550
 $Comp
@@ -1728,18 +1621,7 @@ Wire Wire Line
 	9050 10650 9050 10800
 Wire Wire Line
 	8900 10450 9100 10450
-$Comp
-L Amplifier_Operational:MCP6004 U50
-U 2 1 5FE04112
-P 9400 10550
-F 0 "U50" H 9450 10700 50  0000 C CNN
-F 1 "MCP6004" H 9550 10400 50  0000 C CNN
-F 2 "" H 9400 10550 50  0001 C CNN
-F 3 "www.st.com/resource/en/datasheet/ts912.pdf" H 9400 10550 50  0001 C CNN
-	2    9400 10550
-	1    0    0    -1  
-$EndComp
-Text Label 13500 8750 2    50   ~ 0
+Text Label 13050 8750 2    50   ~ 0
 24V
 Text HLabel 1600 1650 0    50   Input ~ 0
 BRAKE_SWITCH(24V)
@@ -1782,24 +1664,9 @@ APPS2_5V
 Wire Notes Line
 	500  500  2750 500 
 Wire Notes Line
-	2750 500  2750 3150
-Wire Notes Line
-	500  500  500  3150
-Wire Notes Line
 	500  3300 2750 3300
 Text Notes 12650 10350 0    157  ~ 0
 THROTTLE PLAUSIBILITY
-$Comp
-L Amplifier_Operational:MCP6004 U50
-U 1 1 5F9A2DA1
-P 6450 2200
-F 0 "U50" H 6450 2200 50  0000 C CNN
-F 1 "MCP6004" H 6450 2450 50  0000 C CNN
-F 2 "" H 6450 2200 50  0001 C CNN
-F 3 "www.st.com/resource/en/datasheet/ts912.pdf" H 6450 2200 50  0001 C CNN
-	1    6450 2200
-	1    0    0    -1  
-$EndComp
 $Comp
 L CarMan_KiCAD_Library:TS5A3159DBVT SW2
 U 1 1 5FB86D5A
@@ -1825,7 +1692,7 @@ $EndComp
 Wire Wire Line
 	13550 2300 13550 2400
 Text Label 13550 2300 2    50   ~ 0
-GND
+GLV_RTN
 Text Label 14100 2950 2    50   ~ 0
 Throttle_SEL
 Wire Wire Line
@@ -1894,4 +1761,155 @@ Wire Wire Line
 	1600 2650 1800 2650
 Text Label 1800 2650 0    50   ~ 0
 Drive_BTN
+Wire Notes Line
+	12850 8250 16000 8250
+Wire Notes Line
+	16000 8250 16000 9900
+Wire Notes Line
+	12850 9900 16000 9900
+Wire Notes Line
+	2750 500  2750 3300
+Wire Notes Line
+	500  500  500  3300
+$Comp
+L Amplifier_Operational:MCP6004 U3
+U 4 1 5FCAA11B
+P 7200 6250
+F 0 "U3" H 7200 6250 50  0000 C CNN
+F 1 "MCP6004" H 7350 6100 50  0000 C CNN
+F 2 "" H 7150 6350 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 7250 6450 50  0001 C CNN
+	4    7200 6250
+	1    0    0    -1  
+$EndComp
+Text Label 1750 4950 0    50   ~ 0
+GLV_RTN
+Text Label 950  4100 2    50   ~ 0
+GLV_RTN
+Text Label 1700 7850 0    50   ~ 0
+GLV_RTN
+Text Label 1800 9500 2    50   ~ 0
+GLV_RTN
+Wire Notes Line
+	8450 10100 10900 10100
+Wire Notes Line
+	8450 10850 10900 10850
+Wire Notes Line
+	10900 10100 10900 10850
+Wire Wire Line
+	10250 7000 10650 7000
+Wire Wire Line
+	5150 3150 5150 3100
+$Comp
+L Amplifier_Operational:TS912 U18
+U 1 1 5FDA3DB3
+P 1850 4550
+F 0 "U18" H 1950 4700 50  0000 C CNN
+F 1 "TS912" H 2000 4400 50  0000 C CNN
+F 2 "" H 1850 4550 50  0001 C CNN
+F 3 "www.st.com/resource/en/datasheet/ts912.pdf" H 1850 4550 50  0001 C CNN
+	1    1850 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:TS912 U18
+U 3 1 5FDEAC10
+P 1850 4550
+F 0 "U18" H 1808 4596 50  0001 L CNN
+F 1 "TS912" H 1808 4550 50  0001 L CNN
+F 2 "" H 1850 4550 50  0001 C CNN
+F 3 "www.st.com/resource/en/datasheet/ts912.pdf" H 1850 4550 50  0001 C CNN
+	3    1850 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:TS912 U6
+U 3 1 5FE30F43
+P 2650 10350
+F 0 "U6" H 2608 10350 50  0001 L CNN
+F 1 "TS912" H 2608 10305 50  0001 L CNN
+F 2 "" H 2650 10350 50  0001 C CNN
+F 3 "www.st.com/resource/en/datasheet/ts912.pdf" H 2650 10350 50  0001 C CNN
+	3    2650 10350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 10750 2550 10650
+Wire Wire Line
+	2550 9500 2550 10050
+Wire Notes Line
+	7200 11100 7200 8800
+Wire Notes Line
+	550  8800 550  11100
+Wire Notes Line
+	550  11100 7200 11100
+$Comp
+L Amplifier_Operational:TS912 U18
+U 2 1 5FFB89C5
+P 6450 2200
+F 0 "U18" H 6450 2200 50  0000 C CNN
+F 1 "TS912" H 6550 2050 50  0000 C CNN
+F 2 "" H 6450 2200 50  0001 C CNN
+F 3 "www.st.com/resource/en/datasheet/ts912.pdf" H 6450 2200 50  0001 C CNN
+	2    6450 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R8
+U 1 1 5FFF96B1
+P 6100 1700
+F 0 "R8" V 6000 1700 50  0000 C CNN
+F 1 "10K" V 6124 1700 50  0000 C BNN
+F 2 "" V 6030 1700 50  0001 C CNN
+F 3 "~" H 6100 1700 50  0001 C CNN
+	1    6100 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 2100 6100 1850
+Connection ~ 6100 2100
+Wire Wire Line
+	6100 2100 6150 2100
+Wire Wire Line
+	6100 1350 6100 1550
+Text Label 6100 1350 0    50   ~ 0
+GLV_RTN
+$Comp
+L Amplifier_Operational:MCP6004 U50
+U 2 1 5FB98A0D
+P 9400 10550
+F 0 "U50" H 9400 10550 50  0000 C CNN
+F 1 "MCP6004" H 9500 10700 50  0000 C CNN
+F 2 "" H 9350 10650 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 9450 10750 50  0001 C CNN
+	2    9400 10550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:MCP6004 U50
+U 5 1 600578D9
+P 11800 2900
+F 0 "U50" H 11758 2946 50  0001 L CNN
+F 1 "MCP6004" H 11758 2900 50  0001 L CNN
+F 2 "" H 11750 3000 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 11850 3100 50  0001 C CNN
+	5    11800 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L CarMan_KiCAD_Library:TS372CDT U22
+U 1 1 600A89AE
+P 9450 1450
+F 0 "U22" H 9450 1900 50  0000 C CNN
+F 1 "TS372CDT" H 9450 800 50  0000 C CNN
+F 2 "SOIC127P600X175-8N" H 9450 1450 50  0001 L BNN
+F 3 "https://www.st.com/resource/en/datasheet/ts372.pdf" H 9450 1450 50  0001 L BNN
+F 4 "1094371" H 9450 1450 50  0001 L BNN "OC_FARNELL"
+F 5 "STMICROELECTRONICS" H 9450 1450 50  0001 L BNN "SUPPLIER"
+F 6 "8-SOIC" H 9450 1450 50  0001 L BNN "PACKAGE"
+F 7 "26M4441" H 9450 1450 50  0001 L BNN "OC_NEWARK"
+F 8 "TS372CDT" H 9450 1450 50  0001 L BNN "MPN"
+	1    9450 1450
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
