@@ -109,7 +109,7 @@ $EndComp
 Wire Wire Line
 	7100 1400 8600 1400
 $Comp
-L Lafayette_Electric_Car_Internals:LT1763CS8-3.3PBF U?
+L Logic-rescue:LT1763CS8-3.3PBF-Lafayette_Electric_Car_Internals U?
 U 1 1 5FAF664A
 P 7900 2250
 AR Path="/5FAF664A" Ref="U?"  Part="1" 

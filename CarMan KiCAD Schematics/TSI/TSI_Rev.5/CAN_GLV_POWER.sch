@@ -384,12 +384,12 @@ Wire Wire Line
 	15200 2550 15050 2550
 Text Label 15050 2550 2    50   ~ 0
 Cooling_power
-Text Label 15200 3100 0    50   ~ 0
+Text Label 15200 3300 0    50   ~ 0
 Cooling_CTRL
-Text HLabel 15050 3100 0    50   Input ~ 0
+Text HLabel 15050 3300 0    50   Input ~ 0
 Cooling_CTRL
 Wire Wire Line
-	15200 3100 15050 3100
+	15200 3300 15050 3300
 Wire Wire Line
 	900  1250 1400 1250
 Text Label 1400 1250 0    50   ~ 0
@@ -540,13 +540,9 @@ BOT_In
 Text Notes 14800 750  0    98   ~ 0
 SIGNALS
 Wire Notes Line
-	14150 3250 16000 3250
-Wire Notes Line
-	16000 3250 16000 550 
+	14150 3450 16000 3450
 Wire Notes Line
 	16000 550  14150 550 
-Wire Notes Line
-	14150 550  14150 3250
 Text Notes 4400 5600 0    47   ~ 0
 DC/DC Converter\n9V-36V to 5V/-5V
 Wire Wire Line
@@ -982,14 +978,24 @@ DC/DC Converter 24V to 12V 10A
 Wire Wire Line
 	5300 5050 6000 5050
 $Comp
-L power:PWR_FLAG #FLG?
+L power:PWR_FLAG #FLG0103
 U 1 1 60AD6C72
 P 6000 5050
-F 0 "#FLG?" H 6000 5125 50  0001 C CNN
+F 0 "#FLG0103" H 6000 5125 50  0001 C CNN
 F 1 "PWR_FLAG" H 6000 5223 50  0000 C CNN
 F 2 "" H 6000 5050 50  0001 C CNN
 F 3 "~" H 6000 5050 50  0001 C CNN
 	1    6000 5050
 	1    0    0    -1  
 $EndComp
+Text Label 15200 3200 0    50   ~ 0
+12V
+Text HLabel 15050 3200 0    50   Input ~ 0
+12V
+Wire Wire Line
+	15200 3200 15050 3200
+Wire Notes Line
+	16000 550  16000 3450
+Wire Notes Line
+	14150 550  14150 3450
 $EndSCHEMATC

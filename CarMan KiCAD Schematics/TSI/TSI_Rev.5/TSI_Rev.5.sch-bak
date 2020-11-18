@@ -309,24 +309,16 @@ Wire Wire Line
 	10500 5600 10350 5600
 Text Label 10500 5600 0    50   ~ 0
 Cooling_power
-Text Label 6600 2700 2    50   ~ 0
+Text Label 6700 3150 2    50   ~ 0
 SCL_TSI
-Text Label 6600 2800 2    50   ~ 0
+Text Label 6700 3250 2    50   ~ 0
 SDA_TSI
-Text Label 6600 3000 2    50   ~ 0
+Text Label 6700 3450 2    50   ~ 0
 Safety_Loop
-Text Label 6600 3100 2    50   ~ 0
+Text Label 6700 3550 2    50   ~ 0
 Cooling_CTRL
-Text Label 6600 3200 2    50   ~ 0
+Text Label 6700 3650 2    50   ~ 0
 Throttle_SEL
-Text Label 6600 3300 2    50   ~ 0
-PC_Ready
-Text Label 7350 3300 0    50   ~ 0
-RTDS_CTRL
-Text Label 7350 3200 0    50   ~ 0
-CAN+_Logic
-Text Label 7350 3100 0    50   ~ 0
-CAN-_Logic
 Wire Wire Line
 	4950 3100 5400 3100
 Text Label 4950 3100 2    50   ~ 0
@@ -582,7 +574,7 @@ Wire Wire Line
 	10450 3450 10600 3450
 Wire Wire Line
 	10450 3150 10600 3150
-Text Notes 6700 3550 0    50   ~ 0
+Text Notes 6700 3800 0    50   ~ 0
 TSI-Logic Connection\n
 Text Label 7900 650  2    50   ~ 0
 BP_CAN+
@@ -618,11 +610,11 @@ Text Label 10600 3550 0    50   ~ 0
 Drive_BTN_RTN
 Text Label 10600 3650 0    50   ~ 0
 Drive_BTN
-Text Label 9150 3750 2    50   ~ 0
+Text Label 9000 3750 2    50   ~ 0
 IMD_Fault_LED
-Text Label 9150 3850 2    50   ~ 0
+Text Label 9000 3850 2    50   ~ 0
 AMS_Fault_LED
-Text Label 9150 3950 2    50   ~ 0
+Text Label 9000 3950 2    50   ~ 0
 FAULT_LED_RTN
 $Comp
 L TSI_Rev.5-rescue:Current_Sensor-CarMan_KiCAD_Library-TSI_Rev.5-rescue J?
@@ -724,8 +716,6 @@ Text Label 10500 5200 0    50   ~ 0
 CAN_L
 Wire Wire Line
 	10500 5200 10350 5200
-Text Label 7350 3000 0    50   ~ 0
-SR_CTRL
 Wire Wire Line
 	10500 5300 10350 5300
 Text Label 10500 5300 0    50   ~ 0
@@ -758,10 +748,6 @@ Wire Notes Line
 	5500 6100 5500 7450
 Text Notes 9500 1200 0    50   ~ 0
 TSI to Cooling\nRelay\n
-Text Label 7350 2900 0    50   ~ 0
-5V
-Text Label 7350 2800 0    50   ~ 0
-GLV_RTN
 Text Notes 4850 3850 0    50   ~ 0
 Battery Pack\nCAN Lines\n
 Wire Notes Line
@@ -1057,7 +1043,7 @@ Text Label 9700 850  2    49   ~ 0
 COOL_24V
 Text Label 9700 950  2    49   ~ 0
 GLV_RTN
-Text Label 7350 2700 0    50   ~ 0
+Text Label 7400 3150 0    50   ~ 0
 AMS_Fault
 Text Label 2650 1950 2    49   ~ 0
 GEN_Fault_LED
@@ -1069,7 +1055,7 @@ Text Label 5450 2850 0    49   ~ 0
 MRESET_Contact
 Text Label 4700 2850 2    49   ~ 0
 GEN_Fault_LED
-Text Label 6600 2900 2    49   ~ 0
+Text Label 6700 3350 2    49   ~ 0
 5V_ISO_RTN
 $Sheet
 S 1350 3300 1400 1400
@@ -1128,6 +1114,7 @@ F20 "SR_CTRL" O R 10350 5300 50
 F21 "MRESET_Contact" O L 9150 5800 50 
 F22 "5V_ISO_RTN" O R 10350 5700 50 
 F23 "BOT_In" O R 10350 5800 50 
+F24 "12V" I R 10350 5900 50 
 $EndSheet
 Text Label 9000 4800 2    50   ~ 0
 CANTX
@@ -1183,28 +1170,6 @@ Wire Wire Line
 Text Label 1250 4600 2    50   ~ 0
 Drive_BTN
 $Comp
-L Connector_Generic:Conn_01x08 J13.1
-U 1 1 5FE0F91D
-P 6800 3000
-F 0 "J13.1" H 6750 3450 50  0000 L CNN
-F 1 "Conn_01x08" H 6880 2901 50  0001 L CNN
-F 2 "" H 6800 3000 50  0001 C CNN
-F 3 "~" H 6800 3000 50  0001 C CNN
-	1    6800 3000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x08 J13.2
-U 1 1 5FE10A15
-P 7150 3000
-F 0 "J13.2" H 7068 3425 50  0000 C CNN
-F 1 "Conn_01x08" H 7230 2901 50  0001 L CNN
-F 2 "" H 7150 3000 50  0001 C CNN
-F 3 "~" H 7150 3000 50  0001 C CNN
-	1    7150 3000
-	-1   0    0    -1  
-$EndComp
-$Comp
 L Connector_Generic:Conn_01x06 J10
 U 1 1 5FA1229F
 P 2850 1850
@@ -1228,8 +1193,6 @@ F 3 "~" H 10300 650 50  0001 C CNN
 	1    10300 650 
 	1    0    0    -1  
 $EndComp
-NoConn ~ 7350 3400
-NoConn ~ 6600 3400
 Wire Wire Line
 	10600 750  10300 750 
 $Comp
@@ -1295,4 +1258,46 @@ Text Label 10600 3750 0    50   ~ 0
 RTDS
 Text Label 10600 4150 0    50   ~ 0
 RTDS_RTN
+Wire Wire Line
+	10500 5900 10350 5900
+Text Label 10500 5900 0    50   ~ 0
+12V_Cooling
+Wire Wire Line
+	9150 3750 9000 3750
+Wire Wire Line
+	9150 3850 9000 3850
+Wire Wire Line
+	9150 3950 9000 3950
+Text Label 7400 3650 0    50   ~ 0
+PC_Ready
+Text Label 7400 3250 0    50   ~ 0
+SR_CTRL
+Text Label 7400 3350 0    50   ~ 0
+CAN-_Logic
+Text Label 7400 3450 0    50   ~ 0
+CAN+_Logic
+Text Label 7400 3550 0    50   ~ 0
+RTDS_CTRL
+$Comp
+L Connector_Generic:Conn_01x06 J13.2
+U 1 1 5FC777B8
+P 7200 3350
+F 0 "J13.2" H 7100 3650 50  0000 L CNN
+F 1 "Conn_01x06" H 7280 3251 50  0001 L CNN
+F 2 "" H 7200 3350 50  0001 C CNN
+F 3 "~" H 7200 3350 50  0001 C CNN
+	1    7200 3350
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x06 J13.1
+U 1 1 5FC77F26
+P 6900 3350
+F 0 "J13.1" H 6800 3650 50  0000 L CNN
+F 1 "Conn_01x06" H 6980 3251 50  0001 L CNN
+F 2 "" H 6900 3350 50  0001 C CNN
+F 3 "~" H 6900 3350 50  0001 C CNN
+	1    6900 3350
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

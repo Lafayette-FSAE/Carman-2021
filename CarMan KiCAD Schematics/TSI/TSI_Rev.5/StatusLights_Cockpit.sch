@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 7
+Sheet 7 7
 Title ""
 Date ""
 Rev ""
@@ -126,65 +126,65 @@ Wire Wire Line
 Wire Wire Line
 	6450 1300 6450 1150
 Connection ~ 5900 1300
-Text HLabel 1200 650  0    50   Input ~ 0
+Text HLabel 1250 800  0    50   Input ~ 0
 BP
-Text HLabel 1200 750  0    50   Input ~ 0
+Text HLabel 1250 900  0    50   Input ~ 0
 BP_RTN
-Text HLabel 1200 850  0    50   Input ~ 0
+Text HLabel 1250 1000 0    50   Input ~ 0
 IMD_Status
-Text HLabel 1200 950  0    50   Input ~ 0
+Text HLabel 1250 1100 0    50   Input ~ 0
 RTDS_CTRL
-Text HLabel 1200 1050 0    50   Input ~ 0
+Text HLabel 1250 1200 0    50   Input ~ 0
 D_LED_CTRL
-Text HLabel 1200 1150 0    50   Input ~ 0
+Text HLabel 1250 1300 0    50   Input ~ 0
 SPARE_LED_CTRL
-Text HLabel 1200 1750 0    50   Input ~ 0
+Text HLabel 1250 1600 0    50   Input ~ 0
 24V
-Text HLabel 1200 2050 0    50   Input ~ 0
+Text HLabel 1250 1900 0    50   Input ~ 0
 GLV_RTN
-Text HLabel 1200 1950 0    50   Input ~ 0
+Text HLabel 1250 1800 0    50   Input ~ 0
 3.3V
-Text HLabel 1200 1850 0    50   Input ~ 0
+Text HLabel 1250 1700 0    50   Input ~ 0
 5V
 Wire Wire Line
-	1200 650  1350 650 
+	1250 800  1400 800 
 Wire Wire Line
-	1200 750  1350 750 
+	1250 900  1400 900 
 Wire Wire Line
-	1200 850  1350 850 
+	1250 1000 1400 1000
 Wire Wire Line
-	1200 950  1350 950 
+	1250 1100 1400 1100
 Wire Wire Line
-	1200 1050 1350 1050
+	1250 1200 1400 1200
 Wire Wire Line
-	1200 1150 1350 1150
+	1250 1300 1400 1300
 Wire Wire Line
-	1200 1750 1350 1750
+	1250 1600 1400 1600
 Wire Wire Line
-	1200 2050 1350 2050
+	1250 1900 1400 1900
 Wire Wire Line
-	1200 1950 1350 1950
+	1250 1800 1400 1800
 Wire Wire Line
-	1200 1850 1350 1850
-Text Label 1350 650  0    50   ~ 0
+	1250 1700 1400 1700
+Text Label 1400 800  0    50   ~ 0
 BP
-Text Label 1350 750  0    50   ~ 0
+Text Label 1400 900  0    50   ~ 0
 BP_RTN
-Text Label 1350 850  0    50   ~ 0
+Text Label 1400 1000 0    50   ~ 0
 IMD_Status
-Text Label 1350 950  0    50   ~ 0
+Text Label 1400 1100 0    50   ~ 0
 RTDS_CTRL
-Text Label 1350 1050 0    50   ~ 0
+Text Label 1400 1200 0    50   ~ 0
 D_LED_CTRL
-Text Label 1350 1150 0    50   ~ 0
+Text Label 1400 1300 0    50   ~ 0
 SPARE_LED_CTRL
-Text Label 1350 1750 0    50   ~ 0
+Text Label 1400 1600 0    50   ~ 0
 24V
-Text Label 1350 2050 0    50   ~ 0
+Text Label 1400 1900 0    50   ~ 0
 GLV_RTN
-Text Label 1350 1950 0    50   ~ 0
+Text Label 1400 1800 0    50   ~ 0
 3.3V
-Text Label 1350 1850 0    50   ~ 0
+Text Label 1400 1700 0    50   ~ 0
 5V
 $Comp
 L Device:R R15
@@ -505,39 +505,39 @@ Wire Notes Line
 	8150 4900 8200 4900
 Wire Notes Line
 	8350 5000 8200 5000
-Text HLabel 1200 2250 0    50   Input ~ 0
+Text HLabel 1250 2000 0    50   Input ~ 0
 TSAL
-Text HLabel 1200 2450 0    50   Input ~ 0
+Text HLabel 1250 2200 0    50   Input ~ 0
 TSAL_RTN
 Wire Wire Line
-	1200 2250 1350 2250
+	1250 2000 1400 2000
 Wire Wire Line
-	1200 2450 1350 2450
-Text Label 1350 2250 0    50   ~ 0
+	1250 2200 1400 2200
+Text Label 1400 2000 0    50   ~ 0
 TSAL
-Text Label 1350 2450 0    50   ~ 0
+Text Label 1400 2200 0    50   ~ 0
 TSAL_RTN
-Text HLabel 1200 2350 0    50   Input ~ 0
+Text HLabel 1250 2100 0    50   Input ~ 0
 TSAL_Cockpit
 Wire Wire Line
-	1200 2350 1350 2350
-Text Label 1350 2350 0    50   ~ 0
+	1250 2100 1400 2100
+Text Label 1400 2100 0    50   ~ 0
 TSAL_Cockpit
 Text Label 10200 2350 2    50   ~ 0
 GLV_RTN
 Wire Wire Line
 	10200 1450 10200 1650
-Text HLabel 1200 2650 0    50   Input ~ 0
+Text HLabel 1250 2400 0    50   Input ~ 0
 Drive_BTN_RTN
 Wire Wire Line
-	1200 2650 1350 2650
-Text Label 1350 2650 0    50   ~ 0
+	1250 2400 1400 2400
+Text Label 1400 2400 0    50   ~ 0
 Drive_BTN_RTN
-Text HLabel 1200 2550 0    50   Input ~ 0
+Text HLabel 1250 2300 0    50   Input ~ 0
 Drive_BTN
 Wire Wire Line
-	1200 2550 1350 2550
-Text Label 1350 2550 0    50   ~ 0
+	1250 2300 1400 2300
+Text Label 1400 2300 0    50   ~ 0
 Drive_BTN
 Wire Wire Line
 	5050 3250 4850 3250
@@ -581,16 +581,26 @@ Text Label 8050 6150 0    50   ~ 0
 GLV_RTN
 Wire Wire Line
 	8050 6150 8050 5950
-Text HLabel 1200 1250 0    50   Input ~ 0
+Text HLabel 1250 1400 0    50   Input ~ 0
 RTDS
 Wire Wire Line
-	1200 1250 1350 1250
-Text Label 1350 1250 0    50   ~ 0
+	1250 1400 1400 1400
+Text Label 1400 1400 0    50   ~ 0
 RTDS
-Text Label 1350 1350 0    50   ~ 0
+Text Label 1400 1500 0    50   ~ 0
 RTDS_RTN
-Text HLabel 1200 1350 0    50   Input ~ 0
+Text HLabel 1250 1500 0    50   Input ~ 0
 RTDS_RTN
 Wire Wire Line
-	1200 1350 1350 1350
+	1250 1500 1400 1500
+Wire Notes Line
+	2100 500  500  500 
+Wire Notes Line
+	500  2500 2100 2500
+Wire Notes Line
+	2100 500  2100 2500
+Wire Notes Line
+	500  500  500  2500
+Text Notes 1050 650  0    94   ~ 0
+SIGNALS\n
 $EndSCHEMATC
