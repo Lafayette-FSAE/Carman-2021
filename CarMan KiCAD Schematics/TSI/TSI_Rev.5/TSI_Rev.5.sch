@@ -13,11 +13,11 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Label 9550 1700 2    50   ~ 0
+Text Label 9050 1850 0    50   ~ 0
 Flowrate_RTN
-Text Label 9550 1900 2    50   ~ 0
+Text Label 9050 2050 0    50   ~ 0
 CoolTemp_RTN
-Text Label 9550 1800 2    50   ~ 0
+Text Label 9050 1950 0    50   ~ 0
 CoolTemp
 Text Label 1150 750  0    50   ~ 0
 DC_RELAY-
@@ -25,10 +25,6 @@ Text Label 1150 650  0    50   ~ 0
 DC_RELAY+
 Text Label 8350 650  0    50   ~ 0
 Drive_BTN
-Text Label 7550 1650 2    50   ~ 0
-BRAKE_SWITCH(24V)
-Text Label 7550 1750 2    50   ~ 0
-BP(BRAKE_SWITCH_RTN)
 Text Notes 3250 2150 0    50   ~ 0
 SL->Accumulator\n
 Text Label 5800 2150 0    50   ~ 0
@@ -55,7 +51,7 @@ Text Label 3100 1950 0    50   ~ 0
 AIRS-
 Text Label 3100 1850 0    50   ~ 0
 AIRS+
-Text Notes 2450 1050 0    50   ~ 0
+Text Notes 2200 1050 0    50   ~ 0
 Precharge Relay\n\n\n
 Text Label 3900 1850 0    50   ~ 0
 GLV_RTN
@@ -68,14 +64,14 @@ IMD\n
 Text Label 6100 950  0    50   ~ 0
 IMD_MHS
 Text Label 6100 650  0    50   ~ 0
-IMD_STATUS
-Text Label 5600 950  2    50   ~ 0
+IMD_Status
+Text Label 5300 950  0    50   ~ 0
 GLV_RTN
-Text Label 5600 850  2    50   ~ 0
+Text Label 5300 850  0    50   ~ 0
 GLV_RTN
-Text Label 5600 750  2    50   ~ 0
+Text Label 5300 750  0    50   ~ 0
 24V
-Text Label 5600 650  2    50   ~ 0
+Text Label 5300 650  0    50   ~ 0
 GLV_RTN
 Wire Wire Line
 	2750 4100 2850 4100
@@ -260,8 +256,6 @@ Wire Wire Line
 Wire Wire Line
 	9150 4900 9000 4900
 Wire Wire Line
-	9150 5200 9000 5200
-Wire Wire Line
 	9150 5300 9000 5300
 Wire Wire Line
 	9150 5400 9000 5400
@@ -273,7 +267,7 @@ Wire Wire Line
 	9150 5700 9000 5700
 Text Label 9000 4900 2    50   ~ 0
 CANRX
-Text Label 9000 5200 2    50   ~ 0
+Text Label 8550 5200 0    50   ~ 0
 10V
 Text Label 9000 5300 2    50   ~ 0
 5V
@@ -303,17 +297,13 @@ Text Label 6700 3550 2    50   ~ 0
 Cooling_CTRL
 Text Label 6700 3650 2    50   ~ 0
 Throttle_SEL
-Wire Wire Line
-	4950 3100 5400 3100
-Text Label 4950 3100 2    50   ~ 0
+Text Label 4200 4000 0    50   ~ 0
 Flowrate_5V
-Text Label 5400 3100 0    50   ~ 0
+Text Label 5750 4000 2    50   ~ 0
 5V
-Wire Wire Line
-	4950 3250 5400 3250
-Text Label 4950 3250 2    50   ~ 0
+Text Label 4200 4100 0    50   ~ 0
 Flowrate_RTN
-Text Label 5400 3250 0    50   ~ 0
+Text Label 5750 4100 2    50   ~ 0
 GLV_RTN
 Wire Wire Line
 	1350 4200 700  4200
@@ -385,7 +375,7 @@ Text Label 550  650  0    50   ~ 0
 MC+
 Text Label 550  850  0    50   ~ 0
 HV+
-NoConn ~ 9550 2000
+NoConn ~ 9600 2150
 $Comp
 L Connector_Generic:Conn_01x02 J3
 U 1 1 5FF3B112
@@ -414,7 +404,7 @@ Text Label 2100 750  0    50   ~ 0
 PC_RELAY-
 Text Label 2100 650  0    50   ~ 0
 PC_RELAY+
-Text Notes 1450 900  0    50   ~ 0
+Text Notes 1250 900  0    50   ~ 0
 Discharge Relay
 $Comp
 L Connector_Generic:Conn_02x04_Counter_Clockwise J5
@@ -466,18 +456,18 @@ Text Notes 4400 7700 0    79   ~ 0
 TSI J1 & TSI J25 (Current Sensor)\n
 Wire Notes Line
 	1350 6250 2900 6250
-Text Label 3500 900  2    50   ~ 0
+Text Label 3100 900  0    50   ~ 0
 IO_Ground
 Text Label 4000 1000 0    50   ~ 0
 Throttle_HV
-Text Label 3500 700  2    50   ~ 0
+Text Label 3100 700  0    50   ~ 0
 IGNI_GND
-Text Label 3500 800  2    50   ~ 0
+Text Label 3100 800  0    50   ~ 0
 IGNI_VCC
 Text Notes 3600 1250 0    50   ~ 0
 Motor Controller\nPins
 NoConn ~ 3500 1000
-Text Label 4000 700  0    50   ~ 0
+Text Label 4650 700  2    50   ~ 0
 Brake_Pressed_HV
 $Comp
 L Device:Jumper_NC_Dual JP?
@@ -564,27 +554,10 @@ Text Label 7400 650  0    50   ~ 0
 BP_CAN+
 Text Label 7400 850  0    50   ~ 0
 CAN_Shield
-Text Label 7400 1150 0    50   ~ 0
-Sloop_EN2
-Text Label 7400 1050 0    50   ~ 0
-Sloop_EN1
 Text Label 7400 950  0    50   ~ 0
 Chassis_GND
 Text Label 7400 750  0    50   ~ 0
 BP_CAN-
-$Comp
-L Connector_Generic:Conn_01x06 J6
-U 1 1 5F9A4488
-P 8100 850
-F 0 "J6" H 8050 1150 50  0000 L CNN
-F 1 "J6" H 8050 1150 50  0001 L CNN
-F 2 "" H 8100 850 50  0001 C CNN
-F 3 "~" H 8100 850 50  0001 C CNN
-	1    8100 850 
-	1    0    0    -1  
-$EndComp
-Text Notes 7850 1450 0    50   ~ 0
-Battery Pack\nto TSI\n\n
 NoConn ~ 4500 1950
 Wire Wire Line
 	10450 3550 10600 3550
@@ -685,36 +658,34 @@ Wire Wire Line
 Text Label 9000 5800 2    50   ~ 0
 MRESET_Contact
 Wire Wire Line
-	4950 4000 5250 4000
+	4900 3500 5200 3500
 Wire Wire Line
-	4950 4100 5250 4100
-Text Label 4950 4000 2    50   ~ 0
+	4900 3600 5200 3600
+Text Label 4900 3500 2    50   ~ 0
 CAN+_Logic
-Text Label 5250 4000 0    50   ~ 0
+Text Label 5200 3500 0    50   ~ 0
 BP_CAN+
-Text Label 5250 4100 0    50   ~ 0
+Text Label 5200 3600 0    50   ~ 0
 BP_CAN-
-Text Label 4950 4100 2    50   ~ 0
+Text Label 4900 3600 2    50   ~ 0
 CAN-_Logic
 Wire Notes Line
 	5500 6100 5500 7450
 Text Notes 9500 1200 0    50   ~ 0
 TSI to Cooling\nRelay\n
-Text Notes 4850 3850 0    50   ~ 0
+Text Notes 4800 3350 0    50   ~ 0
 Battery Pack\nCAN Lines\n
 Wire Notes Line
-	4450 4150 5650 4150
+	4400 3650 5600 3650
 Wire Notes Line
-	5650 3650 4450 3650
+	5600 3150 4400 3150
 Wire Notes Line
-	4450 3650 4450 4150
+	4400 3150 4400 3650
 Wire Notes Line
-	5650 3650 5650 4150
-Wire Wire Line
-	5100 3350 5400 3350
-Text Label 5400 3350 0    50   ~ 0
+	5600 3150 5600 3650
+Text Label 5750 4200 2    50   ~ 0
 GLV_RTN
-Text Label 5100 3350 2    50   ~ 0
+Text Label 4200 4200 0    50   ~ 0
 FAULT_LED_RTN
 Text Label 7950 1750 0    50   ~ 0
 Brake_Light_RTN
@@ -806,12 +777,12 @@ $EndComp
 $Comp
 L Connector_Generic:Conn_01x06 J18
 U 1 1 5FCAFAF8
-P 9750 1700
-F 0 "J18" H 9700 2000 50  0000 L CNN
-F 1 "J18" H 9700 2000 50  0001 L CNN
-F 2 "" H 9750 1700 50  0001 C CNN
-F 3 "~" H 9750 1700 50  0001 C CNN
-	1    9750 1700
+P 9800 1850
+F 0 "J18" H 9750 2150 50  0000 L CNN
+F 1 "J18" H 9750 2150 50  0001 L CNN
+F 2 "" H 9800 1850 50  0001 C CNN
+F 3 "~" H 9800 1850 50  0001 C CNN
+	1    9800 1850
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -838,7 +809,7 @@ F 3 "~" H 3700 800 50  0001 C CNN
 	1    3700 800 
 	1    0    0    -1  
 $EndComp
-Text Notes 9450 2150 0    47   ~ 0
+Text Notes 9500 2300 0    47   ~ 0
 Cooling Sensors\n
 NoConn ~ 8700 950 
 $Comp
@@ -873,31 +844,29 @@ AMS_FAULT_LED
 $Comp
 L Connector_Generic:Conn_01x06 J19
 U 1 1 5FE0EFE1
-P 10850 1700
-F 0 "J19" H 10800 2000 50  0000 L CNN
-F 1 "J19" H 10800 2000 50  0001 L CNN
-F 2 "" H 10850 1700 50  0001 C CNN
-F 3 "~" H 10850 1700 50  0001 C CNN
-	1    10850 1700
+P 10950 1850
+F 0 "J19" H 10900 2150 50  0000 L CNN
+F 1 "J19" H 10900 2150 50  0001 L CNN
+F 2 "" H 10950 1850 50  0001 C CNN
+F 3 "~" H 10950 1850 50  0001 C CNN
+	1    10950 1850
 	1    0    0    -1  
 $EndComp
-Text Notes 10700 2300 0    50   ~ 0
+Text Notes 10800 2450 0    50   ~ 0
 Testing\nConnector\n\n
-Text Label 10150 1600 0    50   ~ 0
+Text Label 10250 1750 0    50   ~ 0
 SCL
-Text Label 10150 1800 0    50   ~ 0
+Text Label 10250 1950 0    50   ~ 0
 SL_1In
-Text Label 10150 1900 0    50   ~ 0
+Text Label 10250 2050 0    50   ~ 0
 IMD_Status
-Text Label 10150 2000 0    50   ~ 0
+Text Label 10250 2150 0    50   ~ 0
 Throttle_SEL
-Text Label 10150 1700 0    50   ~ 0
+Text Label 10250 1850 0    50   ~ 0
 PC_Ready
-Text Label 10150 1500 0    50   ~ 0
+Text Label 10250 1650 0    50   ~ 0
 SDA
-Text Label 9550 1600 2    50   ~ 0
-Flowrate_5V
-Text Label 9550 1500 2    50   ~ 0
+Text Label 9050 1650 0    50   ~ 0
 Flowrate
 $Comp
 L Connector_Generic:Conn_01x04 J8
@@ -918,15 +887,13 @@ Text Label 9250 850  0    49   ~ 0
 COOL_24V
 Text Label 9250 950  0    49   ~ 0
 GLV_RTN
-Text Label 7400 3150 0    50   ~ 0
+Text Label 7350 3150 0    50   ~ 0
 AMS_Fault
 Text Label 2050 2150 0    50   ~ 0
 Safety_Loop
-Wire Wire Line
-	4700 2850 5450 2850
-Text Label 5450 2850 0    49   ~ 0
+Text Label 5750 3900 2    49   ~ 0
 MRESET_Contact
-Text Label 4700 2850 2    49   ~ 0
+Text Label 4200 3900 0    49   ~ 0
 GEN_Fault_LED
 Text Label 6700 3350 2    49   ~ 0
 5V_ISO_RTN
@@ -1060,17 +1027,13 @@ F 3 "~" H 10500 750 50  0001 C CNN
 	1    10500 750 
 	0    -1   -1   0   
 $EndComp
-Text Label 5800 2700 2    50   ~ 0
+Text Label 5750 3800 2    50   ~ 0
 Brake_Light
-Wire Wire Line
-	4850 2700 5800 2700
-Text Label 4850 2700 2    50   ~ 0
+Text Label 4200 3800 0    50   ~ 0
 Brake_Pressed
-Text Label 5100 3450 2    50   ~ 0
+Text Label 4200 4300 0    50   ~ 0
 Brake_Light_RTN
-Wire Wire Line
-	5100 3450 5400 3450
-Text Label 5400 3450 0    50   ~ 0
+Text Label 5750 4300 2    50   ~ 0
 GLV_RTN
 $Sheet
 S 9150 3100 1300 1400
@@ -1110,25 +1073,25 @@ Text Label 10600 4150 0    50   ~ 0
 RTDS_RTN
 Wire Wire Line
 	9150 3950 9000 3950
-Text Label 7400 3650 0    50   ~ 0
+Text Label 7350 3650 0    50   ~ 0
 PC_Ready
-Text Label 7400 3250 0    50   ~ 0
+Text Label 7350 3250 0    50   ~ 0
 SR_CTRL
-Text Label 7400 3350 0    50   ~ 0
+Text Label 7350 3350 0    50   ~ 0
 CAN-_Logic
-Text Label 7400 3450 0    50   ~ 0
+Text Label 7350 3450 0    50   ~ 0
 CAN+_Logic
-Text Label 7400 3550 0    50   ~ 0
+Text Label 7350 3550 0    50   ~ 0
 RTDS_CTRL
 $Comp
 L Connector_Generic:Conn_01x06 J13.2
 U 1 1 5FC777B8
-P 7200 3350
-F 0 "J13.2" H 7100 3650 50  0000 L CNN
-F 1 "Conn_01x06" H 7280 3251 50  0001 L CNN
-F 2 "" H 7200 3350 50  0001 C CNN
-F 3 "~" H 7200 3350 50  0001 C CNN
-	1    7200 3350
+P 7150 3350
+F 0 "J13.2" H 7050 3650 50  0000 L CNN
+F 1 "Conn_01x06" H 7230 3251 50  0001 L CNN
+F 2 "" H 7150 3350 50  0001 C CNN
+F 3 "~" H 7150 3350 50  0001 C CNN
+	1    7150 3350
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -1207,10 +1170,6 @@ Wire Wire Line
 Wire Wire Line
 	7950 1950 8550 1950
 Wire Wire Line
-	7400 1150 7900 1150
-Wire Wire Line
-	7400 1050 7900 1050
-Wire Wire Line
 	7400 950  7900 950 
 Wire Wire Line
 	7400 850  7900 850 
@@ -1246,17 +1205,17 @@ Wire Wire Line
 Wire Wire Line
 	9250 950  9700 950 
 Wire Wire Line
-	10150 1800 10650 1800
+	10250 1950 10750 1950
 Wire Wire Line
-	10150 1900 10650 1900
+	10250 2050 10750 2050
 Wire Wire Line
-	10150 2000 10650 2000
+	10250 2150 10750 2150
 Wire Wire Line
-	10150 1700 10650 1700
+	10250 1850 10750 1850
 Wire Wire Line
-	10150 1600 10650 1600
+	10250 1750 10750 1750
 Wire Wire Line
-	10150 1500 10650 1500
+	10250 1650 10750 1650
 Text Notes 8950 2100 2    50   ~ 0
 Status Lights
 $Comp
@@ -1338,16 +1297,16 @@ Wire Wire Line
 $Comp
 L Connector_Generic:Conn_01x02 J16
 U 1 1 5FDBCF20
-P 7750 1650
-F 0 "J16" H 7700 1750 50  0000 L CNN
-F 1 "J16" H 7700 1750 50  0001 L CNN
-F 2 "" H 7750 1650 50  0001 C CNN
-F 3 "~" H 7750 1650 50  0001 C CNN
-	1    7750 1650
+P 7600 1650
+F 0 "J16" H 7550 1750 50  0000 L CNN
+F 1 "J16" H 7550 1750 50  0001 L CNN
+F 2 "" H 7600 1650 50  0001 C CNN
+F 3 "~" H 7600 1650 50  0001 C CNN
+	1    7600 1650
 	1    0    0    -1  
 $EndComp
-Text Notes 7650 2000 0    50   ~ 0
-Brake \nPedals\n
+Text Notes 6900 1950 0    50   ~ 0
+Connected to \nBrake Pedals
 $Comp
 L Connector_Generic:Conn_01x02 J26
 U 1 1 605B5A35
@@ -1377,4 +1336,67 @@ Text Label 8700 5900 0    50   ~ 0
 COOL_24V
 Wire Wire Line
 	8700 5900 9150 5900
+Text Notes 7800 1250 0    50   ~ 0
+Battery Pack\nto TSI\n\n
+Wire Wire Line
+	8550 5200 9150 5200
+$Comp
+L Connector_Generic:Conn_01x04 J6
+U 1 1 5FCE8608
+P 8100 750
+F 0 "J6" H 8050 950 50  0000 L CNN
+F 1 "J6" H 8180 651 50  0001 L CNN
+F 2 "" H 8100 750 50  0001 C CNN
+F 3 "~" H 8100 750 50  0001 C CNN
+	1    8100 750 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9050 2050 9600 2050
+Wire Wire Line
+	9050 1950 9600 1950
+Wire Wire Line
+	9050 1850 9600 1850
+Wire Wire Line
+	9050 1750 9600 1750
+Wire Wire Line
+	9050 1650 9600 1650
+Text Label 9050 1750 0    50   ~ 0
+Flowrate_5V
+Wire Wire Line
+	3100 700  3500 700 
+Wire Wire Line
+	3100 800  3500 800 
+Wire Wire Line
+	3100 900  3500 900 
+Wire Wire Line
+	4650 700  4000 700 
+Wire Wire Line
+	5300 650  5600 650 
+Wire Wire Line
+	5300 850  5600 850 
+Wire Wire Line
+	5300 950  5600 950 
+Wire Wire Line
+	5300 750  5600 750 
+Wire Wire Line
+	4200 3800 5750 3800
+Wire Wire Line
+	4200 3900 5750 3900
+Wire Wire Line
+	4200 4000 5750 4000
+Wire Wire Line
+	4200 4100 5750 4100
+Wire Wire Line
+	4200 4200 5750 4200
+Wire Wire Line
+	4200 4300 5750 4300
+Text Label 6750 1750 0    50   ~ 0
+Brake_Pressed
+Text Label 6750 1650 0    47   ~ 0
+24V
+Wire Wire Line
+	7400 1750 6750 1750
+Wire Wire Line
+	7400 1650 6750 1650
 $EndSCHEMATC

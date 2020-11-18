@@ -252,80 +252,14 @@ Text Label 11200 1300 0    50   ~ 0
 5V
 Text HLabel 15200 1050 2    50   Output ~ 0
 CANRX
-Text HLabel 15200 1150 2    50   Output ~ 0
-10V
-Text HLabel 15200 1250 2    50   Output ~ 0
-5V
-Text HLabel 15200 1350 2    50   Output ~ 0
-3.3V
-Text HLabel 15200 1450 2    50   Output ~ 0
-24V
-Text HLabel 15200 1550 2    50   Output ~ 0
-GLV_RTN
-Text HLabel 15200 1650 2    50   Output ~ 0
-Chassis_GND
 Wire Wire Line
 	15200 950  15050 950 
 Wire Wire Line
 	15200 1050 15050 1050
-Wire Wire Line
-	15200 1150 15050 1150
-Wire Wire Line
-	15200 1250 15050 1250
-Wire Wire Line
-	15200 1350 15050 1350
-Wire Wire Line
-	15200 1450 15050 1450
-Wire Wire Line
-	15200 1550 15050 1550
-Wire Wire Line
-	15200 1650 15050 1650
 Text Label 15050 950  2    50   ~ 0
 CANTX
 Text Label 15050 1050 2    50   ~ 0
 CANRX
-Text Label 15050 1150 2    50   ~ 0
-10V
-Text Label 15050 1250 2    50   ~ 0
-5V
-Text Label 15050 1350 2    50   ~ 0
-3.3V
-Text Label 15050 1450 2    50   ~ 0
-24V
-Text Label 15050 1550 2    50   ~ 0
-GLV_RTN
-Text Label 15050 1650 2    50   ~ 0
-Chassis_GND
-Text HLabel 15200 2150 2    50   Output ~ 0
-AIRs+
-Text HLabel 15200 2250 2    50   Output ~ 0
-AIRs-
-Wire Wire Line
-	15200 2150 15050 2150
-Wire Wire Line
-	15200 2250 15050 2250
-Text Label 15050 2150 2    50   ~ 0
-AIRs+
-Text Label 15050 2250 2    50   ~ 0
-AIRs-
-Text HLabel 15200 2350 2    50   Output ~ 0
-Safety_Loop
-Text HLabel 15200 2450 2    50   Output ~ 0
-IMD_Status
-Wire Wire Line
-	15200 2350 15050 2350
-Wire Wire Line
-	15200 2450 15050 2450
-Text Label 15050 2350 2    50   ~ 0
-Safety_Loop
-Text Label 15050 2450 2    50   ~ 0
-IMD_Status
-Text HLabel 15200 2550 2    50   Output ~ 0
-Cooling_power
-Wire Wire Line
-	15200 2550 15050 2550
-Text Label 15050 2550 2    50   ~ 0
-Cooling_power
 Text Label 15200 3550 0    50   ~ 0
 Cooling_CTRL
 Text HLabel 15050 3550 0    50   Input ~ 0
@@ -338,36 +272,6 @@ Text Label 1400 1250 0    50   ~ 0
 ChassisGND
 Text Notes 9400 4350 2    89   ~ 0
 3.3V REGULATOR
-Text HLabel 15200 2850 2    50   Output ~ 0
-SL1_Out
-Wire Wire Line
-	15200 2850 15050 2850
-Text Label 15050 2850 2    50   ~ 0
-SL1_Out
-Text HLabel 15200 2950 2    50   Output ~ 0
-SL1_In
-Wire Wire Line
-	15200 2950 15050 2950
-Text Label 15050 2950 2    50   ~ 0
-SL1_In
-Text HLabel 15200 2650 2    50   Output ~ 0
-CAN_H
-Text HLabel 15200 2750 2    50   Output ~ 0
-CAN_L
-Wire Wire Line
-	15200 2650 15050 2650
-Wire Wire Line
-	15200 2750 15050 2750
-Text Label 15050 2650 2    50   ~ 0
-CAN_H
-Text Label 15050 2750 2    50   ~ 0
-CAN_L
-Text HLabel 15200 1750 2    50   Output ~ 0
-SR_CTRL
-Wire Wire Line
-	15200 1750 15050 1750
-Text Label 15050 1750 2    50   ~ 0
-SR_CTRL
 Text Notes 12450 10350 0    197  ~ 0
 CAN and GLV Power
 Text Label 15350 6950 2    50   ~ 0
@@ -413,24 +317,6 @@ Wire Wire Line
 Text Label 6650 8600 0    50   ~ 0
 BOT_In
 NoConn ~ 6050 8500
-Text HLabel 15200 1850 2    50   Output ~ 0
-MRESET_Contact
-Text HLabel 15200 1950 2    50   Output ~ 0
-5V_ISO_RTN
-Wire Wire Line
-	15200 1850 15050 1850
-Wire Wire Line
-	15200 1950 15050 1950
-Text Label 15050 1850 2    50   ~ 0
-MRESET_Contact
-Text Label 15050 1950 2    50   ~ 0
-5V_ISO_RTN
-Text HLabel 15200 2050 2    50   Output ~ 0
-BOT_In
-Wire Wire Line
-	15200 2050 15050 2050
-Text Label 15050 2050 2    50   ~ 0
-BOT_In
 Text Notes 14800 750  0    98   ~ 0
 SIGNALS
 Wire Notes Line
@@ -913,12 +799,6 @@ Text Label 15450 7650 2    50   ~ 0
 GLV_RTN
 Text Label 12450 7950 0    50   ~ 0
 IMD_FAULT_LED
-Text Label 14550 3050 0    50   ~ 0
-IMD_Button_RTN
-Text HLabel 15200 3050 2    50   Output ~ 0
-IMD_Button_RTN
-Wire Wire Line
-	14550 3050 15200 3050
 Text Label 11300 7550 0    50   ~ 0
 IMD_Button_RTN
 Wire Wire Line
@@ -928,14 +808,134 @@ Wire Wire Line
 Connection ~ 12000 7550
 Wire Wire Line
 	12000 7550 12000 8350
-Text Label 14550 3150 0    50   ~ 0
-COOL_24V
-Text HLabel 15200 3150 2    50   Output ~ 0
-COOL_24V
-Wire Wire Line
-	14550 3150 15200 3150
 Wire Notes Line
 	16000 550  16000 3750
 Wire Notes Line
 	14150 550  14150 3750
+Wire Wire Line
+	14550 3150 15200 3150
+Text HLabel 15200 3150 2    50   Output ~ 0
+COOL_24V
+Text Label 14550 3150 0    50   ~ 0
+COOL_24V
+Wire Wire Line
+	14550 3050 15200 3050
+Text HLabel 15200 3050 2    50   Output ~ 0
+IMD_Button_RTN
+Text Label 14550 3050 0    50   ~ 0
+IMD_Button_RTN
+Text Label 15050 2050 2    50   ~ 0
+BOT_In
+Wire Wire Line
+	15200 2050 15050 2050
+Text HLabel 15200 2050 2    50   Output ~ 0
+BOT_In
+Text Label 15050 1950 2    50   ~ 0
+5V_ISO_RTN
+Text Label 15050 1850 2    50   ~ 0
+MRESET_Contact
+Wire Wire Line
+	15200 1950 15050 1950
+Wire Wire Line
+	15200 1850 15050 1850
+Text HLabel 15200 1950 2    50   Output ~ 0
+5V_ISO_RTN
+Text HLabel 15200 1850 2    50   Output ~ 0
+MRESET_Contact
+Text Label 15050 1750 2    50   ~ 0
+SR_CTRL
+Wire Wire Line
+	15200 1750 15050 1750
+Text HLabel 15200 1750 2    50   Output ~ 0
+SR_CTRL
+Text Label 15050 2750 2    50   ~ 0
+CAN_L
+Text Label 15050 2650 2    50   ~ 0
+CAN_H
+Wire Wire Line
+	15200 2750 15050 2750
+Wire Wire Line
+	15200 2650 15050 2650
+Text HLabel 15200 2750 2    50   Output ~ 0
+CAN_L
+Text HLabel 15200 2650 2    50   Output ~ 0
+CAN_H
+Text Label 15050 2950 2    50   ~ 0
+SL1_In
+Wire Wire Line
+	15200 2950 15050 2950
+Text HLabel 15200 2950 2    50   Output ~ 0
+SL1_In
+Text Label 15050 2850 2    50   ~ 0
+SL1_Out
+Wire Wire Line
+	15200 2850 15050 2850
+Text HLabel 15200 2850 2    50   Output ~ 0
+SL1_Out
+Text Label 15050 2550 2    50   ~ 0
+Cooling_power
+Wire Wire Line
+	15200 2550 15050 2550
+Text HLabel 15200 2550 2    50   Output ~ 0
+Cooling_power
+Text Label 15050 2450 2    50   ~ 0
+IMD_Status
+Text Label 15050 2350 2    50   ~ 0
+Safety_Loop
+Wire Wire Line
+	15200 2450 15050 2450
+Wire Wire Line
+	15200 2350 15050 2350
+Text HLabel 15200 2450 2    50   Output ~ 0
+IMD_Status
+Text HLabel 15200 2350 2    50   Output ~ 0
+Safety_Loop
+Text Label 15050 2250 2    50   ~ 0
+AIRs-
+Text Label 15050 2150 2    50   ~ 0
+AIRs+
+Wire Wire Line
+	15200 2250 15050 2250
+Wire Wire Line
+	15200 2150 15050 2150
+Text HLabel 15200 2250 2    50   Output ~ 0
+AIRs-
+Text HLabel 15200 2150 2    50   Output ~ 0
+AIRs+
+Text Label 15050 1650 2    50   ~ 0
+Chassis_GND
+Text Label 15050 1550 2    50   ~ 0
+GLV_RTN
+Text Label 15050 1450 2    50   ~ 0
+24V
+Text Label 15050 1350 2    50   ~ 0
+3.3V
+Text Label 15050 1250 2    50   ~ 0
+5V
+Wire Wire Line
+	15200 1650 15050 1650
+Wire Wire Line
+	15200 1550 15050 1550
+Wire Wire Line
+	15200 1450 15050 1450
+Wire Wire Line
+	15200 1350 15050 1350
+Wire Wire Line
+	15200 1250 15050 1250
+Text HLabel 15200 1650 2    50   Output ~ 0
+Chassis_GND
+Text HLabel 15200 1550 2    50   Output ~ 0
+GLV_RTN
+Text HLabel 15200 1450 2    50   Output ~ 0
+24V
+Text HLabel 15200 1350 2    50   Output ~ 0
+3.3V
+Text HLabel 15200 1250 2    50   Output ~ 0
+5V
+Text Label 15050 1150 2    50   ~ 0
+10V
+Wire Wire Line
+	15200 1150 15050 1150
+Text HLabel 15200 1150 2    50   Output ~ 0
+10V
 $EndSCHEMATC
