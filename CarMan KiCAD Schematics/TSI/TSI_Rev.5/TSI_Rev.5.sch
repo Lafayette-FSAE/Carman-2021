@@ -990,6 +990,7 @@ F23 "BOT_In" O R 10500 5800 50
 F24 "12V" I R 10500 5900 50 
 F25 "IMD_FAULT_LED" I R 10500 6100 50 
 F26 "IMD_Button_RTN" O R 10500 6000 50 
+F27 "COOL_24V" O L 9150 5900 50 
 $EndSheet
 Text Label 9000 4800 2    50   ~ 0
 CANTX
@@ -1350,26 +1351,30 @@ Brake \nPedals\n
 $Comp
 L Connector_Generic:Conn_01x02 J26
 U 1 1 605B5A35
-P 1450 2500
-F 0 "J26" H 1400 2600 50  0000 L CNN
-F 1 "J16" H 1400 2600 50  0001 L CNN
-F 2 "" H 1450 2500 50  0001 C CNN
-F 3 "~" H 1450 2500 50  0001 C CNN
-	1    1450 2500
+P 1750 2500
+F 0 "J26" H 1700 2600 50  0000 L CNN
+F 1 "J16" H 1700 2600 50  0001 L CNN
+F 2 "" H 1750 2500 50  0001 C CNN
+F 3 "~" H 1750 2500 50  0001 C CNN
+	1    1750 2500
 	1    0    0    -1  
 $EndComp
-Text Notes 1350 2850 0    50   ~ 0
+Text Notes 1650 2850 0    50   ~ 0
 IMD Push\nButton\n
-Text Label 600  2500 0    50   ~ 0
+Text Label 900  2500 0    50   ~ 0
 IMD_Status
-Text Label 600  2600 0    50   ~ 0
+Text Label 900  2600 0    50   ~ 0
 IMD_Button_RTN
 Wire Wire Line
-	600  2600 1250 2600
+	900  2600 1550 2600
 Wire Wire Line
-	600  2500 1250 2500
+	900  2500 1550 2500
 Text Label 11100 6000 2    50   ~ 0
 IMD_Button_RTN
 Wire Wire Line
 	11100 6000 10500 6000
+Text Label 8700 5900 0    50   ~ 0
+COOL_24V
+Wire Wire Line
+	8700 5900 9150 5900
 $EndSCHEMATC

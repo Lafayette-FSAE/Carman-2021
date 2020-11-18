@@ -326,12 +326,12 @@ Wire Wire Line
 	15200 2550 15050 2550
 Text Label 15050 2550 2    50   ~ 0
 Cooling_power
-Text Label 15200 3650 0    50   ~ 0
+Text Label 15200 3550 0    50   ~ 0
 Cooling_CTRL
-Text HLabel 15050 3650 0    50   Input ~ 0
+Text HLabel 15050 3550 0    50   Input ~ 0
 Cooling_CTRL
 Wire Wire Line
-	15200 3650 15050 3650
+	15200 3550 15050 3550
 Wire Wire Line
 	900  1250 1400 1250
 Text Label 1400 1250 0    50   ~ 0
@@ -434,7 +434,7 @@ BOT_In
 Text Notes 14800 750  0    98   ~ 0
 SIGNALS
 Wire Notes Line
-	14150 3950 16000 3950
+	14150 3750 16000 3750
 Wire Notes Line
 	16000 550  14150 550 
 Text Notes 4400 5600 0    47   ~ 0
@@ -740,7 +740,7 @@ Wire Wire Line
 	5700 3400 5300 3400
 Connection ~ 5300 3400
 Text Label 2300 3000 0    49   ~ 0
-24V
+COOL_24V
 Text Label 2300 3400 0    49   ~ 0
 GLV_RTN
 Text Label 5700 3000 0    49   ~ 0
@@ -774,12 +774,12 @@ F 3 "~" H 6000 5050 50  0001 C CNN
 	1    6000 5050
 	1    0    0    -1  
 $EndComp
-Text Label 15200 3550 0    50   ~ 0
+Text Label 15200 3450 0    50   ~ 0
 12V
-Text HLabel 15050 3550 0    50   Input ~ 0
+Text HLabel 15050 3450 0    50   Input ~ 0
 12V
 Wire Wire Line
-	15200 3550 15050 3550
+	15200 3450 15050 3450
 Wire Wire Line
 	3100 3400 4000 3400
 Connection ~ 4000 3400
@@ -837,12 +837,12 @@ Wire Wire Line
 Connection ~ 13000 6950
 Wire Wire Line
 	12000 8350 13050 8350
-Text Label 15200 3750 0    50   ~ 0
+Text Label 15200 3650 0    50   ~ 0
 IMD_FAULT_LED
-Text HLabel 15050 3750 0    50   Input ~ 0
+Text HLabel 15050 3650 0    50   Input ~ 0
 IMD_FAULT_LED
 Wire Wire Line
-	15200 3750 15050 3750
+	15200 3650 15050 3650
 Text Notes 10950 1900 2    89   ~ 0
 AIRs power on SL closed
 Text Label 8950 1500 0    50   ~ 0
@@ -903,10 +903,6 @@ F 3 "" H 10050 1400 50  0001 L CNN
 	1    10050 1400
 	1    0    0    -1  
 $EndComp
-Wire Notes Line
-	16000 550  16000 3600
-Wire Notes Line
-	14150 550  14150 3600
 Wire Wire Line
 	15450 7650 14850 7650
 Wire Wire Line
@@ -932,4 +928,14 @@ Wire Wire Line
 Connection ~ 12000 7550
 Wire Wire Line
 	12000 7550 12000 8350
+Text Label 14550 3150 0    50   ~ 0
+COOL_24V
+Text HLabel 15200 3150 2    50   Output ~ 0
+COOL_24V
+Wire Wire Line
+	14550 3150 15200 3150
+Wire Notes Line
+	16000 550  16000 3750
+Wire Notes Line
+	14150 550  14150 3750
 $EndSCHEMATC
