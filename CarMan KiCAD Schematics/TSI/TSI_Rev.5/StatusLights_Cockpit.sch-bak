@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 7
+Sheet 6 6
 Title ""
 Date ""
 Rev ""
@@ -46,23 +46,23 @@ Text Label 10200 900  2    50   ~ 0
 $Comp
 L TSI_Rev.5-rescue:TLP293-CarMan_KiCAD_Library-TSI_Rev.5-rescue U11
 U 1 1 5F9A966C
-P 4550 2350
-F 0 "U11" H 4550 2550 50  0000 C CNN
-F 1 "TLP293" H 4550 2150 50  0000 C CNN
-F 2 "Package_SO:SOIC-4_4.55x2.6mm_P1.27mm" H 4350 2150 50  0001 L CIN
-F 3 "" H 4550 2350 50  0001 L CNN
-	1    4550 2350
+P 4550 2100
+F 0 "U11" H 4550 2300 50  0000 C CNN
+F 1 "TLP293" H 4550 1900 50  0000 C CNN
+F 2 "Package_SO:SOIC-4_4.55x2.6mm_P1.27mm" H 4350 1900 50  0001 L CIN
+F 3 "" H 4550 2100 50  0001 L CNN
+	1    4550 2100
 	1    0    0    -1  
 $EndComp
 $Comp
 L TSI_Rev.5-rescue:TLP293-CarMan_KiCAD_Library-TSI_Rev.5-rescue U27
 U 1 1 5F9AA400
-P 4550 3150
-F 0 "U27" H 4550 3350 50  0000 C CNN
-F 1 "TLP293" H 4550 2950 50  0000 C CNN
-F 2 "Package_SO:SOIC-4_4.55x2.6mm_P1.27mm" H 4350 2950 50  0001 L CIN
-F 3 "" H 4550 3150 50  0001 L CNN
-	1    4550 3150
+P 4550 2900
+F 0 "U27" H 4550 3100 50  0000 C CNN
+F 1 "TLP293" H 4550 2700 50  0000 C CNN
+F 2 "Package_SO:SOIC-4_4.55x2.6mm_P1.27mm" H 4350 2700 50  0001 L CIN
+F 3 "" H 4550 2900 50  0001 L CNN
+	1    4550 2900
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -126,86 +126,86 @@ Wire Wire Line
 Wire Wire Line
 	6450 1300 6450 1150
 Connection ~ 5900 1300
-Text HLabel 1200 650  0    50   Input ~ 0
+Text HLabel 1250 800  0    50   Input ~ 0
 BP
-Text HLabel 1200 750  0    50   Input ~ 0
+Text HLabel 1250 900  0    50   Input ~ 0
 BP_RTN
-Text HLabel 1200 850  0    50   Input ~ 0
+Text HLabel 1250 1000 0    50   Input ~ 0
 IMD_Status
-Text HLabel 1200 950  0    50   Input ~ 0
+Text HLabel 1250 1100 0    50   Input ~ 0
 RTDS_CTRL
-Text HLabel 1200 1050 0    50   Input ~ 0
+Text HLabel 1250 1200 0    50   Input ~ 0
 D_LED_CTRL
-Text HLabel 1200 1150 0    50   Input ~ 0
+Text HLabel 1250 1300 0    50   Input ~ 0
 SPARE_LED_CTRL
-Text HLabel 1200 1750 0    50   Input ~ 0
+Text HLabel 1250 1600 0    50   Input ~ 0
 24V
-Text HLabel 1200 2050 0    50   Input ~ 0
+Text HLabel 1250 1900 0    50   Input ~ 0
 GLV_RTN
-Text HLabel 1200 1950 0    50   Input ~ 0
+Text HLabel 1250 1800 0    50   Input ~ 0
 3.3V
-Text HLabel 1200 1850 0    50   Input ~ 0
+Text HLabel 1250 1700 0    50   Input ~ 0
 5V
 Wire Wire Line
-	1200 650  1350 650 
+	1250 800  1400 800 
 Wire Wire Line
-	1200 750  1350 750 
+	1250 900  1400 900 
 Wire Wire Line
-	1200 850  1350 850 
+	1250 1000 1400 1000
 Wire Wire Line
-	1200 950  1350 950 
+	1250 1100 1400 1100
 Wire Wire Line
-	1200 1050 1350 1050
+	1250 1200 1400 1200
 Wire Wire Line
-	1200 1150 1350 1150
+	1250 1300 1400 1300
 Wire Wire Line
-	1200 1750 1350 1750
+	1250 1600 1400 1600
 Wire Wire Line
-	1200 2050 1350 2050
+	1250 1900 1400 1900
 Wire Wire Line
-	1200 1950 1350 1950
+	1250 1800 1400 1800
 Wire Wire Line
-	1200 1850 1350 1850
-Text Label 1350 650  0    50   ~ 0
+	1250 1700 1400 1700
+Text Label 1400 800  0    50   ~ 0
 BP
-Text Label 1350 750  0    50   ~ 0
+Text Label 1400 900  0    50   ~ 0
 BP_RTN
-Text Label 1350 850  0    50   ~ 0
+Text Label 1400 1000 0    50   ~ 0
 IMD_Status
-Text Label 1350 950  0    50   ~ 0
+Text Label 1400 1100 0    50   ~ 0
 RTDS_CTRL
-Text Label 1350 1050 0    50   ~ 0
+Text Label 1400 1200 0    50   ~ 0
 D_LED_CTRL
-Text Label 1350 1150 0    50   ~ 0
+Text Label 1400 1300 0    50   ~ 0
 SPARE_LED_CTRL
-Text Label 1350 1750 0    50   ~ 0
+Text Label 1400 1600 0    50   ~ 0
 24V
-Text Label 1350 2050 0    50   ~ 0
+Text Label 1400 1900 0    50   ~ 0
 GLV_RTN
-Text Label 1350 1950 0    50   ~ 0
+Text Label 1400 1800 0    50   ~ 0
 3.3V
-Text Label 1350 1850 0    50   ~ 0
+Text Label 1400 1700 0    50   ~ 0
 5V
 $Comp
 L Device:R R15
 U 1 1 5F9DEF51
-P 3900 2250
-F 0 "R15" V 3800 2250 50  0000 C CNN
-F 1 "300" V 3900 2250 50  0000 C CNN
-F 2 "" V 3830 2250 50  0001 C CNN
-F 3 "~" H 3900 2250 50  0001 C CNN
-	1    3900 2250
+P 3900 2000
+F 0 "R15" V 3800 2000 50  0000 C CNN
+F 1 "300" V 3900 2000 50  0000 C CNN
+F 2 "" V 3830 2000 50  0001 C CNN
+F 3 "~" H 3900 2000 50  0001 C CNN
+	1    3900 2000
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	3750 2250 3500 2250
-Text Label 5050 2250 0    50   ~ 0
+	3750 2000 3500 2000
+Text Label 5050 2000 0    50   ~ 0
 24V
-Text Label 5050 2450 0    50   ~ 0
+Text Label 5050 2200 0    50   ~ 0
 Drive_LED
-Text Label 4050 2450 2    50   ~ 0
+Text Label 4050 2200 2    50   ~ 0
 GLV_RTN
-Text Label 3500 2250 2    50   ~ 0
+Text Label 3500 2000 2    50   ~ 0
 D_LED_CTRL
 Wire Wire Line
 	5900 850  5900 600 
@@ -232,23 +232,23 @@ GLV_RTN
 $Comp
 L Device:R R25
 U 1 1 5F9F8E38
-P 3900 3050
-F 0 "R25" V 3800 3050 50  0000 C CNN
-F 1 "300" V 3900 3050 50  0000 C CNN
-F 2 "" V 3830 3050 50  0001 C CNN
-F 3 "~" H 3900 3050 50  0001 C CNN
-	1    3900 3050
+P 3900 2800
+F 0 "R25" V 3800 2800 50  0000 C CNN
+F 1 "300" V 3900 2800 50  0000 C CNN
+F 2 "" V 3830 2800 50  0001 C CNN
+F 3 "~" H 3900 2800 50  0001 C CNN
+	1    3900 2800
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	3750 3050 3500 3050
-Text Label 4050 3250 2    50   ~ 0
+	3750 2800 3500 2800
+Text Label 4050 3000 2    50   ~ 0
 GLV_RTN
-Text Label 5050 3250 0    50   ~ 0
+Text Label 5050 3000 0    50   ~ 0
 SPARE_LED
-Text Label 5050 3050 0    50   ~ 0
+Text Label 5050 2800 0    50   ~ 0
 24V
-Text Label 3500 3050 2    50   ~ 0
+Text Label 3500 2800 2    50   ~ 0
 SPARE_LED_CTRL
 $Comp
 L Device:Q_PMOS_DSG Q3
@@ -425,7 +425,7 @@ Text Label 5350 4800 0    50   ~ 0
 TSAL_Cockpit
 Text Notes 7200 1200 0    50   ~ 0
 0.2A Id *CHECK THIS FET, specifications\n are likely not correct.\n Placeholder transistor*
-Text Notes 4200 2800 0    50   ~ 0
+Text Notes 4200 2550 0    50   ~ 0
 Current Ratio 50%
 $Comp
 L Connector:TestPoint HVPL_LV1
@@ -505,56 +505,56 @@ Wire Notes Line
 	8150 4900 8200 4900
 Wire Notes Line
 	8350 5000 8200 5000
-Text HLabel 1200 2250 0    50   Input ~ 0
+Text HLabel 1250 2000 0    50   Input ~ 0
 TSAL
-Text HLabel 1200 2450 0    50   Input ~ 0
+Text HLabel 1250 2200 0    50   Input ~ 0
 TSAL_RTN
 Wire Wire Line
-	1200 2250 1350 2250
+	1250 2000 1400 2000
 Wire Wire Line
-	1200 2450 1350 2450
-Text Label 1350 2250 0    50   ~ 0
+	1250 2200 1400 2200
+Text Label 1400 2000 0    50   ~ 0
 TSAL
-Text Label 1350 2450 0    50   ~ 0
+Text Label 1400 2200 0    50   ~ 0
 TSAL_RTN
-Text HLabel 1200 2350 0    50   Input ~ 0
+Text HLabel 1250 2100 0    50   Input ~ 0
 TSAL_Cockpit
 Wire Wire Line
-	1200 2350 1350 2350
-Text Label 1350 2350 0    50   ~ 0
+	1250 2100 1400 2100
+Text Label 1400 2100 0    50   ~ 0
 TSAL_Cockpit
 Text Label 10200 2350 2    50   ~ 0
 GLV_RTN
 Wire Wire Line
 	10200 1450 10200 1650
-Text HLabel 1200 2650 0    50   Input ~ 0
+Text HLabel 1250 2400 0    50   Input ~ 0
 Drive_BTN_RTN
 Wire Wire Line
-	1200 2650 1350 2650
-Text Label 1350 2650 0    50   ~ 0
+	1250 2400 1400 2400
+Text Label 1400 2400 0    50   ~ 0
 Drive_BTN_RTN
-Text HLabel 1200 2550 0    50   Input ~ 0
+Text HLabel 1250 2300 0    50   Input ~ 0
 Drive_BTN
 Wire Wire Line
-	1200 2550 1350 2550
-Text Label 1350 2550 0    50   ~ 0
+	1250 2300 1400 2300
+Text Label 1400 2300 0    50   ~ 0
 Drive_BTN
 Wire Wire Line
-	5050 3250 4850 3250
+	5050 3000 4850 3000
 Wire Wire Line
-	5050 3050 4850 3050
+	5050 2800 4850 2800
 Wire Wire Line
-	4250 3050 4050 3050
+	4250 2800 4050 2800
 Wire Wire Line
-	4250 3250 4050 3250
+	4250 3000 4050 3000
 Wire Wire Line
-	5050 2250 4850 2250
+	5050 2000 4850 2000
 Wire Wire Line
-	5050 2450 4850 2450
+	5050 2200 4850 2200
 Wire Wire Line
-	4250 2450 4050 2450
+	4250 2200 4050 2200
 Wire Wire Line
-	4250 2250 4050 2250
+	4250 2000 4050 2000
 Wire Wire Line
 	4250 1300 4050 1300
 Wire Wire Line
@@ -581,16 +581,26 @@ Text Label 8050 6150 0    50   ~ 0
 GLV_RTN
 Wire Wire Line
 	8050 6150 8050 5950
-Text HLabel 1200 1250 0    50   Input ~ 0
+Text HLabel 1250 1400 0    50   Input ~ 0
 RTDS
 Wire Wire Line
-	1200 1250 1350 1250
-Text Label 1350 1250 0    50   ~ 0
+	1250 1400 1400 1400
+Text Label 1400 1400 0    50   ~ 0
 RTDS
-Text Label 1350 1350 0    50   ~ 0
+Text Label 1400 1500 0    50   ~ 0
 RTDS_RTN
-Text HLabel 1200 1350 0    50   Input ~ 0
+Text HLabel 1250 1500 0    50   Input ~ 0
 RTDS_RTN
 Wire Wire Line
-	1200 1350 1350 1350
+	1250 1500 1400 1500
+Wire Notes Line
+	2100 500  500  500 
+Wire Notes Line
+	500  2500 2100 2500
+Wire Notes Line
+	2100 500  2100 2500
+Wire Notes Line
+	500  500  500  2500
+Text Notes 1050 650  0    94   ~ 0
+SIGNALS\n
 $EndSCHEMATC

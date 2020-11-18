@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 7
+Sheet 6 6
 Title ""
 Date ""
 Rev ""
@@ -46,23 +46,23 @@ Text Label 10200 900  2    50   ~ 0
 $Comp
 L TSI_Rev.5-rescue:TLP293-CarMan_KiCAD_Library-TSI_Rev.5-rescue U11
 U 1 1 5F9A966C
-P 4550 2350
-F 0 "U11" H 4550 2550 50  0000 C CNN
-F 1 "TLP293" H 4550 2150 50  0000 C CNN
-F 2 "Package_SO:SOIC-4_4.55x2.6mm_P1.27mm" H 4350 2150 50  0001 L CIN
-F 3 "" H 4550 2350 50  0001 L CNN
-	1    4550 2350
+P 4550 2100
+F 0 "U11" H 4550 2300 50  0000 C CNN
+F 1 "TLP293" H 4550 1900 50  0000 C CNN
+F 2 "Package_SO:SOIC-4_4.55x2.6mm_P1.27mm" H 4350 1900 50  0001 L CIN
+F 3 "" H 4550 2100 50  0001 L CNN
+	1    4550 2100
 	1    0    0    -1  
 $EndComp
 $Comp
 L TSI_Rev.5-rescue:TLP293-CarMan_KiCAD_Library-TSI_Rev.5-rescue U27
 U 1 1 5F9AA400
-P 4550 3150
-F 0 "U27" H 4550 3350 50  0000 C CNN
-F 1 "TLP293" H 4550 2950 50  0000 C CNN
-F 2 "Package_SO:SOIC-4_4.55x2.6mm_P1.27mm" H 4350 2950 50  0001 L CIN
-F 3 "" H 4550 3150 50  0001 L CNN
-	1    4550 3150
+P 4550 2900
+F 0 "U27" H 4550 3100 50  0000 C CNN
+F 1 "TLP293" H 4550 2700 50  0000 C CNN
+F 2 "Package_SO:SOIC-4_4.55x2.6mm_P1.27mm" H 4350 2700 50  0001 L CIN
+F 3 "" H 4550 2900 50  0001 L CNN
+	1    4550 2900
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -189,23 +189,23 @@ Text Label 1400 1700 0    50   ~ 0
 $Comp
 L Device:R R15
 U 1 1 5F9DEF51
-P 3900 2250
-F 0 "R15" V 3800 2250 50  0000 C CNN
-F 1 "300" V 3900 2250 50  0000 C CNN
-F 2 "" V 3830 2250 50  0001 C CNN
-F 3 "~" H 3900 2250 50  0001 C CNN
-	1    3900 2250
+P 3900 2000
+F 0 "R15" V 3800 2000 50  0000 C CNN
+F 1 "300" V 3900 2000 50  0000 C CNN
+F 2 "" V 3830 2000 50  0001 C CNN
+F 3 "~" H 3900 2000 50  0001 C CNN
+	1    3900 2000
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	3750 2250 3500 2250
-Text Label 5050 2250 0    50   ~ 0
+	3750 2000 3500 2000
+Text Label 5050 2000 0    50   ~ 0
 24V
-Text Label 5050 2450 0    50   ~ 0
+Text Label 5050 2200 0    50   ~ 0
 Drive_LED
-Text Label 4050 2450 2    50   ~ 0
+Text Label 4050 2200 2    50   ~ 0
 GLV_RTN
-Text Label 3500 2250 2    50   ~ 0
+Text Label 3500 2000 2    50   ~ 0
 D_LED_CTRL
 Wire Wire Line
 	5900 850  5900 600 
@@ -232,23 +232,23 @@ GLV_RTN
 $Comp
 L Device:R R25
 U 1 1 5F9F8E38
-P 3900 3050
-F 0 "R25" V 3800 3050 50  0000 C CNN
-F 1 "300" V 3900 3050 50  0000 C CNN
-F 2 "" V 3830 3050 50  0001 C CNN
-F 3 "~" H 3900 3050 50  0001 C CNN
-	1    3900 3050
+P 3900 2800
+F 0 "R25" V 3800 2800 50  0000 C CNN
+F 1 "300" V 3900 2800 50  0000 C CNN
+F 2 "" V 3830 2800 50  0001 C CNN
+F 3 "~" H 3900 2800 50  0001 C CNN
+	1    3900 2800
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	3750 3050 3500 3050
-Text Label 4050 3250 2    50   ~ 0
+	3750 2800 3500 2800
+Text Label 4050 3000 2    50   ~ 0
 GLV_RTN
-Text Label 5050 3250 0    50   ~ 0
+Text Label 5050 3000 0    50   ~ 0
 SPARE_LED
-Text Label 5050 3050 0    50   ~ 0
+Text Label 5050 2800 0    50   ~ 0
 24V
-Text Label 3500 3050 2    50   ~ 0
+Text Label 3500 2800 2    50   ~ 0
 SPARE_LED_CTRL
 $Comp
 L Device:Q_PMOS_DSG Q3
@@ -425,7 +425,7 @@ Text Label 5350 4800 0    50   ~ 0
 TSAL_Cockpit
 Text Notes 7200 1200 0    50   ~ 0
 0.2A Id *CHECK THIS FET, specifications\n are likely not correct.\n Placeholder transistor*
-Text Notes 4200 2800 0    50   ~ 0
+Text Notes 4200 2550 0    50   ~ 0
 Current Ratio 50%
 $Comp
 L Connector:TestPoint HVPL_LV1
@@ -540,21 +540,21 @@ Wire Wire Line
 Text Label 1400 2300 0    50   ~ 0
 Drive_BTN
 Wire Wire Line
-	5050 3250 4850 3250
+	5050 3000 4850 3000
 Wire Wire Line
-	5050 3050 4850 3050
+	5050 2800 4850 2800
 Wire Wire Line
-	4250 3050 4050 3050
+	4250 2800 4050 2800
 Wire Wire Line
-	4250 3250 4050 3250
+	4250 3000 4050 3000
 Wire Wire Line
-	5050 2250 4850 2250
+	5050 2000 4850 2000
 Wire Wire Line
-	5050 2450 4850 2450
+	5050 2200 4850 2200
 Wire Wire Line
-	4250 2450 4050 2450
+	4250 2200 4050 2200
 Wire Wire Line
-	4250 2250 4050 2250
+	4250 2000 4050 2000
 Wire Wire Line
 	4250 1300 4050 1300
 Wire Wire Line
