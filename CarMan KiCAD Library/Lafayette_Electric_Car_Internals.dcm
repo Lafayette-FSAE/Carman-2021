@@ -84,12 +84,6 @@ D Nodemcu dev kit for an ESP8266 module
 F https://github.com/nodemcu/nodemcu-devkit-v1.0
 $ENDCMP
 #
-$CMP FINDER-36.11-4301
-D FINDER 36.11-4301, Single Pole Relay SPST-NO Sugar Cube, 10A
-K Single Pole Relay SPST-NO Sugar Cube
-F http://gfinder.findernet.com/assets/Series/356/S36EN.pdf
-$ENDCMP
-#
 $CMP FlybackTransformer
 D Flyback Converters For For DC/DC Converters SMPS Transformer 1500Vrms Isolation  Surface Mount
 K CellMan TSV Power Balancing
@@ -222,12 +216,6 @@ D Tactile Switch SPST-NO Top Actuated Surface Mount
 F https://media.digikey.com/pdf/Data%20Sheets/RAFI%20PDF's/Racon_PCB_Tactile_Switches_Cat.pdf
 $ENDCMP
 #
-$CMP NO_RELAY2
-D FINDER 32.21-x300, Single Pole Relay SPST-NO, 6A
-K Single Pole Relay SPST-NO
-F http://gfinder.findernet.com/assets/Series/355/S32EN.pdf
-$ENDCMP
-#
 $CMP NRVTS260ESFT1G
 D DIODE SCHOTTKY 60V 2A SOD123FL
 K Diode CellMan Balance 60V 2A
@@ -275,12 +263,6 @@ $ENDCMP
 $CMP PushButton
 D Tactile Switch SPST-NO Top Actuated Surface Mount
 F https://media.digikey.com/pdf/Data%20Sheets/RAFI%20PDF's/Racon_PCB_Tactile_Switches_Cat.pdf
-$ENDCMP
-#
-$CMP RM50-xx21
-D RELPOL, Single Pole Relay SPST-NO, 6A
-K Single Pole Relay SPST-NO
-F http://www.relpol.pl/en/content/download/13683/165953/file/e_RM50.pdf
 $ENDCMP
 #
 $CMP SI8605AC

@@ -192,6 +192,36 @@ X ~ ~ 250 50 100 L 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
+# Lafayette_Electric_Car_Internals_NO_Relay2
+#
+DEF Lafayette_Electric_Car_Internals_NO_Relay2 U 0 0 N N 1 F N
+F0 "U" 0 375 50 H V C CNN
+F1 "Lafayette_Electric_Car_Internals_NO_Relay2" 0 275 50 H V C CNN
+F2 "" -350 300 50 H I C CNN
+F3 "" -350 300 50 H I C CNN
+DRAW
+S -125 225 125 -275 0 1 0 f
+P 2 0 1 0 -150 -150 -100 -150 N
+P 2 0 1 0 -100 -100 100 -200 N
+P 2 0 1 0 -50 50 100 100 N
+P 2 0 1 0 0 -50 0 0 N
+P 2 0 1 0 0 0 0 50 N
+P 2 0 1 0 150 -150 100 -150 N
+P 2 0 1 0 150 50 100 50 N
+P 3 0 1 0 -150 50 -100 50 -50 50 N
+P 5 0 1 0 -100 -50 -100 -250 100 -250 100 -50 -100 -50 N
+P 2 1 1 0 -50 150 100 200 N
+P 2 1 1 0 150 150 100 150 N
+P 3 1 1 0 -150 150 -100 150 -50 150 N
+X ~ ~ -250 -150 100 R 50 50 1 1 I
+X ~ ~ -250 50 100 R 50 50 1 1 I
+X ~ ~ -250 150 100 R 50 50 1 1 I
+X ~ ~ 250 -150 100 L 50 50 1 1 I
+X ~ ~ 250 50 100 L 50 50 1 1 I
+X ~ ~ 250 150 100 L 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
 # Lafayette_Electric_Car_Internals_PushButton
 #
 DEF Lafayette_Electric_Car_Internals_PushButton BTN 0 40 Y Y 1 F N
