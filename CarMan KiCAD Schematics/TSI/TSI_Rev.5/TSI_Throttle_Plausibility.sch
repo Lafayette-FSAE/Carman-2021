@@ -881,10 +881,10 @@ F 3 "~" H 6450 4100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Amplifier_Operational:MCP6004 U26
+L Amplifier_Operational:MCP6004 U7
 U 5 1 5FC45A13
 P 6850 3750
-F 0 "U26" H 6808 3796 50  0001 L CNN
+F 0 "U7" H 6808 3796 50  0001 L CNN
 F 1 "MCP6004" H 6808 3750 50  0001 L CNN
 F 2 "" H 6800 3850 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 6900 3950 50  0001 C CNN
@@ -1616,10 +1616,10 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 9450 10750 50
 	1    0    0    -1  
 $EndComp
 $Comp
-L Amplifier_Operational:MCP6004 U7
+L Amplifier_Operational:MCP6004 U18
 U 5 1 600578D9
 P 11800 2900
-F 0 "U7" H 11758 2946 50  0001 L CNN
+F 0 "U18" H 11758 2946 50  0001 L CNN
 F 1 "MCP6004" H 11758 2900 50  0001 L CNN
 F 2 "" H 11750 3000 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 11850 3100 50  0001 C CNN

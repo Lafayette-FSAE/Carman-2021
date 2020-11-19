@@ -181,8 +181,6 @@ Text Label 11600 4300 0    50   ~ 0
 5HV
 Wire Wire Line
 	11600 4300 11600 4400
-Wire Wire Line
-	11600 5100 11600 5000
 Text Label 11600 5100 2    50   ~ 0
 IO_Ground
 Wire Wire Line
@@ -312,17 +310,6 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 10050 6500 50
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Amplifier_Operational:MCP6004 U40
-U 5 1 5F994131
-P 11500 4700
-F 0 "U40" H 11458 4746 50  0001 L CNN
-F 1 "MCP6004" H 11458 4700 50  0001 L CNN
-F 2 "" H 11450 4800 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 11550 4900 50  0001 C CNN
-	5    11500 4700
-	-1   0    0    -1  
-$EndComp
-$Comp
 L Amplifier_Operational:MCP6004 U26
 U 3 1 5F993611
 P 11500 6400
@@ -331,17 +318,6 @@ F 1 "MCP6004" H 11650 6550 50  0000 C CNN
 F 2 "" H 11450 6500 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 11550 6600 50  0001 C CNN
 	3    11500 6400
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Amplifier_Operational:MCP6004 U26
-U 1 1 5F98F236
-P 11500 4700
-F 0 "U26" H 11500 4700 50  0000 C CNN
-F 1 "MCP6004" H 11650 4850 50  0000 C CNN
-F 2 "" H 11450 4800 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 11550 4900 50  0001 C CNN
-	1    11500 4700
 	-1   0    0    -1  
 $EndComp
 Connection ~ 10350 5200
@@ -771,37 +747,20 @@ Wire Wire Line
 	6750 6000 6850 6000
 Text Label 6750 6000 2    50   ~ 0
 5HV
-$Comp
-L TSI_Rev.5-rescue:TS431ILT-CarMan_KiCAD_Library-TSI_Rev.5-rescue IC1
-U 1 1 5FBACDB3
-P 14400 8900
-F 0 "IC1" H 14400 9150 79  0000 C CNN
-F 1 "TS431ILT" H 14400 8600 79  0000 C CNN
-F 2 "" H 14150 9000 79  0001 C CNN
-F 3 "" H 14150 9000 79  0001 C CNN
-	1    14400 8900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	14800 9000 14750 9000
-Text Label 14800 9000 0    50   ~ 0
+Text Label 14800 8800 0    50   ~ 0
 IO_Ground
 NoConn ~ 14050 8800
 NoConn ~ 14050 8900
 Wire Wire Line
 	13900 8550 13900 9000
 Wire Wire Line
-	13900 8550 14800 8550
-Wire Wire Line
-	14800 8550 14800 8800
-Wire Wire Line
 	14800 8800 14750 8800
 Wire Wire Line
 	13900 8200 13900 8550
 Connection ~ 13900 8550
-Text Label 13900 8200 0    50   ~ 0
+Text Label 13900 8300 0    50   ~ 0
 DiffAmp_REF
-Text Notes 14000 8300 0    50   ~ 0
+Text Notes 14000 8400 0    50   ~ 0
 (1.24V)\n
 $Comp
 L Device:R R103
@@ -835,8 +794,8 @@ U 1 1 5FBF8C01
 P 3950 5450
 F 0 "U5" H 4150 5850 50  0000 C CNN
 F 1 "SI8600AB-B-IS" H 3950 5000 50  0000 C CNN
-F 2 "" H 3950 5850 50  0001 C CNN
-F 3 "" H 3950 5850 50  0001 C CNN
+F 2 "TSI_Rev_2021_Footprint_Lib:SOIC127P600X175-8N" H 3950 5850 50  0001 C CNN
+F 3 "https://www.snapeda.com/parts/SI8600AB-B-IS/Silicon%20Labs/datasheet/" H 3950 5850 50  0001 C CNN
 	1    3950 5450
 	1    0    0    -1  
 $EndComp
@@ -881,8 +840,8 @@ U 1 1 5FC68EC7
 P 4000 2150
 F 0 "U4" H 4150 2500 50  0000 C CNN
 F 1 "ACPL-C870" H 4000 1750 50  0000 C CNN
-F 2 "" H 4000 2500 50  0001 C CNN
-F 3 "" H 4000 2500 50  0001 C CNN
+F 2 "TSI_Rev_2021_Footprint_Lib:SOIC127P1150X330-8N" H 4000 2500 50  0001 C CNN
+F 3 "https://docs.broadcom.com/doc/AV02-3563EN" H 4000 2500 50  0001 C CNN
 	1    4000 2150
 	1    0    0    -1  
 $EndComp
@@ -1237,29 +1196,29 @@ Text HLabel 2100 9000 0    50   Input ~ 0
 SCL
 Text HLabel 2100 9200 0    50   Input ~ 0
 Throttle_LV
+Text HLabel 5950 9700 2    50   Output ~ 0
+1.24V_REF
 Text HLabel 5750 8800 0    50   Input ~ 0
-1.24V_REF
-Text HLabel 5750 9000 0    50   Input ~ 0
 IO_Ground
-Text HLabel 5750 8900 0    50   Input ~ 0
+Text HLabel 5750 8700 0    50   Input ~ 0
 5HV
-Text HLabel 5750 9500 0    50   Input ~ 0
+Text HLabel 5750 9300 0    50   Input ~ 0
 Throttle_HV
 Wire Wire Line
-	5950 9000 5750 9000
-Text Label 5950 9000 0    50   ~ 0
+	5950 8800 5750 8800
+Text Label 5950 8800 0    50   ~ 0
 IO_Ground
 Wire Wire Line
-	5950 9500 5750 9500
-Text Label 5950 9500 0    50   ~ 0
+	5950 9300 5750 9300
+Text Label 5950 9300 0    50   ~ 0
 Throttle_HV
 Wire Wire Line
-	5950 8900 5750 8900
+	5950 8700 5750 8700
 Wire Wire Line
-	5750 8800 5950 8800
-Text Label 5950 8800 0    50   ~ 0
-1.24V_REF
-Text Label 5950 8900 0    50   ~ 0
+	5950 9700 5750 9700
+Text Label 5750 9700 2    50   ~ 0
+DiffAmp_REF
+Text Label 5950 8700 0    50   ~ 0
 5HV
 Wire Notes Line
 	1400 9450 2950 9450
@@ -1271,29 +1230,29 @@ Wire Notes Line
 	1400 8350 1400 9450
 Text Notes 5150 8550 0    79   ~ 0
 HIGH VOLTAGE SIGNALS\n
-Text Label 5950 9300 0    50   ~ 0
+Text Label 5950 9100 0    50   ~ 0
 HV+
 Wire Wire Line
-	5950 9300 5750 9300
-Text Label 5950 9200 0    50   ~ 0
+	5950 9100 5750 9100
+Text Label 5950 9000 0    50   ~ 0
 TSV_Voltage
-Text Label 5950 9100 0    50   ~ 0
+Text Label 5950 8900 0    50   ~ 0
 MC_Voltage
 Wire Wire Line
-	5950 9100 5750 9100
+	5950 8900 5750 8900
+Wire Wire Line
+	5950 9000 5750 9000
+Text HLabel 5750 9000 0    50   Input ~ 0
+TSV_Voltage
+Text HLabel 5750 8900 0    50   Input ~ 0
+MC_Voltage
+Text HLabel 5750 9100 0    50   Input ~ 0
+HV+
+Text Label 5950 9200 0    50   ~ 0
+HV-
 Wire Wire Line
 	5950 9200 5750 9200
 Text HLabel 5750 9200 0    50   Input ~ 0
-TSV_Voltage
-Text HLabel 5750 9100 0    50   Input ~ 0
-MC_Voltage
-Text HLabel 5750 9300 0    50   Input ~ 0
-HV+
-Text Label 5950 9400 0    50   ~ 0
-HV-
-Wire Wire Line
-	5950 9400 5750 9400
-Text HLabel 5750 9400 0    50   Input ~ 0
 HV-
 Wire Notes Line
 	12650 9650 15850 9650
@@ -1327,17 +1286,17 @@ Text Notes 6950 6600 0    98   ~ 0
 Binary Address:\n1001010
 Text Notes 12100 10450 0    157  ~ 0
 V/I\n& THROTTLE VOLTAGE ISOLATOR
-Text Label 5950 9700 0    50   ~ 0
+Text Label 5950 9500 0    50   ~ 0
 A2_HV
-Text Label 5950 9600 0    50   ~ 0
+Text Label 5950 9400 0    50   ~ 0
 A1_HV
 Wire Wire Line
-	5950 9700 5750 9700
+	5950 9500 5750 9500
 Wire Wire Line
-	5950 9600 5750 9600
-Text HLabel 5750 9600 0    50   Input ~ 0
+	5950 9400 5750 9400
+Text HLabel 5750 9400 0    50   Input ~ 0
 A1_HV
-Text HLabel 5750 9700 0    50   Input ~ 0
+Text HLabel 5750 9500 0    50   Input ~ 0
 A2_HV
 Wire Notes Line
 	5050 9800 6650 9800
@@ -1347,4 +1306,58 @@ Wire Notes Line
 	5050 8350 6650 8350
 Wire Notes Line
 	6650 8350 6650 9800
+$Comp
+L Amplifier_Operational:MCP6004 U26
+U 1 1 5F98F236
+P 11500 4700
+F 0 "U26" H 11500 4700 50  0000 C CNN
+F 1 "MCP6004" H 11650 4850 50  0000 C CNN
+F 2 "" H 11450 4800 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 11550 4900 50  0001 C CNN
+	1    11500 4700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:MCP6004 U26
+U 5 1 5F994131
+P 11500 4700
+F 0 "U26" H 11458 4746 50  0001 L CNN
+F 1 "MCP6004" H 11458 4700 50  0001 L CNN
+F 2 "" H 11450 4800 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 11550 4900 50  0001 C CNN
+	5    11500 4700
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	11600 5100 11600 5000
+$Comp
+L power:PWR_FLAG #FLG0104
+U 1 1 6112F663
+P 13900 8200
+F 0 "#FLG0104" H 13900 8275 50  0001 C CNN
+F 1 "PWR_FLAG" H 13900 8373 50  0000 C CNN
+F 2 "" H 13900 8200 50  0001 C CNN
+F 3 "~" H 13900 8200 50  0001 C CNN
+	1    13900 8200
+	1    0    0    -1  
+$EndComp
+Text Notes 3550 5100 0    47   ~ 0
+I2C Isolator\n
+$Comp
+L CarMan_KiCAD_Library:TS431ILT IC1
+U 1 1 61439D09
+P 14400 8900
+F 0 "IC1" H 14400 9150 79  0000 C CNN
+F 1 "TS431ILT" H 14400 8600 79  0000 C CNN
+F 2 "" H 14150 9000 79  0001 C CNN
+F 3 "" H 14150 9000 79  0001 C CNN
+	1    14400 8900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14750 9000 15300 9000
+Wire Wire Line
+	13900 8550 15300 8550
+Wire Wire Line
+	15300 8550 15300 9000
 $EndSCHEMATC

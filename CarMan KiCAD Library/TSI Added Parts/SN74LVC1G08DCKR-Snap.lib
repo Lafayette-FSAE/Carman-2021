@@ -1,0 +1,37 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#(c) SnapEDA 2016 (snapeda.com)
+#This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA) with Design Exception 1.0
+#
+# SN74LVC1G08DCKR
+#
+DEF SN74LVC1G08DCKR U 0 40 N N 2 L N
+F0 "U" 150 50 50 H V L BNN
+F1 "SN74LVC1G08DCKR" 150 -50 50 H V L BNN
+F2 "SOT65P210X110-5N" 0 0 50 H I L BNN
+F3 "" 0 0 50 H I L BNN
+F4 "Unavailable" 0 0 50 H I L BNN "AVAILABILITY"
+F5 "None" 0 0 50 H I L BNN "PRICE"
+F6 "SOT-SC70-5 Texas Instruments" 0 0 50 H I L BNN "PACKAGE"
+F7 "SN74LVC1G08DCKR" 0 0 50 H I L BNN "MP"
+F8 "Single 2-Input Positive-AND Gate 5-SC70 -40 to 125" 0 0 50 H I L BNN "DESCRIPTION"
+F9 "Texas Instruments" 0 0 50 H I L BNN "MF"
+F10 "https://pricing.snapeda.com/search/part/SN74LVC1G08DCKR/?ref=eda" 0 0 50 H I L BNN "PURCHASE-URL"
+DRAW
+T 0 -50 -75 32 0 0 0 GND Normal 0 L B
+T 0 -50 50 32 0 0 0 VCC Normal 0 L B
+S -100 -100 100 100 1 0 6 f
+X ~ 5 0 200 100 D 40 40 1 0 B 
+X ~ 3 0 -200 100 U 40 40 1 0 B 
+P 2 2 0 6 -100 100 -100 -100 N
+P 2 2 0 6 -100 100 0 100 N
+P 2 2 0 6 -100 -100 0 -100 N
+A 0 0 100 900 0 2 0 6 N 0 100 100 0
+A 0 0 100 0 2700 2 0 6 N 100 0 0 -100
+X ~ 1 -200 50 100 R 40 40 2 0 B 
+X ~ 2 -200 -50 100 R 40 40 2 0 B 
+X ~ 4 200 0 100 L 40 40 2 0 B 
+ENDDRAW
+ENDDEF
+#
+# End Library

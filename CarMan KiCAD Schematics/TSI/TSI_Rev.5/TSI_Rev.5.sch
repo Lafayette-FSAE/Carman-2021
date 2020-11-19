@@ -287,23 +287,23 @@ Text Label 9000 5000 2    50   ~ 0
 AIRS+
 Text Label 9000 5100 2    50   ~ 0
 AIRS-
-Text Label 6700 3150 2    50   ~ 0
+Text Label 6850 2600 2    50   ~ 0
 SCL_TSI
-Text Label 6700 3250 2    50   ~ 0
+Text Label 6850 2700 2    50   ~ 0
 SDA_TSI
-Text Label 6700 3450 2    50   ~ 0
+Text Label 6850 2900 2    50   ~ 0
 Safety_Loop
-Text Label 6700 3550 2    50   ~ 0
+Text Label 6850 3000 2    50   ~ 0
 Cooling_CTRL
-Text Label 6700 3650 2    50   ~ 0
+Text Label 6850 3100 2    50   ~ 0
 Throttle_SEL
-Text Label 4200 4000 0    50   ~ 0
+Text Label 4150 3400 0    50   ~ 0
 Flowrate_5V
-Text Label 5750 4000 2    50   ~ 0
+Text Label 5700 3400 2    50   ~ 0
 5V
-Text Label 4200 4100 0    50   ~ 0
+Text Label 4150 3500 0    50   ~ 0
 Flowrate_RTN
-Text Label 5750 4100 2    50   ~ 0
+Text Label 5700 3500 2    50   ~ 0
 GLV_RTN
 Wire Wire Line
 	1350 4200 700  4200
@@ -548,7 +548,7 @@ Wire Wire Line
 	10450 3450 10600 3450
 Wire Wire Line
 	10450 3150 10600 3150
-Text Notes 6700 3800 0    50   ~ 0
+Text Notes 6850 3250 0    50   ~ 0
 TSI-Logic Connection\n
 Text Label 7400 650  0    50   ~ 0
 BP_CAN+
@@ -658,34 +658,34 @@ Wire Wire Line
 Text Label 9000 5800 2    50   ~ 0
 MRESET_Contact
 Wire Wire Line
-	4900 3500 5200 3500
+	4850 2900 5150 2900
 Wire Wire Line
-	4900 3600 5200 3600
-Text Label 4900 3500 2    50   ~ 0
+	4850 3000 5150 3000
+Text Label 4850 2900 2    50   ~ 0
 CAN+_Logic
-Text Label 5200 3500 0    50   ~ 0
+Text Label 5150 2900 0    50   ~ 0
 BP_CAN+
-Text Label 5200 3600 0    50   ~ 0
+Text Label 5150 3000 0    50   ~ 0
 BP_CAN-
-Text Label 4900 3600 2    50   ~ 0
+Text Label 4850 3000 2    50   ~ 0
 CAN-_Logic
 Wire Notes Line
 	5500 6100 5500 7450
 Text Notes 9500 1200 0    50   ~ 0
 TSI to Cooling\nRelay\n
-Text Notes 4800 3350 0    50   ~ 0
+Text Notes 4750 2750 0    50   ~ 0
 Battery Pack\nCAN Lines\n
 Wire Notes Line
-	4400 3650 5600 3650
+	4350 3050 5550 3050
 Wire Notes Line
-	5600 3150 4400 3150
+	5550 2550 4350 2550
 Wire Notes Line
-	4400 3150 4400 3650
+	4350 2550 4350 3050
 Wire Notes Line
-	5600 3150 5600 3650
-Text Label 5750 4200 2    50   ~ 0
+	5550 2550 5550 3050
+Text Label 5700 3600 2    50   ~ 0
 GLV_RTN
-Text Label 4200 4200 0    50   ~ 0
+Text Label 4150 3600 0    50   ~ 0
 FAULT_LED_RTN
 Text Label 7950 1750 0    50   ~ 0
 Brake_Light_RTN
@@ -887,15 +887,15 @@ Text Label 9250 850  0    49   ~ 0
 COOL_24V
 Text Label 9250 950  0    49   ~ 0
 GLV_RTN
-Text Label 7350 3150 0    50   ~ 0
+Text Label 7500 2600 0    50   ~ 0
 AMS_Fault
 Text Label 2050 2150 0    50   ~ 0
 Safety_Loop
-Text Label 5750 3900 2    49   ~ 0
+Text Label 5700 3300 2    49   ~ 0
 MRESET_Contact
-Text Label 4200 3900 0    49   ~ 0
+Text Label 4150 3300 0    49   ~ 0
 GEN_Fault_LED
-Text Label 6700 3350 2    49   ~ 0
+Text Label 6850 2800 2    49   ~ 0
 5V_ISO_RTN
 $Sheet
 S 1350 3300 1400 1400
@@ -966,35 +966,35 @@ Wire Wire Line
 Text Label 1250 4300 2    50   ~ 0
 IMD_Status
 Wire Wire Line
-	4250 5150 4250 5300
+	5400 4750 5400 4900
 Wire Wire Line
-	4250 5300 4550 5300
+	5400 4900 5700 4900
 $Comp
 L Device:C C19
 U 1 1 5FC7A498
-P 4550 5450
-F 0 "C19" H 4665 5496 50  0000 L CNN
-F 1 "0.21u" H 4665 5405 50  0000 L CNN
-F 2 "" H 4588 5300 50  0001 C CNN
-F 3 "~" H 4550 5450 50  0001 C CNN
-	1    4550 5450
+P 5700 5050
+F 0 "C19" H 5815 5096 50  0000 L CNN
+F 1 "0.21u" H 5815 5005 50  0000 L CNN
+F 2 "" H 5738 4900 50  0001 C CNN
+F 3 "~" H 5700 5050 50  0001 C CNN
+	1    5700 5050
 	1    0    0    -1  
 $EndComp
-Connection ~ 4550 5300
+Connection ~ 5700 4900
 Wire Wire Line
-	4550 5300 4700 5300
+	5700 4900 5850 4900
 Wire Wire Line
-	4250 5300 4250 5600
-Connection ~ 4250 5300
+	5400 4900 5400 5200
+Connection ~ 5400 4900
 Wire Wire Line
-	4550 5600 4550 5850
-Text Label 4250 5150 0    50   ~ 0
+	5700 5200 5700 5450
+Text Label 5400 4750 0    50   ~ 0
 3.3V
-Text Label 4700 5300 0    50   ~ 0
+Text Label 5850 4900 0    50   ~ 0
 CoolTemp
-Text Label 4550 5850 0    50   ~ 0
+Text Label 5700 5450 0    50   ~ 0
 GLV_RTN
-Text Label 4250 5600 2    50   ~ 0
+Text Label 5400 5200 2    50   ~ 0
 CoolTemp_RTN
 Wire Wire Line
 	1250 4400 1350 4400
@@ -1027,13 +1027,13 @@ F 3 "~" H 10500 750 50  0001 C CNN
 	1    10500 750 
 	0    -1   -1   0   
 $EndComp
-Text Label 5750 3800 2    50   ~ 0
+Text Label 5700 3200 2    50   ~ 0
 Brake_Light
-Text Label 4200 3800 0    50   ~ 0
+Text Label 4150 3200 0    50   ~ 0
 Brake_Pressed
-Text Label 4200 4300 0    50   ~ 0
+Text Label 4150 3700 0    50   ~ 0
 Brake_Light_RTN
-Text Label 5750 4300 2    50   ~ 0
+Text Label 5700 3700 2    50   ~ 0
 GLV_RTN
 $Sheet
 S 9150 3100 1300 1400
@@ -1073,36 +1073,36 @@ Text Label 10600 4150 0    50   ~ 0
 RTDS_RTN
 Wire Wire Line
 	9150 3950 9000 3950
-Text Label 7350 3650 0    50   ~ 0
+Text Label 7500 3100 0    50   ~ 0
 PC_Ready
-Text Label 7350 3250 0    50   ~ 0
+Text Label 7500 2700 0    50   ~ 0
 SR_CTRL
-Text Label 7350 3350 0    50   ~ 0
+Text Label 7500 2800 0    50   ~ 0
 CAN-_Logic
-Text Label 7350 3450 0    50   ~ 0
+Text Label 7500 2900 0    50   ~ 0
 CAN+_Logic
-Text Label 7350 3550 0    50   ~ 0
+Text Label 7500 3000 0    50   ~ 0
 RTDS_CTRL
 $Comp
 L Connector_Generic:Conn_01x06 J13.2
 U 1 1 5FC777B8
-P 7150 3350
-F 0 "J13.2" H 7050 3650 50  0000 L CNN
-F 1 "Conn_01x06" H 7230 3251 50  0001 L CNN
-F 2 "" H 7150 3350 50  0001 C CNN
-F 3 "~" H 7150 3350 50  0001 C CNN
-	1    7150 3350
+P 7300 2800
+F 0 "J13.2" H 7200 3100 50  0000 L CNN
+F 1 "Conn_01x06" H 7380 2701 50  0001 L CNN
+F 2 "" H 7300 2800 50  0001 C CNN
+F 3 "~" H 7300 2800 50  0001 C CNN
+	1    7300 2800
 	-1   0    0    -1  
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x06 J13.1
 U 1 1 5FC77F26
-P 6900 3350
-F 0 "J13.1" H 6800 3650 50  0000 L CNN
-F 1 "Conn_01x06" H 6980 3251 50  0001 L CNN
-F 2 "" H 6900 3350 50  0001 C CNN
-F 3 "~" H 6900 3350 50  0001 C CNN
-	1    6900 3350
+P 7050 2800
+F 0 "J13.1" H 6950 3100 50  0000 L CNN
+F 1 "Conn_01x06" H 7130 2701 50  0001 L CNN
+F 2 "" H 7050 2800 50  0001 C CNN
+F 3 "~" H 7050 2800 50  0001 C CNN
+	1    7050 2800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1380,17 +1380,17 @@ Wire Wire Line
 Wire Wire Line
 	5300 750  5600 750 
 Wire Wire Line
-	4200 3800 5750 3800
+	4150 3200 5700 3200
 Wire Wire Line
-	4200 3900 5750 3900
+	4150 3300 5700 3300
 Wire Wire Line
-	4200 4000 5750 4000
+	4150 3400 5700 3400
 Wire Wire Line
-	4200 4100 5750 4100
+	4150 3500 5700 3500
 Wire Wire Line
-	4200 4200 5750 4200
+	4150 3600 5700 3600
 Wire Wire Line
-	4200 4300 5750 4300
+	4150 3700 5700 3700
 Text Label 6750 1750 0    50   ~ 0
 Brake_Pressed
 Text Label 6750 1650 0    47   ~ 0
