@@ -530,22 +530,10 @@ Text Label 9000 3550 2    50   ~ 0
 D_LED_CTRL
 Text Label 9000 3650 2    50   ~ 0
 SPARE_LED_CTRL
-Text Label 10600 3250 0    50   ~ 0
-5V
-Text Label 10600 3350 0    50   ~ 0
-3.3V
 Text Label 10600 3450 0    50   ~ 0
 GLV_RTN
-Text Label 10600 3150 0    50   ~ 0
-24V
-Wire Wire Line
-	10450 3250 10600 3250
-Wire Wire Line
-	10450 3350 10600 3350
 Wire Wire Line
 	10450 3450 10600 3450
-Wire Wire Line
-	10450 3150 10600 3150
 Text Notes 6850 3250 0    50   ~ 0
 TSI-Logic Connection\n
 Text Label 7400 650  0    50   ~ 0
@@ -837,29 +825,10 @@ Text Label 2050 1750 0    50   ~ 0
 FAULT_LED_RTN
 Text Label 2050 1650 0    50   ~ 0
 AMS_FAULT_LED
-$Comp
-L Connector_Generic:Conn_01x06 J19
-U 1 1 5FE0EFE1
-P 10950 1850
-F 0 "J19" H 10900 2150 50  0000 L CNN
-F 1 "J19" H 10900 2150 50  0001 L CNN
-F 2 "" H 10950 1850 50  0001 C CNN
-F 3 "~" H 10950 1850 50  0001 C CNN
-	1    10950 1850
-	1    0    0    -1  
-$EndComp
-Text Notes 10800 2450 0    50   ~ 0
-Testing\nConnector\n\n
 Text Label 10250 1750 0    50   ~ 0
 SCL
 Text Label 10250 1950 0    50   ~ 0
 SL1_In
-Text Label 10250 2050 0    50   ~ 0
-IMD_Status
-Text Label 10250 2150 0    50   ~ 0
-Throttle_SEL
-Text Label 10250 1850 0    50   ~ 0
-PC_Ready
 Text Label 10250 1650 0    50   ~ 0
 SDA
 Text Label 9050 1650 0    50   ~ 0
@@ -964,31 +933,13 @@ IMD_Status
 Wire Wire Line
 	5400 4750 5400 4900
 Wire Wire Line
-	5400 4900 5700 4900
-$Comp
-L Device:C C19
-U 1 1 5FC7A498
-P 5700 5050
-F 0 "C19" H 5815 5096 50  0000 L CNN
-F 1 "0.21u" H 5815 5005 50  0000 L CNN
-F 2 "" H 5738 4900 50  0001 C CNN
-F 3 "~" H 5700 5050 50  0001 C CNN
-	1    5700 5050
-	1    0    0    -1  
-$EndComp
-Connection ~ 5700 4900
-Wire Wire Line
-	5700 4900 5850 4900
-Wire Wire Line
 	5400 4900 5400 5200
 Connection ~ 5400 4900
-Wire Wire Line
-	5700 5200 5700 5450
 Text Label 5400 4750 0    50   ~ 0
 3.3V
 Text Label 5850 4900 0    50   ~ 0
 CoolTemp
-Text Label 5700 5450 0    50   ~ 0
+Text Label 6050 5500 2    50   ~ 0
 GLV_RTN
 Text Label 5400 5200 2    50   ~ 0
 CoolTemp_RTN
@@ -1188,16 +1139,6 @@ Wire Wire Line
 	9250 850  9700 850 
 Wire Wire Line
 	9250 950  9700 950 
-Wire Wire Line
-	10250 1950 10750 1950
-Wire Wire Line
-	10250 2050 10750 2050
-Wire Wire Line
-	10250 2150 10750 2150
-Wire Wire Line
-	10250 1850 10750 1850
-Wire Wire Line
-	10250 1750 10750 1750
 Wire Wire Line
 	10250 1650 10750 1650
 Text Notes 8950 2100 2    50   ~ 0
@@ -1432,4 +1373,65 @@ Text Label 1150 6050 2    50   ~ 0
 Brake_Pressed_HV
 Text Label 1150 5450 2    50   ~ 0
 MC+
+Wire Wire Line
+	10250 1750 10750 1750
+Wire Wire Line
+	10250 1850 10750 1850
+Wire Wire Line
+	10250 2150 10750 2150
+Wire Wire Line
+	10250 2050 10750 2050
+Wire Wire Line
+	10250 1950 10750 1950
+Text Label 10250 1850 0    50   ~ 0
+PC_Ready
+Text Label 10250 2150 0    50   ~ 0
+Throttle_SEL
+Text Label 10250 2050 0    50   ~ 0
+IMD_Status
+Text Notes 10800 2450 0    50   ~ 0
+Testing\nConnector\n\n
+$Comp
+L Connector_Generic:Conn_01x06 J19
+U 1 1 5FE0EFE1
+P 10950 1850
+F 0 "J19" H 10900 2150 50  0000 L CNN
+F 1 "J19" H 10900 2150 50  0001 L CNN
+F 2 "" H 10950 1850 50  0001 C CNN
+F 3 "~" H 10950 1850 50  0001 C CNN
+	1    10950 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10450 3150 10600 3150
+Wire Wire Line
+	10450 3350 10600 3350
+Wire Wire Line
+	10450 3250 10600 3250
+Text Label 10600 3150 0    50   ~ 0
+24V
+Text Label 10600 3350 0    50   ~ 0
+3.3V
+Text Label 10600 3250 0    50   ~ 0
+5V
+$Comp
+L pspice:CAP C19
+U 1 1 5FC05A30
+P 5700 5150
+F 0 "C19" H 5700 5250 50  0000 L CNN
+F 1 "0.21u" H 5700 5050 50  0000 L CNN
+F 2 "" H 5700 5150 50  0001 C CNN
+F 3 "~" H 5700 5150 50  0001 C CNN
+	1    5700 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 5400 5700 5500
+Wire Wire Line
+	5700 5500 6050 5500
+Wire Wire Line
+	5400 4900 5700 4900
+Connection ~ 5700 4900
+Wire Wire Line
+	5700 4900 5850 4900
 $EndSCHEMATC

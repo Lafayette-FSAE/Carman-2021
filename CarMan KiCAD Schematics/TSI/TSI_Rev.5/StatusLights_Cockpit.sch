@@ -38,8 +38,6 @@ $EndComp
 Wire Wire Line
 	10200 1950 10200 2350
 Wire Wire Line
-	8800 1050 8800 1150
-Wire Wire Line
 	10200 1150 10200 900 
 Text Label 10200 900  2    50   ~ 0
 3.3V
@@ -91,7 +89,7 @@ Wire Wire Line
 	3750 1300 3500 1300
 Text Label 3500 1300 2    50   ~ 0
 RTDS_CTRL
-Text Label 4050 1500 2    50   ~ 0
+Text Label 3750 1500 0    50   ~ 0
 GLV_RTN
 $Comp
 L Device:R R110
@@ -203,7 +201,7 @@ Text Label 5050 2000 0    50   ~ 0
 24V
 Text Label 5050 2200 0    50   ~ 0
 Drive_LED
-Text Label 4050 2200 2    50   ~ 0
+Text Label 3750 2200 0    50   ~ 0
 GLV_RTN
 Text Label 3500 2000 2    50   ~ 0
 D_LED_CTRL
@@ -242,7 +240,7 @@ F 3 "~" H 3900 2800 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3750 2800 3500 2800
-Text Label 4050 3000 2    50   ~ 0
+Text Label 3750 3000 0    50   ~ 0
 GLV_RTN
 Text Label 5050 3000 0    50   ~ 0
 SPARE_LED
@@ -250,17 +248,6 @@ Text Label 5050 2800 0    50   ~ 0
 24V
 Text Label 3500 2800 2    50   ~ 0
 SPARE_LED_CTRL
-$Comp
-L Device:Q_PMOS_DSG Q3
-U 1 1 5FA04A44
-P 7000 1300
-F 0 "Q3" H 7205 1254 50  0000 L CNN
-F 1 "ZVP1320F" H 7205 1345 50  0000 L CNN
-F 2 "" H 7200 1400 50  0001 C CNN
-F 3 "~" H 7000 1300 50  0001 C CNN
-	1    7000 1300
-	1    0    0    1   
-$EndComp
 Wire Wire Line
 	7100 600  7100 1100
 Wire Wire Line
@@ -298,131 +285,123 @@ Wire Notes Line
 	7100 1900 7100 1950
 Text Notes 8500 1800 2    50   ~ 0
 STA20502 RTDS BUZZER (.6A MAX)\n
-Wire Notes Line
-	450  4350 3400 4350
-Wire Notes Line
-	3400 4350 3400 7800
-Text HLabel 750  4450 0    50   Input ~ 0
+Text HLabel 800  5850 0    50   Input ~ 0
 HV+
-Text HLabel 750  4550 0    50   Input ~ 0
+Text HLabel 800  5950 0    50   Input ~ 0
 HV-
 Wire Wire Line
-	750  4450 900  4450
+	800  5850 950  5850
 Wire Wire Line
-	750  4550 900  4550
-Text Label 900  4450 0    50   ~ 0
+	800  5950 950  5950
+Text Label 950  5850 0    50   ~ 0
 HV+
-Text Label 900  4550 0    50   ~ 0
+Text Label 950  5950 0    50   ~ 0
 HV-
 Wire Wire Line
-	3000 5300 2700 5300
+	3050 6700 2750 6700
 Wire Wire Line
-	1500 5000 1950 5000
+	1550 6400 2000 6400
 $Comp
 L CarMan_KiCAD_Library:RDE03110S12 U1
 U 1 1 5FA31407
-P 3400 5300
-F 0 "U1" H 3600 5700 50  0000 C CNN
-F 1 "RDE03110S12" H 3400 4900 50  0000 C CNN
-F 2 "" H 3200 5450 50  0001 C CNN
-F 3 "" H 3200 5450 50  0001 C CNN
-	1    3400 5300
+P 3450 6700
+F 0 "U1" H 3650 7100 50  0000 C CNN
+F 1 "RDE03110S12" H 3450 6300 50  0000 C CNN
+F 2 "TSI_Rev_2021_Footprint_Lib:DIP1549W45P254L3404H940Q24" H 3250 6850 50  0001 C CNN
+F 3 "https://www.snapeda.com/parts/RDE03110S12/XP%20Power/datasheet/" H 3250 6850 50  0001 C CNN
+	1    3450 6700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1500 5600 2250 5600
+	1550 7000 2300 7000
 Wire Wire Line
-	2700 5300 2700 5600
-Connection ~ 2700 5600
+	2750 6700 2750 7000
+Connection ~ 2750 7000
 Wire Wire Line
-	2700 5600 3000 5600
+	2750 7000 3050 7000
 $Comp
 L pspice:CAP C14
 U 1 1 5FA3C7FB
-P 2250 5300
-F 0 "C14" H 2428 5346 50  0000 L CNN
-F 1 "1u" H 2428 5255 50  0000 L CNN
-F 2 "" H 2250 5300 50  0001 C CNN
-F 3 "~" H 2250 5300 50  0001 C CNN
-	1    2250 5300
+P 2300 6700
+F 0 "C14" H 2478 6746 50  0000 L CNN
+F 1 "1u" H 2478 6655 50  0000 L CNN
+F 2 "" H 2300 6700 50  0001 C CNN
+F 3 "~" H 2300 6700 50  0001 C CNN
+	1    2300 6700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2250 5550 2250 5600
-Connection ~ 2250 5600
+	2300 6950 2300 7000
+Connection ~ 2300 7000
 Wire Wire Line
-	2250 5600 2700 5600
+	2300 7000 2750 7000
 Wire Wire Line
-	2250 5050 2250 5000
-Connection ~ 2250 5000
+	2300 6450 2300 6400
+Connection ~ 2300 6400
 Wire Wire Line
-	2250 5000 3000 5000
+	2300 6400 3050 6400
 $Comp
 L power:PWR_FLAG #FLG01
 U 1 1 5FA42854
-P 1950 5000
-F 0 "#FLG01" H 1950 5075 50  0001 C CNN
-F 1 "PWR_FLAG" H 1950 5173 50  0000 C CNN
-F 2 "" H 1950 5000 50  0001 C CNN
-F 3 "~" H 1950 5000 50  0001 C CNN
-	1    1950 5000
+P 2000 6400
+F 0 "#FLG01" H 2000 6475 50  0001 C CNN
+F 1 "PWR_FLAG" H 2000 6573 50  0000 C CNN
+F 2 "" H 2000 6400 50  0001 C CNN
+F 3 "~" H 2000 6400 50  0001 C CNN
+	1    2000 6400
 	1    0    0    -1  
 $EndComp
-Connection ~ 1950 5000
+Connection ~ 2000 6400
 Wire Wire Line
-	1950 5000 2250 5000
-Text Label 1500 5000 2    50   ~ 0
+	2000 6400 2300 6400
+Text Label 1550 6400 2    50   ~ 0
 HV+
-Text Label 1500 5600 2    50   ~ 0
+Text Label 1550 7000 2    50   ~ 0
 HV-
 Wire Wire Line
-	3800 5600 4150 5600
+	3850 7000 4200 7000
 Wire Wire Line
-	3800 5000 4150 5000
+	3850 6400 4200 6400
 Wire Wire Line
-	4950 5000 4950 4800
+	5000 6400 5000 6200
 Wire Wire Line
-	4950 4800 5350 4800
-Connection ~ 4950 5000
+	5000 6200 5400 6200
+Connection ~ 5000 6400
 Wire Wire Line
-	4950 5000 5350 5000
+	5000 6400 5400 6400
 $Comp
 L pspice:CAP C17
 U 1 1 5FA50112
-P 4350 5300
-F 0 "C17" H 4528 5346 50  0000 L CNN
-F 1 "4.7u" H 4528 5255 50  0000 L CNN
-F 2 "" H 4350 5300 50  0001 C CNN
-F 3 "~" H 4350 5300 50  0001 C CNN
-	1    4350 5300
+P 4400 6700
+F 0 "C17" H 4578 6746 50  0000 L CNN
+F 1 "4.7u" H 4578 6655 50  0000 L CNN
+F 2 "" H 4400 6700 50  0001 C CNN
+F 3 "~" H 4400 6700 50  0001 C CNN
+	1    4400 6700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4350 5050 4350 5000
-Connection ~ 4350 5000
+	4400 6450 4400 6400
+Connection ~ 4400 6400
 Wire Wire Line
-	4350 5000 4950 5000
+	4400 6400 5000 6400
 Wire Wire Line
-	4350 5550 4350 5600
-Connection ~ 4350 5600
+	4400 6950 4400 7000
+Connection ~ 4400 7000
 Wire Wire Line
-	4350 5600 4950 5600
+	4400 7000 5000 7000
 Wire Wire Line
-	4150 5000 4150 4800
-Connection ~ 4150 5000
+	4200 6400 4200 6200
+Connection ~ 4200 6400
 Wire Wire Line
-	4150 5000 4350 5000
+	4200 6400 4400 6400
 Wire Wire Line
-	4150 5600 4150 5850
-Connection ~ 4150 5600
+	4200 7000 4200 7250
+Connection ~ 4200 7000
 Wire Wire Line
-	4150 5600 4350 5600
-Text Label 4950 5600 0    50   ~ 0
+	4200 7000 4400 7000
+Text Label 5000 7000 0    50   ~ 0
 TSAL_RTN
-Text Label 5350 5000 0    50   ~ 0
-TSAL
-Text Label 5350 4800 0    50   ~ 0
-TSAL_Cockpit
 Text Notes 7200 1200 0    50   ~ 0
 0.2A Id *CHECK THIS FET, specifications\n are likely not correct.\n Placeholder transistor*
 Text Notes 4200 2550 0    50   ~ 0
@@ -430,26 +409,26 @@ Current Ratio 50%
 $Comp
 L Connector:TestPoint HVPL_LV1
 U 1 1 5FA80FFC
-P 4150 4800
-F 0 "HVPL_LV1" H 4208 4918 50  0000 L CNN
-F 1 "TSAL_LV" H 4208 4827 50  0000 L CNN
-F 2 "" H 4350 4800 50  0001 C CNN
-F 3 "~" H 4350 4800 50  0001 C CNN
-	1    4150 4800
+P 4200 6200
+F 0 "HVPL_LV1" H 4258 6318 50  0000 L CNN
+F 1 "TSAL_LV" H 4258 6227 50  0000 L CNN
+F 2 "" H 4400 6200 50  0001 C CNN
+F 3 "~" H 4400 6200 50  0001 C CNN
+	1    4200 6200
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector:TestPoint TSAL_RTN1
 U 1 1 5FA8198D
-P 4150 5850
-F 0 "TSAL_RTN1" H 4092 5876 50  0000 R CNN
-F 1 "TSAL_RTN" H 4092 5967 50  0000 R CNN
-F 2 "" H 4350 5850 50  0001 C CNN
-F 3 "~" H 4350 5850 50  0001 C CNN
-	1    4150 5850
+P 4200 7250
+F 0 "TSAL_RTN1" H 4142 7276 50  0000 R CNN
+F 1 "TSAL_RTN" H 4142 7367 50  0000 R CNN
+F 2 "" H 4400 7250 50  0001 C CNN
+F 3 "~" H 4400 7250 50  0001 C CNN
+	1    4200 7250
 	-1   0    0    1   
 $EndComp
-Text Notes 1650 4500 0    50   ~ 0
+Text Notes 1700 5900 0    50   ~ 0
 HIGH VOLTAGE\n
 $Comp
 L Device:R R68
@@ -546,19 +525,13 @@ Wire Wire Line
 Wire Wire Line
 	4250 2800 4050 2800
 Wire Wire Line
-	4250 3000 4050 3000
-Wire Wire Line
 	5050 2000 4850 2000
 Wire Wire Line
 	5050 2200 4850 2200
 Wire Wire Line
-	4250 2200 4050 2200
-Wire Wire Line
 	4250 2000 4050 2000
 Wire Wire Line
 	4250 1300 4050 1300
-Wire Wire Line
-	4250 1500 4050 1500
 Wire Wire Line
 	5050 1500 4850 1500
 Text Notes 7100 6950 0    197  ~ 0
@@ -593,14 +566,6 @@ Text HLabel 1250 1500 0    50   Input ~ 0
 RTDS_RTN
 Wire Wire Line
 	1250 1500 1400 1500
-Wire Notes Line
-	2100 500  500  500 
-Wire Notes Line
-	450  2600 2050 2600
-Wire Notes Line
-	2050 600  2050 2600
-Wire Notes Line
-	500  500  500  2500
 Text Notes 1050 650  0    94   ~ 0
 SIGNALS\n
 Text HLabel 1250 2500 0    50   Input ~ 0
@@ -609,4 +574,39 @@ Wire Wire Line
 	1250 2500 1400 2500
 Text Label 1400 2500 0    50   ~ 0
 Drive_LED
+Wire Notes Line
+	2050 500  2050 2600
+Wire Notes Line
+	500  500  2050 500 
+Wire Notes Line
+	2050 2600 500  2600
+Wire Notes Line
+	500  500  500  2600
+Wire Wire Line
+	3750 3000 4250 3000
+Wire Wire Line
+	3750 2200 4250 2200
+Wire Wire Line
+	3750 1500 4250 1500
+$Comp
+L Device:Q_PMOS_GSD Q?
+U 1 1 5FC93215
+P 7000 1300
+AR Path="/6196BF15/5FC93215" Ref="Q?"  Part="1" 
+AR Path="/5FE1DCBA/5FC93215" Ref="Q3"  Part="1" 
+F 0 "Q3" H 7204 1254 50  0000 L CNN
+F 1 "ZVP1320F" H 7204 1345 50  0000 L CNN
+F 2 "TSI_Rev_2021_Footprint_Lib:SOT23" H 7200 1400 50  0001 C CNN
+F 3 "https://www.snapeda.com/parts/ZVP1320FTA/Diodes%20Inc./datasheet/" H 7000 1300 50  0001 C CNN
+	1    7000 1300
+	1    0    0    1   
+$EndComp
+Wire Notes Line
+	3450 5750 3450 7750
+Wire Notes Line
+	3450 7750 500  7750
+Wire Notes Line
+	500  7750 500  5750
+Wire Notes Line
+	500  5750 3450 5750
 $EndSCHEMATC

@@ -38,8 +38,6 @@ $EndComp
 Wire Wire Line
 	10200 1950 10200 2350
 Wire Wire Line
-	8800 1050 8800 1150
-Wire Wire Line
 	10200 1150 10200 900 
 Text Label 10200 900  2    50   ~ 0
 3.3V
@@ -91,7 +89,7 @@ Wire Wire Line
 	3750 1300 3500 1300
 Text Label 3500 1300 2    50   ~ 0
 RTDS_CTRL
-Text Label 4050 1500 2    50   ~ 0
+Text Label 3750 1500 0    50   ~ 0
 GLV_RTN
 $Comp
 L Device:R R110
@@ -203,7 +201,7 @@ Text Label 5050 2000 0    50   ~ 0
 24V
 Text Label 5050 2200 0    50   ~ 0
 Drive_LED
-Text Label 4050 2200 2    50   ~ 0
+Text Label 3750 2200 0    50   ~ 0
 GLV_RTN
 Text Label 3500 2000 2    50   ~ 0
 D_LED_CTRL
@@ -242,7 +240,7 @@ F 3 "~" H 3900 2800 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3750 2800 3500 2800
-Text Label 4050 3000 2    50   ~ 0
+Text Label 3750 3000 0    50   ~ 0
 GLV_RTN
 Text Label 5050 3000 0    50   ~ 0
 SPARE_LED
@@ -250,17 +248,6 @@ Text Label 5050 2800 0    50   ~ 0
 24V
 Text Label 3500 2800 2    50   ~ 0
 SPARE_LED_CTRL
-$Comp
-L Device:Q_PMOS_DSG Q3
-U 1 1 5FA04A44
-P 7000 1300
-F 0 "Q3" H 7205 1254 50  0000 L CNN
-F 1 "ZVP1320F" H 7205 1345 50  0000 L CNN
-F 2 "" H 7200 1400 50  0001 C CNN
-F 3 "~" H 7000 1300 50  0001 C CNN
-	1    7000 1300
-	1    0    0    1   
-$EndComp
 Wire Wire Line
 	7100 600  7100 1100
 Wire Wire Line
@@ -324,8 +311,8 @@ U 1 1 5FA31407
 P 3400 5300
 F 0 "U1" H 3600 5700 50  0000 C CNN
 F 1 "RDE03110S12" H 3400 4900 50  0000 C CNN
-F 2 "" H 3200 5450 50  0001 C CNN
-F 3 "" H 3200 5450 50  0001 C CNN
+F 2 "TSI_Rev_2021_Footprint_Lib:DIP1549W45P254L3404H940Q24" H 3200 5450 50  0001 C CNN
+F 3 "https://www.snapeda.com/parts/RDE03110S12/XP%20Power/datasheet/" H 3200 5450 50  0001 C CNN
 	1    3400 5300
 	1    0    0    -1  
 $EndComp
@@ -546,19 +533,13 @@ Wire Wire Line
 Wire Wire Line
 	4250 2800 4050 2800
 Wire Wire Line
-	4250 3000 4050 3000
-Wire Wire Line
 	5050 2000 4850 2000
 Wire Wire Line
 	5050 2200 4850 2200
 Wire Wire Line
-	4250 2200 4050 2200
-Wire Wire Line
 	4250 2000 4050 2000
 Wire Wire Line
 	4250 1300 4050 1300
-Wire Wire Line
-	4250 1500 4050 1500
 Wire Wire Line
 	5050 1500 4850 1500
 Text Notes 7100 6950 0    197  ~ 0
@@ -593,14 +574,6 @@ Text HLabel 1250 1500 0    50   Input ~ 0
 RTDS_RTN
 Wire Wire Line
 	1250 1500 1400 1500
-Wire Notes Line
-	2100 500  500  500 
-Wire Notes Line
-	450  2600 2050 2600
-Wire Notes Line
-	2050 600  2050 2600
-Wire Notes Line
-	500  500  500  2500
 Text Notes 1050 650  0    94   ~ 0
 SIGNALS\n
 Text HLabel 1250 2500 0    50   Input ~ 0
@@ -609,4 +582,31 @@ Wire Wire Line
 	1250 2500 1400 2500
 Text Label 1400 2500 0    50   ~ 0
 Drive_LED
+Wire Notes Line
+	2050 500  2050 2600
+Wire Notes Line
+	500  500  2050 500 
+Wire Notes Line
+	2050 2600 500  2600
+Wire Notes Line
+	500  500  500  2600
+Wire Wire Line
+	3750 3000 4250 3000
+Wire Wire Line
+	3750 2200 4250 2200
+Wire Wire Line
+	3750 1500 4250 1500
+$Comp
+L Device:Q_PMOS_GSD Q?
+U 1 1 5FC93215
+P 7000 1300
+AR Path="/6196BF15/5FC93215" Ref="Q?"  Part="1" 
+AR Path="/5FE1DCBA/5FC93215" Ref="Q3"  Part="1" 
+F 0 "Q3" H 7204 1254 50  0000 L CNN
+F 1 "ZVP1320F" H 7204 1345 50  0000 L CNN
+F 2 "TSI_Rev_2021_Footprint_Lib:SOT23" H 7200 1400 50  0001 C CNN
+F 3 "https://www.snapeda.com/parts/ZVP1320FTA/Diodes%20Inc./datasheet/" H 7000 1300 50  0001 C CNN
+	1    7000 1300
+	1    0    0    1   
+$EndComp
 $EndSCHEMATC

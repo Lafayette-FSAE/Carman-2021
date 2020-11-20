@@ -1646,7 +1646,7 @@ P 13600 7650
 F 0 "IC4" H 13600 7900 79  0000 C CNN
 F 1 "TS431ILT" H 13600 7400 79  0000 C CNN
 F 2 "TSI_Rev_2021_Footprint_Lib:SOT95P280X145-5N" H 13350 7750 79  0001 C CNN
-F 3 "" H 13350 7750 79  0001 C CNN
+F 3 "https://www.snapeda.com/parts/TS431ILT/STMicroelectronics/datasheet/" H 13350 7750 79  0001 C CNN
 	1    13600 7650
 	1    0    0    -1  
 $EndComp
