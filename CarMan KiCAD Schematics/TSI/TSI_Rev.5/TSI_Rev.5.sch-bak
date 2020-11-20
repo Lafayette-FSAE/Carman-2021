@@ -99,8 +99,6 @@ Wire Wire Line
 	1250 4000 1350 4000
 Text Notes 1600 4900 0    79   ~ 0
 TSI J3 & TSI J4\n
-Text Label 1150 5450 2    50   ~ 0
-MC_Voltage
 Text Label 1150 5250 2    50   ~ 0
 HV+
 Wire Wire Line
@@ -321,7 +319,7 @@ U 6196BF15
 F0 "PCDC_Circuit" 79
 F1 "PCDC_Circuit.sch" 79
 F2 "Throttle_HV" I L 1350 5750 50 
-F3 "MC_V" I L 1350 5450 50 
+F3 "MC+" I L 1350 5450 50 
 F4 "HV-" I L 1350 5350 50 
 F5 "HV+" I L 1350 5250 50 
 F6 "TSV_V" I L 1350 5550 50 
@@ -743,10 +741,8 @@ $EndComp
 NoConn ~ 10800 950 
 Text Label 10500 650  0    50   ~ 0
 24V
-Text Label 10800 750  2    50   ~ 0
+Text Label 10500 750  0    50   ~ 0
 GLV_RTN
-Text Label 10500 850  0    50   ~ 0
-SL1_In
 Wire Wire Line
 	3100 5400 2900 5400
 Wire Wire Line
@@ -828,7 +824,7 @@ COCKPIT\n
 Text Label 8350 750  0    50   ~ 0
 Drive_LED
 Text Label 8350 850  0    50   ~ 0
-Drive_RTN
+Drive_BTN_RTN
 Text Notes 2650 2300 0    50   ~ 0
 Dashboard\n
 Text Label 3900 1750 0    50   ~ 0
@@ -857,7 +853,7 @@ Testing\nConnector\n\n
 Text Label 10250 1750 0    50   ~ 0
 SCL
 Text Label 10250 1950 0    50   ~ 0
-SL_1In
+SL1_In
 Text Label 10250 2050 0    50   ~ 0
 IMD_Status
 Text Label 10250 2150 0    50   ~ 0
@@ -1016,17 +1012,6 @@ Wire Wire Line
 	10800 650  10500 650 
 Wire Wire Line
 	10800 750  10500 750 
-$Comp
-L power:PWR_FLAG #FLG0102
-U 1 1 5FEA0E0E
-P 10500 750
-F 0 "#FLG0102" H 10500 825 50  0001 C CNN
-F 1 "PWR_FLAG" V 10400 950 50  0000 C CNN
-F 2 "" H 10500 750 50  0001 C CNN
-F 3 "~" H 10500 750 50  0001 C CNN
-	1    10500 750 
-	0    -1   -1   0   
-$EndComp
 Text Label 5700 3200 2    50   ~ 0
 Brake_Light
 Text Label 4150 3200 0    50   ~ 0
@@ -1060,6 +1045,7 @@ F18 "Drive_BTN_RTN" I R 10450 3550 50
 F19 "Drive_BTN" I R 10450 3650 50 
 F20 "RTDS" I R 10450 3750 50 
 F21 "RTDS_RTN" I R 10450 4150 50 
+F22 "Drive_LED" I L 9150 4050 50 
 $EndSheet
 Wire Notes Line
 	9150 4200 10450 4200
@@ -1194,8 +1180,6 @@ F 3 "~" H 10500 650 50  0001 C CNN
 	1    10500 650 
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	10500 850  10800 850 
 Wire Wire Line
 	9250 650  9700 650 
 Wire Wire Line
@@ -1399,4 +1383,53 @@ Wire Wire Line
 	7400 1750 6750 1750
 Wire Wire Line
 	7400 1650 6750 1650
+Text Label 9000 4050 2    50   ~ 0
+Drive_LED
+Wire Wire Line
+	9150 4050 9000 4050
+$Comp
+L power:PWR_FLAG #FLG0105
+U 1 1 5FBAAB2C
+P 7400 950
+F 0 "#FLG0105" H 7400 1025 50  0001 C CNN
+F 1 "PWR_FLAG" V 7300 1150 50  0000 C CNN
+F 2 "" H 7400 950 50  0001 C CNN
+F 3 "~" H 7400 950 50  0001 C CNN
+	1    7400 950 
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10500 850  10800 850 
+Text Label 10500 850  0    50   ~ 0
+SL1_In
+Wire Wire Line
+	4150 3800 5700 3800
+Text Label 4150 3800 0    50   ~ 0
+SCL_uC
+Text Label 5700 3800 2    50   ~ 0
+SCL_TSI
+Text Label 5200 3800 0    50   ~ 0
+SCL
+Wire Wire Line
+	4150 3900 5700 3900
+Text Label 4150 3900 0    50   ~ 0
+SDA_uC
+Text Label 5200 3900 0    50   ~ 0
+SDA
+Text Label 5700 3900 2    50   ~ 0
+SDA_TSI
+Wire Wire Line
+	1350 5850 1150 5850
+Wire Wire Line
+	1350 5950 1150 5950
+Wire Wire Line
+	1350 6050 1150 6050
+Text Label 1150 5850 2    50   ~ 0
+IGNI_VCC
+Text Label 1150 5950 2    50   ~ 0
+IGNI_GND
+Text Label 1150 6050 2    50   ~ 0
+Brake_Pressed_HV
+Text Label 1150 5450 2    50   ~ 0
+MC+
 $EndSCHEMATC

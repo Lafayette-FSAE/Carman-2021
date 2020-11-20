@@ -800,9 +800,9 @@ F 3 "https://www.snapeda.com/parts/SI8600AB-B-IS/Silicon%20Labs/datasheet/" H 39
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4450 5550 6850 5550
+	4450 5550 5850 5550
 Wire Wire Line
-	6850 5400 4450 5400
+	6850 5400 5850 5400
 Text Label 8200 5100 0    50   ~ 0
 MC_Voltage
 Text Label 8200 5250 0    50   ~ 0
@@ -829,11 +829,11 @@ Text Label 4550 5200 0    50   ~ 0
 Wire Wire Line
 	3400 5200 3500 5200
 Text Label 3400 5200 2    50   ~ 0
-5HV
+5V
 Wire Wire Line
 	3400 5750 3500 5750
 Text Label 3400 5750 2    50   ~ 0
-GLV_Return
+GLV_RTN
 $Comp
 L TSI_Rev.5-rescue:ACPL-C870-CarMan_KiCAD_Library-TSI_Rev.5-rescue U4
 U 1 1 5FC68EC7
@@ -918,8 +918,6 @@ Wire Wire Line
 Connection ~ 4800 2400
 Text Label 4800 2500 0    50   ~ 0
 IO_Ground
-Text Label 4800 1350 0    50   ~ 0
-5HV
 Wire Wire Line
 	3550 2250 3450 2250
 Wire Wire Line
@@ -1015,7 +1013,7 @@ Wire Wire Line
 Text Label 1700 2100 2    50   ~ 0
 Throttle_LV
 Text Label 3200 1350 2    50   ~ 0
-5HV
+5V
 Text Label 3050 2850 2    50   ~ 0
 GLV_RTN
 Wire Wire Line
@@ -1360,4 +1358,42 @@ Wire Wire Line
 	13900 8550 15300 8550
 Wire Wire Line
 	15300 8550 15300 9000
+Text Label 4800 1350 0    50   ~ 0
+5HV
+$Comp
+L Device:R R50
+U 1 1 5FD47889
+P 5850 5250
+F 0 "R50" H 5780 5204 50  0000 R CNN
+F 1 "10k" H 5780 5295 50  0000 R CNN
+F 2 "" V 5780 5250 50  0001 C CNN
+F 3 "~" H 5850 5250 50  0001 C CNN
+	1    5850 5250
+	-1   0    0    1   
+$EndComp
+Connection ~ 5850 5400
+Wire Wire Line
+	5850 5400 4450 5400
+$Comp
+L Device:R R51
+U 1 1 5FD4AF51
+P 5850 5700
+F 0 "R51" H 5920 5746 50  0000 L CNN
+F 1 "10k" H 5920 5655 50  0000 L CNN
+F 2 "" V 5780 5700 50  0001 C CNN
+F 3 "~" H 5850 5700 50  0001 C CNN
+	1    5850 5700
+	1    0    0    -1  
+$EndComp
+Connection ~ 5850 5550
+Wire Wire Line
+	5850 5550 6850 5550
+Wire Wire Line
+	5850 5100 5850 5000
+Wire Wire Line
+	5850 5850 5850 5950
+Text Label 5850 5000 2    50   ~ 0
+5HV
+Text Label 5850 5950 2    50   ~ 0
+5HV
 $EndSCHEMATC

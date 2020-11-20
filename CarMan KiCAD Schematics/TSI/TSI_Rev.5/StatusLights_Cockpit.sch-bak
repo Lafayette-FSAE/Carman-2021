@@ -596,11 +596,17 @@ Wire Wire Line
 Wire Notes Line
 	2100 500  500  500 
 Wire Notes Line
-	500  2500 2100 2500
+	450  2600 2050 2600
 Wire Notes Line
-	2100 500  2100 2500
+	2050 600  2050 2600
 Wire Notes Line
 	500  500  500  2500
 Text Notes 1050 650  0    94   ~ 0
 SIGNALS\n
+Text HLabel 1250 2500 0    50   Input ~ 0
+Drive_LED
+Wire Wire Line
+	1250 2500 1400 2500
+Text Label 1400 2500 0    50   ~ 0
+Drive_LED
 $EndSCHEMATC

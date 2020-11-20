@@ -703,8 +703,6 @@ Connection ~ 14850 6950
 NoConn ~ 14850 7250
 NoConn ~ 13100 7550
 Wire Wire Line
-	12700 8950 13050 8950
-Wire Wire Line
 	15200 9050 14850 9050
 Wire Wire Line
 	14100 6300 14850 6300
@@ -938,4 +936,6 @@ Wire Wire Line
 	15200 1150 15050 1150
 Text HLabel 15200 1150 2    50   Output ~ 0
 10V
+Wire Wire Line
+	12700 8950 13050 8950
 $EndSCHEMATC
