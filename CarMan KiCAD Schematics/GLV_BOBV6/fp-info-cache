@@ -1,4 +1,4 @@
-18738799633655124
+18748435375594395
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -6139,6 +6139,13 @@ capacitor tantalum
 2
 2
 CarMan General Footprints
+CONV_PYB20-Q24-S5
+
+
+0
+6
+6
+CarMan General Footprints
 INA226AIDGSR
 
 
@@ -6146,12 +6153,40 @@ INA226AIDGSR
 10
 10
 CarMan General Footprints
+ISO1541DR
+
+
+0
+8
+8
+CarMan General Footprints
 L78L05ACD13TR
 
 
 0
 8
 8
+CarMan General Footprints
+LT1763CS8-3-PBF
+
+
+0
+8
+8
+CarMan General Footprints
+Laf_College_Logo
+
+
+0
+0
+0
+CarMan General Footprints
+Laf_Racing_Logo
+
+
+0
+0
+0
 CarMan General Footprints
 Molex_MiniFit-JR-5556-02A_2x01x4.20mm_Straight
 Molex Mini-Fit JR, PN:5556-02A, dual row, top entry type, through hole
@@ -6173,6 +6208,13 @@ connector molex mini-fit 5556
 0
 6
 6
+CarMan General Footprints
+QFP50P1200X1200X120-64N
+
+
+0
+64
+64
 CarMan General Footprints
 VAOL-S8GT4
 

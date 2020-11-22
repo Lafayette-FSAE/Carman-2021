@@ -702,10 +702,10 @@ Wire Wire Line
 Wire Wire Line
 	1250 2200 1250 2050
 $Comp
-L power:PWR_FLAG #24V?
+L power:PWR_FLAG #24V0101
 U 1 1 5FB6078A
 P 6300 1900
-F 0 "#24V?" H 6368 1988 50  0001 L CNN
+F 0 "#24V0101" H 6368 1988 50  0001 L CNN
 F 1 "PWR_FLAG" H 6300 2100 50  0000 C TNN
 F 2 "" H 6300 1900 50  0001 C CNN
 F 3 "~" H 6300 1900 50  0001 C CNN
@@ -715,4 +715,6 @@ $EndComp
 Connection ~ 6300 1900
 Wire Wire Line
 	6300 1900 6400 1900
+Text Notes 1800 5250 0    50   ~ 0
+Place cap as close as possible to input pins
 $EndSCHEMATC
