@@ -56,7 +56,7 @@ AR Path="/5F9AE3B8" Ref="J7"  Part="1"
 AR Path="/5F9A7CF0/5F9AE3B8" Ref="J9"  Part="1" 
 F 0 "J9" V 2362 1694 50  0000 L CNN
 F 1 "Conn_01x02_Male" V 2453 1694 50  0000 L CNN
-F 2 "" H 2300 1650 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 2300 1650 50  0001 C CNN
 F 3 "~" H 2300 1650 50  0001 C CNN
 	1    2300 1650
 	0    1    1    0   
@@ -194,7 +194,7 @@ P 8150 3350
 F 0 "Y1" V 8104 3481 50  0000 L CNN
 F 1 "16MHz" V 8195 3481 50  0000 L CNN
 F 2 "" H 8150 3350 50  0001 C CNN
-F 3 "~" H 8150 3350 50  0001 C CNN
+F 3 "https://s3.amazonaws.com/snapeda/datasheet/ECS160205PXTR_ECS_International.pdf" H 8150 3350 50  0001 C CNN
 	1    8150 3350
 	0    1    1    0   
 $EndComp

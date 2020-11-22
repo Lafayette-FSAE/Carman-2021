@@ -19,7 +19,7 @@ U 1 1 5F95B303
 P 8600 850
 F 0 "J3" H 8680 842 50  0000 L CNN
 F 1 "IMU" H 8680 751 50  0000 L CNN
-F 2 "" H 8600 850 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Horizontal" H 8600 850 50  0001 C CNN
 F 3 "~" H 8600 850 50  0001 C CNN
 	1    8600 850 
 	-1   0    0    1   
@@ -30,7 +30,7 @@ U 1 1 5F95B763
 P 8600 1600
 F 0 "J4" H 8680 1592 50  0000 L CNN
 F 1 "RTC" H 8680 1501 50  0000 L CNN
-F 2 "" H 8600 1600 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Horizontal" H 8600 1600 50  0001 C CNN
 F 3 "~" H 8600 1600 50  0001 C CNN
 	1    8600 1600
 	-1   0    0    1   
@@ -102,7 +102,7 @@ AR Path="/5F9665AE/5F9FC061" Ref="U?"  Part="1"
 AR Path="/5F9FC061" Ref="U6"  Part="1" 
 F 0 "U6" H 10025 5315 50  0000 C CNN
 F 1 "RaspberryPi3" H 10025 5224 50  0000 C CNN
-F 2 "Lafayette_Electric_Car_Footprints:RaspberryPi3" H 10250 5300 50  0001 C CNN
+F 2 "CarMan General Footprints:Raspberry_Pi_3_B" H 10250 5300 50  0001 C CNN
 F 3 "" H 10250 5300 50  0001 C CNN
 	1    10000 4100
 	1    0    0    -1  
@@ -121,7 +121,7 @@ U 1 1 5FA1FE07
 P 9950 5950
 F 0 "J6" H 10030 5942 50  0000 L CNN
 F 1 "You're Welcome -Ethan" H 10030 5851 50  0000 L CNN
-F 2 "" H 9950 5950 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical" H 9950 5950 50  0001 C CNN
 F 3 "~" H 9950 5950 50  0001 C CNN
 	1    9950 5950
 	1    0    0    -1  
@@ -712,7 +712,7 @@ U 1 1 5FDCB4A9
 P 750 3950
 F 0 "J8" H 668 4367 50  0000 C CNN
 F 1 "PIC program" H 668 4276 50  0000 C CNN
-F 2 "" H 750 3950 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 750 3950 50  0001 C CNN
 F 3 "~" H 750 3950 50  0001 C CNN
 	1    750  3950
 	-1   0    0    -1  
@@ -1048,10 +1048,6 @@ Wire Wire Line
 	8800 2300 9250 2300
 Wire Wire Line
 	8800 2400 9250 2400
-Wire Wire Line
-	10550 3850 10850 3850
-Text Label 10850 3850 0    50   ~ 0
-AMS_Fault
 Text Label 7850 3450 2    50   ~ 0
 GLV_SDA
 Text Label 7850 3600 2    50   ~ 0
@@ -1115,8 +1111,8 @@ U 1 1 5FBB1A99
 P 2100 5950
 F 0 "U9" H 2900 6337 60  0000 C CNN
 F 1 "ISO1541DR" H 2900 6231 60  0000 C CNN
-F 2 "D8_TEX" H 2900 6190 60  0001 C CNN
-F 3 "" H 2100 5950 60  0000 C CNN
+F 2 "CarMan General Footprints:ISO1541DR" H 2900 6190 60  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/iso1541.pdf?HQS=TI-null-null-digikeymode-df-pf-null-wwe&ts=1606082283174" H 2100 5950 60  0001 C CNN
 	1    2100 5950
 	1    0    0    -1  
 $EndComp
@@ -1276,7 +1272,7 @@ U 1 1 5FB98586
 P 6150 5850
 F 0 "J5.2" H 6050 6150 50  0000 L CNN
 F 1 "Conn_01x06" H 6230 5751 50  0001 L CNN
-F 2 "" H 6150 5850 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 6150 5850 50  0001 C CNN
 F 3 "~" H 6150 5850 50  0001 C CNN
 	1    6150 5850
 	-1   0    0    -1  
@@ -1287,7 +1283,7 @@ U 1 1 5FB8432E
 P 5950 5850
 F 0 "J5.1" H 5850 6150 50  0000 L CNN
 F 1 "Conn_01x06" H 6030 5751 50  0001 L CNN
-F 2 "" H 5950 5850 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 5950 5850 50  0001 C CNN
 F 3 "~" H 5950 5850 50  0001 C CNN
 	1    5950 5850
 	1    0    0    -1  
@@ -1454,4 +1450,6 @@ Wire Wire Line
 Connection ~ 7900 6250
 Wire Wire Line
 	7900 6250 8550 6250
+Text Label 10550 3850 0    50   ~ 0
+Safety_Loop_iso
 $EndSCHEMATC
