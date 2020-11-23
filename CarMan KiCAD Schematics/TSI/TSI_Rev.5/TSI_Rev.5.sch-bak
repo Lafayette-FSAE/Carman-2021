@@ -1434,4 +1434,10 @@ Wire Wire Line
 Connection ~ 5700 4900
 Wire Wire Line
 	5700 4900 5850 4900
+Wire Wire Line
+	4150 4000 5700 4000
+Text Label 5700 4000 2    50   ~ 0
+TSAL_RTN
+Text Label 4150 4000 0    50   ~ 0
+GLV_RTN
 $EndSCHEMATC
