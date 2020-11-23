@@ -19,7 +19,7 @@ U 1 1 5F95B303
 P 8600 850
 F 0 "J3" H 8680 842 50  0000 L CNN
 F 1 "IMU" H 8680 751 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Horizontal" H 8600 850 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 8600 850 50  0001 C CNN
 F 3 "~" H 8600 850 50  0001 C CNN
 	1    8600 850 
 	-1   0    0    1   
@@ -30,7 +30,7 @@ U 1 1 5F95B763
 P 8600 1600
 F 0 "J4" H 8680 1592 50  0000 L CNN
 F 1 "RTC" H 8680 1501 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Horizontal" H 8600 1600 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 8600 1600 50  0001 C CNN
 F 3 "~" H 8600 1600 50  0001 C CNN
 	1    8600 1600
 	-1   0    0    1   

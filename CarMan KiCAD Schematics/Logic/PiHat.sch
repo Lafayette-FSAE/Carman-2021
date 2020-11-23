@@ -69,7 +69,7 @@ AR Path="/5F9AF7D2" Ref="R7"  Part="1"
 AR Path="/5F9A7CF0/5F9AF7D2" Ref="R7"  Part="1" 
 F 0 "R7" H 2370 2046 50  0000 L CNN
 F 1 "120" V 2300 1950 50  0000 L CNN
-F 2 "Resistor_SMD:R_0815_2038Metric_Pad1.53x4.00mm_HandSolder" V 2230 2000 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2230 2000 50  0001 C CNN
 F 3 "~" H 2300 2000 50  0001 C CNN
 	1    2300 2000
 	1    0    0    -1  
@@ -160,7 +160,7 @@ AR Path="/5F9C01C9" Ref="R10"  Part="1"
 AR Path="/5F9A7CF0/5F9C01C9" Ref="R10"  Part="1" 
 F 0 "R10" V 5850 3700 50  0000 C CNN
 F 1 "4k7" V 5750 3700 50  0000 C CNN
-F 2 "Resistor_SMD:R_0815_2038Metric_Pad1.53x4.00mm_HandSolder" V 5680 3700 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5680 3700 50  0001 C CNN
 F 3 "~" H 5750 3700 50  0001 C CNN
 	1    5750 3700
 	0    -1   -1   0   
@@ -193,7 +193,7 @@ U 1 1 5F9C41DC
 P 8150 3350
 F 0 "Y1" V 8104 3481 50  0000 L CNN
 F 1 "16MHz" V 8195 3481 50  0000 L CNN
-F 2 "" H 8150 3350 50  0001 C CNN
+F 2 "CarMan General Footprints:XTAL_ECS-160-20-5PX-TR" H 8150 3350 50  0001 C CNN
 F 3 "https://s3.amazonaws.com/snapeda/datasheet/ECS160205PXTR_ECS_International.pdf" H 8150 3350 50  0001 C CNN
 	1    8150 3350
 	0    1    1    0   

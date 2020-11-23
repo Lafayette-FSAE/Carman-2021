@@ -116,7 +116,7 @@ AR Path="/5FAF664A" Ref="U?"  Part="1"
 AR Path="/5FAD1CB8/5FAF664A" Ref="U7"  Part="1" 
 F 0 "U7" H 7900 2920 50  0000 C CNN
 F 1 "LT1763CS8-3.3PBF" H 7900 2829 50  0000 C CNN
-F 2 "SOIC127P600X175-8N" H 7900 2250 50  0001 L BNN
+F 2 "CarMan General Footprints:LT1763CS8-3-PBF" H 7900 2250 50  0001 L BNN
 F 3 "Voltage stabiliser; LDO, fixed; 3.3V; 500mA; SO8; SMD" H 7900 2250 50  0001 L BNN
 F 4 "Linear Technology/Analog" H 7900 2250 50  0001 L BNN "Field4"
 F 5 "SOIC-8 Linear Technology" H 7900 2250 50  0001 L BNN "Field5"

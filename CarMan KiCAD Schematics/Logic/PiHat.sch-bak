@@ -193,8 +193,8 @@ U 1 1 5F9C41DC
 P 8150 3350
 F 0 "Y1" V 8104 3481 50  0000 L CNN
 F 1 "16MHz" V 8195 3481 50  0000 L CNN
-F 2 "" H 8150 3350 50  0001 C CNN
-F 3 "~" H 8150 3350 50  0001 C CNN
+F 2 "CarMan General Footprints:XTAL_ECS-160-20-5PX-TR" H 8150 3350 50  0001 C CNN
+F 3 "https://s3.amazonaws.com/snapeda/datasheet/ECS160205PXTR_ECS_International.pdf" H 8150 3350 50  0001 C CNN
 	1    8150 3350
 	0    1    1    0   
 $EndComp
