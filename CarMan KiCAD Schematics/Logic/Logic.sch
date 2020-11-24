@@ -965,10 +965,6 @@ Text Label 8450 3150 2    50   ~ 0
 SDA_pi
 Text Label 8450 3250 2    50   ~ 0
 SCL_pi
-Text Label 7600 3150 0    50   ~ 0
-SDA_uc
-Text Label 7600 3250 0    50   ~ 0
-SCL_uc
 $Comp
 L Device:R R8
 U 1 1 5FC458FA
@@ -1452,4 +1448,10 @@ Wire Wire Line
 	7900 6250 8550 6250
 Text Label 10550 3850 0    50   ~ 0
 Safety_Loop_iso
+Text Label 7600 3150 0    50   ~ 0
+SDA_iso
+Text Label 7600 3250 0    50   ~ 0
+SCL_iso
+Text Label 9250 2200 0    50   ~ 0
+24V_rtn
 $EndSCHEMATC
