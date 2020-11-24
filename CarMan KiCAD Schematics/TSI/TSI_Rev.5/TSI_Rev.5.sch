@@ -25,8 +25,8 @@ Text Label 1150 650  0    50   ~ 0
 DC_RELAY+
 Text Label 8350 650  0    50   ~ 0
 Drive_BTN
-Text Notes 3250 2150 0    50   ~ 0
-SL->Accumulator\n
+Text Notes 3350 2200 0    50   ~ 0
+Battery Packs\n\n
 Text Label 5800 2150 0    50   ~ 0
 APPS2_RTN
 Text Label 5800 2050 0    50   ~ 0

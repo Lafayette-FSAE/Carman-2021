@@ -64,17 +64,6 @@ F 3 "" H 4550 2900 50  0001 L CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CarMan_KiCAD_Library:D_Schottky D11
-U 1 1 5F9B6857
-P 6450 1000
-F 0 "D11" V 6300 1100 50  0000 C CNN
-F 1 "D_Schottky" H 6450 1126 50  0001 C CNN
-F 2 "" H 6450 1000 50  0001 C CNN
-F 3 "~" H 6450 1000 50  0001 C CNN
-	1    6450 1000
-	0    1    1    0   
-$EndComp
-$Comp
 L Device:R R12
 U 1 1 5F9BA8EE
 P 3900 1300
@@ -250,8 +239,6 @@ Text Label 3500 2800 2    50   ~ 0
 SPARE_LED_CTRL
 Wire Wire Line
 	7100 600  7100 1100
-Wire Wire Line
-	6450 1300 6800 1300
 Connection ~ 6450 1300
 Wire Wire Line
 	7100 1500 7100 1650
@@ -261,15 +248,9 @@ Text Label 7350 1650 0    50   ~ 0
 RTDS
 Text Label 6700 600  2    50   ~ 0
 24V
-Wire Wire Line
-	7100 1950 7100 2050
-Wire Wire Line
-	7100 2050 7350 2050
-Wire Wire Line
-	7100 1950 7350 1950
-Text Label 7350 1950 0    50   ~ 0
+Text Label 8150 2150 2    50   ~ 0
 RTDS_RTN
-Text Label 7350 2050 0    50   ~ 0
+Text Label 7550 2150 2    50   ~ 0
 GLV_RTN
 Wire Notes Line
 	7100 1650 7100 1700
@@ -283,7 +264,7 @@ Wire Notes Line
 	7050 1700 7150 1700
 Wire Notes Line
 	7100 1900 7100 1950
-Text Notes 8500 1800 2    50   ~ 0
+Text Notes 8500 1850 2    50   ~ 0
 STA20502 RTDS BUZZER (.6A MAX)\n
 Text HLabel 800  5850 0    50   Input ~ 0
 HV+
@@ -609,4 +590,32 @@ Wire Notes Line
 	500  7750 500  5750
 Wire Notes Line
 	500  5750 3450 5750
+Wire Wire Line
+	6450 1300 6800 1300
+Wire Wire Line
+	7100 2150 8150 2150
+Wire Wire Line
+	7100 1950 7100 2150
+$Comp
+L CarMan_KiCAD_Library:D_Schottky D11
+U 1 1 5F9B6857
+P 6450 1000
+F 0 "D11" V 6300 1100 50  0000 C CNN
+F 1 "D_Schottky" H 6450 1126 50  0001 C CNN
+F 2 "" H 6450 1000 50  0001 C CNN
+F 3 "~" H 6450 1000 50  0001 C CNN
+	1    6450 1000
+	0    1    1    0   
+$EndComp
+Text Notes 4950 1600 0    47   ~ 0
+Change voltage\n
+Wire Notes Line
+	4950 1600 5500 1600
+Wire Notes Line
+	5500 1600 5500 1400
+Wire Notes Line
+	5500 1400 4950 1400
+Wire Notes Line
+	4950 1400 4950 1600
+Connection ~ 7100 1950
 $EndSCHEMATC

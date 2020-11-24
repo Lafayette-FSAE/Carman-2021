@@ -1047,10 +1047,8 @@ Wire Wire Line
 	3950 7650 3850 7650
 Text Label 3950 7650 0    50   ~ 0
 GLV_RTN
-Text Label 2550 8200 2    79   ~ 0
+Text Label 1850 8200 0    67   ~ 0
 Safety_Loop
-Wire Wire Line
-	2550 8200 2700 8200
 $Comp
 L Connector:TestPoint TP?
 U 1 1 5FEC0838
@@ -1064,9 +1062,6 @@ F 3 "~" H 2900 8050 50  0001 C CNN
 	1    2700 8050
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2700 8200 2700 8050
-Connection ~ 2700 8200
 Wire Wire Line
 	2700 8200 3050 8200
 $Comp
@@ -1723,4 +1718,9 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 3700 8500 50 
 	5    3650 8300
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	1850 8200 2700 8200
+Connection ~ 2700 8200
+Wire Wire Line
+	2700 8050 2700 8200
 $EndSCHEMATC
