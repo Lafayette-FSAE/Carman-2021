@@ -607,15 +607,14 @@ F 3 "~" H 6450 1000 50  0001 C CNN
 	1    6450 1000
 	0    1    1    0   
 $EndComp
-Text Notes 4950 1600 0    47   ~ 0
-Change voltage\n
+Text Notes 5000 1650 0    47   ~ 0
+Change \ngate voltage\n
 Wire Notes Line
-	4950 1600 5500 1600
+	4950 1700 5500 1700
 Wire Notes Line
 	5500 1600 5500 1400
 Wire Notes Line
 	5500 1400 4950 1400
 Wire Notes Line
 	4950 1400 4950 1600
-Connection ~ 7100 1950
 $EndSCHEMATC
