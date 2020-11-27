@@ -266,19 +266,6 @@ Text Notes 7750 4000 2    89   ~ 0
 3.3V REGULATOR
 Text Notes 12450 10350 0    197  ~ 0
 CAN and GLV Power
-$Comp
-L TSI_Rev.5-rescue:G5LE-1-E-Lafayette_Electric_Car_Internals RL?
-U 1 1 5FB466B1
-P 11800 5100
-AR Path="/5FB466B1" Ref="RL?"  Part="1" 
-AR Path="/5FE1DE7D/5FB466B1" Ref="RL2"  Part="1" 
-F 0 "RL2" V 12367 5100 50  0000 C CNN
-F 1 "G5LE-1-E" V 12276 5100 50  0000 C CNN
-F 2 "" H 12050 5700 50  0001 C CNN
-F 3 "https://media.digikey.com/pdf/Data%20Sheets/Omron%20PDFs/G5LE-E_G.pdf" H 12050 5700 50  0001 C CNN
-	1    11800 5100
-	0    -1   -1   0   
-$EndComp
 Text Label 10250 3600 0    50   ~ 0
 SR_CTRL
 Text Label 13200 3800 2    50   ~ 0
@@ -298,13 +285,11 @@ F 3 "~" H 11800 5600 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	12100 5300 12150 5300
-Text Label 12100 4900 0    50   ~ 0
-BOT_In
 NoConn ~ 11500 4800
 Text Notes 14800 750  0    98   ~ 0
 SIGNALS
 Wire Notes Line
-	14150 4100 16000 4100
+	14150 4350 16000 4350
 Wire Notes Line
 	16000 550  14150 550 
 Text Notes 2750 5250 0    47   ~ 0
@@ -470,7 +455,7 @@ Text Label 3500 1600 0    50   ~ 0
 5V_ISO_RTN
 Text Label 1900 2850 0    50   ~ 0
 Cooling_power
-Text Label 11500 5000 2    50   ~ 0
+Text Label 10750 5000 0    50   ~ 0
 MRESET_Contact
 Text Notes 5400 1050 2    89   ~ 0
 Cooling Control\n
@@ -680,11 +665,11 @@ F 3 "" H 10050 1400 50  0001 L CNN
 	1    0    0    -1  
 $EndComp
 Text Label 15050 2050 2    50   ~ 0
-BOT_In
+BOT_Out
 Wire Wire Line
 	15200 2050 15050 2050
 Text HLabel 15200 2050 2    50   Output ~ 0
-BOT_In
+BOT_Out
 Text Label 15050 1950 2    50   ~ 0
 5V_ISO_RTN
 Text Label 14450 1850 0    50   ~ 0
@@ -721,15 +706,15 @@ Text Label 14450 2450 0    50   ~ 0
 Cooling_power
 Text HLabel 15200 2450 2    50   Output ~ 0
 Cooling_power
-Text Label 15050 3550 2    50   ~ 0
+Text Label 15050 3800 2    50   ~ 0
 IMD_Status
 Text Label 15050 2350 2    50   ~ 0
 Safety_Loop
 Wire Wire Line
-	15200 3550 15050 3550
+	15200 3800 15050 3800
 Wire Wire Line
 	15200 2350 15050 2350
-Text HLabel 15200 3550 2    50   Output ~ 0
+Text HLabel 15200 3800 2    50   Output ~ 0
 IMD_Status
 Text HLabel 15200 2350 2    50   Output ~ 0
 Safety_Loop
@@ -969,9 +954,9 @@ Wire Wire Line
 	4100 8950 4900 8950
 Text Notes 4650 8850 0    68   ~ 0
 Dashboard\n
-Text HLabel 15200 3450 2    50   Output ~ 0
+Text HLabel 15200 3700 2    50   Output ~ 0
 AMS_Status
-Text Label 14450 3450 0    50   ~ 0
+Text Label 14450 3700 0    50   ~ 0
 AMS_Status
 Text Label 14450 2950 0    50   ~ 0
 IMD_Button_RTN
@@ -986,7 +971,7 @@ Wire Wire Line
 Wire Wire Line
 	14450 2850 15200 2850
 Wire Wire Line
-	14450 3450 15200 3450
+	14450 3700 15200 3700
 Wire Wire Line
 	14450 3050 15200 3050
 Wire Wire Line
@@ -1000,44 +985,44 @@ Wire Wire Line
 Wire Wire Line
 	14450 2750 15200 2750
 Wire Wire Line
-	15200 3700 15050 3700
-Text HLabel 15050 3700 0    50   Input ~ 0
+	15200 3950 15050 3950
+Text HLabel 15050 3950 0    50   Input ~ 0
 IMD_FAULT_LED
-Text Label 15200 3700 0    50   ~ 0
+Text Label 15200 3950 0    50   ~ 0
 IMD_FAULT_LED
 Wire Wire Line
-	15150 3150 15000 3150
-Text HLabel 15000 3150 0    50   Input ~ 0
+	15150 3400 15000 3400
+Text HLabel 15000 3400 0    50   Input ~ 0
 12V
-Text Label 15150 3150 0    50   ~ 0
+Text Label 15150 3400 0    50   ~ 0
 12V
 Wire Wire Line
-	15150 3250 15000 3250
-Text HLabel 15000 3250 0    50   Input ~ 0
+	15150 3500 15000 3500
+Text HLabel 15000 3500 0    50   Input ~ 0
 Cooling_CTRL
-Text Label 15150 3250 0    50   ~ 0
+Text Label 15150 3500 0    50   ~ 0
 Cooling_CTRL
 Wire Wire Line
-	15200 3900 15050 3900
-Text HLabel 15050 3900 0    50   Input ~ 0
+	15200 4150 15050 4150
+Text HLabel 15050 4150 0    50   Input ~ 0
 IMD_Button_RTN
-Text Label 15200 3900 0    50   ~ 0
+Text Label 15200 4150 0    50   ~ 0
 IMD_Button_RTN
 Wire Wire Line
-	15200 4000 15050 4000
-Text HLabel 15050 4000 0    50   Input ~ 0
+	15200 4250 15050 4250
+Text HLabel 15050 4250 0    50   Input ~ 0
 AMS_Button_RTN
-Text Label 15200 4000 0    50   ~ 0
+Text Label 15200 4250 0    50   ~ 0
 AMS_Button_RTN
 Wire Notes Line
 	16000 550  16000 4100
 Wire Notes Line
 	14150 550  14150 4100
 Wire Wire Line
-	15200 3800 15050 3800
-Text HLabel 15050 3800 0    50   Input ~ 0
+	15200 4050 15050 4050
+Text HLabel 15050 4050 0    50   Input ~ 0
 AMS_FAULT_LED
-Text Label 15200 3800 0    50   ~ 0
+Text Label 15200 4050 0    50   ~ 0
 AMS_FAULT_LED
 Text Label 9600 8200 2    50   ~ 0
 GLV_RTN
@@ -1086,8 +1071,6 @@ Wire Wire Line
 Text Label 9700 9700 2    50   ~ 0
 AMS_Status
 Wire Wire Line
-	9700 9700 9100 9700
-Wire Wire Line
 	6250 9600 7300 9600
 Text Label 5550 8800 0    50   ~ 0
 AMS_Button_RTN
@@ -1106,10 +1089,6 @@ Wire Wire Line
 	9700 10300 9100 10300
 Text Notes 9800 10350 0    68   ~ 0
 Goes to \nBOT Switch
-Wire Wire Line
-	7300 9200 6700 9200
-Text Label 6700 9200 0    50   ~ 0
-24V
 Text Label 9700 8900 2    50   ~ 0
 AMS_FAULT_LED
 Wire Notes Line
@@ -1150,14 +1129,37 @@ Wire Wire Line
 	8350 10900 9200 10900
 Wire Wire Line
 	7300 10900 8200 10900
-Text Notes 12050 4800 0    68   ~ 0
-\nBOT out
-Wire Notes Line
-	12050 4700 12050 4900
-Wire Notes Line
-	12050 4900 12500 4900
-Wire Notes Line
-	12500 4900 12500 4700
-Wire Notes Line
-	12500 4700 12050 4700
+$Comp
+L TSI_Rev.5-rescue:G5LE-1-E-Lafayette_Electric_Car_Internals RL?
+U 1 1 5FB466B1
+P 11800 5100
+AR Path="/5FB466B1" Ref="RL?"  Part="1" 
+AR Path="/5FE1DE7D/5FB466B1" Ref="RL2"  Part="1" 
+F 0 "RL2" V 12367 5100 50  0000 C CNN
+F 1 "G5LE-1-E" V 12276 5100 50  0000 C CNN
+F 2 "" H 12050 5700 50  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Omron%20PDFs/G5LE-E_G.pdf" H 12050 5700 50  0001 C CNN
+	1    11800 5100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	12550 4900 12100 4900
+Text Label 12550 4900 2    50   ~ 0
+BOT_Out
+Wire Wire Line
+	10750 5000 11500 5000
+Wire Wire Line
+	7300 9200 6700 9200
+Text Label 6700 9200 0    50   ~ 0
+24V
+Text HLabel 15200 3150 2    50   Output ~ 0
+24V_BP_Out
+Wire Wire Line
+	14450 3150 15200 3150
+Text Label 14450 3150 0    50   ~ 0
+24V_BP_Out
+Text Label 10350 9700 2    50   ~ 0
+24V_BP_Out
+Wire Wire Line
+	9100 9700 10350 9700
 $EndSCHEMATC

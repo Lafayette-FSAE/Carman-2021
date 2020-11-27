@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 6
+Sheet 4 6
 Title ""
 Date ""
 Rev ""
@@ -345,11 +345,7 @@ Wire Wire Line
 	3850 6400 4200 6400
 Wire Wire Line
 	5000 6400 5000 6200
-Wire Wire Line
-	5000 6200 5400 6200
 Connection ~ 5000 6400
-Wire Wire Line
-	5000 6400 5400 6400
 $Comp
 L pspice:CAP C17
 U 1 1 5FA50112
@@ -617,4 +613,12 @@ Wire Notes Line
 	5500 1400 4950 1400
 Wire Notes Line
 	4950 1400 4950 1600
+Text Label 5600 6400 2    50   ~ 0
+TSAL
+Text Label 5600 6200 2    50   ~ 0
+TSAL_Cockpit
+Wire Wire Line
+	5000 6200 5600 6200
+Wire Wire Line
+	5000 6400 5600 6400
 $EndSCHEMATC
