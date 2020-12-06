@@ -71,8 +71,6 @@ F 7 "1.14100.5030000" H 4450 1650 50  0001 C CNN "Manufacturer Part"
 	1    4500 1300
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1800 1300 1950 1300
 $Comp
 L Lafayette_Electric_Car_Internals:Fuse F?
 U 1 1 5FADD247
@@ -95,8 +93,6 @@ F 3 "~" V 1800 1560 50  0001 C CNN
 	1    1800 1500
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3750 1300 4300 1300
 Wire Wire Line
 	3400 1900 4350 1900
 Text Notes 4200 950  0    79   ~ 0
@@ -225,18 +221,12 @@ Wire Notes Line
 	6400 4200 6400 4500
 Wire Bus Line
 	5200 1700 1800 1700
-Wire Wire Line
-	4700 1300 5200 1300
 Text Notes 900  7850 0    63   ~ 0
 Note 1:\nSUBSYSTEMS contains: SCADA Computer,\nTSI, CAN Bus, Dashboard Display,\nStatus Lights including: AMD and IMS Faults,\nI2C Line, PacMan Boards, Brake Light, IMD, \nand Sensors including: Temperature and\nFlow Rate Sensors
 Wire Notes Line
 	5950 1200 5950 1800
 Wire Notes Line
 	5200 1800 5200 1200
-Wire Wire Line
-	2200 1300 2800 1300
-Wire Wire Line
-	3200 1300 3350 1300
 $Comp
 L Lafayette_Electric_Car_Internals:SWITCH U?
 U 1 1 5FB2669A
@@ -314,12 +304,12 @@ W3
 $Comp
 L Lafayette_Electric_Car_Internals:SWITCH U?
 U 1 1 5FB65C93
-P 8050 5150
-F 0 "U?" H 8000 5265 50  0001 C CNN
-F 1 "BRAKE PEDALS" H 7750 4900 50  0000 L CNN
-F 2 "" H 8000 5350 50  0001 C CNN
-F 3 "" H 8000 5350 50  0001 C CNN
-	1    8050 5150
+P 8050 5100
+F 0 "U?" H 8000 5215 50  0001 C CNN
+F 1 "BRAKE PEDALS" H 7750 4850 50  0000 L CNN
+F 2 "" H 8000 5300 50  0001 C CNN
+F 3 "" H 8000 5300 50  0001 C CNN
+	1    8050 5100
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -415,7 +405,7 @@ L Lafayette_Electric_Car_Internals:PushButton BTN?
 U 1 1 60806670
 P 4450 3600
 F 0 "BTN?" H 4450 3793 50  0001 C CNN
-F 1 "IMD RESET" H 4450 3500 50  0000 C CNN
+F 1 "AMS RESET" H 4450 3500 50  0000 C CNN
 F 2 "Lafayette_Electric_Car_Footprints:PushButton" H 4700 3800 50  0001 C CNN
 F 3 "https://media.digikey.com/pdf/Data%20Sheets/RAFI%20PDF's/Racon_PCB_Tactile_Switches_Cat.pdf" H 4700 3800 50  0001 C CNN
 F 4 "Digikey" H 4250 3950 50  0001 C CNN "Vendor"
@@ -479,9 +469,6 @@ F 3 "~" H 7950 1300 50  0001 C CNN
 	1    7950 1300
 	0    1    1    0   
 $EndComp
-Connection ~ 7500 1300
-Wire Wire Line
-	7500 1300 7650 1300
 Wire Notes Line
 	9050 1850 9050 2200
 Wire Notes Line
@@ -500,14 +487,10 @@ Wire Notes Line
 	8350 1800 9050 1800
 Text Notes 8400 2100 0    63   ~ 0
 SUBSYSTEMS\n(See Note 1)
-Text Notes 9900 2363 2    63   ~ 0
+Text Notes 9900 2150 2    63   ~ 0
 IMD
 Wire Notes Line
-	10050 2450 10050 2250
-Wire Notes Line
-	10050 2450 9550 2450
-Wire Notes Line
-	10050 2250 9550 2250
+	10050 2400 9550 2400
 Text Notes 8500 1650 0    63   ~ 0
 COOLING
 $Comp
@@ -544,8 +527,6 @@ Wire Bus Line
 	9050 1650 9150 1650
 Wire Bus Line
 	9150 1650 9150 2150
-Wire Wire Line
-	8250 1300 9250 1300
 Connection ~ 9150 2150
 Wire Wire Line
 	7500 1650 7500 2000
@@ -563,14 +544,8 @@ F 3 "~" H 12800 2600 50  0001 C CNN
 	1    12800 2600
 	0    1    1    0   
 $EndComp
-Wire Notes Line
-	9550 2250 9550 2450
-Wire Wire Line
-	10050 2350 10200 2350
 Wire Bus Line
 	5950 1700 7200 1700
-Wire Wire Line
-	5950 1300 7500 1300
 Wire Bus Line
 	5800 4000 7200 4000
 Wire Bus Line
@@ -741,9 +716,7 @@ Wire Wire Line
 Wire Notes Line
 	7700 4600 7700 5500
 Wire Wire Line
-	8200 5300 8350 5300
-Wire Wire Line
-	8350 5300 8350 5450
+	8200 5250 8350 5250
 Wire Notes Line
 	7700 5500 8400 5500
 Wire Notes Line
@@ -755,23 +728,14 @@ Wire Wire Line
 Wire Wire Line
 	9050 1900 9350 1900
 Wire Wire Line
-	6500 2400 6500 2500
-Wire Wire Line
-	9250 1300 9250 2400
-Wire Wire Line
-	6500 2400 9250 2400
-Wire Wire Line
 	6400 2300 6400 2500
 Wire Wire Line
-	10200 1900 10200 2350
+	10200 1900 10200 2300
 Connection ~ 9350 1900
 Wire Wire Line
 	9350 1900 10200 1900
 Wire Wire Line
 	4450 2300 6400 2300
-Connection ~ 6400 2300
-Wire Wire Line
-	6400 2300 9550 2300
 Wire Wire Line
 	9350 2500 9350 1900
 Wire Wire Line
@@ -786,21 +750,9 @@ Wire Bus Line
 Wire Bus Line
 	9150 2150 9150 2800
 Wire Wire Line
-	6500 3850 6500 4650
-Wire Wire Line
 	5850 4350 5650 4350
 Wire Wire Line
 	5650 4350 5650 5050
-Wire Wire Line
-	5650 5050 6600 5050
-Wire Wire Line
-	6500 4650 8000 4650
-Wire Wire Line
-	7000 5050 8000 5050
-Wire Wire Line
-	5650 5050 3600 5050
-Connection ~ 5650 5050
-Connection ~ 3600 5050
 Wire Wire Line
 	2700 1900 2700 5050
 Wire Bus Line
@@ -936,9 +888,7 @@ Wire Wire Line
 Wire Bus Line
 	7200 1700 7200 2800
 Wire Wire Line
-	7800 5300 7050 5300
-Wire Wire Line
-	7050 5300 7050 5700
+	7800 5250 7050 5250
 Wire Wire Line
 	7050 5700 5400 5700
 Connection ~ 7050 5700
@@ -1062,6 +1012,77 @@ Wire Wire Line
 	6200 3000 6200 3100
 Wire Wire Line
 	6400 3000 6400 3100
+Wire Notes Line
+	7650 5500 7550 5500
+Text Notes 7650 5450 1    63   ~ 0
+W26
+Wire Wire Line
+	8350 5250 8350 5450
+Wire Wire Line
+	7050 5250 7050 5700
+Wire Notes Line
+	7550 5200 7650 5200
+Wire Notes Line
+	7550 5200 7550 5500
+Wire Notes Line
+	7650 5200 7650 5500
+Connection ~ 6400 2300
+$Comp
+L Lafayette_Electric_Car_Internals:SWITCH U?
+U 1 1 5FCF618A
+P 9850 2150
+F 0 "U?" H 9800 2265 50  0001 C CNN
+F 1 "GLVMS" H 9800 2173 50  0001 C CNN
+F 2 "" H 9800 2350 50  0001 C CNN
+F 3 "" H 9800 2350 50  0001 C CNN
+	1    9850 2150
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	10050 2150 10050 2400
+Wire Notes Line
+	9550 2150 9550 2400
+Wire Notes Line
+	9550 2150 10050 2150
+Wire Wire Line
+	10000 2300 10200 2300
+Wire Wire Line
+	6400 2300 9600 2300
+Connection ~ 3600 5050
+Wire Wire Line
+	5650 5050 3600 5050
+Connection ~ 5650 5050
+Wire Wire Line
+	5650 5050 6600 5050
+Wire Wire Line
+	7000 5050 8000 5050
+Wire Wire Line
+	6500 4650 8000 4650
+Wire Wire Line
+	6500 3850 6500 4650
 Wire Wire Line
 	6500 3000 6500 3350
+Wire Wire Line
+	6500 2400 6500 2500
+Wire Wire Line
+	6500 2400 9250 2400
+Wire Wire Line
+	9250 1300 9250 2400
+Wire Wire Line
+	8250 1300 9250 1300
+Wire Wire Line
+	7500 1300 7650 1300
+Connection ~ 7500 1300
+Wire Wire Line
+	5950 1300 7500 1300
+Wire Wire Line
+	4700 1300 5200 1300
+Wire Wire Line
+	3750 1300 4300 1300
+Wire Wire Line
+	3200 1300 3350 1300
+Wire Wire Line
+	2200 1300 2800 1300
+Wire Wire Line
+	1800 1300 1950 1300
 $EndSCHEMATC
