@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name SLOOP-rescue)(type Legacy)(uri ${KIPRJMOD}/SLOOP-rescue.lib)(options "")(descr ""))
+)

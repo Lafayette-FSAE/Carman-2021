@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source "C:\\Users\\Zach\\Desktop\\CarMan_2021\\Carman-2021\\CarMan KiCAD Schematics\\Logic\\Logic.sch")
-    (date "11/27/2020 6:20:45 PM")
+    (date "11/23/2020 9:17:31 PM")
     (tool "Eeschema (5.1.6)-1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block

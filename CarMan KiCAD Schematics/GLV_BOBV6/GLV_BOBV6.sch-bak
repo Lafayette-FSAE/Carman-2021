@@ -336,7 +336,7 @@ GLV_RTN
 Text Notes 3100 1400 2    50   ~ 10
 Extra 24V
 $Comp
-L CarMan_KiCAD_Library:INA226AIDGSR U?
+L GLV_BOBV6-rescue:INA226AIDGSR-CarMan_KiCAD_Library U?
 U 1 1 5FABD1EB
 P 5550 6700
 AR Path="/5F962E37/5FABD1EB" Ref="U?"  Part="1" 
@@ -717,4 +717,48 @@ Wire Wire Line
 	6300 1900 6400 1900
 Text Notes 1800 5250 0    50   ~ 0
 Place cap as close as possible to input pins
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5FBABE36
+P 9000 3700
+F 0 "H1" H 9100 3746 50  0000 L CNN
+F 1 "MountingHole" H 9100 3655 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.5mm_Pad" H 9000 3700 50  0001 C CNN
+F 3 "~" H 9000 3700 50  0001 C CNN
+	1    9000 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 5FBADD6E
+P 10550 3700
+F 0 "H4" H 10650 3746 50  0000 L CNN
+F 1 "MountingHole" H 10650 3655 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.5mm_Pad" H 10550 3700 50  0001 C CNN
+F 3 "~" H 10550 3700 50  0001 C CNN
+	1    10550 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5FBAE047
+P 10500 4800
+F 0 "H3" H 10600 4846 50  0000 L CNN
+F 1 "MountingHole" H 10600 4755 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.5mm_Pad" H 10500 4800 50  0001 C CNN
+F 3 "~" H 10500 4800 50  0001 C CNN
+	1    10500 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5FBAE1E6
+P 9000 4750
+F 0 "H2" H 9100 4796 50  0000 L CNN
+F 1 "MountingHole" H 9100 4705 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.5mm_Pad" H 9000 4750 50  0001 C CNN
+F 3 "~" H 9000 4750 50  0001 C CNN
+	1    9000 4750
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
