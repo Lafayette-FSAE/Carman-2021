@@ -879,19 +879,6 @@ GLV_RTN
 Wire Wire Line
 	3850 9650 4150 9650
 $Comp
-L pspice:CAP C?
-U 1 1 5FBC069E
-P 4150 9350
-AR Path="/5FC85F57/5FBC069E" Ref="C?"  Part="1" 
-AR Path="/6196BF15/5FBC069E" Ref="C2"  Part="1" 
-F 0 "C2" H 4250 9250 50  0000 C CNN
-F 1 "4.7u" H 4250 9450 50  0000 C CNN
-F 2 "" H 4150 9350 50  0001 C CNN
-F 3 "~" H 4150 9350 50  0001 C CNN
-	1    4150 9350
-	1    0    0    -1  
-$EndComp
-$Comp
 L TSI_Rev.5-rescue:THN_30-2415WI-CarMan_KiCAD_Library-TSI_Rev.5-rescue PS1
 U 1 1 5FBB1814
 P 5750 9650
@@ -903,19 +890,9 @@ F 3 "https://www.snapeda.com/parts/THN%2030-2415WI/Traco%20Power/datasheet/" H 5
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4750 9100 4900 9100
-Wire Wire Line
 	6700 9650 6450 9650
 Text Label 6700 9650 0    79   ~ 0
 IO_Ground
-Wire Wire Line
-	6700 9800 6450 9800
-Text Label 6700 9800 0    79   ~ 0
-24HV
-Wire Wire Line
-	4900 9100 4900 9500
-Wire Wire Line
-	4900 9500 4950 9500
 $Comp
 L TSI_Rev.5-rescue:TLP293-CarMan_KiCAD_Library-TSI_Rev.5-rescue U37
 U 1 1 5FD6E6F7
@@ -1671,27 +1648,11 @@ F 3 "https://www.snapeda.com/parts/ZVP1320FTA/Diodes%20Inc./datasheet/" H 7500 6
 	1    7500 6350
 	1    0    0    1   
 $EndComp
-$Comp
-L pspice:INDUCTOR L1
-U 1 1 61234915
-P 4500 9100
-F 0 "L1" H 4500 9315 50  0000 C CNN
-F 1 "2.2uH" H 4500 9224 50  0000 C CNN
-F 2 "" H 4500 9100 50  0001 C CNN
-F 3 "~" H 4500 9100 50  0001 C CNN
-	1    4500 9100
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4150 9600 4150 9650
 Connection ~ 4150 9650
 Wire Wire Line
 	4150 9650 4950 9650
-Wire Wire Line
-	3850 9100 4150 9100
-Connection ~ 4150 9100
-Wire Wire Line
-	4150 9100 4250 9100
 Wire Wire Line
 	4100 8750 4100 8300
 Wire Wire Line
@@ -1723,4 +1684,43 @@ Wire Wire Line
 Connection ~ 2700 8200
 Wire Wire Line
 	2700 8050 2700 8200
+Wire Wire Line
+	3850 9100 4150 9100
+$Comp
+L pspice:CAP C?
+U 1 1 5FBC069E
+P 4150 9350
+AR Path="/5FC85F57/5FBC069E" Ref="C?"  Part="1" 
+AR Path="/6196BF15/5FBC069E" Ref="C2"  Part="1" 
+F 0 "C2" H 4250 9250 50  0000 C CNN
+F 1 "4.7u" H 4250 9450 50  0000 C CNN
+F 2 "" H 4150 9350 50  0001 C CNN
+F 3 "~" H 4150 9350 50  0001 C CNN
+	1    4150 9350
+	1    0    0    -1  
+$EndComp
+Connection ~ 4150 9100
+Wire Wire Line
+	4150 9100 4250 9100
+Wire Wire Line
+	4900 9500 4950 9500
+Wire Wire Line
+	6700 9800 6450 9800
+Text Label 6700 9800 2    47   ~ 0
+24HV
+Wire Wire Line
+	4750 9100 4900 9100
+$Comp
+L pspice:INDUCTOR L1
+U 1 1 61234915
+P 4500 9100
+F 0 "L1" H 4500 9315 50  0000 C CNN
+F 1 "2.2uH" H 4500 9224 50  0000 C CNN
+F 2 "" H 4500 9100 50  0001 C CNN
+F 3 "~" H 4500 9100 50  0001 C CNN
+	1    4500 9100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 9100 4900 9500
 $EndSCHEMATC

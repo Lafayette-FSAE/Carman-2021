@@ -171,13 +171,13 @@ Text Label 4950 2000 0    50   ~ 0
 Cooling_CTRL
 Text Label 4950 2100 0    50   ~ 0
 Throttle_SEL
-Text Label 5200 3900 0    50   ~ 0
+Text Label 5150 3450 0    50   ~ 0
 Flowrate_5V
-Text Label 6750 3900 2    50   ~ 0
+Text Label 6700 3450 2    50   ~ 0
 5V
-Text Label 5200 4000 0    50   ~ 0
+Text Label 5150 3550 0    50   ~ 0
 Flowrate_RTN
-Text Label 6750 4000 2    50   ~ 0
+Text Label 6700 3550 2    50   ~ 0
 GLV_RTN
 Text Label 7300 800  2    50   ~ 0
 GLV_RTN
@@ -435,34 +435,34 @@ APPS1_RTN
 Text Label 8100 5800 0    50   ~ 0
 MRESET_Contact
 Wire Wire Line
-	5900 3400 6200 3400
+	5850 2950 6150 2950
 Wire Wire Line
-	5900 3500 6200 3500
-Text Label 5900 3400 2    50   ~ 0
+	5850 3050 6150 3050
+Text Label 5850 2950 2    50   ~ 0
 CAN+_Logic
-Text Label 6200 3400 0    50   ~ 0
+Text Label 6150 2950 0    50   ~ 0
 BP_CAN+
-Text Label 6200 3500 0    50   ~ 0
+Text Label 6150 3050 0    50   ~ 0
 BP_CAN-
-Text Label 5900 3500 2    50   ~ 0
+Text Label 5850 3050 2    50   ~ 0
 CAN-_Logic
 Wire Notes Line
 	5500 6200 5500 7550
 Text Notes 9550 1000 0    50   ~ 0
 TSI to Cooling\nSubsystem
-Text Notes 5800 3250 0    50   ~ 0
+Text Notes 5750 2800 0    50   ~ 0
 Battery Pack\nCAN Lines\n
 Wire Notes Line
-	5400 3550 6600 3550
+	5350 3100 6550 3100
 Wire Notes Line
-	6600 3050 5400 3050
+	6550 2600 5350 2600
 Wire Notes Line
-	5400 3050 5400 3550
+	5350 2600 5350 3100
 Wire Notes Line
-	6600 3050 6600 3550
-Text Label 6750 4100 2    50   ~ 0
+	6550 2600 6550 3100
+Text Label 6700 3650 2    50   ~ 0
 GLV_RTN
-Text Label 5200 4100 0    50   ~ 0
+Text Label 5150 3650 0    50   ~ 0
 FAULT_LED_RTN
 Wire Notes Line
 	450  2200 1950 2200
@@ -563,9 +563,9 @@ Text Label 10400 950  0    49   ~ 0
 GLV_RTN
 Text Label 2000 2250 0    50   ~ 0
 Safety_Loop
-Text Label 6750 3800 2    49   ~ 0
+Text Label 6700 3350 2    49   ~ 0
 MRESET_Contact
-Text Label 5200 3800 0    49   ~ 0
+Text Label 5150 3350 0    49   ~ 0
 GEN_Fault_LED
 Text Label 4950 1800 0    49   ~ 0
 5V_ISO_RTN
@@ -610,10 +610,8 @@ Wire Wire Line
 Connection ~ 5850 5100
 Text Label 5850 4950 0    50   ~ 0
 3.3V
-Text Label 6300 5100 0    50   ~ 0
+Text Label 6650 5100 2    50   ~ 0
 CoolTemp
-Text Label 6500 5700 2    50   ~ 0
-GLV_RTN
 Text Label 5850 5400 2    50   ~ 0
 CoolTemp_RTN
 Text Label 700  4850 0    50   ~ 0
@@ -622,13 +620,13 @@ Text Label 4000 4950 2    50   ~ 0
 D_LED_CTRL
 Text Label 700  4950 0    50   ~ 0
 Flowrate
-Text Label 6750 3700 2    50   ~ 0
+Text Label 6700 3250 2    50   ~ 0
 Brake_Light
-Text Label 5200 3700 0    50   ~ 0
+Text Label 5150 3250 0    50   ~ 0
 Brake_Pressed
-Text Label 5200 4200 0    50   ~ 0
+Text Label 5150 3750 0    50   ~ 0
 Brake_Light_RTN
-Text Label 6750 4200 2    50   ~ 0
+Text Label 6700 3750 2    50   ~ 0
 GLV_RTN
 $Sheet
 S 8850 3100 1500 1450
@@ -836,36 +834,36 @@ Wire Wire Line
 Wire Wire Line
 	5300 750  5600 750 
 Wire Wire Line
-	5200 3700 6750 3700
+	5150 3250 6700 3250
 Wire Wire Line
-	5200 3800 6750 3800
+	5150 3350 6700 3350
 Wire Wire Line
-	5200 3900 6750 3900
+	5150 3450 6700 3450
 Wire Wire Line
-	5200 4000 6750 4000
+	5150 3550 6700 3550
 Wire Wire Line
-	5200 4100 6750 4100
+	5150 3650 6700 3650
 Wire Wire Line
-	5200 4200 6750 4200
+	5150 3750 6700 3750
 Text Label 8100 3850 0    50   ~ 0
 Drive_LED
 Text Label 10400 750  0    50   ~ 0
 SL1_In
 Wire Wire Line
-	5200 4300 6750 4300
-Text Label 5200 4300 0    50   ~ 0
+	5150 3850 6700 3850
+Text Label 5150 3850 0    50   ~ 0
 SCL_uC
-Text Label 6750 4300 2    50   ~ 0
+Text Label 6700 3850 2    50   ~ 0
 SCL_TSI
-Text Label 6250 4300 0    50   ~ 0
+Text Label 6200 3850 0    50   ~ 0
 SCL
 Wire Wire Line
-	5200 4400 6750 4400
-Text Label 5200 4400 0    50   ~ 0
+	5150 3950 6700 3950
+Text Label 5150 3950 0    50   ~ 0
 SDA_uC
-Text Label 6250 4400 0    50   ~ 0
+Text Label 6200 3950 0    50   ~ 0
 SDA
-Text Label 6750 4400 2    50   ~ 0
+Text Label 6700 3950 2    50   ~ 0
 SDA_TSI
 Text Label 700  6200 0    50   ~ 0
 IGNI_VCC
@@ -910,31 +908,11 @@ Text Label 11100 3350 2    50   ~ 0
 3.3V
 Text Label 11100 3250 2    50   ~ 0
 5V
-$Comp
-L pspice:CAP C19
-U 1 1 5FC05A30
-P 6150 5350
-F 0 "C19" H 6150 5450 50  0000 L CNN
-F 1 "0.21u" H 6150 5250 50  0000 L CNN
-F 2 "" H 6150 5350 50  0001 C CNN
-F 3 "~" H 6150 5350 50  0001 C CNN
-	1    6150 5350
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	6150 5600 6150 5700
-Wire Wire Line
-	6150 5700 6500 5700
-Wire Wire Line
-	5850 5100 6150 5100
-Connection ~ 6150 5100
-Wire Wire Line
-	6150 5100 6300 5100
-Wire Wire Line
-	5200 4500 6750 4500
-Text Label 5200 4500 0    50   ~ 0
+	5150 4050 6700 4050
+Text Label 5150 4050 0    50   ~ 0
 TSAL_RTN
-Text Label 6750 4500 2    50   ~ 0
+Text Label 6700 4050 2    50   ~ 0
 GLV_RTN
 $Comp
 L Connector_Generic:Conn_01x04 J11
@@ -1361,10 +1339,10 @@ F 3 "~" H 7450 950 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	5200 4600 6750 4600
-Text Label 5200 4600 0    50   ~ 0
+	5150 4150 6700 4150
+Text Label 5150 4150 0    50   ~ 0
 AIRS-
-Text Label 6750 4600 2    50   ~ 0
+Text Label 6700 4150 2    50   ~ 0
 GLV_RTN
 $Comp
 L Connector_Generic:Conn_01x08 J10
@@ -1504,4 +1482,26 @@ F 3 "~" H 11050 1700 50  0001 C CNN
 	1    11050 1700
 	1    0    0    -1  
 $EndComp
+Connection ~ 6150 5100
+Wire Wire Line
+	5850 5100 6150 5100
+Wire Wire Line
+	6150 5600 6150 5700
+$Comp
+L pspice:CAP C19
+U 1 1 5FC05A30
+P 6150 5350
+F 0 "C19" H 6150 5450 50  0000 L CNN
+F 1 "0.21u" H 6150 5250 50  0000 L CNN
+F 2 "" H 6150 5350 50  0001 C CNN
+F 3 "~" H 6150 5350 50  0001 C CNN
+	1    6150 5350
+	1    0    0    -1  
+$EndComp
+Text Label 6650 5700 2    50   ~ 0
+GLV_RTN
+Wire Wire Line
+	6150 5700 6650 5700
+Wire Wire Line
+	6150 5100 6650 5100
 $EndSCHEMATC
