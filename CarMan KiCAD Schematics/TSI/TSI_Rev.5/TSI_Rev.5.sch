@@ -604,15 +604,15 @@ CANTX
 Text Label 700  4750 0    50   ~ 0
 IMD_Status
 Wire Wire Line
-	5850 4950 5850 5100
+	5650 4700 5650 4850
 Wire Wire Line
-	5850 5100 5850 5400
-Connection ~ 5850 5100
-Text Label 5850 4950 0    50   ~ 0
+	5650 4850 5650 5150
+Connection ~ 5650 4850
+Text Label 5650 4700 0    50   ~ 0
 3.3V
-Text Label 6650 5100 2    50   ~ 0
+Text Label 6450 4850 2    50   ~ 0
 CoolTemp
-Text Label 5850 5400 2    50   ~ 0
+Text Label 5650 5150 2    50   ~ 0
 CoolTemp_RTN
 Text Label 700  4850 0    50   ~ 0
 CoolTemp
@@ -1482,26 +1482,26 @@ F 3 "~" H 11050 1700 50  0001 C CNN
 	1    11050 1700
 	1    0    0    -1  
 $EndComp
-Connection ~ 6150 5100
+Connection ~ 5950 4850
 Wire Wire Line
-	5850 5100 6150 5100
+	5650 4850 5950 4850
 Wire Wire Line
-	6150 5600 6150 5700
+	5950 5350 5950 5450
 $Comp
 L pspice:CAP C19
 U 1 1 5FC05A30
-P 6150 5350
-F 0 "C19" H 6150 5450 50  0000 L CNN
-F 1 "0.21u" H 6150 5250 50  0000 L CNN
-F 2 "" H 6150 5350 50  0001 C CNN
-F 3 "~" H 6150 5350 50  0001 C CNN
-	1    6150 5350
+P 5950 5100
+F 0 "C19" H 5950 5200 50  0000 L CNN
+F 1 "0.21u" H 5950 5000 50  0000 L CNN
+F 2 "" H 5950 5100 50  0001 C CNN
+F 3 "~" H 5950 5100 50  0001 C CNN
+	1    5950 5100
 	1    0    0    -1  
 $EndComp
-Text Label 6650 5700 2    50   ~ 0
+Text Label 6450 5450 2    50   ~ 0
 GLV_RTN
 Wire Wire Line
-	6150 5700 6650 5700
+	5950 5450 6450 5450
 Wire Wire Line
-	6150 5100 6650 5100
+	5950 4850 6450 4850
 $EndSCHEMATC

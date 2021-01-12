@@ -428,36 +428,34 @@ SR_CTRL_Boosted
 $Comp
 L Device:R R71
 U 1 1 5FA34D6C
-P 4150 1400
-F 0 "R71" V 4050 1400 50  0000 C CNN
-F 1 "2.1K" V 4150 1400 50  0000 C CNN
-F 2 "" V 4080 1400 50  0001 C CNN
-F 3 "~" H 4150 1400 50  0001 C CNN
-	1    4150 1400
+P 4000 1050
+F 0 "R71" V 3900 1050 50  0000 C CNN
+F 1 "2.1K" V 4000 1050 50  0000 C CNN
+F 2 "" V 3930 1050 50  0001 C CNN
+F 3 "~" H 4000 1050 50  0001 C CNN
+	1    4000 1050
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	4500 1400 4300 1400
-Text Label 3500 1400 0    50   ~ 0
+	4350 1050 4150 1050
+Text Label 3350 1050 0    50   ~ 0
 Cooling_CTRL
 $Comp
 L TSI_Rev.5-rescue:TLP293-CarMan_KiCAD_Library-TSI_Rev.5-rescue U48
 U 1 1 5FA22056
-P 4800 1500
-F 0 "U48" H 4800 1700 50  0000 C CNN
-F 1 "TLP293" H 4800 1300 50  0000 C CNN
-F 2 "Package_SO:SOIC-4_4.55x2.6mm_P1.27mm" H 4600 1300 50  0001 L CIN
-F 3 "" H 4800 1500 50  0001 L CNN
-	1    4800 1500
+P 4650 1150
+F 0 "U48" H 4650 1350 50  0000 C CNN
+F 1 "TLP293" H 4650 950 50  0000 C CNN
+F 2 "Package_SO:SOIC-4_4.55x2.6mm_P1.27mm" H 4450 950 50  0001 L CIN
+F 3 "" H 4650 1150 50  0001 L CNN
+	1    4650 1150
 	1    0    0    -1  
 $EndComp
-Text Label 3500 1600 0    50   ~ 0
+Text Label 3350 1250 0    50   ~ 0
 5V_ISO_RTN
-Text Label 1900 2850 0    50   ~ 0
-Cooling_power
 Text Label 10750 5000 0    50   ~ 0
 MRESET_Contact
-Text Notes 5400 1050 2    89   ~ 0
+Text Notes 5250 800  2    89   ~ 0
 Cooling Control\n
 $Comp
 L Device:R R79
@@ -514,91 +512,8 @@ Wire Wire Line
 	11450 5300 11500 5300
 Text Notes 12500 9850 0    157  ~ 0
 Zacky Bear Doesn't Like
-$Comp
-L CarMan_KiCAD_Library:EHHD010A0B41-HZ PS2
-U 1 1 5FB4FED7
-P 3050 3050
-F 0 "PS2" H 3050 3717 50  0000 C CNN
-F 1 "EHHD010A0B41-HZ" H 3050 3626 50  0000 C CNN
-F 2 "CONV_EHHD010A0B41-HZ" H 3050 3050 50  0001 L BNN
-F 3 "https://library.industrialsolutions.abb.com/publibrary/checkout/DS-EHHD010A0B?TNR=Data%20Sheets|DS-EHHD010A0B|PDF" H 3050 3050 50  0001 L BNN
-F 4 "Manufacturer Recommendations" H 3050 3050 50  0001 L BNN "STANDARD"
-F 5 "April 6, 2016" H 3050 3050 50  0001 L BNN "PARTREV"
-F 6 "GE" H 3050 3050 50  0001 L BNN "MANUFACTURER"
-F 7 "12.7mm" H 3050 3050 50  0001 L BNN "MAXIMUM_PACKAGE_HEIGHT"
-	1    3050 3050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C13
-U 1 1 5FB58791
-P 1450 2800
-F 0 "C13" H 1565 2846 50  0000 L CNN
-F 1 "100u" H 1565 2755 50  0000 L CNN
-F 2 "" H 1488 2650 50  0001 C CNN
-F 3 "~" H 1450 2800 50  0001 C CNN
-	1    1450 2800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C18
-U 1 1 5FB588C1
-P 4050 2800
-F 0 "C18" H 4165 2846 50  0000 L CNN
-F 1 "10u" H 4165 2755 50  0000 L CNN
-F 2 "" H 4088 2650 50  0001 C CNN
-F 3 "~" H 4050 2800 50  0001 C CNN
-	1    4050 2800
-	1    0    0    -1  
-$EndComp
-Connection ~ 1450 2650
-Wire Wire Line
-	1450 2950 1450 3050
-Connection ~ 1450 3050
-Wire Wire Line
-	650  2650 1450 2650
-Wire Wire Line
-	650  3050 1450 3050
-NoConn ~ 2450 3250
-NoConn ~ 2450 3350
-NoConn ~ 3650 2850
-Wire Wire Line
-	3650 3050 3650 3550
-Wire Wire Line
-	3650 3550 2350 3550
-Wire Wire Line
-	2350 3550 2350 3050
-Wire Wire Line
-	2350 3050 2450 3050
-Wire Wire Line
-	3650 2650 3850 2650
-Wire Wire Line
-	4050 2950 4050 3050
-Wire Wire Line
-	4050 3050 3650 3050
-Connection ~ 3650 3050
-Text Label 650  2650 0    49   ~ 0
-COOL_24V
-Text Label 650  3050 0    49   ~ 0
-GLV_RTN
-Text Label 4450 2650 2    49   ~ 0
+Text Label 7050 2250 2    49   ~ 0
 12V
-$Comp
-L power:PWR_FLAG #FLG02
-U 1 1 5FBAC9F1
-P 3850 2650
-F 0 "#FLG02" H 3850 2725 50  0001 C CNN
-F 1 "PWR_FLAG" H 3850 2823 50  0000 C CNN
-F 2 "" H 3850 2650 50  0001 C CNN
-F 3 "~" H 3850 2650 50  0001 C CNN
-	1    3850 2650
-	1    0    0    -1  
-$EndComp
-Connection ~ 3850 2650
-Wire Wire Line
-	3850 2650 4050 2650
-Text Notes 2550 2250 0    49   ~ 0
-DC/DC Converter 24V to 12V 10A
 Wire Wire Line
 	3650 4700 4350 4700
 $Comp
@@ -612,11 +527,6 @@ F 3 "~" H 4350 4700 50  0001 C CNN
 	1    4350 4700
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1450 3050 2350 3050
-Connection ~ 2350 3050
-Wire Wire Line
-	1450 2650 2450 2650
 Text Notes 10950 1900 2    89   ~ 0
 AIRs power on SL closed
 Text Label 8950 1500 0    50   ~ 0
@@ -793,44 +703,39 @@ Wire Wire Line
 Wire Wire Line
 	10250 3600 10950 3600
 Wire Wire Line
-	3500 1400 4000 1400
+	3350 1050 3850 1050
 Wire Wire Line
-	3500 1600 4500 1600
+	3350 1250 4350 1250
 Text Notes 11850 3350 0    47   ~ 0
 Pull up \nResistor
-Wire Wire Line
-	1900 2850 2450 2850
 $Comp
 L Device:R R57
 U 1 1 5FD164DD
-P 5350 1800
-F 0 "R57" H 5420 1846 50  0000 L CNN
-F 1 "40K" H 5420 1755 50  0000 L CNN
-F 2 "" V 5280 1800 50  0001 C CNN
-F 3 "~" H 5350 1800 50  0001 C CNN
-	1    5350 1800
+P 5200 1450
+F 0 "R57" H 5270 1496 50  0000 L CNN
+F 1 "40K" H 5270 1405 50  0000 L CNN
+F 2 "" V 5130 1450 50  0001 C CNN
+F 3 "~" H 5200 1450 50  0001 C CNN
+	1    5200 1450
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	5350 2050 5350 1950
+	5200 1700 5200 1600
 Wire Wire Line
-	5100 1600 5350 1600
+	4950 1250 5200 1250
 Wire Wire Line
-	5350 1600 5350 1650
-Connection ~ 5350 1600
+	5200 1250 5200 1300
+Connection ~ 5200 1250
 Wire Wire Line
-	5350 1600 6050 1600
-Text Label 6050 1400 2    50   ~ 0
+	5200 1250 5900 1250
+Text Label 5900 1050 2    50   ~ 0
 5V
-Text Label 6050 1600 2    50   ~ 0
+Text Label 5900 1250 2    50   ~ 0
 Cooling_power
-Text Label 5350 2050 0    47   ~ 0
+Text Label 5200 1700 0    47   ~ 0
 GLV_RTN
 Wire Wire Line
-	5100 1400 6050 1400
-Wire Wire Line
-	4450 2650 4050 2650
-Connection ~ 4050 2650
+	4950 1050 5900 1050
 Wire Wire Line
 	10350 1500 11200 1500
 Text Label 11200 1300 2    50   ~ 0
@@ -1162,4 +1067,111 @@ Text Label 10350 9700 2    50   ~ 0
 24V_BP_Out
 Wire Wire Line
 	9100 9700 10350 9700
+Text Label 3250 5500 2    50   ~ 0
+GLV_RTN
+Connection ~ 6650 2250
+Wire Wire Line
+	7050 2250 6650 2250
+Wire Wire Line
+	4500 2450 5050 2450
+Wire Wire Line
+	4050 2250 5050 2250
+Connection ~ 4950 2650
+Wire Wire Line
+	4050 2650 4950 2650
+Text Notes 3700 2050 0    49   ~ 0
+DC/DC Converter 24V to 12V 10A
+Wire Wire Line
+	6450 2250 6650 2250
+Connection ~ 6450 2250
+$Comp
+L power:PWR_FLAG #FLG02
+U 1 1 5FBAC9F1
+P 6450 2250
+F 0 "#FLG02" H 6450 2325 50  0001 C CNN
+F 1 "PWR_FLAG" H 6450 2423 50  0000 C CNN
+F 2 "" H 6450 2250 50  0001 C CNN
+F 3 "~" H 6450 2250 50  0001 C CNN
+	1    6450 2250
+	1    0    0    -1  
+$EndComp
+Text Label 3250 2650 0    49   ~ 0
+GLV_RTN
+Text Label 3250 2250 0    49   ~ 0
+COOL_24V
+Connection ~ 6250 2650
+Wire Wire Line
+	6650 2650 6250 2650
+Wire Wire Line
+	6650 2550 6650 2650
+Wire Wire Line
+	6250 2250 6450 2250
+Wire Wire Line
+	4950 2650 5050 2650
+Wire Wire Line
+	4950 3150 4950 2650
+Wire Wire Line
+	6250 3150 4950 3150
+Wire Wire Line
+	6250 2650 6250 3150
+NoConn ~ 6250 2450
+NoConn ~ 5050 2950
+NoConn ~ 5050 2850
+Wire Wire Line
+	3250 2650 4050 2650
+Wire Wire Line
+	3250 2250 4050 2250
+Connection ~ 4050 2650
+Wire Wire Line
+	4050 2550 4050 2650
+Connection ~ 4050 2250
+$Comp
+L Device:C C18
+U 1 1 5FB588C1
+P 6650 2400
+F 0 "C18" H 6765 2446 50  0000 L CNN
+F 1 "10u" H 6765 2355 50  0000 L CNN
+F 2 "" H 6688 2250 50  0001 C CNN
+F 3 "~" H 6650 2400 50  0001 C CNN
+	1    6650 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C13
+U 1 1 5FB58791
+P 4050 2400
+F 0 "C13" H 4165 2446 50  0000 L CNN
+F 1 "100u" H 4165 2355 50  0000 L CNN
+F 2 "" H 4088 2250 50  0001 C CNN
+F 3 "~" H 4050 2400 50  0001 C CNN
+	1    4050 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L CarMan_KiCAD_Library:EHHD010A0B41-HZ PS2
+U 1 1 5FB4FED7
+P 5650 2650
+F 0 "PS2" H 5650 3317 50  0000 C CNN
+F 1 "EHHD010A0B41-HZ" H 5650 3226 50  0000 C CNN
+F 2 "CONV_EHHD010A0B41-HZ" H 5650 2650 50  0001 L BNN
+F 3 "https://library.industrialsolutions.abb.com/publibrary/checkout/DS-EHHD010A0B?TNR=Data%20Sheets|DS-EHHD010A0B|PDF" H 5650 2650 50  0001 L BNN
+F 4 "Manufacturer Recommendations" H 5650 2650 50  0001 L BNN "STANDARD"
+F 5 "April 6, 2016" H 5650 2650 50  0001 L BNN "PARTREV"
+F 6 "GE" H 5650 2650 50  0001 L BNN "MANUFACTURER"
+F 7 "12.7mm" H 5650 2650 50  0001 L BNN "MAXIMUM_PACKAGE_HEIGHT"
+	1    5650 2650
+	1    0    0    -1  
+$EndComp
+Text Label 4500 2450 0    50   ~ 0
+Cooling_power
+Wire Notes Line
+	2950 3250 7450 3250
+Wire Notes Line
+	7450 3250 7450 650 
+Wire Notes Line
+	7450 650  2950 650 
+Wire Notes Line
+	2950 650  2950 3250
+Text Notes 3650 3000 0    55   ~ 0
+Control Signal used as a \npsuedo relay
 $EndSCHEMATC

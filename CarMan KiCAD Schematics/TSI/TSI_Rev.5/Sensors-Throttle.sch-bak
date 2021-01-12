@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 3 6
+Sheet 6 6
 Title ""
 Date ""
 Rev ""
@@ -945,27 +945,8 @@ Wire Wire Line
 Connection ~ 3450 2400
 Wire Wire Line
 	2950 2100 3550 2100
-$Comp
-L pspice:CAP C?
-U 1 1 5FCFCCCD
-P 3200 1700
-AR Path="/5FC85F57/5FCFCCCD" Ref="C?"  Part="1" 
-AR Path="/6196BF15/5FCFCCCD" Ref="C?"  Part="1" 
-AR Path="/5F98EBE9/5FCFCCCD" Ref="C32"  Part="1" 
-F 0 "C32" H 3100 1800 50  0000 C CNN
-F 1 "0.1u" H 3100 1600 50  0000 C CNN
-F 2 "" H 3200 1700 50  0001 C CNN
-F 3 "~" H 3200 1700 50  0001 C CNN
-	1    3200 1700
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	3450 1950 3450 1450
-Wire Wire Line
-	3450 1450 3200 1450
 Wire Wire Line
 	3200 1350 3200 1450
-Connection ~ 3200 1450
 Wire Wire Line
 	3450 1950 3550 1950
 Wire Wire Line
@@ -1012,7 +993,7 @@ Wire Wire Line
 	1700 2100 2000 2100
 Text Label 1700 2100 2    50   ~ 0
 Throttle_LV
-Text Label 3200 1350 2    50   ~ 0
+Text Label 3450 1950 0    50   ~ 0
 5V
 Text Label 3050 2850 2    50   ~ 0
 GLV_RTN
@@ -1396,4 +1377,22 @@ Text Label 5850 5000 2    50   ~ 0
 5HV
 Text Label 5850 5950 2    50   ~ 0
 5HV
+$Comp
+L pspice:CAP C?
+U 1 1 5FCFCCCD
+P 3200 1700
+AR Path="/5FC85F57/5FCFCCCD" Ref="C?"  Part="1" 
+AR Path="/6196BF15/5FCFCCCD" Ref="C?"  Part="1" 
+AR Path="/5F98EBE9/5FCFCCCD" Ref="C32"  Part="1" 
+F 0 "C32" H 3100 1800 50  0000 C CNN
+F 1 "0.1u" H 3100 1600 50  0000 C CNN
+F 2 "" H 3200 1700 50  0001 C CNN
+F 3 "~" H 3200 1700 50  0001 C CNN
+	1    3200 1700
+	-1   0    0    -1  
+$EndComp
+Text Label 3300 1350 2    50   ~ 0
+5V
+Wire Wire Line
+	3300 1350 3200 1350
 $EndSCHEMATC
