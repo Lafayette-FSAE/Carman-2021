@@ -109,23 +109,12 @@ U 1 1 61996640
 P 7100 2950
 F 0 "U19" H 7100 2950 50  0000 C CNN
 F 1 "74HC00" H 7200 3150 50  0000 C CNN
-F 2 "" H 7100 2950 50  0001 C CNN
+F 2 "TSI_Rev_2021_Footprint_Lib:SOIC127P600X175-14N" H 7100 2950 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 7100 2950 50  0001 C CNN
 	1    7100 2950
 	1    0    0    -1  
 $EndComp
-$Comp
-L TSI_Rev.5-rescue:74LS00PowerPins-CarMan_KiCAD_Library-TSI_Rev.5-rescue U10
-U 1 1 619B0A27
-P 7100 2950
-F 0 "U10" H 7044 2950 50  0001 L CNN
-F 1 "74LS00PowerPins" H 7044 2905 50  0001 L CNN
-F 2 "" H 7100 2950 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74ls00" H 7100 2950 50  0001 C CNN
-	1    7100 2950
-	1    0    0    -1  
-$EndComp
-Text Label 7000 2200 2    47   ~ 0
+Text Label 8300 2100 2    47   ~ 0
 5HV
 $Comp
 L 74xx:74HC00 U19
@@ -133,7 +122,7 @@ U 2 1 619B9D8C
 P 5400 4300
 F 0 "U19" H 5400 4300 50  0000 C CNN
 F 1 "74HC00" H 5400 4534 50  0000 C CNN
-F 2 "" H 5400 4300 50  0001 C CNN
+F 2 "TSI_Rev_2021_Footprint_Lib:SOIC127P600X175-14N" H 5400 4300 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 5400 4300 50  0001 C CNN
 	2    5400 4300
 	1    0    0    -1  
@@ -144,24 +133,22 @@ U 3 1 619BAC4E
 P 8050 3050
 F 0 "U19" H 8050 3050 50  0000 C CNN
 F 1 "74HC00" H 8050 3250 50  0000 C CNN
-F 2 "" H 8050 3050 50  0001 C CNN
+F 2 "TSI_Rev_2021_Footprint_Lib:SOIC127P600X175-14N" H 8050 3050 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 8050 3050 50  0001 C CNN
 	3    8050 3050
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7000 3200 7000 3250
 $Comp
 L pspice:CAP C?
 U 1 1 619C449A
-P 6550 2200
+P 7500 1550
 AR Path="/5FC85F57/619C449A" Ref="C?"  Part="1" 
 AR Path="/6196BF15/619C449A" Ref="C55"  Part="1" 
-F 0 "C55" V 6450 2350 50  0000 C CNN
-F 1 "0.1u" V 6450 2050 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6550 2200 50  0001 C CNN
-F 3 "~" H 6550 2200 50  0001 C CNN
-	1    6550 2200
+F 0 "C55" V 7400 1700 50  0000 C CNN
+F 1 "0.1u" V 7400 1400 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7500 1550 50  0001 C CNN
+F 3 "~" H 7500 1550 50  0001 C CNN
+	1    7500 1550
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
@@ -176,7 +163,7 @@ AR Path="/5FC85F57/619D3ABD" Ref="TP?"  Part="1"
 AR Path="/6196BF15/619D3ABD" Ref="TP4"  Part="1" 
 F 0 "TP4" H 5908 2768 50  0000 L CNN
 F 1 "TSV_Ready" H 5908 2677 50  0000 L CNN
-F 2 "" H 6050 2650 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D3.0mm" H 6050 2650 50  0001 C CNN
 F 3 "~" H 6050 2650 50  0001 C CNN
 	1    5850 2650
 	1    0    0    -1  
@@ -203,7 +190,7 @@ U 4 1 619DD68C
 P 8050 3800
 F 0 "U19" H 8050 3800 50  0000 C CNN
 F 1 "74HC00" H 8050 3600 50  0000 C CNN
-F 2 "" H 8050 3800 50  0001 C CNN
+F 2 "TSI_Rev_2021_Footprint_Lib:SOIC127P600X175-14N" H 8050 3800 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 8050 3800 50  0001 C CNN
 	4    8050 3800
 	1    0    0    -1  
@@ -291,7 +278,7 @@ AR Path="/5FC85F57/61A23E70" Ref="TP?"  Part="1"
 AR Path="/6196BF15/61A23E70" Ref="TP5"  Part="1" 
 F 0 "TP5" V 6100 3550 50  0000 L CNN
 F 1 "PC_Ready" V 6050 3850 50  0000 L CNN
-F 2 "" H 6250 3650 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D3.0mm" H 6250 3650 50  0001 C CNN
 F 3 "~" H 6250 3650 50  0001 C CNN
 	1    6050 3650
 	0    1    1    0   
@@ -309,7 +296,7 @@ AR Path="/5FC85F57/61A40A8A" Ref="TP?"  Part="1"
 AR Path="/6196BF15/61A40A8A" Ref="TP6"  Part="1" 
 F 0 "TP6" H 7150 4200 50  0000 L CNN
 F 1 "PC_SL" H 7050 4350 50  0000 L CNN
-F 2 "" H 7350 4150 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D3.0mm" H 7350 4150 50  0001 C CNN
 F 3 "~" H 7350 4150 50  0001 C CNN
 	1    7150 4150
 	1    0    0    -1  
@@ -1034,7 +1021,7 @@ AR Path="/5FC85F57/5FEC0838" Ref="TP?"  Part="1"
 AR Path="/6196BF15/5FEC0838" Ref="TP7"  Part="1" 
 F 0 "TP7" H 2700 8100 50  0000 L CNN
 F 1 "SL_TP" H 2600 8250 50  0000 L CNN
-F 2 "" H 2900 8050 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D3.0mm" H 2900 8050 50  0001 C CNN
 F 3 "~" H 2900 8050 50  0001 C CNN
 	1    2700 8050
 	1    0    0    -1  
@@ -1047,8 +1034,8 @@ U 1 1 5FEDF126
 P 15000 8900
 F 0 "U20" H 15000 9308 79  0000 C CNN
 F 1 "MC7805BDTRKG" H 15000 9173 79  0000 C CNN
-F 2 "" H 15000 9150 79  0001 C CNN
-F 3 "" H 15000 9150 79  0001 C CNN
+F 2 "TSI_Rev_2021_Footprint_Lib:DPAK229P990X238-4N" H 15000 9150 79  0001 C CNN
+F 3 "https://www.snapeda.com/parts/MC7805BDTRKG/ON%20Semiconductor/view-part/?ref=search&t=mc7805bdtrkg" H 15000 9150 79  0001 C CNN
 	1    15000 8900
 	1    0    0    -1  
 $EndComp
@@ -1554,16 +1541,12 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 5400 3700 50 
 	2    5350 3500
 	1    0    0    -1  
 $EndComp
-Text Label 7000 3250 0    47   ~ 0
+Text Label 6600 2100 0    47   ~ 0
 IO_Ground
-Text Label 5900 2200 0    47   ~ 0
+Text Label 6850 1550 0    47   ~ 0
 IO_Ground
 Wire Wire Line
-	5900 2200 6300 2200
-Wire Wire Line
-	6800 2200 7000 2200
-Wire Wire Line
-	7000 2700 7000 2200
+	6850 1550 7250 1550
 Wire Wire Line
 	9000 4800 9500 4800
 Wire Wire Line
@@ -1723,4 +1706,25 @@ F 3 "~" H 4500 9100 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4900 9100 4900 9500
+$Comp
+L 74xx:74HC00 U19
+U 5 1 60014D73
+P 7500 2100
+F 0 "U19" V 7650 2100 50  0000 C CNN
+F 1 "74HC00" V 7250 2100 50  0000 C CNN
+F 2 "TSI_Rev_2021_Footprint_Lib:SOIC127P600X175-14N" H 7500 2100 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 7500 2100 50  0001 C CNN
+	5    7500 2100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8000 2100 8300 2100
+Wire Wire Line
+	7000 2100 6600 2100
+Text Label 8000 1550 2    47   ~ 0
+5HV
+Wire Wire Line
+	8000 1550 7750 1550
+Text Notes 7200 2500 0    59   ~ 0
+NAND Package \nPower Supplies
 $EndSCHEMATC
