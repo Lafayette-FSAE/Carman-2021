@@ -215,7 +215,7 @@ P 950 750
 F 0 "J1" H 900 950 50  0000 L CNN
 F 1 "J1" H 900 950 50  0001 L CNN
 F 2 "" H 950 750 50  0001 C CNN
-F 3 "~" H 950 750 50  0001 C CNN
+F 3 "https://www.molex.com/pdm_docs/sd/010844020_sd.pdf" H 950 750 50  0001 C CNN
 	1    950  750 
 	1    0    0    -1  
 $EndComp

@@ -1000,7 +1000,7 @@ AR Path="/5FB466B1" Ref="RL?"  Part="1"
 AR Path="/5FE1DE7D/5FB466B1" Ref="K2"  Part="1" 
 F 0 "K2" V 12367 5100 50  0000 C CNN
 F 1 "G5LE-1-E" V 12276 5100 50  0000 C CNN
-F 2 "" H 12050 5700 50  0001 C CNN
+F 2 "TSI_Rev_2021_Footprint_Lib:G5LE-1-E DC24" H 12050 5700 50  0001 C CNN
 F 3 "https://media.digikey.com/pdf/Data%20Sheets/Omron%20PDFs/G5LE-E_G.pdf" H 12050 5700 50  0001 C CNN
 	1    11800 5100
 	0    -1   -1   0   
