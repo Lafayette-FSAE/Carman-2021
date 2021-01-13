@@ -576,8 +576,6 @@ Wire Wire Line
 	13800 3850 13050 3850
 Connection ~ 13050 3850
 Wire Wire Line
-	14650 3050 14300 3050
-Wire Wire Line
 	14300 3050 14300 3150
 Text Label 14650 3050 0    79   ~ 0
 24HV
@@ -739,17 +737,6 @@ Text Label 4800 7350 2    79   ~ 0
 GLV_RTN
 Wire Wire Line
 	6500 7750 6250 7750
-$Comp
-L Reference_Voltage:REF3033 U12
-U 1 1 5FAD159D
-P 12550 9050
-F 0 "U12" H 12321 9096 50  0000 R CNN
-F 1 "REF3033" H 12321 9005 50  0000 R CIN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 12550 8600 50  0001 C CIN
-F 3 "http://www.ti.com/lit/ds/symlink/ref3033.pdf" H 12650 8700 50  0001 C CIN
-	1    12550 9050
-	1    0    0    -1  
-$EndComp
 Wire Notes Line
 	11400 9900 16000 9900
 Wire Notes Line
@@ -758,45 +745,6 @@ Wire Notes Line
 	16000 6350 11400 6350
 Wire Notes Line
 	11400 6350 11400 9900
-$Comp
-L pspice:CAP C1
-U 1 1 5FAE51C2
-P 11600 9050
-F 0 "C1" H 11650 9150 50  0000 L CNN
-F 1 "0.47u" H 11650 8950 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 11600 9050 50  0001 C CNN
-F 3 "~" H 11600 9050 50  0001 C CNN
-	1    11600 9050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	11600 9400 12450 9400
-Wire Wire Line
-	12450 9400 12450 9350
-Wire Wire Line
-	11600 8700 11600 8800
-Wire Wire Line
-	11600 8700 12450 8700
-Wire Wire Line
-	12450 8700 12450 8750
-Wire Wire Line
-	11600 9400 11600 9300
-Wire Wire Line
-	13050 9050 12850 9050
-Text Label 12450 8600 0    79   ~ 0
-5HV
-Text Label 12450 9450 0    79   ~ 0
-IO_Ground
-Text Label 13050 9050 0    79   ~ 0
-3.3_VREF
-Wire Wire Line
-	12450 9400 12450 9450
-Connection ~ 12450 9400
-Wire Wire Line
-	12450 8600 12450 8700
-Connection ~ 12450 8700
-Text Notes 11550 9750 0    79   ~ 0
-3.3V Voltage Reference
 Wire Wire Line
 	4900 10600 5100 10600
 Text Label 4900 10800 2    79   ~ 0
@@ -865,17 +813,6 @@ Text Label 3850 9650 2    79   ~ 0
 GLV_RTN
 Wire Wire Line
 	3850 9650 4150 9650
-$Comp
-L TSI_Rev.5-rescue:THN_30-2415WI-CarMan_KiCAD_Library-TSI_Rev.5-rescue PS1
-U 1 1 5FBB1814
-P 5750 9650
-F 0 "PS1" H 5725 10081 79  0000 C CNN
-F 1 "THN_30-2415WI" H 5725 9946 79  0000 C CNN
-F 2 "" H 5500 9700 79  0001 C CNN
-F 3 "https://www.snapeda.com/parts/THN%2030-2415WI/Traco%20Power/datasheet/" H 5500 9700 79  0001 C CNN
-	1    5750 9650
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6700 9650 6450 9650
 Text Label 6700 9650 0    79   ~ 0
@@ -1684,26 +1621,11 @@ F 3 "~" H 4150 9350 50  0001 C CNN
 $EndComp
 Connection ~ 4150 9100
 Wire Wire Line
-	4150 9100 4250 9100
-Wire Wire Line
 	4900 9500 4950 9500
 Wire Wire Line
 	6700 9800 6450 9800
 Text Label 6700 9800 2    47   ~ 0
 24HV
-Wire Wire Line
-	4750 9100 4900 9100
-$Comp
-L pspice:INDUCTOR L1
-U 1 1 61234915
-P 4500 9100
-F 0 "L1" H 4500 9315 50  0000 C CNN
-F 1 "2.2uH" H 4500 9224 50  0000 C CNN
-F 2 "Inductor_SMD:L_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4500 9100 50  0001 C CNN
-F 3 "~" H 4500 9100 50  0001 C CNN
-	1    4500 9100
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4900 9100 4900 9500
 $Comp
@@ -1727,4 +1649,30 @@ Wire Wire Line
 	8000 1550 7750 1550
 Text Notes 7200 2500 0    59   ~ 0
 NAND Package \nPower Supplies
+$Comp
+L power:PWR_FLAG #FLG0107
+U 1 1 60081B98
+P 14350 7750
+F 0 "#FLG0107" H 14350 7825 50  0001 C CNN
+F 1 "PWR_FLAG" V 14350 7878 50  0000 L CNN
+F 2 "" H 14350 7750 50  0001 C CNN
+F 3 "~" H 14350 7750 50  0001 C CNN
+	1    14350 7750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4150 9100 4900 9100
+$Comp
+L CarMan_KiCAD_Library:THN_30-2415WI PS1
+U 1 1 601034A0
+P 5750 9650
+F 0 "PS1" H 5700 10131 79  0000 C CNN
+F 1 "THN_30-2415WI" H 5700 9996 79  0000 C CNN
+F 2 "" H 5450 9750 79  0001 C CNN
+F 3 "" H 5450 9750 79  0001 C CNN
+	1    5750 9650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14300 3050 14650 3050
 $EndSCHEMATC

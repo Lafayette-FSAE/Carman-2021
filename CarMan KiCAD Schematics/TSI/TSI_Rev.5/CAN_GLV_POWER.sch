@@ -145,22 +145,6 @@ Wire Wire Line
 Connection ~ 4050 5500
 Wire Wire Line
 	4700 4950 4700 4800
-Wire Wire Line
-	3650 4800 4550 4800
-$Comp
-L power:PWR_FLAG #FLG03
-U 1 1 5FB2DC71
-P 4550 4800
-F 0 "#FLG03" H 4550 4875 50  0001 C CNN
-F 1 "PWR_FLAG" H 4450 4750 50  0000 C CNN
-F 2 "" H 4550 4800 50  0001 C CNN
-F 3 "~" H 4550 4800 50  0001 C CNN
-	1    4550 4800
-	1    0    0    -1  
-$EndComp
-Connection ~ 4550 4800
-Wire Wire Line
-	4550 4800 4700 4800
 $Comp
 L pspice:CAP C59
 U 1 1 5FB33FB8
@@ -248,7 +232,7 @@ CANTX
 Text Label 15050 1050 2    50   ~ 0
 CANRX
 Text Label 2050 1300 2    50   ~ 0
-ChassisGND
+Chassis_GND
 Text Notes 7750 4000 2    89   ~ 0
 3.3V REGULATOR
 Text Notes 12450 10350 0    197  ~ 0
@@ -503,17 +487,6 @@ Text Label 7050 2250 2    49   ~ 0
 12V
 Wire Wire Line
 	3650 4700 4350 4700
-$Comp
-L power:PWR_FLAG #FLG0103
-U 1 1 60AD6C72
-P 4350 4700
-F 0 "#FLG0103" H 4350 4775 50  0001 C CNN
-F 1 "PWR_FLAG" H 4350 4873 50  0000 C CNN
-F 2 "" H 4350 4700 50  0001 C CNN
-F 3 "~" H 4350 4700 50  0001 C CNN
-	1    4350 4700
-	1    0    0    -1  
-$EndComp
 Text Notes 10950 1900 2    89   ~ 0
 AIRs power on SL closed
 Text Label 8950 1500 0    50   ~ 0
@@ -1068,20 +1041,6 @@ Wire Wire Line
 	4050 2650 4950 2650
 Text Notes 3700 2050 0    49   ~ 0
 DC/DC Converter 24V to 12V 10A
-Wire Wire Line
-	6450 2250 6650 2250
-Connection ~ 6450 2250
-$Comp
-L power:PWR_FLAG #FLG02
-U 1 1 5FBAC9F1
-P 6450 2250
-F 0 "#FLG02" H 6450 2325 50  0001 C CNN
-F 1 "PWR_FLAG" H 6450 2423 50  0000 C CNN
-F 2 "" H 6450 2250 50  0001 C CNN
-F 3 "~" H 6450 2250 50  0001 C CNN
-	1    6450 2250
-	1    0    0    -1  
-$EndComp
 Text Label 3250 2650 0    49   ~ 0
 GLV_RTN
 Text Label 3250 2250 0    49   ~ 0
@@ -1091,8 +1050,6 @@ Wire Wire Line
 	6650 2650 6250 2650
 Wire Wire Line
 	6650 2550 6650 2650
-Wire Wire Line
-	6250 2250 6450 2250
 Wire Wire Line
 	4950 2650 5050 2650
 Wire Wire Line
@@ -1174,4 +1131,8 @@ F 3 "~" H 1500 1300 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1600 1300 2050 1300
+Wire Wire Line
+	6250 2250 6650 2250
+Wire Wire Line
+	3650 4800 4700 4800
 $EndSCHEMATC
