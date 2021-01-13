@@ -1,4 +1,4 @@
-18676704969837133
+18678315540042354
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -76894,6 +76894,13 @@ G5LE-1-E DC24
 0
 5
 5
+TSI_Rev_2021_Footprint_Lib
+Molex-0010844030
+
+
+0
+0
+0
 TSI_Rev_2021_Footprint_Lib
 Molex_MiniFit-JR-5556-02A_2x01x4.20mm_Straight
 Molex Mini-Fit JR, PN:5556-02A, dual row, top entry type, through hole
