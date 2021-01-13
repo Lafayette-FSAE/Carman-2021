@@ -1,4 +1,4 @@
-18662209949641804
+18667041612343895
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -76832,6 +76832,13 @@ Logo WEEE
 0
 0
 TSI_Rev_2021_Footprint_Lib
+23BR10KLFTR
+http://www.comkey.in/sites/default/files/attachments/EVM3ESX50B15.pdf
+trimmer smd
+0
+3
+3
+TSI_Rev_2021_Footprint_Lib
 CONV_PDQ10-Q24-D5-D
 
 
@@ -76985,6 +76992,20 @@ SOT230P700X180-4N
 0
 4
 4
+TSI_Rev_2021_Footprint_Lib
+SOT230P700X180-4N-speical
+
+
+0
+4
+4
+TSI_Rev_2021_Footprint_Lib
+trim_pot
+
+
+0
+3
+3
 TerminalBlock
 TerminalBlock_Altech_AK300-2_P5.00mm
 Altech AK300 terminal block, pitch 5.0mm, 45 degree angled, see http://www.mouser.com/ds/2/16/PCBMETRC-24178.pdf

@@ -544,17 +544,6 @@ Wire Wire Line
 	7100 2150 8150 2150
 Wire Wire Line
 	7100 1950 7100 2150
-$Comp
-L CarMan_KiCAD_Library:D_Schottky D11
-U 1 1 5F9B6857
-P 6450 1000
-F 0 "D11" V 6300 1100 50  0000 C CNN
-F 1 "D_Schottky - MMSZ5231B-7-F" H 6450 1126 50  0001 C CNN
-F 2 "Diode_SMD:D_SOD-123" H 6450 1000 50  0001 C CNN
-F 3 "~" H 6450 1000 50  0001 C CNN
-	1    6450 1000
-	0    1    1    0   
-$EndComp
 Text Notes 5000 1650 0    47   ~ 0
 Change \ngate voltage\n
 Wire Notes Line
@@ -573,4 +562,15 @@ Wire Wire Line
 	5000 6200 5600 6200
 Wire Wire Line
 	5000 6400 5600 6400
+$Comp
+L CarMan_KiCAD_Library:D_Schottky D11
+U 1 1 5F9B6857
+P 6450 1000
+F 0 "D11" V 6300 1100 50  0000 C CNN
+F 1 "MMSZ5231B-7-F" H 6450 1126 50  0001 C CNN
+F 2 "Diode_SMD:D_SOD-123" H 6450 1000 50  0001 C CNN
+F 3 "~" H 6450 1000 50  0001 C CNN
+	1    6450 1000
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC

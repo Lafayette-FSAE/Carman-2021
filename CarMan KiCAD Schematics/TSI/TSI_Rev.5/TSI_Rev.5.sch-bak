@@ -555,10 +555,8 @@ Text Label 9350 650  0    49   ~ 0
 12V_Cooling
 Text Label 9350 750  0    49   ~ 0
 GLV_RTN
-Text Label 10400 850  0    49   ~ 0
-COOL_24V
 Text Label 10400 950  0    49   ~ 0
-GLV_RTN
+COOL_24V
 Text Label 2000 2250 0    50   ~ 0
 Safety_Loop
 Text Label 6700 3350 2    49   ~ 0
@@ -833,8 +831,6 @@ Wire Wire Line
 	5150 3750 6700 3750
 Text Label 8100 3850 0    50   ~ 0
 Drive_LED
-Text Label 10400 750  0    50   ~ 0
-SL1_In
 Wire Wire Line
 	5150 3850 6700 3850
 Text Label 5150 3850 0    50   ~ 0
@@ -1502,4 +1498,8 @@ F 3 "~" H 10250 650 50  0001 C CNN
 	1    10250 650 
 	1    0    0    -1  
 $EndComp
+Text Label 10400 750  0    49   ~ 0
+GLV_RTN
+Text Label 10400 850  0    50   ~ 0
+SL1_In
 $EndSCHEMATC

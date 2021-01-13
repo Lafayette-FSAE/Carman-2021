@@ -1064,24 +1064,11 @@ F 4 "https://www.digikey.com/en/products/detail/stmicroelectronics/TS912IYDT/219
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1250 10600 1250 10400
-Wire Wire Line
 	1250 9900 1250 10100
 Wire Wire Line
 	1000 9900 1250 9900
 Wire Wire Line
 	1400 10250 1700 10250
-$Comp
-L Device:R_POT RV1
-U 1 1 5FD7E6C2
-P 1250 10250
-F 0 "RV1" H 1181 10296 50  0000 R CNN
-F 1 "APPS1 2K POT" H 1181 10205 50  0000 R CNN
-F 2 "" H 1250 10250 50  0001 C CNN
-F 3 "~" H 1250 10250 50  0001 C CNN
-	1    1250 10250
-	1    0    0    -1  
-$EndComp
 $Comp
 L pspice:CAP C11
 U 1 1 5FD7E6B8
@@ -1164,22 +1151,9 @@ Wire Wire Line
 Wire Wire Line
 	4450 10600 4650 10600
 Wire Wire Line
-	4650 9900 4650 10100
-Wire Wire Line
 	4400 9900 4650 9900
 Wire Wire Line
 	4800 10250 5100 10250
-$Comp
-L Device:R_POT RV2
-U 1 1 5FD5A139
-P 4650 10250
-F 0 "RV2" H 4581 10296 50  0000 R CNN
-F 1 "APPS2 2K POT" H 4581 10205 50  0000 R CNN
-F 2 "" H 4650 10250 50  0001 C CNN
-F 3 "~" H 4650 10250 50  0001 C CNN
-	1    4650 10250
-	1    0    0    -1  
-$EndComp
 Connection ~ 5450 10250
 Wire Wire Line
 	5450 10250 5750 10250
@@ -1649,7 +1623,7 @@ U 1 1 60292796
 P 5900 2200
 F 0 "RV4" H 5830 2246 50  0000 R CNN
 F 1 "1K" H 5830 2155 50  0000 R CNN
-F 2 "" H 5900 2200 50  0001 C CNN
+F 2 "TSI_Rev_2021_Footprint_Lib:trim_pot" H 5900 2200 50  0001 C CNN
 F 3 "~" H 5900 2200 50  0001 C CNN
 	1    5900 2200
 	1    0    0    -1  
@@ -1934,4 +1908,63 @@ Wire Wire Line
 	5800 1100 5900 1100
 Text Label 6400 1100 0    50   ~ 0
 10V
+$Comp
+L Connector:TestPoint TP9
+U 1 1 6003107E
+P 5400 1950
+F 0 "TP9" H 5200 2150 50  0000 L CNN
+F 1 "APPS_DIFF" H 5458 1977 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_D3.0mm" H 5600 1950 50  0001 C CNN
+F 3 "~" H 5600 1950 50  0001 C CNN
+	1    5400 1950
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	1400 10050 1400 10400
+Wire Notes Line
+	1400 10400 1100 10400
+Wire Notes Line
+	1100 10400 1100 10050
+Wire Notes Line
+	1100 10050 1400 10050
+Wire Wire Line
+	1250 10350 1250 10600
+Wire Notes Line
+	1250 10100 1250 10150
+Wire Notes Line
+	1300 10150 1300 10300
+Wire Notes Line
+	1250 10300 1250 10350
+Wire Notes Line
+	1200 10300 1200 10150
+Wire Notes Line
+	1200 10150 1300 10150
+Wire Notes Line
+	1200 10300 1300 10300
+Text Notes 600  10350 0    31   ~ 0
+Throttle Plausibility\nConnects to pedals:\nAPPS1 2K POT
+Wire Notes Line
+	4500 10450 4500 10100
+Wire Notes Line
+	4500 10100 4800 10100
+Wire Notes Line
+	4650 10150 4650 10200
+Wire Notes Line
+	4700 10200 4700 10350
+Wire Notes Line
+	4650 10350 4650 10400
+Wire Notes Line
+	4600 10350 4600 10200
+Wire Notes Line
+	4600 10200 4700 10200
+Wire Notes Line
+	4600 10350 4700 10350
+Text Notes 4000 10350 0    31   ~ 0
+Throttle Plausibility\nConnects to pedals:\nAPPS2 2K POT
+Wire Notes Line
+	4500 10450 4800 10450
+Wire Notes Line
+	4800 10100 4800 10450
+Wire Wire Line
+	4650 9900 4650 10150
 $EndSCHEMATC
