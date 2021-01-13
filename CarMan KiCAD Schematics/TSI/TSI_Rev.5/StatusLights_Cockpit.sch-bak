@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 6
+Sheet 6 6
 Title ""
 Date ""
 Rev ""
@@ -250,7 +250,7 @@ U 1 1 5FA31407
 P 3450 6700
 F 0 "U1" H 3650 7100 50  0000 C CNN
 F 1 "RDE03110S12" H 3450 6300 50  0000 C CNN
-F 2 "TSI_Rev_2021_Footprint_Lib:DIP1549W45P254L3404H940Q24" H 3250 6850 50  0001 C CNN
+F 2 "TSI_Rev_2021_Footprint_Lib:RDE03110S12" H 3250 6850 50  0001 C CNN
 F 3 "https://www.snapeda.com/parts/RDE03110S12/XP%20Power/datasheet/" H 3250 6850 50  0001 C CNN
 	1    3450 6700
 	1    0    0    -1  

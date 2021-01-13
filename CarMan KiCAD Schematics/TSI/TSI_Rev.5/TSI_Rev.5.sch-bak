@@ -133,16 +133,6 @@ Text Label 6800 6850 2    50   ~ 0
 SCL_uC
 Text Notes 4900 6350 0    47   ~ 0
 HIGH VOLTAGE
-Text Notes 8950 2900 0    47   ~ 0
-Where it starts to get funky
-Text Notes 9650 4150 2    50   ~ 0
-LV\n
-Text Notes 9650 4300 2    50   ~ 0
-HV
-Text Label 8100 4300 0    50   ~ 0
-HV+
-Text Label 8100 4400 0    50   ~ 0
-HV-
 Text Label 8100 4900 0    50   ~ 0
 CANRX
 Text Label 8100 5200 0    50   ~ 0
@@ -224,7 +214,7 @@ U 1 1 5FC3F568
 P 950 750
 F 0 "J1" H 900 950 50  0000 L CNN
 F 1 "J1" H 900 950 50  0001 L CNN
-F 2 "TSI_Rev_2021_Footprint_Lib:Molex_MiniFit-JR-5556-04A_2x02x4.20mm_Straight" H 950 750 50  0001 C CNN
+F 2 "" H 950 750 50  0001 C CNN
 F 3 "~" H 950 750 50  0001 C CNN
 	1    950  750 
 	1    0    0    -1  
@@ -348,21 +338,9 @@ Text Label 4150 600  2    50   ~ 0
 IGNI_GND
 Wire Wire Line
 	4050 750  4050 850 
-Text Label 11100 3850 2    50   ~ 0
+Text Label 11100 3700 2    50   ~ 0
 TSAL
-Text Label 11100 3950 2    50   ~ 0
-TSAL_Cockpit
-Text Label 8100 3150 0    50   ~ 0
-BP
-Text Label 8100 3250 0    50   ~ 0
-BP_RTN
-Text Label 8100 3350 0    50   ~ 0
-IMD_Status
-Text Label 8100 3450 0    50   ~ 0
-RTDS_CTRL
-Text Label 8100 3550 0    50   ~ 0
-D_LED_CTRL
-Text Label 11100 3450 2    50   ~ 0
+Text Label 11100 3300 2    50   ~ 0
 GLV_RTN
 Text Notes 5650 2250 0    50   ~ 0
 TSI-Logic Connection\n
@@ -375,12 +353,8 @@ Chassis_GND
 Text Label 7450 750  0    50   ~ 0
 BP_CAN-
 NoConn ~ 4500 1950
-Text Label 11100 3550 2    50   ~ 0
-Drive_BTN_RTN
-Text Label 11100 3650 2    50   ~ 0
+Text Label 11100 3500 2    50   ~ 0
 Drive_BTN
-Text Label 8100 3750 0    50   ~ 0
-FAULT_LED_RTN
 $Comp
 L TSI_Rev.5-rescue:Current_Sensor-CarMan_KiCAD_Library-TSI_Rev.5-rescue J?
 U 1 1 5FA558BE
@@ -624,33 +598,7 @@ Text Label 5150 3750 0    50   ~ 0
 Brake_Light_RTN
 Text Label 6700 3750 2    50   ~ 0
 GLV_RTN
-$Sheet
-S 8850 3100 1500 1450
-U 5FE1DCBA
-F0 "StatusLights_Cockpit" 47
-F1 "StatusLights_Cockpit.sch" 47
-F2 "BP" I L 8850 3150 50 
-F3 "BP_RTN" I L 8850 3250 50 
-F4 "IMD_Status" I L 8850 3350 50 
-F5 "RTDS_CTRL" I L 8850 3450 50 
-F6 "D_LED_CTRL" I L 8850 3550 50 
-F7 "24V" I R 10350 3150 50 
-F8 "GLV_RTN" I R 10350 3450 50 
-F9 "3.3V" I R 10350 3350 50 
-F10 "5V" I R 10350 3250 50 
-F11 "HV+" I L 8850 4300 50 
-F12 "HV-" I L 8850 4400 50 
-F13 "TSAL" I R 10350 3850 50 
-F14 "TSAL_RTN" I L 8850 3950 50 
-F15 "TSAL_Cockpit" I R 10350 3950 50 
-F16 "FAULT_LED_RTN" I L 8850 3750 50 
-F17 "Drive_BTN_RTN" I R 10350 3550 50 
-F18 "Drive_BTN" I R 10350 3650 50 
-F19 "RTDS" I R 10350 3750 50 
-F20 "RTDS_RTN" I L 8850 4050 50 
-F21 "Drive_LED" I L 8850 3850 50 
-$EndSheet
-Text Label 11100 3750 2    50   ~ 0
+Text Label 11100 3600 2    50   ~ 0
 RTDS
 Text Label 7000 2100 2    50   ~ 0
 PC_Ready
@@ -829,8 +777,6 @@ Wire Wire Line
 	5150 3650 6700 3650
 Wire Wire Line
 	5150 3750 6700 3750
-Text Label 8100 3850 0    50   ~ 0
-Drive_LED
 Wire Wire Line
 	5150 3850 6700 3850
 Text Label 5150 3850 0    50   ~ 0
@@ -884,11 +830,11 @@ F 3 "~" H 2250 2900 50  0001 C CNN
 	1    2250 2900
 	1    0    0    -1  
 $EndComp
-Text Label 11100 3150 2    50   ~ 0
+Text Label 11100 3000 2    50   ~ 0
 24V
-Text Label 11100 3350 2    50   ~ 0
+Text Label 11100 3200 2    50   ~ 0
 3.3V
-Text Label 11100 3250 2    50   ~ 0
+Text Label 11100 3100 2    50   ~ 0
 5V
 Wire Wire Line
 	5150 4050 6700 4050
@@ -1054,52 +1000,6 @@ Wire Wire Line
 	10350 6100 11100 6100
 Wire Wire Line
 	10350 6200 11100 6200
-Wire Wire Line
-	8100 3550 8850 3550
-Wire Wire Line
-	8100 3450 8850 3450
-Wire Wire Line
-	8100 3350 8850 3350
-Wire Wire Line
-	8100 3250 8850 3250
-Wire Wire Line
-	8100 3150 8850 3150
-Wire Wire Line
-	8100 3850 8850 3850
-Wire Wire Line
-	8100 3750 8850 3750
-Text Label 8100 4050 0    50   ~ 0
-RTDS_RTN
-Text Label 8100 3950 0    50   ~ 0
-TSAL_RTN
-Wire Wire Line
-	8100 4050 8850 4050
-Wire Wire Line
-	8100 3950 8850 3950
-Wire Wire Line
-	8100 4300 8850 4300
-Wire Wire Line
-	8100 4400 8850 4400
-Wire Wire Line
-	10350 3650 11100 3650
-Wire Wire Line
-	10350 3550 11100 3550
-Wire Wire Line
-	10350 3450 11100 3450
-Wire Wire Line
-	10350 3350 11100 3350
-Wire Wire Line
-	10350 3250 11100 3250
-Wire Wire Line
-	10350 3150 11100 3150
-Wire Wire Line
-	10350 3850 11100 3850
-Wire Wire Line
-	10350 3750 11100 3750
-Wire Wire Line
-	10350 3950 11100 3950
-Wire Notes Line
-	8850 4200 10350 4200
 Wire Wire Line
 	4200 7400 4800 7400
 Wire Wire Line
@@ -1502,4 +1402,102 @@ Text Label 10400 750  0    49   ~ 0
 GLV_RTN
 Text Label 10400 850  0    50   ~ 0
 SL1_In
+$Sheet
+S 8850 2950 1500 1450
+U 5FE1DCBA
+F0 "StatusLights_Cockpit" 47
+F1 "StatusLights_Cockpit.sch" 47
+F2 "BP" I L 8850 3000 50 
+F3 "BP_RTN" I L 8850 3100 50 
+F4 "IMD_Status" I L 8850 3200 50 
+F5 "RTDS_CTRL" I L 8850 3300 50 
+F6 "D_LED_CTRL" I L 8850 3400 50 
+F7 "24V" I R 10350 3000 50 
+F8 "GLV_RTN" I R 10350 3300 50 
+F9 "3.3V" I R 10350 3200 50 
+F10 "5V" I R 10350 3100 50 
+F11 "HV+" I L 8850 4150 50 
+F12 "HV-" I L 8850 4250 50 
+F13 "TSAL" I R 10350 3700 50 
+F14 "TSAL_RTN" I L 8850 3700 50 
+F15 "TSAL_Cockpit" I R 10350 3800 50 
+F16 "FAULT_LED_RTN" I L 8850 3500 50 
+F17 "Drive_BTN_RTN" I R 10350 3400 50 
+F18 "Drive_BTN" I R 10350 3500 50 
+F19 "RTDS" I R 10350 3600 50 
+F20 "RTDS_RTN" I L 8850 3800 50 
+F21 "Drive_LED" I L 8850 3600 50 
+$EndSheet
+Text Label 8100 4150 0    50   ~ 0
+HV+
+Text Label 8100 4250 0    50   ~ 0
+HV-
+Wire Wire Line
+	8100 4150 8850 4150
+Wire Wire Line
+	8100 4250 8850 4250
+Text Label 8100 3000 0    50   ~ 0
+BP
+Text Label 8100 3100 0    50   ~ 0
+BP_RTN
+Text Label 8100 3200 0    50   ~ 0
+IMD_Status
+Text Label 8100 3300 0    50   ~ 0
+RTDS_CTRL
+Text Label 8100 3400 0    50   ~ 0
+D_LED_CTRL
+Text Label 8100 3500 0    50   ~ 0
+FAULT_LED_RTN
+Text Label 8100 3600 0    50   ~ 0
+Drive_LED
+Wire Wire Line
+	8100 3400 8850 3400
+Wire Wire Line
+	8100 3300 8850 3300
+Wire Wire Line
+	8100 3200 8850 3200
+Wire Wire Line
+	8100 3100 8850 3100
+Wire Wire Line
+	8100 3000 8850 3000
+Wire Wire Line
+	8100 3600 8850 3600
+Wire Wire Line
+	8100 3500 8850 3500
+Text Label 8100 3800 0    50   ~ 0
+RTDS_RTN
+Text Label 8100 3700 0    50   ~ 0
+TSAL_RTN
+Wire Wire Line
+	8100 3800 8850 3800
+Wire Wire Line
+	8100 3700 8850 3700
+Wire Notes Line
+	8850 4000 10350 4000
+Wire Wire Line
+	10350 3800 11100 3800
+Wire Wire Line
+	10350 3600 11100 3600
+Wire Wire Line
+	10350 3700 11100 3700
+Wire Wire Line
+	10350 3000 11100 3000
+Wire Wire Line
+	10350 3100 11100 3100
+Wire Wire Line
+	10350 3200 11100 3200
+Wire Wire Line
+	10350 3300 11100 3300
+Wire Wire Line
+	10350 3400 11100 3400
+Wire Wire Line
+	10350 3500 11100 3500
+Text Label 11100 3400 2    50   ~ 0
+Drive_BTN_RTN
+Text Label 11100 3800 2    50   ~ 0
+TSAL_Cockpit
+Text Notes 9650 4100 2    50   ~ 0
+HV
+Text Notes 9650 3950 2    50   ~ 0
+LV\n
 $EndSCHEMATC
