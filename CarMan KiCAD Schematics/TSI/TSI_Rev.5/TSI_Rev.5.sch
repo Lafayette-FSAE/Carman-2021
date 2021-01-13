@@ -333,7 +333,7 @@ AR Path="/6196BF15/6068B99F" Ref="JP?"  Part="1"
 AR Path="/6068B99F" Ref="JP2"  Part="1" 
 F 0 "JP2" H 3700 650 50  0001 C CNN
 F 1 "Jumper_NC_Dual" H 3050 1150 50  0001 C CNN
-F 2 "" H 3800 750 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 3800 750 50  0001 C CNN
 F 3 "~" H 3800 750 50  0001 C CNN
 	1    3800 750 
 	-1   0    0    1   
