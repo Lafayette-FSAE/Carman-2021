@@ -691,17 +691,6 @@ Connection ~ 7200 5800
 Wire Wire Line
 	7200 6350 7300 6350
 Connection ~ 7200 6350
-$Comp
-L Device:R R108
-U 1 1 5FA46FB9
-P 5100 6350
-F 0 "R108" V 5200 6250 50  0000 L CNN
-F 1 "2.4K" V 5100 6250 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5030 6350 50  0001 C CNN
-F 3 "~" H 5100 6350 50  0001 C CNN
-	1    5100 6350
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	5400 6350 5250 6350
 Wire Wire Line
@@ -1719,4 +1708,15 @@ Text Label 13100 8900 0    47   ~ 0
 3.3_VREF
 Text Label 12450 9350 0    79   ~ 0
 IO_Ground
+$Comp
+L Device:R R108
+U 1 1 5FA46FB9
+P 5100 6350
+F 0 "R108" V 5200 6250 50  0000 L CNN
+F 1 "2.4K" V 5100 6250 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5030 6350 50  0001 C CNN
+F 3 "~" H 5100 6350 50  0001 C CNN
+	1    5100 6350
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC
