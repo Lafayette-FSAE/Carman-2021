@@ -431,13 +431,13 @@ Wire Wire Line
 	12150 2900 12150 3250
 $Comp
 L Amplifier_Operational:MCP6004 U18
-U 3 1 5FED477E
+U 1 1 5FED477E
 P 11800 2900
 F 0 "U18" H 11800 2900 50  0000 C CNN
 F 1 "MCP6004" H 11950 2750 50  0000 C CNN
 F 2 "TSI_Rev_2021_Footprint_Lib:SOIC127P600X175-14N" H 11750 3000 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 11850 3100 50  0001 C CNN
-	3    11800 2900
+	1    11800 2900
 	1    0    0    -1  
 $EndComp
 Text Label 11600 2400 0    50   ~ 0

@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source "C:\\Users\\natha\\Desktop\\Carman-2021\\CarMan KiCAD Schematics\\TSI\\TSI_Rev.5\\TSI_Rev.5.sch")
-    (date "1/14/2021 12:04:02 PM")
+    (date "1/14/2021 4:45:10 PM")
     (tool "Eeschema (5.1.6)-1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -3613,11 +3613,11 @@
       (node (ref Q2) (pin 1)))
     (net (code 153) (name /TSI-TP/Pedal_Out)
       (node (ref JP1) (pin 3))
-      (node (ref U18) (pin 8))
-      (node (ref U18) (pin 9)))
+      (node (ref U18) (pin 1))
+      (node (ref U18) (pin 2)))
     (net (code 154) (name "Net-(Q2-Pad3)")
-      (node (ref U18) (pin 10))
       (node (ref R40) (pin 2))
+      (node (ref U18) (pin 3))
       (node (ref Q2) (pin 3)))
     (net (code 155) (name "Net-(R30-Pad2)")
       (node (ref U7) (pin 6))
