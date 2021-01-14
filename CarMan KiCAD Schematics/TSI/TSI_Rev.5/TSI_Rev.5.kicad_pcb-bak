@@ -818,7 +818,7 @@
   )
 
   (module TSI_Rev_2021_Footprint_Lib:RDE03110S12 (layer F.Cu) (tedit 5E261506) (tstamp 5FFFB799)
-    (at 292.1 154.94 90)
+    (at 397.51 134.62 90)
     (path /5FE1DCBA/5FA31407)
     (fp_text reference U1 (at 6.096 -22.352 270) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
@@ -1245,7 +1245,7 @@
   )
 
   (module Capacitor_THT:C_Rect_L18.0mm_W9.0mm_P15.00mm_FKS3_FKP3 (layer F.Cu) (tedit 5AE50EF0) (tstamp 5FFFA647)
-    (at 303.53 173.99 180)
+    (at 394.97 140.97 180)
     (descr "C, Rect series, Radial, pin pitch=15.00mm, , length*width=18*9mm^2, Capacitor, http://www.wima.com/EN/WIMA_FKS_3.pdf")
     (tags "C Rect series Radial pin pitch 15.00mm  length 18mm width 9mm Capacitor")
     (path /5FE1DCBA/5FA3C7FB)
@@ -1354,7 +1354,7 @@
   )
 
   (module Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder (layer F.Cu) (tedit 5B36C52B) (tstamp 5FFFA67A)
-    (at 284.48 165.1)
+    (at 278.13 57.15)
     (descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
     (tags "capacitor handsolder")
     (path /5FE1DCBA/5FA50112)
@@ -2879,7 +2879,7 @@
   )
 
   (module TestPoint:TestPoint_Pad_D3.0mm (layer F.Cu) (tedit 5A0F774F) (tstamp 5FFFA983)
-    (at 302.26 162.56)
+    (at 295.91 54.61)
     (descr "SMD pad as test Point, diameter 3.0mm")
     (tags "test point SMD pad")
     (path /5FE1DCBA/5FA80FFC)
@@ -2900,7 +2900,7 @@
   )
 
   (module TSI_Rev_2021_Footprint_Lib:SOT95P280X145-5N (layer F.Cu) (tedit 5FB5E145) (tstamp 5FFFA999)
-    (at 328.93 194.31)
+    (at 346.71 193.04)
     (path /5F98EBE9/61439D09)
     (fp_text reference IC1 (at -0.06 -2.508) (layer F.SilkS)
       (effects (font (size 0.8 0.8) (thickness 0.015)))
@@ -2968,12 +2968,12 @@
   )
 
   (module TSI_Rev_2021_Footprint_Lib:Molex-0010844030 (layer F.Cu) (tedit 5FFF65AC) (tstamp 5FFFA9BE)
-    (at 292.1 231.14 90)
+    (at 382.27 152.4)
     (path /5FC3F568)
-    (fp_text reference J1 (at 0 5.08 90) (layer F.SilkS)
+    (fp_text reference J1 (at 0 5.08) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value J1 (at 0 -5.08 90) (layer F.Fab)
+    (fp_text value J1 (at 0 -5.08) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -10.16 3.81) (end -10.16 -3.81) (layer F.Fab) (width 0.1))
@@ -2984,11 +2984,11 @@
     (fp_line (start 10.27 3.92) (end -10.27 3.92) (layer F.SilkS) (width 0.15))
     (fp_line (start -10.27 3.92) (end -10.27 -3.92) (layer F.SilkS) (width 0.15))
     (fp_line (start -10.27 -3.92) (end 10.27 -3.92) (layer F.SilkS) (width 0.15))
-    (pad 1 thru_hole circle (at -6.77 0 90) (size 5.5 5.5) (drill 3.35) (layers *.Cu *.Mask)
+    (pad 1 thru_hole circle (at -6.77 0) (size 5.5 5.5) (drill 3.35) (layers *.Cu *.Mask)
       (net 49 /MC+))
-    (pad 2 thru_hole circle (at 0 0 90) (size 5.5 5.5) (drill 3.35) (layers *.Cu *.Mask)
+    (pad 2 thru_hole circle (at 0 0) (size 5.5 5.5) (drill 3.35) (layers *.Cu *.Mask)
       (net 18 /HV-))
-    (pad 3 thru_hole circle (at 6.77 0 90) (size 5.5 5.5) (drill 3.35) (layers *.Cu *.Mask)
+    (pad 3 thru_hole circle (at 6.77 0) (size 5.5 5.5) (drill 3.35) (layers *.Cu *.Mask)
       (net 17 /HV+))
   )
 
@@ -5055,7 +5055,7 @@
   )
 
   (module TSI_Rev_2021_Footprint_Lib:CONV_PDQ10-Q24-D5-D (layer F.Cu) (tedit 5FB756C7) (tstamp 5FFFAFDD)
-    (at 20.32 139.7)
+    (at 241.3 119.38)
     (path /6196BF15/601034A0)
     (fp_text reference PS1 (at -9.841175 -13.957945) (layer F.SilkS)
       (effects (font (size 1.001646 1.001646) (thickness 0.015)))
@@ -9116,7 +9116,7 @@
   )
 
   (module TestPoint:TestPoint_Pad_D3.0mm (layer F.Cu) (tedit 5A0F774F) (tstamp 5FFFB78C)
-    (at 297.18 162.56)
+    (at 290.83 54.61)
     (descr "SMD pad as test Point, diameter 3.0mm")
     (tags "test point SMD pad")
     (path /5FE1DCBA/5FA8198D)
@@ -9208,7 +9208,7 @@
   )
 
   (module TSI_Rev_2021_Footprint_Lib:SOIC127P1150X330-8N (layer F.Cu) (tedit 5FB5EFDF) (tstamp 5FFFB7F3)
-    (at 219.71 144.78 270)
+    (at 354.33 118.11 270)
     (path /5F98EBE9/5FC68EC7)
     (fp_text reference U4 (at -1.143 -4.2164 90) (layer F.SilkS)
       (effects (font (size 0.64 0.64) (thickness 0.015)))
@@ -9257,7 +9257,7 @@
   )
 
   (module TSI_Rev_2021_Footprint_Lib:SOIC127P600X175-8N (layer F.Cu) (tedit 5FB42DE2) (tstamp 5FFFB82B)
-    (at 163.83 143.51 90)
+    (at 335.28 118.11 90)
     (path /5F98EBE9/5FBF8C01)
     (fp_text reference U5 (at 1.75606 -5.49726 90) (layer F.SilkS)
       (effects (font (size 1.643244 1.643244) (thickness 0.015)))
@@ -10177,7 +10177,7 @@
   )
 
   (module Package_SO:SOIC-4_4.55x2.6mm_P1.27mm (layer F.Cu) (tedit 5D9F72B1) (tstamp 5FFFBAA6)
-    (at 80.01 140.97 270)
+    (at 295.91 118.11 270)
     (descr "SOIC, 4 Pin (https://toshiba.semicon-storage.com/info/docget.jsp?did=12884&prodName=TLP291), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "SOIC SO")
     (path /6196BF15/5FA8091D)
@@ -10225,7 +10225,7 @@
   )
 
   (module Package_SO:SOIC-4_4.55x2.6mm_P1.27mm (layer F.Cu) (tedit 5D9F72B1) (tstamp 5FFFBAC1)
-    (at -10.16 137.16 90)
+    (at 209.55 119.38 90)
     (descr "SOIC, 4 Pin (https://toshiba.semicon-storage.com/info/docget.jsp?did=12884&prodName=TLP291), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "SOIC SO")
     (path /6196BF15/5FB4F426)
@@ -10273,7 +10273,7 @@
   )
 
   (module Package_SO:SOIC-4_4.55x2.6mm_P1.27mm (layer F.Cu) (tedit 5D9F72B1) (tstamp 5FFFBADC)
-    (at 104.14 142.24 270)
+    (at 313.69 118.11 270)
     (descr "SOIC, 4 Pin (https://toshiba.semicon-storage.com/info/docget.jsp?did=12884&prodName=TLP291), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "SOIC SO")
     (path /6196BF15/5F9E712D)
@@ -10363,7 +10363,7 @@
   )
 
   (module Package_SO:SOIC-4_4.55x2.6mm_P1.27mm (layer F.Cu) (tedit 5D9F72B1) (tstamp 5FFFBB15)
-    (at 62.23 139.7 270)
+    (at 275.59 118.11 270)
     (descr "SOIC, 4 Pin (https://toshiba.semicon-storage.com/info/docget.jsp?did=12884&prodName=TLP291), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "SOIC SO")
     (path /6196BF15/5FD6E6F7)
