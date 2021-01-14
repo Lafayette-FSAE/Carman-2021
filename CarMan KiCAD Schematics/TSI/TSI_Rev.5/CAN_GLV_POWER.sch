@@ -177,8 +177,6 @@ Wire Wire Line
 Connection ~ 6550 4800
 Wire Wire Line
 	6550 4800 6800 4800
-Wire Wire Line
-	7900 4350 7900 4800
 Connection ~ 7900 4800
 Wire Wire Line
 	6800 5400 6700 5400
@@ -280,25 +278,12 @@ F 3 "~" H 8100 5400 50  0001 C CNN
 	1    8100 5400
 	1    0    0    -1  
 $EndComp
-$Comp
-L CarMan_KiCAD_Library:LT1763CS8-3.3PBF U42
-U 1 1 5FB354FD
-P 7300 5250
-F 0 "U42" H 7300 5850 50  0000 C CNN
-F 1 "LT1763CS8-3.3PBF" H 7300 4650 50  0000 C CNN
-F 2 "TSI_Rev_2021_Footprint_Lib:SOIC127P600X175-8N" H 7350 4650 50  0001 C CNN
-F 3 "https://www.snapeda.com/parts/LT1763CS8-3.3%23PBF/Analog%20Devices/datasheet/" H 7350 4650 50  0001 C CNN
-	1    7300 5250
-	1    0    0    -1  
-$EndComp
 Connection ~ 8300 4800
 Wire Wire Line
 	8300 4800 8650 4800
 Connection ~ 8100 4800
 Wire Wire Line
 	8100 4800 8300 4800
-Wire Wire Line
-	7900 4800 8100 4800
 Wire Wire Line
 	6700 6000 7350 6000
 Wire Wire Line
@@ -1135,4 +1120,19 @@ Wire Wire Line
 	3650 4800 4700 4800
 Wire Wire Line
 	3650 4700 4200 4700
+Wire Wire Line
+	7900 4800 8100 4800
+Wire Wire Line
+	7900 4350 7900 4800
+$Comp
+L CarMan_KiCAD_Library:LT1763CS8-3.3PBF U42
+U 1 1 5FB354FD
+P 7300 5250
+F 0 "U42" H 7300 5850 50  0000 C CNN
+F 1 "LT1763CS8-3.3PBF" H 7300 4650 50  0000 C CNN
+F 2 "TSI_Rev_2021_Footprint_Lib:SOIC127P600X175-8N" H 7350 4650 50  0001 C CNN
+F 3 "https://www.snapeda.com/parts/LT1763CS8-3.3%23PBF/Analog%20Devices/datasheet/" H 7350 4650 50  0001 C CNN
+	1    7300 5250
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
