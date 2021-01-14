@@ -617,7 +617,7 @@ U 1 1 5FC777B8
 P 6100 1800
 F 0 "J13.2" H 5950 2100 50  0000 L CNN
 F 1 "Conn_01x06" H 6180 1701 50  0001 L CNN
-F 2 "TSI_Rev_2021_Footprint_Lib:Molex_MiniFit-JR-5556-06A_2x03x4.20mm_Straight" H 6100 1800 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 6100 1800 50  0001 C CNN
 F 3 "~" H 6100 1800 50  0001 C CNN
 	1    6100 1800
 	-1   0    0    -1  
@@ -628,7 +628,7 @@ U 1 1 5FC77F26
 P 5850 1800
 F 0 "J13.1" H 5700 2100 50  0000 L CNN
 F 1 "Conn_01x06" H 5930 1701 50  0001 L CNN
-F 2 "TSI_Rev_2021_Footprint_Lib:Molex_MiniFit-JR-5556-06A_2x03x4.20mm_Straight" H 5850 1800 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 5850 1800 50  0001 C CNN
 F 3 "~" H 5850 1800 50  0001 C CNN
 	1    5850 1800
 	1    0    0    -1  
