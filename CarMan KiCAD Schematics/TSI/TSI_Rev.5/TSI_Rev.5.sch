@@ -207,9 +207,8 @@ Text Label 700  7100 0    50   ~ 0
 5V
 Text Label 700  7300 0    50   ~ 0
 AIRS+
-NoConn ~ 750  950 
 $Comp
-L Connector_Generic:Conn_01x04 J1
+L Connector_Generic:Conn_01x03 J1
 U 1 1 5FC3F568
 P 950 750
 F 0 "J1" H 900 950 50  0000 L CNN
@@ -356,19 +355,6 @@ BP_CAN-
 NoConn ~ 4500 1950
 Text Label 11100 3500 2    50   ~ 0
 Drive_BTN
-$Comp
-L TSI_Rev.5-rescue:Current_Sensor-CarMan_KiCAD_Library-TSI_Rev.5-rescue J?
-U 1 1 5FA558BE
-P 950 1300
-AR Path="/5F98EBE9/5FA558BE" Ref="J?"  Part="1" 
-AR Path="/5FA558BE" Ref="J2"  Part="1" 
-F 0 "J2" H 950 1300 50  0000 C CNN
-F 1 "Current_Sensor" H 950 500 50  0000 C CNN
-F 2 "TSI_Rev_2021_Footprint_Lib:Current Sensor" H 950 1300 50  0001 C CNN
-F 3 "" H 950 1300 50  0001 C CNN
-	1    950  1300
-	1    0    0    -1  
-$EndComp
 NoConn ~ 1350 1950
 NoConn ~ 1350 1450
 Wire Wire Line
@@ -1506,4 +1492,17 @@ Text Label 4200 7500 0    50   ~ 0
 MC_Voltage
 Wire Wire Line
 	4200 7500 4800 7500
+$Comp
+L TSI_Rev.5-rescue:Current_Sensor-CarMan_KiCAD_Library-TSI_Rev.5-rescue J?
+U 1 1 5FA558BE
+P 950 1300
+AR Path="/5F98EBE9/5FA558BE" Ref="J?"  Part="1" 
+AR Path="/5FA558BE" Ref="J2"  Part="1" 
+F 0 "J2" H 950 1300 50  0000 C CNN
+F 1 "Current_Sensor" H 950 500 50  0000 C CNN
+F 2 "TSI_Rev_2021_Footprint_Lib:Current Sensor" H 950 1300 50  0001 C CNN
+F 3 "" H 950 1300 50  0001 C CNN
+	1    950  1300
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

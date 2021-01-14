@@ -645,7 +645,7 @@ U 1 1 5FA0035B
 P 6550 6100
 F 0 "D12" V 6504 6180 50  0000 L CNN
 F 1 "MMSZ5231B-7-F" V 6450 5400 50  0000 L CNN
-F 2 "TSI_Rev_2021_Footprint_Lib:SOD3715X135N" H 6550 6100 50  0001 C CNN
+F 2 "Diode_SMD:D_SOD-123" H 6550 6100 50  0001 C CNN
 F 3 "https://www.snapeda.com/parts/MMSZ5231B-7-F/Diodes%20Inc./datasheet/" H 6550 6100 50  0001 C CNN
 	1    6550 6100
 	0    1    1    0   
@@ -966,19 +966,6 @@ $EndComp
 Wire Wire Line
 	2700 8200 3050 8200
 $Comp
-L TSI_Rev.5-rescue:MC7805BDTRKG-CarMan_KiCAD_Library-TSI_Rev.5-rescue U20
-U 1 1 5FEDF126
-P 15000 8900
-F 0 "U20" H 15000 9308 79  0000 C CNN
-F 1 "MC7805BDTRKG" H 15000 9173 79  0000 C CNN
-F 2 "TSI_Rev_2021_Footprint_Lib:DPAK229P990X238-4N" H 15000 9150 79  0001 C CNN
-F 3 "https://www.snapeda.com/parts/MC7805BDTRKG/ON%20Semiconductor/view-part/?ref=search&t=mc7805bdtrkg" H 15000 9150 79  0001 C CNN
-	1    15000 8900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	14950 9150 15000 9150
-$Comp
 L pspice:CAP C?
 U 1 1 5FEEFD1E
 P 14500 9050
@@ -1000,7 +987,6 @@ Wire Wire Line
 	14500 9400 15000 9400
 Wire Wire Line
 	15000 9400 15000 9150
-Connection ~ 15000 9150
 Wire Wire Line
 	15000 9150 15050 9150
 Wire Wire Line
@@ -1523,7 +1509,7 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 10600 4350 50
 	1    0    0    -1  
 $EndComp
 Text Label 9900 4250 0    47   ~ 0
-3.3V
+3.3_VREF
 Wire Wire Line
 	9900 4250 10250 4250
 Wire Wire Line
@@ -1675,4 +1661,62 @@ F 3 "" H 5450 9750 79  0001 C CNN
 $EndComp
 Wire Wire Line
 	14300 3050 14650 3050
+$Comp
+L CarMan_KiCAD_Library:MC7805BDTRKG U10
+U 1 1 600DC70C
+P 15000 8900
+F 0 "U10" H 15000 9308 79  0000 C CNN
+F 1 "MC7805BDTRKG" H 15000 9173 79  0000 C CNN
+F 2 "TSI_Rev_2021_Footprint_Lib:DPAK229P990X238-4N" H 15000 9150 79  0001 C CNN
+F 3 "" H 15000 9150 79  0001 C CNN
+	1    15000 8900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Reference_Voltage:REF3033 U?
+U 1 1 6013ABA6
+P 12550 8900
+F 0 "U?" H 12321 8946 50  0000 R CNN
+F 1 "REF3033" H 12321 8855 50  0000 R CIN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 12550 8450 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/ref3033.pdf" H 12650 8550 50  0001 C CIN
+	1    12550 8900
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:CAP C?
+U 1 1 6013D1B7
+P 11700 8950
+AR Path="/5FC85F57/6013D1B7" Ref="C?"  Part="1" 
+AR Path="/6196BF15/6013D1B7" Ref="C?"  Part="1" 
+F 0 "C?" H 11800 8850 50  0000 C CNN
+F 1 "0.47u" H 11800 9050 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 11700 8950 50  0001 C CNN
+F 3 "~" H 11700 8950 50  0001 C CNN
+	1    11700 8950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11700 9200 11700 9350
+Wire Wire Line
+	11700 9350 12450 9350
+Wire Wire Line
+	12450 9350 12450 9200
+Wire Wire Line
+	12850 8900 13100 8900
+Wire Wire Line
+	12450 8600 12450 8550
+Wire Wire Line
+	12450 8550 11700 8550
+Wire Wire Line
+	11700 8550 11700 8700
+Wire Wire Line
+	12450 8550 12450 8450
+Connection ~ 12450 8550
+Text Label 12450 8450 2    79   ~ 0
+5HV
+Text Label 13100 8900 0    47   ~ 0
+3.3_VREF
+Text Label 12450 9350 0    79   ~ 0
+IO_Ground
 $EndSCHEMATC
