@@ -36,10 +36,10 @@ F 3 "~" H 1450 800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole U28
+L Mechanical:MountingHole U2
 U 1 1 5FB236B2
 P 800 1300
-F 0 "U28" H 700 1450 50  0000 L CNN
+F 0 "U2" H 750 1450 50  0000 L CNN
 F 1 "MountingHole" H 550 1150 50  0000 L CNN
 F 2 "MountingHole:MountingHole_3.5mm_Pad" H 800 1300 50  0001 C CNN
 F 3 "~" H 800 1300 50  0001 C CNN

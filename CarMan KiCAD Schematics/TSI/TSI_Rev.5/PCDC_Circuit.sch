@@ -330,7 +330,7 @@ HV SIGNALS\n
 Text HLabel 1300 1350 0    50   Input ~ 0
 Throttle_HV
 Text HLabel 1300 1050 0    50   Input ~ 0
-MC+
+MC_Voltage
 Text HLabel 1300 950  0    50   Input ~ 0
 HV-
 Text HLabel 1300 850  0    50   Input ~ 0
@@ -1198,7 +1198,7 @@ SR Latch Logic\n
 Text Notes 4600 2250 0    47   ~ 0
 95% of Voltage
 Text HLabel 1300 1150 0    50   Input ~ 0
-TSV_V
+TSV_Voltage
 Text HLabel 1300 1250 0    50   Input ~ 0
 IO_Ground
 Text Label 1500 1550 0    50   ~ 0

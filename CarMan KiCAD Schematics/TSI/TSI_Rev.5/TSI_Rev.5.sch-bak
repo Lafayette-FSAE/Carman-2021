@@ -177,10 +177,10 @@ U 6196BF15
 F0 "PCDC_Circuit" 79
 F1 "PCDC_Circuit.sch" 79
 F2 "Throttle_HV" I R 3100 6400 50 
-F3 "MC+" I L 1550 6000 50 
+F3 "MC_Voltage" I L 1550 6000 50 
 F4 "HV-" I L 1550 5900 50 
 F5 "HV+" I L 1550 5800 50 
-F6 "TSV_V" I L 1550 6100 50 
+F6 "TSV_Voltage" I L 1550 6100 50 
 F7 "IO_Ground" I R 3100 6500 50 
 F8 "1.24VREF" I R 3100 6200 50 
 F9 "5HV" I R 3100 6300 50 
@@ -801,7 +801,7 @@ IGNI_GND
 Text Label 700  6400 0    50   ~ 0
 Brake_Pressed_HV
 Text Label 700  6000 0    50   ~ 0
-MC+
+MC_Voltage
 Wire Wire Line
 	1550 2800 2050 2800
 Wire Wire Line
@@ -1032,7 +1032,7 @@ Wire Wire Line
 Wire Wire Line
 	6200 6650 6800 6650
 $Sheet
-S 4800 6200 1400 1350
+S 4800 6200 1400 1400
 U 5F98EBE9
 F0 "Sensors_Throttle_Voltage" 50
 F1 "Sensors-Throttle.sch" 50
@@ -1046,11 +1046,12 @@ F8 "IO_Ground" I L 4800 6700 50
 F9 "5HV" I L 4800 6600 50 
 F10 "Throttle_HV" I L 4800 7200 50 
 F11 "TSV_Voltage" I L 4800 6900 50 
-F12 "MC_Voltage" I L 4800 6800 50 
+F12 "MC+" I L 4800 6800 50 
 F13 "HV+" I L 4800 7000 50 
 F14 "HV-" I L 4800 7100 50 
 F15 "A1_HV" I L 4800 7300 50 
 F16 "A2_HV" I L 4800 7400 50 
+F17 "MC_Voltage" I L 4800 7500 50 
 $EndSheet
 Text Notes 5650 6350 0    47   ~ 0
 LOW VOLTAGE
@@ -1501,4 +1502,8 @@ Text Notes 9650 4100 2    50   ~ 0
 HV
 Text Notes 9650 3950 2    50   ~ 0
 LV\n
+Text Label 4200 7500 0    50   ~ 0
+MC_Voltage
+Wire Wire Line
+	4200 7500 4800 7500
 $EndSCHEMATC
