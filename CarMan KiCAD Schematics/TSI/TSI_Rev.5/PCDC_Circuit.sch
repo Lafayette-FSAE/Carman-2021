@@ -1719,4 +1719,6 @@ F 3 "~" H 5100 6350 50  0001 C CNN
 	1    5100 6350
 	0    -1   -1   0   
 $EndComp
+Text Notes 11500 7100 0    157  ~ 0
+HV
 $EndSCHEMATC
