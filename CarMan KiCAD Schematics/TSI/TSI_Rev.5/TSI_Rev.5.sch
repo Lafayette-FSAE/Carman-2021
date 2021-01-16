@@ -502,11 +502,11 @@ Text Label 2000 1850 0    50   ~ 0
 FAULT_LED_RTN
 Text Label 2000 1750 0    50   ~ 0
 AMS_FAULT_LED
-Text Label 1550 2800 0    50   ~ 0
+Text Label 4400 2800 0    50   ~ 0
 SCL
-Text Label 1550 3000 0    50   ~ 0
+Text Label 1550 2800 0    50   ~ 0
 SL1_In
-Text Label 1550 2700 0    50   ~ 0
+Text Label 4400 2700 0    50   ~ 0
 SDA
 Text Label 550  2700 0    50   ~ 0
 Flowrate
@@ -666,8 +666,6 @@ Wire Wire Line
 Wire Wire Line
 	10400 950  10850 950 
 Wire Wire Line
-	1550 2700 2050 2700
-Wire Wire Line
 	2000 1750 2600 1750
 Text Label 11100 4800 2    50   ~ 0
 Cooling_CTRL
@@ -695,16 +693,16 @@ Text Label 11100 5900 2    50   ~ 0
 12V_Cooling
 Text Label 11100 6100 2    50   ~ 0
 IMD_FAULT_LED
-Text Notes 2550 3250 0    50   ~ 0
+Text Notes 3300 3250 0    50   ~ 0
 LSP IMD & AMS Reset \nButton\n
-Text Label 2550 2700 0    50   ~ 0
+Text Label 3300 2700 0    50   ~ 0
 IMD_Status
-Text Label 2550 2800 0    50   ~ 0
+Text Label 3300 2800 0    50   ~ 0
 IMD_Button_RTN
 Wire Wire Line
-	2550 2800 3200 2800
+	3300 2800 3950 2800
 Wire Wire Line
-	2550 2700 3200 2700
+	3300 2700 3950 2700
 Text Label 11100 6000 2    50   ~ 0
 IMD_Button_RTN
 Text Label 8100 5900 0    50   ~ 0
@@ -785,32 +783,30 @@ Brake_Pressed_HV
 Text Label 700  6000 0    50   ~ 0
 MC_Voltage
 Wire Wire Line
-	1550 2800 2050 2800
+	1550 2700 2050 2700
+Wire Wire Line
+	1550 3000 2050 3000
 Wire Wire Line
 	1550 2900 2050 2900
 Wire Wire Line
-	1550 3200 2050 3200
-Wire Wire Line
-	1550 3100 2050 3100
-Wire Wire Line
-	1550 3000 2050 3000
-Text Label 1550 2900 0    50   ~ 0
+	1550 2800 2050 2800
+Text Label 1550 2700 0    50   ~ 0
 PC_Ready
-Text Label 1550 3200 0    50   ~ 0
+Text Label 1550 3000 0    50   ~ 0
 Throttle_SEL
-Text Label 1550 3100 0    50   ~ 0
+Text Label 1550 2900 0    50   ~ 0
 IMD_Status
-Text Notes 1650 3650 0    50   ~ 0
-Testing Connector\n\n
+Text Notes 1600 3250 0    50   ~ 0
+Left Side\nTesting Connector\n\n
 $Comp
-L Connector_Generic:Conn_01x08 J19
+L Connector_Generic:Conn_01x04 J19
 U 1 1 5FE0EFE1
-P 2250 3000
-F 0 "J19" H 2200 3400 50  0000 L CNN
-F 1 "J19" H 2200 3300 50  0001 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical" H 2250 3000 50  0001 C CNN
-F 3 "~" H 2250 3000 50  0001 C CNN
-	1    2250 3000
+P 2250 2800
+F 0 "J19" H 2200 3000 50  0000 L CNN
+F 1 "J19" H 2200 3100 50  0001 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 2250 2800 50  0001 C CNN
+F 3 "~" H 2250 2800 50  0001 C CNN
+	1    2250 2800
 	1    0    0    -1  
 $EndComp
 Text Label 11100 3000 2    50   ~ 0
@@ -837,24 +833,24 @@ F 3 "~" H 3700 1750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x04 J21
+L Connector_Generic:Conn_01x04 J22
 U 1 1 5FDCB93A
-P 3400 2800
-F 0 "J21" H 3350 3000 50  0000 L CNN
-F 1 "J21" H 3350 3000 50  0001 L CNN
-F 2 "TSI_Rev_2021_Footprint_Lib:Molex_MiniFit-JR-5556-04A_2x02x4.20mm_Straight" H 3400 2800 50  0001 C CNN
-F 3 "~" H 3400 2800 50  0001 C CNN
-	1    3400 2800
+P 4150 2800
+F 0 "J22" H 4100 3000 50  0000 L CNN
+F 1 "J22" H 4100 3000 50  0001 L CNN
+F 2 "TSI_Rev_2021_Footprint_Lib:Molex_MiniFit-JR-5556-04A_2x02x4.20mm_Straight" H 4150 2800 50  0001 C CNN
+F 3 "~" H 4150 2800 50  0001 C CNN
+	1    4150 2800
 	1    0    0    -1  
 $EndComp
-Text Label 2550 2900 0    50   ~ 0
+Text Label 3300 2900 0    50   ~ 0
 AMS_Status
-Text Label 2550 3000 0    50   ~ 0
+Text Label 3300 3000 0    50   ~ 0
 AMS_Button_RTN
 Wire Wire Line
-	2550 3000 3200 3000
+	3300 3000 3950 3000
 Wire Wire Line
-	2550 2900 3200 2900
+	3300 2900 3950 2900
 Wire Wire Line
 	3600 950  2950 950 
 Wire Wire Line
@@ -1496,8 +1492,6 @@ F 3 "" H 950 1300 50  0001 C CNN
 	1    950  1300
 	1    0    0    -1  
 $EndComp
-NoConn ~ 2050 3300
-NoConn ~ 2050 3400
 $Comp
 L Device:Jumper JP?
 U 1 1 601967AD
@@ -1525,4 +1519,36 @@ Text Label 7450 950  0    50   ~ 0
 Chassis_GND
 Text Label 10400 850  0    50   ~ 0
 SL1_In
+$Comp
+L Connector_Generic:Conn_01x02 J23
+U 1 1 600AD19A
+P 4800 2700
+F 0 "J23" H 4750 2800 50  0000 L CNN
+F 1 "J23" H 4750 2800 50  0001 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 4800 2700 50  0001 C CNN
+F 3 "~" H 4800 2700 50  0001 C CNN
+	1    4800 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 2800 4400 2800
+Wire Wire Line
+	4600 2700 4400 2700
+Text Notes 2450 3250 0    50   ~ 0
+Right Side\nTesting Connector\n\n
+NoConn ~ 2800 2700
+NoConn ~ 2800 2800
+NoConn ~ 2800 2900
+$Comp
+L Connector_Generic:Conn_01x04 J21
+U 1 1 60224CCE
+P 3000 2800
+F 0 "J21" H 2950 3000 50  0000 L CNN
+F 1 "J21" H 2950 3100 50  0001 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 3000 2800 50  0001 C CNN
+F 3 "~" H 3000 2800 50  0001 C CNN
+	1    3000 2800
+	1    0    0    -1  
+$EndComp
+NoConn ~ 2800 3000
 $EndSCHEMATC

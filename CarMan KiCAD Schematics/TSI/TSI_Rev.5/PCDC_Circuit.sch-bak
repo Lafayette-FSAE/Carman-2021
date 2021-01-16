@@ -672,7 +672,7 @@ Wire Wire Line
 Connection ~ 6850 5800
 Wire Wire Line
 	6850 5800 7200 5800
-Text Label 6850 5700 0    79   ~ 0
+Text Label 6850 5700 0    59   ~ 0
 24HV
 Wire Wire Line
 	7200 6250 7200 6350
@@ -693,15 +693,11 @@ Wire Wire Line
 Connection ~ 7200 6350
 Wire Wire Line
 	5400 6350 5250 6350
-Wire Wire Line
-	4800 6350 4950 6350
-Wire Wire Line
-	4800 6550 5400 6550
-Text Label 4800 6350 2    79   ~ 0
+Text Label 4450 6350 0    59   ~ 0
 AIRS+
-Text Label 4800 6550 2    79   ~ 0
+Text Label 4450 6550 0    59   ~ 0
 GLV_RTN
-Text Label 6550 6550 0    79   ~ 0
+Text Label 6550 6550 0    59   ~ 0
 IO_Ground
 $Comp
 L Device:R R70
@@ -716,16 +712,10 @@ F 3 "~" H 5100 7150 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5400 7150 5250 7150
-Wire Wire Line
-	4800 7150 4950 7150
-Wire Wire Line
-	4800 7350 5400 7350
-Text Label 4800 7150 2    79   ~ 0
+Text Label 4200 7150 0    59   ~ 0
 Brake_Pressed
-Text Label 4800 7350 2    79   ~ 0
+Text Label 4200 7350 0    59   ~ 0
 GLV_RTN
-Wire Wire Line
-	6350 7750 6100 7750
 Wire Notes Line
 	11400 9900 16000 9900
 Wire Notes Line
@@ -822,7 +812,7 @@ Wire Wire Line
 	6250 8500 6000 8500
 Wire Wire Line
 	6100 7350 6100 7400
-Text Label 6350 7750 0    79   ~ 0
+Text Label 7050 7750 2    59   ~ 0
 IO_Ground
 Wire Wire Line
 	6100 7750 6100 7700
@@ -837,12 +827,10 @@ F 3 "~" H 6100 7550 50  0001 C CNN
 	1    6100 7550
 	-1   0    0    1   
 $EndComp
-Text Label 6450 7350 0    59   ~ 0
+Text Label 7050 7350 2    59   ~ 0
 Brake_Pressed_HV
-Text Label 6450 7150 0    79   ~ 0
+Text Label 7050 7150 2    59   ~ 0
 5HV
-Wire Wire Line
-	6450 7150 6000 7150
 $Comp
 L TSI_Rev.5-rescue:TLP293-CarMan_KiCAD_Library-TSI_Rev.5-rescue U31
 U 1 1 5FA8091D
@@ -1703,8 +1691,6 @@ Connection ~ 6100 7350
 Wire Wire Line
 	6100 7350 6000 7350
 Wire Wire Line
-	6100 7350 6450 7350
-Wire Wire Line
 	6250 8500 6800 8500
 Wire Wire Line
 	6000 8300 6800 8300
@@ -1725,4 +1711,33 @@ Wire Wire Line
 Wire Wire Line
 	4950 8300 4150 8300
 Connection ~ 4150 8300
+Wire Wire Line
+	6000 7150 7050 7150
+Wire Wire Line
+	6100 7350 7050 7350
+Wire Wire Line
+	4200 7350 5400 7350
+Wire Wire Line
+	4200 7150 4950 7150
+Wire Wire Line
+	6100 7750 7050 7750
+Wire Wire Line
+	4450 6350 4950 6350
+Wire Wire Line
+	4450 6550 5400 6550
+$Comp
+L Connector_Generic:Conn_01x01 J?
+U 1 1 60319B93
+P 3600 9850
+AR Path="/5F98EBE9/60319B93" Ref="J?"  Part="1" 
+AR Path="/6196BF15/60319B93" Ref="J29"  Part="1" 
+F 0 "J29" V 3700 9800 50  0000 L CNN
+F 1 "J29" V 3700 9650 50  0001 L CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical" H 3600 9850 50  0001 C CNN
+F 3 "~" H 3600 9850 50  0001 C CNN
+	1    3600 9850
+	0    1    1    0   
+$EndComp
+Text Notes 2900 10000 0    47   ~ 0
+Diagnostics Pin:\nEasy hookup to \nAIRS-/GLV RTN
 $EndSCHEMATC

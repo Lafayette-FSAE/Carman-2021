@@ -452,10 +452,10 @@ Connection ~ 14250 5500
 Wire Wire Line
 	14250 5500 14200 5500
 $Comp
-L Connector_Generic:Conn_01x01 J23
+L Connector_Generic:Conn_01x01 J28
 U 1 1 5FA1321C
 P 14250 4800
-F 0 "J23" V 14350 4750 50  0000 L CNN
+F 0 "J28" V 14350 4750 50  0000 L CNN
 F 1 "Conn_01x01" V 14213 4880 50  0001 L CNN
 F 2 "Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical" H 14250 4800 50  0001 C CNN
 F 3 "~" H 14250 4800 50  0001 C CNN
@@ -480,11 +480,11 @@ F 3 "~" H 14250 6500 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x01 J22
+L Connector_Generic:Conn_01x01 J27
 U 1 1 5FA19A24
 P 12800 6500
-F 0 "J22" V 12900 6450 50  0000 L CNN
-F 1 "J22" V 12900 6300 50  0001 L CNN
+F 0 "J27" V 12900 6450 50  0000 L CNN
+F 1 "J27" V 12900 6300 50  0001 L CNN
 F 2 "Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical" H 12800 6500 50  0001 C CNN
 F 3 "~" H 12800 6500 50  0001 C CNN
 	1    12800 6500
