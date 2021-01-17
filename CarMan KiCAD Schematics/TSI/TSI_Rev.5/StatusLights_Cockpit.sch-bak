@@ -344,10 +344,10 @@ TSAL_RTN
 Text Notes 7200 1200 0    50   ~ 0
 0.2A Id *CHECK THIS FET, specifications\n are likely not correct.\n Placeholder transistor*
 $Comp
-L Connector:TestPoint HVPL_LV1
+L Connector:TestPoint TP12
 U 1 1 5FA80FFC
 P 4200 6200
-F 0 "HVPL_LV1" H 4258 6318 50  0000 L CNN
+F 0 "TP12" H 4258 6318 50  0000 L CNN
 F 1 "TSAL_LV" H 4258 6227 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Pad_D3.0mm" H 4400 6200 50  0001 C CNN
 F 3 "~" H 4400 6200 50  0001 C CNN
@@ -355,10 +355,10 @@ F 3 "~" H 4400 6200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:TestPoint TSAL_RTN1
+L Connector:TestPoint TP14
 U 1 1 5FA8198D
 P 4200 7250
-F 0 "TSAL_RTN1" H 4142 7276 50  0000 R CNN
+F 0 "TP14" H 4142 7276 50  0000 R CNN
 F 1 "TSAL_RTN" H 4142 7367 50  0000 R CNN
 F 2 "TestPoint:TestPoint_Pad_D3.0mm" H 4400 7250 50  0001 C CNN
 F 3 "~" H 4400 7250 50  0001 C CNN

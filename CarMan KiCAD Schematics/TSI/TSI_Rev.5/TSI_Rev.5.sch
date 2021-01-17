@@ -504,7 +504,7 @@ Text Label 2000 1750 0    50   ~ 0
 AMS_FAULT_LED
 Text Label 4700 2800 0    50   ~ 0
 SCL
-Text Label 1550 2800 0    50   ~ 0
+Text Label 1550 2700 0    50   ~ 0
 SL1_In
 Text Label 4700 2700 0    50   ~ 0
 SDA
@@ -785,24 +785,13 @@ Wire Wire Line
 Wire Wire Line
 	1550 2900 2050 2900
 Wire Wire Line
-	1550 2800 2050 2800
+	1550 2700 2050 2700
 Text Label 1550 3000 0    50   ~ 0
 Throttle_SEL
 Text Label 1550 2900 0    50   ~ 0
 IMD_Status
 Text Notes 1600 3300 0    50   ~ 0
 Left Side\nTesting Connector\n\n
-$Comp
-L Connector_Generic:Conn_01x04 J19
-U 1 1 5FE0EFE1
-P 2250 2800
-F 0 "J19" H 2200 3000 50  0000 L CNN
-F 1 "J19" H 2200 3100 50  0001 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 2250 2800 50  0001 C CNN
-F 3 "~" H 2250 2800 50  0001 C CNN
-	1    2250 2800
-	1    0    0    -1  
-$EndComp
 Text Label 11100 3000 2    50   ~ 0
 24V
 Text Label 11100 3200 2    50   ~ 0
@@ -1559,5 +1548,19 @@ Wire Wire Line
 	2500 2900 3100 2900
 Wire Wire Line
 	3100 3000 2500 3000
-NoConn ~ 2050 2700
+$Comp
+L Connector_Generic:Conn_01x04 J19
+U 1 1 5FE0EFE1
+P 2250 2800
+F 0 "J19" H 2200 3000 50  0000 L CNN
+F 1 "J19" H 2200 3100 50  0001 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 2250 2800 50  0001 C CNN
+F 3 "~" H 2250 2800 50  0001 C CNN
+	1    2250 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 2800 2050 2800
+Text Label 1550 2800 0    50   ~ 0
+TSAL
 $EndSCHEMATC
