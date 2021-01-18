@@ -234,7 +234,7 @@ Chassis_GND
 Text Notes 7750 4000 2    89   ~ 0
 3.3V REGULATOR
 Text Notes 12450 10350 0    197  ~ 0
-CAN and GLV Power
+Cooling and Relays\n
 Text Label 10250 3600 0    50   ~ 0
 SR_CTRL
 Text Label 13200 3800 2    50   ~ 0
