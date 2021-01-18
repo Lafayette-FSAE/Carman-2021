@@ -1427,7 +1427,7 @@ AR Path="/5FA558BE" Ref="J2"  Part="1"
 F 0 "J2" H 950 1300 50  0000 C CNN
 F 1 "Current_Sensor" H 950 500 50  0000 C CNN
 F 2 "TSI_Rev_2021_Footprint_Lib:Current Sensor" H 950 1300 50  0001 C CNN
-F 3 "" H 950 1300 50  0001 C CNN
+F 3 "http://www.digikey.com/product-search/en?keywords=WM3789CT-ND" H 950 1300 50  0001 C CNN
 	1    950  1300
 	1    0    0    -1  
 $EndComp
