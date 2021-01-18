@@ -1,4 +1,4 @@
-18678315924203732
+18683148941397203
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -77048,6 +77048,27 @@ SOT230P700X180-4N-speical
 0
 4
 4
+TSI_Rev_2021_Footprint_Lib
+logo_lafayette_ece_large_32mmx11mm
+
+
+0
+0
+0
+TSI_Rev_2021_Footprint_Lib
+logo_lafayette_ece_medium_24mmx9mm
+
+
+0
+0
+0
+TSI_Rev_2021_Footprint_Lib
+logo_lafayette_ece_small_20mmx7mm
+
+
+0
+0
+0
 TSI_Rev_2021_Footprint_Lib
 trim_pot
 
