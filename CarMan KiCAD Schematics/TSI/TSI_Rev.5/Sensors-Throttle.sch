@@ -742,7 +742,6 @@ Text Label 8200 5700 0    50   ~ 0
 A2_HV
 Text Label 8200 5550 0    50   ~ 0
 A1_HV
-NoConn ~ 6850 5250
 Wire Wire Line
 	6750 6000 6850 6000
 Text Label 6750 6000 2    50   ~ 0
@@ -1401,4 +1400,8 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 11550 4900 50
 	4    11500 4700
 	-1   0    0    -1  
 $EndComp
+Text Label 6550 5250 0    50   ~ 0
+5HV
+Wire Wire Line
+	6550 5250 6850 5250
 $EndSCHEMATC

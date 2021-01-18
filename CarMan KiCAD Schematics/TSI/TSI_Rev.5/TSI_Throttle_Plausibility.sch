@@ -294,7 +294,7 @@ F 3 "~" H 2150 7250 50  0001 C CNN
 $EndComp
 Connection ~ 2150 6850
 Text Notes 1000 8150 0    50   ~ 0
-*Need 1% tolerance for R27 & R28*\n
+*Need 1% tolerance for R17 & R18*\n
 Text Label 2350 6850 0    50   ~ 0
 5V_REF
 Wire Wire Line
