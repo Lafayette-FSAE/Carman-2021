@@ -1099,7 +1099,7 @@ P 4050 2550
 F 0 "C13" H 4100 2650 50  0000 L CNN
 F 1 "100uF" H 4100 2450 50  0000 L CNN
 F 2 "Capacitor_SMD:CP_Elec_10x10" H 4050 2550 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/315/RDE0000C1275-1842997.pdf" H 4050 2550 50  0001 C CNN
+F 3 "https://www.mouser.com/ProductDetail/Panasonic/EEE-FK1H101L?qs=vmHwEFxEFR%252BDShhHMCZ0bA%3D%3D" H 4050 2550 50  0001 C CNN
 	1    4050 2550
 	1    0    0    -1  
 $EndComp
