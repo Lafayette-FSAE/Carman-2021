@@ -520,30 +520,22 @@ SR_CTRL
 Text HLabel 15200 1500 2    50   Output ~ 0
 SR_CTRL
 Text Label 14450 2400 0    50   ~ 0
-CAN_L
-Text Label 14450 2300 0    50   ~ 0
-CAN_H
+SL1_In
 Text HLabel 15200 2400 2    50   Output ~ 0
-CAN_L
-Text HLabel 15200 2300 2    50   Output ~ 0
-CAN_H
-Text Label 14450 2600 0    50   ~ 0
 SL1_In
-Text HLabel 15200 2600 2    50   Output ~ 0
-SL1_In
-Text Label 14450 2500 0    50   ~ 0
+Text Label 14450 2300 0    50   ~ 0
 SL1_Out
-Text HLabel 15200 2500 2    50   Output ~ 0
+Text HLabel 15200 2300 2    50   Output ~ 0
 SL1_Out
 Text Label 14450 2200 0    50   ~ 0
 Cooling_power
 Text HLabel 15200 2200 2    50   Output ~ 0
 Cooling_power
-Text Label 14450 3100 0    50   ~ 0
+Text Label 14450 2900 0    50   ~ 0
 IMD_Status
 Text Label 14450 2100 0    50   ~ 0
 Safety_Loop
-Text HLabel 15200 3100 2    50   Output ~ 0
+Text HLabel 15200 2900 2    50   Output ~ 0
 IMD_Status
 Text HLabel 15200 2100 2    50   Output ~ 0
 Safety_Loop
@@ -762,37 +754,33 @@ Wire Wire Line
 	4100 8950 4900 8950
 Text Notes 4650 8850 0    68   ~ 0
 Dashboard\n
-Text HLabel 15200 3000 2    50   Output ~ 0
-AMS_Status
-Text Label 14450 3000 0    50   ~ 0
-AMS_Status
-Text Label 14450 2700 0    50   ~ 0
-IMD_Button_RTN
-Text HLabel 15200 2700 2    50   Output ~ 0
-IMD_Button_RTN
-Text Label 14450 2800 0    50   ~ 0
-COOL_24V
 Text HLabel 15200 2800 2    50   Output ~ 0
+AMS_Status
+Text Label 14450 2800 0    50   ~ 0
+AMS_Status
+Text Label 14450 2500 0    50   ~ 0
+IMD_Button_RTN
+Text HLabel 15200 2500 2    50   Output ~ 0
+IMD_Button_RTN
+Text Label 14450 2600 0    50   ~ 0
+COOL_24V
+Text HLabel 15200 2600 2    50   Output ~ 0
 COOL_24V
 Wire Wire Line
 	14450 1600 15200 1600
 Wire Wire Line
-	14450 2600 15200 2600
-Wire Wire Line
-	14450 3000 15200 3000
+	14450 2400 15200 2400
 Wire Wire Line
 	14450 2800 15200 2800
 Wire Wire Line
-	14450 2700 15200 2700
+	14450 2600 15200 2600
+Wire Wire Line
+	14450 2500 15200 2500
 Wire Wire Line
 	14450 2200 15200 2200
 Wire Wire Line
 	14450 2300 15200 2300
-Wire Wire Line
-	14450 2400 15200 2400
-Wire Wire Line
-	14450 2500 15200 2500
-Text Label 15700 3300 2    50   ~ 0
+Text Label 15700 3100 2    50   ~ 0
 12V
 Text Label 9600 8200 2    50   ~ 0
 GLV_RTN
@@ -922,11 +910,11 @@ Wire Wire Line
 	7300 9200 6700 9200
 Text Label 6700 9200 0    50   ~ 0
 24V
-Text HLabel 15200 2900 2    50   Output ~ 0
+Text HLabel 15200 2700 2    50   Output ~ 0
 24V_BP_Out
 Wire Wire Line
-	14450 2900 15200 2900
-Text Label 14450 2900 0    50   ~ 0
+	14450 2700 15200 2700
+Text Label 14450 2700 0    50   ~ 0
 24V_BP_Out
 Text Label 10350 9700 2    50   ~ 0
 24V_BP_Out
@@ -939,14 +927,9 @@ Wire Wire Line
 	7050 2250 6650 2250
 Wire Wire Line
 	4500 2450 5050 2450
-Wire Wire Line
-	4050 2250 5050 2250
-Connection ~ 4950 2650
-Wire Wire Line
-	4050 2650 4950 2650
 Text Notes 3700 2050 0    49   ~ 0
 DC/DC Converter 24V to 12V 10A
-Text Label 3250 2650 0    49   ~ 0
+Text Label 3250 2850 0    49   ~ 0
 GLV_RTN
 Text Label 3250 2250 0    49   ~ 0
 COOL_24V
@@ -958,7 +941,7 @@ Wire Wire Line
 Wire Wire Line
 	4950 2650 5050 2650
 Wire Wire Line
-	4950 3150 4950 2650
+	4950 3150 4950 2850
 Wire Wire Line
 	6250 3150 4950 3150
 Wire Wire Line
@@ -966,14 +949,6 @@ Wire Wire Line
 NoConn ~ 6250 2450
 NoConn ~ 5050 2950
 NoConn ~ 5050 2850
-Wire Wire Line
-	3250 2650 4050 2650
-Wire Wire Line
-	3250 2250 4050 2250
-Connection ~ 4050 2650
-Wire Wire Line
-	4050 2550 4050 2650
-Connection ~ 4050 2250
 $Comp
 L Device:C C18
 U 1 1 5FB588C1
@@ -983,17 +958,6 @@ F 1 "10u" H 6765 2355 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6688 2250 50  0001 C CNN
 F 3 "~" H 6650 2400 50  0001 C CNN
 	1    6650 2400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C13
-U 1 1 5FB58791
-P 4050 2400
-F 0 "C13" H 4165 2446 50  0000 L CNN
-F 1 "100u" H 4165 2355 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4088 2250 50  0001 C CNN
-F 3 "~" H 4050 2400 50  0001 C CNN
-	1    4050 2400
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1019,9 +983,7 @@ Wire Notes Line
 	7450 3250 7450 650 
 Wire Notes Line
 	7450 650  2950 650 
-Wire Notes Line
-	2950 650  2950 3250
-Text Notes 3650 3000 0    55   ~ 0
+Text Notes 3650 3050 0    55   ~ 0
 Control Signal used as a \npsuedo relay
 Wire Wire Line
 	1400 700  1850 700 
@@ -1082,13 +1044,17 @@ Wire Wire Line
 Wire Wire Line
 	14450 2100 15200 2100
 Wire Wire Line
-	14450 3100 15200 3100
+	14450 2900 15200 2900
 Wire Notes Line
-	16000 3950 14150 3950
+	16000 3700 14150 3700
 Wire Notes Line
 	16000 3950 16000 550 
 Wire Notes Line
 	14150 550  14150 3950
+Wire Wire Line
+	14950 3100 15700 3100
+Wire Wire Line
+	14950 3200 15700 3200
 Wire Wire Line
 	14950 3300 15700 3300
 Wire Wire Line
@@ -1097,30 +1063,56 @@ Wire Wire Line
 	14950 3500 15700 3500
 Wire Wire Line
 	14950 3600 15700 3600
-Wire Wire Line
-	14950 3700 15700 3700
-Wire Wire Line
-	14950 3800 15700 3800
-Text Label 15700 3600 2    50   ~ 0
-AMS_FAULT_LED
-Text HLabel 14950 3600 0    50   Input ~ 0
-AMS_FAULT_LED
-Text Label 15700 3800 2    50   ~ 0
-AMS_Button_RTN
-Text HLabel 14950 3800 0    50   Input ~ 0
-AMS_Button_RTN
-Text Label 15700 3700 2    50   ~ 0
-IMD_Button_RTN
-Text HLabel 14950 3700 0    50   Input ~ 0
-IMD_Button_RTN
 Text Label 15700 3400 2    50   ~ 0
-Cooling_CTRL
+AMS_FAULT_LED
 Text HLabel 14950 3400 0    50   Input ~ 0
-Cooling_CTRL
-Text HLabel 14950 3300 0    50   Input ~ 0
-12V
+AMS_FAULT_LED
+Text Label 15700 3600 2    50   ~ 0
+AMS_Button_RTN
+Text HLabel 14950 3600 0    50   Input ~ 0
+AMS_Button_RTN
 Text Label 15700 3500 2    50   ~ 0
-IMD_FAULT_LED
+IMD_Button_RTN
 Text HLabel 14950 3500 0    50   Input ~ 0
+IMD_Button_RTN
+Text Label 15700 3200 2    50   ~ 0
+Cooling_CTRL
+Text HLabel 14950 3200 0    50   Input ~ 0
+Cooling_CTRL
+Text HLabel 14950 3100 0    50   Input ~ 0
+12V
+Text Label 15700 3300 2    50   ~ 0
 IMD_FAULT_LED
+Text HLabel 14950 3300 0    50   Input ~ 0
+IMD_FAULT_LED
+Wire Wire Line
+	3250 2250 4050 2250
+Wire Wire Line
+	3250 2850 4050 2850
+Connection ~ 4950 2850
+Wire Wire Line
+	4950 2650 4950 2850
+$Comp
+L pspice:CAP C13
+U 1 1 60B2B21B
+P 4050 2550
+F 0 "C13" H 4100 2650 50  0000 L CNN
+F 1 "100uF" H 4100 2450 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_10x10" H 4050 2550 50  0001 C CNN
+F 3 "https://www.mouser.com/ProductDetail/Panasonic/EEE-FK1H101L?qs=vmHwEFxEFR%252BDShhHMCZ0bA%3D%3D" H 4050 2550 50  0001 C CNN
+	1    4050 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 2300 4050 2250
+Connection ~ 4050 2250
+Wire Wire Line
+	4050 2250 5050 2250
+Wire Wire Line
+	4050 2800 4050 2850
+Connection ~ 4050 2850
+Wire Wire Line
+	4050 2850 4950 2850
+Wire Notes Line
+	2950 650  2950 3250
 $EndSCHEMATC
