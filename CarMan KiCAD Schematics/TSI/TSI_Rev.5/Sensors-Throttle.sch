@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 4 6
+Sheet 3 6
 Title ""
 Date ""
 Rev ""
@@ -1279,11 +1279,7 @@ A2_HV
 Wire Notes Line
 	5050 9850 6650 9850
 Wire Notes Line
-	5050 8350 5050 9800
-Wire Notes Line
 	5050 8350 6650 8350
-Wire Notes Line
-	6650 8350 6650 9800
 $Comp
 L Amplifier_Operational:MCP6004 U26
 U 5 1 5F994131
@@ -1404,4 +1400,8 @@ Text Label 6550 5250 0    50   ~ 0
 5HV
 Wire Wire Line
 	6550 5250 6850 5250
+Wire Notes Line
+	6650 8350 6650 9850
+Wire Notes Line
+	5050 8350 5050 9850
 $EndSCHEMATC

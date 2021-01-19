@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 3 6
+Sheet 6 6
 Title ""
 Date ""
 Rev ""
@@ -27,8 +27,6 @@ Text HLabel 1600 1350 0    50   Input ~ 0
 SDA
 Text HLabel 1600 1450 0    50   Input ~ 0
 SCL
-Text HLabel 1600 1550 0    50   Input ~ 0
-PC_Ready
 Text Notes 1450 650  0    79   ~ 0
 SIGNALS\n
 Wire Wire Line
@@ -59,10 +57,6 @@ Text Label 1800 850  0    50   ~ 0
 24V
 Text Label 1800 1050 0    50   ~ 0
 5V
-Wire Wire Line
-	1800 1550 1600 1550
-Text Label 1800 1550 0    50   ~ 0
-PC_Ready
 Wire Wire Line
 	2250 4250 2250 4550
 $Comp
@@ -969,37 +963,37 @@ Wire Wire Line
 	4100 2050 4250 2050
 Wire Wire Line
 	4100 2250 4250 2250
-Text Label 1800 1750 0    50   ~ 0
+Text Label 1800 1650 0    50   ~ 0
 APPS1_RTN
-Text Label 1800 1850 0    50   ~ 0
+Text Label 1800 1750 0    50   ~ 0
 APPS1
-Text Label 1800 1950 0    50   ~ 0
+Text Label 1800 1850 0    50   ~ 0
 APPS1_10V
-Text Label 1600 2950 2    50   ~ 0
+Text Label 1600 2750 2    50   ~ 0
 Brake_Pressed_RTN
-Text Label 1600 2850 2    50   ~ 0
+Text Label 1600 2650 2    50   ~ 0
 Brake_Pressed
+Wire Wire Line
+	1600 2750 1800 2750
+Wire Wire Line
+	1600 2650 1800 2650
+Text Label 1600 2950 2    50   ~ 0
+Throttle_LV
+Text Label 1600 2850 2    50   ~ 0
+Throttle_PL
 Wire Wire Line
 	1600 2950 1800 2950
 Wire Wire Line
 	1600 2850 1800 2850
-Text Label 1600 3150 2    50   ~ 0
-Throttle_LV
-Text Label 1600 3050 2    50   ~ 0
-Throttle_PL
-Wire Wire Line
-	1600 3150 1800 3150
-Wire Wire Line
-	1600 3050 1800 3050
-Text Label 1800 2150 0    50   ~ 0
+Text Label 1800 2050 0    50   ~ 0
 APPS2
-Text HLabel 1800 3050 2    50   Output ~ 0
-Throttle_PL
-Text HLabel 1800 3150 2    50   Output ~ 0
-Throttle_LV
-Text HLabel 1800 2950 2    50   Output ~ 0
-Brake_Pressed_RTN
 Text HLabel 1800 2850 2    50   Output ~ 0
+Throttle_PL
+Text HLabel 1800 2950 2    50   Output ~ 0
+Throttle_LV
+Text HLabel 1800 2750 2    50   Output ~ 0
+Brake_Pressed_RTN
+Text HLabel 1800 2650 2    50   Output ~ 0
 Brake_Pressed
 Wire Wire Line
 	1800 9500 1950 9500
@@ -1328,48 +1322,46 @@ Wire Wire Line
 	8900 10450 9100 10450
 Text Label 13050 8750 2    50   ~ 0
 24V
-Text HLabel 1600 1650 0    50   Input ~ 0
+Text HLabel 1600 1550 0    50   Input ~ 0
 BRAKE_SWITCH(24V)
-Text HLabel 1600 1850 0    50   Input ~ 0
-APPS1
 Text HLabel 1600 1750 0    50   Input ~ 0
+APPS1
+Text HLabel 1600 1650 0    50   Input ~ 0
 APPS1_RTN
-Text HLabel 1600 1950 0    50   Input ~ 0
+Text HLabel 1600 1850 0    50   Input ~ 0
 APPS1_10V
-Text HLabel 1600 2050 0    50   Input ~ 0
+Text HLabel 1600 1950 0    50   Input ~ 0
 APPS2_RTN
-Text HLabel 1600 2150 0    50   Input ~ 0
+Text HLabel 1600 2050 0    50   Input ~ 0
 APPS2
-Text HLabel 1600 2250 0    50   Input ~ 0
+Text HLabel 1600 2150 0    50   Input ~ 0
 APPS2_5V
-Wire Wire Line
-	1800 1850 1600 1850
-Wire Wire Line
-	1800 1650 1600 1650
-Wire Wire Line
-	1800 2050 1600 2050
-Wire Wire Line
-	1800 1950 1600 1950
-Wire Wire Line
-	1600 2150 1800 2150
 Wire Wire Line
 	1800 1750 1600 1750
 Wire Wire Line
-	1800 2250 1600 2250
+	1800 1550 1600 1550
+Wire Wire Line
+	1800 1950 1600 1950
+Wire Wire Line
+	1800 1850 1600 1850
+Wire Wire Line
+	1600 2050 1800 2050
+Wire Wire Line
+	1800 1650 1600 1650
+Wire Wire Line
+	1800 2150 1600 2150
 Wire Notes Line
 	2950 3500 550  3500
 Text Notes 1200 3800 0    79   ~ 0
 APPS1 STEPDOWN\n\n
 Wire Notes Line
 	2950 3500 2950 5950
-Text Label 1800 2050 0    50   ~ 0
+Text Label 1800 1950 0    50   ~ 0
 APPS2_RTN
-Text Label 1800 2250 0    50   ~ 0
+Text Label 1800 2150 0    50   ~ 0
 APPS2_5V
 Wire Notes Line
 	500  500  2750 500 
-Wire Notes Line
-	500  3300 2750 3300
 Text Notes 12650 10350 0    157  ~ 0
 THROTTLE PLAUSIBILITY
 $Comp
@@ -1406,11 +1398,11 @@ Text Notes 14600 2600 0    63   ~ 0
 AUTO TURN\nOFF SWITCH
 Wire Wire Line
 	13300 3350 14150 3350
-Text HLabel 1600 2350 0    50   Input ~ 0
+Text HLabel 1600 2250 0    50   Input ~ 0
 IMD_Status
 Wire Wire Line
-	1600 2350 1800 2350
-Text Label 1800 2350 0    50   ~ 0
+	1600 2250 1800 2250
+Text Label 1800 2250 0    50   ~ 0
 IMD_Status
 Wire Wire Line
 	8650 6000 8450 6000
@@ -1424,11 +1416,11 @@ Text Label 10350 6100 0    50   ~ 0
 APPS
 Wire Wire Line
 	10350 6100 10250 6100
-Text HLabel 1600 2450 0    50   Input ~ 0
+Text HLabel 1600 2350 0    50   Input ~ 0
 CoolTemp
 Wire Wire Line
-	1600 2450 1800 2450
-Text Label 1800 2450 0    50   ~ 0
+	1600 2350 1800 2350
+Text Label 1800 2350 0    50   ~ 0
 CoolTemp
 Text Label 10350 6200 0    50   ~ 0
 CoolTemp
@@ -1438,17 +1430,17 @@ Text Label 10350 6300 0    50   ~ 0
 D_LED_CTRL
 Wire Wire Line
 	10250 6300 10350 6300
-Text HLabel 1800 3250 2    50   Output ~ 0
+Text HLabel 1800 3050 2    50   Output ~ 0
 D_LED_CTRL
-Text Label 1600 3250 2    50   ~ 0
+Text Label 1600 3050 2    50   ~ 0
 D_LED_CTRL
 Wire Wire Line
-	1600 3250 1800 3250
-Text HLabel 1600 2550 0    50   Input ~ 0
+	1600 3050 1800 3050
+Text HLabel 1600 2450 0    50   Input ~ 0
 Flowrate
 Wire Wire Line
-	1600 2550 1800 2550
-Text Label 1800 2550 0    50   ~ 0
+	1600 2450 1800 2450
+Text Label 1800 2450 0    50   ~ 0
 Flowrate
 Text Label 10350 6400 0    50   ~ 0
 Flowrate
@@ -1456,18 +1448,8 @@ Wire Wire Line
 	10250 6400 10350 6400
 Wire Wire Line
 	10250 7000 10250 7100
-Text HLabel 1600 2650 0    50   Input ~ 0
-Drive_BTN
-Wire Wire Line
-	1600 2650 1800 2650
-Text Label 1800 2650 0    50   ~ 0
-Drive_BTN
 Wire Notes Line
 	16000 8250 16000 9900
-Wire Notes Line
-	2750 500  2750 3300
-Wire Notes Line
-	500  500  500  3300
 $Comp
 L Amplifier_Operational:MCP6004 U7
 U 4 1 5FCAA11B
@@ -1880,7 +1862,7 @@ Wire Notes Line
 	12750 9900 16000 9900
 Wire Notes Line
 	12750 8250 16000 8250
-Text Label 1800 1650 0    50   ~ 0
+Text Label 1800 1550 0    50   ~ 0
 Brake_24V
 Text Label 13050 8600 0    50   ~ 0
 Brake_24V
@@ -1967,4 +1949,10 @@ F 3 "~" H 5450 10550 50  0001 C CNN
 	1    5450 10550
 	1    0    0    -1  
 $EndComp
+Wire Notes Line
+	500  500  500  3150
+Wire Notes Line
+	500  3150 2750 3150
+Wire Notes Line
+	2750 3150 2750 500 
 $EndSCHEMATC

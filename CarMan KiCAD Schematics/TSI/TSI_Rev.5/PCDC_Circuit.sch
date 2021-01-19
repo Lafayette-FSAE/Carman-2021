@@ -301,40 +301,22 @@ F 3 "~" H 7350 4150 50  0001 C CNN
 	1    7150 4150
 	1    0    0    -1  
 $EndComp
-Text Label 1500 1050 0    50   ~ 0
+Text Label 1550 800  0    50   ~ 0
 MC_Voltage
-Text Label 1500 850  0    50   ~ 0
-HV+
 Wire Wire Line
-	1300 850  1500 850 
-Wire Wire Line
-	1500 1050 1300 1050
-Text Label 1500 1350 0    50   ~ 0
-Throttle_HV
-Text Label 1500 1250 0    50   ~ 0
+	1550 800  1350 800 
+Text Label 1550 1000 0    50   ~ 0
 IO_Ground
 Wire Wire Line
-	1500 1250 1300 1250
-Wire Wire Line
-	1500 1350 1300 1350
-Text Label 1500 950  0    50   ~ 0
-HV-
-Wire Wire Line
-	1500 950  1300 950 
-Text Label 1500 1150 0    50   ~ 0
+	1550 1000 1350 1000
+Text Label 1550 900  0    50   ~ 0
 TSV_Voltage
 Wire Wire Line
-	1500 1150 1300 1150
+	1550 900  1350 900 
 Text Notes 1100 650  0    79   ~ 0
 HV SIGNALS\n
-Text HLabel 1300 1350 0    50   Input ~ 0
-Throttle_HV
-Text HLabel 1300 1050 0    50   Input ~ 0
+Text HLabel 1350 800  0    50   Input ~ 0
 MC_Voltage
-Text HLabel 1300 950  0    50   Input ~ 0
-HV-
-Text HLabel 1300 850  0    50   Input ~ 0
-HV+
 $Comp
 L Device:R R56
 U 1 1 61AD7DCD
@@ -1124,21 +1106,21 @@ Text Notes 13550 950  0    47   ~ 0
 SR Latch Logic\n
 Text Notes 4600 2250 0    47   ~ 0
 95% of Voltage
-Text HLabel 1300 1150 0    50   Input ~ 0
+Text HLabel 1350 900  0    50   Input ~ 0
 TSV_Voltage
-Text HLabel 1300 1250 0    50   Input ~ 0
+Text HLabel 1350 1000 0    50   Input ~ 0
 IO_Ground
-Text Label 1500 1550 0    50   ~ 0
+Text Label 1550 1200 0    50   ~ 0
 1.24V_REF
-Text Label 1500 1450 0    50   ~ 0
+Text Label 1550 1100 0    50   ~ 0
 5HV
 Wire Wire Line
-	1500 1450 1300 1450
+	1550 1100 1350 1100
 Wire Wire Line
-	1500 1550 1300 1550
-Text HLabel 1300 1550 0    50   Input ~ 0
-1.24VREF
-Text HLabel 1300 1450 0    50   Input ~ 0
+	1550 1200 1350 1200
+Text HLabel 1350 1200 0    50   Input ~ 0
+1.24V_REF
+Text HLabel 1350 1100 0    50   Input ~ 0
 5HV
 Text Label 1450 6850 0    50   ~ 0
 GLV_RTN
@@ -1236,53 +1218,41 @@ Wire Wire Line
 	5400 8300 5250 8300
 Wire Notes Line
 	5700 5700 5700 11200
-Text Label 1500 1750 0    50   ~ 0
+Text Label 1550 1400 0    50   ~ 0
 DC_RELAY-
-Text Label 1500 1650 0    50   ~ 0
+Text Label 1550 1300 0    50   ~ 0
 DC_RELAY+
 Wire Wire Line
-	1500 1650 1300 1650
+	1550 1300 1350 1300
 Wire Wire Line
-	1500 1750 1300 1750
-Text HLabel 1300 1750 0    50   Input ~ 0
+	1550 1400 1350 1400
+Text HLabel 1350 1400 0    50   Input ~ 0
 DC_RELAY-
-Text HLabel 1300 1650 0    50   Input ~ 0
+Text HLabel 1350 1300 0    50   Input ~ 0
 DC_RELAY+
-Text Label 1500 1950 0    50   ~ 0
+Text Label 1550 1600 0    50   ~ 0
 PC_RELAY-
-Text Label 1500 1850 0    50   ~ 0
+Text Label 1550 1500 0    50   ~ 0
 PC_RELAY+
 Wire Wire Line
-	1500 1850 1300 1850
+	1550 1500 1350 1500
 Wire Wire Line
-	1500 1950 1300 1950
-Text HLabel 1300 1950 0    50   Input ~ 0
+	1550 1600 1350 1600
+Text HLabel 1350 1600 0    50   Input ~ 0
 PC_RELAY-
-Text HLabel 1300 1850 0    50   Input ~ 0
+Text HLabel 1350 1500 0    50   Input ~ 0
 PC_RELAY+
-Text Label 1500 2150 0    50   ~ 0
+Text Label 1550 1700 0    50   ~ 0
 IGNI_VCC
-Text Label 1500 2050 0    50   ~ 0
-IGNI_GND
 Wire Wire Line
-	1500 2050 1300 2050
-Wire Wire Line
-	1500 2150 1300 2150
-Text HLabel 1300 2150 0    50   Input ~ 0
+	1550 1700 1350 1700
+Text HLabel 1350 1700 0    50   Input ~ 0
 IGNI_VCC
-Text HLabel 1300 2050 0    50   Input ~ 0
-IGNI_GND
-Text Label 1500 2350 0    50   ~ 0
-Throttle_HV
-Text Label 1500 2250 0    50   ~ 0
+Text Label 1550 1800 0    50   ~ 0
 Brake_Pressed_HV
 Wire Wire Line
-	1500 2250 1300 2250
-Wire Wire Line
-	1500 2350 1300 2350
-Text HLabel 1300 2350 0    50   Input ~ 0
-Throttle_HV
-Text HLabel 1300 2250 0    50   Input ~ 0
+	1550 1800 1350 1800
+Text HLabel 1350 1800 0    50   Input ~ 0
 Brake_Pressed_HV
 Wire Wire Line
 	8150 6650 8150 6750
@@ -1290,12 +1260,6 @@ Wire Wire Line
 	11400 2050 11400 2200
 Text Notes 2250 5650 0    197  ~ 0
 HIGH VOLTAGE\n
-Wire Notes Line
-	500  500  500  2450
-Wire Notes Line
-	500  2450 2350 2450
-Wire Notes Line
-	2350 500  2350 2450
 Wire Notes Line
 	500  500  2350 500 
 $Comp
@@ -1740,4 +1704,10 @@ F 3 "~" H 3600 9850 50  0001 C CNN
 $EndComp
 Text Notes 2900 10000 0    47   ~ 0
 Diagnostics Pin:\nEasy hookup to \nAIRS-/GLV RTN
+Wire Notes Line
+	500  1900 2350 1900
+Wire Notes Line
+	2350 1900 2350 500 
+Wire Notes Line
+	500  500  500  1900
 $EndSCHEMATC
