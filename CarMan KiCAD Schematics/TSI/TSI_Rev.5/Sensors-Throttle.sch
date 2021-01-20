@@ -1144,37 +1144,37 @@ Text Label 7900 2050 0    47   ~ 0
 IO_Ground
 Text Notes 1500 8550 0    79   ~ 0
 LOW VOLTAGE SIGNALS\n
-Text Label 2300 8900 0    50   ~ 0
+Text Label 2300 8850 0    50   ~ 0
 GLV_RTN
 Wire Wire Line
-	2300 8900 2100 8900
-Text Label 2300 9200 0    50   ~ 0
+	2300 8850 2100 8850
+Text Label 2300 9150 0    50   ~ 0
 Throttle_LV
 Wire Wire Line
-	2300 9200 2100 9200
-Text Label 2300 8800 0    50   ~ 0
+	2300 9150 2100 9150
+Text Label 2300 8750 0    50   ~ 0
 5V
 Wire Wire Line
-	2300 8800 2100 8800
-Text HLabel 2100 8900 0    50   Input ~ 0
+	2300 8750 2100 8750
+Text HLabel 2100 8850 0    50   Input ~ 0
 GLV_RTN
-Text HLabel 2100 8800 0    50   Input ~ 0
+Text HLabel 2100 8750 0    50   Input ~ 0
 5V
-Text Label 2300 9100 0    50   ~ 0
+Text Label 2300 9050 0    50   ~ 0
 SDA
-Text Label 2300 9000 0    50   ~ 0
+Text Label 2300 8950 0    50   ~ 0
 SCL
 Wire Wire Line
-	2300 9000 2100 9000
+	2300 8950 2100 8950
 Wire Wire Line
-	2300 9100 2100 9100
-Text HLabel 2100 9100 0    50   Input ~ 0
+	2300 9050 2100 9050
+Text HLabel 2100 9050 0    50   Input ~ 0
 SDA
-Text HLabel 2100 9000 0    50   Input ~ 0
+Text HLabel 2100 8950 0    50   Input ~ 0
 SCL
-Text HLabel 2100 9200 0    50   Input ~ 0
+Text HLabel 2100 9150 0    50   Input ~ 0
 Throttle_LV
-Text HLabel 5950 9750 2    50   Output ~ 0
+Text HLabel 5750 9700 0    50   Output ~ 0
 1.24V_REF
 Text HLabel 5750 8800 0    50   Input ~ 0
 IO_Ground
@@ -1182,54 +1182,34 @@ Text HLabel 5750 8700 0    50   Input ~ 0
 5HV
 Text HLabel 5750 9400 0    50   Input ~ 0
 Throttle_HV
-Wire Wire Line
-	5950 8800 5750 8800
-Text Label 5950 8800 0    50   ~ 0
+Text Label 6400 8800 2    50   ~ 0
 IO_Ground
-Wire Wire Line
-	5950 9400 5750 9400
-Text Label 5950 9400 0    50   ~ 0
+Text Label 6400 9400 2    50   ~ 0
 Throttle_HV
-Wire Wire Line
-	5950 8700 5750 8700
-Wire Wire Line
-	5950 9750 5750 9750
-Text Label 5750 9750 2    50   ~ 0
+Text Label 6400 9700 2    50   ~ 0
 DiffAmp_REF
-Text Label 5950 8700 0    50   ~ 0
+Text Label 6400 8700 2    50   ~ 0
 5HV
 Wire Notes Line
-	1400 9450 2950 9450
-Wire Notes Line
-	2950 9450 2950 8350
+	1400 9250 2950 9250
 Wire Notes Line
 	2950 8350 1400 8350
-Wire Notes Line
-	1400 8350 1400 9450
 Text Notes 5150 8550 0    79   ~ 0
 HIGH VOLTAGE SIGNALS\n
-Text Label 5950 9200 0    50   ~ 0
+Text Label 6400 9200 2    50   ~ 0
 HV+
-Wire Wire Line
-	5950 9200 5750 9200
-Text Label 5950 8900 0    50   ~ 0
+Text Label 6400 8900 2    50   ~ 0
 TSV_Voltage
-Text Label 5950 9100 0    50   ~ 0
+Text Label 6400 9100 2    50   ~ 0
 MC+
-Wire Wire Line
-	5950 9100 5750 9100
-Wire Wire Line
-	5950 8900 5750 8900
 Text HLabel 5750 8900 0    50   Input ~ 0
 TSV_Voltage
 Text HLabel 5750 9100 0    50   Input ~ 0
 MC+
 Text HLabel 5750 9200 0    50   Input ~ 0
 HV+
-Text Label 5950 9300 0    50   ~ 0
+Text Label 6400 9300 2    50   ~ 0
 HV-
-Wire Wire Line
-	5950 9300 5750 9300
 Text HLabel 5750 9300 0    50   Input ~ 0
 HV-
 Wire Notes Line
@@ -1264,14 +1244,10 @@ Text Notes 6950 6600 0    98   ~ 0
 Binary Address:\n1001010
 Text Notes 12100 10450 0    157  ~ 0
 V/I\n& THROTTLE VOLTAGE ISOLATOR
-Text Label 5950 9600 0    50   ~ 0
+Text Label 6400 9600 2    50   ~ 0
 A2_HV
-Text Label 5950 9500 0    50   ~ 0
+Text Label 6400 9500 2    50   ~ 0
 A1_HV
-Wire Wire Line
-	5950 9600 5750 9600
-Wire Wire Line
-	5950 9500 5750 9500
 Text HLabel 5750 9500 0    50   Input ~ 0
 A1_HV
 Text HLabel 5750 9600 0    50   Input ~ 0
@@ -1379,10 +1355,8 @@ Text Label 3300 1350 2    50   ~ 0
 5V
 Wire Wire Line
 	3300 1350 3200 1350
-Text Label 5950 9000 0    50   ~ 0
+Text Label 6400 9000 2    50   ~ 0
 MC_Voltage
-Wire Wire Line
-	5950 9000 5750 9000
 Text HLabel 5750 9000 0    50   Input ~ 0
 MC_Voltage
 $Comp
@@ -1404,4 +1378,30 @@ Wire Notes Line
 	6650 8350 6650 9850
 Wire Notes Line
 	5050 8350 5050 9850
+Wire Wire Line
+	5750 8900 6400 8900
+Wire Wire Line
+	5750 8700 6400 8700
+Wire Wire Line
+	5750 8800 6400 8800
+Wire Wire Line
+	5750 9200 6400 9200
+Wire Wire Line
+	5750 9000 6400 9000
+Wire Wire Line
+	5750 9100 6400 9100
+Wire Wire Line
+	5750 9500 6400 9500
+Wire Wire Line
+	5750 9300 6400 9300
+Wire Wire Line
+	5750 9400 6400 9400
+Wire Wire Line
+	5750 9600 6400 9600
+Wire Wire Line
+	5750 9700 6400 9700
+Wire Notes Line
+	2950 9250 2950 8350
+Wire Notes Line
+	1400 8350 1400 9250
 $EndSCHEMATC
