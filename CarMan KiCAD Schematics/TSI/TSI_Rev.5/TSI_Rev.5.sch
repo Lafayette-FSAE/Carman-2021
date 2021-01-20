@@ -690,13 +690,13 @@ Text Label 5700 3950 0    50   ~ 0
 SCL_uC
 Text Label 7250 3950 2    50   ~ 0
 SCL_TSI
-Text Label 6750 3950 0    50   ~ 0
+Text Label 6400 3950 0    50   ~ 0
 SCL
 Wire Wire Line
 	5700 4050 7250 4050
 Text Label 5700 4050 0    50   ~ 0
 SDA_uC
-Text Label 6750 4050 0    50   ~ 0
+Text Label 6400 4050 0    50   ~ 0
 SDA
 Text Label 7250 4050 2    50   ~ 0
 SDA_TSI

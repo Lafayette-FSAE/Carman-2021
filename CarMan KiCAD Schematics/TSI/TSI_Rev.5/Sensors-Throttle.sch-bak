@@ -1144,35 +1144,35 @@ Text Label 7900 2050 0    47   ~ 0
 IO_Ground
 Text Notes 1500 8550 0    79   ~ 0
 LOW VOLTAGE SIGNALS\n
-Text Label 2300 8900 0    50   ~ 0
+Text Label 2300 8850 0    50   ~ 0
 GLV_RTN
 Wire Wire Line
-	2300 8900 2100 8900
-Text Label 2300 9200 0    50   ~ 0
+	2300 8850 2100 8850
+Text Label 2300 9150 0    50   ~ 0
 Throttle_LV
 Wire Wire Line
-	2300 9200 2100 9200
-Text Label 2300 8800 0    50   ~ 0
+	2300 9150 2100 9150
+Text Label 2300 8750 0    50   ~ 0
 5V
 Wire Wire Line
-	2300 8800 2100 8800
-Text HLabel 2100 8900 0    50   Input ~ 0
+	2300 8750 2100 8750
+Text HLabel 2100 8850 0    50   Input ~ 0
 GLV_RTN
-Text HLabel 2100 8800 0    50   Input ~ 0
+Text HLabel 2100 8750 0    50   Input ~ 0
 5V
-Text Label 2300 9100 0    50   ~ 0
+Text Label 2300 9050 0    50   ~ 0
 SDA
-Text Label 2300 9000 0    50   ~ 0
+Text Label 2300 8950 0    50   ~ 0
 SCL
 Wire Wire Line
-	2300 9000 2100 9000
+	2300 8950 2100 8950
 Wire Wire Line
-	2300 9100 2100 9100
-Text HLabel 2100 9100 0    50   Input ~ 0
+	2300 9050 2100 9050
+Text HLabel 2100 9050 0    50   Input ~ 0
 SDA
-Text HLabel 2100 9000 0    50   Input ~ 0
+Text HLabel 2100 8950 0    50   Input ~ 0
 SCL
-Text HLabel 2100 9200 0    50   Input ~ 0
+Text HLabel 2100 9150 0    50   Input ~ 0
 Throttle_LV
 Text HLabel 5750 9700 0    50   Output ~ 0
 1.24V_REF
@@ -1191,13 +1191,9 @@ DiffAmp_REF
 Text Label 6400 8700 2    50   ~ 0
 5HV
 Wire Notes Line
-	1400 9450 2950 9450
-Wire Notes Line
-	2950 9450 2950 8350
+	1400 9250 2950 9250
 Wire Notes Line
 	2950 8350 1400 8350
-Wire Notes Line
-	1400 8350 1400 9450
 Text Notes 5150 8550 0    79   ~ 0
 HIGH VOLTAGE SIGNALS\n
 Text Label 6400 9200 2    50   ~ 0
@@ -1404,4 +1400,8 @@ Wire Wire Line
 	5750 9600 6400 9600
 Wire Wire Line
 	5750 9700 6400 9700
+Wire Notes Line
+	2950 9250 2950 8350
+Wire Notes Line
+	1400 8350 1400 9250
 $EndSCHEMATC

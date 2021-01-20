@@ -39,9 +39,7 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 4050 2950 50 
 	3    4000 2750
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3350 2650 3700 2650
-Text Label 3350 2650 2    79   ~ 0
+Text Label 2850 2650 0    79   ~ 0
 TSV_Voltage
 Wire Wire Line
 	3700 2850 3550 2850
@@ -80,10 +78,8 @@ Wire Wire Line
 Connection ~ 4350 3600
 Wire Wire Line
 	4350 3600 5050 3600
-Text Label 3350 3500 2    79   ~ 0
+Text Label 2850 3500 0    79   ~ 0
 MC_Voltage
-Wire Wire Line
-	3350 3500 3700 3500
 Wire Wire Line
 	4500 2750 4500 2500
 $Comp
@@ -301,18 +297,12 @@ F 3 "~" H 7350 4150 50  0001 C CNN
 	1    7150 4150
 	1    0    0    -1  
 $EndComp
-Text Label 1550 800  0    50   ~ 0
+Text Label 2150 800  2    50   ~ 0
 MC_Voltage
-Wire Wire Line
-	1550 800  1350 800 
-Text Label 1550 1000 0    50   ~ 0
+Text Label 2150 1000 2    50   ~ 0
 IO_Ground
-Wire Wire Line
-	1550 1000 1350 1000
-Text Label 1550 900  0    50   ~ 0
+Text Label 2150 900  2    50   ~ 0
 TSV_Voltage
-Wire Wire Line
-	1550 900  1350 900 
 Text Notes 1100 650  0    79   ~ 0
 HV SIGNALS\n
 Text HLabel 1350 800  0    50   Input ~ 0
@@ -352,7 +342,7 @@ Wire Wire Line
 	9500 4800 9500 4600
 Text Label 9000 4800 0    55   ~ 0
 IO_Ground
-Text Label 10200 2050 2    50   ~ 0
+Text Label 10200 2050 0    50   ~ 0
 24HV
 $Comp
 L Device:D D17
@@ -478,7 +468,7 @@ Wire Wire Line
 	11300 3850 12400 3850
 Wire Wire Line
 	12400 3850 12400 3900
-Text Label 12300 3050 2    50   ~ 0
+Text Label 12300 3050 0    50   ~ 0
 5HV
 $Comp
 L Device:D D8
@@ -559,20 +549,11 @@ Wire Wire Line
 Connection ~ 13050 3850
 Wire Wire Line
 	14300 3050 14300 3150
-Text Label 14650 3050 0    79   ~ 0
+Text Label 15200 3050 2    50   ~ 0
 24HV
-Wire Wire Line
-	14700 3850 14200 3850
-Wire Wire Line
-	14200 3850 14200 3750
-Text Label 14700 3850 0    79   ~ 0
+Text Label 15250 3900 2    47   ~ 0
 IGNI_VCC
-Wire Wire Line
-	14200 4100 14200 3850
-Connection ~ 14200 3850
-Wire Wire Line
-	14700 4100 14200 4100
-Text Label 14700 4100 0    79   ~ 0
+Text Label 15250 4100 2    50   ~ 0
 Pre_Charge_Ready
 Wire Notes Line
 	13400 3750 14550 3750
@@ -893,113 +874,98 @@ Wire Wire Line
 $Comp
 L pspice:CAP C?
 U 1 1 5FEEFD1E
-P 14500 9050
+P 14550 9200
 AR Path="/5FC85F57/5FEEFD1E" Ref="C?"  Part="1" 
 AR Path="/6196BF15/5FEEFD1E" Ref="C12"  Part="1" 
-F 0 "C12" H 14600 8950 50  0000 C CNN
-F 1 "0.33u" H 14600 9150 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 14500 9050 50  0001 C CNN
-F 3 "~" H 14500 9050 50  0001 C CNN
-	1    14500 9050
+F 0 "C12" H 14650 9100 50  0000 C CNN
+F 1 "0.33u" H 14650 9300 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 14550 9200 50  0001 C CNN
+F 3 "~" H 14550 9200 50  0001 C CNN
+	1    14550 9200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	14200 8800 14500 8800
-Connection ~ 14500 8800
+	14250 8950 14550 8950
+Connection ~ 14550 8950
 Wire Wire Line
-	14500 8800 14700 8800
+	14550 8950 14750 8950
 Wire Wire Line
-	14500 9400 15000 9400
-Wire Wire Line
-	15000 9400 15000 9150
-Wire Wire Line
-	15000 9150 15050 9150
-Wire Wire Line
-	14500 9300 14500 9400
-Wire Wire Line
-	15000 9550 15000 9400
-Connection ~ 15000 9400
-Text Label 15000 9550 0    79   ~ 0
+	14550 9450 14550 9550
+Text Label 14650 9550 0    47   ~ 0
 IO_Ground
-Text Label 14200 8800 2    79   ~ 0
+Text Label 14250 8950 2    79   ~ 0
 24HV
-Wire Wire Line
-	15550 8800 15300 8800
-Text Label 15550 8800 0    79   ~ 0
+Text Label 15600 8950 0    79   ~ 0
 5HV
-Text Notes 14500 9750 0    79   ~ 0
+Text Notes 14300 9800 0    79   ~ 0
 24V to 5V Regulator
-Text Notes 15200 9050 0    79   ~ 0
+Text Notes 15250 9200 0    79   ~ 0
 25mA\n
 Wire Wire Line
-	12950 7150 12950 7750
+	12950 7250 12950 7850
 Wire Wire Line
-	12950 7750 13250 7750
+	12950 7850 13250 7850
 $Comp
 L Device:R_POT_TRIM RV5
 U 1 1 5FFAFAD6
-P 14350 7150
-F 0 "RV5" H 14280 7104 50  0000 R CNN
-F 1 "10K" H 14280 7195 50  0000 R CNN
-F 2 "TSI_Rev_2021_Footprint_Lib:Potentiometer" H 14350 7150 50  0001 C CNN
-F 3 "~" H 14350 7150 50  0001 C CNN
-	1    14350 7150
+P 14500 7250
+F 0 "RV5" H 14430 7204 50  0000 R CNN
+F 1 "10K" H 14430 7295 50  0000 R CNN
+F 2 "TSI_Rev_2021_Footprint_Lib:Potentiometer" H 14500 7250 50  0001 C CNN
+F 3 "~" H 14500 7250 50  0001 C CNN
+	1    14500 7250
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	14200 7150 12950 7150
-Wire Wire Line
-	12950 7000 12950 7150
-Connection ~ 12950 7150
-Text Label 12950 7000 0    79   ~ 0
+	12950 7100 12950 7250
+Connection ~ 12950 7250
+Text Label 12950 7100 0    47   ~ 0
 1.24V_REF
 $Comp
 L Device:R R46
 U 1 1 5FFE1CBB
-P 12700 7750
-F 0 "R46" V 12800 7650 50  0000 L CNN
-F 1 "1K" V 12700 7700 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 12630 7750 50  0001 C CNN
-F 3 "~" H 12700 7750 50  0001 C CNN
-	1    12700 7750
+P 12700 7850
+F 0 "R46" V 12800 7750 50  0000 L CNN
+F 1 "1K" V 12700 7800 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 12630 7850 50  0001 C CNN
+F 3 "~" H 12700 7850 50  0001 C CNN
+	1    12700 7850
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	12850 7750 12950 7750
-Connection ~ 12950 7750
-Text Label 12250 7750 0    59   ~ 0
+	12850 7850 12950 7850
+Connection ~ 12950 7850
+Text Label 12250 7850 0    59   ~ 0
 5HV
-Text Label 13950 7550 0    47   ~ 0
+Text Label 14350 7650 2    47   ~ 0
 IO_Ground
 $Comp
 L Device:R R101
 U 1 1 60017493
-P 14350 7950
-F 0 "R101" V 14450 7850 50  0000 L CNN
-F 1 "10K" V 14350 7900 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 14280 7950 50  0001 C CNN
-F 3 "~" H 14350 7950 50  0001 C CNN
-	1    14350 7950
+P 14500 8050
+F 0 "R101" V 14600 7950 50  0000 L CNN
+F 1 "10K" V 14500 8000 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 14430 8050 50  0001 C CNN
+F 3 "~" H 14500 8050 50  0001 C CNN
+	1    14500 8050
 	1    0    0    -1  
 $EndComp
-Text Label 14350 8200 0    47   ~ 0
+Text Label 14500 8300 0    47   ~ 0
 IO_Ground
 Wire Wire Line
-	14350 8200 14350 8100
-Wire Wire Line
-	13950 7750 14350 7750
-NoConn ~ 13250 7550
+	14500 8300 14500 8200
 NoConn ~ 13250 7650
+NoConn ~ 13250 7750
 NoConn ~ 4950 9800
 NoConn ~ 6450 9500
-NoConn ~ 14350 7000
-Text Notes 12250 8150 0    79   ~ 0
+NoConn ~ 14500 7100
+Text Notes 12450 8250 0    79   ~ 0
 Adjustable Voltage Reference\n
-Text Notes 11800 6550 0    138  ~ 0
-VOLTAGE REFERENCES & REGULATORS
-Text Label 9050 6750 0    50   ~ 0
+Text Notes 11850 6800 0    138  ~ 0
+VOLTAGE REFERENCES & REGULATORS\n(HIGH VOLTAGE)
+Text Label 9050 6750 2    50   ~ 0
 DC_RELAY+
-Text Label 9050 6850 0    50   ~ 0
+Text Label 9050 6850 2    50   ~ 0
 DC_RELAY-
 Wire Wire Line
 	7600 6550 7600 6650
@@ -1110,42 +1076,26 @@ Text HLabel 1350 900  0    50   Input ~ 0
 TSV_Voltage
 Text HLabel 1350 1000 0    50   Input ~ 0
 IO_Ground
-Text Label 1550 1200 0    50   ~ 0
+Text Label 2150 1200 2    50   ~ 0
 1.24V_REF
-Text Label 1550 1100 0    50   ~ 0
+Text Label 2150 1100 2    50   ~ 0
 5HV
-Wire Wire Line
-	1550 1100 1350 1100
-Wire Wire Line
-	1550 1200 1350 1200
 Text HLabel 1350 1200 0    50   Input ~ 0
 1.24V_REF
 Text HLabel 1350 1100 0    50   Input ~ 0
 5HV
-Text Label 1450 6850 0    50   ~ 0
+Text Label 1950 6850 2    50   ~ 0
 GLV_RTN
-Text Label 1450 6150 0    50   ~ 0
+Text Label 1950 6150 2    50   ~ 0
 24V
-Wire Wire Line
-	1250 6150 1450 6150
-Wire Wire Line
-	1450 6850 1250 6850
-Text Label 1450 6650 0    50   ~ 0
+Text Label 1950 6650 2    50   ~ 0
 Safety_Loop
-Text Label 1450 6750 0    50   ~ 0
+Text Label 1950 6750 2    50   ~ 0
 Brake_Pressed
-Wire Wire Line
-	1450 6750 1250 6750
-Wire Wire Line
-	1450 6650 1250 6650
-Text Label 1450 6350 0    50   ~ 0
+Text Label 1950 6350 2    50   ~ 0
 3.3V
-Wire Wire Line
-	1450 6350 1250 6350
-Text Label 1450 6250 0    50   ~ 0
+Text Label 1950 6250 2    50   ~ 0
 5V
-Wire Wire Line
-	1450 6250 1250 6250
 Text Notes 1000 5950 0    79   ~ 0
 LV SIGNALS\n
 Text HLabel 1250 6650 0    50   Input ~ 0
@@ -1158,14 +1108,10 @@ Text HLabel 1250 6250 0    50   Input ~ 0
 5V
 Text HLabel 1250 6750 0    50   Input ~ 0
 Brake_Pressed
-Text Label 1450 6550 0    50   ~ 0
+Text Label 1950 6550 2    50   ~ 0
 GLV_RTN
-Text Label 1450 6450 0    50   ~ 0
+Text Label 1950 6450 2    50   ~ 0
 AIRS+
-Wire Wire Line
-	1450 6450 1250 6450
-Wire Wire Line
-	1450 6550 1250 6550
 Text HLabel 1250 6550 0    50   Input ~ 0
 AIRS-
 Text HLabel 1250 6450 0    50   Input ~ 0
@@ -1176,10 +1122,8 @@ Wire Notes Line
 	550  5800 2100 5800
 Wire Notes Line
 	550  7050 2100 7050
-Text Label 1450 6950 0    50   ~ 0
+Text Label 1950 6950 2    50   ~ 0
 PC_Ready
-Wire Wire Line
-	1450 6950 1250 6950
 Text HLabel 1250 6950 0    50   Input ~ 0
 PC_Ready
 Wire Notes Line
@@ -1218,40 +1162,28 @@ Wire Wire Line
 	5400 8300 5250 8300
 Wire Notes Line
 	5700 5700 5700 11200
-Text Label 1550 1400 0    50   ~ 0
+Text Label 2150 1400 2    50   ~ 0
 DC_RELAY-
-Text Label 1550 1300 0    50   ~ 0
+Text Label 2150 1300 2    50   ~ 0
 DC_RELAY+
-Wire Wire Line
-	1550 1300 1350 1300
-Wire Wire Line
-	1550 1400 1350 1400
 Text HLabel 1350 1400 0    50   Input ~ 0
 DC_RELAY-
 Text HLabel 1350 1300 0    50   Input ~ 0
 DC_RELAY+
-Text Label 1550 1600 0    50   ~ 0
+Text Label 2150 1600 2    50   ~ 0
 PC_RELAY-
-Text Label 1550 1500 0    50   ~ 0
+Text Label 2150 1500 2    50   ~ 0
 PC_RELAY+
-Wire Wire Line
-	1550 1500 1350 1500
-Wire Wire Line
-	1550 1600 1350 1600
 Text HLabel 1350 1600 0    50   Input ~ 0
 PC_RELAY-
 Text HLabel 1350 1500 0    50   Input ~ 0
 PC_RELAY+
-Text Label 1550 1700 0    50   ~ 0
+Text Label 2150 1700 2    50   ~ 0
 IGNI_VCC
-Wire Wire Line
-	1550 1700 1350 1700
 Text HLabel 1350 1700 0    50   Input ~ 0
 IGNI_VCC
-Text Label 1550 1800 0    50   ~ 0
+Text Label 2150 1800 2    50   ~ 0
 Brake_Pressed_HV
-Wire Wire Line
-	1550 1800 1350 1800
 Text HLabel 1350 1800 0    50   Input ~ 0
 Brake_Pressed_HV
 Wire Wire Line
@@ -1422,28 +1354,28 @@ Wire Wire Line
 $Comp
 L CarMan_KiCAD_Library:TS431ILT IC4
 U 1 1 610AEB6E
-P 13600 7650
-F 0 "IC4" H 13600 7900 79  0000 C CNN
-F 1 "TS431ILT" H 13600 7400 79  0000 C CNN
-F 2 "TSI_Rev_2021_Footprint_Lib:SOT95P280X145-5N" H 13350 7750 79  0001 C CNN
-F 3 "https://www.snapeda.com/parts/TS431ILT/STMicroelectronics/datasheet/" H 13350 7750 79  0001 C CNN
-	1    13600 7650
+P 13600 7750
+F 0 "IC4" H 13600 8000 79  0000 C CNN
+F 1 "TS431ILT" H 13600 7500 79  0000 C CNN
+F 2 "TSI_Rev_2021_Footprint_Lib:SOT95P280X145-5N" H 13350 7850 79  0001 C CNN
+F 3 "https://www.snapeda.com/parts/TS431ILT/STMicroelectronics/datasheet/" H 13350 7850 79  0001 C CNN
+	1    13600 7750
 	1    0    0    -1  
 $EndComp
-Connection ~ 14350 7750
+Connection ~ 14500 7850
 Wire Wire Line
-	14350 7750 14350 7800
+	14500 7850 14500 7900
 Wire Wire Line
-	14350 7300 14350 7750
+	14500 7400 14500 7850
 Wire Notes Line
-	8950 6950 9550 6950
+	8550 6950 9150 6950
 Wire Notes Line
-	9550 6950 9550 6600
+	9150 6950 9150 6600
 Wire Notes Line
-	8950 6950 8950 6600
+	8550 6950 8550 6600
 Wire Notes Line
-	8950 6600 9550 6600
-Text Notes 9100 6600 0    47   ~ 0
+	8550 6600 9150 6600
+Text Notes 8700 6600 0    47   ~ 0
 DC Relay\n
 $Comp
 L Device:Q_PMOS_GSD Q1
@@ -1536,12 +1468,12 @@ NAND Package \nPower Supplies
 $Comp
 L power:PWR_FLAG #FLG0107
 U 1 1 60081B98
-P 14350 7750
-F 0 "#FLG0107" H 14350 7825 50  0001 C CNN
-F 1 "PWR_FLAG" V 14350 7878 50  0000 L CNN
-F 2 "" H 14350 7750 50  0001 C CNN
-F 3 "~" H 14350 7750 50  0001 C CNN
-	1    14350 7750
+P 14500 7850
+F 0 "#FLG0107" H 14500 7925 50  0001 C CNN
+F 1 "PWR_FLAG" V 14500 7978 50  0000 L CNN
+F 2 "" H 14500 7850 50  0001 C CNN
+F 3 "~" H 14500 7850 50  0001 C CNN
+	1    14500 7850
 	0    1    1    0   
 $EndComp
 Wire Wire Line
@@ -1557,63 +1489,47 @@ F 3 "" H 5450 9750 79  0001 C CNN
 	1    5750 9650
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	14300 3050 14650 3050
-$Comp
-L CarMan_KiCAD_Library:MC7805BDTRKG U10
-U 1 1 600DC70C
-P 15000 8900
-F 0 "U10" H 15000 9308 79  0000 C CNN
-F 1 "MC7805BDTRKG" H 15000 9173 79  0000 C CNN
-F 2 "TSI_Rev_2021_Footprint_Lib:DPAK229P990X238-4N" H 15000 9150 79  0001 C CNN
-F 3 "" H 15000 9150 79  0001 C CNN
-	1    15000 8900
-	1    0    0    -1  
-$EndComp
 $Comp
 L Reference_Voltage:REF3033 U12
 U 1 1 6013ABA6
-P 12550 8900
-F 0 "U12" H 12321 8946 50  0000 R CNN
-F 1 "REF3033" H 12321 8855 50  0000 R CIN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 12550 8450 50  0001 C CIN
-F 3 "http://www.ti.com/lit/ds/symlink/ref3033.pdf" H 12650 8550 50  0001 C CIN
-	1    12550 8900
+P 12750 9050
+F 0 "U12" H 12521 9096 50  0000 R CNN
+F 1 "REF3033" H 12521 9005 50  0000 R CIN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 12750 8600 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/ref3033.pdf" H 12850 8700 50  0001 C CIN
+	1    12750 9050
 	1    0    0    -1  
 $EndComp
 $Comp
 L pspice:CAP C?
 U 1 1 6013D1B7
-P 11700 8950
+P 11900 9100
 AR Path="/5FC85F57/6013D1B7" Ref="C?"  Part="1" 
 AR Path="/6196BF15/6013D1B7" Ref="C1"  Part="1" 
-F 0 "C1" H 11800 8850 50  0000 C CNN
-F 1 "0.47u" H 11800 9050 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 11700 8950 50  0001 C CNN
-F 3 "~" H 11700 8950 50  0001 C CNN
-	1    11700 8950
+F 0 "C1" H 12000 9000 50  0000 C CNN
+F 1 "0.47u" H 12000 9200 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 11900 9100 50  0001 C CNN
+F 3 "~" H 11900 9100 50  0001 C CNN
+	1    11900 9100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	11700 9200 11700 9350
+	11900 9350 11900 9500
 Wire Wire Line
-	11700 9350 12450 9350
+	11900 9500 12650 9500
 Wire Wire Line
-	12450 9350 12450 9200
+	12650 9500 12650 9350
 Wire Wire Line
-	12450 8600 12450 8550
+	12650 8750 12650 8700
 Wire Wire Line
-	12450 8550 11700 8550
+	12650 8700 11900 8700
 Wire Wire Line
-	11700 8550 11700 8700
-Wire Wire Line
-	12450 8550 12450 8450
-Connection ~ 12450 8550
-Text Label 12250 8450 0    59   ~ 0
+	11900 8700 11900 8850
+Text Label 12200 8700 0    59   ~ 0
 5HV
-Text Label 13350 8900 2    59   ~ 0
+Text Label 13550 9050 2    59   ~ 0
 3.3_VREF
-Text Label 11900 9350 0    59   ~ 0
+Text Label 12100 9500 0    59   ~ 0
 IO_Ground
 $Comp
 L Device:R R108
@@ -1626,8 +1542,6 @@ F 3 "~" H 5100 6350 50  0001 C CNN
 	1    5100 6350
 	0    -1   -1   0   
 $EndComp
-Text Notes 11500 7100 0    157  ~ 0
-HV
 Text Notes 6500 10500 0    47   ~ 0
 (Pre charge ready)
 Wire Wire Line
@@ -1661,11 +1575,9 @@ Wire Wire Line
 Wire Wire Line
 	6250 8900 6800 8900
 Wire Wire Line
-	12450 8450 12250 8450
+	13050 9050 13550 9050
 Wire Wire Line
-	12850 8900 13350 8900
-Wire Wire Line
-	12250 7750 12550 7750
+	12250 7850 12550 7850
 Wire Wire Line
 	3600 9650 4150 9650
 Wire Wire Line
@@ -1710,4 +1622,84 @@ Wire Notes Line
 	2350 1900 2350 500 
 Wire Notes Line
 	500  500  500  1900
+Text Notes 11600 9800 0    79   ~ 0
+3.3V Reference Voltage
+Wire Wire Line
+	15600 8950 15350 8950
+Wire Wire Line
+	15100 9300 15100 9550
+$Comp
+L CarMan_KiCAD_Library:MC7805BDTRKG U10
+U 1 1 600DC70C
+P 15050 9050
+F 0 "U10" H 15050 9458 79  0000 C CNN
+F 1 "MC7805BDTRKG" H 15050 9323 79  0000 C CNN
+F 2 "TSI_Rev_2021_Footprint_Lib:DPAK229P990X238-4N" H 15050 9300 79  0001 C CNN
+F 3 "" H 15050 9300 79  0001 C CNN
+	1    15050 9050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14550 9550 15100 9550
+Wire Wire Line
+	13950 7850 14500 7850
+Wire Wire Line
+	14350 7650 13950 7650
+Wire Wire Line
+	12950 7250 14350 7250
+Wire Wire Line
+	14200 4100 15250 4100
+Wire Wire Line
+	14300 3050 15200 3050
+Wire Wire Line
+	14200 3750 14200 3900
+Wire Wire Line
+	14200 3900 15250 3900
+Connection ~ 14200 3900
+Wire Wire Line
+	14200 3900 14200 4100
+Wire Wire Line
+	1350 1800 2150 1800
+Wire Wire Line
+	1350 1700 2150 1700
+Wire Wire Line
+	1350 1600 2150 1600
+Wire Wire Line
+	1350 1500 2150 1500
+Wire Wire Line
+	1350 1400 2150 1400
+Wire Wire Line
+	1350 1300 2150 1300
+Wire Wire Line
+	1350 1200 2150 1200
+Wire Wire Line
+	1350 1100 2150 1100
+Wire Wire Line
+	1350 1000 2150 1000
+Wire Wire Line
+	1350 900  2150 900 
+Wire Wire Line
+	1350 800  2150 800 
+Wire Wire Line
+	1250 6750 1950 6750
+Wire Wire Line
+	1250 6850 1950 6850
+Wire Wire Line
+	1250 6950 1950 6950
+Wire Wire Line
+	1250 6650 1950 6650
+Wire Wire Line
+	1250 6550 1950 6550
+Wire Wire Line
+	1250 6450 1950 6450
+Wire Wire Line
+	1250 6350 1950 6350
+Wire Wire Line
+	1250 6250 1950 6250
+Wire Wire Line
+	1250 6150 1950 6150
+Wire Wire Line
+	2850 3500 3700 3500
+Wire Wire Line
+	2850 2650 3700 2650
 $EndSCHEMATC
