@@ -690,13 +690,13 @@ Text Label 5700 3950 0    50   ~ 0
 SCL_uC
 Text Label 7250 3950 2    50   ~ 0
 SCL_TSI
-Text Label 6750 3950 0    50   ~ 0
+Text Label 6400 3950 0    50   ~ 0
 SCL
 Wire Wire Line
 	5700 4050 7250 4050
 Text Label 5700 4050 0    50   ~ 0
 SDA_uC
-Text Label 6750 4050 0    50   ~ 0
+Text Label 6400 4050 0    50   ~ 0
 SDA
 Text Label 7250 4050 2    50   ~ 0
 SDA_TSI
@@ -1346,7 +1346,7 @@ Wire Wire Line
 Text Label 1550 2800 0    50   ~ 0
 TSAL
 $Sheet
-S 8850 4800 1500 1400
+S 8850 4800 1500 1500
 U 5FE1DE7D
 F0 "CAN_GLV_POWER" 47
 F1 "CAN_GLV_POWER.sch" 47
@@ -1375,6 +1375,8 @@ F23 "AMS_FAULT_LED" I L 8850 5800 50
 F24 "AMS_Status" O L 8850 5900 47 
 F25 "AMS_Button_RTN" I L 8850 6000 50 
 F26 "24V_BP_Out" O L 8850 6100 50 
+F27 "Safety_Loop_EPAL" I R 10350 6100 50 
+F28 "Gen_Fault_EPAL" I R 10350 6200 50 
 $EndSheet
 Wire Wire Line
 	3100 3850 3950 3850
@@ -1489,4 +1491,12 @@ Text Label 8100 3550 0    50   ~ 0
 TSAL_RTN
 Text Label 8100 3250 0    50   ~ 0
 GLV_RTN
+Wire Wire Line
+	10350 6100 11100 6100
+Wire Wire Line
+	10350 6200 11100 6200
+Text Label 11100 6100 2    50   ~ 0
+Safety_Loop_EPAL
+Text Label 11100 6200 2    50   ~ 0
+Gen_Fault_EPAL
 $EndSCHEMATC

@@ -452,7 +452,7 @@ Wire Wire Line
 Connection ~ 11450 5300
 Wire Wire Line
 	11450 5300 11500 5300
-Text Notes 12500 9850 0    157  ~ 0
+Text Notes 11050 11200 0    39   ~ 0
 Zacky Bear Doesn't Like
 Text Label 7050 2250 2    49   ~ 0
 12V_Cooling
@@ -632,7 +632,7 @@ Wire Wire Line
 Text Label 11200 1300 2    50   ~ 0
 Safety_Loop
 Text Label 10550 900  2    50   ~ 0
-5V
+24V
 Wire Wire Line
 	10350 1300 10550 1300
 Wire Wire Line
@@ -1103,10 +1103,142 @@ Wire Wire Line
 	4050 2850 4950 2850
 Wire Notes Line
 	2950 650  2950 3250
+$Comp
+L CarMan_KiCAD_Library:511-HCF40106YM013TR U20
+U 1 1 60107413
+P 13000 8050
+F 0 "U20" H 13800 8437 60  0000 C CNN
+F 1 "511-HCF40106YM013TR" H 13800 8331 60  0000 C CNN
+F 2 "CarMan General Footprints:511-HCF40106YM013TR" H 13800 8290 60  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/389/hcf40106-954733.pdf" H 13800 8331 60  0001 C CNN
+	1    13000 8050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R81
+U 1 1 60112B09
+P 14900 7900
+F 0 "R81" H 14970 7946 50  0000 L CNN
+F 1 "4K" H 14970 7855 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 14830 7900 50  0001 C CNN
+F 3 "~" H 14900 7900 50  0001 C CNN
+	1    14900 7900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R82
+U 1 1 60113131
+P 14900 8200
+F 0 "R82" H 14970 8246 50  0000 L CNN
+F 1 "20K" H 14970 8155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 14830 8200 50  0001 C CNN
+F 3 "~" H 14900 8200 50  0001 C CNN
+	1    14900 8200
+	1    0    0    -1  
+$EndComp
+Text Label 14900 7750 0    50   ~ 0
+24V
+Text Label 14900 8500 0    50   ~ 0
+GLV_RTN
+Wire Wire Line
+	14900 8350 14900 8500
+Wire Wire Line
+	14600 8050 14900 8050
+Connection ~ 14900 8050
+Text Label 13000 8650 2    50   ~ 0
+GLV_RTN
+Text Label 12800 7250 2    50   ~ 0
+Safety_Loop
+Text Label 12100 7950 2    50   ~ 0
+MRESET_Contact
+Text HLabel 14950 3550 0    50   Input ~ 0
+Safety_Loop_EPAL
+Text HLabel 14950 3650 0    50   Input ~ 0
+Gen_Fault_EPAL
+Text Label 15250 3550 0    50   ~ 0
+Safety_Loop_EPAL
+Text Label 15250 3650 0    50   ~ 0
+Gen_Fault_EPAL
+Wire Wire Line
+	14950 3550 15250 3550
+Wire Wire Line
+	14950 3650 15250 3650
+Text Label 13000 8350 2    50   ~ 0
+Gen_Fault_EPAL
+Text Label 13000 8150 2    50   ~ 0
+Safety_Loop_EPAL
+NoConn ~ 13000 8450
+NoConn ~ 13000 8550
+NoConn ~ 14600 8650
+NoConn ~ 14600 8550
+NoConn ~ 14600 8450
+NoConn ~ 14600 8350
+NoConn ~ 14600 8250
+NoConn ~ 14600 8150
+$Comp
+L Device:R R65
+U 1 1 601AB819
+P 12800 7400
+F 0 "R65" H 12870 7446 50  0000 L CNN
+F 1 "4K" H 12870 7355 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 12730 7400 50  0001 C CNN
+F 3 "~" H 12800 7400 50  0001 C CNN
+	1    12800 7400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R80
+U 1 1 601AB823
+P 12800 7700
+F 0 "R80" H 12870 7746 50  0000 L CNN
+F 1 "20K" H 12870 7655 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 12730 7700 50  0001 C CNN
+F 3 "~" H 12800 7700 50  0001 C CNN
+	1    12800 7700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R25
+U 1 1 601C082D
+P 12100 8100
+F 0 "R25" H 12170 8146 50  0000 L CNN
+F 1 "4K" H 12170 8055 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 12030 8100 50  0001 C CNN
+F 3 "~" H 12100 8100 50  0001 C CNN
+	1    12100 8100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R61
+U 1 1 601C0837
+P 12100 8400
+F 0 "R61" H 12170 8446 50  0000 L CNN
+F 1 "20K" H 12170 8355 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 12030 8400 50  0001 C CNN
+F 3 "~" H 12100 8400 50  0001 C CNN
+	1    12100 8400
+	1    0    0    -1  
+$EndComp
+Text Label 12100 8550 3    50   ~ 0
+GLV_RTN
+Text Label 12700 7850 2    50   ~ 0
+GLV_RTN
+Wire Wire Line
+	12800 7850 12700 7850
+Wire Wire Line
+	12800 7550 13000 7550
+Wire Wire Line
+	13000 7550 13000 8050
+Connection ~ 12800 7550
+Wire Wire Line
+	12100 8250 13000 8250
+Connection ~ 12100 8250
+Text Notes 13150 7500 0    50   ~ 0
+20V Inverter, as AIRS status and general fault\nare active low by default
 Wire Notes Line
-	16000 550  16000 3550
+	16000 3700 14150 3700
 Wire Notes Line
-	14150 3550 16000 3550
+	16000 550  16000 3700
 Wire Notes Line
-	14150 3550 14150 550 
+	14150 550  14150 3700
 $EndSCHEMATC
