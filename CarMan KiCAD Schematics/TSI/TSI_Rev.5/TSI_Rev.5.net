@@ -1,7 +1,7 @@
 (export (version D)
   (design
-    (source "C:\\Users\\natha\\Desktop\\Carman-2021\\CarMan KiCAD Schematics\\TSI\\TSI_Rev.5\\TSI_Rev.5.sch")
-    (date "2/2/2021 12:40:43 PM")
+    (source "C:\\Users\\mobil\\Carman-2021\\CarMan KiCAD Schematics\\TSI\\TSI_Rev.5\\TSI_Rev.5.sch")
+    (date "2/2/2021 1:58:31 PM")
     (tool "Eeschema (5.1.6)-1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -2842,7 +2842,7 @@
     (library (logical Amplifier_Operational)
       (uri "C:\\Program Files\\KiCad\\share\\kicad\\library/Amplifier_Operational.lib"))
     (library (logical CarMan_KiCAD_Library)
-      (uri "C:/Users/natha/Desktop/Carman-2021/CarMan KiCAD Library/CarMan_KiCAD_Library.lib"))
+      (uri "C:/Users/mobil/Carman-2021/CarMan KiCAD Library/CarMan_KiCAD_Library.lib"))
     (library (logical Connector)
       (uri "C:\\Program Files\\KiCad\\share\\kicad\\library/Connector.lib"))
     (library (logical Connector_Generic)
@@ -2858,7 +2858,7 @@
     (library (logical Relay)
       (uri "C:\\Program Files\\KiCad\\share\\kicad\\library/Relay.lib"))
     (library (logical TSI_Rev.5-rescue)
-      (uri "C:\\Users\\natha\\Desktop\\Carman-2021\\CarMan KiCAD Schematics\\TSI\\TSI_Rev.5/TSI_Rev.5-rescue.lib"))
+      (uri "C:\\Users\\mobil\\Carman-2021\\CarMan KiCAD Schematics\\TSI\\TSI_Rev.5/TSI_Rev.5-rescue.lib"))
     (library (logical Transistor_FET)
       (uri "C:\\Program Files\\KiCad\\share\\kicad\\library/Transistor_FET.lib"))
     (library (logical pspice)
