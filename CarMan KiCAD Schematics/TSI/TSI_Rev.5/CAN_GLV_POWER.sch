@@ -1180,4 +1180,27 @@ Wire Wire Line
 Connection ~ 14900 5500
 Wire Wire Line
 	14900 5500 14900 5650
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 601DA5ED
+P 7050 900
+AR Path="/601DA5ED" Ref="J?"  Part="1" 
+AR Path="/5FE1DE7D/601DA5ED" Ref="J30"  Part="1" 
+F 0 "J30" H 7000 1000 50  0000 L CNN
+F 1 "J23" H 7000 1000 50  0001 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 7050 900 50  0001 C CNN
+F 3 "~" H 7050 900 50  0001 C CNN
+	1    7050 900 
+	1    0    0    -1  
+$EndComp
+Text Notes 6500 1250 0    47   ~ 0
+Header to allow jumper \nto keep cooling on.\n
+Text Label 6250 1000 0    50   ~ 0
+Cooling_power
+Wire Wire Line
+	6250 1000 6850 1000
+Wire Wire Line
+	6250 900  6850 900 
+Text Label 6250 900  0    50   ~ 0
+5V
 $EndSCHEMATC
