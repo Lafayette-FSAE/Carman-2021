@@ -239,8 +239,6 @@ Wire Wire Line
 	5850 3500 5850 3650
 Text Label 5850 3500 0    55   ~ 0
 PC_Ready_HV
-Text Notes 5800 3500 2    55   ~ 0
-~R\n
 Text Notes 7600 3900 2    55   ~ 0
 ~R\n
 Text Notes 8550 3800 2    55   ~ 0
@@ -553,8 +551,6 @@ Text Label 15200 3050 2    50   ~ 0
 24HV
 Text Label 15250 3900 2    47   ~ 0
 IGNI_VCC
-Text Label 15250 4100 2    50   ~ 0
-Pre_Charge_Ready
 Wire Notes Line
 	13400 3750 14550 3750
 Wire Notes Line
@@ -1296,7 +1292,7 @@ F 1 "MCP6004" H 5450 3700 50  0000 C CNN
 F 2 "TSI_Rev_2021_Footprint_Lib:SOIC127P600X175-14N" H 5300 3600 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 5400 3700 50  0001 C CNN
 	2    5350 3500
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Text Label 6600 2100 0    47   ~ 0
 IO_Ground
@@ -1648,16 +1644,11 @@ Wire Wire Line
 Wire Wire Line
 	12950 7250 14350 7250
 Wire Wire Line
-	14200 4100 15250 4100
-Wire Wire Line
 	14300 3050 15200 3050
 Wire Wire Line
 	14200 3750 14200 3900
 Wire Wire Line
 	14200 3900 15250 3900
-Connection ~ 14200 3900
-Wire Wire Line
-	14200 3900 14200 4100
 Wire Wire Line
 	1350 1800 2150 1800
 Wire Wire Line
