@@ -185,8 +185,6 @@ Text Notes 7800 2550 0    50   ~ 10
 Cooling Breaker
 Text Notes 8250 2300 0    50   ~ 10
 TSI, Dash, Logic,\nBatt Pack Breaker
-Text Label 5950 1950 2    50   ~ 0
-BATT+
 Wire Wire Line
 	5950 1950 6250 1950
 Wire Wire Line
@@ -461,7 +459,7 @@ Text Label 1300 5350 2    50   ~ 0
 Text Label 1300 5650 2    50   ~ 0
 GLV_RTN
 Text Label 1250 6400 2    50   ~ 0
-24V
+24V_NOT_BREAKERED
 Text Label 1300 6700 2    50   ~ 0
 BATT+
 Wire Wire Line
@@ -727,4 +725,6 @@ F 3 "~" H 9000 4750 50  0001 C CNN
 	1    9000 4750
 	1    0    0    -1  
 $EndComp
+Text Label 5950 1950 2    50   ~ 0
+24V_NOT_BREAKERED
 $EndSCHEMATC
