@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 89)
+    (drawings 88)
     (tracks 2617)
     (zones 0)
     (modules 259)
@@ -12,7 +12,7 @@
   (page A3)
   (layers
     (0 F.Cu signal)
-    (31 B.Cu signal hide)
+    (31 B.Cu signal)
     (32 B.Adhes user)
     (33 F.Adhes user)
     (34 B.Paste user)
@@ -1031,7 +1031,7 @@
     (descr "Molex Mini-Fit JR, PN:5556-04A, dual row, top entry type, through hole")
     (tags "connector molex mini-fit 5556")
     (path /62002A81)
-    (fp_text reference "J9 GLV" (at -0.2286 9.8933 90) (layer F.SilkS)
+    (fp_text reference "J9 GLV" (at 1.8288 10.1219 90) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value J9 (at 2.1 -4 90) (layer F.Fab)
@@ -3903,7 +3903,7 @@
     (descr "Molex Mini-Fit JR, PN:5556-08A, dual row, top entry type, through hole")
     (tags "connector molex mini-fit 5556")
     (path /60243E54)
-    (fp_text reference "J5 IMD" (at 7.747 10 90) (layer F.SilkS)
+    (fp_text reference "J5 IMD" (at 6.2484 10.1219 90) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value J5 (at 6.3 -4 90) (layer F.Fab)
@@ -11329,7 +11329,6 @@
   (gr_text "PCDC LV\n" (at 158.6992 148.3868) (layer F.SilkS) (tstamp 60040B24)
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (gr_line (start 117.4496 84.3534) (end 116.9416 84.3534) (layer F.SilkS) (width 0.15))
   (gr_line (start 233.2736 171.7294) (end 233.2736 217.9574) (layer F.SilkS) (width 0.15))
   (gr_arc (start 155.194 167.1574) (end 155.194 168.783) (angle -180) (layer Edge.Cuts) (width 0.1) (tstamp 5FFFB226))
   (gr_arc (start 213.5886 167.1574) (end 213.5886 165.5318) (angle -180) (layer Edge.Cuts) (width 0.1) (tstamp 5FFFB1E4))
