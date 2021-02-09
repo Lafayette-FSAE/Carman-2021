@@ -19,7 +19,7 @@ U 1 1 5F95B303
 P 8600 850
 F 0 "J3" H 8680 842 50  0000 L CNN
 F 1 "IMU" H 8680 751 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 8600 850 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 8600 850 50  0001 C CNN
 F 3 "~" H 8600 850 50  0001 C CNN
 	1    8600 850 
 	-1   0    0    1   
@@ -68,8 +68,6 @@ Wire Wire Line
 Connection ~ 1650 5050
 Wire Wire Line
 	8800 950  9250 950 
-Wire Wire Line
-	8800 850  9250 850 
 Wire Wire Line
 	8800 1600 9250 1600
 Wire Wire Line
@@ -331,27 +329,6 @@ Text Label 2250 2100 0    50   ~ 0
 ~MCLR~
 Wire Wire Line
 	2700 2100 2200 2100
-Wire Wire Line
-	1650 2600 2700 2600
-Text Label 1150 2100 1    50   ~ 0
-5V_rtn
-Wire Wire Line
-	1150 1850 1150 2100
-Text Label 1150 700  1    50   ~ 0
-5V
-Wire Wire Line
-	1150 700  1150 1250
-$Comp
-L Logic-rescue:MCP9700AT-HTT-Sensor_Temperature-Logic-rescue U1
-U 1 1 5FB9039A
-P 1150 1550
-F 0 "U1" H 821 1596 50  0000 R CNN
-F 1 "MCP9700AT-HTT" H 1800 1800 50  0000 R CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 1150 1150 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21942e.pdf" H 1000 1800 50  0001 C CNN
-	1    1150 1550
-	1    0    0    -1  
-$EndComp
 Text Label 2200 3700 0    50   ~ 0
 Throttle_SEL
 NoConn ~ 2700 2800
@@ -620,10 +597,6 @@ Wire Wire Line
 Wire Wire Line
 	9400 3550 9400 4350
 Connection ~ 9400 4350
-Wire Wire Line
-	1650 2600 1650 1550
-Wire Wire Line
-	1650 1550 1550 1550
 Wire Wire Line
 	6700 2750 7500 2750
 Wire Wire Line
@@ -1454,4 +1427,22 @@ Text Label 7600 3250 0    50   ~ 0
 SCL_iso
 Text Label 9250 2200 0    50   ~ 0
 24V_rtn
+$Comp
+L Connector_Generic:Conn_01x02 J2
+U 1 1 6025C7CF
+P 9650 650
+F 0 "J2" H 9730 642 50  0000 L CNN
+F 1 "IMU PS" H 9730 551 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 9650 650 50  0001 C CNN
+F 3 "~" H 9650 650 50  0001 C CNN
+	1    9650 650 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9450 750  9450 650 
+Wire Wire Line
+	9450 750  9450 850 
+Wire Wire Line
+	8800 850  9450 850 
+Connection ~ 9450 750 
 $EndSCHEMATC

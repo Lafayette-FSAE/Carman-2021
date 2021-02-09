@@ -19,7 +19,7 @@ U 1 1 5F95B303
 P 8600 850
 F 0 "J3" H 8680 842 50  0000 L CNN
 F 1 "IMU" H 8680 751 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 8600 850 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 8600 850 50  0001 C CNN
 F 3 "~" H 8600 850 50  0001 C CNN
 	1    8600 850 
 	-1   0    0    1   
@@ -1452,4 +1452,6 @@ Text Label 7600 3150 0    50   ~ 0
 SDA_iso
 Text Label 7600 3250 0    50   ~ 0
 SCL_iso
+Text Label 9250 2200 0    50   ~ 0
+24V_rtn
 $EndSCHEMATC
