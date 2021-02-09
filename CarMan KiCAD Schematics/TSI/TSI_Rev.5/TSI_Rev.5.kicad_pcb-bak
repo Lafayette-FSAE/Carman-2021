@@ -11279,7 +11279,7 @@
   (gr_text GLV (at 257.4036 165.5) (layer F.SilkS) (tstamp 6008A15E)
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (gr_text "TSI Version V\nEthan Miller, Nate Beal, John Burk\nZack Martin & Troy Coleman" (at 276.6187 59.7916) (layer F.SilkS)
+  (gr_text "TSI Version V\nNate Beal, Ethan Miller, John Burk\nZack Martin & Troy Coleman" (at 276.6187 59.7916) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (gr_text "Zacky Bear Doesn't Like" (at 109.8677 216.6493) (layer B.SilkS)
