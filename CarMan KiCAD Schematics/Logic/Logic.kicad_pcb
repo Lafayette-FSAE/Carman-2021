@@ -1,4 +1,4 @@
-(kicad_pcb (version 20171130) (host pcbnew "(5.1.6)-1")
+(kicad_pcb (version 20171130) (host pcbnew "(5.1.2)-1")
 
   (general
     (thickness 1.6)
@@ -869,6 +869,11 @@
       (net 94 "Net-(U6-Pad15)"))
     (pad 16 thru_hole circle (at 22.5142 7.9852 270) (size 1.2 1.2) (drill 0.8) (layers *.Cu *.Mask)
       (net 49 /Safety_Loop_iso))
+    (model ${KIPRJMOD}/Logic_3D_Models/raspberry_pi_3_b_plus.stp
+      (offset (xyz -3 -11.5 8))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 90))
+    )
   )
 
   (module Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder (layer F.Cu) (tedit 5B36C52B) (tstamp 5FBB964C)
@@ -2048,7 +2053,12 @@
     (model ${KISYS3DMOD}/Connectors_Molex.3dshapes/Molex_MiniFit-JR-5556-04A_2x02x4.20mm_Straight.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
+      (rotate (xyz 0 0 -30))
+    )
+    (model ${KIPRJMOD}/Logic_3D_Models/39281043.stp
+      (offset (xyz 2 -2.5 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz -90 0 -180))
     )
   )
 
@@ -2316,6 +2326,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model ${KIPRJMOD}/Logic_3D_Models/39281043.stp
+      (offset (xyz 2 -2.5 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz -90 0 -180))
+    )
   )
 
   (module Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical (layer F.Cu) (tedit 5A19A430) (tstamp 5FBB999D)
@@ -2533,6 +2548,11 @@
       (net 90 "Net-(U4-Pad6)"))
     (pad 4 thru_hole circle (at 10.16 0 180) (size 2.25 2.25) (drill 1.5) (layers *.Cu *.Mask)
       (net 91 "Net-(U4-Pad4)"))
+    (model ${KIPRJMOD}/Logic_3D_Models/CUI_PYB20-Q24-S5-T.step
+      (offset (xyz 2.5 -9.5 0))
+      (scale (xyz 0.7 0.9 1))
+      (rotate (xyz -90 0 0))
+    )
   )
 
   (module Package_SO:SOP-8_6.62x9.15mm_P2.54mm (layer F.Cu) (tedit 5D9F72B1) (tstamp 5FBB9B75)
@@ -3721,7 +3741,6 @@
     (effects (font (size 1 1) (thickness 0.15)))
   )
 
-  (segment (start 241.8 17.15) (end 241.8 14.61) (width 0.25) (layer B.Cu) (net 2))
   (segment (start 121.92 99.695) (end 125.5903 99.695) (width 0.25) (layer F.Cu) (net 1))
   (segment (start 116.35 99.695) (end 116.205 99.55) (width 0.25) (layer F.Cu) (net 1))
   (segment (start 121.92 99.695) (end 116.35 99.695) (width 0.25) (layer F.Cu) (net 1))
@@ -3752,6 +3771,7 @@
   (segment (start 146.685 62.865) (end 148.445 62.865) (width 0.25) (layer F.Cu) (net 1))
   (segment (start 146.685 62.865) (end 146.685 68.5) (width 0.25) (layer F.Cu) (net 1))
   (segment (start 146.685 62.23) (end 146.685 62.865) (width 0.25) (layer F.Cu) (net 1))
+  (segment (start 241.8 17.15) (end 241.8 14.61) (width 0.25) (layer B.Cu) (net 2))
   (segment (start 139.7 29.845) (end 136.525 33.02) (width 1.8) (layer B.Cu) (net 2))
   (segment (start 139.7 29.845) (end 139.7 24.13) (width 1.8) (layer B.Cu) (net 2))
   (segment (start 152.58415 40.64) (end 147.13585 40.64) (width 0.25) (layer F.Cu) (net 2))
@@ -4585,8 +4605,6 @@
   (segment (start 196.215 120.65) (end 182.88 107.315) (width 0.25) (layer B.Cu) (net 49))
   (segment (start 160.655 107.315) (end 159.385 108.585) (width 0.25) (layer F.Cu) (net 49))
   (segment (start 182.88 107.315) (end 160.655 107.315) (width 0.25) (layer F.Cu) (net 49))
-  (segment (start 170.170001 135.314999) (end 170.170001 131.980001) (width 0.25) (layer F.Cu) (net 116))
-  (segment (start 169.91 135.575) (end 170.170001 135.314999) (width 0.25) (layer F.Cu) (net 116))
   (segment (start 137.715 73.66) (end 132.715 73.66) (width 0.25) (layer F.Cu) (net 50))
   (via (at 132.715 73.66) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 50))
   (via (at 132.715 83.185) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 50))
@@ -4682,5 +4700,7 @@
   (segment (start 178.504315 94.615) (end 177.8 94.615) (width 0.25) (layer B.Cu) (net 101))
   (segment (start 205.105 121.92) (end 205.105 121.215685) (width 0.25) (layer B.Cu) (net 101))
   (segment (start 205.105 121.215685) (end 178.504315 94.615) (width 0.25) (layer B.Cu) (net 101))
+  (segment (start 170.170001 135.314999) (end 170.170001 131.980001) (width 0.25) (layer F.Cu) (net 116))
+  (segment (start 169.91 135.575) (end 170.170001 135.314999) (width 0.25) (layer F.Cu) (net 116))
 
 )
