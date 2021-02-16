@@ -1,4 +1,4 @@
-(kicad_pcb (version 20171130) (host pcbnew "(5.1.6)-1")
+(kicad_pcb (version 20171130) (host pcbnew "(5.1.2)-1")
 
   (general
     (thickness 1.6)
@@ -596,6 +596,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model ${KIPRJMOD}/GLV_3D_Models/39281023.stp
+      (offset (xyz 0 -2.5 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz -90 0 -180))
+    )
   )
 
   (module "CarMan General Footprints:Molex_MiniFit-JR-5556-02A_2x01x4.20mm_Straight" (layer F.Cu) (tedit 58A28952) (tstamp 5FB844F2)
@@ -656,6 +661,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model ${KIPRJMOD}/GLV_3D_Models/39281023.stp
+      (offset (xyz 0 -2.5 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz -90 0 -180))
+    )
   )
 
   (module "CarMan General Footprints:Molex_MiniFit-JR-5556-02A_2x01x4.20mm_Straight" (layer F.Cu) (tedit 58A28952) (tstamp 5FB8451C)
@@ -714,7 +724,12 @@
     (model ${KISYS3DMOD}/Connectors_Molex.3dshapes/Molex_MiniFit-JR-5556-02A_2x01x4.20mm_Straight.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
+      (rotate (xyz -15 0 -180))
+    )
+    (model ${KIPRJMOD}/GLV_3D_Models/39281023.stp
+      (offset (xyz 0 -2.5 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz -90 0 -180))
     )
   )
 
@@ -790,6 +805,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model ${KIPRJMOD}/GLV_3D_Models/39281043.stp
+      (offset (xyz 2 -2.5 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz -90 0 -180))
+    )
   )
 
   (module "CarMan General Footprints:Molex_MiniFit-JR-5556-04A_2x02x4.20mm_Straight" (layer F.Cu) (tedit 58A28952) (tstamp 5FB845B2)
@@ -863,6 +883,11 @@
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
+    )
+    (model ${KIPRJMOD}/GLV_3D_Models/39281043.stp
+      (offset (xyz 2 -2.5 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz -90 0 -180))
     )
   )
 
@@ -951,6 +976,11 @@
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
+    )
+    (model ${KIPRJMOD}/GLV_3D_Models/39281063.stp
+      (offset (xyz 4 -2.5 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz -90 0 -180))
     )
   )
 
@@ -1444,7 +1474,6 @@
   (segment (start 185.9387 33.2613) (end 186.75 32.45) (width 0.25) (layer F.Cu) (net 2))
   (segment (start 186.75 30.54) (end 185.42 29.21) (width 0.25) (layer F.Cu) (net 2))
   (segment (start 186.75 32.45) (end 186.75 30.54) (width 0.25) (layer F.Cu) (net 2))
-  (segment (start 154.4955 37.600001) (end 154.4955 38.1) (width 0.25) (layer F.Cu) (net 16))
   (segment (start 127 52.07) (end 139.7 52.07) (width 1.8) (layer B.Cu) (net 3))
   (segment (start 170.6 58.03) (end 170.6 55.03) (width 1.8) (layer F.Cu) (net 3))
   (segment (start 172.085 47.625) (end 171.5897 47.625) (width 0.25) (layer F.Cu) (net 3))
@@ -1475,13 +1504,6 @@
   (segment (start 147.335 65) (end 139.7 57.365) (width 1.8) (layer B.Cu) (net 3))
   (segment (start 153.95 65) (end 147.335 65) (width 1.8) (layer B.Cu) (net 3))
   (segment (start 139.7 52.07) (end 139.7 57.365) (width 1.8) (layer B.Cu) (net 3))
-  (segment (start 158.3325 34.800401) (end 158.3325 33.02) (width 0.25) (layer F.Cu) (net 16))
-  (segment (start 155.5329 37.600001) (end 158.3325 34.800401) (width 0.25) (layer F.Cu) (net 16))
-  (segment (start 154.4955 37.600001) (end 155.5329 37.600001) (width 0.25) (layer F.Cu) (net 16))
-  (segment (start 158.3325 33.02) (end 160.4 35.0875) (width 3) (layer F.Cu) (net 16))
-  (segment (start 160.15999 35.32751) (end 160.15999 44.94001) (width 3) (layer F.Cu) (net 16))
-  (segment (start 160.4 35.0875) (end 160.15999 35.32751) (width 3) (layer F.Cu) (net 16))
-  (segment (start 160.15999 44.94001) (end 152.85 52.25) (width 3) (layer F.Cu) (net 16))
   (segment (start 180.34 48.75) (end 180.34 45.72) (width 0.25) (layer F.Cu) (net 4))
   (segment (start 180.34 45.72) (end 166.37 45.72) (width 0.25) (layer F.Cu) (net 4))
   (segment (start 166.37 45.72) (end 166.2303 45.5803) (width 0.25) (layer F.Cu) (net 4))
@@ -1522,6 +1544,14 @@
   (segment (start 132.08 42.33) (end 132.08 56.585) (width 1.8) (layer F.Cu) (net 13))
   (segment (start 136.28 56.585) (end 135.5 57.365) (width 0.25) (layer F.Cu) (net 14))
   (segment (start 136.28 42.33) (end 136.28 56.585) (width 1.8) (layer F.Cu) (net 14))
+  (segment (start 154.4955 37.600001) (end 154.4955 38.1) (width 0.25) (layer F.Cu) (net 16))
+  (segment (start 158.3325 34.800401) (end 158.3325 33.02) (width 0.25) (layer F.Cu) (net 16))
+  (segment (start 155.5329 37.600001) (end 158.3325 34.800401) (width 0.25) (layer F.Cu) (net 16))
+  (segment (start 154.4955 37.600001) (end 155.5329 37.600001) (width 0.25) (layer F.Cu) (net 16))
+  (segment (start 158.3325 33.02) (end 160.4 35.0875) (width 3) (layer F.Cu) (net 16))
+  (segment (start 160.15999 35.32751) (end 160.15999 44.94001) (width 3) (layer F.Cu) (net 16))
+  (segment (start 160.4 35.0875) (end 160.15999 35.32751) (width 3) (layer F.Cu) (net 16))
+  (segment (start 160.15999 44.94001) (end 152.85 52.25) (width 3) (layer F.Cu) (net 16))
   (segment (start 150.315 52.25) (end 139.7 62.865) (width 3) (layer F.Cu) (net 16))
   (segment (start 152.85 52.25) (end 150.315 52.25) (width 3) (layer F.Cu) (net 16))
   (segment (start 139.7 62.865) (end 135.5 62.865) (width 3) (layer F.Cu) (net 16))
