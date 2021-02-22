@@ -256,8 +256,8 @@ Text Label 1850 1400 2    50   ~ 0
 Drive_BTN
 Wire Wire Line
 	5600 1550 5400 1550
-Text Notes 7100 6950 0    197  ~ 0
-STATUS LIGHTS & COCKPIT
+Text Notes 7100 6950 0    177  ~ 0
+STATUS LIGHTS, TSAL & RTDS
 Text HLabel 1150 1800 0    50   Input ~ 0
 RTDS
 Text Label 1850 1800 2    50   ~ 0

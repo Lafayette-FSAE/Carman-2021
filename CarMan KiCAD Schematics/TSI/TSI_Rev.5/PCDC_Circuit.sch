@@ -1338,10 +1338,8 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 10600 4350 50
 	4    10550 4150
 	1    0    0    -1  
 $EndComp
-Text Label 9900 4250 0    47   ~ 0
-3.3_VREF
-Wire Wire Line
-	9900 4250 10250 4250
+Text Label 9850 4250 0    47   ~ 0
+3.3HV_REF
 Wire Wire Line
 	10250 4050 9500 4050
 Connection ~ 9500 4050
@@ -1524,7 +1522,7 @@ Wire Wire Line
 Text Label 12200 8700 0    59   ~ 0
 5HV
 Text Label 13550 9050 2    59   ~ 0
-3.3_VREF
+3.3HV_REF
 Text Label 12100 9500 0    59   ~ 0
 IO_Ground
 $Comp
@@ -1619,7 +1617,7 @@ Wire Notes Line
 Wire Notes Line
 	500  500  500  1900
 Text Notes 11600 9800 0    79   ~ 0
-3.3V Reference Voltage
+3.3HV Reference Voltage
 Wire Wire Line
 	15600 8950 15350 8950
 Wire Wire Line
@@ -1693,4 +1691,6 @@ Wire Wire Line
 	2850 3500 3700 3500
 Wire Wire Line
 	2850 2650 3700 2650
+Wire Wire Line
+	9850 4250 10250 4250
 $EndSCHEMATC

@@ -158,8 +158,8 @@ GLV_RTN
 $Sheet
 S 1550 5700 1550 1650
 U 6196BF15
-F0 "PCDC_Circuit" 79
-F1 "PCDC_Circuit.sch" 79
+F0 "PCDC_Circuit" 63
+F1 "PCDC_Circuit.sch" 63
 F2 "MC_Voltage" I L 1550 5800 50 
 F3 "TSV_Voltage" I L 1550 5900 50 
 F4 "IO_Ground" I L 1550 6200 50 
@@ -1417,8 +1417,8 @@ Brake_Pressed
 $Sheet
 S 1550 3750 1550 1200
 U 5FC85F57
-F0 "TSI-TP" 50
-F1 "TSI_Throttle_Plausibility.sch" 50
+F0 "Throttle_Plausibility" 63
+F1 "TSI_Throttle_Plausibility.sch" 63
 F2 "24V" I L 1550 3850 50 
 F3 "10V" I L 1550 3950 50 
 F4 "GLV_RTN" I L 1550 4150 50 

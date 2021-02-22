@@ -158,8 +158,8 @@ GLV_RTN
 $Sheet
 S 1550 5700 1550 1650
 U 6196BF15
-F0 "PCDC_Circuit" 79
-F1 "PCDC_Circuit.sch" 79
+F0 "PCDC_Circuit" 63
+F1 "PCDC_Circuit.sch" 63
 F2 "MC_Voltage" I L 1550 5800 50 
 F3 "TSV_Voltage" I L 1550 5900 50 
 F4 "IO_Ground" I L 1550 6200 50 
@@ -1344,7 +1344,7 @@ TSAL
 $Sheet
 S 8850 4800 1500 1500
 U 5FE1DE7D
-F0 "CAN_GLV_POWER" 47
+F0 "Relays_Cooling_Voltage_Refs" 47
 F1 "CAN_GLV_POWER.sch" 47
 F2 "10V" O L 8850 5200 50 
 F3 "5V" O L 8850 5300 50 
@@ -1417,8 +1417,8 @@ Brake_Pressed
 $Sheet
 S 1550 3750 1550 1200
 U 5FC85F57
-F0 "TSI-TP" 50
-F1 "TSI_Throttle_Plausibility.sch" 50
+F0 "Throttle_Plausibility" 63
+F1 "TSI_Throttle_Plausibility.sch" 63
 F2 "24V" I L 1550 3850 50 
 F3 "10V" I L 1550 3950 50 
 F4 "GLV_RTN" I L 1550 4150 50 
@@ -1451,7 +1451,7 @@ IO_Ground
 $Sheet
 S 8850 2950 1500 1300
 U 5FE1DCBA
-F0 "StatusLights_Cockpit" 47
+F0 "Status_Lights_TSAL_RTDS" 47
 F1 "StatusLights_Cockpit.sch" 47
 F2 "RTDS_CTRL" I R 10350 3150 50 
 F3 "D_LED_CTRL" I R 10350 3650 50 

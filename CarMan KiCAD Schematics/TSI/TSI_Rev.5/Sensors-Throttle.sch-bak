@@ -1242,8 +1242,8 @@ Text Label 2500 5550 2    47   ~ 0
 SCL
 Text Notes 6950 6600 0    98   ~ 0
 Binary Address:\n1001010
-Text Notes 12100 10450 0    157  ~ 0
-V/I\n& THROTTLE VOLTAGE ISOLATOR
+Text Notes 12200 10350 0    157  ~ 0
+THROTTLE VOLTAGE ISOLATOR
 Text Label 6400 9600 2    50   ~ 0
 A2_HV
 Text Label 6400 9500 2    50   ~ 0
