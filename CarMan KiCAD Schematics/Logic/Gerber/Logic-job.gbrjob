@@ -7,7 +7,7 @@
       "Application": "Pcbnew",
       "Version":     "(5.1.6)-1"
     },
-    "CreationDate":  "2021-02-09T18:52:38-05:00"
+    "CreationDate":  "2021-02-21T22:15:12-05:00"
   },
   "GeneralSpecs":
   {
@@ -58,16 +58,6 @@
       "FilePolarity":  "Positive"
     },
     {
-      "Path":  "Logic-F_Mask.gbr",
-      "FileFunction":  "SolderMask,Top",
-      "FilePolarity":  "Negative"
-    },
-    {
-      "Path":  "Logic-B_Mask.gbr",
-      "FileFunction":  "SolderMask,Bot",
-      "FilePolarity":  "Negative"
-    },
-    {
       "Path":  "Logic-Edge_Cuts.gbr",
       "FileFunction":  "Profile",
       "FilePolarity":  "Positive"
@@ -78,10 +68,6 @@
     {
       "Type":  "Legend",
       "Notes":  "Layer F.SilkS"
-    },
-    {
-      "Type":  "SolderMask",
-      "Notes":  "Layer F.Mask"
     },
     {
       "Type":  "Copper",
@@ -95,10 +81,6 @@
     {
       "Type":  "Copper",
       "Notes":  "Layer B.Cu"
-    },
-    {
-      "Type":  "SolderMask",
-      "Notes":  "Layer B.Mask"
     },
     {
       "Type":  "Legend",
