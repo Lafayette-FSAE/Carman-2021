@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 4 6
+Sheet 3 6
 Title ""
 Date ""
 Rev ""
@@ -975,8 +975,6 @@ Wire Wire Line
 Wire Wire Line
 	3650 4800 4700 4800
 Wire Wire Line
-	3650 4700 4200 4700
-Wire Wire Line
 	7900 4800 8100 4800
 Wire Wire Line
 	7900 4350 7900 4800
@@ -1203,4 +1201,17 @@ Wire Wire Line
 	6250 900  6850 900 
 Text Label 6250 900  0    50   ~ 0
 5V
+$Comp
+L Connector:TestPoint TP13
+U 1 1 6094CA9A
+P 4350 4700
+F 0 "TP13" H 4408 4818 50  0000 L CNN
+F 1 "10V_TP" H 4408 4727 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D3.0mm" H 4550 4700 50  0001 C CNN
+F 3 "~" H 4550 4700 50  0001 C CNN
+	1    4350 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 4700 4350 4700
 $EndSCHEMATC
