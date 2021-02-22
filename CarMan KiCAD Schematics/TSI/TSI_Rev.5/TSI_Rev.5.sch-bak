@@ -1335,12 +1335,6 @@ F21 "CoolTemp" I L 1550 4750 50
 F22 "D_LED_CTRL" O R 3100 4850 50 
 F23 "Flowrate" I L 1550 4850 50 
 $EndSheet
-Wire Wire Line
-	5850 4450 7400 4450
-Text Label 5850 4450 0    50   ~ 0
-IGNI_GND
-Text Label 7400 4450 2    50   ~ 0
-IO_Ground
 $Sheet
 S 8850 2950 1500 1300
 U 5FE1DCBA

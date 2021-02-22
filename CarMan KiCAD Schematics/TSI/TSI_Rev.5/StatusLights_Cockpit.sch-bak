@@ -545,6 +545,8 @@ Wire Notes Line
 	2250 2100 2250 500 
 Wire Notes Line
 	500  500  500  2100
+Text Label 11000 5100 2    50   ~ 0
+GLV_RTN
 Wire Wire Line
-	9800 5100 10450 5100
+	9800 5100 11000 5100
 $EndSCHEMATC

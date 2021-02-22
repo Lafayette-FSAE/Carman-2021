@@ -530,7 +530,7 @@ Wire Wire Line
 Wire Wire Line
 	1100 4100 2250 4100
 Wire Wire Line
-	4400 7000 5600 7000
+	4400 7000 5000 7000
 Wire Wire Line
 	4400 1550 5100 1550
 Wire Wire Line
@@ -545,6 +545,17 @@ Wire Notes Line
 	2250 2100 2250 500 
 Wire Notes Line
 	500  500  500  2100
+Text Label 11000 5100 2    50   ~ 0
+GLV_RTN
 Wire Wire Line
-	9800 5100 10450 5100
+	9800 5100 11000 5100
+Wire Wire Line
+	5000 7000 5000 7200
+Wire Wire Line
+	5000 7200 5600 7200
+Connection ~ 5000 7000
+Wire Wire Line
+	5000 7000 5600 7000
+Text Label 5600 7200 2    50   ~ 0
+GLV_RTN
 $EndSCHEMATC
