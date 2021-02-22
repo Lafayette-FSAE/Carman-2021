@@ -228,7 +228,7 @@ F 3 "~" H 4400 7250 50  0001 C CNN
 $EndComp
 Text Notes 1700 5900 0    50   ~ 0
 HIGH VOLTAGE\n
-Text Label 10200 5100 0    50   ~ 0
+Text Label 10450 5100 2    50   ~ 0
 Drive_BTN_RTN
 Text HLabel 1150 1100 0    50   Input ~ 0
 TSAL
@@ -318,10 +318,6 @@ Wire Notes Line
 	9550 5100 9550 5050
 Wire Notes Line
 	9500 5100 9550 5100
-Text Label 10150 5100 2    50   ~ 0
-GLV_RTN
-Wire Wire Line
-	9800 5100 10200 5100
 Wire Wire Line
 	9500 5450 9350 5450
 Wire Wire Line
@@ -549,4 +545,6 @@ Wire Notes Line
 	2250 2100 2250 500 
 Wire Notes Line
 	500  500  500  2100
+Wire Wire Line
+	9800 5100 10450 5100
 $EndSCHEMATC
