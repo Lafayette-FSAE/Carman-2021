@@ -641,20 +641,20 @@ Wire Wire Line
 Wire Wire Line
 	5850 3850 7400 3850
 Wire Wire Line
-	5850 4050 7400 4050
-Text Label 5850 4050 0    50   ~ 0
-SCL_uC
-Text Label 7400 4050 2    50   ~ 0
-SCL_TSI
-Text Label 6550 4050 0    50   ~ 0
-SCL
-Wire Wire Line
 	5850 4150 7400 4150
 Text Label 5850 4150 0    50   ~ 0
-SDA_uC
-Text Label 6550 4150 0    50   ~ 0
-SDA
+SCL_uC
 Text Label 7400 4150 2    50   ~ 0
+SCL_TSI
+Text Label 6550 4150 0    50   ~ 0
+SCL
+Wire Wire Line
+	5850 4250 7400 4250
+Text Label 5850 4250 0    50   ~ 0
+SDA_uC
+Text Label 6550 4250 0    50   ~ 0
+SDA
+Text Label 7400 4250 2    50   ~ 0
 SDA_TSI
 Text Label 700  6000 0    50   ~ 0
 IGNI_VCC
@@ -679,10 +679,10 @@ Text Label 8100 3050 0    50   ~ 0
 Text Label 8100 3150 0    50   ~ 0
 3.3V
 Wire Wire Line
-	5850 4250 7400 4250
-Text Label 5850 4250 0    50   ~ 0
+	5850 3950 7400 3950
+Text Label 5850 3950 0    50   ~ 0
 TSAL_RTN
-Text Label 7400 4250 2    50   ~ 0
+Text Label 7400 3950 2    50   ~ 0
 GLV_RTN
 $Comp
 L Connector_Generic:Conn_01x04 J11
@@ -926,10 +926,10 @@ F 3 "~" H 7450 950 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	5850 4350 7400 4350
-Text Label 5850 4350 0    50   ~ 0
+	5850 4050 7400 4050
+Text Label 5850 4050 0    50   ~ 0
 AIRS-
-Text Label 7400 4350 2    50   ~ 0
+Text Label 7400 4050 2    50   ~ 0
 GLV_RTN
 $Comp
 L Connector_Generic:Conn_01x08 J10
@@ -1386,12 +1386,6 @@ Text Label 2000 2250 0    50   ~ 0
 Safety_Loop_EPAL
 Text Label 2000 2050 0    50   ~ 0
 Gen_Fault_EPAL
-Text Label 5850 3950 0    50   ~ 0
-Drive_BTN_RTN
-Text Label 7400 3950 2    50   ~ 0
-GLV_RTN
-Wire Wire Line
-	5850 3950 7400 3950
 Text Notes 4750 3050 0    59   ~ 0
 Easy access\nSDA & SCL pins
 Wire Wire Line
