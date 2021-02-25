@@ -29,9 +29,9 @@ Text Notes 3050 2150 0    50   ~ 0
 Battery Packs\n\n
 Text Notes 1000 1000 2    50   ~ 0
 HV
-Text Label 3000 1950 0    50   ~ 0
+Text Label 3000 1650 0    50   ~ 0
 AIRS-
-Text Label 3000 1850 0    50   ~ 0
+Text Label 3000 1750 0    50   ~ 0
 AIRS+
 Text Notes 1300 1050 0    50   ~ 0
 Precharge Relay\n\n\n
@@ -119,13 +119,13 @@ Text Label 4950 2000 0    50   ~ 0
 Cooling_CTRL
 Text Label 4950 2100 0    50   ~ 0
 Throttle_SEL
-Text Label 5850 3550 0    50   ~ 0
+Text Label 5850 3700 0    50   ~ 0
 Flowrate_5V
-Text Label 7400 3550 2    50   ~ 0
+Text Label 7400 3700 2    50   ~ 0
 5V
-Text Label 5850 3650 0    50   ~ 0
+Text Label 5850 3800 0    50   ~ 0
 Flowrate_RTN
-Text Label 7400 3650 2    50   ~ 0
+Text Label 7400 3800 2    50   ~ 0
 GLV_RTN
 Text Label 7300 800  2    50   ~ 0
 GLV_RTN
@@ -295,11 +295,11 @@ Text Label 8100 3350 0    50   ~ 0
 TSAL
 Text Notes 5650 2250 0    50   ~ 0
 TSI-Logic Connection\n
-Text Label 7450 650  0    50   ~ 0
+Text Label 7450 1050 0    50   ~ 0
 BP_CAN+
-Text Label 7450 850  0    50   ~ 0
+Text Label 7450 1150 0    50   ~ 0
 CAN_Shield
-Text Label 7450 750  0    50   ~ 0
+Text Label 7450 950  0    50   ~ 0
 BP_CAN-
 NoConn ~ 4500 1950
 Text Label 11100 3350 2    50   ~ 0
@@ -352,9 +352,9 @@ Wire Notes Line
 	5900 2400 5900 2900
 Wire Notes Line
 	7100 2400 7100 2900
-Text Label 7400 3750 2    50   ~ 0
+Text Label 7400 3900 2    50   ~ 0
 GLV_RTN
-Text Label 5850 3750 0    50   ~ 0
+Text Label 5850 3900 0    50   ~ 0
 FAULT_LED_RTN
 Wire Notes Line
 	450  2200 1950 2200
@@ -469,9 +469,9 @@ Text Label 700  4850 0    50   ~ 0
 Flowrate
 Text Label 7400 3350 2    50   ~ 0
 Brake_Light
-Text Label 5850 3850 0    50   ~ 0
+Text Label 5850 4000 0    50   ~ 0
 Brake_Light_RTN
-Text Label 7400 3850 2    50   ~ 0
+Text Label 7400 4000 2    50   ~ 0
 GLV_RTN
 Text Label 11100 3050 2    50   ~ 0
 RTDS
@@ -538,13 +538,13 @@ Wire Wire Line
 Wire Wire Line
 	3900 1650 4500 1650
 Wire Wire Line
+	7450 650  7950 650 
+Wire Wire Line
+	7450 1150 7950 1150
+Wire Wire Line
 	7450 950  7950 950 
 Wire Wire Line
-	7450 850  7950 850 
-Wire Wire Line
-	7450 750  7950 750 
-Wire Wire Line
-	7450 650  7950 650 
+	7450 1050 7950 1050
 Wire Wire Line
 	9350 650  9800 650 
 Wire Wire Line
@@ -590,14 +590,14 @@ IMD_Button_RTN
 Text Label 11100 5500 2    50   ~ 0
 COOL_24V
 $Comp
-L Connector_Generic:Conn_01x04 J6
+L Connector_Generic:Conn_01x06 J6
 U 1 1 5FCE8608
-P 8150 750
-F 0 "J6" H 8100 950 50  0000 L CNN
-F 1 "J6" H 8230 651 50  0001 L CNN
-F 2 "TSI_Rev_2021_Footprint_Lib:Molex_MiniFit-JR-5556-04A_2x02x4.20mm_Straight" H 8150 750 50  0001 C CNN
-F 3 "~" H 8150 750 50  0001 C CNN
-	1    8150 750 
+P 8150 850
+F 0 "J6" H 8100 1150 50  0000 L CNN
+F 1 "J6" H 8230 751 50  0001 L CNN
+F 2 "TSI_Rev_2021_Footprint_Lib:Molex_MiniFit-JR-5556-04A_2x03x4.20mm_Straight" H 8150 850 50  0001 C CNN
+F 3 "~" H 8150 850 50  0001 C CNN
+	1    8150 850 
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -633,28 +633,28 @@ Wire Wire Line
 Wire Wire Line
 	5850 3450 7400 3450
 Wire Wire Line
-	5850 3550 7400 3550
+	5850 3700 7400 3700
 Wire Wire Line
-	5850 3650 7400 3650
+	5850 3800 7400 3800
 Wire Wire Line
-	5850 3750 7400 3750
+	5850 3900 7400 3900
 Wire Wire Line
-	5850 3850 7400 3850
+	5850 4000 7400 4000
 Wire Wire Line
-	5850 4150 7400 4150
-Text Label 5850 4150 0    50   ~ 0
+	5850 4300 7400 4300
+Text Label 5850 4300 0    50   ~ 0
 SCL_uC
-Text Label 7400 4150 2    50   ~ 0
+Text Label 7400 4300 2    50   ~ 0
 SCL_TSI
-Text Label 6550 4150 0    50   ~ 0
+Text Label 6550 4300 0    50   ~ 0
 SCL
 Wire Wire Line
-	5850 4250 7400 4250
-Text Label 5850 4250 0    50   ~ 0
+	5850 4400 7400 4400
+Text Label 5850 4400 0    50   ~ 0
 SDA_uC
-Text Label 6550 4250 0    50   ~ 0
+Text Label 6550 4400 0    50   ~ 0
 SDA
-Text Label 7400 4250 2    50   ~ 0
+Text Label 7400 4400 2    50   ~ 0
 SDA_TSI
 Text Label 700  6000 0    50   ~ 0
 IGNI_VCC
@@ -679,10 +679,10 @@ Text Label 8100 3050 0    50   ~ 0
 Text Label 8100 3150 0    50   ~ 0
 3.3V
 Wire Wire Line
-	5850 3950 7400 3950
-Text Label 5850 3950 0    50   ~ 0
+	5850 4100 7400 4100
+Text Label 5850 4100 0    50   ~ 0
 TSAL_RTN
-Text Label 7400 3950 2    50   ~ 0
+Text Label 7400 4100 2    50   ~ 0
 GLV_RTN
 $Comp
 L Connector_Generic:Conn_01x04 J11
@@ -730,20 +730,20 @@ Wire Wire Line
 	8350 750  8950 750 
 Wire Wire Line
 	8350 650  8950 650 
-Text Label 3000 1650 0    50   ~ 0
-24V
+Text Label 3000 1950 0    50   ~ 0
+24V_AMS_IN
 Wire Wire Line
-	3000 1850 3500 1850
-Wire Wire Line
-	3000 1950 3500 1950
+	3000 1750 3500 1750
 Wire Wire Line
 	3000 1650 3500 1650
 Wire Wire Line
-	3000 1750 3500 1750
-Text Label 3000 1750 0    50   ~ 0
-24V_BP_Out
+	3000 1950 3500 1950
+Wire Wire Line
+	3000 1850 3500 1850
+Text Label 3000 1850 0    50   ~ 0
+24V_AMS_OUT
 Text Label 8100 6100 0    50   ~ 0
-24V_BP_Out
+24V_AMS_OUT
 Text Label 7000 1600 2    50   ~ 0
 AMS_FAULT_LED
 Wire Wire Line
@@ -917,19 +917,19 @@ Wire Wire Line
 $Comp
 L power:PWR_FLAG #FLG0105
 U 1 1 5FBAAB2C
-P 7450 950
-F 0 "#FLG0105" H 7450 1025 50  0001 C CNN
-F 1 "PWR_FLAG" V 7350 1150 50  0000 C CNN
-F 2 "" H 7450 950 50  0001 C CNN
-F 3 "~" H 7450 950 50  0001 C CNN
-	1    7450 950 
+P 7450 650
+F 0 "#FLG0105" H 7450 725 50  0001 C CNN
+F 1 "PWR_FLAG" V 7550 850 50  0000 C CNN
+F 2 "" H 7450 650 50  0001 C CNN
+F 3 "~" H 7450 650 50  0001 C CNN
+	1    7450 650 
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	5850 4050 7400 4050
-Text Label 5850 4050 0    50   ~ 0
+	5850 4200 7400 4200
+Text Label 5850 4200 0    50   ~ 0
 AIRS-
-Text Label 7400 4050 2    50   ~ 0
+Text Label 7400 4200 2    50   ~ 0
 GLV_RTN
 $Comp
 L Connector_Generic:Conn_01x08 J10
@@ -1167,9 +1167,7 @@ Wire Wire Line
 	7400 3250 6900 3250
 Wire Wire Line
 	5850 3250 6300 3250
-Text Notes 7550 1250 0    50   ~ 0
-Battery Pack\nto TSI\n\n
-Text Label 7450 950  0    50   ~ 0
+Text Label 7450 650  0    50   ~ 0
 Chassis_GND
 Text Label 10400 850  0    50   ~ 0
 SL1_In
@@ -1263,7 +1261,7 @@ F22 "COOL_24V" O R 10350 5500 50
 F23 "AMS_FAULT_LED" I L 8850 5800 50 
 F24 "AMS_Status" O L 8850 5900 47 
 F25 "AMS_Button_RTN" I L 8850 6000 50 
-F26 "24V_BP_Out" O L 8850 6100 50 
+F26 "24V_AMS_OUT" O L 8850 6100 50 
 F27 "Safety_Loop_EPAL" I R 10350 6100 50 
 F28 "Gen_Fault_EPAL" I R 10350 6200 50 
 $EndSheet
@@ -1540,4 +1538,20 @@ Text Label 6850 6650 2    50   ~ 0
 SCL_uC
 Text Label 6850 6750 2    50   ~ 0
 SDA_uC
+Wire Wire Line
+	7450 750  7950 750 
+Wire Wire Line
+	7450 850  7950 850 
+Text Label 7450 750  0    50   ~ 0
+24V
+Text Label 7450 850  0    49   ~ 0
+GLV_RTN
+Text Notes 7550 1450 0    50   ~ 0
+Battery Pack\nto TSI\n\n
+Text Label 5850 3550 0    50   ~ 0
+24V
+Text Label 7400 3550 2    50   ~ 0
+24V_AMS_IN
+Wire Wire Line
+	5850 3550 7400 3550
 $EndSCHEMATC

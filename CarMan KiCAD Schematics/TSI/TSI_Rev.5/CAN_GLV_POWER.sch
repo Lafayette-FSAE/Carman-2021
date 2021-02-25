@@ -893,14 +893,12 @@ Wire Wire Line
 	7300 9200 6700 9200
 Text Label 6700 9200 0    50   ~ 0
 24V
-Text HLabel 15200 2600 2    50   Output ~ 0
-24V_BP_Out
 Wire Wire Line
 	14450 2600 15200 2600
 Text Label 14450 2600 0    50   ~ 0
-24V_BP_Out
+24V_AMS_OUT
 Text Label 10350 9700 2    50   ~ 0
-24V_BP_Out
+24V_AMS_OUT
 Wire Wire Line
 	9100 9700 10350 9700
 Text Label 3250 5500 2    50   ~ 0
@@ -1214,4 +1212,6 @@ F 3 "~" H 4550 4700 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3650 4700 4350 4700
+Text HLabel 15200 2600 2    50   Output ~ 0
+24V_AMS_OUT
 $EndSCHEMATC
