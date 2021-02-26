@@ -52,25 +52,25 @@ F 3 "" H 5900 1650 50  0001 L CNN
 	1    5900 1650
 	1    0    0    -1  
 $EndComp
-Text HLabel 1150 1900 0    50   Input ~ 0
+Text HLabel 1150 1650 0    50   Input ~ 0
 RTDS_CTRL
-Text HLabel 1150 1700 0    50   Input ~ 0
+Text HLabel 1150 1450 0    50   Input ~ 0
 D_LED_CTRL
-Text HLabel 1150 800  0    50   Input ~ 0
+Text HLabel 1150 750  0    50   Input ~ 0
 24V
-Text HLabel 1150 1000 0    50   Input ~ 0
+Text HLabel 1150 950  0    50   Input ~ 0
 GLV_RTN
-Text HLabel 1150 900  0    50   Input ~ 0
+Text HLabel 1150 850  0    50   Input ~ 0
 3.3V
-Text Label 1850 1900 2    50   ~ 0
+Text Label 1850 1650 2    50   ~ 0
 RTDS_CTRL
-Text Label 1850 1700 2    50   ~ 0
+Text Label 1850 1450 2    50   ~ 0
 D_LED_CTRL
-Text Label 1850 800  2    50   ~ 0
+Text Label 1850 750  2    50   ~ 0
 24V
-Text Label 1850 1000 2    50   ~ 0
+Text Label 1850 950  2    50   ~ 0
 GLV_RTN
-Text Label 1850 900  2    50   ~ 0
+Text Label 1850 850  2    50   ~ 0
 3.3V
 $Comp
 L Device:R R15
@@ -230,47 +230,47 @@ Text Notes 1700 5900 0    50   ~ 0
 HIGH VOLTAGE\n
 Text Label 10450 5100 2    50   ~ 0
 Drive_BTN_RTN
-Text HLabel 1150 1100 0    50   Input ~ 0
+Text HLabel 1150 1850 0    50   Output ~ 0
 TSAL
-Text HLabel 1150 1300 0    50   Input ~ 0
+Text HLabel 1150 1050 0    50   Input ~ 0
 TSAL_RTN
-Text Label 1850 1100 2    50   ~ 0
+Text Label 1850 1850 2    50   ~ 0
 TSAL
-Text Label 1850 1300 2    50   ~ 0
+Text Label 1850 1050 2    50   ~ 0
 TSAL_RTN
-Text HLabel 1150 1200 0    50   Input ~ 0
+Text HLabel 1150 1950 0    50   Output ~ 0
 TSAL_Cockpit
-Text Label 1850 1200 2    50   ~ 0
+Text Label 1850 1950 2    50   ~ 0
 TSAL_Cockpit
 Text Label 10200 2350 2    50   ~ 0
 GLV_RTN
 Wire Wire Line
 	10200 1450 10200 1650
-Text HLabel 1150 1500 0    50   Input ~ 0
+Text HLabel 1150 1250 0    50   Input ~ 0
 Drive_BTN_RTN
-Text Label 1850 1500 2    50   ~ 0
+Text Label 1850 1250 2    50   ~ 0
 Drive_BTN_RTN
-Text HLabel 1150 1400 0    50   Input ~ 0
+Text HLabel 1150 1150 0    50   Input ~ 0
 Drive_BTN
-Text Label 1850 1400 2    50   ~ 0
+Text Label 1850 1150 2    50   ~ 0
 Drive_BTN
 Wire Wire Line
 	5600 1550 5400 1550
 Text Notes 7100 6950 0    177  ~ 0
 STATUS LIGHTS, TSAL & RTDS
-Text HLabel 1150 1800 0    50   Input ~ 0
+Text HLabel 1150 1550 0    50   Input ~ 0
 RTDS
-Text Label 1850 1800 2    50   ~ 0
+Text Label 1850 1550 2    50   ~ 0
 RTDS
-Text Label 1850 2000 2    50   ~ 0
+Text Label 1850 1750 2    50   ~ 0
 RTDS_RTN
-Text HLabel 1150 2000 0    50   Input ~ 0
+Text HLabel 1150 1750 0    50   Input ~ 0
 RTDS_RTN
 Text Notes 1050 650  0    94   ~ 0
 SIGNALS\n
-Text HLabel 1150 1600 0    50   Input ~ 0
+Text HLabel 1150 1350 0    50   Input ~ 0
 Drive_LED
-Text Label 1850 1600 2    50   ~ 0
+Text Label 1850 1350 2    50   ~ 0
 Drive_LED
 Wire Notes Line
 	3450 5750 3450 7750
@@ -393,7 +393,7 @@ P 5000 3900
 AR Path="/6196BF15/5FC93215" Ref="Q?"  Part="1" 
 AR Path="/5FE1DCBA/5FC93215" Ref="Q3"  Part="1" 
 F 0 "Q3" H 5204 3854 50  0000 L CNN
-F 1 "ZVP1320F" H 5204 3945 50  0000 L CNN
+F 1 "DMP3030SN-7" H 5204 3945 50  0000 L CNN
 F 2 "TSI_Rev_2021_Footprint_Lib:SOT23" H 5200 4000 50  0001 C CNN
 F 3 "https://www.snapeda.com/parts/ZVP1320FTA/Diodes%20Inc./datasheet/" H 5000 3900 50  0001 C CNN
 	1    5000 3900
@@ -465,7 +465,7 @@ L Device:R R74
 U 1 1 5F9BC6E2
 P 3900 3600
 F 0 "R74" H 3970 3646 50  0000 L CNN
-F 1 "1M" V 3900 3550 50  0000 L CNN
+F 1 "40K" V 3900 3550 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3830 3600 50  0001 C CNN
 F 3 "~" H 3900 3600 50  0001 C CNN
 	1    3900 3600
@@ -498,31 +498,31 @@ F 3 "~" H 1900 3900 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	1150 1500 1850 1500
+	1150 1250 1850 1250
 Wire Wire Line
-	1150 1600 1850 1600
+	1150 1350 1850 1350
 Wire Wire Line
-	1150 1400 1850 1400
+	1150 1150 1850 1150
 Wire Wire Line
-	1150 1900 1850 1900
+	1150 1650 1850 1650
 Wire Wire Line
-	1150 1700 1850 1700
+	1150 1450 1850 1450
 Wire Wire Line
-	1150 1800 1850 1800
+	1150 1550 1850 1550
 Wire Wire Line
-	1150 2000 1850 2000
+	1150 1750 1850 1750
 Wire Wire Line
-	1150 800  1850 800 
+	1150 750  1850 750 
 Wire Wire Line
-	1150 900  1850 900 
+	1150 850  1850 850 
 Wire Wire Line
-	1150 1000 1850 1000
+	1150 950  1850 950 
 Wire Wire Line
-	1150 1100 1850 1100
+	1150 1850 1850 1850
 Wire Wire Line
-	1150 1200 1850 1200
+	1150 1950 1850 1950
 Wire Wire Line
-	1150 1300 1850 1300
+	1150 1050 1850 1050
 Wire Notes Line
 	500  500  2250 500 
 Wire Wire Line
