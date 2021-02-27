@@ -1093,17 +1093,17 @@ MRESET_Contact
 Text HLabel 14950 3550 0    50   Input ~ 0
 Safety_Loop_EPAL
 Text HLabel 14950 3650 0    50   Input ~ 0
-Gen_Fault_EPAL
+GEN_FAULT_EPAL
 Text Label 15250 3550 0    50   ~ 0
 Safety_Loop_EPAL
 Text Label 15250 3650 0    50   ~ 0
-Gen_Fault_EPAL
+GEN_FAULT_EPAL
 Wire Wire Line
 	14950 3550 15250 3550
 Wire Wire Line
 	14950 3650 15250 3650
 Text Label 15100 5150 0    50   ~ 0
-Gen_Fault_EPAL
+GEN_FAULT_EPAL
 Wire Notes Line
 	16000 3700 14150 3700
 Wire Notes Line

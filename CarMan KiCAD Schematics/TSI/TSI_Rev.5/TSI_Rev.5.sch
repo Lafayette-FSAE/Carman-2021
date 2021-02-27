@@ -25,19 +25,19 @@ Text Label 4400 700  0    50   ~ 0
 DC_RELAY+
 Text Label 8350 650  0    50   ~ 0
 Drive_BTN
-Text Notes 3050 2150 0    50   ~ 0
+Text Notes 3250 2150 0    50   ~ 0
 Battery Packs\n\n
 Text Notes 1000 1000 2    50   ~ 0
 HV
-Text Label 3000 1650 0    50   ~ 0
+Text Label 3200 1650 0    50   ~ 0
 AIRS-
-Text Label 3000 1750 0    50   ~ 0
+Text Label 3200 1750 0    50   ~ 0
 AIRS+
 Text Notes 1300 1050 0    50   ~ 0
 Precharge Relay\n\n\n
-Text Label 3900 1850 0    50   ~ 0
+Text Label 4100 1850 0    50   ~ 0
 GLV_RTN
-Text Label 3900 1650 0    50   ~ 0
+Text Label 4100 1650 0    50   ~ 0
 AIRS+
 Text Notes 10400 1200 0    50   ~ 0
 Breakered 24V from\nGLV to TSI\n
@@ -109,23 +109,23 @@ Text Label 8100 5000 0    50   ~ 0
 AIRS+
 Text Label 8100 5100 0    50   ~ 0
 AIRS-
-Text Label 4950 1600 0    50   ~ 0
+Text Label 5100 1600 0    50   ~ 0
 SCL_TSI
-Text Label 4950 1700 0    50   ~ 0
+Text Label 5100 1700 0    50   ~ 0
 SDA_TSI
-Text Label 4950 1900 0    50   ~ 0
+Text Label 5100 1900 0    50   ~ 0
 Safety_Loop
-Text Label 4950 2000 0    50   ~ 0
+Text Label 5100 2000 0    50   ~ 0
 Cooling_CTRL
-Text Label 4950 2100 0    50   ~ 0
+Text Label 5100 2100 0    50   ~ 0
 Throttle_SEL
-Text Label 5850 3700 0    50   ~ 0
+Text Label 5850 3550 0    50   ~ 0
 Flowrate_5V
-Text Label 7400 3700 2    50   ~ 0
+Text Label 7400 3550 2    50   ~ 0
 5V
-Text Label 5850 3800 0    50   ~ 0
+Text Label 5850 3650 0    50   ~ 0
 Flowrate_RTN
-Text Label 7400 3800 2    50   ~ 0
+Text Label 7400 3650 2    50   ~ 0
 GLV_RTN
 Text Label 7300 800  2    50   ~ 0
 GLV_RTN
@@ -193,15 +193,15 @@ $EndComp
 $Comp
 L Connector_Generic:Conn_01x04 J12
 U 1 1 60109F6F
-P 4700 1750
-F 0 "J12" H 4650 1950 50  0000 L CNN
-F 1 "J12" H 4650 1950 50  0001 L CNN
-F 2 "TSI_Rev_2021_Footprint_Lib:Molex_MiniFit-JR-5556-04A_2x02x4.20mm_Straight" H 4700 1750 50  0001 C CNN
-F 3 "~" H 4700 1750 50  0001 C CNN
-	1    4700 1750
+P 4900 1750
+F 0 "J12" H 4850 1950 50  0000 L CNN
+F 1 "J12" H 4850 1950 50  0001 L CNN
+F 2 "TSI_Rev_2021_Footprint_Lib:Molex_MiniFit-JR-5556-04A_2x02x4.20mm_Straight" H 4900 1750 50  0001 C CNN
+F 3 "~" H 4900 1750 50  0001 C CNN
+	1    4900 1750
 	1    0    0    -1  
 $EndComp
-Text Notes 3900 2100 0    50   ~ 0
+Text Notes 4100 2100 0    50   ~ 0
 MRESET-Sloop to RSP\n
 Text Label 1200 750  0    50   ~ 0
 PC_RELAY-
@@ -293,7 +293,7 @@ Wire Wire Line
 	4050 750  4050 850 
 Text Label 8100 3350 0    50   ~ 0
 TSAL
-Text Notes 5650 2250 0    50   ~ 0
+Text Notes 5800 2250 0    50   ~ 0
 TSI-Logic Connection\n
 Text Label 7450 1050 0    50   ~ 0
 BP_CAN+
@@ -301,7 +301,7 @@ Text Label 7450 1150 0    50   ~ 0
 CAN_Shield
 Text Label 7450 950  0    50   ~ 0
 BP_CAN-
-NoConn ~ 4500 1950
+NoConn ~ 4700 1950
 Text Label 11100 3350 2    50   ~ 0
 Drive_BTN
 NoConn ~ 1350 1950
@@ -352,10 +352,8 @@ Wire Notes Line
 	5900 2400 5900 2900
 Wire Notes Line
 	7100 2400 7100 2900
-Text Label 7400 3900 2    50   ~ 0
+Text Label 2000 1650 0    50   ~ 0
 GLV_RTN
-Text Label 5850 3900 0    50   ~ 0
-FAULT_LED_RTN
 Wire Notes Line
 	450  2200 1950 2200
 Wire Notes Line
@@ -427,15 +425,11 @@ Text Label 8350 750  0    50   ~ 0
 Drive_LED
 Text Label 8350 850  0    50   ~ 0
 Drive_BTN_RTN
-Text Label 3900 1750 0    50   ~ 0
+Text Label 4100 1750 0    50   ~ 0
 MRESET_Contact
-Text Label 2000 2150 0    50   ~ 0
-TSAL_Cockpit
-Text Label 2000 1950 0    50   ~ 0
+Text Label 2000 2050 0    50   ~ 0
 IMD_FAULT_LED
-Text Label 2000 1850 0    50   ~ 0
-FAULT_LED_RTN
-Text Label 2000 1750 0    50   ~ 0
+Text Label 2000 2150 0    50   ~ 0
 AMS_FAULT_LED
 Text Label 4750 2800 0    50   ~ 0
 SCL
@@ -451,17 +445,13 @@ Text Label 9350 750  0    49   ~ 0
 GLV_RTN
 Text Label 10400 950  0    49   ~ 0
 COOL_24V
-Text Label 7400 3450 2    49   ~ 0
-MRESET_Contact
-Text Label 5850 3450 0    49   ~ 0
-GEN_Fault_LED
-Text Label 4950 1800 0    49   ~ 0
+Text Label 5100 1800 0    49   ~ 0
 5V_ISO_RTN
 Text Label 700  4650 0    50   ~ 0
 IMD_Status
-Text Label 4700 4150 0    50   ~ 0
+Text Label 5050 4050 0    50   ~ 0
 3.3V
-Text Label 5150 4700 2    50   ~ 0
+Text Label 5500 4600 2    50   ~ 0
 CoolTemp
 Text Label 700  4750 0    50   ~ 0
 CoolTemp
@@ -469,54 +459,44 @@ Text Label 700  4850 0    50   ~ 0
 Flowrate
 Text Label 7400 3350 2    50   ~ 0
 Brake_Light
-Text Label 5850 4000 0    50   ~ 0
+Text Label 5850 3750 0    50   ~ 0
 Brake_Light_RTN
-Text Label 7400 4000 2    50   ~ 0
+Text Label 7400 3750 2    50   ~ 0
 GLV_RTN
 Text Label 11100 3050 2    50   ~ 0
 RTDS
-Text Label 7000 2100 2    50   ~ 0
+Text Label 7150 2100 2    50   ~ 0
 PC_Ready
-Text Label 7000 1700 2    50   ~ 0
+Text Label 7150 1700 2    50   ~ 0
 SR_CTRL
-Text Label 7000 1800 2    50   ~ 0
+Text Label 7150 1800 2    50   ~ 0
 CAN-_Logic
-Text Label 7000 1900 2    50   ~ 0
+Text Label 7150 1900 2    50   ~ 0
 CAN+_Logic
-Text Label 7000 2000 2    50   ~ 0
+Text Label 7150 2000 2    50   ~ 0
 RTDS_CTRL
 $Comp
 L Connector_Generic:Conn_01x06 J13.2
 U 1 1 5FC777B8
-P 6100 1800
-F 0 "J13.2" H 5950 2100 50  0000 L CNN
-F 1 "Conn_01x06" H 6180 1701 50  0001 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 6100 1800 50  0001 C CNN
-F 3 "~" H 6100 1800 50  0001 C CNN
-	1    6100 1800
+P 6250 1800
+F 0 "J13.2" H 6100 2100 50  0000 L CNN
+F 1 "Conn_01x06" H 6330 1701 50  0001 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 6250 1800 50  0001 C CNN
+F 3 "~" H 6250 1800 50  0001 C CNN
+	1    6250 1800
 	-1   0    0    -1  
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x06 J13.1
 U 1 1 5FC77F26
-P 5850 1800
-F 0 "J13.1" H 5700 2100 50  0000 L CNN
-F 1 "Conn_01x06" H 5930 1701 50  0001 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 5850 1800 50  0001 C CNN
-F 3 "~" H 5850 1800 50  0001 C CNN
-	1    5850 1800
+P 6000 1800
+F 0 "J13.1" H 5850 2100 50  0000 L CNN
+F 1 "Conn_01x06" H 6080 1701 50  0001 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 6000 1800 50  0001 C CNN
+F 3 "~" H 6000 1800 50  0001 C CNN
+	1    6000 1800
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2000 1850 2600 1850
-Wire Wire Line
-	2000 1950 2600 1950
-Wire Wire Line
-	2000 2050 2600 2050
-Wire Wire Line
-	2000 2150 2600 2150
-Wire Wire Line
-	2000 2250 2600 2250
 Wire Wire Line
 	550  850  750  850 
 Wire Wire Line
@@ -532,11 +512,11 @@ Wire Wire Line
 Wire Wire Line
 	1200 750  1650 750 
 Wire Wire Line
-	3900 1750 4500 1750
+	4100 1750 4700 1750
 Wire Wire Line
-	3900 1850 4500 1850
+	4100 1850 4700 1850
 Wire Wire Line
-	3900 1650 4500 1650
+	4100 1650 4700 1650
 Wire Wire Line
 	7450 650  7950 650 
 Wire Wire Line
@@ -553,8 +533,6 @@ Wire Wire Line
 	10400 850  10850 850 
 Wire Wire Line
 	10400 950  10850 950 
-Wire Wire Line
-	2000 1750 2600 1750
 Text Label 8100 4900 0    50   ~ 0
 Cooling_CTRL
 Text Label 11100 5400 2    50   ~ 0
@@ -631,30 +609,26 @@ Wire Wire Line
 Wire Wire Line
 	5850 3350 7400 3350
 Wire Wire Line
-	5850 3450 7400 3450
+	5850 3550 7400 3550
 Wire Wire Line
-	5850 3700 7400 3700
+	5850 3650 7400 3650
 Wire Wire Line
-	5850 3800 7400 3800
+	5850 3750 7400 3750
 Wire Wire Line
-	5850 3900 7400 3900
-Wire Wire Line
-	5850 4000 7400 4000
-Wire Wire Line
-	5850 4300 7400 4300
-Text Label 5850 4300 0    50   ~ 0
+	5850 3950 7400 3950
+Text Label 5850 3950 0    50   ~ 0
 SCL_uC
-Text Label 7400 4300 2    50   ~ 0
+Text Label 7400 3950 2    50   ~ 0
 SCL_TSI
-Text Label 6550 4300 0    50   ~ 0
+Text Label 6550 3950 0    50   ~ 0
 SCL
 Wire Wire Line
-	5850 4400 7400 4400
-Text Label 5850 4400 0    50   ~ 0
+	5850 4050 7400 4050
+Text Label 5850 4050 0    50   ~ 0
 SDA_uC
-Text Label 6550 4400 0    50   ~ 0
+Text Label 6550 4050 0    50   ~ 0
 SDA
-Text Label 7400 4400 2    50   ~ 0
+Text Label 7400 4050 2    50   ~ 0
 SDA_TSI
 Text Label 700  6000 0    50   ~ 0
 IGNI_VCC
@@ -678,21 +652,15 @@ Text Label 8100 3050 0    50   ~ 0
 24V
 Text Label 8100 3150 0    50   ~ 0
 3.3V
-Wire Wire Line
-	5850 4100 7400 4100
-Text Label 5850 4100 0    50   ~ 0
-TSAL_RTN
-Text Label 7400 4100 2    50   ~ 0
-GLV_RTN
 $Comp
 L Connector_Generic:Conn_01x04 J11
 U 1 1 5FE96F39
-P 3700 1750
-F 0 "J11" H 3650 1950 50  0000 L CNN
-F 1 "J11" H 3650 1950 50  0001 L CNN
-F 2 "TSI_Rev_2021_Footprint_Lib:Molex_MiniFit-JR-5556-04A_2x02x4.20mm_Straight" H 3700 1750 50  0001 C CNN
-F 3 "~" H 3700 1750 50  0001 C CNN
-	1    3700 1750
+P 3900 1750
+F 0 "J11" H 3850 1950 50  0000 L CNN
+F 1 "J11" H 3850 1950 50  0001 L CNN
+F 2 "TSI_Rev_2021_Footprint_Lib:Molex_MiniFit-JR-5556-04A_2x02x4.20mm_Straight" H 3900 1750 50  0001 C CNN
+F 3 "~" H 3900 1750 50  0001 C CNN
+	1    3900 1750
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -730,21 +698,21 @@ Wire Wire Line
 	8350 750  8950 750 
 Wire Wire Line
 	8350 650  8950 650 
-Text Label 3000 1950 0    50   ~ 0
+Text Label 3200 1950 0    50   ~ 0
 24V_AMS_IN
 Wire Wire Line
-	3000 1750 3500 1750
+	3200 1750 3700 1750
 Wire Wire Line
-	3000 1650 3500 1650
+	3200 1650 3700 1650
 Wire Wire Line
-	3000 1950 3500 1950
+	3200 1950 3700 1950
 Wire Wire Line
-	3000 1850 3500 1850
-Text Label 3000 1850 0    50   ~ 0
+	3200 1850 3700 1850
+Text Label 3200 1850 0    50   ~ 0
 24V_AMS_RTN
 Text Label 8100 6100 0    50   ~ 0
 24V_AMS_RTN
-Text Label 7000 1600 2    50   ~ 0
+Text Label 7150 1600 2    50   ~ 0
 AMS_FAULT_LED
 Wire Wire Line
 	8100 5800 8850 5800
@@ -863,31 +831,31 @@ Wire Wire Line
 Wire Wire Line
 	700  3950 1550 3950
 Wire Wire Line
-	7000 1600 6300 1600
+	7150 1600 6450 1600
 Wire Wire Line
-	7000 1700 6300 1700
+	7150 1700 6450 1700
 Wire Wire Line
-	7000 1800 6300 1800
+	7150 1800 6450 1800
 Wire Wire Line
-	7000 1900 6300 1900
+	7150 1900 6450 1900
 Wire Wire Line
-	7000 2000 6300 2000
+	7150 2000 6450 2000
 Wire Wire Line
-	7000 2100 6300 2100
+	7150 2100 6450 2100
 Wire Wire Line
 	6900 800  7300 800 
 Wire Wire Line
-	5650 1600 4950 1600
+	5800 1600 5100 1600
 Wire Wire Line
-	5650 1700 4950 1700
+	5800 1700 5100 1700
 Wire Wire Line
-	5650 1800 4950 1800
+	5800 1800 5100 1800
 Wire Wire Line
-	4950 1900 5650 1900
+	5100 1900 5800 1900
 Wire Wire Line
-	4950 2000 5650 2000
+	5100 2000 5800 2000
 Wire Wire Line
-	4950 2100 5650 2100
+	5100 2100 5800 2100
 $Comp
 L Connector_Generic:Conn_01x02 J8
 U 1 1 61E4E7D1
@@ -926,28 +894,26 @@ F 3 "~" H 7450 650 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	5850 4200 7400 4200
-Text Label 5850 4200 0    50   ~ 0
+	5850 3850 7400 3850
+Text Label 5850 3850 0    50   ~ 0
 AIRS-
-Text Label 7400 4200 2    50   ~ 0
+Text Label 7400 3850 2    50   ~ 0
 GLV_RTN
 $Comp
 L Connector_Generic:Conn_01x08 J10
 U 1 1 622CF6CF
-P 2800 1950
-F 0 "J10" H 2750 2350 50  0000 L CNN
-F 1 "J10" H 2880 1851 50  0001 L CNN
-F 2 "TSI_Rev_2021_Footprint_Lib:Molex_MiniFit-JR-5556-08A_2x04x4.20mm_Straight" H 2800 1950 50  0001 C CNN
-F 3 "~" H 2800 1950 50  0001 C CNN
-	1    2800 1950
+P 2900 1950
+F 0 "J10" H 2850 2350 50  0000 L CNN
+F 1 "J10" H 2980 1851 50  0001 L CNN
+F 2 "TSI_Rev_2021_Footprint_Lib:Molex_MiniFit-JR-5556-08A_2x04x4.20mm_Straight" H 2900 1950 50  0001 C CNN
+F 3 "~" H 2900 1950 50  0001 C CNN
+	1    2900 1950
 	1    0    0    -1  
 $EndComp
-Text Label 2000 1650 0    50   ~ 0
+Text Label 2000 2250 0    50   ~ 0
 24V
-Wire Wire Line
-	2000 1650 2600 1650
-NoConn ~ 2600 2350
-Text Notes 2100 2400 0    50   ~ 0
+NoConn ~ 2700 2350
+Text Notes 2200 2450 0    50   ~ 0
 Dashboard\n
 Text Label 9100 1600 0    50   ~ 0
 SL1_Out
@@ -975,7 +941,7 @@ Wire Wire Line
 Wire Wire Line
 	9750 1900 9100 1900
 Text Label 9100 1800 0    47   ~ 0
-24V
+AIRS+
 Text Label 9100 1900 0    50   ~ 0
 Brake_Pressed
 Text Notes 9100 2100 0    50   ~ 0
@@ -1072,15 +1038,15 @@ $EndComp
 $Comp
 L pspice:CAP C19
 U 1 1 5FC05A30
-P 5300 5100
-F 0 "C19" H 5300 5200 50  0000 L CNN
-F 1 "0.1u" H 5300 5000 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5300 5100 50  0001 C CNN
-F 3 "~" H 5300 5100 50  0001 C CNN
-	1    5300 5100
+P 5650 5000
+F 0 "C19" H 5650 5100 50  0000 L CNN
+F 1 "0.1u" H 5650 4900 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5650 5000 50  0001 C CNN
+F 3 "~" H 5650 5000 50  0001 C CNN
+	1    5650 5000
 	1    0    0    -1  
 $EndComp
-Text Label 5750 5500 2    50   ~ 0
+Text Label 6100 5400 2    50   ~ 0
 GLV_RTN
 $Comp
 L power:PWR_FLAG #FLG0101
@@ -1263,7 +1229,7 @@ F24 "AMS_Status" O L 8850 5900 47
 F25 "AMS_Button_RTN" I L 8850 6000 50 
 F26 "24V_AMS_RTN" O L 8850 6100 50 
 F27 "Safety_Loop_EPAL" I R 10350 6100 50 
-F28 "Gen_Fault_EPAL" I R 10350 6200 50 
+F28 "GEN_FAULT_EPAL" I R 10350 6200 50 
 $EndSheet
 Wire Wire Line
 	3100 3850 3950 3850
@@ -1379,75 +1345,75 @@ Wire Wire Line
 Text Label 11100 6100 2    50   ~ 0
 Safety_Loop_EPAL
 Text Label 11100 6200 2    50   ~ 0
-Gen_Fault_EPAL
-Text Label 2000 2250 0    50   ~ 0
+GEN_FAULT_EPAL
+Text Label 2000 1750 0    50   ~ 0
 Safety_Loop_EPAL
-Text Label 2000 2050 0    50   ~ 0
-Gen_Fault_EPAL
+Text Label 2000 1850 0    50   ~ 0
+GEN_FAULT_EPAL
 Text Notes 4750 3050 0    59   ~ 0
 Easy access\nSDA & SCL pins
 Wire Wire Line
-	4700 4150 4700 4350
+	5050 4050 5050 4250
 $Comp
 L Device:R R65
 U 1 1 6052B3E9
-P 4700 4500
-F 0 "R65" H 4770 4546 50  0000 L CNN
-F 1 "10K" V 4700 4450 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4630 4500 50  0001 C CNN
-F 3 "~" H 4700 4500 50  0001 C CNN
-	1    4700 4500
+P 5050 4400
+F 0 "R65" H 5120 4446 50  0000 L CNN
+F 1 "10K" V 5050 4350 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4980 4400 50  0001 C CNN
+F 3 "~" H 5050 4400 50  0001 C CNN
+	1    5050 4400
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R80
 U 1 1 6052C161
-P 4700 4900
-F 0 "R80" H 4770 4946 50  0000 L CNN
-F 1 "1.6K" V 4700 4800 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4630 4900 50  0001 C CNN
-F 3 "~" H 4700 4900 50  0001 C CNN
-	1    4700 4900
+P 5050 4800
+F 0 "R80" H 5120 4846 50  0000 L CNN
+F 1 "1.6K" V 5050 4700 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4980 4800 50  0001 C CNN
+F 3 "~" H 5050 4800 50  0001 C CNN
+	1    5050 4800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4700 4750 4700 4700
-Connection ~ 4700 4700
+	5050 4650 5050 4600
+Connection ~ 5050 4600
 Wire Wire Line
-	4700 4700 4700 4650
+	5050 4600 5050 4550
 Wire Wire Line
-	4700 5500 4700 5400
-Text Label 4700 5150 2    50   ~ 0
+	5050 5400 5050 5300
+Text Label 5050 5050 2    50   ~ 0
 CoolTemp_In
-Text Label 4700 5500 0    47   ~ 0
+Text Label 5050 5400 0    47   ~ 0
 CoolTemp_RTN
 Wire Wire Line
-	4700 4700 5300 4700
+	5050 4600 5650 4600
 Wire Notes Line
-	4750 5200 4750 5400
+	5100 5100 5100 5300
 Wire Notes Line
-	4750 5400 4650 5400
+	5100 5300 5000 5300
 Wire Notes Line
-	4650 5400 4650 5200
+	5000 5300 5000 5100
 Wire Notes Line
-	4650 5200 4750 5200
+	5000 5100 5100 5100
 Wire Wire Line
-	4700 5050 4700 5200
-Text Notes 4650 5400 2    47   ~ 0
+	5050 4950 5050 5100
+Text Notes 5000 5300 2    47   ~ 0
 Cooling\nR1
 Text Label 550  3100 0    50   ~ 0
 CoolTemp_In
 Wire Wire Line
 	550  3100 1100 3100
 Wire Wire Line
-	4700 5500 5300 5500
+	5050 5400 5650 5400
 Wire Wire Line
-	5300 4850 5300 4700
+	5650 4750 5650 4600
 Wire Wire Line
-	5300 5500 5300 5350
-Connection ~ 5300 5500
+	5650 5400 5650 5250
+Connection ~ 5650 5400
 Wire Wire Line
-	5300 5500 5750 5500
+	5650 5400 6100 5400
 Text Label 4250 6500 0    50   ~ 0
 IO_Ground
 Text Label 4250 7000 0    50   ~ 0
@@ -1548,10 +1514,26 @@ Text Label 7450 850  0    49   ~ 0
 GLV_RTN
 Text Notes 7550 1450 0    50   ~ 0
 Battery Pack\nto TSI\n\n
-Text Label 5850 3550 0    50   ~ 0
+Text Label 5850 3450 0    50   ~ 0
 24V
-Text Label 7400 3550 2    50   ~ 0
+Text Label 7400 3450 2    50   ~ 0
 24V_AMS_IN
 Wire Wire Line
-	5850 3550 7400 3550
+	5850 3450 7400 3450
+Text Label 2000 1950 0    50   ~ 0
+TSAL_Cockpit
+Wire Wire Line
+	2000 1650 2700 1650
+Wire Wire Line
+	2000 1750 2700 1750
+Wire Wire Line
+	2000 1850 2700 1850
+Wire Wire Line
+	2000 1950 2700 1950
+Wire Wire Line
+	2000 2050 2700 2050
+Wire Wire Line
+	2000 2150 2700 2150
+Wire Wire Line
+	2000 2250 2700 2250
 $EndSCHEMATC
