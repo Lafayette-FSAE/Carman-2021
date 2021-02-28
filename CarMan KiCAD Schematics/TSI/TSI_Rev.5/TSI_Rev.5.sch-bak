@@ -47,13 +47,13 @@ Text Label 6200 950  0    50   ~ 0
 IMD_MHS
 Text Label 6200 650  0    50   ~ 0
 IMD_Status
-Text Label 5325 950  0    50   ~ 0
+Text Label 5275 950  0    50   ~ 0
 GLV_RTN
-Text Label 5325 850  0    50   ~ 0
+Text Label 5275 850  0    50   ~ 0
 GLV_RTN
-Text Label 5325 750  0    50   ~ 0
+Text Label 5275 750  0    50   ~ 0
 24V_IMD_IN
-Text Label 5325 650  0    50   ~ 0
+Text Label 5275 650  0    50   ~ 0
 GLV_RTN
 Text Label 700  6200 0    50   ~ 0
 IO_Ground
@@ -1520,14 +1520,6 @@ Brake_Pressed
 Text Label 7150 3700 2    50   ~ 0
 24V_IMD_IN
 Wire Wire Line
-	5325 750  5700 750 
-Wire Wire Line
-	5325 850  5700 850 
-Wire Wire Line
-	5325 950  5700 950 
-Wire Wire Line
-	5325 650  5700 650 
-Wire Wire Line
 	6200 950  6600 950 
 Wire Wire Line
 	6600 650  6200 650 
@@ -1538,4 +1530,12 @@ Wire Wire Line
 Connection ~ 6900 800 
 Wire Wire Line
 	6900 800  6900 950 
+Wire Wire Line
+	5275 750  5700 750 
+Wire Wire Line
+	5275 850  5700 850 
+Wire Wire Line
+	5275 950  5700 950 
+Wire Wire Line
+	5275 650  5700 650 
 $EndSCHEMATC
