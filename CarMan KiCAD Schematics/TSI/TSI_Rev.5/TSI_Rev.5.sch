@@ -615,20 +615,20 @@ Wire Wire Line
 Wire Wire Line
 	5850 3750 7400 3750
 Wire Wire Line
-	5850 3950 7400 3950
-Text Label 5850 3950 0    50   ~ 0
+	5853 3985 7403 3985
+Text Label 5853 3985 0    50   ~ 0
 SCL_uC
-Text Label 7400 3950 2    50   ~ 0
+Text Label 7403 3985 2    50   ~ 0
 SCL_TSI
-Text Label 6550 3950 0    50   ~ 0
+Text Label 6553 3985 0    50   ~ 0
 SCL
 Wire Wire Line
-	5850 4050 7400 4050
-Text Label 5850 4050 0    50   ~ 0
+	5853 4085 7403 4085
+Text Label 5853 4085 0    50   ~ 0
 SDA_uC
-Text Label 6550 4050 0    50   ~ 0
+Text Label 6553 4085 0    50   ~ 0
 SDA
-Text Label 7400 4050 2    50   ~ 0
+Text Label 7403 4085 2    50   ~ 0
 SDA_TSI
 Text Label 700  6000 0    50   ~ 0
 IGNI_VCC
