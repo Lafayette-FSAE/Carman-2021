@@ -643,73 +643,31 @@ Wire Wire Line
 Text Notes 9900 6100 0    47   ~ 0
 Gate Voltage\ntoo high?
 Wire Wire Line
-	1950 10250 2300 10250
-Wire Wire Line
-	1250 8850 1250 9650
-Wire Wire Line
-	550  8850 1250 8850
-Connection ~ 1250 8850
-Wire Wire Line
-	1250 8250 1250 8850
-Text Label 550  8850 0    50   ~ 0
-IMD_Button_RTN
-Text Label 1700 9250 0    50   ~ 0
+	2025 10225 2375 10225
+Text Label 1775 9225 0    50   ~ 0
 24V
 Wire Wire Line
-	2300 9250 1700 9250
+	2375 9225 1775 9225
 Wire Wire Line
-	1250 9650 2300 9650
-Wire Wire Line
-	4700 9750 4100 9750
-Text Label 4700 9750 2    50   ~ 0
+	4775 9725 4175 9725
+Text Label 4775 9725 2    50   ~ 0
 IMD_Status
-Wire Wire Line
-	1250 8250 2250 8250
-Wire Wire Line
-	2250 8250 2300 8250
-Connection ~ 2250 8250
-Wire Wire Line
-	2250 7600 2250 8250
-Wire Wire Line
-	4100 7600 4100 8250
-Wire Wire Line
-	3350 7600 4100 7600
-NoConn ~ 2350 8850
-NoConn ~ 4100 8550
-Wire Wire Line
-	4600 8250 4100 8250
-Wire Wire Line
-	2250 7600 3050 7600
-$Comp
-L Diode:1N4001 D9
-U 1 1 5FB7BA94
-P 3200 7600
-F 0 "D9" H 3150 7500 50  0000 L CNN
-F 1 "1N4001" H 3050 7700 50  0000 L CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal" H 3200 7425 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 3200 7600 50  0001 C CNN
-	1    3200 7600
-	1    0    0    -1  
-$EndComp
-Connection ~ 4100 8250
 $Comp
 L CarMan_KiCAD_Library:SFS2-DC24V K3
 U 1 1 6014EB6D
-P 3200 9350
-F 0 "K3" H 3200 10800 60  0000 C CNN
-F 1 "SFS2-DC24V" H 3200 8100 60  0000 C CNN
-F 2 "TSI_Rev_2021_Footprint_Lib:SFS2-DC24V" H 4100 9690 60  0001 C CNN
-F 3 "" H 3200 9350 60  0000 C CNN
-	1    3200 9350
+P 3275 9325
+F 0 "K3" H 3275 10775 60  0000 C CNN
+F 1 "SFS2-DC24V" H 3275 8075 60  0000 C CNN
+F 2 "TSI_Rev_2021_Footprint_Lib:SFS2-DC24V" H 4175 9665 60  0001 C CNN
+F 3 "" H 3275 9325 60  0000 C CNN
+	1    3275 9325
 	1    0    0    -1  
 $EndComp
 Text Notes 4000 7200 2    197  ~ 0
 IMD Relay
-Text Label 1950 10250 0    50   ~ 0
+Text Label 2025 10225 0    50   ~ 0
 SL1_In
-Text Label 4600 8250 2    50   ~ 0
-GLV_RTN
-Text Label 4700 8950 2    50   ~ 0
+Text Label 4775 8925 2    50   ~ 0
 IMD_FAULT_LED
 Text Notes 9050 7300 2    197  ~ 0
 AMS Relay
@@ -731,13 +689,13 @@ Text Label 2050 10950 0    50   ~ 0
 IMD_Button_RTN
 Text Notes 3100 11050 0    68   ~ 0
 IMD Button \nNote
-Text Label 4700 10350 2    50   ~ 0
+Text Label 4775 10325 2    50   ~ 0
 SL1_IMD_Out
 Wire Wire Line
-	4100 10350 4700 10350
+	4175 10325 4775 10325
 Wire Wire Line
-	4100 8950 4900 8950
-Text Notes 4650 8850 0    68   ~ 0
+	4175 8925 4975 8925
+Text Notes 4725 8825 0    68   ~ 0
 Dashboard\n
 Text HLabel 15200 2700 2    50   Output ~ 0
 AMS_Status
@@ -797,7 +755,7 @@ Wire Wire Line
 Wire Wire Line
 	9600 8200 9100 8200
 NoConn ~ 9100 8500
-NoConn ~ 7350 8800
+NoConn ~ 7300 8800
 Wire Wire Line
 	8350 7550 9100 7550
 Wire Wire Line
@@ -833,13 +791,13 @@ Goes to \nBOT Switch
 Text Label 9700 8900 2    50   ~ 0
 AMS_FAULT_LED
 Wire Notes Line
-	4800 8850 4800 9050
+	4875 8825 4875 9025
 Wire Notes Line
-	4800 9050 5000 9050
+	4875 9025 5075 9025
 Wire Notes Line
-	5000 9050 5000 8850
+	5075 9025 5075 8825
 Wire Notes Line
-	5000 8850 4800 8850
+	5075 8825 4875 8825
 Wire Wire Line
 	9100 8900 9900 8900
 Text Notes 9650 8800 0    68   ~ 0
@@ -1214,4 +1172,46 @@ Wire Wire Line
 	3650 4700 4350 4700
 Text HLabel 15200 2600 2    50   Output ~ 0
 24V_AMS_RTN
+NoConn ~ 2375 8825
+NoConn ~ 4175 8525
+Wire Wire Line
+	1325 8825 1325 9625
+Wire Wire Line
+	625  8825 1325 8825
+Connection ~ 1325 8825
+Wire Wire Line
+	1325 8225 1325 8825
+Text Label 625  8825 0    50   ~ 0
+IMD_Button_RTN
+Wire Wire Line
+	1325 9625 2375 9625
+Wire Wire Line
+	1325 8225 2325 8225
+Wire Wire Line
+	2325 8225 2375 8225
+Connection ~ 2325 8225
+Wire Wire Line
+	2325 7575 2325 8225
+Wire Wire Line
+	4175 7575 4175 8225
+Wire Wire Line
+	3425 7575 4175 7575
+Wire Wire Line
+	4675 8225 4175 8225
+Wire Wire Line
+	2325 7575 3125 7575
+$Comp
+L Diode:1N4001 D9
+U 1 1 5FB7BA94
+P 3275 7575
+F 0 "D9" H 3225 7475 50  0000 L CNN
+F 1 "1N4001" H 3125 7675 50  0000 L CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal" H 3275 7400 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 3275 7575 50  0001 C CNN
+	1    3275 7575
+	1    0    0    -1  
+$EndComp
+Text Label 4675 8225 2    50   ~ 0
+GLV_RTN
+Connection ~ 4175 8225
 $EndSCHEMATC

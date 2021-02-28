@@ -573,7 +573,7 @@ U 1 1 5FCE8608
 P 8150 850
 F 0 "J6" H 8100 1150 50  0000 L CNN
 F 1 "J6" H 8230 751 50  0001 L CNN
-F 2 "TSI_Rev_2021_Footprint_Lib:Molex_MiniFit-JR-5556-04A_2x03x4.20mm_Straight" H 8150 850 50  0001 C CNN
+F 2 "TSI_Rev_2021_Footprint_Lib:Molex_MiniFit-JR-5556-06A_2x03x4.20mm_Straight" H 8150 850 50  0001 C CNN
 F 3 "~" H 8150 850 50  0001 C CNN
 	1    8150 850 
 	1    0    0    -1  
