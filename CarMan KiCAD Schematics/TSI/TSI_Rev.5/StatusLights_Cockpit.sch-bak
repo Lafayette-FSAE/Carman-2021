@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 6
+Sheet 6 6
 Title ""
 Date ""
 Rev ""
@@ -370,20 +370,8 @@ F 3 "~" H 4450 3600 50  0001 C CNN
 	1    4450 3600
 	0    1    1    0   
 $EndComp
-Wire Notes Line
-	2950 4000 2950 4200
-Wire Notes Line
-	3500 4000 2950 4000
-Wire Notes Line
-	3500 4200 3500 4000
-Wire Notes Line
-	2950 4300 3500 4300
-Text Notes 3000 4250 0    47   ~ 0
-Change \ngate voltage\n
 Wire Wire Line
-	5100 4550 5100 4750
-Wire Wire Line
-	5100 4750 6150 4750
+	5100 4725 6150 4725
 Wire Wire Line
 	4450 3900 4800 3900
 $Comp
@@ -393,7 +381,7 @@ P 5000 3900
 AR Path="/6196BF15/5FC93215" Ref="Q?"  Part="1" 
 AR Path="/5FE1DCBA/5FC93215" Ref="Q3"  Part="1" 
 F 0 "Q3" H 5204 3854 50  0000 L CNN
-F 1 "DMP3030SN-7" H 5204 3945 50  0000 L CNN
+F 1 "ZVP1320F" H 5204 3945 50  0000 L CNN
 F 2 "TSI_Rev_2021_Footprint_Lib:SOT23" H 5200 4000 50  0001 C CNN
 F 3 "https://www.snapeda.com/parts/ZVP1320FTA/Diodes%20Inc./datasheet/" H 5000 3900 50  0001 C CNN
 	1    5000 3900
@@ -403,25 +391,23 @@ Wire Wire Line
 	3050 4100 2850 4100
 Wire Wire Line
 	2250 3900 2050 3900
-Text Notes 5200 3800 0    50   ~ 0
-0.2A Id *CHECK THIS FET, specifications\n are likely not correct.\n Placeholder transistor*
-Text Notes 6500 4450 2    50   ~ 0
-STA20502 RTDS BUZZER (.6A MAX)\n
+Text Notes 6675 4500 2    50   ~ 0
+STA20502 RTDS BUZZER (.6A MAX)\n3/1/21 - Pulsed at max of 90mA\n
 Wire Notes Line
-	5100 4500 5100 4550
+	5100 4575 5100 4625
 Wire Notes Line
-	5050 4300 5150 4300
+	5050 4375 5150 4375
 Wire Notes Line
-	5050 4500 5050 4300
+	5050 4575 5050 4375
 Wire Notes Line
-	5150 4500 5050 4500
+	5150 4575 5050 4575
 Wire Notes Line
-	5150 4300 5150 4500
+	5150 4375 5150 4575
 Wire Notes Line
-	5100 4250 5100 4300
-Text Label 5550 4750 2    50   ~ 0
+	5100 4325 5100 4375
+Text Label 5550 4725 2    50   ~ 0
 GLV_RTN
-Text Label 6150 4750 2    50   ~ 0
+Text Label 6150 4725 2    50   ~ 0
 RTDS_RTN
 Text Label 5350 4250 0    50   ~ 0
 RTDS
@@ -558,4 +544,9 @@ Wire Wire Line
 	5000 7000 5600 7000
 Text Label 5600 7200 2    50   ~ 0
 GLV_RTN
+Wire Wire Line
+	5100 4250 5100 4325
+Connection ~ 5100 4250
+Wire Wire Line
+	5100 4625 5100 4725
 $EndSCHEMATC

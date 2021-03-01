@@ -315,30 +315,20 @@ Text Label 3950 3850 2    50   ~ 0
 APPS1
 Text Label 8100 5700 0    50   ~ 0
 MRESET_Contact
-Wire Wire Line
-	6675 2900 6975 2900
-Wire Wire Line
-	6675 3000 6975 3000
-Text Label 6675 2900 2    50   ~ 0
+Text Label 6275 2900 0    50   ~ 0
 CAN+_Logic
-Text Label 6975 2900 0    50   ~ 0
+Text Label 7300 2900 2    50   ~ 0
 BP_CAN+
-Text Label 6975 3000 0    50   ~ 0
+Text Label 7300 3000 2    50   ~ 0
 BP_CAN-
-Text Label 6675 3000 2    50   ~ 0
+Text Label 6275 3000 0    50   ~ 0
 CAN-_Logic
 Text Notes 9550 1000 0    50   ~ 0
 TSI to Cooling\nSubsystem
-Text Notes 6575 2750 0    50   ~ 0
+Text Notes 6550 2775 0    50   ~ 0
 Battery Pack\nCAN Lines\n
 Wire Notes Line
 	6175 3050 7375 3050
-Wire Notes Line
-	7375 2550 6175 2550
-Wire Notes Line
-	6175 2550 6175 3050
-Wire Notes Line
-	7375 2550 7375 3050
 Text Label 2000 1650 0    50   ~ 0
 GLV_RTN
 Wire Notes Line
@@ -1530,4 +1520,14 @@ Text Notes 9875 4025 2    50   ~ 0
 LOW VOLTAGE\n\n\n
 Text Notes 9900 4000 2    50   ~ 0
 HIGH VOLTAGE
+Wire Wire Line
+	6275 3000 7300 3000
+Wire Wire Line
+	6275 2900 7300 2900
+Wire Notes Line
+	7375 2575 7375 3050
+Wire Notes Line
+	6175 2575 7375 2575
+Wire Notes Line
+	6175 2575 6175 3050
 $EndSCHEMATC

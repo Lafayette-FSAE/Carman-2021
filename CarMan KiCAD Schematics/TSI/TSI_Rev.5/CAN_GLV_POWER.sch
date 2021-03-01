@@ -223,12 +223,8 @@ Text Notes 7750 4000 2    89   ~ 0
 3.3V REGULATOR
 Text Notes 12900 10500 0    177  ~ 0
 Cooling, Relays \nand Voltage Refs\n
-Text Label 12150 6900 0    50   ~ 0
+Text Label 12600 6400 0    50   ~ 0
 SR_CTRL
-Text Label 15100 7100 2    50   ~ 0
-GLV_RTN
-Text Label 15100 6900 2    50   ~ 0
-SR_CTRL_Boosted
 $Comp
 L Device:D_Schottky D3
 U 1 1 5FB8F043
@@ -324,35 +320,33 @@ Wire Notes Line
 	4000 5700 2250 5700
 Wire Notes Line
 	2250 3950 4000 3950
-Text Label 12150 7100 0    50   ~ 0
+Text Label 12600 6600 0    50   ~ 0
 5V_ISO_RTN
-Wire Wire Line
-	13950 6900 14150 6900
 $Comp
 L TSI_Rev.5-rescue:TLP293-CarMan_KiCAD_Library-TSI_Rev.5-rescue U49
 U 1 1 5FA61B5B
-P 13650 7000
-F 0 "U49" H 13650 7200 50  0000 C CNN
-F 1 "TLP293" H 13650 6800 50  0000 C CNN
-F 2 "Package_SO:SOIC-4_4.55x2.6mm_P1.27mm" H 13450 6800 50  0001 L CIN
-F 3 "" H 13650 7000 50  0001 L CNN
-	1    13650 7000
+P 14100 6500
+F 0 "U49" H 14100 6700 50  0000 C CNN
+F 1 "TLP293" H 14100 6300 50  0000 C CNN
+F 2 "Package_SO:SOIC-4_4.55x2.6mm_P1.27mm" H 13900 6300 50  0001 L CIN
+F 3 "" H 14100 6500 50  0001 L CNN
+	1    14100 6500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	13350 6900 13150 6900
+	13800 6400 13600 6400
 $Comp
 L Device:R R92
 U 1 1 5FA61B65
-P 13000 6900
-F 0 "R92" V 12900 6900 50  0000 C CNN
-F 1 "120" V 13000 6900 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 12930 6900 50  0001 C CNN
-F 3 "~" H 13000 6900 50  0001 C CNN
-	1    13000 6900
+P 13450 6400
+F 0 "R92" V 13350 6400 50  0000 C CNN
+F 1 "120" V 13450 6400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 13380 6400 50  0001 C CNN
+F 3 "~" H 13450 6400 50  0001 C CNN
+	1    13450 6400
 	0    1    1    0   
 $EndComp
-Text Notes 14050 7700 0    50   ~ 0
+Text Notes 14100 7700 0    50   ~ 0
 SCADA Relay\n
 $Comp
 L Device:Q_NMOS_GDS Q11
@@ -361,7 +355,7 @@ P 13650 9150
 F 0 "Q11" H 13854 9196 50  0000 L CNN
 F 1 "TN2130K1-G" H 13854 9105 50  0000 L CNN
 F 2 "TSI_Rev_2021_Footprint_Lib:SOT95P237X112-3N" H 13850 9250 50  0001 C CNN
-F 3 "~" H 13650 9150 50  0001 C CNN
+F 3 "https://ww1.microchip.com/downloads/en/DeviceDoc/TN2130-N-Channel-Enhancement-Mode-Vertical-DMOS-FET-Data-Sheet-20005944B.pdf" H 13650 9150 50  0001 C CNN
 	1    13650 9150
 	1    0    0    -1  
 $EndComp
@@ -436,8 +430,6 @@ Wire Wire Line
 	13750 8550 14000 8550
 Text Label 15000 8550 0    50   ~ 0
 24V
-Text Notes 13650 8550 0    49   ~ 10
-16.7 mA
 Wire Wire Line
 	14500 8850 14700 8850
 Wire Wire Line
@@ -564,35 +556,24 @@ Text HLabel 15200 900  2    50   Output ~ 0
 $Comp
 L Device:R R52
 U 1 1 5FC2D02C
-P 14150 6600
-F 0 "R52" H 14220 6646 50  0000 L CNN
-F 1 "1K" H 14250 6550 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 14080 6600 50  0001 C CNN
-F 3 "~" H 14150 6600 50  0001 C CNN
-	1    14150 6600
+P 14525 6750
+F 0 "R52" H 14595 6796 50  0000 L CNN
+F 1 "1K" V 14525 6700 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 14455 6750 50  0001 C CNN
+F 3 "~" H 14525 6750 50  0001 C CNN
+	1    14525 6750
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	14150 6900 14150 6750
-Connection ~ 14150 6900
-Wire Wire Line
-	14150 6300 14150 6450
-Text Label 14150 6300 0    68   ~ 0
+Text Label 15350 6400 2    68   ~ 0
 5V
 Wire Wire Line
-	14150 6900 15100 6900
+	12600 6600 13800 6600
 Wire Wire Line
-	13950 7100 15100 7100
-Wire Wire Line
-	12150 7100 13350 7100
-Wire Wire Line
-	12150 6900 12850 6900
+	12600 6400 13300 6400
 Wire Wire Line
 	3350 1050 3850 1050
 Wire Wire Line
 	3350 1250 4350 1250
-Text Notes 13750 6650 0    47   ~ 0
-Pull up \nResistor
 $Comp
 L Device:R R57
 U 1 1 5FD164DD
@@ -632,8 +613,6 @@ Wire Wire Line
 	13600 9550 13450 9550
 Wire Wire Line
 	12350 9150 13150 9150
-Text Notes 12450 9350 0    47   ~ 0
-Gate Voltage\ntoo high?
 Text Label 4625 9300 2    50   ~ 0
 IMD_Status
 Text Notes 3750 7225 2    197  ~ 0
@@ -948,7 +927,7 @@ Wire Wire Line
 	4050 2850 4950 2850
 Wire Notes Line
 	2950 650  2950 3250
-Text Label 11150 2150 2    50   ~ 0
+Text Label 11225 2375 2    50   ~ 0
 MRESET_Contact
 Text HLabel 14950 3550 0    50   Input ~ 0
 Safety_Loop_EPAL
@@ -957,8 +936,6 @@ GEN_FAULT_EPAL
 Text Label 15800 3550 2    50   ~ 0
 Safety_Loop_EPAL
 Text Label 15800 3650 2    50   ~ 0
-GEN_FAULT_EPAL
-Text Label 12350 2350 0    50   ~ 0
 GEN_FAULT_EPAL
 Wire Notes Line
 	16000 3700 14150 3700
@@ -975,58 +952,35 @@ Safety_Loop_EPAL
 $Comp
 L TSI_Rev.5-rescue:TLP293-CarMan_KiCAD_Library-TSI_Rev.5-rescue U20
 U 1 1 6012F5F3
-P 11850 2250
-F 0 "U20" H 11850 2450 50  0000 C CNN
-F 1 "TLP293" H 11850 2050 50  0000 C CNN
-F 2 "Package_SO:SOIC-4_4.55x2.6mm_P1.27mm" H 11650 2050 50  0001 L CIN
-F 3 "https://www.mouser.com/ProductDetail/Toshiba/TLP293GB-TPLE/?qs=OLJpxlzHOSSc5RAOktTSWw%3D%3D" H 11850 2250 50  0001 L CNN
-	1    11850 2250
+P 11925 2475
+F 0 "U20" H 11925 2675 50  0000 C CNN
+F 1 "TLP293" H 11925 2275 50  0000 C CNN
+F 2 "Package_SO:SOIC-4_4.55x2.6mm_P1.27mm" H 11725 2275 50  0001 L CIN
+F 3 "https://www.mouser.com/ProductDetail/Toshiba/TLP293GB-TPLE/?qs=OLJpxlzHOSSc5RAOktTSWw%3D%3D" H 11925 2475 50  0001 L CNN
+	1    11925 2475
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R25
 U 1 1 60131E61
-P 11400 2150
-F 0 "R25" V 11300 2150 50  0000 C CNN
-F 1 "2.4K" V 11400 2150 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 11330 2150 50  0001 C CNN
-F 3 "~" H 11400 2150 50  0001 C CNN
-	1    11400 2150
+P 11475 2375
+F 0 "R25" V 11375 2375 50  0000 C CNN
+F 1 "2.4K" V 11475 2375 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 11405 2375 50  0001 C CNN
+F 3 "~" H 11475 2375 50  0001 C CNN
+	1    11475 2375
 	0    1    1    0   
 $EndComp
-$Comp
-L Device:R R61
-U 1 1 601328F4
-P 12150 2500
-F 0 "R61" V 12250 2400 50  0000 L CNN
-F 1 "2.4K" V 12150 2400 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 12080 2500 50  0001 C CNN
-F 3 "~" H 12150 2500 50  0001 C CNN
-	1    12150 2500
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	11250 2150 11150 2150
+	11325 2375 11225 2375
 Wire Wire Line
-	12150 2150 12350 2150
-Wire Wire Line
-	12150 2650 12150 2700
-Wire Wire Line
-	12150 2350 12350 2350
-Connection ~ 12150 2350
-Text Label 12350 2150 0    50   ~ 0
-24V
-Text Label 12150 2850 2    50   ~ 0
+	12225 2575 12300 2575
+Text Label 12100 2925 2    50   ~ 0
 GLV_RTN
 Wire Wire Line
-	11550 2350 11500 2350
+	11625 2575 11575 2575
 Wire Wire Line
-	11500 2350 11500 2700
-Wire Wire Line
-	11500 2700 12150 2700
-Connection ~ 12150 2700
-Wire Wire Line
-	12150 2700 12150 2850
+	11575 2575 11575 2925
 $Comp
 L Connector_Generic:Conn_01x02 J?
 U 1 1 601DA5ED
@@ -1073,8 +1027,6 @@ Wire Notes Line
 	12050 9850 15950 9850
 Text Notes 15200 5800 2    197  ~ 0
 SCADA Relay
-Wire Notes Line
-	15950 5500 15950 9850
 Wire Notes Line
 	12050 5500 12050 9850
 Wire Notes Line
@@ -1211,4 +1163,47 @@ Wire Wire Line
 	14950 3550 15800 3550
 Wire Wire Line
 	14950 3650 15800 3650
+$Comp
+L Device:R R61
+U 1 1 601328F4
+P 12350 2150
+F 0 "R61" V 12450 2050 50  0000 L CNN
+F 1 "960" V 12350 2050 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 12280 2150 50  0001 C CNN
+F 3 "~" H 12350 2150 50  0001 C CNN
+	1    12350 2150
+	1    0    0    -1  
+$EndComp
+Text Label 12350 2000 0    50   ~ 0
+24V
+Text Label 13100 2375 2    50   ~ 0
+GEN_FAULT_EPAL
+Wire Wire Line
+	12225 2375 12350 2375
+Wire Wire Line
+	12350 2375 12350 2300
+Connection ~ 12350 2375
+Wire Wire Line
+	12350 2375 13100 2375
+Wire Wire Line
+	12300 2575 12300 2925
+Wire Wire Line
+	11575 2925 12300 2925
+Text Notes 12450 2575 0    51   ~ 0
+25mA passed to EPAL when\nMRESET_CONTACT is low
+Wire Notes Line
+	15950 5500 15950 9850
+Wire Wire Line
+	14400 6600 14525 6600
+Text Label 15350 6600 2    50   ~ 0
+SR_CTRL_Boosted
+Connection ~ 14525 6600
+Wire Wire Line
+	14525 6600 15350 6600
+Text Label 15350 6900 2    50   ~ 0
+GLV_RTN
+Wire Wire Line
+	14525 6900 15350 6900
+Wire Wire Line
+	14400 6400 15350 6400
 $EndSCHEMATC
