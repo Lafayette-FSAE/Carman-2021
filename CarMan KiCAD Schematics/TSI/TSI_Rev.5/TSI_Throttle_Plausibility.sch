@@ -1959,4 +1959,6 @@ Wire Wire Line
 	1600 3100 1800 3100
 Text HLabel 1800 3100 2    50   Output ~ 0
 Brake_Light_RTN
+Text Notes 14350 4000 0    51   ~ 0
+A relay that is controlled by\nThrottle_SEL. Pin 1 shorted to\npin 4 when pin 6 HIGH
 $EndSCHEMATC
