@@ -1028,14 +1028,10 @@ Text HLabel 14950 3550 0    50   Input ~ 0
 Safety_Loop_EPAL
 Text HLabel 14950 3650 0    50   Input ~ 0
 GEN_FAULT_EPAL
-Text Label 15250 3550 0    50   ~ 0
+Text Label 15700 3550 2    50   ~ 0
 Safety_Loop_EPAL
-Text Label 15250 3650 0    50   ~ 0
+Text Label 15700 3650 2    50   ~ 0
 GEN_FAULT_EPAL
-Wire Wire Line
-	14950 3550 15250 3550
-Wire Wire Line
-	14950 3650 15250 3650
 Text Label 15100 5150 0    50   ~ 0
 GEN_FAULT_EPAL
 Wire Notes Line
@@ -1173,4 +1169,8 @@ Text Notes 2425 7725 0    79   ~ 0
 SFS2-DC24 has built in diode\nacross power terminals
 Text Notes 7275 7750 0    79   ~ 0
 SFS2-DC24 has built in diode\nacross power terminals
+Wire Wire Line
+	14950 3550 15700 3550
+Wire Wire Line
+	14950 3650 15700 3650
 $EndSCHEMATC
