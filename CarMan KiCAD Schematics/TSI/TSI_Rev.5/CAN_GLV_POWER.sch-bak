@@ -738,35 +738,10 @@ F 3 "" H 8200 9300 60  0000 C CNN
 	1    8200 9300
 	1    0    0    -1  
 $EndComp
-Connection ~ 9100 8200
-$Comp
-L Diode:1N4001 D5
-U 1 1 5FC41161
-P 8200 7550
-F 0 "D5" H 8150 7450 50  0000 L CNN
-F 1 "1N4001" H 8050 7650 50  0000 L CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal" H 8200 7375 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 8200 7550 50  0001 C CNN
-	1    8200 7550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7250 7550 8050 7550
 Wire Wire Line
 	9600 8200 9100 8200
 NoConn ~ 9100 8500
 NoConn ~ 7300 8800
-Wire Wire Line
-	8350 7550 9100 7550
-Wire Wire Line
-	9100 7550 9100 8200
-Wire Wire Line
-	7250 7550 7250 8200
-Connection ~ 7250 8200
-Wire Wire Line
-	7250 8200 7300 8200
-Wire Wire Line
-	6250 8200 7250 8200
 Text Label 9700 9700 2    50   ~ 0
 AMS_Status
 Wire Wire Line
@@ -1187,32 +1162,15 @@ IMD_Button_RTN
 Wire Wire Line
 	1325 9625 2375 9625
 Wire Wire Line
-	1325 8225 2325 8225
-Wire Wire Line
-	2325 8225 2375 8225
-Connection ~ 2325 8225
-Wire Wire Line
-	2325 7575 2325 8225
-Wire Wire Line
-	4175 7575 4175 8225
-Wire Wire Line
-	3425 7575 4175 7575
-Wire Wire Line
 	4675 8225 4175 8225
-Wire Wire Line
-	2325 7575 3125 7575
-$Comp
-L Diode:1N4001 D9
-U 1 1 5FB7BA94
-P 3275 7575
-F 0 "D9" H 3225 7475 50  0000 L CNN
-F 1 "1N4001" H 3125 7675 50  0000 L CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal" H 3275 7400 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 3275 7575 50  0001 C CNN
-	1    3275 7575
-	1    0    0    -1  
-$EndComp
 Text Label 4675 8225 2    50   ~ 0
 GLV_RTN
-Connection ~ 4175 8225
+Wire Wire Line
+	6250 8200 7300 8200
+Wire Wire Line
+	1325 8225 2375 8225
+Text Notes 2425 7725 0    79   ~ 0
+SFS2-DC24 has built in diode\nacross power terminals
+Text Notes 7275 7750 0    79   ~ 0
+SFS2-DC24 has built in diode\nacross power terminals
 $EndSCHEMATC

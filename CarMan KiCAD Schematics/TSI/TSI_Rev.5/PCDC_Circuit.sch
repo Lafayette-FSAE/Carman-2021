@@ -672,7 +672,7 @@ $EndComp
 Wire Wire Line
 	5400 7150 5250 7150
 Text Label 4200 7150 0    59   ~ 0
-Brake_Pressed
+BRAKE_OUT
 Text Label 4200 7350 0    59   ~ 0
 GLV_RTN
 Wire Notes Line
@@ -1087,7 +1087,7 @@ Text Label 1950 6150 2    50   ~ 0
 Text Label 1950 6650 2    50   ~ 0
 Safety_Loop
 Text Label 1950 6750 2    50   ~ 0
-Brake_Pressed
+BRAKE_OUT
 Text Label 1950 6350 2    50   ~ 0
 3.3V
 Text Label 1950 6250 2    50   ~ 0
@@ -1103,7 +1103,7 @@ Text HLabel 1250 6150 0    50   Input ~ 0
 Text HLabel 1250 6250 0    50   Input ~ 0
 5V
 Text HLabel 1250 6750 0    50   Input ~ 0
-Brake_Pressed
+BRAKE_OUT
 Text Label 1950 6550 2    50   ~ 0
 GLV_RTN
 Text Label 1950 6450 2    50   ~ 0
@@ -1693,4 +1693,6 @@ Wire Wire Line
 	2850 2650 3700 2650
 Wire Wire Line
 	9850 4250 10250 4250
+Text Notes 4700 7550 0    51   ~ 0
+If car brake is pressed,\niso conducts
 $EndSCHEMATC
