@@ -638,7 +638,7 @@ Text Label 4625 9300 2    50   ~ 0
 IMD_Status
 Text Notes 3750 7225 2    197  ~ 0
 IMD Relay
-Text Notes 9050 7425 2    197  ~ 0
+Text Notes 9000 7225 2    197  ~ 0
 AMS Relay
 Text Label 4050 10775 2    50   ~ 0
 IMD_Status
@@ -668,45 +668,40 @@ Wire Wire Line
 	14450 2400 15200 2400
 Wire Wire Line
 	14450 2200 15200 2200
-Text Label 15700 2950 2    50   ~ 0
+Text Label 15800 2950 2    50   ~ 0
 12V_Cooling
-Text Label 9600 8325 2    50   ~ 0
+Text Label 9600 7925 2    50   ~ 0
 GLV_RTN
-Text Label 9700 10425 2    50   ~ 0
+Text Label 9700 10025 2    50   ~ 0
 SL1_Out
 $Comp
 L CarMan_KiCAD_Library:SFS2-DC24V K4
 U 1 1 5FC41168
-P 8200 9425
-F 0 "K4" H 8200 10875 60  0000 C CNN
-F 1 "SFS2-DC24V" H 8200 8175 60  0000 C CNN
-F 2 "TSI_Rev_2021_Footprint_Lib:SFS2-DC24V" H 9100 9765 60  0001 C CNN
-F 3 "" H 8200 9425 60  0000 C CNN
-	1    8200 9425
+P 8200 9025
+F 0 "K4" H 8200 10475 60  0000 C CNN
+F 1 "SFS2-DC24V" H 8200 7775 60  0000 C CNN
+F 2 "TSI_Rev_2021_Footprint_Lib:SFS2-DC24V" H 9100 9365 60  0001 C CNN
+F 3 "" H 8200 9025 60  0000 C CNN
+	1    8200 9025
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9600 8325 9100 8325
-NoConn ~ 9100 8625
-NoConn ~ 7300 8925
-Text Label 9700 9825 2    50   ~ 0
+	9600 7925 9100 7925
+NoConn ~ 9100 8225
+NoConn ~ 7300 8525
+Text Label 9700 9425 2    50   ~ 0
 AMS_Status
-Wire Wire Line
-	6250 9725 7300 9725
-Text Label 5550 8925 0    50   ~ 0
+Text Label 5875 8625 0    50   ~ 0
 AMS_Button_RTN
-Connection ~ 6250 8925
 Wire Wire Line
-	5550 8925 6250 8925
-Wire Wire Line
-	6250 8925 6250 9725
-Text Label 6700 10325 0    50   ~ 0
+	5875 8625 6575 8625
+Text Label 6700 9925 0    50   ~ 0
 SL1_IMD_Out
 Wire Wire Line
-	9700 10425 9100 10425
-Text Notes 9800 10475 0    68   ~ 0
+	9700 10025 9100 10025
+Text Notes 9800 10075 0    68   ~ 0
 Goes to \nBOT Switch
-Text Label 9700 9025 2    50   ~ 0
+Text Label 9700 8625 2    50   ~ 0
 AMS_FAULT_LED
 Wire Notes Line
 	4725 8400 4725 8600
@@ -717,35 +712,35 @@ Wire Notes Line
 Wire Notes Line
 	4925 8400 4725 8400
 Wire Wire Line
-	9100 9025 9900 9025
-Text Notes 9650 8925 0    68   ~ 0
+	9100 8625 9900 8625
+Text Notes 9650 8525 0    68   ~ 0
 Dashboard\n
 Wire Notes Line
-	9800 8925 9800 9125
+	9800 8525 9800 8725
 Wire Notes Line
-	9800 9125 10000 9125
+	9800 8725 10000 8725
 Wire Notes Line
-	10000 9125 10000 8925
+	10000 8725 10000 8525
 Wire Notes Line
-	10000 8925 9800 8925
-Text Label 7300 11025 0    50   ~ 0
+	10000 8525 9800 8525
+Text Label 7225 10800 0    50   ~ 0
 AMS_Button_RTN
-Text Notes 8000 10875 0    50   ~ 0
+Text Notes 7925 10650 0    50   ~ 0
 AMS Reset BTN\n
 Wire Notes Line
-	8050 11175 8500 11175
+	7975 10950 8425 10950
 Wire Notes Line
-	8500 11175 8500 10875
+	8425 10950 8425 10650
 Wire Notes Line
-	8500 10875 8050 10875
+	8425 10650 7975 10650
 Wire Notes Line
-	8050 10875 8050 11175
-Text Label 9200 11025 2    50   ~ 0
+	7975 10650 7975 10950
+Text Label 9125 10800 2    50   ~ 0
 AMS_Status
 Wire Wire Line
-	8350 11025 9200 11025
+	8275 10800 9125 10800
 Wire Wire Line
-	7300 11025 8200 11025
+	7225 10800 8125 10800
 $Comp
 L TSI_Rev.5-rescue:G5LE-1-E-Lafayette_Electric_Car_Internals RL?
 U 1 1 5FB466B1
@@ -766,17 +761,17 @@ BOT_Out
 Wire Wire Line
 	13300 8250 14050 8250
 Wire Wire Line
-	7300 9325 6700 9325
-Text Label 6700 9200 0    50   ~ 0
+	7300 8925 6700 8925
+Text Label 6700 8925 0    50   ~ 0
 24V
 Wire Wire Line
 	14450 2600 15200 2600
 Text Label 14450 2600 0    50   ~ 0
 24V_AMS_RTN
-Text Label 10350 9825 2    50   ~ 0
+Text Label 10350 9425 2    50   ~ 0
 24V_AMS_RTN
 Wire Wire Line
-	9100 9825 10350 9825
+	9100 9425 10350 9425
 Text Label 3250 5500 2    50   ~ 0
 GLV_RTN
 Connection ~ 6650 2250
@@ -900,37 +895,25 @@ Wire Wire Line
 	14450 2100 15200 2100
 Wire Wire Line
 	14450 2800 15200 2800
-Wire Wire Line
-	14950 2950 15700 2950
-Wire Wire Line
-	14950 3050 15700 3050
-Wire Wire Line
-	14950 3150 15700 3150
-Wire Wire Line
-	14950 3250 15700 3250
-Wire Wire Line
-	14950 3350 15700 3350
-Wire Wire Line
-	14950 3450 15700 3450
-Text Label 15700 3250 2    50   ~ 0
+Text Label 15800 3250 2    50   ~ 0
 AMS_FAULT_LED
 Text HLabel 14950 3250 0    50   Input ~ 0
 AMS_FAULT_LED
-Text Label 15700 3450 2    50   ~ 0
+Text Label 15800 3450 2    50   ~ 0
 AMS_Button_RTN
 Text HLabel 14950 3450 0    50   Input ~ 0
 AMS_Button_RTN
-Text Label 15700 3350 2    50   ~ 0
+Text Label 15800 3350 2    50   ~ 0
 IMD_Button_RTN
 Text HLabel 14950 3350 0    50   Input ~ 0
 IMD_Button_RTN
-Text Label 15700 3050 2    50   ~ 0
+Text Label 15800 3050 2    50   ~ 0
 Cooling_CTRL
 Text HLabel 14950 3050 0    50   Input ~ 0
 Cooling_CTRL
 Text HLabel 14950 2950 0    50   Input ~ 0
 12V_Cooling
-Text Label 15700 3150 2    50   ~ 0
+Text Label 15800 3150 2    50   ~ 0
 IMD_FAULT_LED
 Text HLabel 14950 3150 0    50   Input ~ 0
 IMD_FAULT_LED
@@ -971,9 +954,9 @@ Text HLabel 14950 3550 0    50   Input ~ 0
 Safety_Loop_EPAL
 Text HLabel 14950 3650 0    50   Input ~ 0
 GEN_FAULT_EPAL
-Text Label 15700 3550 2    50   ~ 0
+Text Label 15800 3550 2    50   ~ 0
 Safety_Loop_EPAL
-Text Label 15700 3650 2    50   ~ 0
+Text Label 15800 3650 2    50   ~ 0
 GEN_FAULT_EPAL
 Text Label 12350 2350 0    50   ~ 0
 GEN_FAULT_EPAL
@@ -1084,16 +1067,8 @@ Text HLabel 15200 2600 2    50   Output ~ 0
 24V_AMS_RTN
 Text Label 4525 7800 2    50   ~ 0
 GLV_RTN
-Wire Wire Line
-	6250 8325 7300 8325
 Text Notes 2625 10375 0    55   ~ 0
 SFS2-DC24 has built in \ndiode across terminals
-Text Notes 7275 7875 0    79   ~ 0
-SFS2-DC24 has built in diode\nacross power terminals
-Wire Wire Line
-	14950 3550 15700 3550
-Wire Wire Line
-	14950 3650 15700 3650
 Wire Notes Line
 	12050 9850 15950 9850
 Text Notes 15200 5800 2    197  ~ 0
@@ -1130,9 +1105,7 @@ Wire Wire Line
 Wire Wire Line
 	11200 3150 12800 3150
 Wire Wire Line
-	6700 10325 7300 10325
-Wire Wire Line
-	6250 8325 6250 8925
+	6700 9925 7300 9925
 Wire Notes Line
 	575  6925 575  11150
 Wire Notes Line
@@ -1203,4 +1176,39 @@ Text Notes 2850 10625 0    50   ~ 0
 IMD Reset BTN\n
 Text Label 2150 10775 0    50   ~ 0
 IMD_Button_RTN
+Wire Wire Line
+	6575 7925 6575 8625
+Text Notes 7700 10525 0    55   ~ 0
+SFS2-DC24 has built in \ndiode across terminals
+Wire Notes Line
+	10450 11150 10450 6925
+Wire Notes Line
+	5700 6925 10450 6925
+Wire Notes Line
+	5700 6925 5700 11150
+Wire Notes Line
+	5700 11150 10450 11150
+Wire Wire Line
+	6575 7925 7300 7925
+Wire Wire Line
+	6575 9325 7300 9325
+Connection ~ 6575 8625
+Wire Wire Line
+	6575 8625 6575 9325
+Wire Wire Line
+	14950 2950 15800 2950
+Wire Wire Line
+	14950 3050 15800 3050
+Wire Wire Line
+	14950 3150 15800 3150
+Wire Wire Line
+	14950 3250 15800 3250
+Wire Wire Line
+	14950 3350 15800 3350
+Wire Wire Line
+	14950 3450 15800 3450
+Wire Wire Line
+	14950 3550 15800 3550
+Wire Wire Line
+	14950 3650 15800 3650
 $EndSCHEMATC

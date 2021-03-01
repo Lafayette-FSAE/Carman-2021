@@ -1961,4 +1961,6 @@ Wire Notes Line
 	500  500  500  3200
 Wire Notes Line
 	2750 3200 500  3200
+Text Notes 9050 4550 0    79   ~ 0
+GPIO Expander\n
 $EndSCHEMATC

@@ -315,30 +315,20 @@ Text Label 3950 3850 2    50   ~ 0
 APPS1
 Text Label 8100 5700 0    50   ~ 0
 MRESET_Contact
-Wire Wire Line
-	6675 2900 6975 2900
-Wire Wire Line
-	6675 3000 6975 3000
-Text Label 6675 2900 2    50   ~ 0
+Text Label 6275 2900 0    50   ~ 0
 CAN+_Logic
-Text Label 6975 2900 0    50   ~ 0
+Text Label 7300 2900 2    50   ~ 0
 BP_CAN+
-Text Label 6975 3000 0    50   ~ 0
+Text Label 7300 3000 2    50   ~ 0
 BP_CAN-
-Text Label 6675 3000 2    50   ~ 0
+Text Label 6275 3000 0    50   ~ 0
 CAN-_Logic
 Text Notes 9550 1000 0    50   ~ 0
 TSI to Cooling\nSubsystem
-Text Notes 6575 2750 0    50   ~ 0
+Text Notes 6550 2775 0    50   ~ 0
 Battery Pack\nCAN Lines\n
 Wire Notes Line
 	6175 3050 7375 3050
-Wire Notes Line
-	7375 2550 6175 2550
-Wire Notes Line
-	6175 2550 6175 3050
-Wire Notes Line
-	7375 2550 7375 3050
 Text Label 2000 1650 0    50   ~ 0
 GLV_RTN
 Wire Notes Line
@@ -864,8 +854,8 @@ $EndComp
 Text Label 2000 2250 0    50   ~ 0
 24V
 NoConn ~ 2700 2350
-Text Notes 2200 2450 0    50   ~ 0
-Dashboard\n
+Text Notes 2025 2400 0    50   ~ 0
+Dashboard/EPAL\n
 Text Label 9100 1600 0    50   ~ 0
 SL1_Out
 Wire Wire Line
@@ -1042,10 +1032,6 @@ Wire Wire Line
 	10350 3350 11100 3350
 Text Label 11100 3450 2    50   ~ 0
 Drive_BTN_RTN
-Text Notes 9650 4000 2    50   ~ 0
-HV
-Text Notes 9650 3850 2    50   ~ 0
-LV\n
 $Comp
 L TSI_Rev.5-rescue:Current_Sensor-CarMan_KiCAD_Library-TSI_Rev.5-rescue J?
 U 1 1 5FA558BE
@@ -1239,27 +1225,6 @@ F20 "CoolTemp" I L 1550 4750 50
 F21 "D_LED_CTRL" O R 3100 4750 50 
 F22 "Flowrate" I L 1550 4850 50 
 F23 "Brake_Light_RTN" O R 3100 4850 51 
-$EndSheet
-$Sheet
-S 8850 2950 1500 1300
-U 5FE1DCBA
-F0 "Status_Lights_TSAL_RTDS" 47
-F1 "StatusLights_Cockpit.sch" 47
-F2 "RTDS_CTRL" I R 10350 3150 50 
-F3 "D_LED_CTRL" I R 10350 3650 50 
-F4 "24V" I L 8850 3050 50 
-F5 "GLV_RTN" I L 8850 3250 50 
-F6 "3.3V" I L 8850 3150 50 
-F7 "HV+" I L 8850 4050 50 
-F8 "HV-" I L 8850 4150 50 
-F9 "TSAL" O L 8850 3350 50 
-F10 "TSAL_RTN" I L 8850 3550 50 
-F11 "TSAL_Cockpit" I L 8850 3450 50 
-F12 "Drive_BTN_RTN" I R 10350 3450 50 
-F13 "Drive_BTN" I R 10350 3350 50 
-F14 "RTDS" I R 10350 3050 50 
-F15 "RTDS_RTN" I R 10350 3250 50 
-F16 "Drive_LED" I R 10350 3550 50 
 $EndSheet
 Text Label 8100 3450 0    50   ~ 0
 TSAL_Cockpit
@@ -1530,4 +1495,39 @@ Text Label 3950 4850 2    50   ~ 0
 Brake_Light_RTN
 Text Notes 1800 3300 0    50   ~ 0
 Left Side\nTesting Connector\n\n
+$Sheet
+S 8850 2950 1500 1300
+U 5FE1DCBA
+F0 "Status_Lights_TSAL_RTDS" 47
+F1 "StatusLights_Cockpit.sch" 47
+F2 "RTDS_CTRL" I R 10350 3150 50 
+F3 "D_LED_CTRL" I R 10350 3650 50 
+F4 "24V" I L 8850 3050 50 
+F5 "GLV_RTN" I L 8850 3250 50 
+F6 "3.3V" I L 8850 3150 50 
+F7 "HV+" I L 8850 4050 50 
+F8 "HV-" I L 8850 4150 50 
+F9 "TSAL" O L 8850 3350 50 
+F10 "TSAL_RTN" I L 8850 3550 50 
+F11 "TSAL_Cockpit" I L 8850 3450 50 
+F12 "Drive_BTN_RTN" I R 10350 3450 50 
+F13 "Drive_BTN" I R 10350 3350 50 
+F14 "RTDS" I R 10350 3050 50 
+F15 "RTDS_RTN" I R 10350 3250 50 
+F16 "Drive_LED" I R 10350 3550 50 
+$EndSheet
+Text Notes 9875 4025 2    50   ~ 0
+LOW VOLTAGE\n\n\n
+Text Notes 9900 4000 2    50   ~ 0
+HIGH VOLTAGE
+Wire Wire Line
+	6275 3000 7300 3000
+Wire Wire Line
+	6275 2900 7300 2900
+Wire Notes Line
+	7375 2575 7375 3050
+Wire Notes Line
+	6175 2575 7375 2575
+Wire Notes Line
+	6175 2575 6175 3050
 $EndSCHEMATC
