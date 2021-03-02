@@ -391,7 +391,7 @@ Wire Wire Line
 	3050 4100 2850 4100
 Wire Wire Line
 	2250 3900 2050 3900
-Text Notes 5200 4575 0    50   ~ 0
+Text Notes 5200 4550 0    50   ~ 0
 STA20502 RTDS BUZZER (.6A MAX)\n3/1/21 - Pulsed at max of 90mA\n3/1/21 - Tested RTDS, w/Xsistor, worked\n
 Wire Notes Line
 	5100 4575 5100 4625
