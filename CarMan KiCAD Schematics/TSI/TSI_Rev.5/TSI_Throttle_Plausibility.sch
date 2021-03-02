@@ -949,19 +949,19 @@ Wire Wire Line
 	4100 2050 4250 2050
 Wire Wire Line
 	4100 2250 4250 2250
-Text Label 1000 2600 0    50   ~ 0
+Text Label 1000 2650 0    50   ~ 0
 APPS1_RTN
 Text Label 2150 1200 2    50   ~ 0
 APPS1
-Text Label 1000 2500 0    50   ~ 0
+Text Label 1000 2550 0    50   ~ 0
 APPS1_10V
-Text Label 1000 2900 0    50   ~ 0
+Text Label 1000 2950 0    50   ~ 0
 Throttle_LV
-Text Label 1000 3000 0    50   ~ 0
+Text Label 1000 3050 0    50   ~ 0
 Throttle_PL
 Text Label 2150 1300 2    50   ~ 0
 APPS2
-Text HLabel 1800 3000 2    50   Output ~ 0
+Text HLabel 1800 3050 2    50   Output ~ 0
 Throttle_PL
 Wire Wire Line
 	1800 9500 1950 9500
@@ -1163,7 +1163,6 @@ Text Label 14300 8550 0    50   ~ 0
 GLV_RTN
 Wire Wire Line
 	14300 8550 14300 8600
-Connection ~ 14300 9000
 Wire Wire Line
 	14300 9000 14300 8900
 $Comp
@@ -1191,22 +1190,22 @@ $EndComp
 Wire Wire Line
 	14600 9000 14650 9000
 Wire Notes Line
-	12750 8250 12750 9900
+	12200 8250 12200 9900
 Text Notes 14500 9450 0    50   ~ 0
 Inv. signal\nCurr. Transfer ratio = 100 %
 Wire Wire Line
-	13050 9750 13050 9450
+	12400 9750 12400 9450
 Wire Wire Line
-	13050 8600 13050 8950
+	12400 8600 12400 8950
 $Comp
 L pspice:CAP C27
 U 1 1 5FDC04B0
-P 13050 9200
-F 0 "C27" H 13150 9050 50  0000 C CNN
-F 1 "0.1u" H 13150 9350 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 13050 9200 50  0001 C CNN
-F 3 "~" H 13050 9200 50  0001 C CNN
-	1    13050 9200
+P 12400 9200
+F 0 "C27" H 12500 9050 50  0000 C CNN
+F 1 "0.1u" H 12500 9350 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 12400 9200 50  0001 C CNN
+F 3 "~" H 12400 9200 50  0001 C CNN
+	1    12400 9200
 	1    0    0    -1  
 $EndComp
 Text Label 15300 9200 0    50   ~ 0
@@ -1228,20 +1227,20 @@ F 3 "https://toshiba.semicon-storage.com/info/docget.jsp?did=12884&prodName=TLP2
 	1    14950 9100
 	1    0    0    -1  
 $EndComp
-Text Label 13600 9000 0    50   ~ 0
+Text Label 12950 9000 0    50   ~ 0
 BRAKE_OUT
 Text Label 14650 9200 2    50   ~ 0
 GLV_RTN
-Text Label 14800 9750 2    50   ~ 0
+Text Label 14150 9750 2    50   ~ 0
 GLV_RTN
-Connection ~ 13600 9750
+Connection ~ 12950 9750
 Wire Wire Line
-	13050 9750 13600 9750
+	12400 9750 12950 9750
 Wire Wire Line
-	13050 8600 13600 8600
+	12400 8600 12950 8600
 Wire Notes Line
 	8450 10850 8450 10100
-Text Notes 13750 8400 0    87   ~ 0
+Text Notes 13475 8400 0    87   ~ 0
 BRAKE PRESSED
 Text Notes 9050 10200 0    59   ~ 0
 RED LED STATUS LIGHT
@@ -1290,15 +1289,15 @@ Text HLabel 1550 2200 0    50   Input ~ 0
 BRAKE_IN(AIRS+)
 Text HLabel 1550 1200 0    50   Input ~ 0
 APPS1
-Text HLabel 1800 2600 2    50   Output ~ 0
+Text HLabel 1800 2650 2    50   Output ~ 0
 APPS1_RTN
-Text HLabel 1800 2500 2    50   Output ~ 0
+Text HLabel 1800 2550 2    50   Output ~ 0
 APPS1_10V
-Text HLabel 1800 2800 2    50   Output ~ 0
+Text HLabel 1800 2850 2    50   Output ~ 0
 APPS2_RTN
 Text HLabel 1550 1300 0    50   Input ~ 0
 APPS2
-Text HLabel 1800 2700 2    50   Output ~ 0
+Text HLabel 1800 2750 2    50   Output ~ 0
 APPS2_5V
 Wire Notes Line
 	2950 3500 550  3500
@@ -1306,9 +1305,9 @@ Text Notes 1200 3800 0    79   ~ 0
 APPS1 STEPDOWN\n\n
 Wire Notes Line
 	2950 3500 2950 5950
-Text Label 1000 2800 0    50   ~ 0
+Text Label 1000 2850 0    50   ~ 0
 APPS2_RTN
-Text Label 1000 2700 0    50   ~ 0
+Text Label 1000 2750 0    50   ~ 0
 APPS2_5V
 Wire Notes Line
 	500  500  2750 500 
@@ -1769,43 +1768,37 @@ Wire Wire Line
 Wire Wire Line
 	15550 2750 15900 2750
 Wire Notes Line
-	13700 8900 13700 8650
+	13050 8900 13050 8650
 Wire Notes Line
-	13500 8650 13500 8900
+	12850 8650 12850 8900
 Wire Wire Line
-	13600 9350 13600 9750
+	12950 9350 12950 9750
 Wire Notes Line
-	13500 9400 13700 9400
+	12850 9400 13050 9400
 Wire Notes Line
-	13700 9400 13700 9150
+	13050 9400 13050 9150
 Wire Notes Line
-	13700 9150 13500 9150
+	13050 9150 12850 9150
 Wire Notes Line
-	13500 9150 13500 9400
+	12850 9150 12850 9400
 Wire Wire Line
-	13600 9750 14800 9750
-Text Notes 13700 9300 0    31   ~ 0
+	12950 9750 14150 9750
+Text Notes 13050 9300 0    31   ~ 0
 Brake Light & RTDS\n(J17)
 Wire Notes Line
-	13500 8900 13700 8900
+	12850 8900 13050 8900
 Wire Notes Line
-	13700 8650 13500 8650
-Wire Notes Line
-	12750 9900 16000 9900
-Wire Notes Line
-	12750 8250 16000 8250
+	13050 8650 12850 8650
 Text Label 2150 2200 2    50   ~ 0
 BRAKE_IN
-Text Label 13150 8600 0    50   ~ 0
+Text Label 12500 8600 0    50   ~ 0
 BRAKE_IN
 Wire Wire Line
-	13600 8850 13600 9000
+	12950 8850 12950 9000
+Connection ~ 12950 9000
 Wire Wire Line
-	13600 9000 14300 9000
-Connection ~ 13600 9000
-Wire Wire Line
-	13600 9000 13600 9200
-Text Notes 13700 8800 0    31   ~ 0
+	12950 9000 12950 9200
+Text Notes 13050 8800 0    31   ~ 0
 Brake & BOT\n(J16)
 Wire Wire Line
 	5800 1100 5900 1100
@@ -1893,19 +1886,19 @@ Text Label 2150 1700 2    50   ~ 0
 BRAKE_OUT
 Text HLabel 1550 1700 0    50   Input ~ 0
 BRAKE_OUT
-Text HLabel 1800 2900 2    50   Output ~ 0
+Text HLabel 1800 2950 2    50   Output ~ 0
 Throttle_LV
 Text Label 2150 2300 2    50   ~ 0
 BRAKE_OUT
 Text HLabel 1550 2300 0    50   Input ~ 0
 BRAKE_OUT
 Wire Wire Line
-	13600 8700 13600 8600
-Text Label 13750 9750 0    50   ~ 0
+	12950 8700 12950 8600
+Text Label 13100 9750 0    50   ~ 0
 Brake_Light_RTN
-Text Label 1000 3100 0    50   ~ 0
+Text Label 1000 3150 0    50   ~ 0
 Brake_Light_RTN
-Text HLabel 1800 3100 2    50   Output ~ 0
+Text HLabel 1800 3150 2    50   Output ~ 0
 Brake_Light_RTN
 Text Notes 14350 4000 0    51   ~ 0
 A relay that is controlled by\nThrottle_SEL. Pin 1 shorted to\npin 4 when pin 6 HIGH
@@ -1942,25 +1935,40 @@ Wire Wire Line
 Wire Wire Line
 	1550 1800 2150 1800
 Wire Wire Line
-	1000 3100 1800 3100
+	1000 3150 1800 3150
 Wire Wire Line
-	1000 3000 1800 3000
+	1000 3050 1800 3050
 Wire Wire Line
-	1000 2900 1800 2900
+	1000 2950 1800 2950
 Wire Wire Line
-	1000 2800 1800 2800
+	1000 2850 1800 2850
 Wire Wire Line
-	1000 2700 1800 2700
+	1000 2750 1800 2750
 Wire Wire Line
-	1000 2600 1800 2600
+	1000 2650 1800 2650
 Wire Wire Line
-	1000 2500 1800 2500
-Wire Notes Line
-	2750 500  2750 3200
-Wire Notes Line
-	500  500  500  3200
-Wire Notes Line
-	2750 3200 500  3200
+	1000 2550 1800 2550
 Text Notes 9050 4550 0    79   ~ 0
 GPIO Expander\n
+Connection ~ 14300 9000
+Text Label 13525 9000 0    50   ~ 0
+Brake_Light
+Wire Notes Line
+	12200 9900 16000 9900
+Wire Notes Line
+	12200 8250 16000 8250
+Text HLabel 1550 2400 0    50   Input ~ 0
+Brake_Light
+Wire Wire Line
+	1550 2400 2150 2400
+Text Label 2150 2400 2    50   ~ 0
+Brake_Light
+Wire Notes Line
+	2750 500  2750 3250
+Wire Notes Line
+	500  3250 2750 3250
+Wire Notes Line
+	500  500  500  3250
+Wire Wire Line
+	12950 9000 14300 9000
 $EndSCHEMATC

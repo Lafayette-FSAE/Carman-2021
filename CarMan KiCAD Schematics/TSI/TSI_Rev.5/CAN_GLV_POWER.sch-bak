@@ -391,8 +391,8 @@ Text Label 3350 1250 0    50   ~ 0
 5V_ISO_RTN
 Text Label 13300 8250 0    50   ~ 0
 MRESET_Contact
-Text Notes 5250 800  2    89   ~ 0
-Cooling Control\n
+Text Notes 6275 800  2    89   ~ 0
+Cooling Control & Sensors\n
 $Comp
 L Device:R R79
 U 1 1 5FB66337
@@ -647,7 +647,7 @@ Wire Wire Line
 	14450 2400 15200 2400
 Wire Wire Line
 	14450 2200 15200 2200
-Text Label 15800 2950 2    50   ~ 0
+Text Label 15800 3275 2    50   ~ 0
 12V_Cooling
 Text Label 9600 7925 2    50   ~ 0
 GLV_RTN
@@ -797,12 +797,6 @@ F 7 "12.7mm" H 5650 2650 50  0001 L BNN "MAXIMUM_PACKAGE_HEIGHT"
 $EndComp
 Text Label 4500 2450 0    50   ~ 0
 Cooling_power
-Wire Notes Line
-	2950 3250 7450 3250
-Wire Notes Line
-	7450 3250 7450 650 
-Wire Notes Line
-	7450 650  2950 650 
 Text Notes 3650 3050 0    55   ~ 0
 Control Signal used as a \npsuedo relay
 Wire Wire Line
@@ -863,27 +857,27 @@ Wire Wire Line
 	14450 2100 15200 2100
 Wire Wire Line
 	14450 2800 15200 2800
-Text Label 15800 3250 2    50   ~ 0
+Text Label 15800 3575 2    50   ~ 0
 AMS_FAULT_LED
-Text HLabel 14950 3250 0    50   Input ~ 0
+Text HLabel 14950 3575 0    50   Input ~ 0
 AMS_FAULT_LED
-Text Label 15800 3450 2    50   ~ 0
+Text Label 15800 3775 2    50   ~ 0
 AMS_Button_RTN
-Text HLabel 14950 3450 0    50   Input ~ 0
+Text HLabel 14950 3775 0    50   Input ~ 0
 AMS_Button_RTN
-Text Label 15800 3350 2    50   ~ 0
+Text Label 15800 3675 2    50   ~ 0
 IMD_Button_RTN
-Text HLabel 14950 3350 0    50   Input ~ 0
+Text HLabel 14950 3675 0    50   Input ~ 0
 IMD_Button_RTN
-Text Label 15800 3050 2    50   ~ 0
+Text Label 15800 3375 2    50   ~ 0
 Cooling_CTRL
-Text HLabel 14950 3050 0    50   Input ~ 0
+Text HLabel 14950 3375 0    50   Input ~ 0
 Cooling_CTRL
-Text HLabel 14950 2950 0    50   Input ~ 0
+Text HLabel 14950 3275 0    50   Input ~ 0
 12V_Cooling
-Text Label 15800 3150 2    50   ~ 0
+Text Label 15800 3475 2    50   ~ 0
 IMD_FAULT_LED
-Text HLabel 14950 3150 0    50   Input ~ 0
+Text HLabel 14950 3475 0    50   Input ~ 0
 IMD_FAULT_LED
 Wire Wire Line
 	3250 2250 4050 2250
@@ -918,20 +912,14 @@ Wire Notes Line
 	2950 650  2950 3250
 Text Label 11225 2375 2    50   ~ 0
 MRESET_Contact
-Text HLabel 14950 3550 0    50   Input ~ 0
+Text HLabel 14950 3875 0    50   Input ~ 0
 Safety_Loop_EPAL
-Text HLabel 14950 3650 0    50   Input ~ 0
+Text HLabel 14950 3975 0    50   Input ~ 0
 GEN_FAULT_EPAL
-Text Label 15800 3550 2    50   ~ 0
+Text Label 15800 3875 2    50   ~ 0
 Safety_Loop_EPAL
-Text Label 15800 3650 2    50   ~ 0
+Text Label 15800 3975 2    50   ~ 0
 GEN_FAULT_EPAL
-Wire Notes Line
-	16000 3700 14150 3700
-Wire Notes Line
-	16000 550  16000 3700
-Wire Notes Line
-	14150 550  14150 3700
 Text Label 12350 1800 0    50   ~ 0
 GLV_RTN
 Wire Wire Line
@@ -973,25 +961,25 @@ Wire Wire Line
 $Comp
 L Connector_Generic:Conn_01x02 J?
 U 1 1 601DA5ED
-P 7050 900
+P 7050 1050
 AR Path="/601DA5ED" Ref="J?"  Part="1" 
 AR Path="/5FE1DE7D/601DA5ED" Ref="J31"  Part="1" 
-F 0 "J31" H 7000 1000 50  0000 L CNN
-F 1 "Cooling Jumper" H 7000 1000 50  0001 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 7050 900 50  0001 C CNN
-F 3 "~" H 7050 900 50  0001 C CNN
-	1    7050 900 
+F 0 "J31" H 7000 1150 50  0000 L CNN
+F 1 "Cooling Jumper" H 7000 1150 50  0001 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 7050 1050 50  0001 C CNN
+F 3 "~" H 7050 1050 50  0001 C CNN
+	1    7050 1050
 	1    0    0    -1  
 $EndComp
-Text Notes 6500 1250 0    47   ~ 0
+Text Notes 6500 1400 0    47   ~ 0
 Header to allow jumper \nto keep cooling on.\n
-Text Label 6250 1000 0    50   ~ 0
+Text Label 6250 1150 0    50   ~ 0
 Cooling_power
 Wire Wire Line
-	6250 1000 6850 1000
+	6250 1150 6850 1150
 Wire Wire Line
-	6250 900  6850 900 
-Text Label 6250 900  0    50   ~ 0
+	6250 1050 6850 1050
+Text Label 6250 1050 0    50   ~ 0
 5V
 $Comp
 L Connector:TestPoint TP13
@@ -1120,21 +1108,21 @@ Connection ~ 6575 8625
 Wire Wire Line
 	6575 8625 6575 9325
 Wire Wire Line
-	14950 2950 15800 2950
+	14950 3275 15800 3275
 Wire Wire Line
-	14950 3050 15800 3050
+	14950 3375 15800 3375
 Wire Wire Line
-	14950 3150 15800 3150
+	14950 3475 15800 3475
 Wire Wire Line
-	14950 3250 15800 3250
+	14950 3575 15800 3575
 Wire Wire Line
-	14950 3350 15800 3350
+	14950 3675 15800 3675
 Wire Wire Line
-	14950 3450 15800 3450
+	14950 3775 15800 3775
 Wire Wire Line
-	14950 3550 15800 3550
+	14950 3875 15800 3875
 Wire Wire Line
-	14950 3650 15800 3650
+	14950 3975 15800 3975
 $Comp
 L Device:R R61
 U 1 1 601328F4
@@ -1306,4 +1294,119 @@ F 3 "~" H 13975 7175 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	14125 7175 14200 7175
+Text Notes 14550 9325 0    51   ~ 0
+NC relay, if SR_CTRL_Boosted \nis high the Safety Loop opens
+Text Notes 13500 7400 0    51   ~ 0
+Lights up when coils are conducting
+Text Label 7900 1375 0    50   ~ 0
+3.3V
+Text Label 8350 1925 2    50   ~ 0
+CoolTemp
+$Comp
+L pspice:CAP C?
+U 1 1 608CA5BD
+P 8500 2325
+AR Path="/608CA5BD" Ref="C?"  Part="1" 
+AR Path="/5FE1DE7D/608CA5BD" Ref="C19"  Part="1" 
+F 0 "C19" H 8500 2425 50  0000 L CNN
+F 1 "0.1u" H 8500 2225 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8500 2325 50  0001 C CNN
+F 3 "~" H 8500 2325 50  0001 C CNN
+	1    8500 2325
+	1    0    0    -1  
+$EndComp
+Text Label 8950 2725 2    50   ~ 0
+GLV_RTN
+Wire Wire Line
+	7900 1375 7900 1575
+$Comp
+L Device:R R?
+U 1 1 608CA5C5
+P 7900 1725
+AR Path="/608CA5C5" Ref="R?"  Part="1" 
+AR Path="/5FE1DE7D/608CA5C5" Ref="R65"  Part="1" 
+F 0 "R65" H 7970 1771 50  0000 L CNN
+F 1 "10K" V 7900 1675 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7830 1725 50  0001 C CNN
+F 3 "~" H 7900 1725 50  0001 C CNN
+	1    7900 1725
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 608CA5CB
+P 7900 2125
+AR Path="/608CA5CB" Ref="R?"  Part="1" 
+AR Path="/5FE1DE7D/608CA5CB" Ref="R80"  Part="1" 
+F 0 "R80" H 7970 2171 50  0000 L CNN
+F 1 "1.6K" V 7900 2025 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7830 2125 50  0001 C CNN
+F 3 "~" H 7900 2125 50  0001 C CNN
+	1    7900 2125
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7900 1975 7900 1925
+Connection ~ 7900 1925
+Wire Wire Line
+	7900 1925 7900 1875
+Wire Wire Line
+	7900 2725 7900 2625
+Text Label 7900 2375 2    50   ~ 0
+CoolTemp_In
+Text Label 7900 2725 0    47   ~ 0
+CoolTemp_RTN
+Wire Wire Line
+	7900 1925 8500 1925
+Wire Notes Line
+	7950 2425 7950 2625
+Wire Notes Line
+	7950 2625 7850 2625
+Wire Notes Line
+	7850 2625 7850 2425
+Wire Notes Line
+	7850 2425 7950 2425
+Wire Wire Line
+	7900 2275 7900 2425
+Text Notes 7850 2625 2    47   ~ 0
+Cooling\nR1
+Wire Wire Line
+	7900 2725 8500 2725
+Wire Wire Line
+	8500 2075 8500 1925
+Wire Wire Line
+	8500 2725 8500 2575
+Connection ~ 8500 2725
+Wire Wire Line
+	8500 2725 8950 2725
+Wire Notes Line
+	2950 3250 9225 3250
+Wire Notes Line
+	2950 650  9225 650 
+Wire Notes Line
+	9225 650  9225 3250
+Text Label 14450 2900 0    50   ~ 0
+CoolTemp
+Text HLabel 15200 2900 2    50   Output ~ 0
+CoolTemp
+Wire Wire Line
+	14450 2900 15200 2900
+Text Label 14450 3000 0    50   ~ 0
+CoolTemp_In
+Text HLabel 15200 3000 2    50   Output ~ 0
+CoolTemp_In
+Wire Wire Line
+	14450 3000 15200 3000
+Text Label 14450 3100 0    50   ~ 0
+CoolTemp_RTN
+Text HLabel 15200 3100 2    50   Output ~ 0
+CoolTemp_RTN
+Wire Wire Line
+	14450 3100 15200 3100
+Wire Notes Line
+	16000 550  16000 4075
+Wire Notes Line
+	14150 550  14150 4075
+Wire Notes Line
+	14150 4075 16000 4075
 $EndSCHEMATC
