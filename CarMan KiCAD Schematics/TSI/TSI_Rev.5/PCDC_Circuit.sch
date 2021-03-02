@@ -1600,10 +1600,10 @@ L Connector_Generic:Conn_01x01 J?
 U 1 1 60319B93
 P 3600 9850
 AR Path="/5F98EBE9/60319B93" Ref="J?"  Part="1" 
-AR Path="/6196BF15/60319B93" Ref="J29"  Part="1" 
-F 0 "J29" V 3700 9800 50  0000 L CNN
-F 1 "J29" V 3700 9650 50  0001 L CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_1x01_P1.00mm_Vertical" H 3600 9850 50  0001 C CNN
+AR Path="/6196BF15/60319B93" Ref="J30"  Part="1" 
+F 0 "J30" V 3700 9800 50  0000 L CNN
+F 1 "GLV Hook-up Pin" V 3700 9650 50  0001 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 3600 9850 50  0001 C CNN
 F 3 "~" H 3600 9850 50  0001 C CNN
 	1    3600 9850
 	0    1    1    0   

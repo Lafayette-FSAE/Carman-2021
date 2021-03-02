@@ -986,9 +986,9 @@ L Connector_Generic:Conn_01x02 J?
 U 1 1 601DA5ED
 P 7050 900
 AR Path="/601DA5ED" Ref="J?"  Part="1" 
-AR Path="/5FE1DE7D/601DA5ED" Ref="J30"  Part="1" 
-F 0 "J30" H 7000 1000 50  0000 L CNN
-F 1 "J23" H 7000 1000 50  0001 L CNN
+AR Path="/5FE1DE7D/601DA5ED" Ref="J31"  Part="1" 
+F 0 "J31" H 7000 1000 50  0000 L CNN
+F 1 "Cooling Jumper" H 7000 1000 50  0001 L CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 7050 900 50  0001 C CNN
 F 3 "~" H 7050 900 50  0001 C CNN
 	1    7050 900 
