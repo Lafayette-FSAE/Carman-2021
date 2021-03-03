@@ -313,20 +313,20 @@ Text Label 3950 3850 2    50   ~ 0
 APPS1
 Text Label 8100 5525 0    50   ~ 0
 MRESET_Contact
-Text Label 6250 3050 0    50   ~ 0
+Text Label 5650 4100 0    50   ~ 0
 CAN+_Logic
-Text Label 7275 3050 2    50   ~ 0
+Text Label 6675 4100 2    50   ~ 0
 BP_CAN+
-Text Label 7275 3150 2    50   ~ 0
+Text Label 6675 4200 2    50   ~ 0
 BP_CAN-
-Text Label 6250 3150 0    50   ~ 0
+Text Label 5650 4200 0    50   ~ 0
 CAN-_Logic
 Text Notes 9400 975  0    50   ~ 0
 Cooling Subsystem\nPower
-Text Notes 6525 2925 0    50   ~ 0
+Text Notes 5925 3975 0    50   ~ 0
 Battery Pack\nCAN Lines\n
 Wire Notes Line
-	6150 3200 7350 3200
+	5550 4250 6750 4250
 Text Label 2050 1650 0    50   ~ 0
 GLV_RTN
 Wire Notes Line
@@ -984,24 +984,24 @@ $EndComp
 $Comp
 L Device:Jumper JP?
 U 1 1 601967AD
-P 6775 3425
+P 6175 4475
 AR Path="/6196BF15/601967AD" Ref="JP?"  Part="1" 
 AR Path="/601967AD" Ref="JP3"  Part="1" 
-F 0 "JP3" H 6975 3525 50  0000 R CNN
-F 1 "Jumper" H 7475 3425 50  0001 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6775 3425 50  0001 C CNN
-F 3 "~" H 6775 3425 50  0001 C CNN
-	1    6775 3425
+F 0 "JP3" H 6375 4575 50  0000 R CNN
+F 1 "Jumper" H 6875 4475 50  0001 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6175 4475 50  0001 C CNN
+F 3 "~" H 6175 4475 50  0001 C CNN
+	1    6175 4475
 	1    0    0    -1  
 $EndComp
-Text Label 6025 3425 0    50   ~ 0
+Text Label 5425 4475 0    50   ~ 0
 CAN_Shield
-Text Label 7575 3425 2    50   ~ 0
+Text Label 6975 4475 2    50   ~ 0
 Chassis_GND
 Wire Wire Line
-	7575 3425 7075 3425
+	6975 4475 6475 4475
 Wire Wire Line
-	6025 3425 6475 3425
+	5425 4475 5875 4475
 Text Label 7450 650  0    50   ~ 0
 Chassis_GND
 Text Label 10400 850  0    50   ~ 0
@@ -1347,15 +1347,15 @@ LOW VOLTAGE\n\n\n
 Text Notes 9900 4000 2    50   ~ 0
 HIGH VOLTAGE
 Wire Wire Line
-	6250 3150 7275 3150
+	5650 4200 6675 4200
 Wire Wire Line
-	6250 3050 7275 3050
+	5650 4100 6675 4100
 Wire Notes Line
-	7350 2725 7350 3200
+	6750 3775 6750 4250
 Wire Notes Line
-	6150 2725 7350 2725
+	5550 3775 6750 3775
 Wire Notes Line
-	6150 2725 6150 3200
+	5550 3775 5550 4250
 $Comp
 L Connector_Generic:Conn_01x02 J9
 U 1 1 61E4E7D1
@@ -1383,37 +1383,37 @@ Wire Wire Line
 	9025 1600 9750 1600
 Wire Wire Line
 	9025 1900 9750 1900
-Text Label 6975 3550 2    50   ~ 0
+Text Label 6375 4600 2    50   ~ 0
 24V_IMD_IN
 Wire Wire Line
-	6025 3550 7575 3550
-Text Label 7575 3550 2    50   ~ 0
+	5425 4600 6975 4600
+Text Label 6975 4600 2    50   ~ 0
 24V_AMS_IN
-Text Label 6025 3550 0    50   ~ 0
+Text Label 5425 4600 0    50   ~ 0
 24V
-Text Label 7575 3650 2    50   ~ 0
+Text Label 6975 4700 2    50   ~ 0
 GLV_RTN
-Text Label 6025 3650 0    50   ~ 0
+Text Label 5425 4700 0    50   ~ 0
 AIRS-
 Wire Wire Line
-	6025 3650 7575 3650
-Text Label 7578 3860 2    50   ~ 0
+	5425 4700 6975 4700
+Text Label 6978 4910 2    50   ~ 0
 SDA_TSI
-Text Label 6728 3860 0    50   ~ 0
+Text Label 6128 4910 0    50   ~ 0
 SDA
-Text Label 6028 3860 0    50   ~ 0
+Text Label 5428 4910 0    50   ~ 0
 SDA_uC
 Wire Wire Line
-	6028 3860 7578 3860
-Text Label 6728 3760 0    50   ~ 0
+	5428 4910 6978 4910
+Text Label 6128 4810 0    50   ~ 0
 SCL
-Text Label 7578 3760 2    50   ~ 0
+Text Label 6978 4810 2    50   ~ 0
 SCL_TSI
-Text Label 6028 3760 0    50   ~ 0
+Text Label 5428 4810 0    50   ~ 0
 SCL_uC
 Wire Wire Line
-	6028 3760 7578 3760
-Text Label 6525 3650 0    50   ~ 0
+	5428 4810 6978 4810
+Text Label 5925 4700 0    50   ~ 0
 Flowrate_RTN
 Wire Notes Line
 	1950 1450 5200 1450
