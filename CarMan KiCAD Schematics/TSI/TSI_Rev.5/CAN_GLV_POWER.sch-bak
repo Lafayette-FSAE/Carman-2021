@@ -1296,8 +1296,6 @@ Wire Wire Line
 	14125 7175 14200 7175
 Text Notes 14550 9325 0    51   ~ 0
 NC relay, if SR_CTRL_Boosted \nis high the Safety Loop opens
-Text Notes 13500 7400 0    51   ~ 0
-Lights up when coils are conducting
 Text Label 7900 1375 0    50   ~ 0
 3.3V
 Text Label 8350 1925 2    50   ~ 0
@@ -1409,4 +1407,6 @@ Wire Notes Line
 	14150 550  14150 4075
 Wire Notes Line
 	14150 4075 16000 4075
+Text Notes 13325 7400 0    51   ~ 0
+Lights up when coils are not conducting
 $EndSCHEMATC

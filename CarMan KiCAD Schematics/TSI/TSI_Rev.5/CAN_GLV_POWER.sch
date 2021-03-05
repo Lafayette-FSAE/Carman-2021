@@ -665,9 +665,7 @@ Wire Wire Line
 	5875 8625 6575 8625
 Text Label 6700 9925 0    50   ~ 0
 SL1_IMD_Out
-Wire Wire Line
-	9700 10025 9100 10025
-Text Notes 9800 10075 0    68   ~ 0
+Text Notes 9575 10275 0    68   ~ 0
 Goes to \nBOT Switch
 Text Label 9700 8625 2    50   ~ 0
 AMS_FAULT_LED
@@ -1049,8 +1047,6 @@ Wire Wire Line
 	1425 8525 1425 9200
 Connection ~ 1425 8525
 Wire Wire Line
-	4625 9900 4025 9900
-Wire Wire Line
 	4525 7800 4025 7800
 Text Label 725  8525 0    50   ~ 0
 IMD_Button_RTN
@@ -1296,8 +1292,6 @@ Wire Wire Line
 	14125 7175 14200 7175
 Text Notes 14550 9325 0    51   ~ 0
 NC relay, if SR_CTRL_Boosted \nis high the Safety Loop opens
-Text Notes 13500 7400 0    51   ~ 0
-Lights up when coils are conducting
 Text Label 7900 1375 0    50   ~ 0
 3.3V
 Text Label 8350 1925 2    50   ~ 0
@@ -1409,4 +1403,40 @@ Wire Notes Line
 	14150 550  14150 4075
 Wire Notes Line
 	14150 4075 16000 4075
+Text Notes 13325 7400 0    51   ~ 0
+Lights up when coils are not conducting
+$Comp
+L Connector:TestPoint TP15
+U 1 1 60519873
+P 4725 9900
+F 0 "TP15" H 4625 10150 50  0000 L TNN
+F 1 "SL1_IMD_Out" H 4800 9975 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D3.0mm" H 4925 9900 50  0001 C CNN
+F 3 "~" H 4925 9900 50  0001 C CNN
+	1    4725 9900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4025 9900 4725 9900
+$Comp
+L Connector:TestPoint TP16
+U 1 1 6056095B
+P 9825 10025
+F 0 "TP16" H 9725 10275 50  0000 L TNN
+F 1 "SL1_AMS_Out" H 9900 10100 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D3.0mm" H 10025 10025 50  0001 C CNN
+F 3 "~" H 10025 10025 50  0001 C CNN
+	1    9825 10025
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9100 10025 9825 10025
+Wire Notes Line
+	9750 10075 9875 10075
+Wire Notes Line
+	9875 10075 9875 9950
+Wire Notes Line
+	9875 9950 9750 9950
+Wire Notes Line
+	9750 9950 9750 10075
 $EndSCHEMATC
