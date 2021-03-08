@@ -949,19 +949,19 @@ Wire Wire Line
 	4100 2050 4250 2050
 Wire Wire Line
 	4100 2250 4250 2250
-Text Label 1000 2650 0    50   ~ 0
+Text Label 1050 2900 0    50   ~ 0
 APPS1_RTN
 Text Label 2150 1200 2    50   ~ 0
 APPS1
-Text Label 1000 2550 0    50   ~ 0
+Text Label 1050 2800 0    50   ~ 0
 APPS1_10V
-Text Label 1000 2950 0    50   ~ 0
+Text Label 1050 3200 0    50   ~ 0
 Throttle_LV
-Text Label 1000 3050 0    50   ~ 0
+Text Label 1050 3300 0    50   ~ 0
 Throttle_PL
 Text Label 2150 1300 2    50   ~ 0
 APPS2
-Text HLabel 1800 3050 2    50   Output ~ 0
+Text HLabel 1850 3300 2    50   Output ~ 0
 Throttle_PL
 Wire Wire Line
 	1800 9500 1950 9500
@@ -1191,8 +1191,6 @@ Wire Wire Line
 	14600 9000 14650 9000
 Wire Notes Line
 	12200 8250 12200 9900
-Text Notes 14500 9450 0    50   ~ 0
-Inv. signal\nCurr. Transfer ratio = 100 %
 Wire Wire Line
 	12400 9750 12400 9450
 Wire Wire Line
@@ -1208,14 +1206,10 @@ F 3 "~" H 12400 9200 50  0001 C CNN
 	1    12400 9200
 	1    0    0    -1  
 $EndComp
-Text Label 15300 9200 0    50   ~ 0
+Text Label 15450 9650 0    50   ~ 0
 GLV_RTN
-Text Label 15300 9000 0    50   ~ 0
+Text Label 15950 9200 2    50   ~ 0
 Brake_Pressed_uC
-Wire Wire Line
-	15300 9200 15250 9200
-Wire Wire Line
-	15300 9000 15250 9000
 $Comp
 L TSI_Rev.5-rescue:TLP293-CarMan_KiCAD_Library-TSI_Rev.5-rescue U30
 U 1 1 60D50797
@@ -1289,15 +1283,15 @@ Text HLabel 1550 2200 0    50   Input ~ 0
 BRAKE_IN(AIRS+)
 Text HLabel 1550 1200 0    50   Input ~ 0
 APPS1
-Text HLabel 1800 2650 2    50   Output ~ 0
+Text HLabel 1850 2900 2    50   Output ~ 0
 APPS1_RTN
-Text HLabel 1800 2550 2    50   Output ~ 0
+Text HLabel 1850 2800 2    50   Output ~ 0
 APPS1_10V
-Text HLabel 1800 2850 2    50   Output ~ 0
+Text HLabel 1850 3100 2    50   Output ~ 0
 APPS2_RTN
 Text HLabel 1550 1300 0    50   Input ~ 0
 APPS2
-Text HLabel 1800 2750 2    50   Output ~ 0
+Text HLabel 1850 3000 2    50   Output ~ 0
 APPS2_5V
 Wire Notes Line
 	2950 3500 550  3500
@@ -1305,9 +1299,9 @@ Text Notes 1200 3800 0    79   ~ 0
 APPS1 STEPDOWN\n\n
 Wire Notes Line
 	2950 3500 2950 5950
-Text Label 1000 2850 0    50   ~ 0
+Text Label 1050 3100 0    50   ~ 0
 APPS2_RTN
-Text Label 1000 2750 0    50   ~ 0
+Text Label 1050 3000 0    50   ~ 0
 APPS2_5V
 Wire Notes Line
 	500  500  2750 500 
@@ -1886,7 +1880,7 @@ Text Label 2150 1700 2    50   ~ 0
 BRAKE_OUT
 Text HLabel 1550 1700 0    50   Input ~ 0
 BRAKE_OUT
-Text HLabel 1800 2950 2    50   Output ~ 0
+Text HLabel 1850 3200 2    50   Output ~ 0
 Throttle_LV
 Text Label 2150 2300 2    50   ~ 0
 BRAKE_OUT
@@ -1896,9 +1890,9 @@ Wire Wire Line
 	12950 8700 12950 8600
 Text Label 13100 9750 0    50   ~ 0
 Brake_Light_RTN
-Text Label 1000 3150 0    50   ~ 0
+Text Label 1050 3400 0    50   ~ 0
 Brake_Light_RTN
-Text HLabel 1800 3150 2    50   Output ~ 0
+Text HLabel 1850 3400 2    50   Output ~ 0
 Brake_Light_RTN
 Text Notes 14350 4000 0    51   ~ 0
 A relay that is controlled by\nThrottle_SEL. Pin 1 shorted to\npin 4 when pin 6 HIGH
@@ -1935,19 +1929,19 @@ Wire Wire Line
 Wire Wire Line
 	1550 1800 2150 1800
 Wire Wire Line
-	1000 3150 1800 3150
+	1050 3400 1850 3400
 Wire Wire Line
-	1000 3050 1800 3050
+	1050 3300 1850 3300
 Wire Wire Line
-	1000 2950 1800 2950
+	1050 3200 1850 3200
 Wire Wire Line
-	1000 2850 1800 2850
+	1050 3100 1850 3100
 Wire Wire Line
-	1000 2750 1800 2750
+	1050 3000 1850 3000
 Wire Wire Line
-	1000 2650 1800 2650
+	1050 2900 1850 2900
 Wire Wire Line
-	1000 2550 1800 2550
+	1050 2800 1850 2800
 Text Notes 9050 4550 0    79   ~ 0
 GPIO Expander\n
 Connection ~ 14300 9000
@@ -1963,12 +1957,6 @@ Wire Wire Line
 	1550 2400 2150 2400
 Text Label 2150 2400 2    50   ~ 0
 Brake_Light
-Wire Notes Line
-	2750 500  2750 3250
-Wire Notes Line
-	500  3250 2750 3250
-Wire Notes Line
-	500  500  500  3250
 Wire Wire Line
 	12950 9000 14300 9000
 Text Notes 6575 5425 0    47   ~ 0
@@ -1977,4 +1965,40 @@ Text Notes 6575 6375 0    47   ~ 0
 0.24V
 Text Notes 6950 2600 0    47   ~ 0
 Voltage Comparator
+Wire Notes Line
+	2750 500  2750 3450
+Wire Notes Line
+	500  500  500  3450
+Wire Notes Line
+	500  3450 2750 3450
+Text HLabel 1550 2500 0    50   Input ~ 0
+3.3V
+Wire Wire Line
+	1550 2500 2150 2500
+Text Label 2150 2500 2    50   ~ 0
+3.3V
+Wire Wire Line
+	15250 9000 15550 9000
+Text Label 15550 9000 2    50   ~ 0
+3.3V
+Wire Wire Line
+	15250 9200 15300 9200
+Wire Wire Line
+	15300 9200 15300 9350
+Connection ~ 15300 9200
+Wire Wire Line
+	15300 9200 15950 9200
+$Comp
+L Device:R R98
+U 1 1 605CF404
+P 15300 9500
+F 0 "R98" V 15200 9500 50  0000 C CNN
+F 1 "1k" V 15300 9500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 15230 9500 50  0001 C CNN
+F 3 "~" H 15300 9500 50  0001 C CNN
+	1    15300 9500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15300 9650 15450 9650
 $EndSCHEMATC

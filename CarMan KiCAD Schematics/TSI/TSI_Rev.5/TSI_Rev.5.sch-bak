@@ -1467,4 +1467,6 @@ Wire Notes Line
 	1950 2225 475  2225
 Wire Notes Line
 	1950 1300 1950 2225
+Text Label 750  4950 0    50   ~ 0
+3.3V
 $EndSCHEMATC
