@@ -1971,4 +1971,10 @@ Wire Notes Line
 	500  500  500  3250
 Wire Wire Line
 	12950 9000 14300 9000
+Text Notes 6575 5425 0    47   ~ 0
+4.76V
+Text Notes 6575 6375 0    47   ~ 0
+0.24V
+Text Notes 6950 2600 0    47   ~ 0
+Voltage Comparator
 $EndSCHEMATC
