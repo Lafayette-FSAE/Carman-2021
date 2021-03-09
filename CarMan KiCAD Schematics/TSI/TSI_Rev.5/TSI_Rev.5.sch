@@ -33,7 +33,7 @@ Text Label 3175 1500 0    50   ~ 0
 AIRS-
 Text Label 3175 1600 0    50   ~ 0
 AIRS+
-Text Notes 3525 1075 0    50   ~ 0
+Text Notes 3475 1075 0    50   ~ 0
 Precharge Relay\n\n\n
 Text Label 4075 1700 0    50   ~ 0
 GLV_RTN
@@ -201,7 +201,7 @@ Text Label 3425 775  0    50   ~ 0
 PC_RELAY-
 Text Label 3425 675  0    50   ~ 0
 PC_RELAY+
-Text Notes 4400 925  0    50   ~ 0
+Text Notes 4350 925  0    50   ~ 0
 Discharge Relay
 $Comp
 L Connector_Generic:Conn_02x04_Counter_Clockwise J6
@@ -414,8 +414,6 @@ Text Label 9350 750  0    49   ~ 0
 GLV_RTN
 Text Label 10400 950  0    49   ~ 0
 COOL_24V
-Text Label 5100 1700 0    49   ~ 0
-5V_ISO_RTN
 Text Label 700  4650 0    50   ~ 0
 IMD_Status
 Text Label 700  4750 0    50   ~ 0
@@ -762,8 +760,6 @@ Wire Wire Line
 Wire Wire Line
 	5800 1600 5100 1600
 Wire Wire Line
-	5800 1700 5100 1700
-Wire Wire Line
 	5100 1800 5800 1800
 Wire Wire Line
 	5100 1900 5800 1900
@@ -872,7 +868,7 @@ F 3 "~" H 7850 1575 50  0001 C CNN
 $EndComp
 Text Notes 7450 1925 0    50   ~ 0
 TSAL Roll \nHoop Power\n
-Text Label 10225 1750 0    50   ~ 0
+Text Label 10225 1700 0    50   ~ 0
 RTDS
 Text Label 7300 1675 0    50   ~ 0
 TSAL_RTN
@@ -892,27 +888,27 @@ Text Label 8150 1875 0    50   ~ 0
 APPS2
 Text Label 8150 1975 0    50   ~ 0
 APPS2_RTN
-Text Label 10225 1550 0    50   ~ 0
+Text Label 10225 1500 0    50   ~ 0
 Brake_Light
-Text Label 10225 1850 0    50   ~ 0
+Text Label 10225 1800 0    50   ~ 0
 RTDS_RTN
 Wire Wire Line
-	10225 1550 10825 1550
+	10225 1500 10825 1500
 Wire Wire Line
-	10225 1750 10825 1750
+	10225 1700 10825 1700
 Wire Wire Line
-	10225 1850 10825 1850
-Text Notes 11025 2025 2    50   ~ 0
+	10225 1800 10825 1800
+Text Notes 11025 1975 2    50   ~ 0
 RTDS & Brake Light
 $Comp
 L Connector_Generic:Conn_01x04 J18
 U 1 1 5FF93FA5
-P 11025 1650
-F 0 "J18" H 10975 1850 50  0000 L CNN
-F 1 "RTDS & Brk Light" H 10975 1850 50  0001 L CNN
-F 2 "TSI_Rev_2021_Footprint_Lib:Molex_MiniFit-JR-5556-04A_2x02x4.20mm_Straight" H 11025 1650 50  0001 C CNN
-F 3 "~" H 11025 1650 50  0001 C CNN
-	1    11025 1650
+P 11025 1600
+F 0 "J18" H 10975 1800 50  0000 L CNN
+F 1 "RTDS & Brk Light" H 10975 1800 50  0001 L CNN
+F 2 "TSI_Rev_2021_Footprint_Lib:Molex_MiniFit-JR-5556-04A_2x02x4.20mm_Straight" H 11025 1600 50  0001 C CNN
+F 3 "~" H 11025 1600 50  0001 C CNN
+	1    11025 1600
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1306,8 +1302,8 @@ Wire Wire Line
 Wire Wire Line
 	600  2975 1300 2975
 Wire Wire Line
-	10225 1650 10825 1650
-Text Label 10225 1650 0    50   ~ 0
+	10225 1600 10825 1600
+Text Label 10225 1600 0    50   ~ 0
 Brake_Light_RTN
 Wire Wire Line
 	3100 4850 3950 4850
@@ -1335,6 +1331,7 @@ F13 "Drive_BTN" I R 10350 3350 50
 F14 "RTDS" I R 10350 3050 50 
 F15 "RTDS_RTN" I R 10350 3250 50 
 F16 "Drive_LED" I R 10350 3550 50 
+F17 "5V_ISO_RTN" I L 8850 3650 50 
 $EndSheet
 Text Notes 9875 4025 2    50   ~ 0
 LOW VOLTAGE\n\n\n
@@ -1469,4 +1466,12 @@ Wire Notes Line
 	1950 1300 1950 2225
 Text Label 750  4950 0    50   ~ 0
 3.3V
+Wire Wire Line
+	8100 3650 8850 3650
+Wire Wire Line
+	5800 1700 5100 1700
+Text Label 5100 1700 0    49   ~ 0
+5V_ISO_RTN
+Text Label 8100 3650 0    49   ~ 0
+5V_ISO_RTN
 $EndSCHEMATC

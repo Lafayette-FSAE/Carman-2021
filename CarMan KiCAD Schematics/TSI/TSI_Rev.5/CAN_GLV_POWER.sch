@@ -579,7 +579,7 @@ L Device:R R57
 U 1 1 5FD164DD
 P 5200 1450
 F 0 "R57" H 5270 1496 50  0000 L CNN
-F 1 "40K" H 5270 1405 50  0000 L CNN
+F 1 "40K" V 5200 1350 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5130 1450 50  0001 C CNN
 F 3 "~" H 5200 1450 50  0001 C CNN
 	1    5200 1450
@@ -908,7 +908,7 @@ Wire Wire Line
 	4050 2850 4950 2850
 Wire Notes Line
 	2950 650  2950 3250
-Text Label 11225 2375 2    50   ~ 0
+Text Label 10625 2375 0    50   ~ 0
 MRESET_Contact
 Text HLabel 14950 3875 0    50   Input ~ 0
 Safety_Loop_EPAL
@@ -947,8 +947,6 @@ F 3 "~" H 11475 2375 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	11325 2375 11225 2375
-Wire Wire Line
 	12225 2575 12300 2575
 Text Label 12100 2925 2    50   ~ 0
 GLV_RTN
@@ -959,25 +957,25 @@ Wire Wire Line
 $Comp
 L Connector_Generic:Conn_01x02 J?
 U 1 1 601DA5ED
-P 7050 1050
+P 7250 1050
 AR Path="/601DA5ED" Ref="J?"  Part="1" 
 AR Path="/5FE1DE7D/601DA5ED" Ref="J31"  Part="1" 
-F 0 "J31" H 7000 1150 50  0000 L CNN
-F 1 "Cooling Jumper" H 7000 1150 50  0001 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 7050 1050 50  0001 C CNN
-F 3 "~" H 7050 1050 50  0001 C CNN
-	1    7050 1050
+F 0 "J31" H 7200 1150 50  0000 L CNN
+F 1 "Cooling Jumper" H 7200 1150 50  0001 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 7250 1050 50  0001 C CNN
+F 3 "~" H 7250 1050 50  0001 C CNN
+	1    7250 1050
 	1    0    0    -1  
 $EndComp
-Text Notes 6500 1400 0    47   ~ 0
+Text Notes 6550 1400 0    47   ~ 0
 Header to allow jumper \nto keep cooling on.\n
-Text Label 6250 1150 0    50   ~ 0
+Text Label 6450 1150 0    50   ~ 0
 Cooling_power
 Wire Wire Line
-	6250 1150 6850 1150
+	6450 1150 7050 1150
 Wire Wire Line
-	6250 1050 6850 1050
-Text Label 6250 1050 0    50   ~ 0
+	6450 1050 7050 1050
+Text Label 6450 1050 0    50   ~ 0
 5V
 $Comp
 L Connector:TestPoint TP13
@@ -1123,8 +1121,8 @@ $Comp
 L Device:R R61
 U 1 1 601328F4
 P 12350 2150
-F 0 "R61" V 12450 2050 50  0000 L CNN
-F 1 "960" V 12350 2050 50  0000 L CNN
+F 0 "R61" V 12250 2100 50  0000 L CNN
+F 1 "1K" V 12350 2100 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 12280 2150 50  0001 C CNN
 F 3 "~" H 12350 2150 50  0001 C CNN
 	1    12350 2150
@@ -1439,4 +1437,6 @@ Wire Notes Line
 	9875 9950 9750 9950
 Wire Notes Line
 	9750 9950 9750 10075
+Wire Wire Line
+	10625 2375 11325 2375
 $EndSCHEMATC
