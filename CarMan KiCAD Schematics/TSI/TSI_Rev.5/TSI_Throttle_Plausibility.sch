@@ -86,7 +86,7 @@ U 1 1 60A1FD4B
 P 1700 7250
 F 0 "D2" V 1800 7400 50  0000 R CNN
 F 1 "TL431PS" H 1850 7150 50  0000 R CNN
-F 2 "Package_SO:MSOP-8_3x3mm_P0.65mm" H 1700 7100 50  0001 C CIN
+F 2 "Package_SO:SO-8_5.3x6.2mm_P1.27mm" H 1700 7100 50  0001 C CIN
 F 3 "http://www.ti.com/lit/ds/symlink/tl431.pdf" H 1700 7250 50  0001 C CIN
 	1    1700 7250
 	0    -1   -1   0   
