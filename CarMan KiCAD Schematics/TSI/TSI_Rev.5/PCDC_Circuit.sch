@@ -523,33 +523,22 @@ Wire Wire Line
 	12400 3850 12600 3850
 Connection ~ 12400 3850
 $Comp
-L Relay:FINDER-36.11-4301 K1
+L CarMan_KiCAD_Library:APAN3105 K1
 U 1 1 5F9E72DA
-P 14000 3450
-F 0 "K1" H 14000 3900 50  0000 L CNN
-F 1 "APAN3105" H 13850 3800 50  0000 L CNN
-F 2 "Relay_THT:Relay_SPST_Finder_32.21-x300" H 15270 3420 50  0001 C CNN
-F 3 "http://gfinder.findernet.com/assets/Series/356/S36EN.pdf" H 14000 3450 50  0001 C CNN
-	1    14000 3450
+P 13900 3450
+F 0 "K1" H 13900 3900 50  0000 L CNN
+F 1 "APAN3105" H 13750 3800 50  0000 L CNN
+F 2 "TSI_Rev_2021_Footprint_Lib:RELAY_APAN3105" H 15170 3420 50  0001 C CNN
+F 3 "http://gfinder.findernet.com/assets/Series/356/S36EN.pdf" H 13900 3450 50  0001 C CNN
+	1    13900 3450
 	1    0    0    -1  
 $EndComp
 Text Label 11850 4700 0    55   ~ 0
 IO_Ground
-Wire Wire Line
-	13050 3050 13800 3050
-Wire Wire Line
-	13800 3050 13800 3150
-Connection ~ 13050 3050
-Wire Wire Line
-	13800 3750 13800 3850
-Wire Wire Line
-	13800 3850 13050 3850
 Connection ~ 13050 3850
-Wire Wire Line
-	14300 3050 14300 3150
-Text Label 15200 3050 2    50   ~ 0
+Text Label 15350 3050 2    50   ~ 0
 24HV
-Text Label 15250 3900 2    47   ~ 0
+Text Label 15350 3850 2    47   ~ 0
 IGNI_VCC
 Wire Notes Line
 	13400 3750 14550 3750
@@ -1642,11 +1631,7 @@ Wire Wire Line
 Wire Wire Line
 	12950 7250 14350 7250
 Wire Wire Line
-	14300 3050 15200 3050
-Wire Wire Line
-	14200 3750 14200 3900
-Wire Wire Line
-	14200 3900 15250 3900
+	14300 3850 15350 3850
 Wire Wire Line
 	1350 1800 2150 1800
 Wire Wire Line
@@ -1695,4 +1680,19 @@ Wire Wire Line
 	9850 4250 10250 4250
 Text Notes 4700 7550 0    51   ~ 0
 If car brake is pressed,\niso conducts
+Wire Wire Line
+	13050 3050 13600 3050
+Wire Wire Line
+	13600 3050 13600 3250
+Connection ~ 13050 3050
+Wire Wire Line
+	13600 3550 13600 3850
+Wire Wire Line
+	13600 3850 13050 3850
+Wire Wire Line
+	14300 3550 14300 3850
+Wire Wire Line
+	14300 3050 14300 3350
+Wire Wire Line
+	14300 3050 15350 3050
 $EndSCHEMATC
