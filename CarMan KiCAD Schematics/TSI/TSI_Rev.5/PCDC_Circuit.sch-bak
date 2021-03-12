@@ -536,7 +536,7 @@ $EndComp
 Text Label 11850 4700 0    55   ~ 0
 IO_Ground
 Connection ~ 13050 3850
-Text Label 15300 3050 2    50   ~ 0
+Text Label 15350 3050 2    50   ~ 0
 24HV
 Text Label 15350 3850 2    47   ~ 0
 IGNI_VCC
@@ -1694,5 +1694,5 @@ Wire Wire Line
 Wire Wire Line
 	14300 3050 14300 3350
 Wire Wire Line
-	14300 3050 15300 3050
+	14300 3050 15350 3050
 $EndSCHEMATC
