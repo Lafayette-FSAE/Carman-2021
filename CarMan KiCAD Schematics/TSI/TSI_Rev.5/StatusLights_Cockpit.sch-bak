@@ -122,6 +122,7 @@ F 0 "C14" H 2478 6746 50  0000 L CNN
 F 1 "1u" H 2478 6655 50  0000 L CNN
 F 2 "Capacitor_THT:C_Rect_L18.0mm_W9.0mm_P15.00mm_FKS3_FKP3" H 2300 6700 50  0001 C CNN
 F 3 "https://www.tdk-electronics.tdk.com/inf/20/20/db/fc_2009/B32520_529.pdf" H 2300 6700 50  0001 C CNN
+F 4 "B32522C3105J189" H 2300 6700 50  0001 C CNN "Mouser Part#"
 	1    2300 6700
 	1    0    0    -1  
 $EndComp

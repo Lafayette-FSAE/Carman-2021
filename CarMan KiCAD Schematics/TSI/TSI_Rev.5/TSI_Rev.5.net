@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source "C:\\Users\\colemant\\Desktop\\Carman-2021\\CarMan KiCAD Schematics\\TSI\\TSI_Rev.5\\TSI_Rev.5.sch")
-    (date "3/12/2021 3:14:18 PM")
+    (date "3/12/2021 5:25:05 PM")
     (tool "Eeschema (5.1.6)-1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -290,9 +290,11 @@
       (sheetpath (names /PCDC_Circuit/) (tstamps /6196BF15/))
       (tstamp 61982FAD))
     (comp (ref U19)
-      (value 74HC00)
+      (value SN74HC00APWR)
       (footprint TSI_Rev_2021_Footprint_Lib:SOIC127P600X175-14N)
       (datasheet http://www.ti.com/lit/gpn/sn74hc00)
+      (fields
+        (field (name "Mouser Link") https://www.mouser.com/ProductDetail/Texas-Instruments/SN74HC00APWR?qs=6ZVwTuetbD5Of4SwrWZoMw%3D%3D))
       (libsource (lib 74xx) (part 74HC00) (description "quad 2-input NAND gate"))
       (sheetpath (names /PCDC_Circuit/) (tstamps /6196BF15/))
       (tstamp 61996640))
@@ -620,7 +622,9 @@
     (comp (ref U12)
       (value REF3033)
       (footprint Package_TO_SOT_SMD:SOT-23)
-      (datasheet http://www.ti.com/lit/ds/symlink/ref3033.pdf)
+      (datasheet https://www.ti.com/lit/ds/symlink/ref3033.pdf)
+      (fields
+        (field (name "Mouser Part #") REF3033AIDBZT))
       (libsource (lib Reference_Voltage) (part REF3033) (description "3.3V 50-ppm/°C Max, 50-μA, CMOS Voltage Reference, SOT-23-3"))
       (sheetpath (names /PCDC_Circuit/) (tstamps /6196BF15/))
       (tstamp 6013ABA6))
@@ -1542,6 +1546,8 @@
       (value 1u)
       (footprint Capacitor_THT:C_Rect_L18.0mm_W9.0mm_P15.00mm_FKS3_FKP3)
       (datasheet https://www.tdk-electronics.tdk.com/inf/20/20/db/fc_2009/B32520_529.pdf)
+      (fields
+        (field (name "Mouser Part#") B32522C3105J189))
       (libsource (lib pspice) (part CAP) (description "Capacitor symbol for simulation only"))
       (sheetpath (names /Status_Lights_TSAL_RTDS/) (tstamps /5FE1DCBA/))
       (tstamp 5FA3C7FB))

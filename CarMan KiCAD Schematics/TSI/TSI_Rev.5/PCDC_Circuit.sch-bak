@@ -1479,7 +1479,8 @@ P 12750 9050
 F 0 "U12" H 12521 9096 50  0000 R CNN
 F 1 "REF3033" H 12521 9005 50  0000 R CIN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 12750 8600 50  0001 C CIN
-F 3 "http://www.ti.com/lit/ds/symlink/ref3033.pdf" H 12850 8700 50  0001 C CIN
+F 3 "https://www.ti.com/lit/ds/symlink/ref3033.pdf" H 12850 8700 50  0001 C CIN
+F 4 "REF3033AIDBZT" H 12750 9050 50  0001 C CNN "Mouser Part #"
 	1    12750 9050
 	1    0    0    -1  
 $EndComp
