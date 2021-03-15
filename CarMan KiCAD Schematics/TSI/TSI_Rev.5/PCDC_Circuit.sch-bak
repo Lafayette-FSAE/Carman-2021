@@ -1178,26 +1178,6 @@ Text Notes 2250 5650 0    197  ~ 0
 HIGH VOLTAGE\n
 Wire Notes Line
 	500  500  2350 500 
-$Comp
-L TSI_Rev.5-rescue:SN74LVC1G08DCKR-SN74LVC1G08DCKR-Snap U29
-U 2 1 60B1C7CC
-P 6500 4250
-AR Path="/60B1C7CC" Ref="U29"  Part="2" 
-AR Path="/6196BF15/60B1C7CC" Ref="U29"  Part="2" 
-F 0 "U29" H 6350 4100 50  0000 C CNN
-F 1 "SN74LVC1G08DCKR" H 6600 4000 50  0000 C CNN
-F 2 "TSI_Rev_2021_Footprint_Lib:SOT65P210X110-5N" H 6500 4250 50  0001 L BNN
-F 3 "https://www.ti.com/store/ti/en/p/product/?p=SN74LVC1G08DCKR&HQS=OCB-tistore-invf-partpage-invf-store-SnapEDA-wwe" H 6500 4250 50  0001 L BNN
-F 4 "Unavailable" H 6500 4250 50  0001 L BNN "AVAILABILITY"
-F 5 "None" H 6500 4250 50  0001 L BNN "PRICE"
-F 6 "SOT-SC70-5 Texas Instruments" H 6500 4250 50  0001 L BNN "PACKAGE"
-F 7 "SN74LVC1G08DCKR" H 6500 4250 50  0001 L BNN "MP"
-F 8 "Single 2-Input Positive-AND Gate 5-SC70 -40 to 125" H 6500 4250 50  0001 L BNN "DESCRIPTION"
-F 9 "Texas Instruments" H 6500 4250 50  0001 L BNN "MF"
-F 10 "https://pricing.snapeda.com/search/part/SN74LVC1G08DCKR/?ref=eda" H 6500 4250 50  0001 L BNN "PURCHASE-URL"
-	2    6500 4250
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5850 3650 5850 4200
 Wire Wire Line
@@ -1699,4 +1679,24 @@ Wire Wire Line
 	4550 10600 5100 10600
 Wire Wire Line
 	4550 10800 5400 10800
+$Comp
+L TSI_Rev.5-rescue:SN74LVC1G08DCKR-SN74LVC1G08DCKR-Snap U29
+U 2 1 60B1C7CC
+P 6500 4250
+AR Path="/60B1C7CC" Ref="U29"  Part="2" 
+AR Path="/6196BF15/60B1C7CC" Ref="U29"  Part="2" 
+F 0 "U29" H 6350 4100 50  0000 C CNN
+F 1 "SN74LVC1G08DCKR" H 6600 4000 50  0000 C CNN
+F 2 "TSI_Rev_2021_Footprint_Lib:SOT65P210X110-5N" H 6500 4250 50  0001 L BNN
+F 3 "https://www.ti.com/store/ti/en/p/product/?p=SN74LVC1G08DCKR&HQS=OCB-tistore-invf-partpage-invf-store-SnapEDA-wwe" H 6500 4250 50  0001 L BNN
+F 4 "Unavailable" H 6500 4250 50  0001 L BNN "AVAILABILITY"
+F 5 "None" H 6500 4250 50  0001 L BNN "PRICE"
+F 6 "SOT-SC70-5 Texas Instruments" H 6500 4250 50  0001 L BNN "PACKAGE"
+F 7 "SN74LVC1G08DCKR" H 6500 4250 50  0001 L BNN "MP"
+F 8 "Single 2-Input Positive-AND Gate 5-SC70 -40 to 125" H 6500 4250 50  0001 L BNN "DESCRIPTION"
+F 9 "Texas Instruments" H 6500 4250 50  0001 L BNN "MF"
+F 10 "https://pricing.snapeda.com/search/part/SN74LVC1G08DCKR/?ref=eda" H 6500 4250 50  0001 L BNN "PURCHASE-URL"
+	2    6500 4250
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

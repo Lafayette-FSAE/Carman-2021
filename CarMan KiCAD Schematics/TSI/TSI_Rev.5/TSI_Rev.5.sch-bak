@@ -313,20 +313,8 @@ Text Label 3950 3850 2    50   ~ 0
 APPS1
 Text Label 8100 5525 0    50   ~ 0
 MRESET_Contact
-Text Label 5650 4100 0    50   ~ 0
-CAN+_Logic
-Text Label 6675 4100 2    50   ~ 0
-BP_CAN+
-Text Label 6675 4200 2    50   ~ 0
-BP_CAN-
-Text Label 5650 4200 0    50   ~ 0
-CAN-_Logic
 Text Notes 9400 975  0    50   ~ 0
 Cooling Subsystem\nPower
-Text Notes 5925 3975 0    50   ~ 0
-Battery Pack\nCAN Lines\n
-Wire Notes Line
-	5550 4250 6750 4250
 Text Label 2050 1500 0    50   ~ 0
 GLV_RTN
 Text Label 10400 650  0    50   ~ 0
@@ -400,11 +388,11 @@ Text Label 2050 1900 0    50   ~ 0
 IMD_FAULT_LED
 Text Label 2050 2000 0    50   ~ 0
 AMS_FAULT_LED
-Text Label 4850 2575 0    50   ~ 0
+Text Label 5025 2550 0    50   ~ 0
 SCL
 Text Label 2900 2475 0    50   ~ 0
 SL1_In
-Text Label 4850 2475 0    50   ~ 0
+Text Label 5025 2450 0    50   ~ 0
 SDA
 Text Label 600  2475 0    50   ~ 0
 Flowrate
@@ -971,46 +959,21 @@ F 3 "http://www.digikey.com/product-search/en?keywords=WM3789CT-ND" H 950 1300 5
 	1    950  1300
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:Jumper JP?
-U 1 1 601967AD
-P 6175 4475
-AR Path="/6196BF15/601967AD" Ref="JP?"  Part="1" 
-AR Path="/601967AD" Ref="JP3"  Part="1" 
-F 0 "JP3" H 6375 4575 50  0000 R CNN
-F 1 "Jumper" H 6875 4475 50  0001 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6175 4475 50  0001 C CNN
-F 3 "~" H 6175 4475 50  0001 C CNN
-	1    6175 4475
-	1    0    0    -1  
-$EndComp
-Text Label 5425 4475 0    50   ~ 0
-CAN_Shield
-Text Label 6975 4475 2    50   ~ 0
-Chassis_GND
-Wire Wire Line
-	6975 4475 6475 4475
-Wire Wire Line
-	5425 4475 5875 4475
 Text Label 7450 650  0    50   ~ 0
 Chassis_GND
 Text Label 10400 850  0    50   ~ 0
 SL1_In
 $Comp
-L Connector_Generic:Conn_01x02 J23
+L Connector_Generic:Conn_01x04 J23
 U 1 1 600AD19A
-P 5250 2475
-F 0 "J23" H 5200 2575 50  0000 L CNN
-F 1 "I2C" H 5200 2575 50  0001 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 5250 2475 50  0001 C CNN
-F 3 "~" H 5250 2475 50  0001 C CNN
-	1    5250 2475
+P 5675 2550
+F 0 "J23" H 5600 2750 50  0000 L CNN
+F 1 "I2C" H 5625 2650 50  0001 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 5675 2550 50  0001 C CNN
+F 3 "~" H 5675 2550 50  0001 C CNN
+	1    5675 2550
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5050 2575 4850 2575
-Wire Wire Line
-	5050 2475 4850 2475
 Text Notes 3900 3075 0    50   ~ 0
 Right Side\nTesting Connector\n\n
 $Comp
@@ -1150,7 +1113,7 @@ Text Label 2050 1600 0    50   ~ 0
 Safety_Loop_EPAL
 Text Label 2050 1700 0    50   ~ 0
 GEN_FAULT_EPAL
-Text Notes 4850 2825 0    59   ~ 0
+Text Notes 5250 3000 0    59   ~ 0
 Easy access\nSDA & SCL pins
 Text Label 600  2875 0    50   ~ 0
 CoolTemp_In
@@ -1337,16 +1300,6 @@ Text Notes 9875 4025 2    50   ~ 0
 LOW VOLTAGE\n\n\n
 Text Notes 9900 4000 2    50   ~ 0
 HIGH VOLTAGE
-Wire Wire Line
-	5650 4200 6675 4200
-Wire Wire Line
-	5650 4100 6675 4100
-Wire Notes Line
-	6750 3775 6750 4250
-Wire Notes Line
-	5550 3775 6750 3775
-Wire Notes Line
-	5550 3775 5550 4250
 $Comp
 L Connector_Generic:Conn_01x02 J9
 U 1 1 61E4E7D1
@@ -1374,38 +1327,6 @@ Wire Wire Line
 	9025 1500 9750 1500
 Wire Wire Line
 	9025 1800 9750 1800
-Text Label 6375 4600 2    50   ~ 0
-24V_IMD_IN
-Wire Wire Line
-	5425 4600 6975 4600
-Text Label 6975 4600 2    50   ~ 0
-24V_AMS_IN
-Text Label 5425 4600 0    50   ~ 0
-24V
-Text Label 6975 4700 2    50   ~ 0
-GLV_RTN
-Text Label 5425 4700 0    50   ~ 0
-AIRS-
-Wire Wire Line
-	5425 4700 6975 4700
-Text Label 6978 4910 2    50   ~ 0
-SDA_TSI
-Text Label 6128 4910 0    50   ~ 0
-SDA
-Text Label 5428 4910 0    50   ~ 0
-SDA_uC
-Wire Wire Line
-	5428 4910 6978 4910
-Text Label 6128 4810 0    50   ~ 0
-SCL
-Text Label 6978 4810 2    50   ~ 0
-SCL_TSI
-Text Label 5428 4810 0    50   ~ 0
-SCL_uC
-Wire Wire Line
-	5428 4810 6978 4810
-Text Label 5925 4700 0    50   ~ 0
-Flowrate_RTN
 Text Notes 2650 1250 0    89   ~ 18
 High Voltage Connectors
 $Sheet
@@ -1474,4 +1395,91 @@ Text Label 5100 1700 0    49   ~ 0
 5V_ISO_RTN
 Text Label 8100 3650 0    49   ~ 0
 5V_ISO_RTN
+Text Label 5925 4700 0    50   ~ 0
+Flowrate_RTN
+Wire Wire Line
+	5428 4810 6978 4810
+Text Label 5428 4810 0    50   ~ 0
+SCL_uC
+Text Label 6978 4810 2    50   ~ 0
+SCL_TSI
+Text Label 6128 4810 0    50   ~ 0
+SCL
+Wire Wire Line
+	5428 4910 6978 4910
+Text Label 5428 4910 0    50   ~ 0
+SDA_uC
+Text Label 6128 4910 0    50   ~ 0
+SDA
+Text Label 6978 4910 2    50   ~ 0
+SDA_TSI
+Wire Wire Line
+	5425 4700 6975 4700
+Text Label 5425 4700 0    50   ~ 0
+AIRS-
+Text Label 6975 4700 2    50   ~ 0
+GLV_RTN
+Text Label 5425 4600 0    50   ~ 0
+24V
+Text Label 6975 4600 2    50   ~ 0
+24V_AMS_IN
+Wire Wire Line
+	5425 4600 6975 4600
+Text Label 6375 4600 2    50   ~ 0
+24V_IMD_IN
+Wire Notes Line
+	5550 3775 5550 4250
+Wire Notes Line
+	5550 3775 6750 3775
+Wire Notes Line
+	6750 3775 6750 4250
+Wire Wire Line
+	5650 4100 6675 4100
+Wire Wire Line
+	5650 4200 6675 4200
+Wire Wire Line
+	5425 4475 5875 4475
+Wire Wire Line
+	6975 4475 6475 4475
+Text Label 6975 4475 2    50   ~ 0
+Chassis_GND
+Text Label 5425 4475 0    50   ~ 0
+CAN_Shield
+$Comp
+L Device:Jumper JP?
+U 1 1 601967AD
+P 6175 4475
+AR Path="/6196BF15/601967AD" Ref="JP?"  Part="1" 
+AR Path="/601967AD" Ref="JP3"  Part="1" 
+F 0 "JP3" H 6375 4575 50  0000 R CNN
+F 1 "Jumper" H 6875 4475 50  0001 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6175 4475 50  0001 C CNN
+F 3 "~" H 6175 4475 50  0001 C CNN
+	1    6175 4475
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	5550 4250 6750 4250
+Text Notes 5925 3975 0    50   ~ 0
+Battery Pack\nCAN Lines\n
+Text Label 5650 4200 0    50   ~ 0
+CAN-_Logic
+Text Label 6675 4200 2    50   ~ 0
+BP_CAN-
+Text Label 6675 4100 2    50   ~ 0
+BP_CAN+
+Text Label 5650 4100 0    50   ~ 0
+CAN+_Logic
+Wire Wire Line
+	5025 2750 5475 2750
+Wire Wire Line
+	5025 2650 5475 2650
+Text Label 5025 2750 0    49   ~ 0
+5V_ISO_RTN
+Wire Wire Line
+	5025 2550 5475 2550
+Wire Wire Line
+	5025 2450 5475 2450
+Text Notes 5775 2650 0    47   ~ 0
+Needs 5V signal \nfrom logic
 $EndSCHEMATC

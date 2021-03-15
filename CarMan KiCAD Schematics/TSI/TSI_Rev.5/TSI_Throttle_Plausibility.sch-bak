@@ -1999,13 +1999,22 @@ Text Notes 3075 10475 0    47   ~ 0
 *5-10V Range*
 Text Notes 6475 10475 0    47   ~ 0
 *0-5V Range*
-Connection ~ 8550 3350
+Connection ~ 14125 2950
 Wire Wire Line
-	8550 3350 8550 3450
+	14125 2950 14150 2950
+Wire Wire Line
+	13450 2950 14125 2950
+Wire Wire Line
+	13475 3150 14150 3150
+Text Notes 6200 3675 0    47   ~ 0
+4.76V
+Text Notes 6225 4625 0    47   ~ 0
+0.24V
 Wire Wire Line
 	8550 3200 8550 3350
-Text Notes 9050 3425 0    47   ~ 0
-*Output is ground if all values are \nhigh and 5V if any values are low*
+Wire Wire Line
+	8550 3350 8550 3450
+Connection ~ 8550 3350
 $Comp
 L TSI_Rev.5-rescue:74ACT11030-74act11030 U?
 U 1 1 604CB1E4
@@ -2019,15 +2028,8 @@ F 3 "https://www.snapeda.com/parts/74ACT11030DR/Texas%20Instruments/datasheet/" 
 	1    9150 3700
 	1    0    0    -1  
 $EndComp
-Connection ~ 14125 2950
-Wire Wire Line
-	14125 2950 14150 2950
-Wire Wire Line
-	13450 2950 14125 2950
-Wire Wire Line
-	13475 3150 14150 3150
-Text Notes 6200 3675 0    47   ~ 0
-4.76V
-Text Notes 6225 4625 0    47   ~ 0
-0.24V
+Text Notes 9050 3425 0    47   ~ 0
+*Output is ground if all values are \nhigh and 5V if any values are low*
+Text Notes 5000 6850 0    47   ~ 0
+*If the APPS1_ISO and APPS2_b fall \noutside the range of 0.24V-4.76V a \nshort/open is assumed*
 $EndSCHEMATC
