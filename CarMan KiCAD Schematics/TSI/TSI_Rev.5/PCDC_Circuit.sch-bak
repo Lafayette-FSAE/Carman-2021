@@ -516,7 +516,8 @@ P 12600 3650
 F 0 "D7" V 12650 3600 50  0000 R CNN
 F 1 "LED" H 12650 3750 50  0000 R CNN
 F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 12600 3650 50  0001 C CNN
-F 3 "~" H 12600 3650 50  0001 C CNN
+F 3 "http://static.vcclite.com/pdf/VAOL-S8GT4-LED-0805-green.pdf" H 12600 3650 50  0001 C CNN
+F 4 "VAOL-S8GT4" V 12600 3650 50  0001 C CNN "Part Name"
 	1    12600 3650
 	0    -1   -1   0   
 $EndComp
@@ -674,11 +675,9 @@ Wire Notes Line
 	16000 6350 11400 6350
 Wire Notes Line
 	11400 6350 11400 9900
-Wire Wire Line
-	4900 10600 5100 10600
-Text Label 4900 10800 2    79   ~ 0
+Text Label 4550 10800 0    59   ~ 0
 GLV_RTN
-Text Label 4900 10600 2    79   ~ 0
+Text Label 4550 10600 0    59   ~ 0
 PC_Ready
 $Comp
 L Device:R R33
@@ -695,7 +694,7 @@ Wire Wire Line
 	4850 10200 5100 10200
 Wire Wire Line
 	5100 10200 5100 10250
-Text Label 4850 10200 2    79   ~ 0
+Text Label 4850 10200 0    59   ~ 0
 5V
 Wire Wire Line
 	5100 10600 5100 10550
@@ -717,8 +716,6 @@ Text Label 7100 10800 2    59   ~ 0
 IO_Ground
 Wire Wire Line
 	5100 10600 5400 10600
-Wire Wire Line
-	4900 10800 5400 10800
 Text Label 3650 9100 0    59   ~ 0
 24V
 Text Label 3600 9650 0    59   ~ 0
@@ -1108,7 +1105,7 @@ Text HLabel 1250 6350 0    50   Input ~ 0
 Wire Notes Line
 	550  5800 2100 5800
 Wire Notes Line
-	550  7050 2100 7050
+	550  7175 2100 7175
 Text Label 1950 6950 2    50   ~ 0
 PC_Ready
 Text HLabel 1250 6950 0    50   Input ~ 0
@@ -1119,8 +1116,8 @@ Wire Notes Line
 	2100 5800 2100 7050
 Text Notes 5250 10000 0    47   ~ 0
 24V (GLV) --> 24V (ISO)\n
-Text Notes 5200 11000 0    47   ~ 0
-5V -> 5V\n
+Text Notes 5525 10975 0    47   ~ 0
+5V --> 5V\n
 Text Label 11950 2750 2    50   ~ 0
 PC_RELAY-
 Text Label 11950 2200 2    50   ~ 0
@@ -1698,4 +1695,8 @@ Wire Wire Line
 	14300 3050 14300 3350
 Wire Wire Line
 	14300 3050 15350 3050
+Wire Wire Line
+	4550 10600 5100 10600
+Wire Wire Line
+	4550 10800 5400 10800
 $EndSCHEMATC

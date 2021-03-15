@@ -56,8 +56,8 @@ F 3 "~" H 2450 4250 50  0001 C CNN
 	1    2250 4250
 	1    0    0    -1  
 $EndComp
-Text Notes 800  5900 0    47   ~ 0
-*Brings 5-10V biases APPS1 signal down to 0-5V*\n
+Text Notes 675  5900 0    47   ~ 0
+*Subtracts 5V from APPS1 to bring signal into 0-5V range*\n
 Wire Notes Line
 	550  3500 550  5950
 Wire Notes Line
@@ -788,7 +788,7 @@ Text Label 15900 3550 2    50   ~ 0
 GLV_RTN
 Text Label 15900 2750 2    50   ~ 0
 5V
-Text Label 13650 3150 0    50   ~ 0
+Text Label 13475 3150 0    50   ~ 0
 Throttle_LV
 $Comp
 L TSI_Rev.5-rescue:DAC5574IDGS-CarMan_KiCAD_Library-TSI_Rev.5-rescue U23
@@ -1308,22 +1308,20 @@ $EndComp
 $Comp
 L Device:R R44
 U 1 1 608A2A55
-P 13550 2550
-F 0 "R44" H 13600 2550 50  0000 L BNN
-F 1 "10K" V 13550 2545 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 13480 2550 50  0001 C CNN
-F 3 "~" H 13550 2550 50  0001 C CNN
-	1    13550 2550
+P 14125 2550
+F 0 "R44" H 14175 2550 50  0000 L BNN
+F 1 "10K" V 14125 2545 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 14055 2550 50  0001 C CNN
+F 3 "~" H 14125 2550 50  0001 C CNN
+	1    14125 2550
 	-1   0    0    1   
 $EndComp
-Text Label 13250 2300 0    50   ~ 0
+Text Label 13825 2300 0    50   ~ 0
 GLV_RTN
-Text Label 14100 2950 2    50   ~ 0
+Text Label 13450 2950 0    50   ~ 0
 Throttle_SEL
 Wire Wire Line
-	13550 2950 14150 2950
-Wire Wire Line
-	13550 2700 13550 2950
+	14125 2700 14125 2950
 Text Notes 14600 2600 0    63   ~ 0
 AUTO TURN\nOFF SWITCH
 Wire Wire Line
@@ -1640,25 +1638,7 @@ NoConn ~ 10250 6500
 NoConn ~ 10250 6600
 NoConn ~ 10250 6700
 Wire Wire Line
-	8550 3200 8550 3350
-Wire Wire Line
-	8550 3350 8550 3450
-Connection ~ 8550 3350
-Wire Wire Line
 	9750 3700 10950 3700
-$Comp
-L TSI_Rev.5-rescue:74ACT11030-74act11030 U?
-U 1 1 604CB1E4
-P 9150 3700
-AR Path="/604CB1E4" Ref="U?"  Part="1" 
-AR Path="/5FC85F57/604CB1E4" Ref="U8"  Part="1" 
-F 0 "U8" H 9050 3800 50  0000 L CNN
-F 1 "74ACT11030" H 8900 3600 50  0000 L CNN
-F 2 "TSI_Rev_2021_Footprint_Lib:SOIC127P600X175-14N" H 9150 3700 50  0001 C CNN
-F 3 "https://www.snapeda.com/parts/74ACT11030DR/Texas%20Instruments/datasheet/" H 9150 3700 50  0001 C CNN
-	1    9150 3700
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5900 1100 5900 1400
 Wire Wire Line
@@ -1737,11 +1717,9 @@ Wire Wire Line
 Wire Wire Line
 	14900 4550 14600 4550
 Wire Wire Line
-	13250 2300 13550 2300
+	13825 2300 14125 2300
 Wire Wire Line
-	13550 2300 13550 2400
-Wire Wire Line
-	13650 3150 14150 3150
+	14125 2300 14125 2400
 Wire Wire Line
 	15550 3550 15900 3550
 Wire Wire Line
@@ -2011,4 +1989,47 @@ Text Notes 4800 10450 0    47   ~ 0
 TP\n(J16)
 Text Notes 1400 10450 0    47   ~ 0
 TP\n(J16)
+Text Notes 5925 1875 0    47   ~ 0
+5.55V
+Text Notes 5925 2500 0    47   ~ 0
+4.44V\n
+Text Notes 4200 3150 0    47   ~ 0
+*The outputs of the voltage comparator are both high if the differential between APPS1_b and APPS2_b \nis between the 4.44V-5.55V window*
+Text Notes 3075 10475 0    47   ~ 0
+*5-10V Range*
+Text Notes 6475 10475 0    47   ~ 0
+*0-5V Range*
+Connection ~ 14125 2950
+Wire Wire Line
+	14125 2950 14150 2950
+Wire Wire Line
+	13450 2950 14125 2950
+Wire Wire Line
+	13475 3150 14150 3150
+Text Notes 6200 3675 0    47   ~ 0
+4.76V
+Text Notes 6225 4625 0    47   ~ 0
+0.24V
+Wire Wire Line
+	8550 3200 8550 3350
+Wire Wire Line
+	8550 3350 8550 3450
+Connection ~ 8550 3350
+$Comp
+L TSI_Rev.5-rescue:74ACT11030-74act11030 U?
+U 1 1 604CB1E4
+P 9150 3700
+AR Path="/604CB1E4" Ref="U?"  Part="1" 
+AR Path="/5FC85F57/604CB1E4" Ref="U8"  Part="1" 
+F 0 "U8" H 9050 3800 50  0000 L CNN
+F 1 "74ACT11030" H 8900 3600 50  0000 L CNN
+F 2 "TSI_Rev_2021_Footprint_Lib:SOIC127P600X175-14N" H 9150 3700 50  0001 C CNN
+F 3 "https://www.snapeda.com/parts/74ACT11030DR/Texas%20Instruments/datasheet/" H 9150 3700 50  0001 C CNN
+	1    9150 3700
+	1    0    0    -1  
+$EndComp
+Text Notes 9050 3425 0    47   ~ 0
+*Output is ground if all values are \nhigh and 5V if any values are low*
+Text Notes 5000 6850 0    47   ~ 0
+*If the APPS1_ISO and APPS2_b fall \noutside the range of 0.24V-4.76V a \nshort/open is assumed*
 $EndSCHEMATC
