@@ -1638,7 +1638,7 @@ NoConn ~ 10250 6500
 NoConn ~ 10250 6600
 NoConn ~ 10250 6700
 Wire Wire Line
-	9750 3700 10950 3700
+	9750 3700 9875 3700
 Wire Wire Line
 	5900 1100 5900 1400
 Wire Wire Line
@@ -2032,4 +2032,18 @@ Text Notes 9050 3425 0    47   ~ 0
 *Output is ground if all values are \nhigh and 5V if any values are low*
 Text Notes 5000 6850 0    47   ~ 0
 *If the APPS1_ISO and APPS2_b fall \noutside the range of 0.24V-4.76V a \nshort/open is assumed*
+$Comp
+L Connector:TestPoint TP17
+U 1 1 60734148
+P 9875 3700
+F 0 "TP17" H 9825 3900 50  0000 L CNN
+F 1 "Throttle Plaus. TP" H 10000 3850 50  0001 L CNN
+F 2 "" H 10075 3700 50  0001 C CNN
+F 3 "~" H 10075 3700 50  0001 C CNN
+	1    9875 3700
+	1    0    0    -1  
+$EndComp
+Connection ~ 9875 3700
+Wire Wire Line
+	9875 3700 10950 3700
 $EndSCHEMATC

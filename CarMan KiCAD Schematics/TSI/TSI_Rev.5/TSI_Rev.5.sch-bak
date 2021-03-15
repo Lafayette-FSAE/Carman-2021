@@ -388,11 +388,11 @@ Text Label 2050 1900 0    50   ~ 0
 IMD_FAULT_LED
 Text Label 2050 2000 0    50   ~ 0
 AMS_FAULT_LED
-Text Label 5025 2550 0    50   ~ 0
+Text Label 4825 2575 0    50   ~ 0
 SCL
 Text Label 2900 2475 0    50   ~ 0
 SL1_In
-Text Label 5025 2450 0    50   ~ 0
+Text Label 4825 2475 0    50   ~ 0
 SDA
 Text Label 600  2475 0    50   ~ 0
 Flowrate
@@ -966,12 +966,12 @@ SL1_In
 $Comp
 L Connector_Generic:Conn_01x04 J23
 U 1 1 600AD19A
-P 5675 2550
-F 0 "J23" H 5600 2750 50  0000 L CNN
-F 1 "I2C" H 5625 2650 50  0001 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 5675 2550 50  0001 C CNN
-F 3 "~" H 5675 2550 50  0001 C CNN
-	1    5675 2550
+P 5475 2575
+F 0 "J23" H 5400 2775 50  0000 L CNN
+F 1 "I2C" H 5425 2675 50  0001 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 5475 2575 50  0001 C CNN
+F 3 "~" H 5475 2575 50  0001 C CNN
+	1    5475 2575
 	1    0    0    -1  
 $EndComp
 Text Notes 3900 3075 0    50   ~ 0
@@ -1113,7 +1113,7 @@ Text Label 2050 1600 0    50   ~ 0
 Safety_Loop_EPAL
 Text Label 2050 1700 0    50   ~ 0
 GEN_FAULT_EPAL
-Text Notes 5250 3000 0    59   ~ 0
+Text Notes 4900 3050 0    59   ~ 0
 Easy access\nSDA & SCL pins
 Text Label 600  2875 0    50   ~ 0
 CoolTemp_In
@@ -1385,8 +1385,6 @@ Wire Notes Line
 	1950 2225 475  2225
 Wire Notes Line
 	1950 1300 1950 2225
-Text Label 750  4950 0    50   ~ 0
-3.3V
 Wire Wire Line
 	8100 3650 8850 3650
 Wire Wire Line
@@ -1471,15 +1469,15 @@ BP_CAN+
 Text Label 5650 4100 0    50   ~ 0
 CAN+_Logic
 Wire Wire Line
-	5025 2750 5475 2750
+	4825 2775 5275 2775
 Wire Wire Line
-	5025 2650 5475 2650
-Text Label 5025 2750 0    49   ~ 0
-5V_ISO_RTN
+	4825 2675 5275 2675
+Text Label 4825 2775 0    49   ~ 0
+GLV_RTN
 Wire Wire Line
-	5025 2550 5475 2550
+	4825 2575 5275 2575
 Wire Wire Line
-	5025 2450 5475 2450
-Text Notes 5775 2650 0    47   ~ 0
-Needs 5V signal \nfrom logic
+	4825 2475 5275 2475
+Text Label 4825 2675 0    49   ~ 0
+5V
 $EndSCHEMATC
