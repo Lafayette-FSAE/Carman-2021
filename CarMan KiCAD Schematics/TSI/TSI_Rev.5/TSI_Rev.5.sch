@@ -1026,6 +1026,7 @@ F21 "D_LED_CTRL" O R 3100 4750 50
 F22 "Flowrate" I L 1550 4850 50 
 F23 "Brake_Light_RTN" O R 3100 4850 51 
 F24 "Brake_Light" I R 3100 4950 50 
+F25 "3.3V" I L 1550 4950 47 
 $EndSheet
 Text Label 8100 3450 0    50   ~ 0
 TSAL_Cockpit
@@ -1422,4 +1423,8 @@ Wire Wire Line
 	2900 2500 3350 2500
 Text Label 2900 2700 0    49   ~ 0
 5V
+Text Label 700  4950 0    50   ~ 0
+3.3V
+Wire Wire Line
+	700  4950 1550 4950
 $EndSCHEMATC
