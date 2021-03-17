@@ -675,47 +675,6 @@ Wire Notes Line
 	16000 6350 11400 6350
 Wire Notes Line
 	11400 6350 11400 9900
-Text Label 4550 10800 0    59   ~ 0
-GLV_RTN
-Text Label 4550 10600 0    59   ~ 0
-PC_Ready
-$Comp
-L Device:R R33
-U 1 1 5FB4F430
-P 5100 10400
-F 0 "R33" V 5200 10300 50  0000 L CNN
-F 1 "5K" V 5100 10350 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5030 10400 50  0001 C CNN
-F 3 "~" H 5100 10400 50  0001 C CNN
-	1    5100 10400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4850 10200 5100 10200
-Wire Wire Line
-	5100 10200 5100 10250
-Text Label 4850 10200 0    59   ~ 0
-5V
-Wire Wire Line
-	5100 10600 5100 10550
-Connection ~ 5100 10600
-$Comp
-L TSI_Rev.5-rescue:TLP293-CarMan_KiCAD_Library-TSI_Rev.5-rescue U32
-U 1 1 5FB4F426
-P 5700 10700
-F 0 "U32" H 5600 10900 50  0000 C CNN
-F 1 "TLP293" H 5850 10900 50  0000 C CNN
-F 2 "Package_SO:SOIC-4_4.55x2.6mm_P1.27mm" H 5500 10500 50  0001 L CIN
-F 3 "https://toshiba.semicon-storage.com/info/docget.jsp?did=12884&prodName=TLP291" H 5700 10700 50  0001 L CNN
-	1    5700 10700
-	-1   0    0    -1  
-$EndComp
-Text Label 7100 10600 2    59   ~ 0
-PC_Ready_HV
-Text Label 7100 10800 2    59   ~ 0
-IO_Ground
-Wire Wire Line
-	5100 10600 5400 10600
 Text Label 3650 9100 0    59   ~ 0
 24V
 Text Label 3600 9650 0    59   ~ 0
@@ -1116,8 +1075,6 @@ Wire Notes Line
 	2100 5800 2100 7050
 Text Notes 5250 10000 0    47   ~ 0
 24V (GLV) --> 24V (ISO)\n
-Text Notes 5525 10975 0    47   ~ 0
-5V --> 5V\n
 Text Label 11950 2750 2    50   ~ 0
 PC_RELAY-
 Text Label 11950 2200 2    50   ~ 0
@@ -1505,25 +1462,6 @@ F 3 "~" H 5100 6350 50  0001 C CNN
 	1    5100 6350
 	0    -1   -1   0   
 $EndComp
-Text Notes 6500 10500 0    47   ~ 0
-(Pre charge ready)
-Wire Wire Line
-	6000 10800 7100 10800
-Wire Wire Line
-	6100 10600 6000 10600
-$Comp
-L Device:R R54
-U 1 1 5FB6302B
-P 6250 10600
-F 0 "R54" V 6350 10500 50  0000 L CNN
-F 1 "2.4K" V 6250 10500 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6180 10600 50  0001 C CNN
-F 3 "~" H 6250 10600 50  0001 C CNN
-	1    6250 10600
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	6400 10600 7100 10600
 Wire Wire Line
 	6450 9800 6950 9800
 Wire Wire Line
@@ -1675,10 +1613,6 @@ Wire Wire Line
 	14300 3050 14300 3350
 Wire Wire Line
 	14300 3050 15350 3050
-Wire Wire Line
-	4550 10600 5100 10600
-Wire Wire Line
-	4550 10800 5400 10800
 $Comp
 L TSI_Rev.5-rescue:SN74LVC1G08DCKR-SN74LVC1G08DCKR-Snap U29
 U 2 1 60B1C7CC
@@ -1699,4 +1633,80 @@ F 10 "https://pricing.snapeda.com/search/part/SN74LVC1G08DCKR/?ref=eda" H 6500 4
 	2    6500 4250
 	1    0    0    -1  
 $EndComp
+Text Label 4750 11000 0    59   ~ 0
+5V_ISO_RTN
+Text Label 4600 10625 0    59   ~ 0
+PC_Ready
+$Comp
+L Device:R R100
+U 1 1 60546529
+P 5325 10800
+F 0 "R100" V 5425 10700 50  0000 L CNN
+F 1 "5K" V 5325 10750 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5255 10800 50  0001 C CNN
+F 3 "~" H 5325 10800 50  0001 C CNN
+	1    5325 10800
+	1    0    0    -1  
+$EndComp
+Text Label 4600 10425 0    59   ~ 0
+5V_ISO
+$Comp
+L TSI_Rev.5-rescue:TLP293-CarMan_KiCAD_Library-TSI_Rev.5-rescue U27
+U 1 1 60546534
+P 5700 10525
+F 0 "U27" H 5600 10725 50  0000 C CNN
+F 1 "TLP293" H 5850 10725 50  0000 C CNN
+F 2 "Package_SO:SOIC-4_4.55x2.6mm_P1.27mm" H 5500 10325 50  0001 L CIN
+F 3 "https://toshiba.semicon-storage.com/info/docget.jsp?did=12884&prodName=TLP291" H 5700 10525 50  0001 L CNN
+	1    5700 10525
+	-1   0    0    -1  
+$EndComp
+Text Label 7100 10425 2    59   ~ 0
+PC_Ready_HV
+Text Label 7100 10625 2    59   ~ 0
+IO_Ground
+Text Notes 5525 10800 0    47   ~ 0
+5V --> 5V\n
+Text Notes 6500 10325 0    47   ~ 0
+(Pre charge ready)
+Wire Wire Line
+	6000 10625 7100 10625
+Wire Wire Line
+	6100 10425 6000 10425
+$Comp
+L Device:R R102
+U 1 1 60546542
+P 6250 10425
+F 0 "R102" V 6350 10325 50  0000 L CNN
+F 1 "2.4K" V 6250 10325 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6180 10425 50  0001 C CNN
+F 3 "~" H 6250 10425 50  0001 C CNN
+	1    6250 10425
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6400 10425 7100 10425
+Wire Wire Line
+	4600 10425 5400 10425
+Wire Wire Line
+	4600 10625 5325 10625
+Wire Wire Line
+	5325 10650 5325 10625
+Connection ~ 5325 10625
+Wire Wire Line
+	5325 10625 5400 10625
+Wire Wire Line
+	5325 10950 5325 11000
+Wire Wire Line
+	4750 11000 5325 11000
+Wire Notes Line
+	5075 10200 5075 10475
+Wire Notes Line
+	5075 10475 4400 10475
+Wire Notes Line
+	4400 10475 4400 10200
+Wire Notes Line
+	4400 10200 5075 10200
+Text Notes 2950 10450 0    79   ~ 0
+NEEDS ADDED TO LOGIC
 $EndSCHEMATC

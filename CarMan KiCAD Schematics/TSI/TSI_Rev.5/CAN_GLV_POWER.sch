@@ -228,12 +228,12 @@ SR_CTRL
 $Comp
 L Device:D_Schottky D3
 U 1 1 5FB8F043
-P 14350 8850
-F 0 "D3" H 14500 8800 50  0000 C CNN
-F 1 "MMSZ5231B-7-F" H 14300 8950 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-123" H 14350 8850 50  0001 C CNN
-F 3 "~" H 14350 8850 50  0001 C CNN
-	1    14350 8850
+P 14350 8950
+F 0 "D3" H 14500 8900 50  0000 C CNN
+F 1 "MMSZ5231B-7-F" H 14300 9050 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-123" H 14350 8950 50  0001 C CNN
+F 3 "~" H 14350 8950 50  0001 C CNN
+	1    14350 8950
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
@@ -346,7 +346,7 @@ F 3 "~" H 13525 6175 50  0001 C CNN
 	1    13525 6175
 	0    1    1    0   
 $EndComp
-Text Notes 14100 7700 0    50   ~ 0
+Text Notes 14125 7750 0    50   ~ 0
 SCADA Relay\n
 $Comp
 L Device:Q_NMOS_GDS Q11
@@ -394,17 +394,6 @@ MRESET_Contact
 Text Notes 6275 800  2    89   ~ 0
 Cooling Control & Sensors\n
 $Comp
-L Device:R R79
-U 1 1 5FB66337
-P 13450 9400
-F 0 "R79" H 13520 9446 50  0000 L CNN
-F 1 "10K" V 13450 9350 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 13380 9400 50  0001 C CNN
-F 3 "~" H 13450 9400 50  0001 C CNN
-	1    13450 9400
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R R72
 U 1 1 5FB6696B
 P 13300 9150
@@ -428,19 +417,13 @@ Wire Wire Line
 	13750 8950 13750 8550
 Wire Wire Line
 	13750 8550 14000 8550
-Text Label 15000 8550 0    50   ~ 0
+Text Label 15100 8550 2    50   ~ 0
 24V
 Wire Wire Line
-	14500 8850 14700 8850
-Wire Wire Line
-	14700 8850 14700 8550
+	14500 8950 14700 8950
 Connection ~ 14700 8550
 Wire Wire Line
-	14700 8550 15000 8550
-Wire Wire Line
-	14200 8850 14000 8850
-Wire Wire Line
-	14000 8850 14000 8550
+	14200 8950 14000 8950
 Connection ~ 14000 8550
 Wire Wire Line
 	14000 8550 14050 8550
@@ -713,8 +696,8 @@ U 1 1 5FB466B1
 P 14350 8350
 AR Path="/5FB466B1" Ref="RL?"  Part="1" 
 AR Path="/5FE1DE7D/5FB466B1" Ref="K2"  Part="1" 
-F 0 "K2" V 14917 8350 50  0000 C CNN
-F 1 "G5LE-1-E" V 14826 8350 50  0000 C CNN
+F 0 "K2" V 14800 8350 50  0000 C CNN
+F 1 "G5LE-1-E" V 13900 8350 50  0000 C CNN
 F 2 "TSI_Rev_2021_Footprint_Lib:G5LE-1-E DC24" H 14600 8950 50  0001 C CNN
 F 3 "https://media.digikey.com/pdf/Data%20Sheets/Omron%20PDFs/G5LE-E_G.pdf" H 14600 8950 50  0001 C CNN
 	1    14350 8350
@@ -1122,7 +1105,7 @@ L Device:R R61
 U 1 1 601328F4
 P 12350 2150
 F 0 "R61" V 12250 2100 50  0000 L CNN
-F 1 "1K" V 12350 2100 50  0000 L CNN
+F 1 "1.5K" V 12350 2075 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 12280 2150 50  0001 C CNN
 F 3 "~" H 12350 2150 50  0001 C CNN
 	1    12350 2150
@@ -1288,7 +1271,7 @@ F 3 "~" H 13975 7175 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	14125 7175 14200 7175
-Text Notes 14550 9325 0    51   ~ 0
+Text Notes 14425 9575 0    51   ~ 0
 NC relay, if SR_CTRL_Boosted \nis high the Safety Loop opens
 Text Label 7900 1375 0    50   ~ 0
 3.3V
@@ -1439,4 +1422,45 @@ Wire Notes Line
 	9750 9950 9750 10075
 Wire Wire Line
 	10625 2375 11325 2375
+$Comp
+L Device:R R79
+U 1 1 5FB66337
+P 13450 9400
+F 0 "R79" H 13520 9446 50  0000 L CNN
+F 1 "10K" V 13450 9350 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 13380 9400 50  0001 C CNN
+F 3 "~" H 13450 9400 50  0001 C CNN
+	1    13450 9400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R33
+U 1 1 6090AD09
+P 13475 8550
+F 0 "R33" V 13550 8500 50  0000 L CNN
+F 1 "5K" V 13475 8500 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 13405 8550 50  0001 C CNN
+F 3 "~" H 13475 8550 50  0001 C CNN
+	1    13475 8550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	13750 8550 13625 8550
+Connection ~ 13750 8550
+Wire Wire Line
+	13100 8550 13325 8550
+Text Label 13100 8550 0    50   ~ 0
+24V
+Text Notes 13075 8675 0    47   ~ 0
+Pull-up resistor
+Text Notes 13975 7825 0    39   ~ 0
+(Coil rated for 16.7 mA)
+Wire Wire Line
+	14700 8550 14700 8950
+Wire Wire Line
+	14000 8550 14000 8950
+Wire Wire Line
+	14700 8550 15100 8550
+Text Notes 12400 2200 0    39   ~ 0
+Needs to be\nrated for 1/2W\n
 $EndSCHEMATC

@@ -388,11 +388,9 @@ Text Label 2050 1900 0    50   ~ 0
 IMD_FAULT_LED
 Text Label 2050 2000 0    50   ~ 0
 AMS_FAULT_LED
-Text Label 4825 2575 0    50   ~ 0
+Text Label 2900 2600 0    50   ~ 0
 SCL
-Text Label 2900 2475 0    50   ~ 0
-SL1_In
-Text Label 4825 2475 0    50   ~ 0
+Text Label 2900 2500 0    50   ~ 0
 SDA
 Text Label 600  2475 0    50   ~ 0
 Flowrate
@@ -539,16 +537,6 @@ Text Label 700  6100 0    50   ~ 0
 Brake_Pressed_HV
 Text Label 700  5800 0    50   ~ 0
 MC_Voltage
-Wire Wire Line
-	2900 2775 3400 2775
-Wire Wire Line
-	2900 2675 3400 2675
-Wire Wire Line
-	2900 2475 3400 2475
-Text Label 2900 2775 0    50   ~ 0
-Throttle_SEL
-Text Label 2900 2675 0    50   ~ 0
-IMD_Status
 Text Label 8100 3050 0    50   ~ 0
 24V
 Text Label 8100 3150 0    50   ~ 0
@@ -964,60 +952,16 @@ Chassis_GND
 Text Label 10400 850  0    50   ~ 0
 SL1_In
 $Comp
-L Connector_Generic:Conn_01x04 J23
-U 1 1 600AD19A
-P 5475 2575
-F 0 "J23" H 5400 2775 50  0000 L CNN
-F 1 "I2C" H 5425 2675 50  0001 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 5475 2575 50  0001 C CNN
-F 3 "~" H 5475 2575 50  0001 C CNN
-	1    5475 2575
-	1    0    0    -1  
-$EndComp
-Text Notes 3900 3075 0    50   ~ 0
-Right Side\nTesting Connector\n\n
-$Comp
-L Connector_Generic:Conn_01x04 J22
-U 1 1 60224CCE
-P 4600 2575
-F 0 "J22" H 4550 2775 50  0000 L CNN
-F 1 "Right Side Conn." H 4550 2875 50  0001 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 4600 2575 50  0001 C CNN
-F 3 "~" H 4600 2575 50  0001 C CNN
-	1    4600 2575
-	1    0    0    -1  
-$EndComp
-Text Label 3800 2775 0    50   ~ 0
-Brake_Light
-Text Label 3800 2675 0    50   ~ 0
-BOT_Out
-Text Label 3800 2575 0    49   ~ 0
-12V_Cooling
-Text Label 3800 2475 0    50   ~ 0
-Drive_BTN
-Wire Wire Line
-	3800 2475 4400 2475
-Wire Wire Line
-	4400 2575 3800 2575
-Wire Wire Line
-	3800 2675 4400 2675
-Wire Wire Line
-	4400 2775 3800 2775
-$Comp
 L Connector_Generic:Conn_01x04 J21
-U 1 1 5FE0EFE1
-P 3600 2575
-F 0 "J21" H 3550 2775 50  0000 L CNN
-F 1 "Left Test Conn." H 3550 2875 50  0001 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 3600 2575 50  0001 C CNN
-F 3 "~" H 3600 2575 50  0001 C CNN
-	1    3600 2575
+U 1 1 600AD19A
+P 3550 2600
+F 0 "J21" H 3475 2800 50  0000 L CNN
+F 1 "I2C" H 3500 2700 50  0001 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 3550 2600 50  0001 C CNN
+F 3 "~" H 3550 2600 50  0001 C CNN
+	1    3550 2600
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2900 2575 3400 2575
-Text Label 2900 2575 0    50   ~ 0
-TSAL
 Wire Wire Line
 	3100 3850 3950 3850
 Wire Wire Line
@@ -1113,7 +1057,7 @@ Text Label 2050 1600 0    50   ~ 0
 Safety_Loop_EPAL
 Text Label 2050 1700 0    50   ~ 0
 GEN_FAULT_EPAL
-Text Notes 4900 3050 0    59   ~ 0
+Text Notes 2975 3075 0    59   ~ 0
 Easy access\nSDA & SCL pins
 Text Label 600  2875 0    50   ~ 0
 CoolTemp_In
@@ -1272,8 +1216,6 @@ Wire Wire Line
 	3100 4850 3950 4850
 Text Label 3950 4850 2    50   ~ 0
 Brake_Light_RTN
-Text Notes 2950 3075 0    50   ~ 0
-Left Side\nTesting Connector\n\n
 $Sheet
 S 8850 2950 1500 1300
 U 5FE1DCBA
@@ -1393,91 +1335,91 @@ Text Label 5100 1700 0    49   ~ 0
 5V_ISO_RTN
 Text Label 8100 3650 0    49   ~ 0
 5V_ISO_RTN
-Text Label 5925 4700 0    50   ~ 0
+Text Label 5775 3775 0    50   ~ 0
 Flowrate_RTN
 Wire Wire Line
-	5428 4810 6978 4810
-Text Label 5428 4810 0    50   ~ 0
+	5278 3885 6828 3885
+Text Label 5278 3885 0    50   ~ 0
 SCL_uC
-Text Label 6978 4810 2    50   ~ 0
+Text Label 6828 3885 2    50   ~ 0
 SCL_TSI
-Text Label 6128 4810 0    50   ~ 0
+Text Label 5978 3885 0    50   ~ 0
 SCL
 Wire Wire Line
-	5428 4910 6978 4910
-Text Label 5428 4910 0    50   ~ 0
+	5278 3985 6828 3985
+Text Label 5278 3985 0    50   ~ 0
 SDA_uC
-Text Label 6128 4910 0    50   ~ 0
+Text Label 5978 3985 0    50   ~ 0
 SDA
-Text Label 6978 4910 2    50   ~ 0
+Text Label 6828 3985 2    50   ~ 0
 SDA_TSI
 Wire Wire Line
-	5425 4700 6975 4700
-Text Label 5425 4700 0    50   ~ 0
+	5275 3775 6825 3775
+Text Label 5275 3775 0    50   ~ 0
 AIRS-
-Text Label 6975 4700 2    50   ~ 0
+Text Label 6825 3775 2    50   ~ 0
 GLV_RTN
-Text Label 5425 4600 0    50   ~ 0
+Text Label 5275 3675 0    50   ~ 0
 24V
-Text Label 6975 4600 2    50   ~ 0
+Text Label 6825 3675 2    50   ~ 0
 24V_AMS_IN
 Wire Wire Line
-	5425 4600 6975 4600
-Text Label 6375 4600 2    50   ~ 0
+	5275 3675 6825 3675
+Text Label 6225 3675 2    50   ~ 0
 24V_IMD_IN
 Wire Notes Line
-	5550 3775 5550 4250
+	5400 2850 5400 3325
 Wire Notes Line
-	5550 3775 6750 3775
+	5400 2850 6600 2850
 Wire Notes Line
-	6750 3775 6750 4250
+	6600 2850 6600 3325
 Wire Wire Line
-	5650 4100 6675 4100
+	5500 3175 6525 3175
 Wire Wire Line
-	5650 4200 6675 4200
+	5500 3275 6525 3275
 Wire Wire Line
-	5425 4475 5875 4475
+	5275 3550 5725 3550
 Wire Wire Line
-	6975 4475 6475 4475
-Text Label 6975 4475 2    50   ~ 0
+	6825 3550 6325 3550
+Text Label 6825 3550 2    50   ~ 0
 Chassis_GND
-Text Label 5425 4475 0    50   ~ 0
+Text Label 5275 3550 0    50   ~ 0
 CAN_Shield
 $Comp
 L Device:Jumper JP?
 U 1 1 601967AD
-P 6175 4475
+P 6025 3550
 AR Path="/6196BF15/601967AD" Ref="JP?"  Part="1" 
 AR Path="/601967AD" Ref="JP3"  Part="1" 
-F 0 "JP3" H 6375 4575 50  0000 R CNN
-F 1 "Jumper" H 6875 4475 50  0001 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6175 4475 50  0001 C CNN
-F 3 "~" H 6175 4475 50  0001 C CNN
-	1    6175 4475
+F 0 "JP3" H 6225 3650 50  0000 R CNN
+F 1 "Jumper" H 6725 3550 50  0001 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6025 3550 50  0001 C CNN
+F 3 "~" H 6025 3550 50  0001 C CNN
+	1    6025 3550
 	1    0    0    -1  
 $EndComp
 Wire Notes Line
-	5550 4250 6750 4250
-Text Notes 5925 3975 0    50   ~ 0
+	5400 3325 6600 3325
+Text Notes 5775 3050 0    50   ~ 0
 Battery Pack\nCAN Lines\n
-Text Label 5650 4200 0    50   ~ 0
+Text Label 5500 3275 0    50   ~ 0
 CAN-_Logic
-Text Label 6675 4200 2    50   ~ 0
+Text Label 6525 3275 2    50   ~ 0
 BP_CAN-
-Text Label 6675 4100 2    50   ~ 0
+Text Label 6525 3175 2    50   ~ 0
 BP_CAN+
-Text Label 5650 4100 0    50   ~ 0
+Text Label 5500 3175 0    50   ~ 0
 CAN+_Logic
 Wire Wire Line
-	4825 2775 5275 2775
+	2900 2800 3350 2800
 Wire Wire Line
-	4825 2675 5275 2675
-Text Label 4825 2775 0    49   ~ 0
+	2900 2700 3350 2700
+Text Label 2900 2800 0    49   ~ 0
 GLV_RTN
 Wire Wire Line
-	4825 2575 5275 2575
+	2900 2600 3350 2600
 Wire Wire Line
-	4825 2475 5275 2475
-Text Label 4825 2675 0    49   ~ 0
+	2900 2500 3350 2500
+Text Label 2900 2700 0    49   ~ 0
 5V
 $EndSCHEMATC
