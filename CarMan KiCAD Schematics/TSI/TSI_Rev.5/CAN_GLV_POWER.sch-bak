@@ -583,8 +583,6 @@ Text Label 5200 1700 0    47   ~ 0
 GLV_RTN
 Wire Wire Line
 	4950 1050 5900 1050
-Text Label 11200 3150 0    50   ~ 0
-Safety_Loop
 Wire Wire Line
 	13450 9550 13450 9700
 Wire Wire Line
@@ -889,7 +887,7 @@ Wire Wire Line
 	4050 2850 4950 2850
 Wire Notes Line
 	2950 650  2950 3250
-Text Label 10625 2375 0    50   ~ 0
+Text Label 10625 3325 0    50   ~ 0
 MRESET_Contact
 Text HLabel 14950 3875 0    50   Input ~ 0
 Safety_Loop_EPAL
@@ -903,38 +901,38 @@ Text Label 12350 1800 0    50   ~ 0
 GLV_RTN
 Wire Wire Line
 	12350 1700 12350 1800
-Text Label 12800 3150 2    50   ~ 0
+Text Label 12950 2300 2    50   ~ 0
 Safety_Loop_EPAL
 $Comp
 L TSI_Rev.5-rescue:TLP293-CarMan_KiCAD_Library-TSI_Rev.5-rescue U20
 U 1 1 6012F5F3
-P 11925 2475
-F 0 "U20" H 11925 2675 50  0000 C CNN
-F 1 "TLP293" H 11925 2275 50  0000 C CNN
-F 2 "Package_SO:SOIC-4_4.55x2.6mm_P1.27mm" H 11725 2275 50  0001 L CIN
-F 3 "https://www.mouser.com/ProductDetail/Toshiba/TLP293GB-TPLE/?qs=OLJpxlzHOSSc5RAOktTSWw%3D%3D" H 11925 2475 50  0001 L CNN
-	1    11925 2475
+P 11925 3425
+F 0 "U20" H 11925 3625 50  0000 C CNN
+F 1 "TLP293" H 11925 3225 50  0000 C CNN
+F 2 "Package_SO:SOIC-4_4.55x2.6mm_P1.27mm" H 11725 3225 50  0001 L CIN
+F 3 "https://www.mouser.com/ProductDetail/Toshiba/TLP293GB-TPLE/?qs=OLJpxlzHOSSc5RAOktTSWw%3D%3D" H 11925 3425 50  0001 L CNN
+	1    11925 3425
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R25
 U 1 1 60131E61
-P 11475 2375
-F 0 "R25" V 11375 2375 50  0000 C CNN
-F 1 "2.4K" V 11475 2375 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 11405 2375 50  0001 C CNN
-F 3 "~" H 11475 2375 50  0001 C CNN
-	1    11475 2375
+P 11475 3325
+F 0 "R25" V 11375 3325 50  0000 C CNN
+F 1 "2.4K" V 11475 3325 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 11405 3325 50  0001 C CNN
+F 3 "~" H 11475 3325 50  0001 C CNN
+	1    11475 3325
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	12225 2575 12300 2575
-Text Label 12100 2925 2    50   ~ 0
+	12225 3525 12300 3525
+Text Label 12100 3875 2    50   ~ 0
 GLV_RTN
 Wire Wire Line
-	11625 2575 11575 2575
+	11625 3525 11575 3525
 Wire Wire Line
-	11575 2575 11575 2925
+	11575 3525 11575 3875
 $Comp
 L Connector_Generic:Conn_01x02 J?
 U 1 1 601DA5ED
@@ -986,13 +984,7 @@ Wire Notes Line
 Wire Notes Line
 	12050 5500 15950 5500
 Wire Notes Line
-	9850 3250 13750 3250
-Wire Notes Line
-	13750 3250 13750 550 
-Wire Notes Line
 	13750 550  9850 550 
-Wire Notes Line
-	9850 550  9850 3250
 Text Notes 11350 750  0    87   ~ 0
 EPAL LED SIGNALS
 Text Label 12950 1400 2    50   ~ 0
@@ -1004,12 +996,10 @@ Wire Wire Line
 	12350 1400 12950 1400
 Wire Wire Line
 	11550 1200 11350 1200
-Text Label 12950 1200 2    50   ~ 0
+Text Label 12950 2100 2    50   ~ 0
 24V
 Wire Wire Line
 	12950 1200 12150 1200
-Wire Wire Line
-	11200 3150 12800 3150
 Wire Wire Line
 	6700 9925 7300 9925
 Wire Notes Line
@@ -1101,30 +1091,30 @@ Wire Wire Line
 $Comp
 L Device:R R61
 U 1 1 601328F4
-P 12350 2150
-F 0 "R61" V 12250 2100 50  0000 L CNN
-F 1 "1.5K" V 12350 2075 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 12280 2150 50  0001 C CNN
-F 3 "~" H 12350 2150 50  0001 C CNN
-	1    12350 2150
+P 12350 3100
+F 0 "R61" V 12250 3050 50  0000 L CNN
+F 1 "1.5K" V 12350 3025 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 12280 3100 50  0001 C CNN
+F 3 "~" H 12350 3100 50  0001 C CNN
+	1    12350 3100
 	1    0    0    -1  
 $EndComp
-Text Label 12350 2000 0    50   ~ 0
+Text Label 12350 2950 0    50   ~ 0
 24V
-Text Label 13100 2375 2    50   ~ 0
+Text Label 13100 3325 2    50   ~ 0
 GEN_FAULT_EPAL
 Wire Wire Line
-	12225 2375 12350 2375
+	12225 3325 12350 3325
 Wire Wire Line
-	12350 2375 12350 2300
-Connection ~ 12350 2375
+	12350 3325 12350 3250
+Connection ~ 12350 3325
 Wire Wire Line
-	12350 2375 13100 2375
+	12350 3325 13100 3325
 Wire Wire Line
-	12300 2575 12300 2925
+	12300 3525 12300 3875
 Wire Wire Line
-	11575 2925 12300 2925
-Text Notes 12450 2575 0    51   ~ 0
+	11575 3875 12300 3875
+Text Notes 12450 3525 0    51   ~ 0
 25mA passed to EPAL when\nMRESET_CONTACT is low
 Wire Notes Line
 	15950 5500 15950 9850
@@ -1422,7 +1412,7 @@ Wire Notes Line
 Wire Notes Line
 	9750 9950 9750 10075
 Wire Wire Line
-	10625 2375 11325 2375
+	10625 3325 11325 3325
 $Comp
 L Device:R R79
 U 1 1 5FB66337
@@ -1442,8 +1432,74 @@ Wire Wire Line
 	14000 8550 14000 8950
 Wire Wire Line
 	14700 8550 15100 8550
-Text Notes 12400 2200 0    39   ~ 0
+Text Notes 12400 3150 0    39   ~ 0
 Needs to be\nrated for 1/2W\n
 Wire Wire Line
 	13600 8550 14000 8550
+Text Label 10750 2300 0    50   ~ 0
+AIRs-
+Text Label 10750 2100 0    50   ~ 0
+AIRs+
+Wire Wire Line
+	11550 2300 10750 2300
+Wire Wire Line
+	11050 2100 10750 2100
+$Comp
+L Device:R R33
+U 1 1 60637A88
+P 11200 2100
+F 0 "R33" V 11100 2100 50  0000 C CNN
+F 1 "2.4K" V 11200 2100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 11130 2100 50  0001 C CNN
+F 3 "~" H 11200 2100 50  0001 C CNN
+	1    11200 2100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R54
+U 1 1 60637A8E
+P 12350 2450
+F 0 "R54" V 12250 2450 50  0000 C CNN
+F 1 "1K" V 12350 2450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 12280 2450 50  0001 C CNN
+F 3 "~" H 12350 2450 50  0001 C CNN
+	1    12350 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L TSI_Rev.5-rescue:TLP293-CarMan_KiCAD_Library-TSI_Rev.5-rescue U28
+U 1 1 60637A94
+P 11850 2200
+F 0 "U28" H 11850 2400 50  0000 C CNN
+F 1 "TLP293" H 11850 2000 50  0000 C CNN
+F 2 "Package_SO:SOIC-4_4.55x2.6mm_P1.27mm" H 11650 2000 50  0001 L CIN
+F 3 "" H 11850 2200 50  0001 L CNN
+	1    11850 2200
+	1    0    0    -1  
+$EndComp
+Text Label 12350 2700 0    50   ~ 0
+GLV_RTN
+Wire Wire Line
+	12350 2600 12350 2700
+Connection ~ 12350 2300
+Wire Wire Line
+	12150 2300 12350 2300
+Wire Wire Line
+	12350 2300 12950 2300
+Wire Wire Line
+	11550 2100 11350 2100
+Text Label 12950 1200 2    50   ~ 0
+3.3V
+Wire Wire Line
+	12950 2100 12150 2100
+Wire Notes Line
+	13750 550  13750 4050
+Wire Notes Line
+	9850 4050 13750 4050
+Wire Notes Line
+	9850 550  9850 4050
+Text Notes 3800 7650 0    47   ~ 0
+15 mA through coil
+Text Notes 8850 7750 0    47   ~ 0
+15 mA through coil
 $EndSCHEMATC
