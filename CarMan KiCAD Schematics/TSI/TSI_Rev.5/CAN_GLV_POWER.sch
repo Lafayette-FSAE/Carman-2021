@@ -162,7 +162,7 @@ L pspice:CAP C60
 U 1 1 5FB37667
 P 6100 5250
 F 0 "C60" H 5900 5350 50  0000 L CNN
-F 1 "1u" H 5900 5150 50  0000 L CNN
+F 1 "0.01u" H 5850 5150 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6100 5250 50  0001 C CNN
 F 3 "~" H 6100 5250 50  0001 C CNN
 	1    6100 5250
@@ -303,13 +303,7 @@ Wire Wire Line
 Wire Wire Line
 	5350 6000 6700 6000
 Wire Notes Line
-	5950 6350 8500 6350
-Wire Notes Line
-	8500 3800 5950 3800
-Wire Notes Line
 	8500 3800 8500 6350
-Wire Notes Line
-	5950 3800 5950 6350
 Text Notes 3750 4150 2    89   ~ 0
 DC/DC Converter\n
 Wire Notes Line
@@ -1502,4 +1496,10 @@ Text Notes 3800 7650 0    47   ~ 0
 15 mA through coil
 Text Notes 8850 7750 0    47   ~ 0
 15 mA through coil
+Wire Notes Line
+	5800 3800 8500 3800
+Wire Notes Line
+	5800 6350 8500 6350
+Wire Notes Line
+	5800 3800 5800 6350
 $EndSCHEMATC
