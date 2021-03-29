@@ -858,14 +858,12 @@ Text Notes 12450 8250 0    79   ~ 0
 Adjustable Voltage Reference\n
 Text Notes 11850 6800 0    138  ~ 0
 VOLTAGE REFERENCES & REGULATORS\n(HIGH VOLTAGE)
-Text Label 9050 6750 2    50   ~ 0
+Text Label 8720 6650 2    50   ~ 0
 DC_RELAY+
-Text Label 9050 6850 2    50   ~ 0
+Text Label 8720 6950 2    50   ~ 0
 DC_RELAY-
 Wire Wire Line
 	7600 6550 7600 6650
-Wire Wire Line
-	8150 6850 9050 6850
 Wire Wire Line
 	6000 6550 7450 6550
 $Comp
@@ -882,19 +880,9 @@ $EndComp
 Wire Wire Line
 	7600 6650 7850 6650
 Wire Wire Line
-	8150 6650 7850 6650
-Wire Wire Line
-	8150 6750 9050 6750
-Connection ~ 7850 6650
-Wire Wire Line
 	7450 6950 7850 6950
 Wire Wire Line
 	7450 6550 7450 6950
-Wire Wire Line
-	8150 6950 7850 6950
-Connection ~ 7850 6950
-Wire Wire Line
-	8150 6950 8150 6850
 Text Notes 13400 1150 0    79   ~ 0
 ~S
 Text Notes 13750 1150 0    79   ~ 0
@@ -1032,10 +1020,6 @@ PC_RELAY-
 Text Label 11950 2200 2    50   ~ 0
 PC_RELAY+
 Wire Wire Line
-	11400 2200 11950 2200
-Wire Wire Line
-	11400 2750 11950 2750
-Wire Wire Line
 	11400 2050 10950 2050
 Connection ~ 10950 2050
 Text Notes 12500 10350 0    118  ~ 0
@@ -1079,8 +1063,6 @@ Text Label 2150 1800 2    50   ~ 0
 Brake_Pressed_HV
 Text HLabel 1350 1800 0    50   Input ~ 0
 Brake_Pressed_HV
-Wire Wire Line
-	8150 6650 8150 6750
 Wire Wire Line
 	11400 2050 11400 2200
 Text Notes 2250 5650 0    197  ~ 0
@@ -1181,16 +1163,8 @@ Wire Wire Line
 	9000 4800 9500 4800
 Wire Wire Line
 	11400 2750 11400 2850
-Wire Notes Line
-	11850 2000 11850 2850
-Wire Notes Line
-	11850 2850 12350 2850
-Wire Notes Line
-	12350 2850 12350 2000
-Wire Notes Line
-	12350 2000 11850 2000
-Text Notes 11900 2450 0    47   ~ 0
-PC Relay\n
+Text Notes 11965 2085 0    47   ~ 0
+PC Relay (J4)\n
 $Comp
 L CarMan_KiCAD_Library:STN3NF06L U9
 U 1 1 60FD9311
@@ -1238,16 +1212,8 @@ Wire Wire Line
 	14500 7850 14500 7900
 Wire Wire Line
 	14500 7400 14500 7850
-Wire Notes Line
-	8550 6950 9150 6950
-Wire Notes Line
-	9150 6950 9150 6600
-Wire Notes Line
-	8550 6950 8550 6600
-Wire Notes Line
-	8550 6600 9150 6600
-Text Notes 8700 6600 0    47   ~ 0
-DC Relay\n
+Text Notes 8250 6470 0    47   ~ 0
+DC Relay (J5)\n
 $Comp
 L Device:Q_PMOS_GSD Q1
 U 1 1 611F87F8
@@ -1683,4 +1649,29 @@ Wire Wire Line
 	7600 5850 7600 6150
 Wire Wire Line
 	6800 5850 7600 5850
+Connection ~ 7850 6650
+Wire Wire Line
+	7850 6650 8720 6650
+Wire Wire Line
+	7850 6950 8720 6950
+Wire Notes Line
+	8220 7030 8760 7030
+Wire Notes Line
+	8760 7030 8760 6490
+Wire Notes Line
+	8760 6490 8220 6490
+Wire Notes Line
+	8220 6490 8220 7030
+Wire Wire Line
+	11400 2200 12110 2200
+Wire Wire Line
+	11400 2750 12110 2750
+Wire Notes Line
+	12000 2825 12375 2825
+Wire Notes Line
+	12375 2825 12375 2125
+Wire Notes Line
+	12375 2125 12000 2125
+Wire Notes Line
+	12000 2125 12000 2825
 $EndSCHEMATC
