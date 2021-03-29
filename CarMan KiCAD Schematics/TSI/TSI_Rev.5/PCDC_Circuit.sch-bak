@@ -591,57 +591,20 @@ F 3 "~" H 6250 6350 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:D_Schottky D12
-U 1 1 5FA0035B
-P 6550 6100
-F 0 "D12" V 6504 6180 50  0000 L CNN
-F 1 "MMSZ5231B-7-F" V 6450 5400 50  0000 L CNN
-F 2 "Diode_SMD:D_SOD-123" H 6550 6100 50  0001 C CNN
-F 3 "https://www.snapeda.com/parts/MMSZ5231B-7-F/Diodes%20Inc./datasheet/" H 6550 6100 50  0001 C CNN
-	1    6550 6100
-	0    1    1    0   
-$EndComp
-$Comp
 L Device:R R109
 U 1 1 5FA02014
-P 7200 6100
-F 0 "R109" V 7300 6000 50  0000 L CNN
-F 1 "1M" V 7200 6050 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7130 6100 50  0001 C CNN
-F 3 "~" H 7200 6100 50  0001 C CNN
-	1    7200 6100
+P 6800 6100
+F 0 "R109" V 6900 6000 50  0000 L CNN
+F 1 "1M" V 6800 6050 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6730 6100 50  0001 C CNN
+F 3 "~" H 6800 6100 50  0001 C CNN
+	1    6800 6100
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6550 5800 6550 5950
-Wire Wire Line
-	6550 5800 6850 5800
-Wire Wire Line
-	7200 5800 7200 5950
-Wire Wire Line
-	6850 5700 6850 5800
-Connection ~ 6850 5800
-Wire Wire Line
-	6850 5800 7200 5800
-Text Label 6850 5700 0    59   ~ 0
+Text Label 7100 5850 0    59   ~ 0
 24HV
 Wire Wire Line
-	7200 6250 7200 6350
-Wire Wire Line
-	7200 6350 6550 6350
-Wire Wire Line
-	6550 6350 6550 6250
-Connection ~ 6550 6350
-Wire Wire Line
-	6550 6350 6400 6350
-Wire Wire Line
-	7200 5800 7600 5800
-Wire Wire Line
-	7600 5800 7600 6150
-Connection ~ 7200 5800
-Wire Wire Line
-	7200 6350 7300 6350
-Connection ~ 7200 6350
+	6800 6250 6800 6350
 Wire Wire Line
 	5400 6350 5250 6350
 Text Label 4450 6350 0    59   ~ 0
@@ -1709,4 +1672,15 @@ Wire Wire Line
 	4300 7950 4350 7950
 Wire Wire Line
 	5050 7950 5450 7950
+Wire Wire Line
+	6400 6350 6800 6350
+Connection ~ 6800 6350
+Wire Wire Line
+	6800 6350 7300 6350
+Wire Wire Line
+	6800 5850 6800 5950
+Wire Wire Line
+	7600 5850 7600 6150
+Wire Wire Line
+	6800 5850 7600 5850
 $EndSCHEMATC

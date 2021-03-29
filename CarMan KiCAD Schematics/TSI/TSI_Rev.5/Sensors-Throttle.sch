@@ -103,7 +103,7 @@ Text Notes 11600 4150 2    55   ~ 0
 Bypass Cap for U26\n\n
 Wire Wire Line
 	10100 4800 10100 4700
-Text Label 10100 5400 2    50   ~ 0
+Text Label 10100 5450 2    50   ~ 0
 IO_Ground
 $Comp
 L Amplifier_Operational:MCP6004 U21
@@ -290,13 +290,13 @@ Wire Wire Line
 $Comp
 L Amplifier_Operational:MCP6004 U21
 U 5 1 5F997C97
-P 10000 5100
-F 0 "U21" H 9958 5146 50  0001 L CNN
-F 1 "MCP6004" H 9958 5100 50  0001 L CNN
-F 2 "TSI_Rev_2021_Footprint_Lib:SOIC127P600X175-14N" H 9950 5200 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 10050 5300 50  0001 C CNN
-	5    10000 5100
-	-1   0    0    1   
+P 10200 5100
+F 0 "U21" H 10158 5146 50  0001 L CNN
+F 1 "MCP6004" H 10158 5100 50  0001 L CNN
+F 2 "TSI_Rev_2021_Footprint_Lib:SOIC127P600X175-14N" H 10150 5200 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 10250 5300 50  0001 C CNN
+	5    10200 5100
+	1    0    0    -1  
 $EndComp
 $Comp
 L Amplifier_Operational:MCP6004 U21
@@ -1404,4 +1404,21 @@ Wire Notes Line
 	2950 9250 2950 8350
 Wire Notes Line
 	1400 8350 1400 9250
+Wire Wire Line
+	10100 5450 10100 5400
+Text Label 10350 4650 0    50   ~ 0
+DiffAmp_REF
+Wire Wire Line
+	10350 4650 10350 4700
+$Comp
+L Device:R R104
+U 1 1 60749BC2
+P 10350 4850
+F 0 "R104" V 10450 4900 50  0000 C CNN
+F 1 "10K" V 10350 4850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 10280 4850 50  0001 C CNN
+F 3 "~" H 10350 4850 50  0001 C CNN
+	1    10350 4850
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
