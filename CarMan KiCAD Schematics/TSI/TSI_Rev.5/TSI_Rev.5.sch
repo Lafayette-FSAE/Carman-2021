@@ -201,8 +201,8 @@ Text Label 3425 775  0    50   ~ 0
 PC_RELAY-
 Text Label 3425 675  0    50   ~ 0
 PC_RELAY+
-Text Notes 4350 925  0    50   ~ 0
-Discharge Relay
+Text Notes 4250 925  0    50   ~ 0
+Discharge Relay (NC)
 $Comp
 L Connector_Generic:Conn_02x04_Counter_Clockwise J6
 U 1 1 60243E54
@@ -1427,4 +1427,6 @@ Text Label 700  4950 0    50   ~ 0
 3.3V
 Wire Wire Line
 	700  4950 1550 4950
+Text Notes 4400 1000 0    39   ~ 0
+(120 mA to open)
 $EndSCHEMATC
