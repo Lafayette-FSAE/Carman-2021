@@ -543,16 +543,8 @@ Text Label 15350 3050 2    50   ~ 0
 24HV
 Text Label 15350 3850 2    47   ~ 0
 IGNI_VCC
-Wire Notes Line
-	13400 3750 14550 3750
-Wire Notes Line
-	14550 3750 14550 2550
-Wire Notes Line
-	14550 2550 13400 2550
-Wire Notes Line
-	13400 2550 13400 3750
-Text Notes 13600 2800 0    79   ~ 0
-Logic Power\nSupply Switch
+Text Notes 13425 2750 0    79   ~ 0
+Motor Controller \nPower Supply Relay
 Connection ~ 11850 4500
 Wire Wire Line
 	11850 4500 12400 4500
@@ -1676,4 +1668,14 @@ Wire Notes Line
 	12000 2125 12000 2825
 Text Notes 10100 4475 0    43   ~ 0
 Voltage Comparator
+Text Notes 4700 3375 0    43   ~ 0
+Approx. 5V
+Wire Notes Line
+	13325 2475 13325 3750
+Wire Notes Line
+	13325 2475 14675 2475
+Wire Notes Line
+	14675 2475 14675 3750
+Wire Notes Line
+	13325 3750 14675 3750
 $EndSCHEMATC

@@ -77,7 +77,7 @@ Text Label 9500 4700 2    55   ~ 0
 IO_Ground
 Wire Wire Line
 	9500 4700 9600 4700
-Text Notes 10300 4600 2    55   ~ 0
+Text Notes 10050 4600 2    55   ~ 0
 Bypass Cap for U21\n\n
 $Comp
 L pspice:CAP C?
@@ -110,11 +110,11 @@ L Amplifier_Operational:MCP6004 U21
 U 2 1 5F995327
 P 10000 5100
 F 0 "U21" H 10000 5100 50  0000 C CNN
-F 1 "MCP6004" H 10150 4950 50  0000 C CNN
+F 1 "MCP6004" H 10125 5300 50  0000 C CNN
 F 2 "TSI_Rev_2021_Footprint_Lib:SOIC127P600X175-14N" H 9950 5200 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 10050 5300 50  0001 C CNN
 	2    10000 5100
-	-1   0    0    1   
+	-1   0    0    -1  
 $EndComp
 Text Label 10100 4700 0    50   ~ 0
 5HV
@@ -1337,7 +1337,7 @@ $Comp
 L Device:R R104
 U 1 1 60749BC2
 P 10325 4775
-F 0 "R104" V 10425 4825 50  0000 C CNN
+F 0 "R104" V 10400 4775 50  0000 C CNN
 F 1 "10K" V 10325 4775 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 10255 4775 50  0001 C CNN
 F 3 "~" H 10325 4775 50  0001 C CNN
