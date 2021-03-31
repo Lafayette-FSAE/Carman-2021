@@ -1232,29 +1232,25 @@ Wire Wire Line
 	12150 9750 12700 9750
 Wire Wire Line
 	12150 8600 12700 8600
-Wire Notes Line
-	8450 10850 8450 10100
 Text Notes 13225 8400 0    87   ~ 0
 BRAKE PRESSED
-Text Notes 9050 10200 0    59   ~ 0
-RED LED STATUS LIGHT
-Text Label 10850 10550 2    50   ~ 0
+Text Notes 8850 8900 0    59   ~ 0
+THROTTLE PLAUSIBILITY STATUS LIGHTS
+Text Label 10850 9225 2    50   ~ 0
 GLV_RTN
-Connection ~ 9850 10550
-Text Label 8900 10450 2    50   ~ 0
+Connection ~ 9850 9225
+Text Label 8525 9125 0    50   ~ 0
 Throttle_PL
 Wire Wire Line
-	9050 10650 9100 10650
+	9050 9325 9100 9325
 Wire Wire Line
-	9850 10550 9700 10550
+	9850 9225 9700 9225
 Wire Wire Line
-	9850 10800 9850 10550
+	9850 9475 9850 9225
 Wire Wire Line
-	9050 10800 9850 10800
+	9050 9475 9850 9475
 Wire Wire Line
-	9050 10650 9050 10800
-Wire Wire Line
-	8900 10450 9100 10450
+	9050 9325 9050 9475
 Text HLabel 1550 2200 0    50   Input ~ 0
 BRAKE_IN(AIRS+)
 Text HLabel 1550 1200 0    50   Input ~ 0
@@ -1369,11 +1365,7 @@ GLV_RTN
 Text Label 1800 9500 2    50   ~ 0
 GLV_RTN
 Wire Notes Line
-	8450 10100 10900 10100
-Wire Notes Line
-	8450 10850 10900 10850
-Wire Notes Line
-	10900 10100 10900 10850
+	8450 8775 10900 8775
 Wire Wire Line
 	10250 7000 10650 7000
 $Comp
@@ -1453,12 +1445,12 @@ GLV_RTN
 $Comp
 L Amplifier_Operational:MCP6004 U18
 U 2 1 5FB98A0D
-P 9400 10550
-F 0 "U18" H 9400 10550 50  0000 C CNN
-F 1 "MCP6004" H 9500 10700 50  0000 C CNN
-F 2 "TSI_Rev_2021_Footprint_Lib:SOIC127P600X175-14N" H 9350 10650 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 9450 10750 50  0001 C CNN
-	2    9400 10550
+P 9400 9225
+F 0 "U18" H 9400 9225 50  0000 C CNN
+F 1 "MCP6004" H 9500 9375 50  0000 C CNN
+F 2 "TSI_Rev_2021_Footprint_Lib:SOIC127P600X175-14N" H 9350 9325 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 9450 9425 50  0001 C CNN
+	2    9400 9225
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1960,18 +1952,18 @@ Wire Wire Line
 $Comp
 L Device:LED D?
 U 1 1 60834B36
-P 10300 10550
+P 10300 9225
 AR Path="/5FE1DCBA/60834B36" Ref="D?"  Part="1" 
 AR Path="/5FC85F57/60834B36" Ref="D4"  Part="1" 
-F 0 "D4" H 10350 10650 50  0000 R CNN
-F 1 "RED LED TP" H 10500 10400 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 10300 10550 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/678/av02-0112en-ds-hsmx-c1xx-29sep2010-1827222.pdf" H 10300 10550 50  0001 C CNN
-	1    10300 10550
+F 0 "D4" H 10350 9325 50  0000 R CNN
+F 1 "RED LED TP" H 10500 9075 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 10300 9225 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/678/av02-0112en-ds-hsmx-c1xx-29sep2010-1827222.pdf" H 10300 9225 50  0001 C CNN
+	1    10300 9225
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	10450 10550 10850 10550
+	10450 9225 10850 9225
 Text Notes 600  10350 0    31   ~ 0
 Throttle Plausibility\nConnects to pedals:\nAPPS1 2K POT
 Text Notes 4800 10450 0    47   ~ 0
@@ -2017,8 +2009,8 @@ F 3 "https://www.snapeda.com/parts/74ACT11030DR/Texas%20Instruments/datasheet/" 
 	1    9150 3700
 	1    0    0    -1  
 $EndComp
-Text Notes 9050 3425 0    47   ~ 0
-*Output is ground if all values are \nhigh and 5V if any values are low*
+Text Notes 9050 3375 0    47   ~ 0
+*Output is logic low if all values are \nhigh and 5V if any values are low*
 Text Notes 5000 6850 0    47   ~ 0
 *If the APPS1_ISO and APPS2_b fall \noutside the range of 0.24V-4.76V a \nshort/open is assumed*
 $Comp
@@ -2038,12 +2030,12 @@ Wire Wire Line
 $Comp
 L Device:R R38
 U 1 1 5FE36C1A
-P 10000 10550
-F 0 "R38" V 9900 10550 50  0000 C CNN
-F 1 "1K" V 10000 10550 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9930 10550 50  0001 C CNN
-F 3 "~" H 10000 10550 50  0001 C CNN
-	1    10000 10550
+P 10000 9225
+F 0 "R38" V 9900 9225 50  0000 C CNN
+F 1 "1K" V 10000 9225 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9930 9225 50  0001 C CNN
+F 3 "~" H 10000 9225 50  0001 C CNN
+	1    10000 9225
 	0    1    1    0   
 $EndComp
 $Comp
@@ -2057,4 +2049,70 @@ F 3 "~" H 13400 2900 50  0001 C CNN
 	1    13200 2900
 	1    0    0    -1  
 $EndComp
+Text Label 10850 9925 2    50   ~ 0
+GLV_RTN
+Connection ~ 9850 9925
+Wire Wire Line
+	9050 10025 9100 10025
+Wire Wire Line
+	9850 9925 9700 9925
+Wire Wire Line
+	9850 10175 9850 9925
+Wire Wire Line
+	9050 10175 9850 10175
+Wire Wire Line
+	9050 10025 9050 10175
+$Comp
+L Amplifier_Operational:MCP6004 U18
+U 3 1 60823F76
+P 9400 9925
+F 0 "U18" H 9400 9925 50  0000 C CNN
+F 1 "MCP6004" H 9500 10075 50  0000 C CNN
+F 2 "TSI_Rev_2021_Footprint_Lib:SOIC127P600X175-14N" H 9350 10025 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 9450 10125 50  0001 C CNN
+	3    9400 9925
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 60823F7C
+P 10300 9925
+AR Path="/5FE1DCBA/60823F7C" Ref="D?"  Part="1" 
+AR Path="/5FC85F57/60823F7C" Ref="D11"  Part="1" 
+F 0 "D11" H 10350 10025 50  0000 R CNN
+F 1 "GREEN LED TP" H 10500 9775 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 10300 9925 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/678/av02-0112en-ds-hsmx-c1xx-29sep2010-1827222.pdf" H 10300 9925 50  0001 C CNN
+	1    10300 9925
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10450 9925 10850 9925
+$Comp
+L Device:R R103
+U 1 1 60823F83
+P 10000 9925
+F 0 "R103" V 9900 9925 50  0000 C CNN
+F 1 "1K" V 10000 9925 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9930 9925 50  0001 C CNN
+F 3 "~" H 10000 9925 50  0001 C CNN
+	1    10000 9925
+	0    1    1    0   
+$EndComp
+Wire Notes Line
+	10900 8775 10900 10325
+Wire Notes Line
+	8450 8775 8450 10325
+Wire Notes Line
+	8450 10325 10900 10325
+Text Label 8525 9825 0    50   ~ 0
+Pedal_Out
+Wire Wire Line
+	8525 9825 9100 9825
+Wire Wire Line
+	8525 9125 9100 9125
+Text Notes 8550 9925 0    43   ~ 0
+(Plausible)
+Text Notes 8550 9225 0    43   ~ 0
+(Implausible)
 $EndSCHEMATC

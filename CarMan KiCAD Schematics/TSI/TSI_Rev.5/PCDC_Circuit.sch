@@ -1674,4 +1674,6 @@ Wire Notes Line
 	12375 2125 12000 2125
 Wire Notes Line
 	12000 2125 12000 2825
+Text Notes 10100 4475 0    43   ~ 0
+Voltage Comparator
 $EndSCHEMATC
