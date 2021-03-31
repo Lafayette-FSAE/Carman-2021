@@ -171,7 +171,7 @@ Connection ~ 5850 2850
 Wire Wire Line
 	5850 2850 6800 2850
 Text Label 5050 2950 2    47   ~ 0
-1.24V_REF
+1.24HV_REF
 Connection ~ 4500 2750
 Wire Wire Line
 	4500 2750 5050 2750
@@ -815,7 +815,7 @@ Wire Wire Line
 	12950 7100 12950 7250
 Connection ~ 12950 7250
 Text Label 12950 7100 0    47   ~ 0
-1.24V_REF
+1.24HV_REF
 $Comp
 L Device:R R46
 U 1 1 5FFE1CBB
@@ -854,8 +854,8 @@ NoConn ~ 13250 7750
 NoConn ~ 4950 9800
 NoConn ~ 6450 9500
 NoConn ~ 14500 7100
-Text Notes 12450 8250 0    79   ~ 0
-Adjustable Voltage Reference\n
+Text Notes 12425 8450 0    79   ~ 0
+Adjustable Voltage Reference\n(Sources 1.24V to HV Diff Amps)\n\n
 Text Notes 11850 6800 0    138  ~ 0
 VOLTAGE REFERENCES & REGULATORS\n(HIGH VOLTAGE)
 Text Label 8720 6650 2    50   ~ 0
@@ -960,11 +960,11 @@ TSV_Voltage
 Text HLabel 1350 1000 0    50   Input ~ 0
 IO_Ground
 Text Label 2150 1200 2    50   ~ 0
-1.24V_REF
+1.24HV_REF
 Text Label 2150 1100 2    50   ~ 0
 5HV
 Text HLabel 1350 1200 0    50   Input ~ 0
-1.24V_REF
+1.24HV_REF
 Text HLabel 1350 1100 0    50   Input ~ 0
 5HV
 Text Label 1950 6850 2    50   ~ 0
@@ -1197,10 +1197,10 @@ Connection ~ 9500 4050
 Wire Wire Line
 	9500 4050 9500 4100
 $Comp
-L CarMan_KiCAD_Library:TS431ILT IC4
+L CarMan_KiCAD_Library:TS431ILT IC1
 U 1 1 610AEB6E
 P 13600 7750
-F 0 "IC4" H 13600 8000 79  0000 C CNN
+F 0 "IC1" H 13600 8000 79  0000 C CNN
 F 1 "TS431ILT" H 13600 7500 79  0000 C CNN
 F 2 "TSI_Rev_2021_Footprint_Lib:SOT95P280X145-5N" H 13350 7850 79  0001 C CNN
 F 3 "https://www.snapeda.com/parts/TS431ILT/STMicroelectronics/datasheet/" H 13350 7850 79  0001 C CNN

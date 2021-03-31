@@ -171,7 +171,7 @@ Connection ~ 5850 2850
 Wire Wire Line
 	5850 2850 6800 2850
 Text Label 5050 2950 2    47   ~ 0
-1.24V_REF
+1.24HV_REF
 Connection ~ 4500 2750
 Wire Wire Line
 	4500 2750 5050 2750
@@ -815,7 +815,7 @@ Wire Wire Line
 	12950 7100 12950 7250
 Connection ~ 12950 7250
 Text Label 12950 7100 0    47   ~ 0
-1.24V_REF
+1.24HV_REF
 $Comp
 L Device:R R46
 U 1 1 5FFE1CBB
@@ -854,8 +854,8 @@ NoConn ~ 13250 7750
 NoConn ~ 4950 9800
 NoConn ~ 6450 9500
 NoConn ~ 14500 7100
-Text Notes 12450 8250 0    79   ~ 0
-Adjustable Voltage Reference\n
+Text Notes 12425 8450 0    79   ~ 0
+Adjustable Voltage Reference\n(Sources 1.24V to HV Diff Amps)\n\n
 Text Notes 11850 6800 0    138  ~ 0
 VOLTAGE REFERENCES & REGULATORS\n(HIGH VOLTAGE)
 Text Label 8720 6650 2    50   ~ 0
@@ -960,11 +960,11 @@ TSV_Voltage
 Text HLabel 1350 1000 0    50   Input ~ 0
 IO_Ground
 Text Label 2150 1200 2    50   ~ 0
-1.24V_REF
+1.24HV_REF
 Text Label 2150 1100 2    50   ~ 0
 5HV
 Text HLabel 1350 1200 0    50   Input ~ 0
-1.24V_REF
+1.24HV_REF
 Text HLabel 1350 1100 0    50   Input ~ 0
 5HV
 Text Label 1950 6850 2    50   ~ 0
@@ -1019,10 +1019,6 @@ Text Label 11950 2750 2    50   ~ 0
 PC_RELAY-
 Text Label 11950 2200 2    50   ~ 0
 PC_RELAY+
-Wire Wire Line
-	11400 2200 11950 2200
-Wire Wire Line
-	11400 2750 11950 2750
 Wire Wire Line
 	11400 2050 10950 2050
 Connection ~ 10950 2050
@@ -1167,16 +1163,8 @@ Wire Wire Line
 	9000 4800 9500 4800
 Wire Wire Line
 	11400 2750 11400 2850
-Wire Notes Line
-	11850 2000 11850 2850
-Wire Notes Line
-	11850 2850 12350 2850
-Wire Notes Line
-	12350 2850 12350 2000
-Wire Notes Line
-	12350 2000 11850 2000
-Text Notes 11900 2450 0    47   ~ 0
-PC Relay\n
+Text Notes 11965 2085 0    47   ~ 0
+PC Relay (J4)\n
 $Comp
 L CarMan_KiCAD_Library:STN3NF06L U9
 U 1 1 60FD9311
@@ -1674,4 +1662,16 @@ Wire Notes Line
 	8760 6490 8220 6490
 Wire Notes Line
 	8220 6490 8220 7030
+Wire Wire Line
+	11400 2200 12110 2200
+Wire Wire Line
+	11400 2750 12110 2750
+Wire Notes Line
+	12000 2825 12375 2825
+Wire Notes Line
+	12375 2825 12375 2125
+Wire Notes Line
+	12375 2125 12000 2125
+Wire Notes Line
+	12000 2125 12000 2825
 $EndSCHEMATC

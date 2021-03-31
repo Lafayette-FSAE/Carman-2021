@@ -746,43 +746,6 @@ Wire Wire Line
 	6750 6000 6850 6000
 Text Label 6750 6000 2    50   ~ 0
 5HV
-Text Label 14800 8800 0    50   ~ 0
-IO_Ground
-NoConn ~ 14050 8800
-NoConn ~ 14050 8900
-Wire Wire Line
-	13900 8550 13900 9000
-Wire Wire Line
-	14800 8800 14750 8800
-Wire Wire Line
-	13900 8200 13900 8550
-Connection ~ 13900 8550
-Text Label 13900 8300 0    50   ~ 0
-DiffAmp_REF
-Text Notes 14000 8400 0    50   ~ 0
-(1.24V)\n
-$Comp
-L Device:R R103
-U 1 1 5FBCE887
-P 13650 9000
-F 0 "R103" V 13550 9000 50  0000 C CNN
-F 1 "1K" V 13650 9000 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 13580 9000 50  0001 C CNN
-F 3 "~" H 13650 9000 50  0001 C CNN
-	1    13650 9000
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	13350 9000 13500 9000
-Wire Wire Line
-	13800 9000 13900 9000
-Connection ~ 13900 9000
-Wire Wire Line
-	13900 9000 14050 9000
-Text Label 13350 9000 2    50   ~ 0
-5HV
-Text Notes 14900 9400 2    50   ~ 0
-1.24V Voltage Reference\n
 Wire Notes Line
 	4000 450  4000 11100
 Wire Notes Line
@@ -1174,8 +1137,8 @@ Text HLabel 2100 8950 0    50   Input ~ 0
 SCL
 Text HLabel 2100 9150 0    50   Input ~ 0
 Throttle_LV
-Text HLabel 5750 9700 0    50   Output ~ 0
-1.24V_REF
+Text HLabel 5750 9700 0    50   Input ~ 0
+1.24HV_REF
 Text HLabel 5750 8800 0    50   Input ~ 0
 IO_Ground
 Text HLabel 5750 8700 0    50   Input ~ 0
@@ -1187,7 +1150,7 @@ IO_Ground
 Text Label 6400 9400 2    50   ~ 0
 Throttle_HV
 Text Label 6400 9700 2    50   ~ 0
-DiffAmp_REF
+1.24HV_REF
 Text Label 6400 8700 2    50   ~ 0
 5HV
 Wire Notes Line
@@ -1212,16 +1175,6 @@ Text Label 6400 9300 2    50   ~ 0
 HV-
 Text HLabel 5750 9300 0    50   Input ~ 0
 HV-
-Wire Notes Line
-	12650 9650 15850 9650
-Wire Notes Line
-	15850 9650 15850 7450
-Wire Notes Line
-	15850 7450 12650 7450
-Wire Notes Line
-	12650 7450 12650 9650
-Text Notes 13450 7650 0    98   ~ 0
-VOLTAGE REFERENCE
 Wire Wire Line
 	2500 5400 3500 5400
 Wire Wire Line
@@ -1269,36 +1222,8 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 11550 4900 50
 $EndComp
 Wire Wire Line
 	11600 5100 11600 5000
-$Comp
-L power:PWR_FLAG #FLG0104
-U 1 1 6112F663
-P 13900 8200
-F 0 "#FLG0104" H 13900 8275 50  0001 C CNN
-F 1 "PWR_FLAG" H 13900 8373 50  0000 C CNN
-F 2 "" H 13900 8200 50  0001 C CNN
-F 3 "~" H 13900 8200 50  0001 C CNN
-	1    13900 8200
-	1    0    0    -1  
-$EndComp
 Text Notes 3550 5100 0    47   ~ 0
 I2C Isolator\n
-$Comp
-L CarMan_KiCAD_Library:TS431ILT IC1
-U 1 1 61439D09
-P 14400 8900
-F 0 "IC1" H 14400 9150 79  0000 C CNN
-F 1 "TS431ILT" H 14400 8600 79  0000 C CNN
-F 2 "TSI_Rev_2021_Footprint_Lib:SOT95P280X145-5N" H 14150 9000 79  0001 C CNN
-F 3 "https://www.snapeda.com/parts/TS431ILT/STMicroelectronics/datasheet/" H 14150 9000 79  0001 C CNN
-	1    14400 8900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	14750 9000 15300 9000
-Wire Wire Line
-	13900 8550 15300 8550
-Wire Wire Line
-	15300 8550 15300 9000
 Text Label 4800 1350 0    50   ~ 0
 5HV
 $Comp
@@ -1421,4 +1346,10 @@ F 3 "~" H 10350 4850 50  0001 C CNN
 	1    10350 4850
 	1    0    0    -1  
 $EndComp
+Text Label 11125 3450 0    50   ~ 0
+DiffAmp_REF
+Text Label 12225 3450 2    50   ~ 0
+1.24HV_REF
+Wire Wire Line
+	11125 3450 12225 3450
 $EndSCHEMATC
