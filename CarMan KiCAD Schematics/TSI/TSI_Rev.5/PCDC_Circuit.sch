@@ -331,7 +331,7 @@ F 3 "~" H 9500 4350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8550 3050 9500 3050
+	8550 3050 8825 3050
 Wire Wire Line
 	9500 3700 9500 3050
 Connection ~ 9500 3050
@@ -1668,8 +1668,6 @@ Wire Notes Line
 	12000 2125 12000 2825
 Text Notes 10100 4475 0    43   ~ 0
 Voltage Comparator
-Text Notes 4700 3375 0    43   ~ 0
-Approx. 5V
 Wire Notes Line
 	13325 2475 13325 3750
 Wire Notes Line
@@ -1678,4 +1676,22 @@ Wire Notes Line
 	14675 2475 14675 3750
 Wire Notes Line
 	13325 3750 14675 3750
+$Comp
+L Connector:TestPoint TP?
+U 1 1 60D4CBAD
+P 8825 2900
+AR Path="/5FC85F57/60D4CBAD" Ref="TP?"  Part="1" 
+AR Path="/6196BF15/60D4CBAD" Ref="TP19"  Part="1" 
+F 0 "TP19" H 8775 3100 50  0000 L CNN
+F 1 "PC_Control" H 8850 2950 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D3.0mm" H 9025 2900 50  0001 C CNN
+F 3 "~" H 9025 2900 50  0001 C CNN
+	1    8825 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8825 2900 8825 3050
+Connection ~ 8825 3050
+Wire Wire Line
+	8825 3050 9500 3050
 $EndSCHEMATC
