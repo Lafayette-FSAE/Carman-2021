@@ -167,11 +167,11 @@ F 4 "This is custom, could not find on internet" H 925 750 50  0001 C CNN "Note"
 	1    925  750 
 	1    0    0    -1  
 $EndComp
-Text Label 525  750  0    50   ~ 0
+Text Label 525  850  0    50   ~ 0
 HV-
 Text Label 525  650  0    50   ~ 0
 MC+
-Text Label 525  850  0    50   ~ 0
+Text Label 525  750  0    50   ~ 0
 HV+
 $Comp
 L Connector_Generic:Conn_01x02 J4
@@ -441,9 +441,9 @@ F 3 "~" H 6000 1700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	525  850  725  850 
-Wire Wire Line
 	525  750  725  750 
+Wire Wire Line
+	525  850  725  850 
 Wire Wire Line
 	525  650  725  650 
 Wire Wire Line
