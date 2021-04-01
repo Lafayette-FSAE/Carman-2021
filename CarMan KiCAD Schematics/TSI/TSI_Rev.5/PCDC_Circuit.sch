@@ -370,7 +370,7 @@ L Device:Jumper JP5
 U 1 1 5FA2CDA2
 P 10950 3350
 F 0 "JP5" V 10996 3262 50  0000 R CNN
-F 1 "Jumper" V 10905 3262 50  0000 R CNN
+F 1 "Testing Jumper" V 10905 3262 50  0000 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 10950 3350 50  0001 C CNN
 F 3 "~" H 10950 3350 50  0001 C CNN
 	1    10950 3350
@@ -452,7 +452,7 @@ L Device:Jumper JP4
 U 1 1 5F9A0A29
 P 12400 4200
 F 0 "JP4" V 12446 4112 50  0000 R CNN
-F 1 "Jumper" V 12355 4112 50  0000 R CNN
+F 1 "Testing Jumper" V 12355 4112 50  0000 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 12400 4200 50  0001 C CNN
 F 3 "~" H 12400 4200 50  0001 C CNN
 	1    12400 4200
@@ -551,7 +551,7 @@ Wire Wire Line
 Wire Wire Line
 	11850 4500 11850 4700
 Text Notes 13050 3350 0    35   ~ 0
-Protection\nDiode
+Flyback\nDiode
 Text Notes 10950 2350 0    35   ~ 0
 Protection\nDiode
 Wire Notes Line
@@ -785,7 +785,7 @@ Text Label 14250 8950 2    79   ~ 0
 Text Label 15600 8950 0    79   ~ 0
 5HV
 Text Notes 14300 9800 0    79   ~ 0
-24V to 5V Regulator
+24HV to 5HV Regulator
 Text Notes 15250 9200 0    79   ~ 0
 25mA\n
 Wire Wire Line
@@ -847,7 +847,7 @@ NoConn ~ 4950 9800
 NoConn ~ 6450 9500
 NoConn ~ 14500 7100
 Text Notes 12425 8450 0    79   ~ 0
-Adjustable Voltage Reference\n(Sources 1.24V to HV Diff Amps)\n\n
+Adjustable Voltage Reference\n(Sources 1.24HV to Diff Amps)\n\n
 Text Notes 11850 6800 0    138  ~ 0
 VOLTAGE REFERENCES & REGULATORS\n(HIGH VOLTAGE)
 Text Label 8720 6650 2    50   ~ 0
@@ -996,7 +996,7 @@ Text HLabel 1250 6350 0    50   Input ~ 0
 Wire Notes Line
 	550  5800 2100 5800
 Wire Notes Line
-	550  7175 2100 7175
+	550  7050 2100 7050
 Text Label 1950 6950 2    50   ~ 0
 PC_Ready
 Text HLabel 1250 6950 0    50   Input ~ 0

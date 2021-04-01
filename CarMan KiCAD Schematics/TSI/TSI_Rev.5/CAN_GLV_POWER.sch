@@ -590,7 +590,7 @@ Text Label 4625 9300 2    50   ~ 0
 IMD_Status
 Text Notes 3750 7225 2    197  ~ 0
 IMD Relay
-Text Notes 8975 7200 2    197  ~ 0
+Text Notes 8975 7250 2    197  ~ 0
 AMS Relay
 Text Label 4050 10775 2    50   ~ 0
 IMD_Status
@@ -979,8 +979,8 @@ Wire Notes Line
 	12050 5500 15950 5500
 Wire Notes Line
 	13750 550  9850 550 
-Text Notes 11350 750  0    87   ~ 0
-EPAL LED SIGNALS
+Text Notes 10725 725  0    87   ~ 0
+EPAL & SAFETY LOOP LED SIGNALS
 Text Label 12950 1400 2    50   ~ 0
 Safety_Loop
 Connection ~ 12350 1400
@@ -1158,7 +1158,7 @@ L Device:LED D5
 U 1 1 61D1E46B
 P 6925 7450
 F 0 "D5" H 6925 7350 50  0000 C CNN
-F 1 "LED" H 6925 7550 50  0000 C CNN
+F 1 "GREEN LED" H 6925 7550 50  0000 C CNN
 F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6925 7450 50  0001 C CNN
 F 3 "http://static.vcclite.com/pdf/VAOL-S8GT4-LED-0805-green.pdf" H 6925 7450 50  0001 C CNN
 F 4 "VAOL-S8GT4" H 6925 7450 50  0001 C CNN "Part Name"
@@ -1369,8 +1369,8 @@ Wire Notes Line
 	14150 550  14150 4075
 Wire Notes Line
 	14150 4075 16000 4075
-Text Notes 13325 7400 0    51   ~ 0
-Lights up when coils are not conducting
+Text Notes 13350 7500 0    51   ~ 0
+Lights up when coils are not conducting\n(SCADA Relay Closed)
 $Comp
 L Connector:TestPoint TP15
 U 1 1 60519873

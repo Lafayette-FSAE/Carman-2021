@@ -78,7 +78,7 @@ Text Label 10025 3800 2    50   ~ 0
 Drive_LED
 Text Label 7675 3600 0    50   ~ 0
 D_LED_CTRL
-Text Label 4175 3400 2    50   ~ 0
+Text Label 3875 3900 2    50   ~ 0
 24V
 Text HLabel 800  5850 0    50   Input ~ 0
 HV+
@@ -302,96 +302,62 @@ F 3 "~" H 8900 5050 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	4400 4925 5450 4925
-$Comp
-L Device:Q_PMOS_GSD Q?
-U 1 1 5FC93215
-P 4300 4100
-AR Path="/6196BF15/5FC93215" Ref="Q?"  Part="1" 
-AR Path="/5FE1DCBA/5FC93215" Ref="Q3"  Part="1" 
-F 0 "Q3" H 4504 4054 50  0000 L CNN
-F 1 "ZVP1320F" H 4504 4145 50  0000 L CNN
-F 2 "TSI_Rev_2021_Footprint_Lib:SOT23" H 4500 4200 50  0001 C CNN
-F 3 "https://www.snapeda.com/parts/ZVP1320FTA/Diodes%20Inc./datasheet/" H 4300 4100 50  0001 C CNN
-	1    4300 4100
-	1    0    0    1   
-$EndComp
-Wire Wire Line
-	2250 4100 2050 4100
-Text Notes 4500 4750 0    50   ~ 0
+	2450 3900 2250 3900
+Text Notes 4375 4450 0    50   ~ 0
 STA20502 RTDS BUZZER (.6A MAX)\n3/1/21 - Pulsed at max of 90mA\n3/1/21 - Tested RTDS, w/Xsistor, worked\n
 Wire Notes Line
-	4400 4775 4400 4825
+	4300 4425 4300 4475
 Wire Notes Line
-	4350 4575 4450 4575
+	4250 4225 4350 4225
 Wire Notes Line
-	4350 4775 4350 4575
+	4250 4425 4250 4225
 Wire Notes Line
-	4450 4775 4350 4775
+	4350 4425 4250 4425
 Wire Notes Line
-	4450 4575 4450 4775
+	4350 4225 4350 4425
 Wire Notes Line
-	4400 4525 4400 4575
-Text Label 4850 4925 2    50   ~ 0
+	4300 4175 4300 4225
+Text Label 3350 4575 0    50   ~ 0
 GLV_RTN
-Text Label 5450 4925 2    50   ~ 0
+Text Label 4275 4575 2    50   ~ 0
 RTDS_RTN
-Text Label 4725 4450 2    50   ~ 0
+Text Label 3900 4100 2    50   ~ 0
 RTDS
-Wire Wire Line
-	4400 4300 4400 4450
-Wire Wire Line
-	4400 3400 4400 3900
-Text Label 3700 4300 2    50   ~ 0
-GLV_RTN
 $Comp
 L TSI_Rev.5-rescue:TLP293-CarMan_KiCAD_Library-TSI_Rev.5-rescue U13
 U 1 1 5F9B7294
-P 2550 4200
-F 0 "U13" H 2550 4525 50  0000 C CNN
-F 1 "TLP293" H 2550 4434 50  0000 C CNN
-F 2 "Package_SO:SOIC-4_4.55x2.6mm_P1.27mm" H 2350 4000 50  0001 L CIN
-F 3 "" H 2550 4200 50  0001 L CNN
-	1    2550 4200
+P 2750 4000
+F 0 "U13" H 2750 4325 50  0000 C CNN
+F 1 "TLP293" H 2750 4234 50  0000 C CNN
+F 2 "Package_SO:SOIC-4_4.55x2.6mm_P1.27mm" H 2550 3800 50  0001 L CIN
+F 3 "" H 2750 4000 50  0001 L CNN
+	1    2750 4000
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3800 3650 3800 3400
 $Comp
 L Device:R R74
-U 1 1 5F9BC6E2
-P 3800 3800
-F 0 "R74" H 3870 3846 50  0000 L CNN
-F 1 "40K" V 3800 3750 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3730 3800 50  0001 C CNN
-F 3 "~" H 3800 3800 50  0001 C CNN
-	1    3800 3800
+U 1 1 5F9BBE04
+P 3300 4325
+F 0 "R74" V 3200 4325 50  0000 C CNN
+F 1 "10K" V 3300 4325 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3230 4325 50  0001 C CNN
+F 3 "~" H 3300 4325 50  0001 C CNN
+	1    3300 4325
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R R110
-U 1 1 5F9BBE04
-P 3225 4100
-F 0 "R110" V 3125 4100 50  0000 C CNN
-F 1 "10K" V 3225 4100 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3155 4100 50  0001 C CNN
-F 3 "~" H 3225 4100 50  0001 C CNN
-	1    3225 4100
-	0    1    1    0   
-$EndComp
-Text Label 1100 4300 0    50   ~ 0
+Text Label 1300 4100 0    50   ~ 0
 5V_ISO_RTN
-Text Label 1100 4100 0    50   ~ 0
+Text Label 1300 3900 0    50   ~ 0
 RTDS_CTRL
 $Comp
 L Device:R R12
 U 1 1 5F9BA8EE
-P 1900 4100
-F 0 "R12" V 1800 4100 50  0000 C CNN
-F 1 "300" V 1900 4100 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1830 4100 50  0001 C CNN
-F 3 "~" H 1900 4100 50  0001 C CNN
-	1    1900 4100
+P 2100 3900
+F 0 "R12" V 2000 3900 50  0000 C CNN
+F 1 "120" V 2100 3900 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2030 3900 50  0001 C CNN
+F 3 "~" H 2100 3900 50  0001 C CNN
+	1    2100 3900
 	0    1    1    0   
 $EndComp
 Wire Wire Line
@@ -423,9 +389,9 @@ Wire Wire Line
 Wire Notes Line
 	500  500  2250 500 
 Wire Wire Line
-	1100 4100 1750 4100
+	1300 3900 1950 3900
 Wire Wire Line
-	1100 4300 2250 4300
+	1300 4100 2450 4100
 Wire Wire Line
 	4400 7000 5000 7000
 Wire Wire Line
@@ -447,17 +413,6 @@ Wire Wire Line
 	5000 7000 5600 7000
 Text Label 5600 7200 2    50   ~ 0
 GLV_RTN
-Wire Wire Line
-	4400 4450 4400 4525
-Connection ~ 4400 4450
-Wire Wire Line
-	4400 4825 4400 4925
-Wire Wire Line
-	4400 4450 4725 4450
-Wire Wire Line
-	2850 4100 3075 4100
-Wire Wire Line
-	2850 4300 3700 4300
 Text HLabel 1150 1050 0    50   Input ~ 0
 5V_ISO_RTN
 Text Label 1850 1050 2    50   ~ 0
@@ -579,12 +534,20 @@ Wire Wire Line
 Wire Wire Line
 	8600 6200 8600 6050
 Wire Wire Line
-	3800 4100 3800 3950
+	3050 3900 3875 3900
 Wire Wire Line
-	4100 4100 3800 4100
+	3050 4100 3300 4100
 Wire Wire Line
-	3800 3400 4400 3400
+	3300 4175 3300 4100
+Connection ~ 3300 4100
 Wire Wire Line
-	3375 4100 3800 4100
-Connection ~ 3800 4100
+	3300 4575 3300 4475
+Wire Wire Line
+	4300 4575 4300 4475
+Wire Wire Line
+	3300 4575 4300 4575
+Wire Wire Line
+	4300 4175 4300 4100
+Wire Wire Line
+	3300 4100 4300 4100
 $EndSCHEMATC

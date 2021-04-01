@@ -331,7 +331,7 @@ F 3 "~" H 9500 4350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8550 3050 9500 3050
+	8550 3050 8825 3050
 Wire Wire Line
 	9500 3700 9500 3050
 Connection ~ 9500 3050
@@ -370,7 +370,7 @@ L Device:Jumper JP5
 U 1 1 5FA2CDA2
 P 10950 3350
 F 0 "JP5" V 10996 3262 50  0000 R CNN
-F 1 "Jumper" V 10905 3262 50  0000 R CNN
+F 1 "Testing Jumper" V 10905 3262 50  0000 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 10950 3350 50  0001 C CNN
 F 3 "~" H 10950 3350 50  0001 C CNN
 	1    10950 3350
@@ -452,7 +452,7 @@ L Device:Jumper JP4
 U 1 1 5F9A0A29
 P 12400 4200
 F 0 "JP4" V 12446 4112 50  0000 R CNN
-F 1 "Jumper" V 12355 4112 50  0000 R CNN
+F 1 "Testing Jumper" V 12355 4112 50  0000 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 12400 4200 50  0001 C CNN
 F 3 "~" H 12400 4200 50  0001 C CNN
 	1    12400 4200
@@ -551,7 +551,7 @@ Wire Wire Line
 Wire Wire Line
 	11850 4500 11850 4700
 Text Notes 13050 3350 0    35   ~ 0
-Protection\nDiode
+Flyback\nDiode
 Text Notes 10950 2350 0    35   ~ 0
 Protection\nDiode
 Wire Notes Line
@@ -785,7 +785,7 @@ Text Label 14250 8950 2    79   ~ 0
 Text Label 15600 8950 0    79   ~ 0
 5HV
 Text Notes 14300 9800 0    79   ~ 0
-24V to 5V Regulator
+24HV to 5HV Regulator
 Text Notes 15250 9200 0    79   ~ 0
 25mA\n
 Wire Wire Line
@@ -847,7 +847,7 @@ NoConn ~ 4950 9800
 NoConn ~ 6450 9500
 NoConn ~ 14500 7100
 Text Notes 12425 8450 0    79   ~ 0
-Adjustable Voltage Reference\n(Sources 1.24V to HV Diff Amps)\n\n
+Adjustable Voltage Reference\n(Sources 1.24HV to Diff Amps)\n\n
 Text Notes 11850 6800 0    138  ~ 0
 VOLTAGE REFERENCES & REGULATORS\n(HIGH VOLTAGE)
 Text Label 8720 6650 2    50   ~ 0
@@ -996,7 +996,7 @@ Text HLabel 1250 6350 0    50   Input ~ 0
 Wire Notes Line
 	550  5800 2100 5800
 Wire Notes Line
-	550  7175 2100 7175
+	550  7050 2100 7050
 Text Label 1950 6950 2    50   ~ 0
 PC_Ready
 Text HLabel 1250 6950 0    50   Input ~ 0
@@ -1668,8 +1668,6 @@ Wire Notes Line
 	12000 2125 12000 2825
 Text Notes 10100 4475 0    43   ~ 0
 Voltage Comparator
-Text Notes 4700 3375 0    43   ~ 0
-Approx. 5V
 Wire Notes Line
 	13325 2475 13325 3750
 Wire Notes Line
@@ -1678,4 +1676,22 @@ Wire Notes Line
 	14675 2475 14675 3750
 Wire Notes Line
 	13325 3750 14675 3750
+$Comp
+L Connector:TestPoint TP?
+U 1 1 60D4CBAD
+P 8825 2900
+AR Path="/5FC85F57/60D4CBAD" Ref="TP?"  Part="1" 
+AR Path="/6196BF15/60D4CBAD" Ref="TP19"  Part="1" 
+F 0 "TP19" H 8775 3100 50  0000 L CNN
+F 1 "PC_Control" H 8850 2950 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D3.0mm" H 9025 2900 50  0001 C CNN
+F 3 "~" H 9025 2900 50  0001 C CNN
+	1    8825 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8825 2900 8825 3050
+Connection ~ 8825 3050
+Wire Wire Line
+	8825 3050 9500 3050
 $EndSCHEMATC
