@@ -223,22 +223,22 @@ Text Notes 7750 4000 2    89   ~ 0
 3.3V REGULATOR
 Text Notes 12900 10500 0    177  ~ 0
 Cooling, Relays \nand Voltage Refs\n
-Text Label 12675 6175 0    50   ~ 0
+Text Label 12650 6425 0    50   ~ 0
 SR_CTRL
 $Comp
 L Device:D_Schottky D3
 U 1 1 5FB8F043
-P 14350 8950
-F 0 "D3" H 14500 8900 50  0000 C CNN
-F 1 "MMSZ5231B-7-F" H 14300 9050 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-123" H 14350 8950 50  0001 C CNN
-F 3 "~" H 14350 8950 50  0001 C CNN
-	1    14350 8950
+P 14025 9075
+F 0 "D3" H 14175 9025 50  0000 C CNN
+F 1 "MMSZ5231B-7-F" H 13975 9175 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-123" H 14025 9075 50  0001 C CNN
+F 3 "~" H 14025 9075 50  0001 C CNN
+	1    14025 9075
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	14650 8550 14700 8550
-NoConn ~ 14050 8050
+	14325 8675 14375 8675
+NoConn ~ 13725 8175
 Text Notes 14800 750  0    98   ~ 0
 SIGNALS
 Wire Notes Line
@@ -314,46 +314,35 @@ Wire Notes Line
 	4000 5700 2250 5700
 Wire Notes Line
 	2250 3950 4000 3950
-Text Label 12675 6375 0    50   ~ 0
+Text Label 12650 6625 0    50   ~ 0
 5V_ISO_RTN
 $Comp
 L TSI_Rev.5-rescue:TLP293-CarMan_KiCAD_Library-TSI_Rev.5-rescue U49
 U 1 1 5FA61B5B
-P 14175 6275
-F 0 "U49" H 14175 6475 50  0000 C CNN
-F 1 "TLP293" H 14175 6075 50  0000 C CNN
-F 2 "Package_SO:SOIC-4_4.55x2.6mm_P1.27mm" H 13975 6075 50  0001 L CIN
-F 3 "" H 14175 6275 50  0001 L CNN
-	1    14175 6275
+P 14150 6525
+F 0 "U49" H 14150 6725 50  0000 C CNN
+F 1 "TLP293" H 14150 6325 50  0000 C CNN
+F 2 "Package_SO:SOIC-4_4.55x2.6mm_P1.27mm" H 13950 6325 50  0001 L CIN
+F 3 "" H 14150 6525 50  0001 L CNN
+	1    14150 6525
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	13875 6175 13675 6175
+	13850 6425 13650 6425
 $Comp
 L Device:R R92
 U 1 1 5FA61B65
-P 13525 6175
-F 0 "R92" V 13425 6175 50  0000 C CNN
-F 1 "120" V 13525 6175 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 13455 6175 50  0001 C CNN
-F 3 "~" H 13525 6175 50  0001 C CNN
-	1    13525 6175
+P 13500 6425
+F 0 "R92" V 13400 6425 50  0000 C CNN
+F 1 "120" V 13500 6425 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 13430 6425 50  0001 C CNN
+F 3 "~" H 13500 6425 50  0001 C CNN
+	1    13500 6425
 	0    1    1    0   
 $EndComp
-Text Notes 14125 7750 0    50   ~ 0
+Text Notes 13800 7875 0    50   ~ 0
 SCADA Relay\n
-$Comp
-L Device:Q_NMOS_GDS Q11
-U 1 1 5FB4C495
-P 13500 9150
-F 0 "Q11" H 13704 9196 50  0000 L CNN
-F 1 "TN2130K1-G" H 13704 9105 50  0000 L CNN
-F 2 "TSI_Rev_2021_Footprint_Lib:SOT95P237X112-3N" H 13700 9250 50  0001 C CNN
-F 3 "https://ww1.microchip.com/downloads/en/DeviceDoc/TN2130-N-Channel-Enhancement-Mode-Vertical-DMOS-FET-Data-Sheet-20005944B.pdf" H 13500 9150 50  0001 C CNN
-	1    13500 9150
-	1    0    0    -1  
-$EndComp
-Text Label 12200 9150 0    50   ~ 0
+Text Label 12975 8675 0    50   ~ 0
 SR_CTRL_Boosted
 $Comp
 L Device:R R71
@@ -383,42 +372,18 @@ F 3 "" H 4650 1150 50  0001 L CNN
 $EndComp
 Text Label 3350 1250 0    50   ~ 0
 5V_ISO_RTN
-Text Label 13300 8250 0    50   ~ 0
+Text Label 12975 8375 0    50   ~ 0
 MRESET_Contact
 Text Notes 6275 800  2    89   ~ 0
 Cooling Control & Sensors\n
-$Comp
-L Device:R R72
-U 1 1 5FB6696B
-P 13150 9150
-F 0 "R72" V 13050 9150 50  0000 C CNN
-F 1 "1K" V 13150 9150 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 13080 9150 50  0001 C CNN
-F 3 "~" H 13150 9150 50  0001 C CNN
-	1    13150 9150
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	13300 9150 13300 9250
-Text Label 13850 9700 2    50   ~ 0
-GLV_RTN
-Connection ~ 13300 9150
-Wire Wire Line
-	13600 9350 13600 9550
-Wire Wire Line
-	13600 9550 13450 9550
-Wire Wire Line
-	13600 8950 13600 8550
-Text Label 15100 8550 2    50   ~ 0
+Text Label 15075 8675 2    50   ~ 0
 24V
 Wire Wire Line
-	14500 8950 14700 8950
-Connection ~ 14700 8550
+	14175 9075 14375 9075
 Wire Wire Line
-	14200 8950 14000 8950
-Connection ~ 14000 8550
+	13875 9075 13675 9075
 Wire Wire Line
-	14000 8550 14050 8550
+	13675 8675 13725 8675
 Text Notes 11050 11200 0    39   ~ 0
 Zacky Bear Doesn't Like
 Text Label 7050 2250 2    49   ~ 0
@@ -531,20 +496,18 @@ Text HLabel 15200 900  2    50   Output ~ 0
 $Comp
 L Device:R R52
 U 1 1 5FC2D02C
-P 14600 6525
-F 0 "R52" H 14670 6571 50  0000 L CNN
-F 1 "1K" V 14600 6475 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 14530 6525 50  0001 C CNN
-F 3 "~" H 14600 6525 50  0001 C CNN
-	1    14600 6525
+P 14575 6250
+F 0 "R52" H 14645 6296 50  0000 L CNN
+F 1 "10K" V 14575 6200 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 14505 6250 50  0001 C CNN
+F 3 "~" H 14575 6250 50  0001 C CNN
+	1    14575 6250
 	1    0    0    -1  
 $EndComp
-Text Label 15425 6175 2    68   ~ 0
-5V
 Wire Wire Line
-	12675 6375 13875 6375
+	12650 6625 13850 6625
 Wire Wire Line
-	12675 6175 13375 6175
+	12650 6425 13350 6425
 Wire Wire Line
 	3350 1050 3850 1050
 Wire Wire Line
@@ -577,15 +540,6 @@ Text Label 5200 1700 0    47   ~ 0
 GLV_RTN
 Wire Wire Line
 	4950 1050 5900 1050
-Wire Wire Line
-	13450 9550 13450 9700
-Wire Wire Line
-	13450 9700 13850 9700
-Connection ~ 13450 9550
-Wire Wire Line
-	13450 9550 13300 9550
-Wire Wire Line
-	12200 9150 13000 9150
 Text Label 4625 9300 2    50   ~ 0
 IMD_Status
 Text Notes 3750 7225 2    197  ~ 0
@@ -683,22 +637,20 @@ Wire Wire Line
 $Comp
 L TSI_Rev.5-rescue:G5LE-1-E-Lafayette_Electric_Car_Internals RL?
 U 1 1 5FB466B1
-P 14350 8350
+P 14025 8475
 AR Path="/5FB466B1" Ref="RL?"  Part="1" 
 AR Path="/5FE1DE7D/5FB466B1" Ref="K2"  Part="1" 
-F 0 "K2" V 14800 8350 50  0000 C CNN
-F 1 "G5LE-1-E" V 13900 8350 50  0000 C CNN
-F 2 "TSI_Rev_2021_Footprint_Lib:G5LE-1-E DC24" H 14600 8950 50  0001 C CNN
-F 3 "https://media.digikey.com/pdf/Data%20Sheets/Omron%20PDFs/G5LE-E_G.pdf" H 14600 8950 50  0001 C CNN
-	1    14350 8350
+F 0 "K2" V 14475 8475 50  0000 C CNN
+F 1 "G5LE-1-E" V 13575 8475 50  0000 C CNN
+F 2 "TSI_Rev_2021_Footprint_Lib:G5LE-1-E DC24" H 14275 9075 50  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Omron%20PDFs/G5LE-E_G.pdf" H 14275 9075 50  0001 C CNN
+	1    14025 8475
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	15100 8150 14650 8150
-Text Label 15100 8150 2    50   ~ 0
+Text Label 15075 8275 2    50   ~ 0
 BOT_Out
 Wire Wire Line
-	13300 8250 14050 8250
+	12975 8375 13725 8375
 Wire Wire Line
 	7300 8925 6700 8925
 Text Label 6700 8925 0    50   ~ 0
@@ -971,7 +923,7 @@ Text Notes 2625 10375 0    55   ~ 0
 SFS2-DC24 has built in \ndiode across terminals
 Wire Notes Line
 	12050 9850 15950 9850
-Text Notes 15200 5800 2    197  ~ 0
+Text Notes 15075 5825 2    197  ~ 0
 SCADA Relay
 Wire Notes Line
 	12050 5500 12050 9850
@@ -1112,19 +1064,6 @@ Text Notes 12450 3525 0    51   ~ 0
 25mA passed to EPAL when\nMRESET_CONTACT is low
 Wire Notes Line
 	15950 5500 15950 9850
-Wire Wire Line
-	14475 6375 14600 6375
-Text Label 15425 6375 2    50   ~ 0
-SR_CTRL_Boosted
-Connection ~ 14600 6375
-Wire Wire Line
-	14600 6375 15425 6375
-Text Label 15425 6675 2    50   ~ 0
-GLV_RTN
-Wire Wire Line
-	14600 6675 15425 6675
-Wire Wire Line
-	14475 6175 15425 6175
 $Comp
 L Device:LED D9
 U 1 1 61DA633B
@@ -1256,7 +1195,7 @@ F 3 "~" H 13975 7175 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	14125 7175 14200 7175
-Text Notes 14425 9575 0    51   ~ 0
+Text Notes 13475 9675 0    51   ~ 0
 NC relay, if SR_CTRL_Boosted \nis high the Safety Loop opens
 Text Label 7900 1375 0    50   ~ 0
 3.3V
@@ -1407,29 +1346,14 @@ Wire Notes Line
 	9750 9950 9750 10075
 Wire Wire Line
 	10625 3325 11325 3325
-$Comp
-L Device:R R79
-U 1 1 5FB66337
-P 13300 9400
-F 0 "R79" H 13370 9446 50  0000 L CNN
-F 1 "10K" V 13300 9350 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 13230 9400 50  0001 C CNN
-F 3 "~" H 13300 9400 50  0001 C CNN
-	1    13300 9400
-	1    0    0    -1  
-$EndComp
-Text Notes 13975 7825 0    39   ~ 0
+Text Notes 13650 7950 0    39   ~ 0
 (Coil rated for 16.7 mA)
 Wire Wire Line
-	14700 8550 14700 8950
+	14375 8675 14375 9075
 Wire Wire Line
-	14000 8550 14000 8950
-Wire Wire Line
-	14700 8550 15100 8550
+	13675 8675 13675 9075
 Text Notes 12400 3150 0    39   ~ 0
 Needs to be\nrated for 1/2W\n
-Wire Wire Line
-	13600 8550 14000 8550
 Text Label 10750 2300 0    50   ~ 0
 AIRs-
 Text Label 10750 2100 0    50   ~ 0
@@ -1502,4 +1426,29 @@ Wire Notes Line
 	5800 6350 8500 6350
 Wire Notes Line
 	5800 3800 5800 6350
+Text Label 15425 6625 2    50   ~ 0
+GLV_RTN
+Wire Wire Line
+	14450 6425 14575 6425
+Wire Wire Line
+	14575 6425 14575 6400
+Text Label 14800 6100 2    50   ~ 0
+24V
+Wire Wire Line
+	14575 6100 14800 6100
+Text Label 15425 6425 2    50   ~ 0
+SR_CTRL_Boosted
+Connection ~ 14575 6425
+Wire Wire Line
+	14450 6625 15425 6625
+Wire Wire Line
+	14575 6425 15425 6425
+Wire Wire Line
+	13675 8675 12975 8675
+Connection ~ 13675 8675
+Wire Wire Line
+	14325 8275 15075 8275
+Wire Wire Line
+	14375 8675 15075 8675
+Connection ~ 14375 8675
 $EndSCHEMATC

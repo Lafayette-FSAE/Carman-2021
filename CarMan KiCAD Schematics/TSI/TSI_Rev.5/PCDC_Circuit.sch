@@ -771,8 +771,6 @@ F 3 "~" H 14550 9200 50  0001 C CNN
 	1    14550 9200
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	14250 8950 14550 8950
 Connection ~ 14550 8950
 Wire Wire Line
 	14550 8950 14750 8950
@@ -780,13 +778,13 @@ Wire Wire Line
 	14550 9450 14550 9550
 Text Label 14650 9550 0    47   ~ 0
 IO_Ground
-Text Label 14250 8950 2    79   ~ 0
+Text Label 14075 8950 0    79   ~ 0
 24HV
-Text Label 15600 8950 0    79   ~ 0
+Text Label 15750 8950 2    79   ~ 0
 5HV
 Text Notes 14300 9800 0    79   ~ 0
 24HV to 5HV Regulator
-Text Notes 15250 9200 0    79   ~ 0
+Text Notes 15275 9150 0    79   ~ 0
 25mA\n
 Wire Wire Line
 	12950 7250 12950 7850
@@ -1434,8 +1432,6 @@ Wire Notes Line
 Text Notes 11600 9800 0    79   ~ 0
 3.3HV Reference Voltage
 Wire Wire Line
-	15600 8950 15350 8950
-Wire Wire Line
 	15100 9300 15100 9550
 $Comp
 L CarMan_KiCAD_Library:MC7805BDTRKG U10
@@ -1694,4 +1690,8 @@ Wire Wire Line
 Connection ~ 8825 3050
 Wire Wire Line
 	8825 3050 9500 3050
+Wire Wire Line
+	15350 8950 15750 8950
+Wire Wire Line
+	14075 8950 14550 8950
 $EndSCHEMATC

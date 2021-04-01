@@ -27,14 +27,14 @@ Text Label 8350 650  0    50   ~ 0
 Drive_BTN
 Text Notes 3275 2075 0    50   ~ 0
 Battery Packs\nSafety Loop\n\n
-Text Notes 1000 1000 2    50   ~ 0
+Text Notes 1000 1025 2    50   ~ 0
 TSV
 Text Label 3175 1500 0    50   ~ 0
 AIRS-
 Text Label 3175 1600 0    50   ~ 0
 AIRS+
-Text Notes 3475 1075 0    50   ~ 0
-Precharge Relay\n\n\n
+Text Notes 3350 1100 0    50   ~ 0
+Precharge Relay (NO)\n\n\n
 Text Label 4075 1700 0    50   ~ 0
 GLV_RTN
 Text Label 4075 1500 0    50   ~ 0
@@ -158,20 +158,20 @@ AIRS+
 $Comp
 L Connector_Generic:Conn_01x03 J1
 U 1 1 5FC3F568
-P 925 750
-F 0 "J1" H 875 950 50  0000 L CNN
-F 1 "TSV" H 875 950 50  0001 L CNN
-F 2 "TSI_Rev_2021_Footprint_Lib:Molex-0010844030" H 925 750 50  0001 C CNN
-F 3 "https://www.molex.com/pdm_docs/sd/010844020_sd.pdf" H 925 750 50  0001 C CNN
-F 4 "This is custom, could not find on internet" H 925 750 50  0001 C CNN "Note"
-	1    925  750 
+P 925 775
+F 0 "J1" H 875 975 50  0000 L CNN
+F 1 "TSV" H 875 975 50  0001 L CNN
+F 2 "TSI_Rev_2021_Footprint_Lib:Molex-0010844030" H 925 775 50  0001 C CNN
+F 3 "https://www.molex.com/pdm_docs/sd/010844020_sd.pdf" H 925 775 50  0001 C CNN
+F 4 "This is custom, could not find on internet" H 925 775 50  0001 C CNN "Note"
+	1    925  775 
 	1    0    0    -1  
 $EndComp
-Text Label 525  850  0    50   ~ 0
+Text Label 525  875  0    50   ~ 0
 HV-
-Text Label 525  650  0    50   ~ 0
+Text Label 525  675  0    50   ~ 0
 MC+
-Text Label 525  750  0    50   ~ 0
+Text Label 525  775  0    50   ~ 0
 HV+
 $Comp
 L Connector_Generic:Conn_01x02 J4
@@ -441,11 +441,11 @@ F 3 "~" H 6000 1700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	525  750  725  750 
+	525  775  725  775 
 Wire Wire Line
-	525  850  725  850 
+	525  875  725  875 
 Wire Wire Line
-	525  650  725  650 
+	525  675  725  675 
 Wire Wire Line
 	4300 675  4750 675 
 Wire Wire Line
