@@ -1693,6 +1693,6 @@ Wire Wire Line
 	7850 6950 8720 6950
 Text Notes 10975 2625 0    35   ~ 0
 Flyback\nDiode
-Text Notes 775  3200 0    59   ~ 0
-Three Criteria for Pre Charge Relay:\n1. TS_Voltage & MC_Voltage w/im 95% of e/o\n2. TS_Voltage \n3. AIRS?
+Text Notes 550  3200 0    59   ~ 0
+Three Criteria for Pre Charge Relay to close:\n1. TS_Voltage & MC_Voltage w/im 95% of e/o\n2. TS_Voltage > 1.24HV_Ref\n3. AIRS closed (Safety Loop)
 $EndSCHEMATC

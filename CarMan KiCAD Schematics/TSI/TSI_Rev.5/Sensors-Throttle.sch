@@ -432,90 +432,6 @@ Wire Wire Line
 Text Label 14650 6300 2    50   ~ 0
 HV-
 $Comp
-L Connector_Generic:Conn_01x01 J27
-U 1 1 5FA0FD5E
-P 14250 5700
-F 0 "J27" V 14350 5650 50  0000 L CNN
-F 1 "HV+ Short Pin 2" V 14350 5500 50  0001 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 14250 5700 50  0001 C CNN
-F 3 "~" H 14250 5700 50  0001 C CNN
-	1    14250 5700
-	0    1    1    0   
-$EndComp
-Connection ~ 14250 5500
-Wire Wire Line
-	14250 5500 14200 5500
-$Comp
-L Connector_Generic:Conn_01x01 J25
-U 1 1 5FA1321C
-P 14250 4800
-F 0 "J25" V 14350 4750 50  0000 L CNN
-F 1 "MC+ Short Pin 2" V 14213 4880 50  0001 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 14250 4800 50  0001 C CNN
-F 3 "~" H 14250 4800 50  0001 C CNN
-	1    14250 4800
-	0    1    1    0   
-$EndComp
-Connection ~ 14250 4600
-Wire Wire Line
-	14250 4600 14200 4600
-Connection ~ 14250 6300
-Wire Wire Line
-	14250 6300 14200 6300
-$Comp
-L Connector_Generic:Conn_01x01 J29
-U 1 1 5FA159E3
-P 14250 6500
-F 0 "J29" V 14350 6450 50  0000 L CNN
-F 1 "HV- Short Pin 2" V 14350 6300 50  0001 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 14250 6500 50  0001 C CNN
-F 3 "~" H 14250 6500 50  0001 C CNN
-	1    14250 6500
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x01 J28
-U 1 1 5FA19A24
-P 12800 6500
-F 0 "J28" V 12900 6450 50  0000 L CNN
-F 1 "HV- Short Pin 1" V 12900 6300 50  0001 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 12800 6500 50  0001 C CNN
-F 3 "~" H 12800 6500 50  0001 C CNN
-	1    12800 6500
-	0    1    1    0   
-$EndComp
-Connection ~ 12800 6300
-Wire Wire Line
-	12800 6300 12850 6300
-$Comp
-L Connector_Generic:Conn_01x01 J26
-U 1 1 5FA1EF37
-P 12800 5700
-F 0 "J26" V 12900 5650 50  0000 L CNN
-F 1 "HV+ Short Pin 1" V 12900 5500 50  0001 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 12800 5700 50  0001 C CNN
-F 3 "~" H 12800 5700 50  0001 C CNN
-	1    12800 5700
-	0    1    1    0   
-$EndComp
-Connection ~ 12800 5500
-Wire Wire Line
-	12800 5500 12850 5500
-$Comp
-L Connector_Generic:Conn_01x01 J24
-U 1 1 5FA20DB0
-P 12800 4800
-F 0 "J24" V 12900 4750 50  0000 L CNN
-F 1 "MC+ Short Pin 1" V 12900 4600 50  0001 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 12800 4800 50  0001 C CNN
-F 3 "~" H 12800 4800 50  0001 C CNN
-	1    12800 4800
-	0    1    1    0   
-$EndComp
-Connection ~ 12800 4600
-Wire Wire Line
-	12800 4600 12850 4600
-$Comp
 L Device:R R6
 U 1 1 5FA2666A
 P 12100 4350
@@ -560,8 +476,6 @@ F 3 "~" H 12450 5250 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Connection ~ 12450 5500
-Wire Wire Line
-	12450 5500 12800 5500
 Connection ~ 12100 5500
 Wire Wire Line
 	12100 5500 12450 5500
@@ -604,20 +518,12 @@ $EndComp
 Wire Wire Line
 	12100 6200 12100 6300
 Connection ~ 12450 6300
-Wire Wire Line
-	12450 6300 12800 6300
 Connection ~ 12100 6300
 Wire Wire Line
 	12100 6300 12450 6300
-Wire Notes Line
-	12800 6500 14250 6500
-Wire Notes Line
-	12800 5700 14250 5700
-Wire Notes Line
-	12800 4800 14250 4800
-Text Notes 12950 4800 0    28   ~ 0
-Pins can be shorted across dotted line to test circuit
-Text Notes 13050 4400 0    50   ~ 0
+Text Notes 12875 5125 0    28   ~ 0
+Divider circuit is jumped when executing TSI HV Test Plan.\nCuts the need for a 100HV+ input to an approx. 1-2HV input
+Text Notes 13000 4425 0    50   ~ 0
 Voltage Divider Ratio: 1/61
 Connection ~ 9550 6300
 Text Notes 8800 6500 0    50   ~ 0
@@ -644,8 +550,6 @@ Buffer\n
 Text Notes 8800 5300 0    50   ~ 0
 Difference between \nMC+ & HV-
 Connection ~ 9550 5100
-Wire Wire Line
-	14250 5500 14650 5500
 $Comp
 L TSI_Rev.5-rescue:NCD9830DBR2G-CarMan_KiCAD_Library-TSI_Rev.5-rescue U25
 U 1 1 5FB6F4DE
@@ -1313,8 +1217,6 @@ Text Label 12100 4100 0    43   ~ 0
 1.24HV_REF
 Wire Wire Line
 	12100 4600 12450 4600
-Wire Wire Line
-	12450 4600 12800 4600
 Connection ~ 12450 4600
 $Comp
 L pspice:CAP C?
@@ -1334,8 +1236,97 @@ Text Label 12100 5000 0    43   ~ 0
 1.24HV_REF
 Text Label 12100 5800 0    43   ~ 0
 1.24HV_REF
+$Comp
+L Device:Jumper JP?
+U 1 1 60DE9F20
+P 13525 6600
+AR Path="/6196BF15/60DE9F20" Ref="JP?"  Part="1" 
+AR Path="/5F98EBE9/60DE9F20" Ref="JP8"  Part="1" 
+F 0 "JP8" H 13600 6750 50  0000 R CNN
+F 1 "Testing Jumper" H 13825 6525 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 13525 6600 50  0001 C CNN
+F 3 "~" H 13525 6600 50  0001 C CNN
+	1    13525 6600
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	14250 6300 14650 6300
+	12450 6300 12825 6300
 Wire Wire Line
-	14250 4600 14650 4600
+	13225 6600 12825 6600
+Wire Wire Line
+	12825 6600 12825 6300
+Connection ~ 12825 6300
+Wire Wire Line
+	12825 6300 12850 6300
+Wire Wire Line
+	14200 6300 14225 6300
+Wire Wire Line
+	14225 6300 14225 6600
+Wire Wire Line
+	14225 6600 13825 6600
+Connection ~ 14225 6300
+Wire Wire Line
+	14225 6300 14650 6300
+$Comp
+L Device:Jumper JP?
+U 1 1 60E70E72
+P 13525 5800
+AR Path="/6196BF15/60E70E72" Ref="JP?"  Part="1" 
+AR Path="/5F98EBE9/60E70E72" Ref="JP7"  Part="1" 
+F 0 "JP7" H 13600 5950 50  0000 R CNN
+F 1 "Testing Jumper" H 13825 5725 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 13525 5800 50  0001 C CNN
+F 3 "~" H 13525 5800 50  0001 C CNN
+	1    13525 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13225 5800 12825 5800
+Wire Wire Line
+	14225 5800 13825 5800
+Wire Wire Line
+	14225 5800 14225 5500
+Wire Wire Line
+	14200 5500 14225 5500
+Connection ~ 14225 5500
+Wire Wire Line
+	14225 5500 14650 5500
+Wire Wire Line
+	12825 5800 12825 5500
+Wire Wire Line
+	12450 5500 12825 5500
+Connection ~ 12825 5500
+Wire Wire Line
+	12825 5500 12850 5500
+Wire Wire Line
+	14200 4600 14225 4600
+Wire Wire Line
+	12450 4600 12825 4600
+$Comp
+L Device:Jumper JP?
+U 1 1 60EC5BB0
+P 13525 4900
+AR Path="/6196BF15/60EC5BB0" Ref="JP?"  Part="1" 
+AR Path="/5F98EBE9/60EC5BB0" Ref="JP6"  Part="1" 
+F 0 "JP6" H 13600 5050 50  0000 R CNN
+F 1 "Testing Jumper" H 13825 4825 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 13525 4900 50  0001 C CNN
+F 3 "~" H 13525 4900 50  0001 C CNN
+	1    13525 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13225 4900 12825 4900
+Wire Wire Line
+	14225 4900 13825 4900
+Wire Wire Line
+	14225 4900 14225 4600
+Connection ~ 14225 4600
+Wire Wire Line
+	14225 4600 14650 4600
+Wire Wire Line
+	12825 4900 12825 4600
+Connection ~ 12825 4600
+Wire Wire Line
+	12825 4600 12850 4600
 $EndSCHEMATC
