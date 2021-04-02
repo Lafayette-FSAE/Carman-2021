@@ -47,10 +47,10 @@ F 3 "~" H 1300 1200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CarMan_KiCAD_Library:PDQ10-Q24-D5-D U41
+L CarMan_KiCAD_Library:PDQ10-Q24-D5-D U38
 U 1 1 5FB24FE8
 P 3100 4800
-F 0 "U41" H 3100 5100 50  0000 C CNN
+F 0 "U38" H 3100 5100 50  0000 C CNN
 F 1 "PDQ10-Q24-D5-D" H 3100 4600 50  0000 C CNN
 F 2 "TSI_Rev_2021_Footprint_Lib:CONV_PDQ10-Q24-D5-D" H 3100 4450 50  0001 C CNN
 F 3 "https://www.snapeda.com/parts/PDQ10-Q24-D5-D/CUI/datasheet/" H 3100 4450 50  0001 C CNN
@@ -217,17 +217,17 @@ SR_CTRL
 $Comp
 L Device:D_Schottky D3
 U 1 1 5FB8F043
-P 14025 9075
-F 0 "D3" H 14175 9025 50  0000 C CNN
-F 1 "MMSZ5231B-7-F" H 13975 9175 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-123" H 14025 9075 50  0001 C CNN
-F 3 "~" H 14025 9075 50  0001 C CNN
-	1    14025 9075
+P 14025 9225
+F 0 "D3" H 14175 9175 50  0000 C CNN
+F 1 "MMSZ5231B-7-F" H 13975 9325 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-123" H 14025 9225 50  0001 C CNN
+F 3 "~" H 14025 9225 50  0001 C CNN
+	1    14025 9225
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	14325 8675 14375 8675
-NoConn ~ 13725 8175
+	14325 8825 14375 8825
+NoConn ~ 13725 8325
 Text Notes 14800 750  0    98   ~ 0
 SIGNALS
 Wire Notes Line
@@ -295,10 +295,10 @@ Wire Notes Line
 Text Label 12650 6625 0    50   ~ 0
 5V_ISO_RTN
 $Comp
-L TSI_Rev.5-rescue:TLP293-CarMan_KiCAD_Library-TSI_Rev.5-rescue U49
+L TSI_Rev.5-rescue:TLP293-CarMan_KiCAD_Library-TSI_Rev.5-rescue U32
 U 1 1 5FA61B5B
 P 14150 6525
-F 0 "U49" H 14150 6725 50  0000 C CNN
+F 0 "U32" H 14150 6725 50  0000 C CNN
 F 1 "TLP293" H 14150 6325 50  0000 C CNN
 F 2 "Package_SO:SOIC-4_4.55x2.6mm_P1.27mm" H 13950 6325 50  0001 L CIN
 F 3 "https://www.mouser.com/datasheet/2/408/Toshiba_TLP293_datasheet-1209449.pdf" H 14150 6525 50  0001 L CNN
@@ -318,9 +318,9 @@ F 3 "~" H 13500 6425 50  0001 C CNN
 	1    13500 6425
 	0    1    1    0   
 $EndComp
-Text Notes 13800 7875 0    50   ~ 0
+Text Notes 13800 8025 0    50   ~ 0
 SCADA Relay\n
-Text Label 12975 8675 0    50   ~ 0
+Text Label 12975 8825 0    50   ~ 0
 SR_CTRL_Boosted
 $Comp
 L Device:R R71
@@ -338,10 +338,10 @@ Wire Wire Line
 Text Label 3350 1050 0    50   ~ 0
 Cooling_CTRL
 $Comp
-L TSI_Rev.5-rescue:TLP293-CarMan_KiCAD_Library-TSI_Rev.5-rescue U48
+L TSI_Rev.5-rescue:TLP293-CarMan_KiCAD_Library-TSI_Rev.5-rescue U33
 U 1 1 5FA22056
 P 4650 1150
-F 0 "U48" H 4650 1350 50  0000 C CNN
+F 0 "U33" H 4650 1350 50  0000 C CNN
 F 1 "TLP293" H 4650 950 50  0000 C CNN
 F 2 "Package_SO:SOIC-4_4.55x2.6mm_P1.27mm" H 4450 950 50  0001 L CIN
 F 3 "https://www.mouser.com/datasheet/2/408/Toshiba_TLP293_datasheet-1209449.pdf" H 4650 1150 50  0001 L CNN
@@ -350,18 +350,18 @@ F 3 "https://www.mouser.com/datasheet/2/408/Toshiba_TLP293_datasheet-1209449.pdf
 $EndComp
 Text Label 3350 1250 0    50   ~ 0
 5V_ISO_RTN
-Text Label 12975 8375 0    50   ~ 0
+Text Label 12975 8525 0    50   ~ 0
 MRESET_Contact
 Text Notes 6275 800  2    89   ~ 0
 Cooling Control & Sensors\n
-Text Label 15075 8675 2    50   ~ 0
+Text Label 15075 8825 2    50   ~ 0
 24V
 Wire Wire Line
-	14175 9075 14375 9075
+	14175 9225 14375 9225
 Wire Wire Line
-	13875 9075 13675 9075
+	13875 9225 13675 9225
 Wire Wire Line
-	13675 8675 13725 8675
+	13675 8825 13725 8825
 Text Notes 11050 11200 0    39   ~ 0
 Zacky Bear Doesn't Like
 Text Label 7050 2250 2    49   ~ 0
@@ -475,7 +475,7 @@ $Comp
 L Device:R R52
 U 1 1 5FC2D02C
 P 14575 6250
-F 0 "R52" H 14645 6296 50  0000 L CNN
+F 0 "R52" H 14625 6275 50  0000 L CNN
 F 1 "10K" V 14575 6200 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 14505 6250 50  0001 C CNN
 F 3 "~" H 14575 6250 50  0001 C CNN
@@ -611,20 +611,20 @@ Wire Wire Line
 $Comp
 L TSI_Rev.5-rescue:G5LE-1-E-Lafayette_Electric_Car_Internals RL?
 U 1 1 5FB466B1
-P 14025 8475
+P 14025 8625
 AR Path="/5FB466B1" Ref="RL?"  Part="1" 
 AR Path="/5FE1DE7D/5FB466B1" Ref="K2"  Part="1" 
-F 0 "K2" V 14475 8475 50  0000 C CNN
-F 1 "G5LE-1-E" V 13575 8475 50  0000 C CNN
-F 2 "TSI_Rev_2021_Footprint_Lib:G5LE-1-E DC24" H 14275 9075 50  0001 C CNN
-F 3 "https://media.digikey.com/pdf/Data%20Sheets/Omron%20PDFs/G5LE-E_G.pdf" H 14275 9075 50  0001 C CNN
-	1    14025 8475
+F 0 "K2" V 14475 8625 50  0000 C CNN
+F 1 "G5LE-1-E" V 13575 8625 50  0000 C CNN
+F 2 "TSI_Rev_2021_Footprint_Lib:G5LE-1-E DC24" H 14275 9225 50  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Omron%20PDFs/G5LE-E_G.pdf" H 14275 9225 50  0001 C CNN
+	1    14025 8625
 	0    -1   -1   0   
 $EndComp
-Text Label 15075 8275 2    50   ~ 0
+Text Label 15075 8425 2    50   ~ 0
 BOT_Out
 Wire Wire Line
-	12975 8375 13725 8375
+	12975 8525 13725 8525
 Wire Wire Line
 	7300 8925 6700 8925
 Text Label 6700 8925 0    50   ~ 0
@@ -707,10 +707,10 @@ Wire Wire Line
 Wire Wire Line
 	7900 4350 7900 4800
 $Comp
-L CarMan_KiCAD_Library:LT1763CS8-3.3PBF U42
+L CarMan_KiCAD_Library:LT1763CS8-3.3PBF U36
 U 1 1 5FB354FD
 P 7300 5250
-F 0 "U42" H 7300 5850 50  0000 C CNN
+F 0 "U36" H 7300 5850 50  0000 C CNN
 F 1 "LT1763CS8-3.3PBF" H 7300 4650 50  0000 C CNN
 F 2 "TSI_Rev_2021_Footprint_Lib:SOIC127P600X175-8N" H 7350 4650 50  0001 C CNN
 F 3 "https://www.snapeda.com/parts/LT1763CS8-3.3%23PBF/Analog%20Devices/datasheet/" H 7350 4650 50  0001 C CNN
@@ -1136,40 +1136,40 @@ Text Notes 5975 7650 0    51   ~ 0
 Lights up when coils are conducting
 Text Notes 925  7600 0    51   ~ 0
 Lights up when coils are conducting
-Text Label 13175 7175 0    50   ~ 0
+Text Label 13175 7250 0    50   ~ 0
 MRSET_Contact
 Wire Wire Line
-	14500 7175 15000 7175
-Text Label 15000 7175 2    50   ~ 0
+	14500 7250 15000 7250
+Text Label 15000 7250 2    50   ~ 0
 GLV_RTN
 Wire Wire Line
-	13175 7175 13825 7175
+	13175 7250 13825 7250
 $Comp
 L Device:LED D10
 U 1 1 61EA41E7
-P 14350 7175
-F 0 "D10" H 14350 7075 50  0000 C CNN
-F 1 "LED" H 14350 7275 50  0000 C CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 14350 7175 50  0001 C CNN
-F 3 "http://static.vcclite.com/pdf/VAOL-S8GT4-LED-0805-green.pdf" H 14350 7175 50  0001 C CNN
-F 4 "VAOL-S8GT4" H 14350 7175 50  0001 C CNN "Part Name"
-	1    14350 7175
+P 14350 7250
+F 0 "D10" H 14350 7150 50  0000 C CNN
+F 1 "GREEN LED" H 14350 7350 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 14350 7250 50  0001 C CNN
+F 3 "http://static.vcclite.com/pdf/VAOL-S8GT4-LED-0805-green.pdf" H 14350 7250 50  0001 C CNN
+F 4 "VAOL-S8GT4" H 14350 7250 50  0001 C CNN "Part Name"
+	1    14350 7250
 	-1   0    0    1   
 $EndComp
 $Comp
 L Device:R R83
 U 1 1 61EA41ED
-P 13975 7175
-F 0 "R83" V 13900 7175 50  0000 C CNN
-F 1 "1.2K" V 13975 7175 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 13905 7175 50  0001 C CNN
-F 3 "~" H 13975 7175 50  0001 C CNN
-	1    13975 7175
+P 13975 7250
+F 0 "R83" V 13900 7250 50  0000 C CNN
+F 1 "1.2K" V 13975 7250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 13905 7250 50  0001 C CNN
+F 3 "~" H 13975 7250 50  0001 C CNN
+	1    13975 7250
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	14125 7175 14200 7175
-Text Notes 13475 9675 0    51   ~ 0
+	14125 7250 14200 7250
+Text Notes 13450 9650 0    51   ~ 0
 NC relay, if SR_CTRL_Boosted \nis high the Safety Loop opens
 Text Label 7900 1375 0    50   ~ 0
 3.3V
@@ -1282,7 +1282,7 @@ Wire Notes Line
 	14150 550  14150 4075
 Wire Notes Line
 	14150 4075 16000 4075
-Text Notes 13350 7500 0    51   ~ 0
+Text Notes 13350 7575 0    51   ~ 0
 Lights up when coils are not conducting\n(SCADA Relay Closed)
 $Comp
 L Connector:TestPoint TP15
@@ -1320,12 +1320,12 @@ Wire Notes Line
 	9750 9950 9750 10075
 Wire Wire Line
 	10575 3325 11275 3325
-Text Notes 13650 7950 0    39   ~ 0
+Text Notes 13650 8100 0    39   ~ 0
 (Coil rated for 16.7 mA)
 Wire Wire Line
-	14375 8675 14375 9075
+	14375 8825 14375 9225
 Wire Wire Line
-	13675 8675 13675 9075
+	13675 8825 13675 9225
 Text Notes 12350 3150 0    39   ~ 0
 Needs to be\nrated for 1/2W\n
 Text Label 10750 2300 0    50   ~ 0
@@ -1418,13 +1418,13 @@ Wire Wire Line
 Wire Wire Line
 	14575 6425 15425 6425
 Wire Wire Line
-	13675 8675 12975 8675
-Connection ~ 13675 8675
+	13675 8825 12975 8825
+Connection ~ 13675 8825
 Wire Wire Line
-	14325 8275 15075 8275
+	14325 8425 15075 8425
 Wire Wire Line
-	14375 8675 15075 8675
-Connection ~ 14375 8675
+	14375 8825 15075 8825
+Connection ~ 14375 8825
 Text Notes 7850 2575 2    43   ~ 0
 Cooling Sensors\n(J19)
 Text Notes 9575 8850 0    47   ~ 0
