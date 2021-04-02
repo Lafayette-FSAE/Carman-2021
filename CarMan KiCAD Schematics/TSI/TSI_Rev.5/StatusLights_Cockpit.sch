@@ -33,12 +33,12 @@ Text Label 10200 900  2    50   ~ 0
 $Comp
 L TSI_Rev.5-rescue:TLP293-CarMan_KiCAD_Library-TSI_Rev.5-rescue U11
 U 1 1 5F9A966C
-P 9175 3700
-F 0 "U11" H 9175 3900 50  0000 C CNN
-F 1 "TLP293" H 9175 3500 50  0000 C CNN
-F 2 "Package_SO:SOIC-4_4.55x2.6mm_P1.27mm" H 8975 3500 50  0001 L CIN
-F 3 "" H 9175 3700 50  0001 L CNN
-	1    9175 3700
+P 8875 3550
+F 0 "U11" H 8875 3750 50  0000 C CNN
+F 1 "TLP293" H 8875 3350 50  0000 C CNN
+F 2 "Package_SO:SOIC-4_4.55x2.6mm_P1.27mm" H 8675 3350 50  0001 L CIN
+F 3 "https://www.mouser.com/datasheet/2/408/Toshiba_TLP293_datasheet-1209449.pdf" H 8875 3550 50  0001 L CNN
+	1    8875 3550
 	1    0    0    -1  
 $EndComp
 Text HLabel 1150 1750 0    50   Input ~ 0
@@ -64,19 +64,19 @@ Text Label 1850 850  2    50   ~ 0
 $Comp
 L Device:R R15
 U 1 1 5F9DEF51
-P 8525 3600
-F 0 "R15" V 8425 3600 50  0000 C CNN
-F 1 "300" V 8525 3600 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 8455 3600 50  0001 C CNN
-F 3 "~" H 8525 3600 50  0001 C CNN
-	1    8525 3600
+P 8225 3450
+F 0 "R15" V 8125 3450 50  0000 C CNN
+F 1 "300" V 8225 3450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 8155 3450 50  0001 C CNN
+F 3 "~" H 8225 3450 50  0001 C CNN
+	1    8225 3450
 	0    1    1    0   
 $EndComp
-Text Label 10025 3600 2    50   ~ 0
+Text Label 9725 3450 2    50   ~ 0
 24V
-Text Label 10025 3800 2    50   ~ 0
+Text Label 9725 3650 2    50   ~ 0
 Drive_LED
-Text Label 7675 3600 0    50   ~ 0
+Text Label 7375 3450 0    50   ~ 0
 D_LED_CTRL
 Text Label 3875 3900 2    50   ~ 0
 24V
@@ -243,7 +243,7 @@ Drive_BTN
 Text Label 1850 1250 2    50   ~ 0
 Drive_BTN
 Wire Wire Line
-	8875 3600 8675 3600
+	8575 3450 8375 3450
 Text Notes 7100 6950 0    177  ~ 0
 STATUS LIGHTS, TSAL & RTDS
 Text HLabel 1150 1650 0    50   Input ~ 0
@@ -330,7 +330,7 @@ P 2750 4000
 F 0 "U13" H 2750 4325 50  0000 C CNN
 F 1 "TLP293" H 2750 4234 50  0000 C CNN
 F 2 "Package_SO:SOIC-4_4.55x2.6mm_P1.27mm" H 2550 3800 50  0001 L CIN
-F 3 "" H 2750 4000 50  0001 L CNN
+F 3 "https://www.mouser.com/datasheet/2/408/Toshiba_TLP293_datasheet-1209449.pdf" H 2750 4000 50  0001 L CNN
 	1    2750 4000
 	1    0    0    -1  
 $EndComp
@@ -395,13 +395,13 @@ Wire Wire Line
 Wire Wire Line
 	4400 7000 5000 7000
 Wire Wire Line
-	7675 3600 8375 3600
+	7375 3450 8075 3450
 Wire Wire Line
-	7675 3800 8875 3800
+	7375 3650 8575 3650
 Wire Wire Line
-	9475 3600 10025 3600
+	9175 3450 9725 3450
 Wire Wire Line
-	9475 3800 9550 3800
+	9175 3650 9250 3650
 Wire Notes Line
 	500  2250 2250 2250
 Wire Wire Line
@@ -423,7 +423,7 @@ Wire Notes Line
 	2250 500  2250 2250
 Wire Notes Line
 	500  500  500  2250
-Text Label 7675 3800 0    50   ~ 0
+Text Label 7375 3650 0    50   ~ 0
 5V_ISO_RTN
 $Comp
 L Device:R R68
@@ -455,8 +455,8 @@ Wire Notes Line
 	9150 5850 9350 5850
 Wire Notes Line
 	9350 5850 9350 5500
-Text Notes 9800 5700 2    50   ~ 0
-J8 COCKPIT\n
+Text Notes 9375 5750 0    50   ~ 0
+COCKPIT\n(J8)\n
 Wire Wire Line
 	8600 5350 8900 5350
 Wire Wire Line
@@ -471,31 +471,32 @@ Wire Wire Line
 $Comp
 L Device:R R?
 U 1 1 605792C2
-P 9550 3950
+P 9250 3800
 AR Path="/5FE1DE7D/605792C2" Ref="R?"  Part="1" 
 AR Path="/5FE1DCBA/605792C2" Ref="R99"  Part="1" 
-F 0 "R99" V 9450 3950 50  0000 C CNN
-F 1 "1K" V 9550 3950 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9480 3950 50  0001 C CNN
-F 3 "~" H 9550 3950 50  0001 C CNN
-	1    9550 3950
+F 0 "R99" V 9150 3800 50  0000 C CNN
+F 1 "1K" V 9250 3800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9180 3800 50  0001 C CNN
+F 3 "~" H 9250 3800 50  0001 C CNN
+	1    9250 3800
 	1    0    0    -1  
 $EndComp
-Text Label 9550 4200 0    50   ~ 0
+Text Label 9250 4050 0    50   ~ 0
 GLV_RTN
 Wire Wire Line
-	9550 4100 9550 4200
-Connection ~ 9550 3800
+	9250 3950 9250 4050
+Connection ~ 9250 3650
 Wire Wire Line
-	9550 3800 10025 3800
+	9250 3650 9725 3650
 $Comp
 L Device:LED D1
 U 1 1 605FE51C
 P 10200 1800
 F 0 "D1" V 10239 1682 50  0000 R CNN
-F 1 "Green LED" V 10148 1682 50  0000 R CNN
+F 1 "GREEN LED" V 10148 1682 50  0000 R CNN
 F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 10200 1800 50  0001 C CNN
-F 3 "~" H 10200 1800 50  0001 C CNN
+F 3 "http://static.vcclite.com/pdf/VAOL-S8GT4-LED-0805-green.pdf" H 10200 1800 50  0001 C CNN
+F 4 "VAOL-S8GT4" V 10200 1800 50  0001 C CNN "Part Name"
 	1    10200 1800
 	0    -1   -1   0   
 $EndComp
@@ -550,4 +551,6 @@ Wire Wire Line
 	4300 4175 4300 4100
 Wire Wire Line
 	3300 4100 4300 4100
+Text Notes 4225 4375 2    43   ~ 0
+Brake Light & RTDS\n(J18)\n
 $EndSCHEMATC

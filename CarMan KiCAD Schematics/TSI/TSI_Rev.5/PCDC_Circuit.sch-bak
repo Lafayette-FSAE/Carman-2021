@@ -404,8 +404,8 @@ $Comp
 L Device:LED D6
 U 1 1 5F9CE834
 P 10500 2650
-F 0 "D6" V 10550 2600 50  0000 R CNN
-F 1 "LED" H 10550 2750 50  0000 R CNN
+F 0 "D6" V 10500 2825 50  0000 R CNN
+F 1 "GREEN LED" H 10725 2475 50  0000 R CNN
 F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 10500 2650 50  0001 C CNN
 F 3 "http://static.vcclite.com/pdf/VAOL-S8GT4-LED-0805-green.pdf" H 10500 2650 50  0001 C CNN
 F 4 "VAOL-S8GT4" V 10500 2650 50  0001 C CNN "Part Name"
@@ -477,7 +477,7 @@ P 13050 3450
 F 0 "D8" V 13004 3530 50  0000 L CNN
 F 1 "1N4001" H 12900 3350 50  0000 L CNN
 F 2 "Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal" H 13050 3450 50  0001 C CNN
-F 3 "~" H 13050 3450 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/88503/1n4001.pdf" H 13050 3450 50  0001 C CNN
 	1    13050 3450
 	0    1    1    0   
 $EndComp
@@ -514,7 +514,7 @@ L Device:LED D7
 U 1 1 5F9B41E0
 P 12600 3650
 F 0 "D7" V 12650 3600 50  0000 R CNN
-F 1 "LED" H 12650 3750 50  0000 R CNN
+F 1 "GREEN LED" H 12850 3750 50  0000 R CNN
 F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 12600 3650 50  0001 C CNN
 F 3 "http://static.vcclite.com/pdf/VAOL-S8GT4-LED-0805-green.pdf" H 12600 3650 50  0001 C CNN
 F 4 "VAOL-S8GT4" V 12600 3650 50  0001 C CNN "Part Name"
@@ -553,7 +553,7 @@ Wire Wire Line
 Text Notes 13050 3350 0    35   ~ 0
 Flyback\nDiode
 Text Notes 10950 2350 0    35   ~ 0
-Protection\nDiode
+Flyback\nDiode
 Wire Notes Line
 	-100 5700 5700 5700
 Text Notes 2300 6000 0    197  ~ 0
@@ -565,7 +565,7 @@ P 5700 6450
 F 0 "U34" H 5800 6650 50  0000 C CNN
 F 1 "TLP293" H 5850 6250 50  0000 C CNN
 F 2 "Package_SO:SOIC-4_4.55x2.6mm_P1.27mm" H 5500 6250 50  0001 L CIN
-F 3 "https://toshiba.semicon-storage.com/info/docget.jsp?did=12884&prodName=TLP291" H 5700 6450 50  0001 L CNN
+F 3 "https://www.mouser.com/datasheet/2/408/Toshiba_TLP293_datasheet-1209449.pdf" H 5700 6450 50  0001 L CNN
 	1    5700 6450
 	1    0    0    -1  
 $EndComp
@@ -643,7 +643,7 @@ P 5700 8400
 F 0 "U37" H 5800 8600 50  0000 C CNN
 F 1 "TLP293" H 5850 8200 50  0000 C CNN
 F 2 "Package_SO:SOIC-4_4.55x2.6mm_P1.27mm" H 5500 8200 50  0001 L CIN
-F 3 "https://toshiba.semicon-storage.com/info/docget.jsp?did=12884&prodName=TLP291" H 5700 8400 50  0001 L CNN
+F 3 "https://www.mouser.com/datasheet/2/408/Toshiba_TLP293_datasheet-1209449.pdf" H 5700 8400 50  0001 L CNN
 	1    5700 8400
 	1    0    0    -1  
 $EndComp
@@ -699,7 +699,7 @@ P 5700 7250
 F 0 "U31" H 5800 7450 50  0000 C CNN
 F 1 "TLP293" H 5850 7050 50  0000 C CNN
 F 2 "Package_SO:SOIC-4_4.55x2.6mm_P1.27mm" H 5500 7050 50  0001 L CIN
-F 3 "https://toshiba.semicon-storage.com/info/docget.jsp?did=12884&prodName=TLP291" H 5700 7250 50  0001 L CNN
+F 3 "https://www.mouser.com/datasheet/2/408/Toshiba_TLP293_datasheet-1209449.pdf" H 5700 7250 50  0001 L CNN
 	1    5700 7250
 	1    0    0    -1  
 $EndComp
@@ -1162,7 +1162,7 @@ P 10250 3050
 F 0 "U9" H 10000 2950 55  0000 L CNN
 F 1 "STN3NF06L" H 9800 2850 55  0000 L CNN
 F 2 "TSI_Rev_2021_Footprint_Lib:SOT230P700X180-4N-speical" H 9850 3400 55  0001 C CNN
-F 3 "" H 9850 3400 55  0001 C CNN
+F 3 "https://www.st.com/content/ccc/resource/technical/document/datasheet/b1/52/93/f0/a9/a9/40/d7/CD00002430.pdf/files/CD00002430.pdf/jcr:content/translations/en.CD00002430.pdf" H 9850 3400 55  0001 C CNN
 	1    10250 3050
 	1    0    0    -1  
 $EndComp
@@ -1440,7 +1440,7 @@ P 15050 9050
 F 0 "U10" H 15050 9458 79  0000 C CNN
 F 1 "MC7805BDTRKG" H 15050 9323 79  0000 C CNN
 F 2 "TSI_Rev_2021_Footprint_Lib:DPAK229P990X238-4N" H 15050 9300 79  0001 C CNN
-F 3 "" H 15050 9300 79  0001 C CNN
+F 3 "https://www.onsemi.com/pdf/datasheet/mc7800-d.pdf" H 15050 9300 79  0001 C CNN
 	1    15050 9050
 	1    0    0    -1  
 $EndComp
@@ -1561,7 +1561,7 @@ P 5700 10525
 F 0 "U27" H 5600 10725 50  0000 C CNN
 F 1 "TLP293" H 5850 10725 50  0000 C CNN
 F 2 "Package_SO:SOIC-4_4.55x2.6mm_P1.27mm" H 5500 10325 50  0001 L CIN
-F 3 "https://toshiba.semicon-storage.com/info/docget.jsp?did=12884&prodName=TLP291" H 5700 10525 50  0001 L CNN
+F 3 "https://www.mouser.com/datasheet/2/408/Toshiba_TLP293_datasheet-1209449.pdf" H 5700 10525 50  0001 L CNN
 	1    5700 10525
 	-1   0    0    -1  
 $EndComp
@@ -1569,8 +1569,6 @@ Text Label 7100 10425 2    59   ~ 0
 PC_Ready_HV
 Text Label 7100 10625 2    59   ~ 0
 IO_Ground
-Text Notes 5525 10800 0    47   ~ 0
-5V --> 5V\n
 Text Notes 6500 10325 0    47   ~ 0
 (Pre charge ready)
 Wire Wire Line

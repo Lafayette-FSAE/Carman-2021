@@ -1336,80 +1336,80 @@ Text Label 5100 1700 0    49   ~ 0
 5V_ISO_RTN
 Text Label 8100 3650 0    49   ~ 0
 5V_ISO_RTN
-Text Label 5775 3775 0    50   ~ 0
+Text Label 5725 4325 0    50   ~ 0
 Flowrate_RTN
 Wire Wire Line
-	5278 3885 6828 3885
-Text Label 5278 3885 0    50   ~ 0
+	5228 4435 6778 4435
+Text Label 5228 4435 0    50   ~ 0
 SCL_uC
-Text Label 6828 3885 2    50   ~ 0
+Text Label 6778 4435 2    50   ~ 0
 SCL_TSI
-Text Label 5978 3885 0    50   ~ 0
+Text Label 5928 4435 0    50   ~ 0
 SCL
 Wire Wire Line
-	5278 3985 6828 3985
-Text Label 5278 3985 0    50   ~ 0
+	5228 4535 6778 4535
+Text Label 5228 4535 0    50   ~ 0
 SDA_uC
-Text Label 5978 3985 0    50   ~ 0
+Text Label 5928 4535 0    50   ~ 0
 SDA
-Text Label 6828 3985 2    50   ~ 0
+Text Label 6778 4535 2    50   ~ 0
 SDA_TSI
 Wire Wire Line
-	5275 3775 6825 3775
-Text Label 5275 3775 0    50   ~ 0
+	5225 4325 6775 4325
+Text Label 5225 4325 0    50   ~ 0
 AIRS-
-Text Label 6825 3775 2    50   ~ 0
+Text Label 6775 4325 2    50   ~ 0
 GLV_RTN
-Text Label 5275 3675 0    50   ~ 0
+Text Label 5225 4225 0    50   ~ 0
 24V
-Text Label 6825 3675 2    50   ~ 0
+Text Label 6775 4225 2    50   ~ 0
 24V_AMS_IN
 Wire Wire Line
-	5275 3675 6825 3675
-Text Label 6225 3675 2    50   ~ 0
+	5225 4225 6775 4225
+Text Label 6175 4225 2    50   ~ 0
 24V_IMD_IN
 Wire Notes Line
-	5400 2850 5400 3325
+	5350 3350 5350 3825
 Wire Notes Line
-	5400 2850 6600 2850
+	5350 3350 6550 3350
 Wire Notes Line
-	6600 2850 6600 3325
+	6550 3350 6550 3825
 Wire Wire Line
-	5500 3175 6525 3175
+	5450 3675 6475 3675
 Wire Wire Line
-	5500 3275 6525 3275
+	5450 3775 6475 3775
 Wire Wire Line
-	5275 3550 5725 3550
+	5225 4100 5675 4100
 Wire Wire Line
-	6825 3550 6325 3550
-Text Label 6825 3550 2    50   ~ 0
+	6775 4100 6275 4100
+Text Label 6775 4100 2    50   ~ 0
 Chassis_GND
-Text Label 5275 3550 0    50   ~ 0
+Text Label 5225 4100 0    50   ~ 0
 CAN_Shield
 $Comp
 L Device:Jumper JP?
 U 1 1 601967AD
-P 6025 3550
+P 5975 4100
 AR Path="/6196BF15/601967AD" Ref="JP?"  Part="1" 
 AR Path="/601967AD" Ref="JP3"  Part="1" 
-F 0 "JP3" H 6225 3650 50  0000 R CNN
-F 1 "Jumper" H 6725 3550 50  0001 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6025 3550 50  0001 C CNN
-F 3 "~" H 6025 3550 50  0001 C CNN
-	1    6025 3550
+F 0 "JP3" H 6050 4250 50  0000 R CNN
+F 1 "Jumper" H 6675 4100 50  0001 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5975 4100 50  0001 C CNN
+F 3 "~" H 5975 4100 50  0001 C CNN
+	1    5975 4100
 	1    0    0    -1  
 $EndComp
 Wire Notes Line
-	5400 3325 6600 3325
-Text Notes 5775 3050 0    50   ~ 0
+	5350 3825 6550 3825
+Text Notes 5725 3550 0    50   ~ 0
 Battery Pack\nCAN Lines\n
-Text Label 5500 3275 0    50   ~ 0
+Text Label 5450 3775 0    50   ~ 0
 CAN-_Logic
-Text Label 6525 3275 2    50   ~ 0
+Text Label 6475 3775 2    50   ~ 0
 BP_CAN-
-Text Label 6525 3175 2    50   ~ 0
+Text Label 6475 3675 2    50   ~ 0
 BP_CAN+
-Text Label 5500 3175 0    50   ~ 0
+Text Label 5450 3675 0    50   ~ 0
 CAN+_Logic
 Wire Wire Line
 	2900 2800 3350 2800

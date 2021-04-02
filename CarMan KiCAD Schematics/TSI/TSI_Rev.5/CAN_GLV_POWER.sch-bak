@@ -323,7 +323,7 @@ P 14150 6525
 F 0 "U49" H 14150 6725 50  0000 C CNN
 F 1 "TLP293" H 14150 6325 50  0000 C CNN
 F 2 "Package_SO:SOIC-4_4.55x2.6mm_P1.27mm" H 13950 6325 50  0001 L CIN
-F 3 "" H 14150 6525 50  0001 L CNN
+F 3 "https://www.mouser.com/datasheet/2/408/Toshiba_TLP293_datasheet-1209449.pdf" H 14150 6525 50  0001 L CNN
 	1    14150 6525
 	1    0    0    -1  
 $EndComp
@@ -366,7 +366,7 @@ P 4650 1150
 F 0 "U48" H 4650 1350 50  0000 C CNN
 F 1 "TLP293" H 4650 950 50  0000 C CNN
 F 2 "Package_SO:SOIC-4_4.55x2.6mm_P1.27mm" H 4450 950 50  0001 L CIN
-F 3 "" H 4650 1150 50  0001 L CNN
+F 3 "https://www.mouser.com/datasheet/2/408/Toshiba_TLP293_datasheet-1209449.pdf" H 4650 1150 50  0001 L CNN
 	1    4650 1150
 	1    0    0    -1  
 $EndComp
@@ -425,7 +425,7 @@ P 11850 1300
 F 0 "U24" H 11850 1500 50  0000 C CNN
 F 1 "TLP293" H 11850 1100 50  0000 C CNN
 F 2 "Package_SO:SOIC-4_4.55x2.6mm_P1.27mm" H 11650 1100 50  0001 L CIN
-F 3 "" H 11850 1300 50  0001 L CNN
+F 3 "https://www.mouser.com/datasheet/2/408/Toshiba_TLP293_datasheet-1209449.pdf" H 11850 1300 50  0001 L CNN
 	1    11850 1300
 	1    0    0    -1  
 $EndComp
@@ -548,8 +548,6 @@ Text Notes 8975 7250 2    197  ~ 0
 AMS Relay
 Text Label 4050 10775 2    50   ~ 0
 IMD_Status
-Text Notes 4575 8400 0    68   ~ 0
-Dashboard\n
 Text HLabel 15200 2700 2    50   Output ~ 0
 AMS_Status
 Text Label 14450 2700 0    50   ~ 0
@@ -592,8 +590,8 @@ Wire Wire Line
 	5875 8625 6575 8625
 Text Label 6700 9925 0    50   ~ 0
 SL1_IMD_Out
-Text Notes 9575 10275 0    68   ~ 0
-Goes to \nBOT Switch
+Text Notes 9650 10175 0    47   ~ 0
+BOT (J17)
 Text Label 9700 8625 2    50   ~ 0
 AMS_FAULT_LED
 Wire Notes Line
@@ -606,8 +604,6 @@ Wire Notes Line
 	4925 8400 4725 8400
 Wire Wire Line
 	9100 8625 9900 8625
-Text Notes 9650 8525 0    68   ~ 0
-Dashboard\n
 Wire Notes Line
 	9800 8525 9800 8725
 Wire Notes Line
@@ -616,24 +612,24 @@ Wire Notes Line
 	10000 8725 10000 8525
 Wire Notes Line
 	10000 8525 9800 8525
-Text Label 7225 10925 0    50   ~ 0
+Text Label 7225 10825 0    50   ~ 0
 AMS_Button_RTN
-Text Notes 7925 10775 0    50   ~ 0
+Text Notes 7925 10675 0    50   ~ 0
 AMS Reset BTN\n
 Wire Notes Line
-	7975 11075 8425 11075
+	7975 10975 8425 10975
 Wire Notes Line
-	8425 11075 8425 10775
+	8425 10975 8425 10675
 Wire Notes Line
-	8425 10775 7975 10775
+	8425 10675 7975 10675
 Wire Notes Line
-	7975 10775 7975 11075
-Text Label 9125 10925 2    50   ~ 0
+	7975 10675 7975 10975
+Text Label 9125 10825 2    50   ~ 0
 AMS_Status
 Wire Wire Line
-	8275 10925 9125 10925
+	8275 10825 9125 10825
 Wire Wire Line
-	7225 10925 8125 10925
+	7225 10825 8125 10825
 $Comp
 L TSI_Rev.5-rescue:G5LE-1-E-Lafayette_Electric_Car_Internals RL?
 U 1 1 5FB466B1
@@ -833,7 +829,7 @@ Wire Wire Line
 	4050 2850 4950 2850
 Wire Notes Line
 	2950 650  2950 3250
-Text Label 10625 3325 0    50   ~ 0
+Text Label 10575 3325 0    50   ~ 0
 MRESET_Contact
 Text HLabel 14950 3875 0    50   Input ~ 0
 Safety_Loop_EPAL
@@ -852,33 +848,33 @@ Safety_Loop_EPAL
 $Comp
 L TSI_Rev.5-rescue:TLP293-CarMan_KiCAD_Library-TSI_Rev.5-rescue U20
 U 1 1 6012F5F3
-P 11925 3425
-F 0 "U20" H 11925 3625 50  0000 C CNN
-F 1 "TLP293" H 11925 3225 50  0000 C CNN
-F 2 "Package_SO:SOIC-4_4.55x2.6mm_P1.27mm" H 11725 3225 50  0001 L CIN
-F 3 "https://www.mouser.com/ProductDetail/Toshiba/TLP293GB-TPLE/?qs=OLJpxlzHOSSc5RAOktTSWw%3D%3D" H 11925 3425 50  0001 L CNN
-	1    11925 3425
+P 11875 3425
+F 0 "U20" H 11875 3625 50  0000 C CNN
+F 1 "TLP293" H 11875 3225 50  0000 C CNN
+F 2 "Package_SO:SOIC-4_4.55x2.6mm_P1.27mm" H 11675 3225 50  0001 L CIN
+F 3 "https://www.mouser.com/ProductDetail/Toshiba/TLP293GB-TPLE/?qs=OLJpxlzHOSSc5RAOktTSWw%3D%3D" H 11875 3425 50  0001 L CNN
+	1    11875 3425
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R25
 U 1 1 60131E61
-P 11475 3325
-F 0 "R25" V 11375 3325 50  0000 C CNN
-F 1 "2.4K" V 11475 3325 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 11405 3325 50  0001 C CNN
-F 3 "~" H 11475 3325 50  0001 C CNN
-	1    11475 3325
+P 11425 3325
+F 0 "R25" V 11325 3325 50  0000 C CNN
+F 1 "2.4K" V 11425 3325 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 11355 3325 50  0001 C CNN
+F 3 "~" H 11425 3325 50  0001 C CNN
+	1    11425 3325
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	12225 3525 12300 3525
-Text Label 12100 3875 2    50   ~ 0
+	12175 3525 12250 3525
+Text Label 12050 3875 2    50   ~ 0
 GLV_RTN
 Wire Wire Line
-	11625 3525 11575 3525
+	11575 3525 11525 3525
 Wire Wire Line
-	11575 3525 11575 3875
+	11525 3525 11525 3875
 $Comp
 L Connector_Generic:Conn_01x02 J?
 U 1 1 601DA5ED
@@ -1001,7 +997,7 @@ Text Label 2150 10775 0    50   ~ 0
 IMD_Button_RTN
 Wire Wire Line
 	6575 7925 6575 8625
-Text Notes 7700 10525 0    55   ~ 0
+Text Notes 7700 10500 0    55   ~ 0
 SFS2-DC24 has built in \ndiode across terminals
 Wire Notes Line
 	10450 11150 10450 6925
@@ -1037,30 +1033,30 @@ Wire Wire Line
 $Comp
 L Device:R R61
 U 1 1 601328F4
-P 12350 3100
-F 0 "R61" V 12250 3050 50  0000 L CNN
-F 1 "1.5K" V 12350 3025 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 12280 3100 50  0001 C CNN
-F 3 "~" H 12350 3100 50  0001 C CNN
-	1    12350 3100
+P 12300 3100
+F 0 "R61" V 12200 3050 50  0000 L CNN
+F 1 "1.5K" V 12300 3025 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 12230 3100 50  0001 C CNN
+F 3 "~" H 12300 3100 50  0001 C CNN
+	1    12300 3100
 	1    0    0    -1  
 $EndComp
-Text Label 12350 2950 0    50   ~ 0
+Text Label 12300 2950 0    50   ~ 0
 24V
-Text Label 13100 3325 2    50   ~ 0
+Text Label 13050 3325 2    50   ~ 0
 GEN_FAULT_EPAL
 Wire Wire Line
-	12225 3325 12350 3325
+	12175 3325 12300 3325
 Wire Wire Line
-	12350 3325 12350 3250
-Connection ~ 12350 3325
+	12300 3325 12300 3250
+Connection ~ 12300 3325
 Wire Wire Line
-	12350 3325 13100 3325
+	12300 3325 13050 3325
 Wire Wire Line
-	12300 3525 12300 3875
+	12250 3525 12250 3875
 Wire Wire Line
-	11575 3875 12300 3875
-Text Notes 12450 3525 0    51   ~ 0
+	11525 3875 12250 3875
+Text Notes 12400 3525 0    51   ~ 0
 25mA passed to EPAL when\nMRESET_CONTACT is low
 Wire Notes Line
 	15950 5500 15950 9850
@@ -1069,7 +1065,7 @@ L Device:LED D9
 U 1 1 61DA633B
 P 1850 7400
 F 0 "D9" H 1850 7300 50  0000 C CNN
-F 1 "LED" H 1850 7500 50  0000 C CNN
+F 1 "GREEN LED" H 1850 7500 50  0000 C CNN
 F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1850 7400 50  0001 C CNN
 F 3 "http://static.vcclite.com/pdf/VAOL-S8GT4-LED-0805-green.pdf" H 1850 7400 50  0001 C CNN
 F 4 "VAOL-S8GT4" H 1850 7400 50  0001 C CNN "Part Name"
@@ -1111,7 +1107,7 @@ P 8200 9025
 F 0 "K4" H 8200 10475 60  0000 C CNN
 F 1 "SFS2-DC24V" H 8200 7775 60  0000 C CNN
 F 2 "TSI_Rev_2021_Footprint_Lib:SFS2-DC24V" H 9100 9365 60  0001 C CNN
-F 3 "" H 8200 9025 60  0000 C CNN
+F 3 "https://www.digikey.com/en/products/detail/panasonic-electric-works/SFS2-DC24V/2639429" H 8200 9025 60  0001 C CNN
 	1    8200 9025
 	1    0    0    -1  
 $EndComp
@@ -1141,7 +1137,7 @@ P 3125 8900
 F 0 "K3" H 3125 10350 60  0000 C CNN
 F 1 "SFS2-DC24V" H 3125 7650 60  0000 C CNN
 F 2 "TSI_Rev_2021_Footprint_Lib:SFS2-DC24V" H 4025 9240 60  0001 C CNN
-F 3 "" H 3125 8900 60  0000 C CNN
+F 3 "https://www.digikey.com/en/products/detail/panasonic-electric-works/SFS2-DC24V/2639429" H 3125 8900 60  0001 C CNN
 	1    3125 8900
 	1    0    0    -1  
 $EndComp
@@ -1267,7 +1263,7 @@ Wire Notes Line
 	7850 2425 7950 2425
 Wire Wire Line
 	7900 2275 7900 2425
-Text Notes 7850 2625 2    47   ~ 0
+Text Notes 7975 2600 0    47   ~ 0
 Cooling\nR1
 Wire Wire Line
 	7900 2725 8500 2725
@@ -1345,14 +1341,14 @@ Wire Notes Line
 Wire Notes Line
 	9750 9950 9750 10075
 Wire Wire Line
-	10625 3325 11325 3325
+	10575 3325 11275 3325
 Text Notes 13650 7950 0    39   ~ 0
 (Coil rated for 16.7 mA)
 Wire Wire Line
 	14375 8675 14375 9075
 Wire Wire Line
 	13675 8675 13675 9075
-Text Notes 12400 3150 0    39   ~ 0
+Text Notes 12350 3150 0    39   ~ 0
 Needs to be\nrated for 1/2W\n
 Text Label 10750 2300 0    50   ~ 0
 AIRs-
@@ -1391,7 +1387,7 @@ P 11850 2200
 F 0 "U28" H 11850 2400 50  0000 C CNN
 F 1 "TLP293" H 11850 2000 50  0000 C CNN
 F 2 "Package_SO:SOIC-4_4.55x2.6mm_P1.27mm" H 11650 2000 50  0001 L CIN
-F 3 "" H 11850 2200 50  0001 L CNN
+F 3 "https://www.mouser.com/datasheet/2/408/Toshiba_TLP293_datasheet-1209449.pdf" H 11850 2200 50  0001 L CNN
 	1    11850 2200
 	1    0    0    -1  
 $EndComp
@@ -1451,4 +1447,14 @@ Wire Wire Line
 Wire Wire Line
 	14375 8675 15075 8675
 Connection ~ 14375 8675
+Text Notes 7850 2575 2    43   ~ 0
+Cooling Sensors\n(J19)
+Text Notes 9575 8850 0    47   ~ 0
+Dashboard (J11)\n
+Text Notes 4550 8700 0    47   ~ 0
+Dashboard (J11)\n
+Text Notes 2950 11025 0    47   ~ 0
+LSP (J20)\n
+Text Notes 8025 11075 0    47   ~ 0
+LSP (J20)\n
 $EndSCHEMATC
