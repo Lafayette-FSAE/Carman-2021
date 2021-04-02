@@ -16,88 +16,78 @@ $EndDescr
 $Comp
 L Amplifier_Operational:MCP6004 U?
 U 4 1 6197021B
-P 4000 3600
+P 3850 3675
 AR Path="/5FC85F57/6197021B" Ref="U?"  Part="4" 
 AR Path="/6196BF15/6197021B" Ref="U21"  Part="4" 
-F 0 "U21" H 3950 3600 50  0000 C CNN
-F 1 "MCP6004" H 4150 3450 50  0000 C CNN
-F 2 "TSI_Rev_2021_Footprint_Lib:SOIC127P600X175-14N" H 3950 3700 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 4050 3800 50  0001 C CNN
-	4    4000 3600
+F 0 "U21" H 3800 3675 50  0000 C CNN
+F 1 "MCP6004" H 4000 3525 50  0000 C CNN
+F 2 "TSI_Rev_2021_Footprint_Lib:SOIC127P600X175-14N" H 3800 3775 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 3900 3875 50  0001 C CNN
+	4    3850 3675
 	1    0    0    -1  
 $EndComp
 $Comp
 L Amplifier_Operational:MCP6004 U?
 U 3 1 61970221
-P 4000 2750
+P 3850 2750
 AR Path="/5FC85F57/61970221" Ref="U?"  Part="3" 
 AR Path="/6196BF15/61970221" Ref="U21"  Part="3" 
-F 0 "U21" H 3950 2750 50  0000 C CNN
-F 1 "MCP6004" H 4150 2600 50  0000 C CNN
-F 2 "TSI_Rev_2021_Footprint_Lib:SOIC127P600X175-14N" H 3950 2850 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 4050 2950 50  0001 C CNN
-	3    4000 2750
+F 0 "U21" H 3800 2750 50  0000 C CNN
+F 1 "MCP6004" H 4000 2600 50  0000 C CNN
+F 2 "TSI_Rev_2021_Footprint_Lib:SOIC127P600X175-14N" H 3800 2850 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 3900 2950 50  0001 C CNN
+	3    3850 2750
 	1    0    0    -1  
 $EndComp
-Text Label 2850 2650 0    79   ~ 0
-TSV_Voltage
+Text Label 2700 2650 0    79   ~ 0
+TS_Voltage
 Wire Wire Line
-	3700 2850 3550 2850
+	3550 2850 3400 2850
 Wire Wire Line
-	3550 2850 3550 3050
+	3400 2850 3400 3050
 Wire Wire Line
-	3550 3050 4350 3050
+	3400 3050 4200 3050
 Wire Wire Line
-	4350 3050 4350 2750
+	4200 3050 4200 2750
 Wire Wire Line
-	4350 2750 4300 2750
+	4200 2750 4150 2750
 Wire Wire Line
-	3700 3700 3550 3700
+	3550 3775 3400 3775
 Wire Wire Line
-	3550 3700 3550 3900
-Wire Wire Line
-	3550 3900 4350 3900
-Wire Wire Line
-	4350 3900 4350 3600
-Wire Wire Line
-	4350 3600 4300 3600
+	4200 3675 4150 3675
 $Comp
 L Device:R_POT_TRIM RV1
 U 1 1 6197194B
-P 4500 2350
-F 0 "RV1" H 4430 2396 50  0000 R CNN
-F 1 "3296W-1-103LF" H 4430 2305 50  0000 R CNN
-F 2 "Potentiometer_THT:Potentiometer_Bourns_3296W_Vertical" H 4500 2350 50  0001 C CNN
-F 3 "~" H 4500 2350 50  0001 C CNN
-	1    4500 2350
+P 4350 2350
+F 0 "RV1" H 4280 2396 50  0000 R CNN
+F 1 "3296W-1-103LF" H 4280 2305 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_3296W_Vertical" H 4350 2350 50  0001 C CNN
+F 3 "~" H 4350 2350 50  0001 C CNN
+	1    4350 2350
 	1    0    0    -1  
 $EndComp
-Connection ~ 4350 2750
+Connection ~ 4200 2750
 Wire Wire Line
-	4350 2750 4500 2750
-Connection ~ 4350 3600
-Wire Wire Line
-	4350 3600 5050 3600
-Text Label 2850 3500 0    79   ~ 0
+	4200 2750 4350 2750
+Connection ~ 4200 3675
+Text Label 2700 3575 0    79   ~ 0
 MC_Voltage
 Wire Wire Line
-	4500 2750 4500 2500
+	4350 2750 4350 2500
 $Comp
 L Device:R R2
 U 1 1 61982FAD
-P 4500 1950
-F 0 "R2" H 4570 1996 50  0000 L CNN
-F 1 "95K" V 4500 1900 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4430 1950 50  0001 C CNN
-F 3 "~" H 4500 1950 50  0001 C CNN
-	1    4500 1950
+P 4350 1950
+F 0 "R2" H 4420 1996 50  0000 L CNN
+F 1 "95K" V 4350 1900 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4280 1950 50  0001 C CNN
+F 3 "~" H 4350 1950 50  0001 C CNN
+	1    4350 1950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4500 2200 4500 2100
-Wire Wire Line
-	4250 1800 4500 1800
-Text Label 4250 1800 2    79   ~ 0
+	4350 2200 4350 2100
+Text Label 3675 1800 0    79   ~ 0
 IO_Ground
 $Comp
 L 74xx:74HC00 U19
@@ -151,15 +141,15 @@ $EndComp
 Wire Wire Line
 	5650 2850 5850 2850
 Text Label 6000 2850 0    47   ~ 0
-TSV_Ready
+TSV_Ready_HV
 $Comp
 L Connector:TestPoint TP?
 U 1 1 619D3ABD
 P 5850 2650
 AR Path="/5FC85F57/619D3ABD" Ref="TP?"  Part="1" 
 AR Path="/6196BF15/619D3ABD" Ref="TP4"  Part="1" 
-F 0 "TP4" H 5908 2768 50  0000 L CNN
-F 1 "TSV_Ready" H 5908 2677 50  0000 L CNN
+F 0 "TP4" H 5775 2850 50  0000 L CNN
+F 1 "TSV_Ready_HV" H 5925 2775 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Pad_D3.0mm" H 6050 2650 50  0001 C CNN
 F 3 "~" H 6050 2650 50  0001 C CNN
 	1    5850 2650
@@ -170,15 +160,9 @@ Wire Wire Line
 Connection ~ 5850 2850
 Wire Wire Line
 	5850 2850 6800 2850
-Text Label 5050 2950 2    47   ~ 0
+Text Label 4625 2950 0    47   ~ 0
 1.24HV_REF
-Connection ~ 4500 2750
-Wire Wire Line
-	4500 2750 5050 2750
-Wire Wire Line
-	4650 2350 4650 3400
-Wire Wire Line
-	4650 3400 5050 3400
+Connection ~ 4350 2750
 Wire Wire Line
 	7400 2950 7750 2950
 $Comp
@@ -210,9 +194,9 @@ Wire Wire Line
 	8600 3550 8600 3800
 Wire Wire Line
 	8600 3800 8350 3800
-Text Notes 4050 4050 2    55   ~ 0
+Text Notes 4100 4075 2    55   ~ 0
 Buffer\n
-Text Notes 4050 3150 2    55   ~ 0
+Text Notes 3900 3150 2    55   ~ 0
 Buffer\n
 $Comp
 L Device:R R4
@@ -231,16 +215,14 @@ Text Notes 9200 3050 2    55   ~ 0
 Wire Wire Line
 	6700 4250 6800 4250
 Wire Wire Line
-	5650 3500 5850 3500
+	5650 3575 5850 3575
 Wire Wire Line
 	6800 3050 6800 4250
 Wire Wire Line
 	7750 3900 6100 3900
-Wire Wire Line
-	5850 3500 5850 3650
-Text Label 5850 3500 0    55   ~ 0
+Text Label 5850 3775 0    55   ~ 0
 PC_Ready_HV
-Text Notes 7600 3900 2    55   ~ 0
+Text Notes 7525 3900 2    55   ~ 0
 ~R\n
 Text Notes 8550 3800 2    55   ~ 0
 ~Q
@@ -268,18 +250,16 @@ AND Gate
 $Comp
 L Connector:TestPoint TP?
 U 1 1 61A23E70
-P 6050 3650
+P 5850 3525
 AR Path="/5FC85F57/61A23E70" Ref="TP?"  Part="1" 
 AR Path="/6196BF15/61A23E70" Ref="TP5"  Part="1" 
-F 0 "TP5" V 6100 3550 50  0000 L CNN
-F 1 "PC_Ready_HV" V 6050 3850 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D3.0mm" H 6250 3650 50  0001 C CNN
-F 3 "~" H 6250 3650 50  0001 C CNN
-	1    6050 3650
-	0    1    1    0   
+F 0 "TP5" H 5775 3725 50  0000 L CNN
+F 1 "PC_Ready_HV" H 5900 3625 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D3.0mm" H 6050 3525 50  0001 C CNN
+F 3 "~" H 6050 3525 50  0001 C CNN
+	1    5850 3525
+	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6050 3650 5850 3650
 Connection ~ 6800 4250
 Text Label 7200 4250 0    55   ~ 0
 PC_AND_SL_READY
@@ -301,7 +281,7 @@ MC_Voltage
 Text Label 2150 1000 2    50   ~ 0
 IO_Ground
 Text Label 2150 900  2    50   ~ 0
-TSV_Voltage
+TS_Voltage
 Text Notes 1100 650  0    79   ~ 0
 HV SIGNALS\n
 Text HLabel 1350 800  0    50   Input ~ 0
@@ -937,10 +917,10 @@ Text Notes 14100 1350 0    47   ~ 0
 N/A
 Text Notes 13550 950  0    47   ~ 0
 SR Latch Logic\n
-Text Notes 4600 2250 0    47   ~ 0
+Text Notes 4450 2250 0    47   ~ 0
 95% of Voltage
 Text HLabel 1350 900  0    50   Input ~ 0
-TSV_Voltage
+TS_Voltage
 Text HLabel 1350 1000 0    50   Input ~ 0
 IO_Ground
 Text Label 2150 1200 2    50   ~ 0
@@ -1054,10 +1034,7 @@ HIGH VOLTAGE\n
 Wire Notes Line
 	500  500  2350 500 
 Wire Wire Line
-	5850 3650 5850 4200
-Wire Wire Line
 	5850 4200 6300 4200
-Connection ~ 5850 3650
 Wire Wire Line
 	5700 4300 6100 4300
 Wire Wire Line
@@ -1129,12 +1106,12 @@ IO_Ground
 $Comp
 L Amplifier_Operational:MCP6004 U40
 U 2 1 61979056
-P 5350 3500
-F 0 "U40" H 5350 3500 50  0000 C CNN
-F 1 "MCP6004" H 5450 3700 50  0000 C CNN
-F 2 "TSI_Rev_2021_Footprint_Lib:SOIC127P600X175-14N" H 5300 3600 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 5400 3700 50  0001 C CNN
-	2    5350 3500
+P 5350 3575
+F 0 "U40" H 5350 3575 50  0000 C CNN
+F 1 "MCP6004" H 5550 3450 50  0000 C CNN
+F 2 "TSI_Rev_2021_Footprint_Lib:SOIC127P600X175-14N" H 5300 3675 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 5400 3775 50  0001 C CNN
+	2    5350 3575
 	1    0    0    1   
 $EndComp
 Text Label 6600 2100 0    47   ~ 0
@@ -1489,9 +1466,9 @@ Wire Wire Line
 Wire Wire Line
 	1250 6150 1950 6150
 Wire Wire Line
-	2850 3500 3700 3500
+	2700 3575 3550 3575
 Wire Wire Line
-	2850 2650 3700 2650
+	2700 2650 3550 2650
 Wire Wire Line
 	9850 4250 10250 4250
 Text Notes 4700 7550 0    51   ~ 0
@@ -1693,6 +1670,53 @@ Wire Wire Line
 	7850 6950 8720 6950
 Text Notes 10975 2625 0    35   ~ 0
 Flyback\nDiode
-Text Notes 550  3200 0    59   ~ 0
-Three Criteria for Pre Charge Relay to close:\n1. TS_Voltage & MC_Voltage w/im 95% of e/o\n2. TS_Voltage > 1.24HV_Ref\n3. AIRS closed (Safety Loop)
+Text Notes 525  2600 0    59   ~ 0
+1. TS_Voltage & MC_Voltage w/im 95% of e/o\n2. TS_Voltage > 1.24HV_Ref\n3. AIRS closed
+Text Notes 525  2300 0    59   ~ 12
+Three Criteria for Pre Charge Relay to close:
+Text Notes 7550 2950 2    55   ~ 0
+~S\n
+Text Notes 4625 3925 0    43   ~ 0
+MC_Voltage > 95% of TS_Voltage
+Wire Wire Line
+	3400 3775 3400 3975
+Wire Wire Line
+	4200 3675 4200 3975
+Wire Wire Line
+	4500 2350 4500 3475
+Wire Wire Line
+	5850 3575 5850 4200
+Wire Wire Line
+	5850 3575 5850 3525
+Connection ~ 5850 3575
+Wire Wire Line
+	3400 3975 4200 3975
+Wire Wire Line
+	4500 3475 5050 3475
+Wire Wire Line
+	4200 3675 5050 3675
+Wire Wire Line
+	4350 2750 5050 2750
+Wire Wire Line
+	4625 2950 5050 2950
+Wire Notes Line
+	4600 3175 5750 3175
+Wire Notes Line
+	5750 2300 4600 2300
+Wire Notes Line
+	5750 2300 5750 3175
+Wire Notes Line
+	4600 2300 4600 3175
+Text Notes 4675 2400 0    47   ~ 0
+TSV Minimum Voltage Check
+Wire Notes Line
+	4600 3950 5750 3950
+Wire Notes Line
+	5750 3950 5750 3275
+Wire Notes Line
+	5750 3275 4600 3275
+Wire Notes Line
+	4600 3275 4600 3950
+Wire Wire Line
+	3675 1800 4350 1800
 $EndSCHEMATC

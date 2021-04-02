@@ -58,7 +58,7 @@ GLV_RTN
 Text Label 700  6200 0    50   ~ 0
 IO_Ground
 Text Label 700  5900 0    50   ~ 0
-TSV_Voltage
+TS_Voltage
 Text Label 700  6300 0    50   ~ 0
 5HV
 Text Label 3950 6200 2    50   ~ 0
@@ -129,7 +129,7 @@ U 6196BF15
 F0 "PCDC_Circuit" 63
 F1 "PCDC_Circuit.sch" 63
 F2 "MC_Voltage" I L 1550 5800 50 
-F3 "TSV_Voltage" I L 1550 5900 50 
+F3 "TS_Voltage" I L 1550 5900 50 
 F4 "IO_Ground" I L 1550 6200 50 
 F5 "1.24HV_REF" I R 3100 6200 50 
 F6 "5HV" I L 1550 6300 50 
@@ -1073,7 +1073,7 @@ Text Label 4250 6400 0    50   ~ 0
 Text Label 4250 6800 0    50   ~ 0
 HV+
 Text Label 4250 6700 0    50   ~ 0
-TSV_Voltage
+TS_Voltage
 Text Label 4250 6600 0    50   ~ 0
 MC+
 Text Label 4250 6900 0    50   ~ 0
@@ -1132,7 +1132,7 @@ F7 "1.24HV_REF" I L 4850 6300 50
 F8 "IO_Ground" I L 4850 6500 50 
 F9 "5HV" I L 4850 6400 50 
 F10 "Throttle_HV" I L 4850 7000 50 
-F11 "TSV_Voltage" I L 4850 6700 50 
+F11 "TS_Voltage" I L 4850 6700 50 
 F12 "MC+" I L 4850 6600 50 
 F13 "HV+" I L 4850 6800 50 
 F14 "HV-" I L 4850 6900 50 

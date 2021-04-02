@@ -620,7 +620,7 @@ Wire Wire Line
 Text Label 8200 5100 0    50   ~ 0
 MC_Voltage
 Text Label 8200 5250 0    50   ~ 0
-TSV_Voltage
+TS_Voltage
 Text Label 5750 5400 2    50   ~ 0
 SDA_HV
 Text Label 5750 5550 2    50   ~ 0
@@ -1014,11 +1014,11 @@ HIGH VOLTAGE SIGNALS\n
 Text Label 6400 9200 2    50   ~ 0
 HV+
 Text Label 6400 8900 2    50   ~ 0
-TSV_Voltage
+TS_Voltage
 Text Label 6400 9100 2    50   ~ 0
 MC+
 Text HLabel 5750 8900 0    50   Input ~ 0
-TSV_Voltage
+TS_Voltage
 Text HLabel 5750 9100 0    50   Input ~ 0
 MC+
 Text HLabel 5750 9200 0    50   Input ~ 0
