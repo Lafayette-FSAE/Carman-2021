@@ -524,7 +524,7 @@ Text Notes 3750 7225 2    197  ~ 0
 IMD Relay
 Text Notes 8975 7250 2    197  ~ 0
 AMS Relay
-Text Label 4050 10775 2    50   ~ 0
+Text Label 2625 10775 2    50   ~ 0
 IMD_Status
 Text HLabel 15200 2700 2    50   Output ~ 0
 AMS_Status
@@ -590,24 +590,24 @@ Wire Notes Line
 	10000 8725 10000 8525
 Wire Notes Line
 	10000 8525 9800 8525
-Text Label 7225 10825 0    50   ~ 0
+Text Label 5800 10800 0    50   ~ 0
 AMS_Button_RTN
-Text Notes 7925 10675 0    50   ~ 0
+Text Notes 6500 10650 0    50   ~ 0
 AMS Reset BTN\n
 Wire Notes Line
-	7975 10975 8425 10975
+	6550 10950 7000 10950
 Wire Notes Line
-	8425 10975 8425 10675
+	7000 10950 7000 10650
 Wire Notes Line
-	8425 10675 7975 10675
+	7000 10650 6550 10650
 Wire Notes Line
-	7975 10675 7975 10975
-Text Label 9125 10825 2    50   ~ 0
+	6550 10650 6550 10950
+Text Label 7700 10800 2    50   ~ 0
 AMS_Status
 Wire Wire Line
-	8275 10825 9125 10825
+	6850 10800 7700 10800
 Wire Wire Line
-	7225 10825 8125 10825
+	5800 10800 6700 10800
 $Comp
 L TSI_Rev.5-rescue:G5LE-1-E-Lafayette_Electric_Car_Internals RL?
 U 1 1 5FB466B1
@@ -958,20 +958,20 @@ Text Label 1625 8800 0    50   ~ 0
 Wire Wire Line
 	1875 9800 2225 9800
 Wire Wire Line
-	2150 10775 3050 10775
+	725  10775 1625 10775
 Wire Wire Line
-	3200 10775 4050 10775
+	1775 10775 2625 10775
 Wire Notes Line
-	2900 10625 2900 10925
+	1475 10625 1475 10925
 Wire Notes Line
-	3350 10625 2900 10625
+	1925 10625 1475 10625
 Wire Notes Line
-	3350 10925 3350 10625
+	1925 10925 1925 10625
 Wire Notes Line
-	2900 10925 3350 10925
-Text Notes 2850 10625 0    50   ~ 0
+	1475 10925 1925 10925
+Text Notes 1425 10625 0    50   ~ 0
 IMD Reset BTN\n
-Text Label 2150 10775 0    50   ~ 0
+Text Label 725  10775 0    50   ~ 0
 IMD_Button_RTN
 Wire Wire Line
 	6575 7925 6575 8625
@@ -1431,9 +1431,9 @@ Text Notes 9575 8850 0    47   ~ 0
 Dashboard (J11)\n
 Text Notes 4550 8700 0    47   ~ 0
 Dashboard (J11)\n
-Text Notes 2950 11025 0    47   ~ 0
+Text Notes 1525 11025 0    47   ~ 0
 LSP (J20)\n
-Text Notes 8025 11075 0    47   ~ 0
+Text Notes 6600 11050 0    47   ~ 0
 LSP (J20)\n
 $Comp
 L pspice:CAP C28
@@ -1457,4 +1457,52 @@ F 3 "~" H 1350 4800 50  0001 C CNN
 	1    1350 4800
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:Jumper JP?
+U 1 1 607BAD41
+P 9300 10800
+AR Path="/6196BF15/607BAD41" Ref="JP?"  Part="1" 
+AR Path="/607BAD41" Ref="JP?"  Part="1" 
+AR Path="/5FE1DE7D/607BAD41" Ref="JP11"  Part="1" 
+F 0 "JP11" H 9375 10950 50  0000 R CNN
+F 1 "IMD Testing Jumper" H 10000 10800 50  0001 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 9300 10800 50  0001 C CNN
+F 3 "~" H 9300 10800 50  0001 C CNN
+	1    9300 10800
+	1    0    0    -1  
+$EndComp
+Text Label 10300 10800 2    50   ~ 0
+AMS_Status
+Text Label 8300 10800 0    50   ~ 0
+AMS_Button_RTN
+Wire Wire Line
+	8300 10800 9000 10800
+Wire Wire Line
+	10300 10800 9600 10800
+$Comp
+L Device:Jumper JP?
+U 1 1 6089741C
+P 4075 10775
+AR Path="/6196BF15/6089741C" Ref="JP?"  Part="1" 
+AR Path="/6089741C" Ref="JP?"  Part="1" 
+AR Path="/5FE1DE7D/6089741C" Ref="JP10"  Part="1" 
+F 0 "JP10" H 4150 10925 50  0000 R CNN
+F 1 "IMD Testing Jumper" H 4775 10775 50  0001 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4075 10775 50  0001 C CNN
+F 3 "~" H 4075 10775 50  0001 C CNN
+	1    4075 10775
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3075 10775 3775 10775
+Wire Wire Line
+	5075 10775 4375 10775
+Text Notes 3550 10975 0    47   ~ 0
+Jumper across IMD Reset Button\nfor Safety Loop Testing
+Text Label 5075 10775 2    50   ~ 0
+IMD_Status
+Text Label 3075 10775 0    50   ~ 0
+IMD_Button_RTN
+Text Notes 8775 11025 0    47   ~ 0
+Jumper across AMS Reset Button\nfor Safety Loop Testing
 $EndSCHEMATC

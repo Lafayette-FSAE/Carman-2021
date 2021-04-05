@@ -532,74 +532,55 @@ Wire Wire Line
 	11850 4500 11850 4700
 Text Notes 13050 3350 0    35   ~ 0
 Flyback\nDiode
-Wire Notes Line
-	-100 5700 5700 5700
 Text Notes 2300 6000 0    197  ~ 0
 LOW VOLTAGE\n
 $Comp
 L TSI_Rev.5-rescue:TLP293-CarMan_KiCAD_Library-TSI_Rev.5-rescue U34
 U 1 1 5F9E712D
-P 5700 6450
-F 0 "U34" H 5800 6650 50  0000 C CNN
-F 1 "TLP293" H 5850 6250 50  0000 C CNN
-F 2 "Package_SO:SOIC-4_4.55x2.6mm_P1.27mm" H 5500 6250 50  0001 L CIN
-F 3 "https://www.mouser.com/datasheet/2/408/Toshiba_TLP293_datasheet-1209449.pdf" H 5700 6450 50  0001 L CNN
-	1    5700 6450
+P 5700 6675
+F 0 "U34" H 5800 6875 50  0000 C CNN
+F 1 "TLP293" H 5850 6475 50  0000 C CNN
+F 2 "Package_SO:SOIC-4_4.55x2.6mm_P1.27mm" H 5500 6475 50  0001 L CIN
+F 3 "https://www.mouser.com/datasheet/2/408/Toshiba_TLP293_datasheet-1209449.pdf" H 5700 6675 50  0001 L CNN
+	1    5700 6675
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6100 6350 6000 6350
+	6100 6575 6000 6575
 $Comp
 L Device:R R106
 U 1 1 5F9F6996
-P 6250 6350
-F 0 "R106" V 6350 6250 50  0000 L CNN
-F 1 "10K" V 6250 6300 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6180 6350 50  0001 C CNN
-F 3 "~" H 6250 6350 50  0001 C CNN
-	1    6250 6350
+P 6250 6575
+F 0 "R106" V 6350 6475 50  0000 L CNN
+F 1 "10K" V 6250 6525 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6180 6575 50  0001 C CNN
+F 3 "~" H 6250 6575 50  0001 C CNN
+	1    6250 6575
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R R107
 U 1 1 5FA02014
-P 6800 6100
-F 0 "R107" V 6900 6000 50  0000 L CNN
-F 1 "1M" V 6800 6050 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6730 6100 50  0001 C CNN
-F 3 "~" H 6800 6100 50  0001 C CNN
-	1    6800 6100
+P 6800 6325
+F 0 "R107" V 6900 6225 50  0000 L CNN
+F 1 "1M" V 6800 6275 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6730 6325 50  0001 C CNN
+F 3 "~" H 6800 6325 50  0001 C CNN
+	1    6800 6325
 	1    0    0    -1  
 $EndComp
-Text Label 7100 5850 0    59   ~ 0
+Text Label 7100 6075 0    59   ~ 0
 24HV
 Wire Wire Line
-	6800 6250 6800 6350
+	6800 6475 6800 6575
 Wire Wire Line
-	5400 6350 5250 6350
-Text Label 4450 6350 0    59   ~ 0
+	5400 6575 5250 6575
+Text Label 4450 6575 0    59   ~ 0
 AIRS+
-Text Label 4450 6550 0    59   ~ 0
+Text Label 4450 6775 0    59   ~ 0
 GLV_RTN
-Text Label 6550 6550 0    59   ~ 0
+Text Label 6550 6775 0    59   ~ 0
 IO_Ground
-$Comp
-L Device:R R70
-U 1 1 5FA80923
-P 5100 7150
-F 0 "R70" V 5200 7050 50  0000 L CNN
-F 1 "2.4K" V 5100 7050 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5030 7150 50  0001 C CNN
-F 3 "~" H 5100 7150 50  0001 C CNN
-	1    5100 7150
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	5400 7150 5250 7150
-Text Label 4200 7150 0    59   ~ 0
-BRAKE_OUT
-Text Label 4200 7350 0    59   ~ 0
-GLV_RTN
 Wire Notes Line
 	11400 9900 16000 9900
 Wire Notes Line
@@ -608,134 +589,10 @@ Wire Notes Line
 	16000 6350 11400 6350
 Wire Notes Line
 	11400 6350 11400 9900
-Text Label 3650 9100 0    59   ~ 0
-24V
-Text Label 3600 9650 0    59   ~ 0
+Text Label 3600 9350 0    59   ~ 0
 GLV_RTN
-Text Label 6950 9650 2    59   ~ 0
+Text Label 6950 9350 2    59   ~ 0
 IO_Ground
-$Comp
-L TSI_Rev.5-rescue:TLP293-CarMan_KiCAD_Library-TSI_Rev.5-rescue U37
-U 1 1 5FD6E6F7
-P 5700 8400
-F 0 "U37" H 5800 8600 50  0000 C CNN
-F 1 "TLP293" H 5850 8200 50  0000 C CNN
-F 2 "Package_SO:SOIC-4_4.55x2.6mm_P1.27mm" H 5500 8200 50  0001 L CIN
-F 3 "https://www.mouser.com/datasheet/2/408/Toshiba_TLP293_datasheet-1209449.pdf" H 5700 8400 50  0001 L CNN
-	1    5700 8400
-	1    0    0    -1  
-$EndComp
-Text Label 6800 8300 2    59   ~ 0
-5HV
-Text Label 6800 8500 2    59   ~ 0
-Safety_Loop_HV
-$Comp
-L Device:R R73
-U 1 1 5FD6E701
-P 6250 8700
-F 0 "R73" V 6350 8600 50  0000 L CNN
-F 1 "5K" V 6250 8650 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6180 8700 50  0001 C CNN
-F 3 "~" H 6250 8700 50  0001 C CNN
-	1    6250 8700
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	6250 8900 6250 8850
-Text Label 6800 8900 2    59   ~ 0
-IO_Ground
-Wire Wire Line
-	6250 8500 6250 8550
-Connection ~ 6250 8500
-Wire Wire Line
-	6250 8500 6000 8500
-Wire Wire Line
-	6100 7350 6100 7400
-Text Label 7050 7750 2    59   ~ 0
-IO_Ground
-Wire Wire Line
-	6100 7750 6100 7700
-$Comp
-L Device:R R75
-U 1 1 5FAAD7F1
-P 6100 7550
-F 0 "R75" V 6000 7500 50  0000 L CNN
-F 1 "5K" V 6100 7500 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6030 7550 50  0001 C CNN
-F 3 "~" H 6100 7550 50  0001 C CNN
-	1    6100 7550
-	-1   0    0    1   
-$EndComp
-Text Label 7050 7350 2    59   ~ 0
-Brake_Pressed_HV
-Text Label 7050 7150 2    59   ~ 0
-5HV
-$Comp
-L TSI_Rev.5-rescue:TLP293-CarMan_KiCAD_Library-TSI_Rev.5-rescue U31
-U 1 1 5FA8091D
-P 5700 7250
-F 0 "U31" H 5800 7450 50  0000 C CNN
-F 1 "TLP293" H 5850 7050 50  0000 C CNN
-F 2 "Package_SO:SOIC-4_4.55x2.6mm_P1.27mm" H 5500 7050 50  0001 L CIN
-F 3 "https://www.mouser.com/datasheet/2/408/Toshiba_TLP293_datasheet-1209449.pdf" H 5700 7250 50  0001 L CNN
-	1    5700 7250
-	1    0    0    -1  
-$EndComp
-Text Label 4900 8500 0    59   ~ 0
-GLV_RTN
-Wire Wire Line
-	4000 8300 4150 8300
-Wire Wire Line
-	3400 8400 3250 8400
-Wire Wire Line
-	3250 8400 3250 8750
-Wire Wire Line
-	3250 8750 4150 8750
-Text Label 3900 8600 2    47   ~ 0
-GLV_RTN
-Text Label 3600 8000 0    50   ~ 0
-3.3V
-$Comp
-L Device:LED D14
-U 1 1 5FE7D099
-P 4900 7950
-F 0 "D14" H 4900 7850 50  0000 C CNN
-F 1 "SL_Status" H 4900 8050 50  0000 C CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4900 7950 50  0001 C CNN
-F 3 "~" H 4900 7950 50  0001 C CNN
-	1    4900 7950
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R R105
-U 1 1 5FE3889A
-P 4500 7950
-F 0 "R105" V 4600 7850 50  0000 L CNN
-F 1 "330" V 4500 7900 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4430 7950 50  0001 C CNN
-F 3 "~" H 4500 7950 50  0001 C CNN
-	1    4500 7950
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	4650 7950 4750 7950
-Text Label 5450 7950 2    50   ~ 0
-GLV_RTN
-Text Label 1900 8200 0    67   ~ 0
-Safety_Loop
-$Comp
-L Connector:TestPoint TP?
-U 1 1 5FEC0838
-P 2750 8050
-AR Path="/5FC85F57/5FEC0838" Ref="TP?"  Part="1" 
-AR Path="/6196BF15/5FEC0838" Ref="TP7"  Part="1" 
-F 0 "TP7" H 2750 8100 50  0000 L CNN
-F 1 "Safety_Loop" H 2650 8250 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D3.0mm" H 2950 8050 50  0001 C CNN
-F 3 "~" H 2950 8050 50  0001 C CNN
-	1    2750 8050
-	1    0    0    -1  
-$EndComp
 $Comp
 L pspice:CAP C?
 U 1 1 5FEEFD1E
@@ -819,34 +676,34 @@ Wire Wire Line
 	14500 8300 14500 8200
 NoConn ~ 13250 7650
 NoConn ~ 13250 7750
-NoConn ~ 4950 9800
-NoConn ~ 6450 9500
+NoConn ~ 4950 9500
+NoConn ~ 6450 9200
 NoConn ~ 14500 7100
 Text Notes 12425 8450 0    79   ~ 0
 Adjustable Voltage Reference\n(Sources 1.24HV to Diff Amps)\n\n
 Text Notes 11850 6800 0    138  ~ 0
 VOLTAGE REFERENCES & REGULATORS\n(HIGH VOLTAGE)
-Text Label 8720 6650 2    50   ~ 0
+Text Label 8720 6875 2    50   ~ 0
 DC_RELAY+
-Text Label 8720 6950 2    50   ~ 0
+Text Label 8720 7175 2    50   ~ 0
 DC_RELAY-
 Wire Wire Line
-	7600 6550 7600 6650
+	7600 6775 7600 6875
 Wire Wire Line
-	6000 6550 7450 6550
+	6000 6775 7450 6775
 $Comp
 L Device:D D12
 U 1 1 6017ACEB
-P 7850 6800
-F 0 "D12" V 7850 6875 50  0000 L CNN
-F 1 "1N4001" V 8050 6650 50  0000 L CNN
-F 2 "Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal" H 7850 6800 50  0001 C CNN
-F 3 "~" H 7850 6800 50  0001 C CNN
-	1    7850 6800
+P 7850 7025
+F 0 "D12" V 7850 7100 50  0000 L CNN
+F 1 "1N4001" V 8050 6875 50  0000 L CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal" H 7850 7025 50  0001 C CNN
+F 3 "~" H 7850 7025 50  0001 C CNN
+	1    7850 7025
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	7450 6550 7450 6950
+	7450 6775 7450 7175
 Text Notes 13400 1150 0    79   ~ 0
 ~S
 Text Notes 13750 1150 0    79   ~ 0
@@ -977,7 +834,7 @@ Wire Notes Line
 	550  5800 550  7050
 Wire Notes Line
 	2100 5800 2100 7050
-Text Notes 5250 10000 0    47   ~ 0
+Text Notes 5250 9700 0    47   ~ 0
 24V (GLV) --> 24V (ISO)\n
 Text Label 11950 2750 2    50   ~ 0
 PC_RELAY-
@@ -988,21 +845,6 @@ Wire Wire Line
 Connection ~ 10950 2050
 Text Notes 12500 10350 0    118  ~ 0
 PRECHARGE & DISCHARGE CIRCUIT
-$Comp
-L Device:R R47
-U 1 1 608786E7
-P 5100 8300
-F 0 "R47" V 5200 8200 50  0000 L CNN
-F 1 "499" V 5100 8200 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5030 8300 50  0001 C CNN
-F 3 "~" H 5100 8300 50  0001 C CNN
-	1    5100 8300
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	5400 8300 5250 8300
-Wire Notes Line
-	5700 5700 5700 11200
 Text Label 2150 1400 2    50   ~ 0
 DC_RELAY-
 Text Label 2150 1300 2    50   ~ 0
@@ -1023,10 +865,6 @@ Text Label 2150 1700 2    50   ~ 0
 IGNI_VCC
 Text HLabel 1350 1700 0    50   Input ~ 0
 IGNI_VCC
-Text Label 2150 1800 2    50   ~ 0
-Brake_Pressed_HV
-Text HLabel 1350 1800 0    50   Input ~ 0
-Brake_Pressed_HV
 Wire Wire Line
 	11400 2050 11400 2200
 Text Notes 2250 5650 0    197  ~ 0
@@ -1173,75 +1011,28 @@ Wire Wire Line
 	14500 7850 14500 7900
 Wire Wire Line
 	14500 7400 14500 7850
-Text Notes 8250 6470 0    47   ~ 0
+Text Notes 8250 6695 0    47   ~ 0
 DC Relay (J5)\n
 $Comp
 L Device:Q_PMOS_GSD Q1
 U 1 1 611F87F8
-P 7500 6350
-F 0 "Q1" H 7704 6304 50  0000 L CNN
-F 1 "ZVP1320F" H 7704 6395 50  0000 L CNN
-F 2 "TSI_Rev_2021_Footprint_Lib:SOT23" H 7700 6450 50  0001 C CNN
-F 3 "https://www.snapeda.com/parts/ZVP1320FTA/Diodes%20Inc./datasheet/" H 7500 6350 50  0001 C CNN
-	1    7500 6350
+P 7500 6575
+F 0 "Q1" H 7704 6529 50  0000 L CNN
+F 1 "ZVP1320F" H 7704 6620 50  0000 L CNN
+F 2 "TSI_Rev_2021_Footprint_Lib:SOT23" H 7700 6675 50  0001 C CNN
+F 3 "https://www.snapeda.com/parts/ZVP1320FTA/Diodes%20Inc./datasheet/" H 7500 6575 50  0001 C CNN
+	1    7500 6575
 	1    0    0    1   
 $EndComp
 Wire Wire Line
-	4150 9600 4150 9650
-Connection ~ 4150 9650
+	4150 9300 4150 9350
+Connection ~ 4150 9350
 Wire Wire Line
-	4150 9650 4950 9650
+	4150 9350 4950 9350
 Wire Wire Line
-	4150 8750 4150 8300
-Wire Wire Line
-	3900 8600 3600 8600
-$Comp
-L Amplifier_Operational:MCP6004 U35
-U 1 1 6135E725
-P 3700 8300
-F 0 "U35" H 3700 8300 50  0000 C CNN
-F 1 "MCP6004" H 3900 8450 50  0000 C CNN
-F 2 "TSI_Rev_2021_Footprint_Lib:SOIC127P600X175-14N" H 3650 8400 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 3750 8500 50  0001 C CNN
-	1    3700 8300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Amplifier_Operational:MCP6004 U35
-U 5 1 613AB3DB
-P 3700 8300
-F 0 "U35" H 3658 8300 50  0001 L CNN
-F 1 "MCP6004" H 3658 8255 50  0001 L CNN
-F 2 "TSI_Rev_2021_Footprint_Lib:SOIC127P600X175-14N" H 3650 8400 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 3750 8500 50  0001 C CNN
-	5    3700 8300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1900 8200 2750 8200
-Connection ~ 2750 8200
-Wire Wire Line
-	2750 8050 2750 8200
-$Comp
-L pspice:CAP C?
-U 1 1 5FBC069E
-P 4150 9350
-AR Path="/5FC85F57/5FBC069E" Ref="C?"  Part="1" 
-AR Path="/6196BF15/5FBC069E" Ref="C2"  Part="1" 
-F 0 "C2" H 4250 9250 50  0000 C CNN
-F 1 "4.7u" H 4250 9450 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4150 9350 50  0001 C CNN
-F 3 "~" H 4150 9350 50  0001 C CNN
-	1    4150 9350
-	1    0    0    -1  
-$EndComp
-Connection ~ 4150 9100
-Wire Wire Line
-	4900 9500 4950 9500
-Text Label 6950 9800 2    59   ~ 0
+	4900 9200 4950 9200
+Text Label 6950 9500 2    59   ~ 0
 24HV
-Wire Wire Line
-	4900 9100 4900 9500
 $Comp
 L 74xx:74HC00 U19
 U 5 1 60014D73
@@ -1273,19 +1064,6 @@ F 2 "" H 14500 7850 50  0001 C CNN
 F 3 "~" H 14500 7850 50  0001 C CNN
 	1    14500 7850
 	0    1    1    0   
-$EndComp
-Wire Wire Line
-	4150 9100 4900 9100
-$Comp
-L CarMan_KiCAD_Library:THN_30-2415WI PS1
-U 1 1 601034A0
-P 5750 9650
-F 0 "PS1" H 5700 10131 79  0000 C CNN
-F 1 "THN_30-2415WI" H 5700 9996 79  0000 C CNN
-F 2 "TSI_Rev_2021_Footprint_Lib:CONV_PDQ10-Q24-D5-D" H 5450 9750 79  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/687/thn30wi-520124.pdf" H 5450 9750 79  0001 C CNN
-	1    5750 9650
-	1    0    0    -1  
 $EndComp
 $Comp
 L Reference_Voltage:REF3033 U12
@@ -1333,66 +1111,38 @@ IO_Ground
 $Comp
 L Device:R R108
 U 1 1 5FA46FB9
-P 5100 6350
-F 0 "R108" V 5200 6250 50  0000 L CNN
-F 1 "2.4K" V 5100 6250 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5030 6350 50  0001 C CNN
-F 3 "~" H 5100 6350 50  0001 C CNN
-	1    5100 6350
+P 5100 6575
+F 0 "R108" V 5200 6475 50  0000 L CNN
+F 1 "2.4K" V 5100 6475 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5030 6575 50  0001 C CNN
+F 3 "~" H 5100 6575 50  0001 C CNN
+	1    5100 6575
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	6450 9800 6950 9800
-Wire Wire Line
-	6450 9650 6950 9650
-Connection ~ 6100 7350
-Wire Wire Line
-	6100 7350 6000 7350
-Wire Wire Line
-	6250 8500 6800 8500
-Wire Wire Line
-	6000 8300 6800 8300
-Wire Wire Line
-	6250 8900 6800 8900
 Wire Wire Line
 	13050 9050 13550 9050
 Wire Wire Line
 	12250 7850 12550 7850
 Wire Wire Line
-	3600 9650 4150 9650
+	3600 9350 4150 9350
 Wire Wire Line
-	3650 9100 4150 9100
+	4450 6575 4950 6575
 Wire Wire Line
-	5400 8500 4900 8500
-Connection ~ 4150 8300
-Wire Wire Line
-	6000 7150 7050 7150
-Wire Wire Line
-	6100 7350 7050 7350
-Wire Wire Line
-	4200 7350 5400 7350
-Wire Wire Line
-	4200 7150 4950 7150
-Wire Wire Line
-	6100 7750 7050 7750
-Wire Wire Line
-	4450 6350 4950 6350
-Wire Wire Line
-	4450 6550 5400 6550
+	4450 6775 5400 6775
 $Comp
 L Connector_Generic:Conn_01x01 J?
 U 1 1 60319B93
-P 3600 9850
+P 3600 9550
 AR Path="/5F98EBE9/60319B93" Ref="J?"  Part="1" 
 AR Path="/6196BF15/60319B93" Ref="J30"  Part="1" 
-F 0 "J30" V 3700 9800 50  0000 L CNN
-F 1 "GLV Hook-up Pin" V 3700 9650 50  0001 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 3600 9850 50  0001 C CNN
-F 3 "~" H 3600 9850 50  0001 C CNN
-	1    3600 9850
+F 0 "J30" V 3700 9500 50  0000 L CNN
+F 1 "GLV Hook-up Pin" V 3700 9350 50  0001 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 3600 9550 50  0001 C CNN
+F 3 "~" H 3600 9550 50  0001 C CNN
+	1    3600 9550
 	0    1    1    0   
 $EndComp
-Text Notes 2900 10000 0    47   ~ 0
+Text Notes 2900 9700 0    47   ~ 0
 Diagnostics Pin:\nEasy hookup to \nAIRS-/GLV RTN
 Wire Notes Line
 	500  1900 2350 1900
@@ -1425,8 +1175,6 @@ Wire Wire Line
 	12950 7250 14350 7250
 Wire Wire Line
 	14300 3850 15350 3850
-Wire Wire Line
-	1350 1800 2150 1800
 Wire Wire Line
 	1350 1700 2150 1700
 Wire Wire Line
@@ -1471,8 +1219,6 @@ Wire Wire Line
 	2700 2650 3550 2650
 Wire Wire Line
 	9850 4250 10250 4250
-Text Notes 4700 7550 0    51   ~ 0
-If car brake is pressed,\niso conducts
 Wire Wire Line
 	13050 3050 13600 3050
 Wire Wire Line
@@ -1583,37 +1329,24 @@ Wire Notes Line
 Text Notes 2950 10450 0    79   ~ 0
 NEEDS ADDED TO LOGIC
 Wire Wire Line
-	2750 8200 3400 8200
+	6400 6575 6800 6575
+Connection ~ 6800 6575
 Wire Wire Line
-	4150 8300 4300 8300
+	6800 6575 7300 6575
 Wire Wire Line
-	4300 8300 4300 7950
-Connection ~ 4300 8300
+	6800 6075 6800 6175
 Wire Wire Line
-	4300 8300 4950 8300
+	7600 6075 7600 6375
 Wire Wire Line
-	4300 7950 4350 7950
-Wire Wire Line
-	5050 7950 5450 7950
-Wire Wire Line
-	6400 6350 6800 6350
-Connection ~ 6800 6350
-Wire Wire Line
-	6800 6350 7300 6350
-Wire Wire Line
-	6800 5850 6800 5950
-Wire Wire Line
-	7600 5850 7600 6150
-Wire Wire Line
-	6800 5850 7600 5850
+	6800 6075 7600 6075
 Wire Notes Line
-	8220 7030 8760 7030
+	8220 7255 8760 7255
 Wire Notes Line
-	8760 7030 8760 6490
+	8760 7255 8760 6715
 Wire Notes Line
-	8760 6490 8220 6490
+	8760 6715 8220 6715
 Wire Notes Line
-	8220 6490 8220 7030
+	8220 6715 8220 7255
 Wire Wire Line
 	11400 2200 12110 2200
 Wire Wire Line
@@ -1659,15 +1392,15 @@ Wire Wire Line
 Wire Wire Line
 	14075 8950 14550 8950
 Wire Wire Line
-	7600 6650 7850 6650
+	7600 6875 7850 6875
 Wire Wire Line
-	7450 6950 7850 6950
-Connection ~ 7850 6650
+	7450 7175 7850 7175
+Connection ~ 7850 6875
 Wire Wire Line
-	7850 6650 8720 6650
-Connection ~ 7850 6950
+	7850 6875 8720 6875
+Connection ~ 7850 7175
 Wire Wire Line
-	7850 6950 8720 6950
+	7850 7175 8720 7175
 Text Notes 10975 2625 0    35   ~ 0
 Flyback\nDiode
 Text Notes 525  2600 0    59   ~ 0
@@ -1719,4 +1452,201 @@ Wire Notes Line
 	4600 3275 4600 3950
 Wire Wire Line
 	3675 1800 4350 1800
+$Comp
+L TSI_Rev.5-rescue:TLP293-CarMan_KiCAD_Library-TSI_Rev.5-rescue U37
+U 1 1 5FD6E6F7
+P 5700 7950
+F 0 "U37" H 5800 8150 50  0000 C CNN
+F 1 "TLP293" H 5850 7750 50  0000 C CNN
+F 2 "Package_SO:SOIC-4_4.55x2.6mm_P1.27mm" H 5500 7750 50  0001 L CIN
+F 3 "https://www.mouser.com/datasheet/2/408/Toshiba_TLP293_datasheet-1209449.pdf" H 5700 7950 50  0001 L CNN
+	1    5700 7950
+	1    0    0    -1  
+$EndComp
+Text Label 6800 7850 2    59   ~ 0
+5HV
+Text Label 6800 8050 2    59   ~ 0
+Safety_Loop_HV
+$Comp
+L Device:R R73
+U 1 1 5FD6E701
+P 6250 8250
+F 0 "R73" V 6350 8150 50  0000 L CNN
+F 1 "5K" V 6250 8200 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6180 8250 50  0001 C CNN
+F 3 "~" H 6250 8250 50  0001 C CNN
+	1    6250 8250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6250 8450 6250 8400
+Text Label 6800 8450 2    59   ~ 0
+IO_Ground
+Wire Wire Line
+	6250 8050 6250 8100
+Connection ~ 6250 8050
+Wire Wire Line
+	6250 8050 6000 8050
+Text Label 4900 8050 0    59   ~ 0
+GLV_RTN
+Wire Wire Line
+	4000 7850 4150 7850
+Wire Wire Line
+	3400 7950 3250 7950
+Wire Wire Line
+	3250 7950 3250 8300
+Wire Wire Line
+	3250 8300 4150 8300
+Text Label 3900 8150 2    47   ~ 0
+GLV_RTN
+Text Label 3600 7550 0    50   ~ 0
+3.3V
+$Comp
+L Device:LED D14
+U 1 1 5FE7D099
+P 4900 7500
+F 0 "D14" H 4900 7400 50  0000 C CNN
+F 1 "SL_Status" H 4900 7600 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4900 7500 50  0001 C CNN
+F 3 "~" H 4900 7500 50  0001 C CNN
+	1    4900 7500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R105
+U 1 1 5FE3889A
+P 4500 7500
+F 0 "R105" V 4600 7400 50  0000 L CNN
+F 1 "330" V 4500 7450 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4430 7500 50  0001 C CNN
+F 3 "~" H 4500 7500 50  0001 C CNN
+	1    4500 7500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4650 7500 4750 7500
+Text Label 5450 7500 2    50   ~ 0
+GLV_RTN
+Text Label 1900 7750 0    67   ~ 0
+Safety_Loop
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5FEC0838
+P 2750 7600
+AR Path="/5FC85F57/5FEC0838" Ref="TP?"  Part="1" 
+AR Path="/6196BF15/5FEC0838" Ref="TP7"  Part="1" 
+F 0 "TP7" H 2750 7650 50  0000 L CNN
+F 1 "Safety_Loop" H 2650 7800 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D3.0mm" H 2950 7600 50  0001 C CNN
+F 3 "~" H 2950 7600 50  0001 C CNN
+	1    2750 7600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R47
+U 1 1 608786E7
+P 5100 7850
+F 0 "R47" V 5200 7750 50  0000 L CNN
+F 1 "499" V 5100 7750 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5030 7850 50  0001 C CNN
+F 3 "~" H 5100 7850 50  0001 C CNN
+	1    5100 7850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5400 7850 5250 7850
+Wire Wire Line
+	4150 8300 4150 7850
+Wire Wire Line
+	3900 8150 3600 8150
+$Comp
+L Amplifier_Operational:MCP6004 U35
+U 1 1 6135E725
+P 3700 7850
+F 0 "U35" H 3700 7850 50  0000 C CNN
+F 1 "MCP6004" H 3900 8000 50  0000 C CNN
+F 2 "TSI_Rev_2021_Footprint_Lib:SOIC127P600X175-14N" H 3650 7950 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 3750 8050 50  0001 C CNN
+	1    3700 7850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:MCP6004 U35
+U 5 1 613AB3DB
+P 3700 7850
+F 0 "U35" H 3658 7850 50  0001 L CNN
+F 1 "MCP6004" H 3658 7805 50  0001 L CNN
+F 2 "TSI_Rev_2021_Footprint_Lib:SOIC127P600X175-14N" H 3650 7950 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 3750 8050 50  0001 C CNN
+	5    3700 7850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 7750 2750 7750
+Connection ~ 2750 7750
+Wire Wire Line
+	2750 7600 2750 7750
+Wire Wire Line
+	6250 8050 6800 8050
+Wire Wire Line
+	6000 7850 6800 7850
+Wire Wire Line
+	6250 8450 6800 8450
+Wire Wire Line
+	5400 8050 4900 8050
+Connection ~ 4150 7850
+Wire Wire Line
+	2750 7750 3400 7750
+Wire Wire Line
+	4150 7850 4300 7850
+Wire Wire Line
+	4300 7850 4300 7500
+Connection ~ 4300 7850
+Wire Wire Line
+	4300 7850 4950 7850
+Wire Wire Line
+	4300 7500 4350 7500
+Wire Wire Line
+	5050 7500 5450 7500
+Wire Wire Line
+	3650 8800 4150 8800
+Wire Wire Line
+	4150 8800 4900 8800
+Wire Wire Line
+	4900 8800 4900 9200
+Connection ~ 4150 8800
+$Comp
+L pspice:CAP C?
+U 1 1 5FBC069E
+P 4150 9050
+AR Path="/5FC85F57/5FBC069E" Ref="C?"  Part="1" 
+AR Path="/6196BF15/5FBC069E" Ref="C2"  Part="1" 
+F 0 "C2" H 4250 8950 50  0000 C CNN
+F 1 "4.7u" H 4250 9150 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4150 9050 50  0001 C CNN
+F 3 "~" H 4150 9050 50  0001 C CNN
+	1    4150 9050
+	1    0    0    -1  
+$EndComp
+Text Label 3650 8800 0    59   ~ 0
+24V
+Wire Notes Line
+	5700 5700 5700 11200
+$Comp
+L CarMan_KiCAD_Library:THN_30-2415WI PS1
+U 1 1 601034A0
+P 5750 9350
+F 0 "PS1" H 5700 9831 79  0000 C CNN
+F 1 "THN_30-2415WI" H 5700 9696 79  0000 C CNN
+F 2 "TSI_Rev_2021_Footprint_Lib:CONV_PDQ10-Q24-D5-D" H 5450 9450 79  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/687/thn30wi-520124.pdf" H 5450 9450 79  0001 C CNN
+	1    5750 9350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 9500 6950 9500
+Wire Wire Line
+	6450 9350 6950 9350
+Wire Notes Line
+	5700 5700 475  5700
 $EndSCHEMATC
