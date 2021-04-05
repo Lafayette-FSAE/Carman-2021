@@ -330,8 +330,6 @@ SDA_uC
 Wire Wire Line
 	7700 4050 8100 4050
 Wire Notes Line
-	6150 3600 6150 3300
-Wire Notes Line
 	4900 3600 6150 3600
 Wire Notes Line
 	4900 3250 7750 3250
@@ -2107,4 +2105,6 @@ F 3 "http://www.ti.com/lit/ds/symlink/tl431.pdf" H 1700 7475 50  0001 C CIN
 	1    1700 7475
 	0    -1   -1   0   
 $EndComp
+Wire Notes Line
+	6150 3250 6150 3600
 $EndSCHEMATC

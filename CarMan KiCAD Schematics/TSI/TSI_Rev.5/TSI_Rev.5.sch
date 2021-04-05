@@ -1225,7 +1225,7 @@ Wire Wire Line
 	9050 1500 9775 1500
 Wire Wire Line
 	9050 1800 9775 1800
-Text Notes 2650 1250 0    89   ~ 18
+Text Notes 3100 1250 0    89   ~ 18
 High Voltage Connectors
 $Sheet
 S 8850 4625 1500 1600
@@ -1416,4 +1416,16 @@ Wire Wire Line
 	6375 1900 7300 1900
 Wire Wire Line
 	7300 2000 6375 2000
+Text Notes 2225 1150 0    43   ~ 0
+MC: FW = 13 RW = 14\n(active low)
+Text Notes 5500 2650 0    79   ~ 0
+Jumpers and Shorts
+Wire Notes Line
+	5200 3675 7025 3675
+Wire Notes Line
+	7025 3675 7025 2500
+Wire Notes Line
+	7025 2500 5200 2500
+Wire Notes Line
+	5200 2500 5200 3675
 $EndSCHEMATC

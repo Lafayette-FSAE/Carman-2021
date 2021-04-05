@@ -1639,8 +1639,6 @@ Wire Wire Line
 	6450 9350 6950 9350
 Wire Notes Line
 	5700 5700 475  5700
-Text Notes 7900 8300 0    79   ~ 0
-45HV TSV_min/61 = .74V\n.74V + 1.24HV_Ref signal =  1.97V gen from ref
 Text Label 4625 2950 0    47   ~ 0
 TSV_MIN_REF
 Text Notes 11850 7200 0    39   ~ 0
@@ -1649,4 +1647,8 @@ Text Notes 14550 7475 0    39   ~ 0
 Pot can generate TSV_MIN_REF\nranging from 1.24HV - 2.45HV.
 Text Notes 13150 8275 0    59   ~ 0
 TSV_MIN_REF Adjustable\nHV Reference
+Text Notes 11475 8300 0    43   ~ 0
+45HV * 1/61 voltage div. = 0.74HV\n0.74HV + 1.24HV_Ref bias signal = 1.97HV\n1.97HV -> TSV_MIN_REF\n
+Text Notes 11475 8075 0    43   ~ 9
+TSV_MIN_REF Derivation:
 $EndSCHEMATC
