@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 3 6
+Sheet 2 6
 Title ""
 Date ""
 Rev ""
@@ -764,7 +764,7 @@ F 3 "~" H 13200 3350 50  0001 C CNN
 $EndComp
 Text Label 14900 4550 2    50   ~ 0
 5V
-Text Notes 13750 4300 0    50   ~ 0
+Text Notes 13675 5650 0    50   ~ 0
 Binary Address:\n1001101\n
 Wire Wire Line
 	13200 3600 13200 4550
@@ -778,7 +778,7 @@ $Comp
 L TSI_Rev.5-rescue:DAC5574IDGS-CarMan_KiCAD_Library-TSI_Rev.5-rescue U23
 U 1 1 609B748C
 P 13900 4750
-F 0 "U23" H 13900 5100 50  0000 C CNN
+F 0 "U23" H 13900 5200 50  0000 C CNN
 F 1 "DAC5574IDGS" H 13900 4100 50  0000 C CNN
 F 2 "TSI_Rev_2021_Footprint_Lib:DAC5574IDGS" H 13900 4750 50  0001 L BNN
 F 3 "https://www.ti.com/lit/ds/symlink/dac5574.pdf?HQS=dis-mous-null-mousermode-dsf-pf-null-wwe&ts=1617329757843&ref_url=https%253A%252F%252Fwww.mouser.com%252F" H 13900 4750 50  0001 L BNN

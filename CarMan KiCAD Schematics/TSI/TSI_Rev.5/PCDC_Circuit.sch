@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 2 6
+Sheet 5 6
 Title ""
 Date ""
 Rev ""
@@ -95,7 +95,7 @@ U 1 1 61996640
 P 7100 2950
 F 0 "U19" H 7100 2950 50  0000 C CNN
 F 1 "SN74HC00APWR" H 7200 3150 50  0000 C CNN
-F 2 "TSI_Rev_2021_Footprint_Lib:SOIC127P600X175-14N" H 7100 2950 50  0001 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 7100 2950 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 7100 2950 50  0001 C CNN
 F 4 "https://www.mouser.com/ProductDetail/Texas-Instruments/SN74HC00APWR?qs=6ZVwTuetbD5Of4SwrWZoMw%3D%3D" H 7100 2950 50  0001 C CNN "Mouser Link"
 	1    7100 2950
@@ -109,7 +109,7 @@ U 2 1 619B9D8C
 P 5400 4300
 F 0 "U19" H 5400 4300 50  0000 C CNN
 F 1 "SN74HC00APWR" H 5400 4534 50  0000 C CNN
-F 2 "TSI_Rev_2021_Footprint_Lib:SOIC127P600X175-14N" H 5400 4300 50  0001 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 5400 4300 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 5400 4300 50  0001 C CNN
 	2    5400 4300
 	1    0    0    -1  
@@ -120,7 +120,7 @@ U 3 1 619BAC4E
 P 8050 3050
 F 0 "U19" H 8050 3050 50  0000 C CNN
 F 1 "SN74HC00APWR" H 8050 3250 50  0000 C CNN
-F 2 "TSI_Rev_2021_Footprint_Lib:SOIC127P600X175-14N" H 8050 3050 50  0001 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 8050 3050 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 8050 3050 50  0001 C CNN
 	3    8050 3050
 	1    0    0    -1  
@@ -169,7 +169,7 @@ U 4 1 619DD68C
 P 8050 3800
 F 0 "U19" H 8050 3800 50  0000 C CNN
 F 1 "SN74HC00APWR" H 8050 3600 50  0000 C CNN
-F 2 "TSI_Rev_2021_Footprint_Lib:SOIC127P600X175-14N" H 8050 3800 50  0001 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 8050 3800 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 8050 3800 50  0001 C CNN
 	4    8050 3800
 	1    0    0    -1  
@@ -1031,7 +1031,7 @@ U 5 1 60014D73
 P 7500 2100
 F 0 "U19" V 7650 2100 50  0000 C CNN
 F 1 "SN74HC00APWR" V 7250 2100 50  0000 C CNN
-F 2 "TSI_Rev_2021_Footprint_Lib:SOIC127P600X175-14N" H 7500 2100 50  0001 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 7500 2100 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 7500 2100 50  0001 C CNN
 	5    7500 2100
 	0    1    1    0   
@@ -1393,8 +1393,6 @@ Wire Wire Line
 	7850 7175 8720 7175
 Text Notes 10975 2625 0    35   ~ 0
 Flyback\nDiode
-Text Notes 525  2525 0    59   ~ 0
-1. TS_Voltage & MC_Voltage w/im 95% of e/o\n2. TS_Voltage > TSV_MIN_REF (approx. 1.97HV)\n3. AIRS closed
 Text Notes 525  2225 0    59   ~ 12
 Three Criteria for Pre Charge Relay to close:
 Text Notes 7550 2950 2    55   ~ 0
@@ -1651,4 +1649,6 @@ Text Notes 11475 8300 0    43   ~ 0
 45HV * 1/61 voltage div. = 0.74HV\n0.74HV + 1.24HV_Ref bias signal = 1.97HV\n1.97HV -> TSV_MIN_REF\n
 Text Notes 11475 8075 0    43   ~ 9
 TSV_MIN_REF Derivation:
+Text Notes 525  2525 0    59   ~ 0
+1. TS_Voltage & MC_Voltage w/in 95% of e/o\n2. TS_Voltage > TSV_MIN_REF (approx. 1.97HV)\n3. AIRS are closed
 $EndSCHEMATC
