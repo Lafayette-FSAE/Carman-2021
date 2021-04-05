@@ -989,8 +989,6 @@ Text HLabel 2100 8950 0    50   Input ~ 0
 SCL
 Text HLabel 2100 9150 0    50   Input ~ 0
 Throttle_LV
-Text HLabel 5750 9700 0    50   Input ~ 0
-1.24HV_REF
 Text HLabel 5750 8800 0    50   Input ~ 0
 IO_Ground
 Text HLabel 5750 8700 0    50   Input ~ 0
@@ -1001,8 +999,6 @@ Text Label 6400 8800 2    50   ~ 0
 IO_Ground
 Text Label 6400 9400 2    50   ~ 0
 Throttle_HV
-Text Label 6400 9700 2    50   ~ 0
-1.24HV_REF
 Text Label 6400 8700 2    50   ~ 0
 5HV
 Wire Notes Line
@@ -1057,10 +1053,6 @@ Text HLabel 5750 9500 0    50   Input ~ 0
 A1_HV
 Text HLabel 5750 9600 0    50   Input ~ 0
 A2_HV
-Wire Notes Line
-	5050 9850 6650 9850
-Wire Notes Line
-	5050 8350 6650 8350
 $Comp
 L Amplifier_Operational:MCP6004 U26
 U 5 1 5F994131
@@ -1151,10 +1143,6 @@ Text Label 6550 5250 0    50   ~ 0
 5HV
 Wire Wire Line
 	6550 5250 6850 5250
-Wire Notes Line
-	6650 8350 6650 9850
-Wire Notes Line
-	5050 8350 5050 9850
 Wire Wire Line
 	5750 8900 6400 8900
 Wire Wire Line
@@ -1175,8 +1163,6 @@ Wire Wire Line
 	5750 9400 6400 9400
 Wire Wire Line
 	5750 9600 6400 9600
-Wire Wire Line
-	5750 9700 6400 9700
 Wire Notes Line
 	2950 9250 2950 8350
 Wire Notes Line
@@ -1329,4 +1315,89 @@ Wire Wire Line
 Connection ~ 12825 4600
 Wire Wire Line
 	12825 4600 12850 4600
+Wire Wire Line
+	13650 8600 13650 9200
+Wire Wire Line
+	13650 9200 13950 9200
+Wire Wire Line
+	13650 8450 13650 8600
+Connection ~ 13650 8600
+Text Label 13750 8600 0    47   ~ 0
+1.24HV_REF
+$Comp
+L Device:R R?
+U 1 1 6082F46E
+P 13400 9200
+AR Path="/6196BF15/6082F46E" Ref="R?"  Part="1" 
+AR Path="/5F98EBE9/6082F46E" Ref="R70"  Part="1" 
+F 0 "R70" V 13500 9100 50  0000 L CNN
+F 1 "1K" V 13400 9150 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 13330 9200 50  0001 C CNN
+F 3 "~" H 13400 9200 50  0001 C CNN
+	1    13400 9200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	13550 9200 13650 9200
+Connection ~ 13650 9200
+Text Label 12950 9200 0    59   ~ 0
+5HV
+Text Label 15050 9000 2    47   ~ 0
+IO_Ground
+NoConn ~ 13950 9000
+NoConn ~ 13950 9100
+Text Notes 13525 9850 0    59   ~ 0
+1.24HV Diff-Amp Reference\n\n\n
+$Comp
+L CarMan_KiCAD_Library:TS431ILT IC?
+U 1 1 6082F485
+P 14300 9100
+AR Path="/6196BF15/6082F485" Ref="IC?"  Part="1" 
+AR Path="/5F98EBE9/6082F485" Ref="IC2"  Part="1" 
+F 0 "IC2" H 14300 9400 79  0000 C CNN
+F 1 "TS431ILT" H 14300 8800 79  0000 C CNN
+F 2 "TSI_Rev_2021_Footprint_Lib:SOT95P280X145-5N" H 14050 9200 79  0001 C CNN
+F 3 "https://www.snapeda.com/parts/TS431ILT/STMicroelectronics/datasheet/" H 14050 9200 79  0001 C CNN
+	1    14300 9100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12950 9200 13250 9200
+Wire Wire Line
+	14650 9200 15200 9200
+Wire Wire Line
+	15050 9000 14650 9000
+Wire Wire Line
+	15200 8600 15200 9200
+Wire Wire Line
+	13650 8600 15200 8600
+$Comp
+L power:PWR_FLAG #FLG02
+U 1 1 608F2DD5
+P 13650 8450
+F 0 "#FLG02" H 13650 8525 50  0001 C CNN
+F 1 "PWR_FLAG" H 13650 8623 50  0000 C CNN
+F 2 "" H 13650 8450 50  0001 C CNN
+F 3 "~" H 13650 8450 50  0001 C CNN
+	1    13650 8450
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	5050 9700 6650 9700
+Wire Notes Line
+	6650 9700 6650 8350
+Wire Notes Line
+	5050 9700 5050 8350
+Wire Notes Line
+	5050 8350 6650 8350
+Wire Notes Line
+	12750 9700 15400 9700
+Text Notes 13550 8000 0    79   ~ 0
+VOLTAGE REFERNCE
+Wire Notes Line
+	15400 7850 15400 9700
+Wire Notes Line
+	12750 7850 15400 7850
+Wire Notes Line
+	12750 7850 12750 9700
 $EndSCHEMATC

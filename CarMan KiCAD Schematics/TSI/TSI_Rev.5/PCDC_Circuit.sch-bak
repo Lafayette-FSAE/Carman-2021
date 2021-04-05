@@ -160,8 +160,6 @@ Wire Wire Line
 Connection ~ 5850 2850
 Wire Wire Line
 	5850 2850 6800 2850
-Text Label 4625 2950 0    47   ~ 0
-1.24HV_REF
 Connection ~ 4350 2750
 Wire Wire Line
 	7400 2950 7750 2950
@@ -640,7 +638,7 @@ Wire Wire Line
 	12950 7100 12950 7250
 Connection ~ 12950 7250
 Text Label 12950 7100 0    47   ~ 0
-1.24HV_REF
+TSV_MIN_REF
 $Comp
 L Device:R R46
 U 1 1 5FFE1CBB
@@ -679,8 +677,6 @@ NoConn ~ 13250 7750
 NoConn ~ 4950 9500
 NoConn ~ 6450 9200
 NoConn ~ 14500 7100
-Text Notes 12425 8450 0    79   ~ 0
-Adjustable Voltage Reference\n(Sources 1.24HV to Diff Amps)\n\n
 Text Notes 11850 6800 0    138  ~ 0
 VOLTAGE REFERENCES & REGULATORS\n(HIGH VOLTAGE)
 Text Label 8720 6875 2    50   ~ 0
@@ -780,12 +776,8 @@ Text HLabel 1350 900  0    50   Input ~ 0
 TS_Voltage
 Text HLabel 1350 1000 0    50   Input ~ 0
 IO_Ground
-Text Label 2150 1200 2    50   ~ 0
-1.24HV_REF
 Text Label 2150 1100 2    50   ~ 0
 5HV
-Text HLabel 1350 1200 0    50   Input ~ 0
-1.24HV_REF
 Text HLabel 1350 1100 0    50   Input ~ 0
 5HV
 Text Label 1950 6850 2    50   ~ 0
@@ -845,25 +837,25 @@ Wire Wire Line
 Connection ~ 10950 2050
 Text Notes 12500 10350 0    118  ~ 0
 PRECHARGE & DISCHARGE CIRCUIT
-Text Label 2150 1400 2    50   ~ 0
-DC_RELAY-
 Text Label 2150 1300 2    50   ~ 0
-DC_RELAY+
-Text HLabel 1350 1400 0    50   Input ~ 0
 DC_RELAY-
-Text HLabel 1350 1300 0    50   Input ~ 0
+Text Label 2150 1200 2    50   ~ 0
 DC_RELAY+
-Text Label 2150 1600 2    50   ~ 0
-PC_RELAY-
+Text HLabel 1350 1300 0    50   Input ~ 0
+DC_RELAY-
+Text HLabel 1350 1200 0    50   Input ~ 0
+DC_RELAY+
 Text Label 2150 1500 2    50   ~ 0
-PC_RELAY+
-Text HLabel 1350 1600 0    50   Input ~ 0
 PC_RELAY-
-Text HLabel 1350 1500 0    50   Input ~ 0
+Text Label 2150 1400 2    50   ~ 0
 PC_RELAY+
-Text Label 2150 1700 2    50   ~ 0
+Text HLabel 1350 1500 0    50   Input ~ 0
+PC_RELAY-
+Text HLabel 1350 1400 0    50   Input ~ 0
+PC_RELAY+
+Text Label 2150 1600 2    50   ~ 0
 IGNI_VCC
-Text HLabel 1350 1700 0    50   Input ~ 0
+Text HLabel 1350 1600 0    50   Input ~ 0
 IGNI_VCC
 Wire Wire Line
 	11400 2050 11400 2200
@@ -1176,8 +1168,6 @@ Wire Wire Line
 Wire Wire Line
 	14300 3850 15350 3850
 Wire Wire Line
-	1350 1700 2150 1700
-Wire Wire Line
 	1350 1600 2150 1600
 Wire Wire Line
 	1350 1500 2150 1500
@@ -1403,9 +1393,9 @@ Wire Wire Line
 	7850 7175 8720 7175
 Text Notes 10975 2625 0    35   ~ 0
 Flyback\nDiode
-Text Notes 525  2600 0    59   ~ 0
-1. TS_Voltage & MC_Voltage w/im 95% of e/o\n2. TS_Voltage > 1.24HV_Ref\n3. AIRS closed
-Text Notes 525  2300 0    59   ~ 12
+Text Notes 525  2525 0    59   ~ 0
+1. TS_Voltage & MC_Voltage w/im 95% of e/o\n2. TS_Voltage > TSV_MIN_REF (approx. 1.97HV)\n3. AIRS closed
+Text Notes 525  2225 0    59   ~ 12
 Three Criteria for Pre Charge Relay to close:
 Text Notes 7550 2950 2    55   ~ 0
 ~S\n
@@ -1649,4 +1639,14 @@ Wire Wire Line
 	6450 9350 6950 9350
 Wire Notes Line
 	5700 5700 475  5700
+Text Notes 7900 8300 0    79   ~ 0
+45HV TSV_min/61 = .74V\n.74V + 1.24HV_Ref signal =  1.97V gen from ref
+Text Label 4625 2950 0    47   ~ 0
+TSV_MIN_REF
+Text Notes 11850 7200 0    39   ~ 0
+Desired voltage from TSV_MIN_REF \nis approx. equal to 1.97HV - 2HV.\n
+Text Notes 14550 7475 0    39   ~ 0
+Pot can generate TSV_MIN_REF\nranging from 1.24HV - 2.45HV.
+Text Notes 13150 8275 0    59   ~ 0
+TSV_MIN_REF Adjustable\nHV Reference
 $EndSCHEMATC

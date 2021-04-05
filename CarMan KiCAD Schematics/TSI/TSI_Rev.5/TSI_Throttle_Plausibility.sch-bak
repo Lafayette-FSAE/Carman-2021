@@ -80,17 +80,6 @@ Wire Wire Line
 Connection ~ 1300 7475
 Wire Wire Line
 	1300 7475 1600 7475
-$Comp
-L TSI_Rev.5-rescue:TL431PS-CarMan_KiCAD_Library-TSI_Rev.5-rescue D2
-U 1 1 60A1FD4B
-P 1700 7475
-F 0 "D2" V 1800 7625 50  0000 R CNN
-F 1 "TL431PS" H 1850 7375 50  0000 R CNN
-F 2 "Package_SO:SO-8_5.3x6.2mm_P1.27mm" H 1700 7325 50  0001 C CIN
-F 3 "http://www.ti.com/lit/ds/symlink/tl431.pdf" H 1700 7475 50  0001 C CIN
-	1    1700 7475
-	0    -1   -1   0   
-$EndComp
 Wire Notes Line
 	550  6175 2950 6175
 Wire Wire Line
@@ -2107,4 +2096,15 @@ Wire Wire Line
 	12150 8600 12150 8850
 Wire Wire Line
 	12150 9350 12150 9575
+$Comp
+L TSI_Rev.5-rescue:TL431PS-CarMan_KiCAD_Library-TSI_Rev.5-rescue D2
+U 1 1 60A1FD4B
+P 1700 7475
+F 0 "D2" V 1800 7625 50  0000 R CNN
+F 1 "TL431PS" H 1850 7375 50  0000 R CNN
+F 2 "Package_SO:SO-8_5.3x6.2mm_P1.27mm" H 1700 7325 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/tl431.pdf" H 1700 7475 50  0001 C CIN
+	1    1700 7475
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC
