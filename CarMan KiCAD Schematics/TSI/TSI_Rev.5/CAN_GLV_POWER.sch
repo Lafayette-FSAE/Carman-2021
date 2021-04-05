@@ -1136,8 +1136,6 @@ Text Notes 5975 7650 0    51   ~ 0
 Lights up when coils are conducting
 Text Notes 925  7600 0    51   ~ 0
 Lights up when coils are conducting
-Text Label 13175 7250 0    50   ~ 0
-MRSET_Contact
 Wire Wire Line
 	14500 7250 15000 7250
 Text Label 15000 7250 2    50   ~ 0
@@ -1505,4 +1503,6 @@ Text Label 3075 10775 0    50   ~ 0
 IMD_Button_RTN
 Text Notes 8775 11025 0    47   ~ 0
 Jumper across AMS Reset Button\nfor Safety Loop Testing
+Text Label 13175 7250 0    50   ~ 0
+MRESET_Contact
 $EndSCHEMATC
