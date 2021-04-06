@@ -124,10 +124,6 @@ Wire Wire Line
 	9700 5100 9550 5100
 Wire Wire Line
 	9800 5600 9550 5600
-Wire Wire Line
-	10350 5600 10100 5600
-Wire Wire Line
-	10350 5200 10350 5600
 $Comp
 L Device:R R89
 U 1 1 5F9C9A80
@@ -140,39 +136,32 @@ F 3 "~" H 9950 5600 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	11100 5000 11100 4700
-Connection ~ 11100 5000
-Wire Wire Line
-	10700 5000 11100 5000
-Wire Wire Line
-	10300 5200 10350 5200
-Wire Wire Line
 	10950 6400 11100 6400
 Connection ~ 10950 6400
 Wire Wire Line
-	10950 5200 10700 5200
+	10950 5200 10850 5200
 Wire Wire Line
 	10950 6400 10950 5200
 $Comp
 L Device:R R95
 U 1 1 5F9C4996
-P 10550 5000
-F 0 "R95" V 10450 5000 50  0000 C CNN
-F 1 "10K" V 10550 5000 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 10480 5000 50  0001 C CNN
-F 3 "~" H 10550 5000 50  0001 C CNN
-	1    10550 5000
+P 10700 5000
+F 0 "R95" V 10600 5000 50  0000 C CNN
+F 1 "10K" V 10700 5000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 10630 5000 50  0001 C CNN
+F 3 "~" H 10700 5000 50  0001 C CNN
+	1    10700 5000
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R R96
 U 1 1 5F9C4990
-P 10550 5200
-F 0 "R96" V 10650 5200 50  0000 C CNN
-F 1 "10K" V 10550 5200 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 10480 5200 50  0001 C CNN
-F 3 "~" H 10550 5200 50  0001 C CNN
-	1    10550 5200
+P 10700 5200
+F 0 "R96" V 10800 5200 50  0000 C CNN
+F 1 "10K" V 10700 5200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 10630 5200 50  0001 C CNN
+F 3 "~" H 10700 5200 50  0001 C CNN
+	1    10700 5200
 	0    1    1    0   
 $EndComp
 Text Label 11600 4300 0    50   ~ 0
@@ -184,8 +173,6 @@ IO_Ground
 Wire Wire Line
 	11100 4700 11200 4700
 Wire Wire Line
-	11100 5200 11100 5000
-Wire Wire Line
 	11900 5200 11100 5200
 Wire Wire Line
 	11900 4800 11900 5200
@@ -194,10 +181,6 @@ Wire Wire Line
 Wire Wire Line
 	11100 5900 11100 5600
 Connection ~ 11100 5900
-Wire Wire Line
-	11800 5900 11100 5900
-Wire Wire Line
-	11800 5700 11800 5900
 Wire Wire Line
 	10400 6200 10550 6200
 Connection ~ 10400 6200
@@ -314,9 +297,6 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 11550 6600 50
 	3    11500 6400
 	-1   0    0    -1  
 $EndComp
-Connection ~ 10350 5200
-Wire Wire Line
-	10350 5200 10400 5200
 Wire Wire Line
 	13150 4600 13200 4600
 Wire Wire Line
@@ -422,8 +402,6 @@ F 3 "~" H 14050 6300 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	11800 6300 12100 6300
-Wire Wire Line
 	13150 6300 13200 6300
 Wire Wire Line
 	13500 6300 13550 6300
@@ -432,95 +410,16 @@ Wire Wire Line
 Text Label 14650 6300 2    50   ~ 0
 HV-
 $Comp
-L Device:R R6
-U 1 1 5FA2666A
-P 12100 4350
-F 0 "R6" V 12200 4350 50  0000 C CNN
-F 1 "10K" V 12100 4350 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 12030 4350 50  0001 C CNN
-F 3 "~" H 12100 4350 50  0001 C CNN
-	1    12100 4350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	12100 4100 12100 4200
-Wire Wire Line
-	12100 4100 12450 4100
-$Comp
-L Device:R R53
-U 1 1 5FA3E61F
-P 12100 5250
-F 0 "R53" V 12200 5250 50  0000 C CNN
-F 1 "10K" V 12100 5250 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 12030 5250 50  0001 C CNN
-F 3 "~" H 12100 5250 50  0001 C CNN
-	1    12100 5250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	12100 5000 12100 5100
-Wire Wire Line
-	12100 5000 12450 5000
-$Comp
-L pspice:CAP C?
-U 1 1 5FA3E628
-P 12450 5250
-AR Path="/5FC85F57/5FA3E628" Ref="C?"  Part="1" 
-AR Path="/6196BF15/5FA3E628" Ref="C?"  Part="1" 
-AR Path="/5F98EBE9/5FA3E628" Ref="C39"  Part="1" 
-F 0 "C39" H 12350 5100 50  0000 C CNN
-F 1 "100p" H 12350 5400 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 12450 5250 50  0001 C CNN
-F 3 "~" H 12450 5250 50  0001 C CNN
-	1    12450 5250
-	-1   0    0    1   
-$EndComp
-Connection ~ 12450 5500
-Connection ~ 12100 5500
-Wire Wire Line
-	12100 5500 12450 5500
-Wire Wire Line
-	12100 5400 12100 5500
-Wire Wire Line
-	11800 4600 12100 4600
-Wire Wire Line
-	12100 4500 12100 4600
-Connection ~ 12100 4600
-$Comp
 L Device:R R16
 U 1 1 5FA5AA95
-P 12100 6050
-F 0 "R16" V 12200 6050 50  0000 C CNN
-F 1 "10K" V 12100 6050 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 12030 6050 50  0001 C CNN
-F 3 "~" H 12100 6050 50  0001 C CNN
-	1    12100 6050
+P 12275 6100
+F 0 "R16" V 12375 6100 50  0000 C CNN
+F 1 "10K" V 12275 6100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 12205 6100 50  0001 C CNN
+F 3 "~" H 12275 6100 50  0001 C CNN
+	1    12275 6100
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	12100 5800 12100 5900
-Wire Wire Line
-	12100 5800 12450 5800
-$Comp
-L pspice:CAP C?
-U 1 1 5FA5AA9D
-P 12450 6050
-AR Path="/5FC85F57/5FA5AA9D" Ref="C?"  Part="1" 
-AR Path="/6196BF15/5FA5AA9D" Ref="C?"  Part="1" 
-AR Path="/5F98EBE9/5FA5AA9D" Ref="C9"  Part="1" 
-F 0 "C9" H 12350 5900 50  0000 C CNN
-F 1 "100p" H 12350 6200 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 12450 6050 50  0001 C CNN
-F 3 "~" H 12450 6050 50  0001 C CNN
-	1    12450 6050
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	12100 6200 12100 6300
-Connection ~ 12450 6300
-Connection ~ 12100 6300
-Wire Wire Line
-	12100 6300 12450 6300
 Text Notes 12875 5125 0    28   ~ 0
 Divider circuit is jumped when executing TSI HV Test Plan.\nCuts the need for a 100HV+ input to an approx. 1-2HV input
 Text Notes 13000 4425 0    50   ~ 0
@@ -528,21 +427,8 @@ Voltage Divider Ratio: 1/61
 Connection ~ 9550 6300
 Text Notes 8800 6500 0    50   ~ 0
 Difference between \nHV+ & HV-
-Wire Wire Line
-	11800 5500 12100 5500
 Text Notes 11400 5200 0    50   ~ 0
 Buffer\n
-$Comp
-L Amplifier_Operational:MCP6004 U26
-U 2 1 5F992CF1
-P 11500 5600
-F 0 "U26" H 11450 5600 50  0000 C CNN
-F 1 "MCP6004" H 11650 5750 50  0000 C CNN
-F 2 "TSI_Rev_2021_Footprint_Lib:SOIC127P600X175-14N" H 11450 5700 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 11550 5800 50  0001 C CNN
-	2    11500 5600
-	-1   0    0    -1  
-$EndComp
 Text Notes 11400 6750 0    50   ~ 0
 Buffer\n
 Text Notes 11350 5900 0    50   ~ 0
@@ -803,9 +689,7 @@ Connection ~ 2950 2600
 Wire Wire Line
 	2550 2100 2300 2100
 Connection ~ 2550 2100
-Wire Wire Line
-	1700 2100 2000 2100
-Text Label 1700 2100 2    50   ~ 0
+Text Label 1450 2100 0    50   ~ 0
 Throttle_LV
 Text Label 3450 1950 0    50   ~ 0
 5V
@@ -914,10 +798,8 @@ Wire Wire Line
 Connection ~ 5800 1450
 Text Label 5800 1350 0    47   ~ 0
 IO_Ground
-Wire Wire Line
-	6900 2150 6800 2150
 Connection ~ 6700 2150
-Text Label 6900 2150 0    47   ~ 0
+Text Label 7350 2150 2    47   ~ 0
 Throttle_HV
 $Comp
 L Connector:TestPoint TP8
@@ -959,36 +841,6 @@ Text Label 7900 2050 0    47   ~ 0
 IO_Ground
 Text Notes 1500 8550 0    79   ~ 0
 LOW VOLTAGE SIGNALS\n
-Text Label 2300 8850 0    50   ~ 0
-GLV_RTN
-Wire Wire Line
-	2300 8850 2100 8850
-Text Label 2300 9150 0    50   ~ 0
-Throttle_LV
-Wire Wire Line
-	2300 9150 2100 9150
-Text Label 2300 8750 0    50   ~ 0
-5V
-Wire Wire Line
-	2300 8750 2100 8750
-Text HLabel 2100 8850 0    50   Input ~ 0
-GLV_RTN
-Text HLabel 2100 8750 0    50   Input ~ 0
-5V
-Text Label 2300 9050 0    50   ~ 0
-SDA
-Text Label 2300 8950 0    50   ~ 0
-SCL
-Wire Wire Line
-	2300 8950 2100 8950
-Wire Wire Line
-	2300 9050 2100 9050
-Text HLabel 2100 9050 0    50   Input ~ 0
-SDA
-Text HLabel 2100 8950 0    50   Input ~ 0
-SCL
-Text HLabel 2100 9150 0    50   Input ~ 0
-Throttle_LV
 Text HLabel 5750 8800 0    50   Input ~ 0
 IO_Ground
 Text HLabel 5750 8700 0    50   Input ~ 0
@@ -1170,57 +1022,31 @@ Wire Notes Line
 Wire Wire Line
 	10100 5450 10100 5400
 Wire Wire Line
-	10350 4575 10350 4625
+	10400 4575 10400 4625
 $Comp
 L Device:R R104
 U 1 1 60749BC2
-P 10350 4775
-F 0 "R104" V 10425 4775 50  0000 C CNN
-F 1 "10K" V 10350 4775 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 10280 4775 50  0001 C CNN
-F 3 "~" H 10350 4775 50  0001 C CNN
-	1    10350 4775
+P 10400 4775
+F 0 "R104" V 10475 4775 50  0000 C CNN
+F 1 "10K" V 10400 4775 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 10330 4775 50  0001 C CNN
+F 3 "~" H 10400 4775 50  0001 C CNN
+	1    10400 4775
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10350 5000 10350 4925
-Connection ~ 10350 5000
-Wire Wire Line
-	10350 5000 10400 5000
-Wire Wire Line
-	10300 5000 10350 5000
-Text Label 10800 4575 2    50   ~ 0
+	10400 5000 10400 4925
+Text Label 10850 4575 2    50   ~ 0
 1.24HV_REF
 Wire Wire Line
-	10350 4575 10800 4575
+	10400 4575 10850 4575
 Wire Wire Line
 	10400 5750 10400 5800
 Text Label 10850 5750 2    50   ~ 0
 1.24HV_REF
 Wire Wire Line
 	10400 5750 10850 5750
-Text Label 12100 4100 0    43   ~ 0
-1.24HV_REF
-Wire Wire Line
-	12100 4600 12450 4600
-Connection ~ 12450 4600
-$Comp
-L pspice:CAP C?
-U 1 1 5FA28067
-P 12450 4350
-AR Path="/5FC85F57/5FA28067" Ref="C?"  Part="1" 
-AR Path="/6196BF15/5FA28067" Ref="C?"  Part="1" 
-AR Path="/5F98EBE9/5FA28067" Ref="C4"  Part="1" 
-F 0 "C4" H 12350 4200 50  0000 C CNN
-F 1 "100p" H 12350 4500 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 12450 4350 50  0001 C CNN
-F 3 "~" H 12450 4350 50  0001 C CNN
-	1    12450 4350
-	-1   0    0    1   
-$EndComp
-Text Label 12100 5000 0    43   ~ 0
-1.24HV_REF
-Text Label 12100 5800 0    43   ~ 0
+Text Label 12675 5900 2    43   ~ 0
 1.24HV_REF
 $Comp
 L Device:Jumper JP?
@@ -1235,8 +1061,6 @@ F 3 "~" H 13525 6600 50  0001 C CNN
 	1    13525 6600
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	12450 6300 12825 6300
 Wire Wire Line
 	13225 6600 12825 6600
 Wire Wire Line
@@ -1279,15 +1103,11 @@ Wire Wire Line
 	14225 5500 14650 5500
 Wire Wire Line
 	12825 5800 12825 5500
-Wire Wire Line
-	12450 5500 12825 5500
 Connection ~ 12825 5500
 Wire Wire Line
 	12825 5500 12850 5500
 Wire Wire Line
 	14200 4600 14225 4600
-Wire Wire Line
-	12450 4600 12825 4600
 $Comp
 L Device:Jumper JP?
 U 1 1 60EC5BB0
@@ -1400,4 +1220,135 @@ Wire Notes Line
 	12750 7850 15400 7850
 Wire Notes Line
 	12750 7850 12750 9700
+Wire Wire Line
+	2025 8825 2525 8825
+Wire Wire Line
+	2025 8725 2525 8725
+Wire Wire Line
+	2025 8925 2525 8925
+Wire Wire Line
+	2025 9025 2525 9025
+Wire Wire Line
+	2025 9125 2525 9125
+Text HLabel 2025 8825 0    50   Input ~ 0
+Throttle_LV
+Text HLabel 2025 9025 0    50   Input ~ 0
+SCL
+Text HLabel 2025 9125 0    50   Input ~ 0
+SDA
+Text Label 2525 9025 2    50   ~ 0
+SCL
+Text Label 2525 9125 2    50   ~ 0
+SDA
+Text HLabel 2025 8725 0    50   Input ~ 0
+5V
+Text HLabel 2025 8925 0    50   Input ~ 0
+GLV_RTN
+Text Label 2525 8725 2    50   ~ 0
+5V
+Text Label 2525 8825 2    50   ~ 0
+Throttle_LV
+Text Label 2525 8925 2    50   ~ 0
+GLV_RTN
+Wire Wire Line
+	6800 2150 7350 2150
+Wire Wire Line
+	1450 2100 2000 2100
+Wire Wire Line
+	12275 5900 12675 5900
+Wire Wire Line
+	11800 6300 12275 6300
+Wire Wire Line
+	12275 6250 12275 6300
+Connection ~ 12275 6300
+Wire Wire Line
+	12275 6300 12825 6300
+Wire Wire Line
+	12275 5950 12275 5900
+Wire Wire Line
+	11800 5500 12250 5500
+$Comp
+L Device:R R53
+U 1 1 613FDC21
+P 12250 5300
+F 0 "R53" V 12350 5300 50  0000 C CNN
+F 1 "10K" V 12250 5300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 12180 5300 50  0001 C CNN
+F 3 "~" H 12250 5300 50  0001 C CNN
+	1    12250 5300
+	1    0    0    -1  
+$EndComp
+Text Label 12650 5100 2    43   ~ 0
+1.24HV_REF
+Wire Wire Line
+	12250 5100 12650 5100
+Wire Wire Line
+	12250 5150 12250 5100
+Wire Wire Line
+	12250 5450 12250 5500
+Connection ~ 12250 5500
+Wire Wire Line
+	12250 5500 12825 5500
+$Comp
+L Device:R R6
+U 1 1 614257AB
+P 12275 4400
+F 0 "R6" V 12375 4400 50  0000 C CNN
+F 1 "10K" V 12275 4400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 12205 4400 50  0001 C CNN
+F 3 "~" H 12275 4400 50  0001 C CNN
+	1    12275 4400
+	1    0    0    -1  
+$EndComp
+Text Label 12675 4200 2    43   ~ 0
+1.24HV_REF
+Wire Wire Line
+	12275 4200 12675 4200
+Wire Wire Line
+	12275 4250 12275 4200
+Wire Wire Line
+	11800 4600 12275 4600
+Wire Wire Line
+	12275 4550 12275 4600
+Connection ~ 12275 4600
+Wire Wire Line
+	12275 4600 12825 4600
+Wire Wire Line
+	11100 4700 11100 5000
+Wire Wire Line
+	11100 5000 10850 5000
+Connection ~ 11100 5000
+Wire Wire Line
+	11100 5000 11100 5200
+Connection ~ 10400 5000
+Wire Wire Line
+	10400 5000 10550 5000
+Wire Wire Line
+	10300 5000 10400 5000
+Wire Wire Line
+	10400 5200 10400 5600
+Connection ~ 10400 5200
+Wire Wire Line
+	10400 5200 10550 5200
+Wire Wire Line
+	10300 5200 10400 5200
+Wire Wire Line
+	10100 5600 10400 5600
+Wire Wire Line
+	11950 5900 11950 5700
+Wire Wire Line
+	11950 5700 11800 5700
+$Comp
+L Amplifier_Operational:MCP6004 U26
+U 2 1 5F992CF1
+P 11500 5600
+F 0 "U26" H 11450 5600 50  0000 C CNN
+F 1 "MCP6004" H 11650 5750 50  0000 C CNN
+F 2 "TSI_Rev_2021_Footprint_Lib:SOIC127P600X175-14N" H 11450 5700 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 11550 5800 50  0001 C CNN
+	2    11500 5600
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	11100 5900 11950 5900
 $EndSCHEMATC

@@ -367,32 +367,8 @@ F 3 "~" H 11250 3850 50  0001 C CNN
 $EndComp
 Text Notes 10650 2350 0    50   ~ 0
 Convert to 0-3.3V\nRATIO 3/5\n
-Text Notes 11550 3350 0    39   ~ 0
-Used for R2R on 5V\n
-Wire Wire Line
-	10950 3700 10950 3850
-Connection ~ 10950 3700
-Wire Wire Line
-	10950 3650 10950 3700
-$Comp
-L Device:R R42
-U 1 1 5FCAFB48
-P 10950 3500
-F 0 "R42" V 10900 3450 50  0000 L BNN
-F 1 "10K" V 10950 3495 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 10880 3500 50  0001 C CNN
-F 3 "~" H 10950 3500 50  0001 C CNN
-	1    10950 3500
-	1    0    0    -1  
-$EndComp
-Text Label 10400 3700 0    50   ~ 0
-Throttle_PL
-Wire Wire Line
-	10950 3350 10950 3250
 Text Label 12150 2900 0    50   ~ 0
 Pedal_Out
-Wire Wire Line
-	12150 2900 12150 3250
 $Comp
 L Amplifier_Operational:MCP6004 U18
 U 1 1 5FED477E
@@ -481,9 +457,7 @@ $EndComp
 Wire Wire Line
 	12150 2900 12100 2900
 Wire Wire Line
-	11450 3250 12150 3250
-Wire Wire Line
-	11450 3000 11450 3250
+	11450 3325 12150 3325
 Wire Wire Line
 	11500 3000 11450 3000
 Text Label 12050 3200 2    50   ~ 0
@@ -494,19 +468,8 @@ Wire Wire Line
 	11250 3050 11250 2800
 Text Label 11650 3550 2    50   ~ 0
 GLV_RTN
-$Comp
-L Transistor_FET:MMBF170 Q2
-U 1 1 5FCDD9B5
-P 11150 3250
-F 0 "Q2" H 11000 3450 50  0000 L CNN
-F 1 "MMBF170" H 10750 3350 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 11350 3175 50  0001 L CIN
-F 3 "https://www.diodes.com/assets/Datasheets/ds30104.pdf" H 11150 3250 50  0001 L CNN
-	1    11150 3250
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	12150 2900 13200 2900
+	12150 2900 12800 2900
 Connection ~ 12150 2900
 Wire Wire Line
 	8950 3200 8950 3400
@@ -1241,36 +1204,22 @@ Wire Notes Line
 Text Notes 12650 10350 0    157  ~ 0
 THROTTLE PLAUSIBILITY
 $Comp
-L CarMan_KiCAD_Library:TS5A3159DBVT SW1
-U 1 1 5FB86D5A
-P 14850 3150
-F 0 "SW1" H 14850 3550 50  0000 C CNN
-F 1 "TS5A3159DBVT" H 14850 2600 50  0000 C CNN
-F 2 "TSI_Rev_2021_Footprint_Lib:SOT95P280X145-6N" H 14850 3150 50  0001 L BNN
-F 3 "https://www.ti.com/store/ti/en/p/product/?p=TS5A3159DBVT" H 14850 3150 50  0001 L BNN
-F 4 "Analog Switch" H 14850 3150 50  0001 C CNN "Details"
-	1    14850 3150
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R R44
 U 1 1 608A2A55
-P 14125 2550
-F 0 "R44" H 14175 2550 50  0000 L BNN
-F 1 "10K" V 14125 2545 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 14055 2550 50  0001 C CNN
-F 3 "~" H 14125 2550 50  0001 C CNN
-	1    14125 2550
+P 14050 2650
+F 0 "R44" H 14100 2650 50  0000 L BNN
+F 1 "10K" V 14050 2645 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 13980 2650 50  0001 C CNN
+F 3 "~" H 14050 2650 50  0001 C CNN
+	1    14050 2650
 	-1   0    0    1   
 $EndComp
-Text Label 13825 2300 0    50   ~ 0
+Text Label 13750 2400 0    50   ~ 0
 GLV_RTN
 Text Label 13450 2950 0    50   ~ 0
 Throttle_SEL
-Wire Wire Line
-	14125 2700 14125 2950
-Text Notes 14600 2600 0    63   ~ 0
-AUTO TURN\nOFF SWITCH
+Text Notes 14100 2075 0    79   ~ 0
+AUTO TURN OFF SWITCH
 Wire Wire Line
 	13300 3350 14150 3350
 Text HLabel 1550 1400 0    50   Input ~ 0
@@ -1578,8 +1527,6 @@ NoConn ~ 10250 6500
 NoConn ~ 10250 6600
 NoConn ~ 10250 6700
 Wire Wire Line
-	9750 3700 9875 3700
-Wire Wire Line
 	5900 1100 5900 1400
 Wire Wire Line
 	5900 1900 5900 1700
@@ -1619,16 +1566,10 @@ Wire Notes Line
 	7750 3250 7750 6950
 Wire Notes Line
 	4900 3250 4900 6950
-Text Notes 10400 3950 0    47   ~ 0
-Connects to\nMCP23016 Pin 12
 Wire Notes Line
-	10400 3800 10400 3950
+	10000 3850 10000 4000
 Wire Notes Line
-	10400 3950 11050 3950
-Wire Notes Line
-	11050 3950 11050 3800
-Wire Notes Line
-	11050 3800 10400 3800
+	10650 4000 10650 3850
 Wire Wire Line
 	11600 2400 11700 2400
 Connection ~ 11700 2400
@@ -1657,9 +1598,9 @@ Wire Wire Line
 Wire Wire Line
 	14900 4550 14600 4550
 Wire Wire Line
-	13825 2300 14125 2300
+	13750 2400 14050 2400
 Wire Wire Line
-	14125 2300 14125 2400
+	14050 2400 14050 2500
 Wire Wire Line
 	15550 3550 15900 3550
 Wire Wire Line
@@ -1795,8 +1736,8 @@ Text Label 1050 3400 0    50   ~ 0
 Brake_Light_RTN
 Text HLabel 1850 3400 2    50   Output ~ 0
 Brake_Light_RTN
-Text Notes 14350 4000 0    51   ~ 0
-A relay that is controlled by\nThrottle_SEL. Pin 1 shorted to\npin 4 when pin 6 HIGH
+Text Notes 14275 4000 0    51   ~ 0
+A switch that is controlled by\nThrottle_SEL. Pin 1 shorted to\npin 4 when pin 6 HIGH
 Wire Wire Line
 	1550 1900 2150 1900
 Wire Wire Line
@@ -1935,11 +1876,6 @@ Text Notes 3075 10475 0    47   ~ 0
 *5-10V Range*
 Text Notes 6475 10475 0    47   ~ 0
 *0-5V Range*
-Connection ~ 14125 2950
-Wire Wire Line
-	14125 2950 14150 2950
-Wire Wire Line
-	13450 2950 14125 2950
 Wire Wire Line
 	13475 3150 14150 3150
 Text Notes 6200 3675 0    47   ~ 0
@@ -1979,9 +1915,6 @@ F 3 "~" H 10075 3700 50  0001 C CNN
 	1    9875 3700
 	1    0    0    -1  
 $EndComp
-Connection ~ 9875 3700
-Wire Wire Line
-	9875 3700 10950 3700
 $Comp
 L Device:R R38
 U 1 1 5FE36C1A
@@ -1996,12 +1929,12 @@ $EndComp
 $Comp
 L Connector:TestPoint TP18
 U 1 1 6085F531
-P 13200 2900
-F 0 "TP18" H 13150 3100 50  0000 L CNN
-F 1 "Pedal Out" H 13325 3050 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_D3.0mm" H 13400 2900 50  0001 C CNN
-F 3 "~" H 13400 2900 50  0001 C CNN
-	1    13200 2900
+P 12800 2900
+F 0 "TP18" H 12750 3100 50  0000 L CNN
+F 1 "Pedal Out" H 12925 3050 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_D3.0mm" H 13000 2900 50  0001 C CNN
+F 3 "~" H 13000 2900 50  0001 C CNN
+	1    12800 2900
 	1    0    0    -1  
 $EndComp
 Text Label 10675 10275 2    50   ~ 0
@@ -2107,4 +2040,82 @@ F 3 "http://www.ti.com/lit/ds/symlink/tl431.pdf" H 1700 7475 50  0001 C CIN
 $EndComp
 Wire Notes Line
 	6150 3250 6150 3600
+Wire Notes Line
+	13375 4050 16000 4050
+Wire Notes Line
+	16000 4050 16000 1900
+Wire Notes Line
+	16000 1900 13375 1900
+Wire Notes Line
+	13375 1900 13375 4050
+Connection ~ 12800 2900
+Wire Wire Line
+	12800 2900 13200 2900
+$Comp
+L CarMan_KiCAD_Library:TS5A3159DBVT SW1
+U 1 1 5FB86D5A
+P 14850 3150
+F 0 "SW1" H 14850 3550 50  0000 C CNN
+F 1 "TS5A3159DBVT" H 14850 2600 50  0000 C CNN
+F 2 "TSI_Rev_2021_Footprint_Lib:SOT95P280X145-6N" H 14850 3150 50  0001 L BNN
+F 3 "https://www.ti.com/store/ti/en/p/product/?p=TS5A3159DBVT" H 14850 3150 50  0001 L BNN
+F 4 "Analog Switch" H 14850 3150 50  0001 C CNN "Details"
+	1    14850 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13450 2950 14050 2950
+Wire Wire Line
+	14050 2800 14050 2950
+Connection ~ 14050 2950
+Wire Wire Line
+	14050 2950 14150 2950
+Wire Wire Line
+	9750 3700 9875 3700
+Wire Notes Line
+	10650 3850 10000 3850
+Wire Notes Line
+	10000 4000 10650 4000
+Text Notes 10000 4000 0    47   ~ 0
+Connects to\nMCP23016 Pin 12
+$Comp
+L Device:R R42
+U 1 1 5FCAFB48
+P 10750 3250
+F 0 "R42" V 10675 3175 50  0000 L BNN
+F 1 "10K" V 10750 3245 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 10680 3250 50  0001 C CNN
+F 3 "~" H 10750 3250 50  0001 C CNN
+	1    10750 3250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10550 3700 10550 3900
+Connection ~ 9875 3700
+Wire Wire Line
+	10550 3250 10550 3700
+Wire Wire Line
+	9875 3700 10550 3700
+Connection ~ 10550 3700
+Text Label 10475 3700 2    50   ~ 0
+Throttle_PL
+$Comp
+L Transistor_FET:MMBF170 Q2
+U 1 1 5FCDD9B5
+P 11150 3250
+F 0 "Q2" H 11000 3450 50  0000 L CNN
+F 1 "MMBF170" H 10750 3350 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 11350 3175 50  0001 L CIN
+F 3 "https://www.diodes.com/assets/Datasheets/ds30104.pdf" H 11150 3250 50  0001 L CNN
+	1    11150 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10950 3250 10900 3250
+Wire Wire Line
+	10600 3250 10550 3250
+Wire Wire Line
+	12150 2900 12150 3325
+Wire Wire Line
+	11450 3000 11450 3325
 $EndSCHEMATC

@@ -41,25 +41,25 @@ F 3 "https://www.mouser.com/datasheet/2/408/Toshiba_TLP293_datasheet-1209449.pdf
 	1    8875 3550
 	1    0    0    -1  
 $EndComp
-Text HLabel 1150 1750 0    50   Input ~ 0
+Text HLabel 1250 1850 0    50   Input ~ 0
 RTDS_CTRL
-Text HLabel 1150 1550 0    50   Input ~ 0
+Text HLabel 1250 1650 0    50   Input ~ 0
 D_LED_CTRL
-Text HLabel 1150 750  0    50   Input ~ 0
+Text HLabel 1250 850  0    50   Input ~ 0
 24V
-Text HLabel 1150 950  0    50   Input ~ 0
+Text HLabel 1250 1050 0    50   Input ~ 0
 GLV_RTN
-Text HLabel 1150 850  0    50   Input ~ 0
+Text HLabel 1250 950  0    50   Input ~ 0
 3.3V
-Text Label 1850 1750 2    50   ~ 0
+Text Label 1950 1850 2    50   ~ 0
 RTDS_CTRL
-Text Label 1850 1550 2    50   ~ 0
+Text Label 1950 1650 2    50   ~ 0
 D_LED_CTRL
-Text Label 1850 750  2    50   ~ 0
+Text Label 1950 850  2    50   ~ 0
 24V
-Text Label 1850 950  2    50   ~ 0
+Text Label 1950 1050 2    50   ~ 0
 GLV_RTN
-Text Label 1850 850  2    50   ~ 0
+Text Label 1950 950  2    50   ~ 0
 3.3V
 $Comp
 L Device:R R15
@@ -80,17 +80,13 @@ Text Label 7375 3450 0    50   ~ 0
 D_LED_CTRL
 Text Label 3875 3900 2    50   ~ 0
 24V
-Text HLabel 800  5850 0    50   Input ~ 0
+Text HLabel 3050 825  0    50   Input ~ 0
 HV+
-Text HLabel 800  5950 0    50   Input ~ 0
+Text HLabel 3050 925  0    50   Input ~ 0
 HV-
-Wire Wire Line
-	800  5850 950  5850
-Wire Wire Line
-	800  5950 950  5950
-Text Label 950  5850 0    50   ~ 0
+Text Label 3450 825  2    50   ~ 0
 HV+
-Text Label 950  5950 0    50   ~ 0
+Text Label 3450 925  2    50   ~ 0
 HV-
 Wire Wire Line
 	3050 6700 2750 6700
@@ -218,47 +214,47 @@ Text Notes 2800 5900 0    50   ~ 0
 HIGH VOLTAGE\n
 Text Label 9850 6200 2    50   ~ 0
 Drive_BTN_RTN
-Text HLabel 1150 1950 0    50   Output ~ 0
+Text HLabel 1250 2050 0    50   Output ~ 0
 TSAL
-Text HLabel 1150 1150 0    50   Input ~ 0
+Text HLabel 1250 1250 0    50   Input ~ 0
 TSAL_RTN
-Text Label 1850 1950 2    50   ~ 0
+Text Label 1950 2050 2    50   ~ 0
 TSAL
-Text Label 1850 1150 2    50   ~ 0
+Text Label 1950 1250 2    50   ~ 0
 TSAL_RTN
-Text HLabel 1150 2050 0    50   Output ~ 0
+Text HLabel 1250 2150 0    50   Output ~ 0
 TSAL_Cockpit
-Text Label 1850 2050 2    50   ~ 0
+Text Label 1950 2150 2    50   ~ 0
 TSAL_Cockpit
 Text Label 10200 2350 2    50   ~ 0
 GLV_RTN
 Wire Wire Line
 	10200 1450 10200 1650
-Text HLabel 1150 1350 0    50   Input ~ 0
+Text HLabel 1250 1450 0    50   Input ~ 0
 Drive_BTN_RTN
-Text Label 1850 1350 2    50   ~ 0
+Text Label 1950 1450 2    50   ~ 0
 Drive_BTN_RTN
-Text HLabel 1150 1250 0    50   Input ~ 0
+Text HLabel 1250 1350 0    50   Input ~ 0
 Drive_BTN
-Text Label 1850 1250 2    50   ~ 0
+Text Label 1950 1350 2    50   ~ 0
 Drive_BTN
 Wire Wire Line
 	8575 3450 8375 3450
 Text Notes 7100 6950 0    177  ~ 0
 STATUS LIGHTS, TSAL & RTDS
-Text HLabel 1150 1650 0    50   Input ~ 0
+Text HLabel 1250 1750 0    50   Input ~ 0
 RTDS
-Text Label 1850 1650 2    50   ~ 0
+Text Label 1950 1750 2    50   ~ 0
 RTDS
-Text Label 1850 1850 2    50   ~ 0
+Text Label 1950 1950 2    50   ~ 0
 RTDS_RTN
-Text HLabel 1150 1850 0    50   Input ~ 0
+Text HLabel 1250 1950 0    50   Input ~ 0
 RTDS_RTN
-Text Notes 1050 650  0    94   ~ 0
-SIGNALS\n
-Text HLabel 1150 1450 0    50   Input ~ 0
+Text Notes 675  650  0    79   ~ 0
+ LOW VOLTAGE SIGNALS\n
+Text HLabel 1250 1550 0    50   Input ~ 0
 Drive_LED
-Text Label 1850 1450 2    50   ~ 0
+Text Label 1950 1550 2    50   ~ 0
 Drive_LED
 Text Label 5600 6400 2    50   ~ 0
 TSAL
@@ -361,31 +357,31 @@ F 3 "~" H 2100 3900 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	1150 1350 1850 1350
+	1250 1450 1950 1450
 Wire Wire Line
-	1150 1450 1850 1450
+	1250 1550 1950 1550
 Wire Wire Line
-	1150 1250 1850 1250
+	1250 1350 1950 1350
 Wire Wire Line
-	1150 1750 1850 1750
+	1250 1850 1950 1850
 Wire Wire Line
-	1150 1550 1850 1550
+	1250 1650 1950 1650
 Wire Wire Line
-	1150 1650 1850 1650
+	1250 1750 1950 1750
 Wire Wire Line
-	1150 1850 1850 1850
+	1250 1950 1950 1950
 Wire Wire Line
-	1150 750  1850 750 
+	1250 850  1950 850 
 Wire Wire Line
-	1150 850  1850 850 
+	1250 950  1950 950 
 Wire Wire Line
-	1150 950  1850 950 
+	1250 1050 1950 1050
 Wire Wire Line
-	1150 1950 1850 1950
+	1250 2050 1950 2050
 Wire Wire Line
-	1150 2050 1850 2050
+	1250 2150 1950 2150
 Wire Wire Line
-	1150 1150 1850 1150
+	1250 1250 1950 1250
 Wire Notes Line
 	500  500  2250 500 
 Wire Wire Line
@@ -413,12 +409,12 @@ Wire Wire Line
 	5000 7000 5600 7000
 Text Label 5600 7200 2    50   ~ 0
 GLV_RTN
-Text HLabel 1150 1050 0    50   Input ~ 0
+Text HLabel 1250 1150 0    50   Input ~ 0
 5V_ISO_RTN
-Text Label 1850 1050 2    50   ~ 0
+Text Label 1950 1150 2    50   ~ 0
 5V_ISO_RTN
 Wire Wire Line
-	1150 1050 1850 1050
+	1250 1150 1950 1150
 Wire Notes Line
 	2250 500  2250 2250
 Wire Notes Line
@@ -553,4 +549,18 @@ Wire Wire Line
 	3300 4100 4300 4100
 Text Notes 4225 4375 2    43   ~ 0
 Brake Light & RTDS\n(J18)\n
+Wire Wire Line
+	3050 825  3450 825 
+Wire Wire Line
+	3050 925  3450 925 
+Text Notes 2475 650  0    79   ~ 0
+HIGH VOLTAGE SIGNALS
+Wire Notes Line
+	2325 1100 3975 1100
+Wire Notes Line
+	2325 500  2325 1100
+Wire Notes Line
+	3975 500  3975 1100
+Wire Notes Line
+	2325 500  3975 500 
 $EndSCHEMATC

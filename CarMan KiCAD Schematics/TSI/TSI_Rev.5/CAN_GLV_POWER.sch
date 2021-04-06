@@ -518,13 +518,13 @@ Text Label 5200 1700 0    47   ~ 0
 GLV_RTN
 Wire Wire Line
 	4950 1050 5900 1050
-Text Label 4625 9300 2    50   ~ 0
+Text Label 4550 8900 2    50   ~ 0
 IMD_Status
-Text Notes 3750 7225 2    197  ~ 0
+Text Notes 3750 6850 2    197  ~ 0
 IMD Relay
-Text Notes 8975 7250 2    197  ~ 0
+Text Notes 8950 6850 2    197  ~ 0
 AMS Relay
-Text Label 2625 10775 2    50   ~ 0
+Text Label 2625 10825 2    50   ~ 0
 IMD_Status
 Text HLabel 15200 2700 2    50   Output ~ 0
 AMS_Status
@@ -552,62 +552,34 @@ Wire Wire Line
 	14450 2200 15200 2200
 Text Label 15800 3275 2    50   ~ 0
 12V_Cooling
-Text Label 9600 7925 2    50   ~ 0
-GLV_RTN
-Text Label 9700 10025 2    50   ~ 0
-SL1_Out
-Wire Wire Line
-	9600 7925 9100 7925
-NoConn ~ 9100 8225
-NoConn ~ 7300 8525
-Text Label 9700 9425 2    50   ~ 0
-AMS_Status
-Text Label 5875 8625 0    50   ~ 0
+Wire Notes Line
+	4650 8000 4650 8200
+Wire Notes Line
+	4650 8200 4850 8200
+Wire Notes Line
+	4850 8200 4850 8000
+Wire Notes Line
+	4850 8000 4650 8000
+Wire Notes Line
+	9950 8175 9950 7975
+Text Label 5775 10825 0    50   ~ 0
 AMS_Button_RTN
-Wire Wire Line
-	5875 8625 6575 8625
-Text Label 6700 9925 0    50   ~ 0
-SL1_IMD_Out
-Text Notes 9650 10175 0    47   ~ 0
-BOT (J17)
-Text Label 9700 8625 2    50   ~ 0
-AMS_FAULT_LED
-Wire Notes Line
-	4725 8400 4725 8600
-Wire Notes Line
-	4725 8600 4925 8600
-Wire Notes Line
-	4925 8600 4925 8400
-Wire Notes Line
-	4925 8400 4725 8400
-Wire Wire Line
-	9100 8625 9900 8625
-Wire Notes Line
-	9800 8525 9800 8725
-Wire Notes Line
-	9800 8725 10000 8725
-Wire Notes Line
-	10000 8725 10000 8525
-Wire Notes Line
-	10000 8525 9800 8525
-Text Label 5800 10800 0    50   ~ 0
-AMS_Button_RTN
-Text Notes 6500 10650 0    50   ~ 0
+Text Notes 6475 10675 0    50   ~ 0
 AMS Reset BTN\n
 Wire Notes Line
-	6550 10950 7000 10950
+	6525 10975 6975 10975
 Wire Notes Line
-	7000 10950 7000 10650
+	6975 10975 6975 10675
 Wire Notes Line
-	7000 10650 6550 10650
+	6975 10675 6525 10675
 Wire Notes Line
-	6550 10650 6550 10950
-Text Label 7700 10800 2    50   ~ 0
+	6525 10675 6525 10975
+Text Label 7675 10825 2    50   ~ 0
 AMS_Status
 Wire Wire Line
-	6850 10800 7700 10800
+	6825 10825 7675 10825
 Wire Wire Line
-	5800 10800 6700 10800
+	5775 10825 6675 10825
 $Comp
 L TSI_Rev.5-rescue:G5LE-1-E-Lafayette_Electric_Car_Internals RL?
 U 1 1 5FB466B1
@@ -626,17 +598,9 @@ BOT_Out
 Wire Wire Line
 	12975 8525 13725 8525
 Wire Wire Line
-	7300 8925 6700 8925
-Text Label 6700 8925 0    50   ~ 0
-24V
-Wire Wire Line
 	14450 2600 15200 2600
 Text Label 14450 2600 0    50   ~ 0
 24V_AMS_RTN
-Text Label 10350 9425 2    50   ~ 0
-24V_AMS_RTN
-Wire Wire Line
-	9100 9425 10350 9425
 Text Label 3250 5500 2    50   ~ 0
 GLV_RTN
 Connection ~ 6650 2250
@@ -853,28 +817,7 @@ Wire Wire Line
 	11575 3525 11525 3525
 Wire Wire Line
 	11525 3525 11525 3875
-$Comp
-L Connector_Generic:Conn_01x02 J?
-U 1 1 601DA5ED
-P 7250 1050
-AR Path="/601DA5ED" Ref="J?"  Part="1" 
-AR Path="/5FE1DE7D/601DA5ED" Ref="J31"  Part="1" 
-F 0 "J31" H 7200 1150 50  0000 L CNN
-F 1 "Cooling Jumper" H 7200 1150 50  0001 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 7250 1050 50  0001 C CNN
-F 3 "~" H 7250 1050 50  0001 C CNN
-	1    7250 1050
-	1    0    0    -1  
-$EndComp
-Text Notes 6550 1400 0    47   ~ 0
-Header to allow jumper \nto keep cooling on.\n
-Text Label 6450 1150 0    50   ~ 0
-Cooling_power
-Wire Wire Line
-	6450 1150 7050 1150
-Wire Wire Line
-	6450 1050 7050 1050
-Text Label 6450 1050 0    50   ~ 0
+Text Label 7250 900  0    50   ~ 0
 5V
 $Comp
 L Connector:TestPoint TP13
@@ -891,9 +834,9 @@ Wire Wire Line
 	3650 4700 4350 4700
 Text HLabel 15200 2600 2    50   Output ~ 0
 24V_AMS_RTN
-Text Label 4525 7800 2    50   ~ 0
+Text Label 4450 7400 2    50   ~ 0
 GLV_RTN
-Text Notes 2625 10375 0    55   ~ 0
+Text Notes 2550 9975 0    55   ~ 0
 SFS2-DC24 has built in \ndiode across terminals
 Wire Notes Line
 	12050 9850 15950 9850
@@ -920,78 +863,53 @@ Text Label 12950 2100 2    50   ~ 0
 24V
 Wire Wire Line
 	12950 1200 12150 1200
-Wire Wire Line
-	6700 9925 7300 9925
-Wire Notes Line
-	575  6925 575  11150
 Wire Notes Line
 	575  11150 5325 11150
-Wire Notes Line
-	5325 11150 5325 6925
-Wire Notes Line
-	575  6925 5325 6925
 Wire Wire Line
-	1425 7800 1425 8525
+	1350 7400 1350 8125
 Wire Wire Line
-	1425 8525 1425 9200
-Connection ~ 1425 8525
+	1350 8125 1350 8800
+Connection ~ 1350 8125
 Wire Wire Line
-	4525 7800 4025 7800
-Text Label 725  8525 0    50   ~ 0
+	4450 7400 3950 7400
+Text Label 650  8125 0    50   ~ 0
 IMD_Button_RTN
 Wire Wire Line
-	725  8525 1425 8525
-NoConn ~ 4025 8100
-NoConn ~ 2225 8400
+	650  8125 1350 8125
+NoConn ~ 3950 7700
+NoConn ~ 2150 8000
 Wire Wire Line
-	4025 8500 4825 8500
-Text Label 4625 9900 2    50   ~ 0
+	3950 8100 4750 8100
+Text Label 4550 9500 2    50   ~ 0
 SL1_IMD_Out
-Text Label 4625 8500 2    50   ~ 0
+Text Label 4550 8100 2    50   ~ 0
 IMD_FAULT_LED
-Text Label 1875 9800 0    50   ~ 0
+Text Label 1800 9400 0    50   ~ 0
 SL1_In
 Wire Wire Line
-	4625 9300 4025 9300
-Text Label 1625 8800 0    50   ~ 0
+	4550 8900 3950 8900
+Text Label 1550 8400 0    50   ~ 0
 24V
 Wire Wire Line
-	1875 9800 2225 9800
+	1800 9400 2150 9400
 Wire Wire Line
-	725  10775 1625 10775
+	725  10825 1625 10825
 Wire Wire Line
-	1775 10775 2625 10775
+	1775 10825 2625 10825
 Wire Notes Line
-	1475 10625 1475 10925
+	1475 10675 1475 10975
 Wire Notes Line
-	1925 10625 1475 10625
+	1925 10675 1475 10675
 Wire Notes Line
-	1925 10925 1925 10625
+	1925 10975 1925 10675
 Wire Notes Line
-	1475 10925 1925 10925
-Text Notes 1425 10625 0    50   ~ 0
+	1475 10975 1925 10975
+Text Notes 1425 10675 0    50   ~ 0
 IMD Reset BTN\n
-Text Label 725  10775 0    50   ~ 0
+Text Label 725  10825 0    50   ~ 0
 IMD_Button_RTN
-Wire Wire Line
-	6575 7925 6575 8625
-Text Notes 7700 10500 0    55   ~ 0
-SFS2-DC24 has built in \ndiode across terminals
-Wire Notes Line
-	10450 11150 10450 6925
-Wire Notes Line
-	5700 6925 10450 6925
-Wire Notes Line
-	5700 6925 5700 11150
 Wire Notes Line
 	5700 11150 10450 11150
-Wire Wire Line
-	6575 7925 7300 7925
-Wire Wire Line
-	6575 9325 7300 9325
-Connection ~ 6575 8625
-Wire Wire Line
-	6575 8625 6575 9325
 Wire Wire Line
 	14950 3275 15800 3275
 Wire Wire Line
@@ -1038,104 +956,12 @@ Text Notes 12400 3525 0    51   ~ 0
 25mA passed to EPAL when\nMRESET_CONTACT is low
 Wire Notes Line
 	15950 5500 15950 9850
-$Comp
-L Device:LED D9
-U 1 1 61DA633B
-P 1850 7400
-F 0 "D9" H 1850 7300 50  0000 C CNN
-F 1 "GREEN LED" H 1850 7500 50  0000 C CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1850 7400 50  0001 C CNN
-F 3 "http://static.vcclite.com/pdf/VAOL-S8GT4-LED-0805-green.pdf" H 1850 7400 50  0001 C CNN
-F 4 "VAOL-S8GT4" H 1850 7400 50  0001 C CNN "Part Name"
-	1    1850 7400
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
-	650  7400 1300 7400
-Text Label 2500 7400 2    50   ~ 0
-GLV_RTN
+	1350 8800 2150 8800
 Wire Wire Line
-	2000 7400 2500 7400
-Text Label 650  7400 0    50   ~ 0
-IMD_Button_RTN
-Text Label 5750 7450 0    50   ~ 0
-AMS_Button_RTN
+	2150 8400 1550 8400
 Wire Wire Line
-	7075 7450 7575 7450
-Text Label 7575 7450 2    50   ~ 0
-GLV_RTN
-Wire Wire Line
-	5750 7450 6400 7450
-$Comp
-L Device:LED D5
-U 1 1 61D1E46B
-P 6925 7450
-F 0 "D5" H 6925 7350 50  0000 C CNN
-F 1 "GREEN LED" H 6925 7550 50  0000 C CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6925 7450 50  0001 C CNN
-F 3 "http://static.vcclite.com/pdf/VAOL-S8GT4-LED-0805-green.pdf" H 6925 7450 50  0001 C CNN
-F 4 "VAOL-S8GT4" H 6925 7450 50  0001 C CNN "Part Name"
-	1    6925 7450
-	-1   0    0    1   
-$EndComp
-$Comp
-L CarMan_KiCAD_Library:SFS2-DC24V K4
-U 1 1 5FC41168
-P 8200 9025
-F 0 "K4" H 8200 10475 60  0000 C CNN
-F 1 "SFS2-DC24V" H 8200 7775 60  0000 C CNN
-F 2 "TSI_Rev_2021_Footprint_Lib:SFS2-DC24V" H 9100 9365 60  0001 C CNN
-F 3 "https://www.digikey.com/en/products/detail/panasonic-electric-works/SFS2-DC24V/2639429" H 8200 9025 60  0001 C CNN
-	1    8200 9025
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R81
-U 1 1 61DE0022
-P 1450 7400
-F 0 "R81" V 1375 7400 50  0000 C CNN
-F 1 "1.2K" V 1450 7400 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1380 7400 50  0001 C CNN
-F 3 "~" H 1450 7400 50  0001 C CNN
-	1    1450 7400
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	1600 7400 1700 7400
-Wire Wire Line
-	1425 9200 2225 9200
-Wire Wire Line
-	2225 8800 1625 8800
-Wire Wire Line
-	1425 7800 2225 7800
-$Comp
-L CarMan_KiCAD_Library:SFS2-DC24V K3
-U 1 1 6014EB6D
-P 3125 8900
-F 0 "K3" H 3125 10350 60  0000 C CNN
-F 1 "SFS2-DC24V" H 3125 7650 60  0000 C CNN
-F 2 "TSI_Rev_2021_Footprint_Lib:SFS2-DC24V" H 4025 9240 60  0001 C CNN
-F 3 "https://www.digikey.com/en/products/detail/panasonic-electric-works/SFS2-DC24V/2639429" H 3125 8900 60  0001 C CNN
-	1    3125 8900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R82
-U 1 1 61E281B3
-P 6550 7450
-F 0 "R82" V 6475 7450 50  0000 C CNN
-F 1 "1.2K" V 6550 7450 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6480 7450 50  0001 C CNN
-F 3 "~" H 6550 7450 50  0001 C CNN
-	1    6550 7450
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	6700 7450 6775 7450
-Text Notes 5975 7650 0    51   ~ 0
-Lights up when coils are conducting
-Text Notes 925  7600 0    51   ~ 0
-Lights up when coils are conducting
+	1350 7400 2150 7400
 Wire Wire Line
 	14500 7250 15000 7250
 Text Label 15000 7250 2    50   ~ 0
@@ -1285,37 +1111,16 @@ Lights up when coils are not conducting\n(SCADA Relay Closed)
 $Comp
 L Connector:TestPoint TP15
 U 1 1 60519873
-P 4725 9900
-F 0 "TP15" H 4625 10150 50  0000 L TNN
-F 1 "SL1_IMD_Out" H 4800 9975 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D3.0mm" H 4925 9900 50  0001 C CNN
-F 3 "~" H 4925 9900 50  0001 C CNN
-	1    4725 9900
+P 4650 9500
+F 0 "TP15" H 4550 9750 50  0000 L TNN
+F 1 "SL1_IMD_Out" H 4725 9575 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D3.0mm" H 4850 9500 50  0001 C CNN
+F 3 "~" H 4850 9500 50  0001 C CNN
+	1    4650 9500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4025 9900 4725 9900
-$Comp
-L Connector:TestPoint TP16
-U 1 1 6056095B
-P 9825 10025
-F 0 "TP16" H 9725 10275 50  0000 L TNN
-F 1 "SL1_AMS_Out" H 9900 10100 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D3.0mm" H 10025 10025 50  0001 C CNN
-F 3 "~" H 10025 10025 50  0001 C CNN
-	1    9825 10025
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9100 10025 9825 10025
-Wire Notes Line
-	9750 10075 9875 10075
-Wire Notes Line
-	9875 10075 9875 9950
-Wire Notes Line
-	9875 9950 9750 9950
-Wire Notes Line
-	9750 9950 9750 10075
+	3950 9500 4650 9500
 Wire Wire Line
 	10575 3325 11275 3325
 Text Notes 13650 8100 0    39   ~ 0
@@ -1388,9 +1193,7 @@ Wire Notes Line
 	9850 4050 13750 4050
 Wire Notes Line
 	9850 550  9850 4050
-Text Notes 3800 7650 0    47   ~ 0
-15 mA through coil
-Text Notes 8850 7750 0    47   ~ 0
+Text Notes 3725 7250 0    47   ~ 0
 15 mA through coil
 Wire Notes Line
 	5800 3800 8500 3800
@@ -1425,13 +1228,11 @@ Wire Wire Line
 Connection ~ 14375 8825
 Text Notes 7850 2575 2    43   ~ 0
 Cooling Sensors\n(J19)
-Text Notes 9575 8850 0    47   ~ 0
+Text Notes 4475 8300 0    47   ~ 0
 Dashboard (J11)\n
-Text Notes 4550 8700 0    47   ~ 0
-Dashboard (J11)\n
-Text Notes 1525 11025 0    47   ~ 0
+Text Notes 1525 11075 0    47   ~ 0
 LSP (J20)\n
-Text Notes 6600 11050 0    47   ~ 0
+Text Notes 6575 11075 0    47   ~ 0
 LSP (J20)\n
 $Comp
 L pspice:CAP C28
@@ -1458,51 +1259,251 @@ $EndComp
 $Comp
 L Device:Jumper JP?
 U 1 1 607BAD41
-P 9300 10800
+P 9375 10850
 AR Path="/6196BF15/607BAD41" Ref="JP?"  Part="1" 
 AR Path="/607BAD41" Ref="JP?"  Part="1" 
 AR Path="/5FE1DE7D/607BAD41" Ref="JP11"  Part="1" 
-F 0 "JP11" H 9375 10950 50  0000 R CNN
-F 1 "IMD Testing Jumper" H 10000 10800 50  0001 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 9300 10800 50  0001 C CNN
-F 3 "~" H 9300 10800 50  0001 C CNN
-	1    9300 10800
+F 0 "JP11" H 9450 11000 50  0000 R CNN
+F 1 "IMD Testing Jumper" H 10075 10850 50  0001 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 9375 10850 50  0001 C CNN
+F 3 "~" H 9375 10850 50  0001 C CNN
+	1    9375 10850
 	1    0    0    -1  
 $EndComp
-Text Label 10300 10800 2    50   ~ 0
+Text Label 10375 10850 2    50   ~ 0
 AMS_Status
-Text Label 8300 10800 0    50   ~ 0
+Text Label 8375 10850 0    50   ~ 0
 AMS_Button_RTN
 Wire Wire Line
-	8300 10800 9000 10800
+	8375 10850 9075 10850
 Wire Wire Line
-	10300 10800 9600 10800
+	10375 10850 9675 10850
 $Comp
 L Device:Jumper JP?
 U 1 1 6089741C
-P 4075 10775
+P 4225 10825
 AR Path="/6196BF15/6089741C" Ref="JP?"  Part="1" 
 AR Path="/6089741C" Ref="JP?"  Part="1" 
 AR Path="/5FE1DE7D/6089741C" Ref="JP10"  Part="1" 
-F 0 "JP10" H 4150 10925 50  0000 R CNN
-F 1 "IMD Testing Jumper" H 4775 10775 50  0001 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4075 10775 50  0001 C CNN
-F 3 "~" H 4075 10775 50  0001 C CNN
-	1    4075 10775
+F 0 "JP10" H 4300 10975 50  0000 R CNN
+F 1 "IMD Testing Jumper" H 4925 10825 50  0001 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4225 10825 50  0001 C CNN
+F 3 "~" H 4225 10825 50  0001 C CNN
+	1    4225 10825
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3075 10775 3775 10775
+	3225 10825 3925 10825
 Wire Wire Line
-	5075 10775 4375 10775
-Text Notes 3550 10975 0    47   ~ 0
+	5225 10825 4525 10825
+Text Notes 3700 11025 0    47   ~ 0
 Jumper across IMD Reset Button\nfor Safety Loop Testing
-Text Label 5075 10775 2    50   ~ 0
+Text Label 5225 10825 2    50   ~ 0
 IMD_Status
-Text Label 3075 10775 0    50   ~ 0
+Text Label 3225 10825 0    50   ~ 0
 IMD_Button_RTN
-Text Notes 8775 11025 0    47   ~ 0
+Text Notes 8850 11075 0    47   ~ 0
 Jumper across AMS Reset Button\nfor Safety Loop Testing
 Text Label 13175 7250 0    50   ~ 0
 MRESET_Contact
+$Comp
+L Device:Jumper JP?
+U 1 1 60A2B406
+P 8125 900
+AR Path="/6196BF15/60A2B406" Ref="JP?"  Part="1" 
+AR Path="/60A2B406" Ref="JP?"  Part="1" 
+AR Path="/5FE1DE7D/60A2B406" Ref="JP12"  Part="1" 
+F 0 "JP12" H 8200 1050 50  0000 R CNN
+F 1 "If CAN_Shield & Chassis_GND need to be shorted together, weren't sure" H 8825 900 50  0001 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 8125 900 50  0001 C CNN
+F 3 "~" H 8125 900 50  0001 C CNN
+	1    8125 900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9025 900  8425 900 
+Text Label 9025 900  2    50   ~ 0
+Cooling_power
+Text Notes 7625 1050 0    47   ~ 0
+Jumper to keep cooling on\n
+Wire Wire Line
+	7250 900  7825 900 
+Wire Notes Line
+	5700 6550 5700 11150
+Wire Notes Line
+	5325 6550 5325 11150
+Wire Notes Line
+	575  6550 5325 6550
+Wire Notes Line
+	575  6550 575  11150
+Text Notes 2250 10450 0    51   ~ 0
+Lights up when coils are conducting
+$Comp
+L CarMan_KiCAD_Library:SFS2-DC24V K3
+U 1 1 6014EB6D
+P 3050 8500
+F 0 "K3" H 3050 9950 60  0000 C CNN
+F 1 "SFS2-DC24V" H 3050 7250 60  0000 C CNN
+F 2 "TSI_Rev_2021_Footprint_Lib:SFS2-DC24V" H 3950 8840 60  0001 C CNN
+F 3 "https://www.digikey.com/en/products/detail/panasonic-electric-works/SFS2-DC24V/2639429" H 3050 8500 60  0001 C CNN
+	1    3050 8500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R81
+U 1 1 61DE0022
+P 2850 10225
+F 0 "R81" V 2775 10225 50  0000 C CNN
+F 1 "1.2K" V 2850 10225 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2780 10225 50  0001 C CNN
+F 3 "~" H 2850 10225 50  0001 C CNN
+	1    2850 10225
+	0    1    1    0   
+$EndComp
+Text Label 1925 10225 0    50   ~ 0
+IMD_Button_RTN
+Wire Wire Line
+	3500 10225 4000 10225
+Text Label 4000 10225 2    50   ~ 0
+GLV_RTN
+$Comp
+L Device:LED D9
+U 1 1 61DA633B
+P 3350 10225
+F 0 "D9" H 3350 10125 50  0000 C CNN
+F 1 "GREEN LED" H 3350 10325 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3350 10225 50  0001 C CNN
+F 3 "http://static.vcclite.com/pdf/VAOL-S8GT4-LED-0805-green.pdf" H 3350 10225 50  0001 C CNN
+F 4 "VAOL-S8GT4" H 3350 10225 50  0001 C CNN "Part Name"
+	1    3350 10225
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1925 10225 2700 10225
+Wire Wire Line
+	3000 10225 3200 10225
+Wire Notes Line
+	10450 6550 10450 11150
+Wire Notes Line
+	5700 6550 10450 6550
+Text Notes 7575 10475 0    51   ~ 0
+Lights up when coils are conducting
+$Comp
+L Device:R R82
+U 1 1 61E281B3
+P 8100 10275
+F 0 "R82" V 8025 10275 50  0000 C CNN
+F 1 "1.2K" V 8100 10275 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 8030 10275 50  0001 C CNN
+F 3 "~" H 8100 10275 50  0001 C CNN
+	1    8100 10275
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D5
+U 1 1 61D1E46B
+P 8600 10275
+F 0 "D5" H 8600 10175 50  0000 C CNN
+F 1 "GREEN LED" H 8600 10375 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8600 10275 50  0001 C CNN
+F 3 "http://static.vcclite.com/pdf/VAOL-S8GT4-LED-0805-green.pdf" H 8600 10275 50  0001 C CNN
+F 4 "VAOL-S8GT4" H 8600 10275 50  0001 C CNN "Part Name"
+	1    8600 10275
+	-1   0    0    1   
+$EndComp
+Text Label 9250 10275 2    50   ~ 0
+GLV_RTN
+Wire Wire Line
+	8750 10275 9250 10275
+Text Label 7125 10275 0    50   ~ 0
+AMS_Button_RTN
+$Comp
+L CarMan_KiCAD_Library:SFS2-DC24V K4
+U 1 1 5FC41168
+P 8150 8475
+F 0 "K4" H 8150 9925 60  0000 C CNN
+F 1 "SFS2-DC24V" H 8150 7225 60  0000 C CNN
+F 2 "TSI_Rev_2021_Footprint_Lib:SFS2-DC24V" H 9050 8815 60  0001 C CNN
+F 3 "https://www.digikey.com/en/products/detail/panasonic-electric-works/SFS2-DC24V/2639429" H 8150 8475 60  0001 C CNN
+	1    8150 8475
+	1    0    0    -1  
+$EndComp
+Text Notes 9525 8300 0    47   ~ 0
+Dashboard (J11)\n
+Text Notes 8800 7200 0    47   ~ 0
+15 mA through coil
+Wire Notes Line
+	9700 9400 9700 9525
+Wire Notes Line
+	9825 9400 9700 9400
+Wire Notes Line
+	9825 9525 9825 9400
+Wire Notes Line
+	9700 9525 9825 9525
+Wire Wire Line
+	9050 9475 9775 9475
+$Comp
+L Connector:TestPoint TP16
+U 1 1 6056095B
+P 9775 9475
+F 0 "TP16" H 9675 9725 50  0000 L TNN
+F 1 "SL1_AMS_Out" H 9850 9550 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D3.0mm" H 9975 9475 50  0001 C CNN
+F 3 "~" H 9975 9475 50  0001 C CNN
+	1    9775 9475
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6525 8075 6525 8775
+Connection ~ 6525 8075
+Wire Wire Line
+	6525 8775 7250 8775
+Wire Wire Line
+	6525 7375 7250 7375
+Text Notes 7650 9950 0    55   ~ 0
+SFS2-DC24 has built in \ndiode across terminals
+Wire Wire Line
+	6525 7375 6525 8075
+Wire Wire Line
+	6650 9375 7250 9375
+Wire Wire Line
+	9050 8875 10300 8875
+Text Label 10300 8875 2    50   ~ 0
+24V_AMS_RTN
+Text Label 6650 8375 0    50   ~ 0
+24V
+Wire Wire Line
+	7250 8375 6650 8375
+Wire Notes Line
+	9950 7975 9750 7975
+Wire Notes Line
+	9750 8175 9950 8175
+Wire Notes Line
+	9750 7975 9750 8175
+Wire Wire Line
+	9050 8075 9850 8075
+Text Label 9650 8075 2    50   ~ 0
+AMS_FAULT_LED
+Text Notes 9600 9625 0    47   ~ 0
+BOT (J17)
+Text Label 6650 9375 0    50   ~ 0
+SL1_IMD_Out
+Wire Wire Line
+	5825 8075 6525 8075
+Text Label 5825 8075 0    50   ~ 0
+AMS_Button_RTN
+Text Label 9650 8875 2    50   ~ 0
+AMS_Status
+NoConn ~ 7250 7975
+NoConn ~ 9050 7675
+Wire Wire Line
+	9550 7375 9050 7375
+Text Label 9650 9475 2    50   ~ 0
+SL1_Out
+Text Label 9550 7375 2    50   ~ 0
+GLV_RTN
+Wire Wire Line
+	7125 10275 7950 10275
+Wire Wire Line
+	8250 10275 8450 10275
 $EndSCHEMATC
