@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 6 6
+Sheet 4 6
 Title ""
 Date ""
 Rev ""
@@ -845,11 +845,11 @@ Text HLabel 5750 8800 0    50   Input ~ 0
 IO_Ground
 Text HLabel 5750 8700 0    50   Input ~ 0
 5HV
-Text HLabel 5750 9400 0    50   Input ~ 0
+Text HLabel 5750 9600 0    50   Output ~ 0
 Throttle_HV
 Text Label 6400 8800 2    50   ~ 0
 IO_Ground
-Text Label 6400 9400 2    50   ~ 0
+Text Label 6400 9600 2    50   ~ 0
 Throttle_HV
 Text Label 6400 8700 2    50   ~ 0
 5HV
@@ -859,21 +859,21 @@ Wire Notes Line
 	2950 8350 1400 8350
 Text Notes 5150 8550 0    79   ~ 0
 HIGH VOLTAGE SIGNALS\n
-Text Label 6400 9200 2    50   ~ 0
+Text Label 6400 9000 2    50   ~ 0
 HV+
+Text Label 6400 9400 2    50   ~ 0
+TS_Voltage
 Text Label 6400 8900 2    50   ~ 0
-TS_Voltage
-Text Label 6400 9100 2    50   ~ 0
 MC+
+Text HLabel 5750 9400 0    50   Output ~ 0
+TS_Voltage
 Text HLabel 5750 8900 0    50   Input ~ 0
-TS_Voltage
-Text HLabel 5750 9100 0    50   Input ~ 0
 MC+
-Text HLabel 5750 9200 0    50   Input ~ 0
+Text HLabel 5750 9000 0    50   Input ~ 0
 HV+
-Text Label 6400 9300 2    50   ~ 0
+Text Label 6400 9100 2    50   ~ 0
 HV-
-Text HLabel 5750 9300 0    50   Input ~ 0
+Text HLabel 5750 9100 0    50   Input ~ 0
 HV-
 Wire Wire Line
 	2500 5400 3500 5400
@@ -897,13 +897,13 @@ Text Notes 6950 6600 0    98   ~ 0
 Binary Address:\n1001010
 Text Notes 12200 10350 0    157  ~ 0
 THROTTLE VOLTAGE ISOLATOR
-Text Label 6400 9600 2    50   ~ 0
+Text Label 6400 9300 2    50   ~ 0
 A2_HV
-Text Label 6400 9500 2    50   ~ 0
+Text Label 6400 9200 2    50   ~ 0
 A1_HV
-Text HLabel 5750 9500 0    50   Input ~ 0
+Text HLabel 5750 9200 0    50   Input ~ 0
 A1_HV
-Text HLabel 5750 9600 0    50   Input ~ 0
+Text HLabel 5750 9300 0    50   Input ~ 0
 A2_HV
 $Comp
 L Amplifier_Operational:MCP6004 U26
@@ -976,9 +976,9 @@ Text Label 3300 1350 2    50   ~ 0
 5V
 Wire Wire Line
 	3300 1350 3200 1350
-Text Label 6400 9000 2    50   ~ 0
+Text Label 6400 9500 2    50   ~ 0
 MC_Voltage
-Text HLabel 5750 9000 0    50   Input ~ 0
+Text HLabel 5750 9500 0    50   Output ~ 0
 MC_Voltage
 $Comp
 L Amplifier_Operational:MCP6004 U26
@@ -996,25 +996,25 @@ Text Label 6550 5250 0    50   ~ 0
 Wire Wire Line
 	6550 5250 6850 5250
 Wire Wire Line
-	5750 8900 6400 8900
+	5750 9400 6400 9400
 Wire Wire Line
 	5750 8700 6400 8700
 Wire Wire Line
 	5750 8800 6400 8800
 Wire Wire Line
-	5750 9200 6400 9200
-Wire Wire Line
 	5750 9000 6400 9000
-Wire Wire Line
-	5750 9100 6400 9100
 Wire Wire Line
 	5750 9500 6400 9500
 Wire Wire Line
-	5750 9300 6400 9300
+	5750 8900 6400 8900
 Wire Wire Line
-	5750 9400 6400 9400
+	5750 9200 6400 9200
+Wire Wire Line
+	5750 9100 6400 9100
 Wire Wire Line
 	5750 9600 6400 9600
+Wire Wire Line
+	5750 9300 6400 9300
 Wire Notes Line
 	2950 9250 2950 8350
 Wire Notes Line
@@ -1221,16 +1221,16 @@ Wire Notes Line
 Wire Notes Line
 	12750 7850 12750 9700
 Wire Wire Line
-	2025 8825 2525 8825
+	2025 8925 2525 8925
 Wire Wire Line
 	2025 8725 2525 8725
 Wire Wire Line
-	2025 8925 2525 8925
+	2025 8825 2525 8825
 Wire Wire Line
 	2025 9025 2525 9025
 Wire Wire Line
 	2025 9125 2525 9125
-Text HLabel 2025 8825 0    50   Input ~ 0
+Text HLabel 2025 8925 0    50   Input ~ 0
 Throttle_LV
 Text HLabel 2025 9025 0    50   Input ~ 0
 SCL
@@ -1242,13 +1242,13 @@ Text Label 2525 9125 2    50   ~ 0
 SDA
 Text HLabel 2025 8725 0    50   Input ~ 0
 5V
-Text HLabel 2025 8925 0    50   Input ~ 0
+Text HLabel 2025 8825 0    50   Input ~ 0
 GLV_RTN
 Text Label 2525 8725 2    50   ~ 0
 5V
-Text Label 2525 8825 2    50   ~ 0
-Throttle_LV
 Text Label 2525 8925 2    50   ~ 0
+Throttle_LV
+Text Label 2525 8825 2    50   ~ 0
 GLV_RTN
 Wire Wire Line
 	6800 2150 7350 2150

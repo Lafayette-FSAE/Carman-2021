@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 4 6
+Sheet 6 6
 Title ""
 Date ""
 Rev ""
@@ -92,12 +92,10 @@ Wire Wire Line
 Wire Wire Line
 	1350 4550 1850 4550
 Connection ~ 1850 4550
-Wire Wire Line
-	1350 4550 1000 4550
 Connection ~ 1350 4550
-Text Label 1000 4550 2    50   ~ 0
+Text Label 750  4550 0    50   ~ 0
 24V
-Text Label 1000 5050 2    50   ~ 0
+Text Label 750  5050 0    50   ~ 0
 GLV_RTN
 Wire Wire Line
 	3650 4900 4050 4900
@@ -108,8 +106,6 @@ Wire Wire Line
 Wire Wire Line
 	1150 5500 1150 5050
 Connection ~ 1150 5050
-Wire Wire Line
-	1150 5050 1000 5050
 Text Label 4200 4700 2    50   ~ 0
 10V
 Text Label 4200 4800 2    50   ~ 0
@@ -191,7 +187,7 @@ F 3 "~" H 5150 4800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 4950 4800
-Text Label 8650 4800 0    50   ~ 0
+Text Label 8750 4800 2    50   ~ 0
 3.3V
 $Comp
 L Connector:TestPoint TP11
@@ -228,8 +224,8 @@ $EndComp
 Wire Wire Line
 	14325 8825 14375 8825
 NoConn ~ 13725 8325
-Text Notes 14800 750  0    98   ~ 0
-SIGNALS
+Text Notes 14475 725  0    79   ~ 0
+LOW VOLTAGE SIGNALS
 Wire Notes Line
 	16000 550  14150 550 
 Text Notes 2750 5250 0    47   ~ 0
@@ -239,8 +235,6 @@ Wire Wire Line
 Text Label 7350 6200 0    50   ~ 0
 GLV_RTN
 Connection ~ 8300 4800
-Wire Wire Line
-	8300 4800 8650 4800
 Connection ~ 8100 4800
 Wire Wire Line
 	8100 4800 8300 4800
@@ -407,69 +401,57 @@ F 3 "https://www.mouser.com/datasheet/2/408/Toshiba_TLP293_datasheet-1209449.pdf
 	1    11850 1300
 	1    0    0    -1  
 $EndComp
-Text Label 14450 1800 0    50   ~ 0
+Text Label 15800 1400 2    50   ~ 0
 BOT_Out
-Text HLabel 15200 1800 2    50   Output ~ 0
-BOT_Out
-Text Label 14450 1700 0    50   ~ 0
+Text Label 15800 1200 2    50   ~ 0
 5V_ISO_RTN
-Text Label 14450 1600 0    50   ~ 0
+Text Label 15800 3625 2    50   ~ 0
 MRESET_Contact
-Text HLabel 15200 1700 2    50   Output ~ 0
+Text HLabel 14950 1200 0    50   Input ~ 0
 5V_ISO_RTN
-Text HLabel 15200 1600 2    50   Output ~ 0
+Text HLabel 14950 3625 0    50   Output ~ 0
 MRESET_Contact
-Text Label 14450 1500 0    50   ~ 0
+Text Label 15800 1300 2    50   ~ 0
 SR_CTRL
-Text HLabel 15200 1500 2    50   Output ~ 0
+Text HLabel 14950 1300 0    50   Input ~ 0
 SR_CTRL
-Text Label 14450 2300 0    50   ~ 0
+Text Label 15800 1700 2    50   ~ 0
 SL1_In
-Text HLabel 15200 2300 2    50   Output ~ 0
-SL1_In
-Text Label 14450 2200 0    50   ~ 0
+Text Label 15800 3525 2    50   ~ 0
 SL1_Out
-Text HLabel 15200 2200 2    50   Output ~ 0
-SL1_Out
-Text Label 14450 2800 0    50   ~ 0
+Text Label 15800 2000 2    50   ~ 0
 IMD_Status
-Text Label 14450 2100 0    50   ~ 0
+Text Label 15800 3725 2    50   ~ 0
 Safety_Loop
-Text HLabel 15200 2800 2    50   Output ~ 0
+Text HLabel 14950 2000 0    50   Input ~ 0
 IMD_Status
-Text HLabel 15200 2100 2    50   Output ~ 0
+Text HLabel 14950 3725 0    50   Output ~ 0
 Safety_Loop
-Text Label 14450 2000 0    50   ~ 0
+Text Label 15800 1600 2    50   ~ 0
 AIRs-
-Text Label 14450 1900 0    50   ~ 0
+Text Label 15800 1500 2    50   ~ 0
 AIRs+
-Text HLabel 15200 2000 2    50   Output ~ 0
+Text HLabel 14950 1600 0    50   Input ~ 0
 AIRs-
-Text HLabel 15200 1900 2    50   Output ~ 0
+Text HLabel 14950 1500 0    50   Input ~ 0
 AIRs+
-Text Label 14450 1400 0    50   ~ 0
-Chassis_GND
-Text Label 14450 1300 0    50   ~ 0
+Text Label 15800 1000 2    50   ~ 0
 GLV_RTN
-Text Label 14450 1200 0    50   ~ 0
+Text Label 15800 900  2    50   ~ 0
 24V
-Text Label 14450 1100 0    50   ~ 0
+Text Label 15800 2925 2    50   ~ 0
 3.3V
-Text Label 14450 1000 0    50   ~ 0
+Text Label 15800 2825 2    50   ~ 0
 5V
-Text HLabel 15200 1400 2    50   Output ~ 0
-Chassis_GND
-Text HLabel 15200 1300 2    50   Output ~ 0
-GLV_RTN
-Text HLabel 15200 1200 2    50   Output ~ 0
+Text HLabel 14950 900  0    50   Input ~ 0
 24V
-Text HLabel 15200 1100 2    50   Output ~ 0
+Text HLabel 14950 2925 0    50   Output ~ 0
 3.3V
-Text HLabel 15200 1000 2    50   Output ~ 0
+Text HLabel 14950 2825 0    50   Output ~ 0
 5V
-Text Label 14450 900  0    50   ~ 0
+Text Label 15800 2725 2    50   ~ 0
 10V
-Text HLabel 15200 900  2    50   Output ~ 0
+Text HLabel 14950 2725 0    50   Output ~ 0
 10V
 $Comp
 L Device:R R52
@@ -526,31 +508,15 @@ Text Notes 8950 6850 2    197  ~ 0
 AMS Relay
 Text Label 2625 10825 2    50   ~ 0
 IMD_Status
-Text HLabel 15200 2700 2    50   Output ~ 0
+Text HLabel 14950 2100 0    50   Input ~ 0
 AMS_Status
-Text Label 14450 2700 0    50   ~ 0
+Text Label 15800 2100 2    50   ~ 0
 AMS_Status
-Text Label 14450 2400 0    50   ~ 0
-IMD_Button_RTN
-Text HLabel 15200 2400 2    50   Output ~ 0
-IMD_Button_RTN
-Text Label 14450 2500 0    50   ~ 0
+Text Label 15800 1800 2    50   ~ 0
 COOL_24V
-Text HLabel 15200 2500 2    50   Output ~ 0
+Text HLabel 14950 1800 0    50   Input ~ 0
 COOL_24V
-Wire Wire Line
-	14450 1600 15200 1600
-Wire Wire Line
-	14450 2300 15200 2300
-Wire Wire Line
-	14450 2700 15200 2700
-Wire Wire Line
-	14450 2500 15200 2500
-Wire Wire Line
-	14450 2400 15200 2400
-Wire Wire Line
-	14450 2200 15200 2200
-Text Label 15800 3275 2    50   ~ 0
+Text Label 15800 3025 2    50   ~ 0
 12V_Cooling
 Wire Notes Line
 	4650 8000 4650 8200
@@ -597,9 +563,7 @@ Text Label 15075 8425 2    50   ~ 0
 BOT_Out
 Wire Wire Line
 	12975 8525 13725 8525
-Wire Wire Line
-	14450 2600 15200 2600
-Text Label 14450 2600 0    50   ~ 0
+Text Label 15800 1900 2    50   ~ 0
 24V_AMS_RTN
 Text Label 3250 5500 2    50   ~ 0
 GLV_RTN
@@ -692,53 +656,25 @@ F 3 "~" H 1300 700 50  0001 C CNN
 	1    1300 700 
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	14450 900  15200 900 
-Wire Wire Line
-	14450 1000 15200 1000
-Wire Wire Line
-	14450 1100 15200 1100
-Wire Wire Line
-	14450 1200 15200 1200
-Wire Wire Line
-	14450 1300 15200 1300
-Wire Wire Line
-	14450 1400 15200 1400
-Wire Wire Line
-	14450 1500 15200 1500
-Wire Wire Line
-	14450 2000 15200 2000
-Wire Wire Line
-	14450 1900 15200 1900
-Wire Wire Line
-	14450 1800 15200 1800
-Wire Wire Line
-	14450 1700 15200 1700
-Wire Wire Line
-	14450 2100 15200 2100
-Wire Wire Line
-	14450 2800 15200 2800
-Text Label 15800 3575 2    50   ~ 0
+Text Label 15800 3225 2    50   ~ 0
 AMS_FAULT_LED
-Text HLabel 14950 3575 0    50   Input ~ 0
+Text HLabel 14950 3225 0    50   Output ~ 0
 AMS_FAULT_LED
-Text Label 15800 3775 2    50   ~ 0
+Text Label 15800 2500 2    50   ~ 0
 AMS_Button_RTN
-Text HLabel 14950 3775 0    50   Input ~ 0
+Text HLabel 14950 2500 0    50   Input ~ 0
 AMS_Button_RTN
-Text Label 15800 3675 2    50   ~ 0
+Text Label 15800 2400 2    50   ~ 0
 IMD_Button_RTN
-Text HLabel 14950 3675 0    50   Input ~ 0
+Text HLabel 14950 2400 0    50   Input ~ 0
 IMD_Button_RTN
-Text Label 15800 3375 2    50   ~ 0
+Text Label 15800 2300 2    50   ~ 0
 Cooling_CTRL
-Text HLabel 14950 3375 0    50   Input ~ 0
+Text HLabel 14950 2300 0    50   Input ~ 0
 Cooling_CTRL
-Text HLabel 14950 3275 0    50   Input ~ 0
-12V_Cooling
-Text Label 15800 3475 2    50   ~ 0
+Text Label 15800 3125 2    50   ~ 0
 IMD_FAULT_LED
-Text HLabel 14950 3475 0    50   Input ~ 0
+Text HLabel 14950 3125 0    50   Output ~ 0
 IMD_FAULT_LED
 Wire Wire Line
 	3250 2250 4050 2250
@@ -773,13 +709,11 @@ Wire Notes Line
 	2950 650  2950 3250
 Text Label 10575 3325 0    50   ~ 0
 MRESET_Contact
-Text HLabel 14950 3875 0    50   Input ~ 0
-Safety_Loop_EPAL
-Text HLabel 14950 3975 0    50   Input ~ 0
+Text HLabel 14950 3925 0    50   Output ~ 0
 GEN_FAULT_EPAL
-Text Label 15800 3875 2    50   ~ 0
+Text Label 15800 3825 2    50   ~ 0
 Safety_Loop_EPAL
-Text Label 15800 3975 2    50   ~ 0
+Text Label 15800 3925 2    50   ~ 0
 GEN_FAULT_EPAL
 Text Label 12350 1800 0    50   ~ 0
 GLV_RTN
@@ -832,7 +766,7 @@ F 3 "~" H 4550 4700 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3650 4700 4350 4700
-Text HLabel 15200 2600 2    50   Output ~ 0
+Text HLabel 14950 1900 0    50   Input ~ 0
 24V_AMS_RTN
 Text Label 4450 7400 2    50   ~ 0
 GLV_RTN
@@ -911,21 +845,19 @@ IMD_Button_RTN
 Wire Notes Line
 	5700 11150 10450 11150
 Wire Wire Line
-	14950 3275 15800 3275
+	14950 2300 15800 2300
 Wire Wire Line
-	14950 3375 15800 3375
+	14950 3125 15800 3125
 Wire Wire Line
-	14950 3475 15800 3475
+	14950 3225 15800 3225
 Wire Wire Line
-	14950 3575 15800 3575
+	14950 2400 15800 2400
 Wire Wire Line
-	14950 3675 15800 3675
+	14950 2500 15800 2500
 Wire Wire Line
-	14950 3775 15800 3775
+	14950 3825 15800 3825
 Wire Wire Line
-	14950 3875 15800 3875
-Wire Wire Line
-	14950 3975 15800 3975
+	14950 3925 15800 3925
 $Comp
 L Device:R R61
 U 1 1 601328F4
@@ -1082,24 +1014,18 @@ Wire Notes Line
 	2950 650  9225 650 
 Wire Notes Line
 	9225 650  9225 3250
-Text Label 14450 2900 0    50   ~ 0
+Text Label 15800 2200 2    50   ~ 0
 CoolTemp
-Text HLabel 15200 2900 2    50   Output ~ 0
+Text HLabel 14950 2200 0    50   Input ~ 0
 CoolTemp
-Wire Wire Line
-	14450 2900 15200 2900
-Text Label 14450 3000 0    50   ~ 0
+Text Label 15800 3325 2    50   ~ 0
 CoolTemp_In
-Text HLabel 15200 3000 2    50   Output ~ 0
+Text HLabel 14950 3325 0    50   Output ~ 0
 CoolTemp_In
-Wire Wire Line
-	14450 3000 15200 3000
-Text Label 14450 3100 0    50   ~ 0
+Text Label 15800 3425 2    50   ~ 0
 CoolTemp_RTN
-Text HLabel 15200 3100 2    50   Output ~ 0
+Text HLabel 14950 3425 0    50   Output ~ 0
 CoolTemp_RTN
-Wire Wire Line
-	14450 3100 15200 3100
 Wire Notes Line
 	16000 550  16000 4075
 Wire Notes Line
@@ -1506,4 +1432,72 @@ Wire Wire Line
 	7125 10275 7950 10275
 Wire Wire Line
 	8250 10275 8450 10275
+Text HLabel 14950 1000 0    50   Input ~ 0
+GLV_RTN
+Text HLabel 14950 1100 0    50   Input ~ 0
+Chassis_GND
+Text Label 15800 1100 2    50   ~ 0
+Chassis_GND
+Text HLabel 14950 1400 0    50   Input ~ 0
+BOT_Out
+Text HLabel 14950 3825 0    50   Output ~ 0
+Safety_Loop_EPAL
+Text HLabel 14950 3525 0    50   Output ~ 0
+SL1_Out
+Text HLabel 14950 1700 0    50   Input ~ 0
+SL1_In
+Text HLabel 14950 3025 0    50   Output ~ 0
+12V_Cooling
+Wire Wire Line
+	14950 2000 15800 2000
+Wire Wire Line
+	14950 2100 15800 2100
+Wire Wire Line
+	14950 2200 15800 2200
+Wire Wire Line
+	14950 1700 15800 1700
+Wire Wire Line
+	14950 1800 15800 1800
+Wire Wire Line
+	14950 1900 15800 1900
+Wire Wire Line
+	14950 1400 15800 1400
+Wire Wire Line
+	14950 1500 15800 1500
+Wire Wire Line
+	14950 1600 15800 1600
+Wire Wire Line
+	14950 1100 15800 1100
+Wire Wire Line
+	14950 1200 15800 1200
+Wire Wire Line
+	14950 1300 15800 1300
+Wire Wire Line
+	14950 900  15800 900 
+Wire Wire Line
+	14950 1000 15800 1000
+Wire Wire Line
+	14950 2825 15800 2825
+Wire Wire Line
+	14950 2925 15800 2925
+Wire Wire Line
+	14950 3025 15800 3025
+Wire Wire Line
+	14950 2725 15800 2725
+Wire Wire Line
+	14950 3425 15800 3425
+Wire Wire Line
+	14950 3525 15800 3525
+Wire Wire Line
+	14950 3625 15800 3625
+Wire Wire Line
+	14950 3325 15800 3325
+Wire Wire Line
+	14950 3725 15800 3725
+Wire Wire Line
+	8300 4800 8750 4800
+Wire Wire Line
+	750  5050 1150 5050
+Wire Wire Line
+	750  4550 1350 4550
 $EndSCHEMATC

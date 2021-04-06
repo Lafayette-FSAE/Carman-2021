@@ -17,31 +17,31 @@ Text HLabel 1550 800  0    50   Input ~ 0
 24V
 Text HLabel 1550 900  0    50   Input ~ 0
 10V
-Text HLabel 1550 1100 0    50   Input ~ 0
+Text HLabel 1550 1200 0    50   Input ~ 0
 GLV_RTN
 Text HLabel 1550 1000 0    50   Input ~ 0
 5V
-Text HLabel 1550 1900 0    50   Input ~ 0
+Text HLabel 1550 1600 0    50   Input ~ 0
 Throttle_SEL
-Text HLabel 1550 2000 0    50   Input ~ 0
+Text HLabel 1550 1700 0    50   Input ~ 0
 SDA
-Text HLabel 1550 2100 0    50   Input ~ 0
+Text HLabel 1550 1800 0    50   Input ~ 0
 SCL
-Text Notes 1450 650  0    79   ~ 0
-SIGNALS\n
-Text Label 2150 1100 2    50   ~ 0
+Text Notes 975  650  0    79   ~ 0
+LOW VOLTAGE SIGNALS\n
+Text Label 2325 1200 2    50   ~ 0
 GLV_RTN
-Text Label 2150 900  2    50   ~ 0
+Text Label 2325 900  2    50   ~ 0
 10V
-Text Label 2150 1900 2    50   ~ 0
+Text Label 2325 1600 2    50   ~ 0
 Throttle_SEL
-Text Label 2150 2000 2    50   ~ 0
+Text Label 2325 1700 2    50   ~ 0
 SDA_uC
-Text Label 2150 2100 2    50   ~ 0
+Text Label 2325 1800 2    50   ~ 0
 SCL_uC
-Text Label 2150 800  2    50   ~ 0
+Text Label 2325 800  2    50   ~ 0
 24V
-Text Label 2150 1000 2    50   ~ 0
+Text Label 2325 1000 2    50   ~ 0
 5V
 Wire Wire Line
 	2250 4475 2250 4775
@@ -62,24 +62,18 @@ Wire Notes Line
 	550  3725 550  6175
 Wire Notes Line
 	550  6575 550  8425
-Wire Notes Line
-	2900 6575 550  6575
-Wire Notes Line
-	2900 8425 2900 6575
-Wire Notes Line
-	550  8425 2900 8425
 Wire Wire Line
-	1700 7075 1300 7075
-Connection ~ 1700 7075
+	1800 7100 1400 7100
+Connection ~ 1800 7100
 Wire Wire Line
-	1700 7375 1700 7075
+	1800 7400 1800 7100
 Wire Wire Line
-	1700 7925 1700 7575
+	1800 7950 1800 7600
 Wire Wire Line
-	1300 7475 1300 7425
-Connection ~ 1300 7475
+	1400 7500 1400 7450
+Connection ~ 1400 7500
 Wire Wire Line
-	1300 7475 1600 7475
+	1400 7500 1700 7500
 Wire Notes Line
 	550  6175 2950 6175
 Wire Wire Line
@@ -163,63 +157,61 @@ Wire Wire Line
 Connection ~ 1500 4875
 Wire Wire Line
 	1500 4875 1550 4875
-Text Notes 1100 6875 0    79   ~ 0
+Text Notes 1200 6875 0    79   ~ 0
 APPS 5V Offset Bias\n\n
-Wire Wire Line
-	750  7075 900  7075
-Text Label 750  7075 2    50   ~ 0
+Text Label 700  7100 0    50   ~ 0
 24V
 $Comp
 L Device:R R1
 U 1 1 5FD04890
-P 1050 7075
-F 0 "R1" V 950 7075 50  0000 C CNN
-F 1 "1K" V 1074 7075 50  0000 C BNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 980 7075 50  0001 C CNN
-F 3 "~" H 1050 7075 50  0001 C CNN
-	1    1050 7075
+P 1150 7100
+F 0 "R1" V 1050 7100 50  0000 C CNN
+F 1 "1K" V 1174 7100 50  0000 C BNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1080 7100 50  0001 C CNN
+F 3 "~" H 1150 7100 50  0001 C CNN
+	1    1150 7100
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	1300 7525 1300 7475
+	1400 7550 1400 7500
 $Comp
 L Device:R R17
 U 1 1 5FD0632E
-P 1300 7275
-F 0 "R17" V 1250 7225 50  0000 L BNN
-F 1 "10K" V 1300 7270 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1230 7275 50  0001 C CNN
-F 3 "~" H 1300 7275 50  0001 C CNN
-	1    1300 7275
+P 1400 7300
+F 0 "R17" V 1350 7250 50  0000 L BNN
+F 1 "10K" V 1400 7295 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1330 7300 50  0001 C CNN
+F 3 "~" H 1400 7300 50  0001 C CNN
+	1    1400 7300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1300 7925 1300 7825
+	1400 7950 1400 7850
 $Comp
 L Device:R R18
 U 1 1 5FD07D43
-P 1300 7675
-F 0 "R18" V 1250 7625 50  0000 L BNN
-F 1 "10K" V 1300 7670 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1230 7675 50  0001 C CNN
-F 3 "~" H 1300 7675 50  0001 C CNN
-	1    1300 7675
+P 1400 7700
+F 0 "R18" V 1350 7650 50  0000 L BNN
+F 1 "10K" V 1400 7695 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1330 7700 50  0001 C CNN
+F 3 "~" H 1400 7700 50  0001 C CNN
+	1    1400 7700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1200 7075 1300 7075
+	1300 7100 1400 7100
 Wire Wire Line
-	1300 7075 1300 7125
+	1400 7100 1400 7150
 Wire Wire Line
-	1300 7925 1700 7925
+	1400 7950 1800 7950
 Wire Wire Line
-	2150 7075 1700 7075
-Connection ~ 1300 7075
+	2250 7100 1800 7100
+Connection ~ 1400 7100
 Wire Wire Line
-	1700 8075 1700 7925
-Connection ~ 1700 7925
+	1800 8100 1800 7950
+Connection ~ 1800 7950
 Wire Wire Line
-	1700 7925 2150 7925
+	1800 7950 2250 7950
 $Comp
 L pspice:CAP C3
 U 1 1 5FD0FB86
@@ -253,25 +245,23 @@ $EndComp
 $Comp
 L pspice:CAP C10
 U 1 1 5FD0A6C2
-P 2150 7475
-F 0 "C10" V 2250 7325 50  0000 C CNN
-F 1 "0.1u" V 2250 7625 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2150 7475 50  0001 C CNN
-F 3 "~" H 2150 7475 50  0001 C CNN
-	1    2150 7475
+P 2250 7500
+F 0 "C10" V 2350 7350 50  0000 C CNN
+F 1 "0.1u" V 2350 7650 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2250 7500 50  0001 C CNN
+F 3 "~" H 2250 7500 50  0001 C CNN
+	1    2250 7500
 	1    0    0    -1  
 $EndComp
-Connection ~ 2150 7075
+Connection ~ 2250 7100
 Text Notes 1000 8375 0    50   ~ 0
 *Need 1% tolerance for R17 & R18*\n
-Text Label 2350 7075 0    50   ~ 0
+Text Label 2675 7100 2    50   ~ 0
 5V_REF
 Wire Wire Line
-	2350 7075 2150 7075
+	2250 7250 2250 7100
 Wire Wire Line
-	2150 7225 2150 7075
-Wire Wire Line
-	2150 7925 2150 7725
+	2250 7950 2250 7750
 Text Label 2500 4775 0    50   ~ 0
 APPS1_ISO
 Connection ~ 2250 4775
@@ -893,20 +883,14 @@ Wire Wire Line
 	4100 2050 4250 2050
 Wire Wire Line
 	4100 2250 4250 2250
-Text Label 1050 2900 0    50   ~ 0
+Text Label 2325 3125 2    50   ~ 0
 APPS1_RTN
-Text Label 2150 1200 2    50   ~ 0
+Text Label 2325 1300 2    50   ~ 0
 APPS1
-Text Label 1050 2800 0    50   ~ 0
+Text Label 2325 3025 2    50   ~ 0
 APPS1_10V
-Text Label 1050 3200 0    50   ~ 0
-Throttle_LV
-Text Label 1050 3300 0    50   ~ 0
-Throttle_PL
-Text Label 2150 1300 2    50   ~ 0
+Text Label 2325 1400 2    50   ~ 0
 APPS2
-Text HLabel 1850 3300 2    50   Output ~ 0
-Throttle_PL
 Wire Wire Line
 	1800 9500 1950 9500
 Wire Wire Line
@@ -1175,19 +1159,19 @@ Wire Wire Line
 	8875 9825 9675 9825
 Wire Wire Line
 	8875 9675 8875 9825
-Text HLabel 1550 2200 0    50   Input ~ 0
-BRAKE_IN(AIRS+)
-Text HLabel 1550 1200 0    50   Input ~ 0
-APPS1
-Text HLabel 1850 2900 2    50   Output ~ 0
-APPS1_RTN
-Text HLabel 1850 2800 2    50   Output ~ 0
-APPS1_10V
-Text HLabel 1850 3100 2    50   Output ~ 0
-APPS2_RTN
+Text HLabel 1550 1500 0    50   Input ~ 0
+BRAKE_IN
 Text HLabel 1550 1300 0    50   Input ~ 0
+APPS1
+Text HLabel 1525 3125 0    50   Output ~ 0
+APPS1_RTN
+Text HLabel 1525 3025 0    50   Output ~ 0
+APPS1_10V
+Text HLabel 1525 3325 0    50   Output ~ 0
+APPS2_RTN
+Text HLabel 1550 1400 0    50   Input ~ 0
 APPS2
-Text HLabel 1850 3000 2    50   Output ~ 0
+Text HLabel 1525 3225 0    50   Output ~ 0
 APPS2_5V
 Wire Notes Line
 	2950 3725 550  3725
@@ -1195,9 +1179,9 @@ Text Notes 1200 4025 0    79   ~ 0
 APPS1 STEPDOWN\n\n
 Wire Notes Line
 	2950 3725 2950 6175
-Text Label 1050 3100 0    50   ~ 0
+Text Label 2325 3325 2    50   ~ 0
 APPS2_RTN
-Text Label 1050 3000 0    50   ~ 0
+Text Label 2325 3225 2    50   ~ 0
 APPS2_5V
 Wire Notes Line
 	500  500  2750 500 
@@ -1222,9 +1206,9 @@ Text Notes 14100 2075 0    79   ~ 0
 AUTO TURN OFF SWITCH
 Wire Wire Line
 	13300 3350 14150 3350
-Text HLabel 1550 1400 0    50   Input ~ 0
+Text HLabel 1550 2000 0    50   Input ~ 0
 IMD_Status
-Text Label 2150 1400 2    50   ~ 0
+Text Label 2325 2000 2    50   ~ 0
 IMD_Status
 Wire Wire Line
 	8650 6000 8450 6000
@@ -1246,9 +1230,9 @@ Text Label 10350 6300 0    50   ~ 0
 D_LED_CTRL
 Wire Wire Line
 	10250 6300 10350 6300
-Text HLabel 1550 1800 0    50   Input ~ 0
+Text HLabel 1550 2300 0    50   Input ~ 0
 D_LED_CTRL
-Text Label 2150 1800 2    50   ~ 0
+Text Label 2325 2300 2    50   ~ 0
 D_LED_CTRL
 Text Label 10350 6400 0    50   ~ 0
 Flowrate
@@ -1271,7 +1255,7 @@ Text Label 1750 5175 0    50   ~ 0
 GLV_RTN
 Text Label 950  4325 2    50   ~ 0
 GLV_RTN
-Text Label 1700 8075 0    50   ~ 0
+Text Label 1800 8100 0    50   ~ 0
 GLV_RTN
 Text Label 1800 9500 2    50   ~ 0
 GLV_RTN
@@ -1627,7 +1611,7 @@ Wire Notes Line
 	12600 8900 12800 8900
 Wire Notes Line
 	12800 8650 12600 8650
-Text Label 2150 2200 2    50   ~ 0
+Text Label 2325 1500 2    50   ~ 0
 BRAKE_IN
 Text Label 12250 8600 0    50   ~ 0
 BRAKE_IN
@@ -1710,90 +1694,46 @@ F 3 "~" H 5450 10550 50  0001 C CNN
 	1    5450 10550
 	1    0    0    -1  
 $EndComp
-Text HLabel 1550 1500 0    50   Input ~ 0
+Text HLabel 1550 2100 0    50   Input ~ 0
 CoolTemp
-Text Label 2150 1500 2    50   ~ 0
+Text Label 2325 2100 2    50   ~ 0
 CoolTemp
-Text HLabel 1550 1600 0    50   Input ~ 0
+Text HLabel 1550 2200 0    50   Input ~ 0
 Flowrate
-Text Label 2150 1600 2    50   ~ 0
+Text Label 2325 2200 2    50   ~ 0
 Flowrate
-Text Label 2150 1700 2    50   ~ 0
+Text Label 2325 2725 2    50   ~ 0
 BRAKE_OUT
-Text HLabel 1550 1700 0    50   Input ~ 0
-BRAKE_OUT
-Text HLabel 1850 3200 2    50   Output ~ 0
-Throttle_LV
-Text Label 2150 2300 2    50   ~ 0
-BRAKE_OUT
-Text HLabel 1550 2300 0    50   Input ~ 0
+Text HLabel 1525 2725 0    50   Output ~ 0
 BRAKE_OUT
 Wire Wire Line
 	12700 8700 12700 8600
 Text Label 12850 9575 0    50   ~ 0
 Brake_Light_RTN
-Text Label 1050 3400 0    50   ~ 0
+Text Label 2325 2925 2    50   ~ 0
 Brake_Light_RTN
-Text HLabel 1850 3400 2    50   Output ~ 0
+Text HLabel 1525 2925 0    50   Output ~ 0
 Brake_Light_RTN
 Text Notes 14275 4000 0    51   ~ 0
 A switch that is controlled by\nThrottle_SEL. Pin 1 shorted to\npin 4 when pin 6 HIGH
 Wire Wire Line
-	1550 1900 2150 1900
+	2325 2925 1525 2925
 Wire Wire Line
-	1550 2000 2150 2000
+	2325 3325 1525 3325
 Wire Wire Line
-	1550 2100 2150 2100
+	2325 3225 1525 3225
 Wire Wire Line
-	1550 2200 2150 2200
+	2325 3125 1525 3125
 Wire Wire Line
-	1550 2300 2150 2300
-Wire Wire Line
-	1550 800  2150 800 
-Wire Wire Line
-	1550 900  2150 900 
-Wire Wire Line
-	1550 1000 2150 1000
-Wire Wire Line
-	1550 1100 2150 1100
-Wire Wire Line
-	1550 1200 2150 1200
-Wire Wire Line
-	1550 1300 2150 1300
-Wire Wire Line
-	1550 1400 2150 1400
-Wire Wire Line
-	1550 1500 2150 1500
-Wire Wire Line
-	1550 1600 2150 1600
-Wire Wire Line
-	1550 1700 2150 1700
-Wire Wire Line
-	1550 1800 2150 1800
-Wire Wire Line
-	1050 3400 1850 3400
-Wire Wire Line
-	1050 3300 1850 3300
-Wire Wire Line
-	1050 3200 1850 3200
-Wire Wire Line
-	1050 3100 1850 3100
-Wire Wire Line
-	1050 3000 1850 3000
-Wire Wire Line
-	1050 2900 1850 2900
-Wire Wire Line
-	1050 2800 1850 2800
+	2325 3025 1525 3025
 Text Notes 9050 4550 0    79   ~ 0
 GPIO Expander\n
 Connection ~ 14050 9000
 Text Label 13425 9000 0    50   ~ 0
 Brake_Light
-Text HLabel 1550 2400 0    50   Input ~ 0
+Text HLabel 1525 2825 0    50   Output ~ 0
 Brake_Light
-Wire Wire Line
-	1550 2400 2150 2400
-Text Label 2150 2400 2    50   ~ 0
+Text Label 2325 2825 2    50   ~ 0
 Brake_Light
 Wire Wire Line
 	12700 9000 14050 9000
@@ -1806,14 +1746,10 @@ Voltage Comparator
 Wire Notes Line
 	2750 500  2750 3450
 Wire Notes Line
-	500  500  500  3450
-Wire Notes Line
 	500  3450 2750 3450
-Text HLabel 1550 2500 0    50   Input ~ 0
+Text HLabel 1550 1100 0    50   Input ~ 0
 3.3V
-Wire Wire Line
-	1550 2500 2150 2500
-Text Label 2150 2500 2    50   ~ 0
+Text Label 2325 1100 2    50   ~ 0
 3.3V
 Text Label 15850 9000 2    50   ~ 0
 3.3V
@@ -2030,12 +1966,12 @@ Wire Wire Line
 $Comp
 L TSI_Rev.5-rescue:TL431PS-CarMan_KiCAD_Library-TSI_Rev.5-rescue D2
 U 1 1 60A1FD4B
-P 1700 7475
-F 0 "D2" V 1800 7625 50  0000 R CNN
-F 1 "TL431PS" H 1850 7375 50  0000 R CNN
-F 2 "Package_SO:SO-8_5.3x6.2mm_P1.27mm" H 1700 7325 50  0001 C CIN
-F 3 "http://www.ti.com/lit/ds/symlink/tl431.pdf" H 1700 7475 50  0001 C CIN
-	1    1700 7475
+P 1800 7500
+F 0 "D2" V 1900 7650 50  0000 R CNN
+F 1 "TL431PS" H 1950 7400 50  0000 R CNN
+F 2 "Package_SO:SO-8_5.3x6.2mm_P1.27mm" H 1800 7350 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/tl431.pdf" H 1800 7500 50  0001 C CIN
+	1    1800 7500
 	0    -1   -1   0   
 $EndComp
 Wire Notes Line
@@ -2118,4 +2054,62 @@ Wire Wire Line
 	12150 2900 12150 3325
 Wire Wire Line
 	11450 3000 11450 3325
+Wire Notes Line
+	500  500  500  3450
+Wire Wire Line
+	2325 2625 1525 2625
+Wire Wire Line
+	2325 2525 1525 2525
+Text HLabel 1525 2625 0    50   Output ~ 0
+Throttle_LV
+Text HLabel 1525 2525 0    50   Output ~ 0
+Throttle_PL
+Text Label 2325 2525 2    50   ~ 0
+Throttle_PL
+Text Label 2325 2625 2    50   ~ 0
+Throttle_LV
+Wire Notes Line
+	550  6575 2950 6575
+Wire Notes Line
+	550  8425 2950 8425
+Wire Notes Line
+	2950 6575 2950 8425
+Wire Wire Line
+	700  7100 1000 7100
+Wire Wire Line
+	2250 7100 2675 7100
+Wire Wire Line
+	1525 2725 2325 2725
+Wire Wire Line
+	1525 2825 2325 2825
+Wire Wire Line
+	1550 2300 2325 2300
+Wire Wire Line
+	1550 2200 2325 2200
+Wire Wire Line
+	1550 2100 2325 2100
+Wire Wire Line
+	1550 2000 2325 2000
+Wire Wire Line
+	1550 1800 2325 1800
+Wire Wire Line
+	1550 1700 2325 1700
+Wire Wire Line
+	1550 1600 2325 1600
+Wire Wire Line
+	1550 1500 2325 1500
+Wire Wire Line
+	1550 1400 2325 1400
+Wire Wire Line
+	1550 1300 2325 1300
+Wire Wire Line
+	1550 1200 2325 1200
+Wire Wire Line
+	1550 1100 2325 1100
+Wire Wire Line
+	1550 1000 2325 1000
+Wire Wire Line
+	1550 900  2325 900 
+Wire Wire Line
+	1550 800  2325 800 
 $EndSCHEMATC

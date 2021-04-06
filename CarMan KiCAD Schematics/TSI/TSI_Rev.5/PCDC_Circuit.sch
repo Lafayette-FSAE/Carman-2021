@@ -15,15 +15,15 @@ Comment4 ""
 $EndDescr
 Text Label 21925 1850 2    47   ~ 0
 5HV
-Text Label 2150 800  2    50   ~ 0
+Text Label 2150 1025 2    50   ~ 0
 MC_Voltage
-Text Label 2150 1000 2    50   ~ 0
+Text Label 2150 925  2    50   ~ 0
 IO_Ground
-Text Label 2150 900  2    50   ~ 0
+Text Label 2150 1125 2    50   ~ 0
 TS_Voltage
-Text Notes 1100 650  0    79   ~ 0
-HV SIGNALS\n
-Text HLabel 1350 800  0    50   Input ~ 0
+Text Notes 725  675  0    79   ~ 0
+HIGH VOLTAGE SIGNALS\n
+Text HLabel 1350 1025 0    50   Input ~ 0
 MC_Voltage
 Text Notes 2300 10850 0    197  ~ 0
 LOW VOLTAGE\n
@@ -178,7 +178,7 @@ $Comp
 L Device:D D12
 U 1 1 6017ACEB
 P 7850 11875
-F 0 "D12" V 7850 11950 50  0000 L CNN
+F 0 "D12" V 7850 11650 50  0000 L CNN
 F 1 "1N4001" V 8050 11725 50  0000 L CNN
 F 2 "Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal" H 7850 11875 50  0001 C CNN
 F 3 "~" H 7850 11875 50  0001 C CNN
@@ -235,83 +235,67 @@ Wire Bus Line
 	14200 4975 14600 4975
 Text Notes 13700 4125 0    79   ~ 0
 SR Latching Logic\n
-Text HLabel 1350 900  0    50   Input ~ 0
+Text HLabel 1350 1125 0    50   Input ~ 0
 TS_Voltage
-Text HLabel 1350 1000 0    50   Input ~ 0
+Text HLabel 1350 925  0    50   Input ~ 0
 IO_Ground
-Text Label 2150 1100 2    50   ~ 0
+Text Label 2150 825  2    50   ~ 0
 5HV
-Text HLabel 1350 1100 0    50   Input ~ 0
+Text HLabel 1350 825  0    50   Input ~ 0
 5HV
-Text Label 1950 11700 2    50   ~ 0
+Text Label 1850 11350 2    50   ~ 0
 GLV_RTN
-Text Label 1950 11000 2    50   ~ 0
+Text Label 1850 10950 2    50   ~ 0
 24V
-Text Label 1950 11500 2    50   ~ 0
+Text Label 1850 11450 2    50   ~ 0
 Safety_Loop
-Text Label 1950 11600 2    50   ~ 0
-BRAKE_OUT
-Text Label 1950 11200 2    50   ~ 0
+Text Label 1850 11150 2    50   ~ 0
 3.3V
-Text Label 1950 11100 2    50   ~ 0
+Text Label 1850 11050 2    50   ~ 0
 5V
-Text Notes 1000 10800 0    79   ~ 0
-LV SIGNALS\n
-Text HLabel 1250 11500 0    50   Input ~ 0
+Text Notes 675  10825 0    79   ~ 0
+LOW VOLTAGE SIGNALS\n
+Text HLabel 1150 11450 0    50   Input ~ 0
 Safety_Loop
-Text HLabel 1250 11700 0    50   Input ~ 0
+Text HLabel 1150 11350 0    50   Input ~ 0
 GLV_RTN
-Text HLabel 1250 11000 0    50   Input ~ 0
+Text HLabel 1150 10950 0    50   Input ~ 0
 24V
-Text HLabel 1250 11100 0    50   Input ~ 0
+Text HLabel 1150 11050 0    50   Input ~ 0
 5V
-Text HLabel 1250 11600 0    50   Input ~ 0
-BRAKE_OUT
-Text Label 1950 11400 2    50   ~ 0
-GLV_RTN
-Text Label 1950 11300 2    50   ~ 0
+Text Label 1850 11250 2    50   ~ 0
 AIRS+
-Text HLabel 1250 11400 0    50   Input ~ 0
-AIRS-
-Text HLabel 1250 11300 0    50   Input ~ 0
+Text HLabel 1150 11250 0    50   Input ~ 0
 AIRS+
-Text HLabel 1250 11200 0    50   Input ~ 0
+Text HLabel 1150 11150 0    50   Input ~ 0
 3.3V
 Wire Notes Line
 	550  10650 2100 10650
-Wire Notes Line
-	550  11900 2100 11900
-Text Label 1950 11800 2    50   ~ 0
+Text Label 1850 11625 2    50   ~ 0
 PC_Ready
-Text HLabel 1250 11800 0    50   Input ~ 0
+Text HLabel 1150 11625 0    50   Output ~ 0
 PC_Ready
-Wire Notes Line
-	550  10650 550  11900
-Wire Notes Line
-	2100 10650 2100 11900
 Text Notes 5250 14550 0    47   ~ 0
 24V (GLV) --> 24V (ISO)\n
 Text Notes 19175 15175 0    118  ~ 0
 PRECHARGE & DISCHARGE CIRCUIT
-Text Label 2150 1300 2    50   ~ 0
+Text Label 2150 1450 2    50   ~ 0
 DC_RELAY-
-Text Label 2150 1200 2    50   ~ 0
+Text Label 2150 1350 2    50   ~ 0
 DC_RELAY+
-Text HLabel 1350 1300 0    50   Input ~ 0
+Text HLabel 1350 1450 0    50   Output ~ 0
 DC_RELAY-
-Text HLabel 1350 1200 0    50   Input ~ 0
-DC_RELAY+
-Text Label 2150 1500 2    50   ~ 0
+Text Label 2150 1650 2    50   ~ 0
 PC_RELAY-
-Text Label 2150 1400 2    50   ~ 0
+Text Label 2150 1550 2    50   ~ 0
 PC_RELAY+
-Text HLabel 1350 1500 0    50   Input ~ 0
+Text HLabel 1350 1650 0    50   Output ~ 0
 PC_RELAY-
-Text HLabel 1350 1400 0    50   Input ~ 0
+Text HLabel 1350 1550 0    50   Output ~ 0
 PC_RELAY+
-Text Label 2150 1600 2    50   ~ 0
+Text Label 2150 1750 2    50   ~ 0
 IGNI_VCC
-Text HLabel 1350 1600 0    50   Input ~ 0
+Text HLabel 1350 1750 0    50   Output ~ 0
 IGNI_VCC
 Text Notes 2250 10500 0    197  ~ 0
 HIGH VOLTAGE\n
@@ -483,41 +467,37 @@ Wire Wire Line
 Wire Wire Line
 	19350 11425 20750 11425
 Wire Wire Line
-	1350 1600 2150 1600
+	1350 1750 2150 1750
 Wire Wire Line
-	1350 1500 2150 1500
+	1350 1650 2150 1650
 Wire Wire Line
-	1350 1400 2150 1400
+	1350 1550 2150 1550
 Wire Wire Line
-	1350 1300 2150 1300
+	1350 1450 2150 1450
 Wire Wire Line
-	1350 1200 2150 1200
+	1350 1350 2150 1350
 Wire Wire Line
-	1350 1100 2150 1100
+	1350 825  2150 825 
 Wire Wire Line
-	1350 1000 2150 1000
+	1350 925  2150 925 
 Wire Wire Line
-	1350 900  2150 900 
+	1350 1125 2150 1125
 Wire Wire Line
-	1350 800  2150 800 
+	1350 1025 2150 1025
 Wire Wire Line
-	1250 11600 1950 11600
+	1150 11350 1850 11350
 Wire Wire Line
-	1250 11700 1950 11700
+	1150 11625 1850 11625
 Wire Wire Line
-	1250 11800 1950 11800
+	1150 11450 1850 11450
 Wire Wire Line
-	1250 11500 1950 11500
+	1150 11250 1850 11250
 Wire Wire Line
-	1250 11400 1950 11400
+	1150 11150 1850 11150
 Wire Wire Line
-	1250 11300 1950 11300
+	1150 11050 1850 11050
 Wire Wire Line
-	1250 11200 1950 11200
-Wire Wire Line
-	1250 11100 1950 11100
-Wire Wire Line
-	1250 11000 1950 11000
+	1150 10950 1850 10950
 Text Label 4600 15850 0    59   ~ 0
 5V_ISO_RTN
 Text Label 4600 15475 0    59   ~ 0
@@ -715,7 +695,7 @@ L Device:R R47
 U 1 1 608786E7
 P 5100 12700
 F 0 "R47" V 5200 12600 50  0000 L CNN
-F 1 "499" V 5100 12600 50  0000 L CNN
+F 1 "499" V 5100 12625 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5030 12700 50  0001 C CNN
 F 3 "~" H 5100 12700 50  0001 C CNN
 	1    5100 12700
@@ -1969,4 +1949,14 @@ Wire Notes Line
 	16725 14650 22800 14650
 Wire Notes Line
 	16725 10400 16725 14650
+Wire Notes Line
+	2100 10650 2100 11750
+Wire Notes Line
+	550  11750 2100 11750
+Wire Notes Line
+	550  11750 550  10650
+Text Notes 7925 11950 0    39   ~ 0
+Flyback\ndiode
+Text HLabel 1350 1350 0    50   Output ~ 0
+DC_RELAY+
 $EndSCHEMATC
