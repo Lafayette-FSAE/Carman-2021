@@ -1158,37 +1158,37 @@ Text Label 5025 1700 0    49   ~ 0
 5V_ISO_RTN
 Text Label 8100 3750 0    49   ~ 0
 5V_ISO_RTN
-Text Label 5850 3375 0    50   ~ 0
+Text Label 5850 3150 0    50   ~ 0
 Flowrate_RTN
 Wire Wire Line
-	5353 3485 6903 3485
-Text Label 5353 3485 0    50   ~ 0
+	5353 3260 6903 3260
+Text Label 5353 3260 0    50   ~ 0
 SCL_uC
-Text Label 6903 3485 2    50   ~ 0
+Text Label 6903 3260 2    50   ~ 0
 SCL_TSI
-Text Label 6053 3485 0    50   ~ 0
+Text Label 6053 3260 0    50   ~ 0
 SCL
 Wire Wire Line
-	5353 3585 6903 3585
-Text Label 5353 3585 0    50   ~ 0
+	5353 3360 6903 3360
+Text Label 5353 3360 0    50   ~ 0
 SDA_uC
-Text Label 6053 3585 0    50   ~ 0
+Text Label 6053 3360 0    50   ~ 0
 SDA
-Text Label 6903 3585 2    50   ~ 0
+Text Label 6903 3360 2    50   ~ 0
 SDA_TSI
 Wire Wire Line
-	5350 3375 6900 3375
-Text Label 5350 3375 0    50   ~ 0
+	5350 3150 6900 3150
+Text Label 5350 3150 0    50   ~ 0
 AIRS-
-Text Label 6900 3375 2    50   ~ 0
+Text Label 6900 3150 2    50   ~ 0
 GLV_RTN
-Text Label 5350 3275 0    50   ~ 0
+Text Label 5350 3050 0    50   ~ 0
 24V
-Text Label 6900 3275 2    50   ~ 0
+Text Label 6900 3050 2    50   ~ 0
 24V_AMS_IN
 Wire Wire Line
-	5350 3275 6900 3275
-Text Label 6300 3275 2    50   ~ 0
+	5350 3050 6900 3050
+Text Label 6300 3050 2    50   ~ 0
 24V_IMD_IN
 Wire Wire Line
 	5350 2925 5800 2925
@@ -1230,24 +1230,22 @@ Wire Wire Line
 Text Notes 4125 1000 0    39   ~ 0
 (120 mA to open)
 Wire Wire Line
-	5350 3150 5800 3150
-Wire Wire Line
-	6900 3150 6400 3150
-Text Label 6900 3150 2    50   ~ 0
+	5300 4175 5750 4175
+Text Label 6950 4175 2    50   ~ 0
 IMD_Status
-Text Label 5350 3150 0    50   ~ 0
+Text Label 5300 4175 0    50   ~ 0
 24V_IMD_IN
 $Comp
 L Device:Jumper JP?
 U 1 1 6071AD5F
-P 6100 3150
+P 6050 4175
 AR Path="/6196BF15/6071AD5F" Ref="JP?"  Part="1" 
-AR Path="/6071AD5F" Ref="JP9"  Part="1" 
-F 0 "JP9" H 6175 3300 50  0000 R CNN
-F 1 "IMD Testing Jumper" H 6800 3150 50  0001 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6100 3150 50  0001 C CNN
-F 3 "~" H 6100 3150 50  0001 C CNN
-	1    6100 3150
+AR Path="/6071AD5F" Ref="JP11"  Part="1" 
+F 0 "JP11" H 6125 4300 39  0000 R CNN
+F 1 "Safety Loop Jumper: IMD" H 6750 4175 50  0001 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6050 4175 50  0001 C CNN
+F 3 "~" H 6050 4175 50  0001 C CNN
+	1    6050 4175
 	1    0    0    -1  
 $EndComp
 NoConn ~ 2050 675 
@@ -1292,13 +1290,7 @@ MC: FW = 13 RW = 14\n(active low)
 Text Notes 5500 2650 0    79   ~ 0
 Jumpers and Shorts
 Wire Notes Line
-	5200 3675 7025 3675
-Wire Notes Line
-	7025 3675 7025 2500
-Wire Notes Line
 	7025 2500 5200 2500
-Wire Notes Line
-	5200 2500 5200 3675
 Text Notes 2050 7000 0    50   ~ 0
 LOW VOLTAGE\n
 $Sheet
@@ -1418,4 +1410,154 @@ Text Label 11100 4725 2    50   ~ 0
 5V
 Text Label 11100 4625 2    50   ~ 0
 10V
+Text Notes 5350 3725 0    71   ~ 0
+Safety Loop Testing Jumpers
+Wire Wire Line
+	5300 3975 5750 3975
+Text Label 5300 3975 0    50   ~ 0
+24V_AMS_IN
+$Comp
+L Device:Jumper JP?
+U 1 1 608346BC
+P 6050 3975
+AR Path="/6196BF15/608346BC" Ref="JP?"  Part="1" 
+AR Path="/608346BC" Ref="JP10"  Part="1" 
+F 0 "JP10" H 6125 4100 39  0000 R CNN
+F 1 "Safety Loop Jumper: Battery Packs" H 6750 3975 50  0001 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6050 3975 50  0001 C CNN
+F 3 "~" H 6050 3975 50  0001 C CNN
+	1    6050 3975
+	1    0    0    -1  
+$EndComp
+Text Label 6950 3975 2    50   ~ 0
+24V_AMS_RTN
+Wire Wire Line
+	5300 4800 5750 4800
+$Comp
+L Device:Jumper JP?
+U 1 1 6092356F
+P 6050 4800
+AR Path="/6196BF15/6092356F" Ref="JP?"  Part="1" 
+AR Path="/6092356F" Ref="JP14"  Part="1" 
+F 0 "JP14" H 6125 4925 39  0000 R CNN
+F 1 "Safety Loop Jumper: BOT Switch" H 6750 4800 50  0001 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6050 4800 50  0001 C CNN
+F 3 "~" H 6050 4800 50  0001 C CNN
+	1    6050 4800
+	1    0    0    -1  
+$EndComp
+Text Label 5300 4800 0    50   ~ 0
+SL1_Out
+Text Label 6950 4800 2    50   ~ 0
+BOT_Out
+Wire Wire Line
+	5300 5000 5750 5000
+$Comp
+L Device:Jumper JP?
+U 1 1 609CEE50
+P 6050 5000
+AR Path="/6196BF15/609CEE50" Ref="JP?"  Part="1" 
+AR Path="/609CEE50" Ref="JP15"  Part="1" 
+F 0 "JP15" H 6125 5125 39  0000 R CNN
+F 1 "Safety Loop Jumper: RSP" H 6750 5000 50  0001 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6050 5000 50  0001 C CNN
+F 3 "~" H 6050 5000 50  0001 C CNN
+	1    6050 5000
+	1    0    0    -1  
+$EndComp
+Text Label 6950 5000 2    50   ~ 0
+MRESET_Contact
+Text Label 5300 5000 0    50   ~ 0
+AIRS+
+$Comp
+L Device:Jumper_NC_Dual JP16
+U 1 1 60B2AFAE
+P 6050 5225
+F 0 "JP16" H 6050 5325 39  0000 C CNN
+F 1 "Safety Loop Jumper: J10 - Voltage" H 6050 5373 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 6050 5225 50  0001 C CNN
+F 3 "~" H 6050 5225 50  0001 C CNN
+	1    6050 5225
+	1    0    0    -1  
+$EndComp
+Text Label 6275 5400 2    50   ~ 0
+24V
+Wire Wire Line
+	6050 5325 6050 5400
+Wire Wire Line
+	6050 5400 6275 5400
+Wire Wire Line
+	5300 5225 5800 5225
+Text Label 5300 5225 0    50   ~ 0
+SL1_In
+Text Label 6950 5225 2    49   ~ 0
+COOL_24V
+Wire Notes Line
+	7025 3450 7025 2500
+Wire Notes Line
+	5200 2500 5200 3450
+Wire Notes Line
+	5200 3450 7025 3450
+$Comp
+L Device:Jumper JP?
+U 1 1 60D11F30
+P 6050 4600
+AR Path="/6196BF15/60D11F30" Ref="JP?"  Part="1" 
+AR Path="/60D11F30" Ref="JP13"  Part="1" 
+AR Path="/5FE1DE7D/60D11F30" Ref="JP?"  Part="1" 
+F 0 "JP13" H 6125 4725 39  0000 R CNN
+F 1 "Safety Loop Jumper: AMS Relay" H 6750 4600 50  0001 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6050 4600 50  0001 C CNN
+F 3 "~" H 6050 4600 50  0001 C CNN
+	1    6050 4600
+	1    0    0    -1  
+$EndComp
+Text Label 5300 4600 0    50   ~ 0
+AMS_Status
+Text Label 6950 4600 2    50   ~ 0
+AMS_Button_RTN
+$Comp
+L Device:Jumper JP?
+U 1 1 60D2D031
+P 6050 4400
+AR Path="/6196BF15/60D2D031" Ref="JP?"  Part="1" 
+AR Path="/60D2D031" Ref="JP12"  Part="1" 
+AR Path="/5FE1DE7D/60D2D031" Ref="JP?"  Part="1" 
+F 0 "JP12" H 6125 4525 39  0000 R CNN
+F 1 "Safety Loop Jumper: IMD Relay" H 6750 4400 50  0001 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6050 4400 50  0001 C CNN
+F 3 "~" H 6050 4400 50  0001 C CNN
+	1    6050 4400
+	1    0    0    -1  
+$EndComp
+Text Label 6950 4400 2    50   ~ 0
+IMD_Button_RTN
+Text Label 5300 4400 0    50   ~ 0
+IMD_Status
+Wire Wire Line
+	6350 4400 6950 4400
+Wire Wire Line
+	6350 4600 6950 4600
+Wire Wire Line
+	6350 4175 6950 4175
+Wire Wire Line
+	6350 3975 6950 3975
+Wire Wire Line
+	6350 4800 6950 4800
+Wire Wire Line
+	6350 5000 6950 5000
+Wire Wire Line
+	6300 5225 6950 5225
+Wire Wire Line
+	5300 4400 5750 4400
+Wire Wire Line
+	5300 4600 5750 4600
+Wire Notes Line
+	5150 5450 7075 5450
+Wire Notes Line
+	7075 5450 7075 3550
+Wire Notes Line
+	5150 5450 5150 3550
+Wire Notes Line
+	5150 3550 7075 3550
 $EndSCHEMATC

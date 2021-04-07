@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 3 6
+Sheet 6 6
 Title ""
 Date ""
 Rev ""
@@ -506,7 +506,7 @@ Text Notes 3750 6850 2    197  ~ 0
 IMD Relay
 Text Notes 8950 6850 2    197  ~ 0
 AMS Relay
-Text Label 2625 10825 2    50   ~ 0
+Text Label 3950 10850 2    50   ~ 0
 IMD_Status
 Text HLabel 14950 2100 0    50   Input ~ 0
 AMS_Status
@@ -528,24 +528,24 @@ Wire Notes Line
 	4850 8000 4650 8000
 Wire Notes Line
 	9950 8175 9950 7975
-Text Label 5775 10825 0    50   ~ 0
+Text Label 7325 10850 0    50   ~ 0
 AMS_Button_RTN
-Text Notes 6475 10675 0    50   ~ 0
+Text Notes 8025 10700 0    50   ~ 0
 AMS Reset BTN\n
 Wire Notes Line
-	6525 10975 6975 10975
+	8075 11000 8525 11000
 Wire Notes Line
-	6975 10975 6975 10675
+	8525 11000 8525 10700
 Wire Notes Line
-	6975 10675 6525 10675
+	8525 10700 8075 10700
 Wire Notes Line
-	6525 10675 6525 10975
-Text Label 7675 10825 2    50   ~ 0
+	8075 10700 8075 11000
+Text Label 9225 10850 2    50   ~ 0
 AMS_Status
 Wire Wire Line
-	6825 10825 7675 10825
+	8375 10850 9225 10850
 Wire Wire Line
-	5775 10825 6675 10825
+	7325 10850 8225 10850
 $Comp
 L TSI_Rev.5-rescue:G5LE-1-E-Lafayette_Electric_Car_Internals RL?
 U 1 1 5FB466B1
@@ -827,20 +827,20 @@ Text Label 1550 8400 0    50   ~ 0
 Wire Wire Line
 	1800 9400 2150 9400
 Wire Wire Line
-	725  10825 1625 10825
+	2050 10850 2950 10850
 Wire Wire Line
-	1775 10825 2625 10825
+	3100 10850 3950 10850
 Wire Notes Line
-	1475 10675 1475 10975
+	2800 10700 2800 11000
 Wire Notes Line
-	1925 10675 1475 10675
+	3250 10700 2800 10700
 Wire Notes Line
-	1925 10975 1925 10675
+	3250 11000 3250 10700
 Wire Notes Line
-	1475 10975 1925 10975
-Text Notes 1425 10675 0    50   ~ 0
+	2800 11000 3250 11000
+Text Notes 2750 10700 0    50   ~ 0
 IMD Reset BTN\n
-Text Label 725  10825 0    50   ~ 0
+Text Label 2050 10850 0    50   ~ 0
 IMD_Button_RTN
 Wire Notes Line
 	5700 11150 10450 11150
@@ -1156,9 +1156,9 @@ Text Notes 7850 2575 2    43   ~ 0
 Cooling Sensors\n(J19)
 Text Notes 4475 8300 0    47   ~ 0
 Dashboard (J11)\n
-Text Notes 1525 11075 0    47   ~ 0
+Text Notes 2850 11100 0    47   ~ 0
 LSP (J20)\n
-Text Notes 6575 11075 0    47   ~ 0
+Text Notes 8125 11100 0    47   ~ 0
 LSP (J20)\n
 $Comp
 L pspice:CAP C28
@@ -1182,54 +1182,6 @@ F 3 "~" H 1350 4800 50  0001 C CNN
 	1    1350 4800
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:Jumper JP?
-U 1 1 607BAD41
-P 9375 10850
-AR Path="/6196BF15/607BAD41" Ref="JP?"  Part="1" 
-AR Path="/607BAD41" Ref="JP?"  Part="1" 
-AR Path="/5FE1DE7D/607BAD41" Ref="JP11"  Part="1" 
-F 0 "JP11" H 9450 11000 50  0000 R CNN
-F 1 "IMD Testing Jumper" H 10075 10850 50  0001 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 9375 10850 50  0001 C CNN
-F 3 "~" H 9375 10850 50  0001 C CNN
-	1    9375 10850
-	1    0    0    -1  
-$EndComp
-Text Label 10375 10850 2    50   ~ 0
-AMS_Status
-Text Label 8375 10850 0    50   ~ 0
-AMS_Button_RTN
-Wire Wire Line
-	8375 10850 9075 10850
-Wire Wire Line
-	10375 10850 9675 10850
-$Comp
-L Device:Jumper JP?
-U 1 1 6089741C
-P 4225 10825
-AR Path="/6196BF15/6089741C" Ref="JP?"  Part="1" 
-AR Path="/6089741C" Ref="JP?"  Part="1" 
-AR Path="/5FE1DE7D/6089741C" Ref="JP10"  Part="1" 
-F 0 "JP10" H 4300 10975 50  0000 R CNN
-F 1 "IMD Testing Jumper" H 4925 10825 50  0001 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4225 10825 50  0001 C CNN
-F 3 "~" H 4225 10825 50  0001 C CNN
-	1    4225 10825
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3225 10825 3925 10825
-Wire Wire Line
-	5225 10825 4525 10825
-Text Notes 3700 11025 0    47   ~ 0
-Jumper across IMD Reset Button\nfor Safety Loop Testing
-Text Label 5225 10825 2    50   ~ 0
-IMD_Status
-Text Label 3225 10825 0    50   ~ 0
-IMD_Button_RTN
-Text Notes 8850 11075 0    47   ~ 0
-Jumper across AMS Reset Button\nfor Safety Loop Testing
 Text Label 13175 7250 0    50   ~ 0
 MRESET_Contact
 $Comp
@@ -1238,8 +1190,8 @@ U 1 1 60A2B406
 P 8125 900
 AR Path="/6196BF15/60A2B406" Ref="JP?"  Part="1" 
 AR Path="/60A2B406" Ref="JP?"  Part="1" 
-AR Path="/5FE1DE7D/60A2B406" Ref="JP12"  Part="1" 
-F 0 "JP12" H 8200 1050 50  0000 R CNN
+AR Path="/5FE1DE7D/60A2B406" Ref="JP9"  Part="1" 
+F 0 "JP9" H 8200 1050 50  0000 R CNN
 F 1 "If CAN_Shield & Chassis_GND need to be shorted together, weren't sure" H 8825 900 50  0001 R CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 8125 900 50  0001 C CNN
 F 3 "~" H 8125 900 50  0001 C CNN
@@ -1250,8 +1202,8 @@ Wire Wire Line
 	9025 900  8425 900 
 Text Label 9025 900  2    50   ~ 0
 Cooling_power
-Text Notes 7625 1050 0    47   ~ 0
-Jumper to keep cooling on\n
+Text Notes 7475 1150 0    47   ~ 0
+Jumper to force voltage to be sent to \ncooling if Cooling_CTRl isn't working
 Wire Wire Line
 	7250 900  7825 900 
 Wire Notes Line
