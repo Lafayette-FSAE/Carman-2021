@@ -1441,20 +1441,8 @@ Wire Wire Line
 	16400 6825 16400 7225
 Wire Wire Line
 	17050 6425 17050 6625
-Connection ~ 16600 6425
-Wire Wire Line
-	16600 6425 16500 6425
-Wire Wire Line
-	16600 5625 16600 5675
-Wire Wire Line
-	16600 5975 16600 6075
-Wire Wire Line
-	16600 6425 16600 6375
-Wire Wire Line
-	16300 5625 16600 5625
 Text Label 16850 7225 2    55   ~ 0
 IO_Ground
-Connection ~ 16600 5625
 Wire Wire Line
 	16400 7225 17050 7225
 $Comp
@@ -1475,10 +1463,6 @@ Wire Wire Line
 	17050 6175 17050 6425
 Wire Wire Line
 	17050 5625 17050 5875
-Wire Wire Line
-	16600 6425 17050 6425
-Wire Wire Line
-	16600 5625 17050 5625
 $Comp
 L Device:D D13
 U 1 1 5F9CD39C
@@ -1770,8 +1754,6 @@ Connection ~ 5725 5200
 Text Notes 7925 4075 0    197  ~ 0
 PRE-CHARGE LOGIC CIRCUIT
 Wire Notes Line
-	4750 3725 4750 7325
-Wire Notes Line
 	18075 3600 22100 3600
 Wire Notes Line
 	22100 3600 22100 1150
@@ -1825,149 +1807,178 @@ F 3 "~" H 19550 11275 50  0001 C CNN
 	1    19350 11275
 	1    0    0    -1  
 $EndComp
-Text Label 15100 8375 0    55   ~ 0
+Text Label 15050 8375 0    55   ~ 0
 IO_Ground
-Wire Wire Line
-	15100 8375 15600 8375
 $Comp
 L Device:LED D6
 U 1 1 5F9CE834
-P 16600 6225
-F 0 "D6" V 16600 6400 50  0000 R CNN
-F 1 "GREEN LED" H 16825 6050 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 16600 6225 50  0001 C CNN
-F 3 "http://static.vcclite.com/pdf/VAOL-S8GT4-LED-0805-green.pdf" H 16600 6225 50  0001 C CNN
-F 4 "VAOL-S8GT4" V 16600 6225 50  0001 C CNN "Part Name"
-	1    16600 6225
+P 14875 7725
+F 0 "D6" V 14875 7900 50  0000 R CNN
+F 1 "GREEN LED" V 14725 8200 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 14875 7725 50  0001 C CNN
+F 3 "http://static.vcclite.com/pdf/VAOL-S8GT4-LED-0805-green.pdf" H 14875 7725 50  0001 C CNN
+F 4 "VAOL-S8GT4" V 14875 7725 50  0001 C CNN "Part Name"
+	1    14875 7725
 	0    -1   -1   0   
 $EndComp
-Wire Notes Line
-	4750 3725 15250 3725
-Wire Notes Line
-	4750 7325 15250 7325
-Text Label 14600 6625 0    59   ~ 0
+Text Label 14450 6625 2    59   ~ 0
 PC_Control
-Connection ~ 14250 6625
 Wire Wire Line
-	14250 6625 15600 6625
-Wire Wire Line
-	13550 6625 14250 6625
+	13550 6625 13925 6625
 $Comp
 L Connector:TestPoint TP?
 U 1 1 60D4CBAD
-P 14250 6475
+P 13925 6475
 AR Path="/5FC85F57/60D4CBAD" Ref="TP?"  Part="1" 
 AR Path="/6196BF15/60D4CBAD" Ref="TP19"  Part="1" 
-F 0 "TP19" H 14200 6675 50  0000 L CNN
-F 1 "PC_Control" H 14275 6525 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D3.0mm" H 14450 6475 50  0001 C CNN
-F 3 "~" H 14450 6475 50  0001 C CNN
-	1    14250 6475
+F 0 "TP19" H 13875 6675 50  0000 L CNN
+F 1 "PC_Control" H 13950 6525 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_D3.0mm" H 14125 6475 50  0001 C CNN
+F 3 "~" H 14125 6475 50  0001 C CNN
+	1    13925 6475
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	14250 6475 14250 6625
-Wire Notes Line
-	15250 3725 15250 7325
+	13925 6475 13925 6625
 Wire Bus Line
-	15000 4175 15000 4375
+	14400 4050 14400 4250
 Wire Bus Line
-	13500 4175 13500 4375
+	12900 4050 12900 4250
 Wire Bus Line
-	15000 4375 15000 4975
-Connection ~ 15000 4375
+	14400 4250 14400 4850
+Connection ~ 14400 4250
 Wire Bus Line
-	13500 4375 13500 4975
-Connection ~ 13500 4375
-Text Notes 14750 4650 0    79   ~ 0
+	12900 4250 12900 4850
+Connection ~ 12900 4250
+Text Notes 14150 4525 0    79   ~ 0
 0\n
-Text Notes 14350 4950 0    79   ~ 0
+Text Notes 13750 4825 0    79   ~ 0
 X
-Text Notes 14425 4500 2    79   ~ 0
+Text Notes 13825 4375 2    79   ~ 0
 X
 Wire Notes Line
-	13500 4825 15000 4825
+	12900 4700 14400 4700
 Wire Notes Line
-	13500 4675 15000 4675
+	12900 4550 14400 4550
 Wire Notes Line
-	13500 4525 15000 4525
+	12900 4400 14400 4400
 Wire Bus Line
-	15000 4375 13500 4375
+	14400 4250 12900 4250
 Wire Bus Line
-	14600 4975 15000 4975
+	14000 4850 14400 4850
 Wire Bus Line
-	14600 4175 14600 4975
-Connection ~ 14600 4975
-Connection ~ 14600 4175
-Text Notes 14750 4500 0    79   ~ 0
+	14000 4050 14000 4850
+Connection ~ 14000 4850
+Connection ~ 14000 4050
+Text Notes 14150 4375 0    79   ~ 0
 X
-Text Notes 14750 4950 0    79   ~ 0
+Text Notes 14150 4825 0    79   ~ 0
 X
-Text Notes 14750 4800 0    79   ~ 0
+Text Notes 14150 4675 0    79   ~ 0
 1
 Wire Bus Line
-	15000 4175 14600 4175
-Text Notes 14750 4350 0    79   ~ 0
+	14400 4050 14000 4050
+Text Notes 14150 4225 0    79   ~ 0
 ~Q\n
-Text Notes 13700 4125 0    79   ~ 0
+Text Notes 13100 4000 0    79   ~ 0
 SR Latching Logic\n
 Wire Bus Line
-	14200 4975 14600 4975
+	13600 4850 14000 4850
 Wire Bus Line
-	14200 4175 14200 4975
-Connection ~ 14200 4975
-Text Notes 14350 4800 0    79   ~ 0
+	13600 4050 13600 4850
+Connection ~ 13600 4850
+Text Notes 13750 4675 0    79   ~ 0
 0
-Text Notes 14350 4650 0    79   ~ 0
+Text Notes 13750 4525 0    79   ~ 0
 1\n
-Text Notes 13950 4650 0    79   ~ 0
+Text Notes 13350 4525 0    79   ~ 0
 1\n
-Text Notes 13600 4950 0    79   ~ 0
+Text Notes 13000 4825 0    79   ~ 0
 1\n
-Text Notes 13600 4800 0    79   ~ 0
+Text Notes 13000 4675 0    79   ~ 0
 1\n
-Text Notes 13950 4950 0    79   ~ 0
+Text Notes 13350 4825 0    79   ~ 0
 1\n
-Text Notes 13950 4500 0    79   ~ 0
+Text Notes 13350 4375 0    79   ~ 0
 0
-Text Notes 13950 4800 0    79   ~ 0
+Text Notes 13350 4675 0    79   ~ 0
 0
-Text Notes 13600 4650 0    79   ~ 0
+Text Notes 13000 4525 0    79   ~ 0
 0
-Text Notes 13600 4500 0    79   ~ 0
+Text Notes 13000 4375 0    79   ~ 0
 0
 Wire Bus Line
-	14200 4175 13800 4175
-Connection ~ 14200 4175
+	13600 4050 13200 4050
+Connection ~ 13600 4050
 Wire Bus Line
-	13800 4975 14200 4975
-Connection ~ 13800 4975
+	13200 4850 13600 4850
+Connection ~ 13200 4850
 Wire Bus Line
-	13800 4175 13500 4175
-Connection ~ 13800 4175
+	13200 4050 12900 4050
+Connection ~ 13200 4050
 Wire Bus Line
-	13800 4175 13800 4975
+	13200 4050 13200 4850
 Wire Bus Line
-	13500 4975 13800 4975
+	12900 4850 13200 4850
 Wire Bus Line
-	14600 4175 14200 4175
-Text Notes 14350 4350 0    79   ~ 0
+	14000 4050 13600 4050
+Text Notes 13750 4225 0    79   ~ 0
 Q\n
-Text Notes 13950 4350 0    79   ~ 0
+Text Notes 13350 4225 0    79   ~ 0
 ~R\n
-Text Notes 13600 4350 0    79   ~ 0
+Text Notes 13000 4225 0    79   ~ 0
 ~S
 $Comp
 L Device:R R67
 U 1 1 5F9DBFC0
-P 16600 5825
-F 0 "R67" V 16500 5825 50  0000 C CNN
-F 1 "2.4K" V 16600 5825 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 16530 5825 50  0001 C CNN
-F 3 "~" H 16600 5825 50  0001 C CNN
-	1    16600 5825
+P 14875 6950
+F 0 "R67" V 14775 6950 50  0000 C CNN
+F 1 "1K" V 14875 6950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 14805 6950 50  0001 C CNN
+F 3 "~" H 14875 6950 50  0001 C CNN
+	1    14875 6950
 	-1   0    0    1   
 $EndComp
 Text Label 8720 12025 2    50   ~ 0
 IO_Ground
+Connection ~ 13925 6625
+Wire Wire Line
+	13925 6625 14875 6625
+Wire Notes Line
+	14575 7325 4750 7325
+Wire Notes Line
+	4750 3725 4750 7325
+Wire Wire Line
+	16300 5625 17050 5625
+Wire Wire Line
+	16500 6425 17050 6425
+Wire Wire Line
+	14875 6625 14875 6800
+Connection ~ 14875 6625
+Wire Wire Line
+	14875 6625 15600 6625
+Wire Wire Line
+	14875 8375 15600 8375
+Wire Wire Line
+	14875 7875 14875 8375
+Wire Wire Line
+	14875 7100 14875 7575
+Text Notes 14325 7475 0    39   ~ 0
+Pre-Charge LED
+Wire Notes Line
+	14300 7400 15050 7400
+Wire Notes Line
+	14850 7400 14850 7500
+Wire Notes Line
+	14575 7325 14575 3725
+Wire Notes Line
+	4750 3725 14575 3725
+Wire Notes Line
+	14300 7500 14850 7500
+Wire Notes Line
+	15050 7400 15050 8000
+Wire Notes Line
+	14300 8000 15050 8000
+Wire Notes Line
+	14300 7400 14300 8000
 $EndSCHEMATC
