@@ -19,8 +19,6 @@ Text Label 600  2975 0    50   ~ 0
 CoolTemp_RTN
 Text Label 600  2775 0    50   ~ 0
 CoolTemp
-Text Label 4025 775  0    50   ~ 0
-DC_RELAY-
 Text Label 4025 675  0    50   ~ 0
 DC_RELAY+
 Text Label 8150 675  0    50   ~ 0
@@ -274,7 +272,7 @@ PC_RELAY-
 Text Label 3950 6475 2    50   ~ 0
 DC_RELAY+
 Text Label 3950 6575 2    50   ~ 0
-DC_RELAY-
+IO_Ground
 $Comp
 L Connector_Generic:Conn_01x06 J19
 U 1 1 5FCAFAF8
@@ -1560,4 +1558,6 @@ Wire Notes Line
 	5150 5450 5150 3550
 Wire Notes Line
 	5150 3550 7075 3550
+Text Label 4025 775  0    50   ~ 0
+IO_Ground
 $EndSCHEMATC

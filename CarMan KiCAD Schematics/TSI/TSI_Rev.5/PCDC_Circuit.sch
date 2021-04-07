@@ -72,8 +72,6 @@ Text Label 4450 11425 0    59   ~ 0
 AIRS+
 Text Label 4450 11625 0    59   ~ 0
 GLV_RTN
-Text Label 6550 11625 0    59   ~ 0
-IO_Ground
 Text Label 3600 14200 0    59   ~ 0
 GLV_RTN
 Text Label 6950 14200 2    59   ~ 0
@@ -168,8 +166,6 @@ Text Notes 16950 10675 0    138  ~ 0
 VOLTAGE REFERENCES & REGULATORS (HIGH VOLTAGE)
 Text Label 8720 11725 2    50   ~ 0
 DC_RELAY+
-Text Label 8720 12025 2    50   ~ 0
-DC_RELAY-
 Wire Wire Line
 	7600 11625 7600 11725
 Wire Wire Line
@@ -187,54 +183,6 @@ F 3 "~" H 7850 11875 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7450 11625 7450 12025
-Text Notes 13600 4350 0    79   ~ 0
-~S
-Text Notes 13950 4350 0    79   ~ 0
-~R\n
-Text Notes 14350 4350 0    79   ~ 0
-Q\n
-Wire Bus Line
-	14600 4175 14200 4175
-Wire Bus Line
-	13500 4975 13800 4975
-Wire Bus Line
-	13800 4175 13800 4975
-Connection ~ 13800 4175
-Wire Bus Line
-	13800 4175 13500 4175
-Connection ~ 13800 4975
-Wire Bus Line
-	13800 4975 14200 4975
-Connection ~ 14200 4175
-Wire Bus Line
-	14200 4175 13800 4175
-Text Notes 13600 4500 0    79   ~ 0
-0
-Text Notes 13600 4650 0    79   ~ 0
-0
-Text Notes 13950 4800 0    79   ~ 0
-0
-Text Notes 13950 4500 0    79   ~ 0
-0
-Text Notes 13950 4950 0    79   ~ 0
-1\n
-Text Notes 13600 4800 0    79   ~ 0
-1\n
-Text Notes 13600 4950 0    79   ~ 0
-1\n
-Text Notes 13950 4650 0    79   ~ 0
-1\n
-Text Notes 14350 4650 0    79   ~ 0
-1\n
-Text Notes 14350 4800 0    79   ~ 0
-0
-Connection ~ 14200 4975
-Wire Bus Line
-	14200 4175 14200 4975
-Wire Bus Line
-	14200 4975 14600 4975
-Text Notes 13700 4125 0    79   ~ 0
-SR Latching Logic\n
 Text HLabel 1350 1125 0    50   Input ~ 0
 TS_Voltage
 Text HLabel 1350 925  0    50   Input ~ 0
@@ -280,7 +228,7 @@ Text Notes 5250 14550 0    47   ~ 0
 Text Notes 19175 15175 0    118  ~ 0
 PRECHARGE & DISCHARGE CIRCUIT
 Text Label 2150 1450 2    50   ~ 0
-DC_RELAY-
+IO_Ground
 Text Label 2150 1350 2    50   ~ 0
 DC_RELAY+
 Text HLabel 1350 1450 0    50   Output ~ 0
@@ -807,13 +755,6 @@ Text Notes 17075 12225 0    43   ~ 9
 TSV_MIN_REF Derivation:
 Text Notes 675  2650 0    79   ~ 0
 1. TS_Voltage & MC_Voltage w/in 95% of e/o\n2. TS_Voltage > TSV_MIN_REF (approx. 1.97HV)\n3. AIRS are closed (Safety_Loop_HV = 5HV)
-Text Label 14600 6625 0    59   ~ 0
-PC_Control
-Wire Wire Line
-	14250 6625 15600 6625
-Connection ~ 14250 6625
-Wire Wire Line
-	13550 6625 14250 6625
 Connection ~ 13550 6625
 Wire Wire Line
 	12200 6325 13150 6325
@@ -1278,21 +1219,6 @@ F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 2075 5500 50  0001 C CNN
 $EndComp
 Text Notes 17075 6200 0    35   ~ 0
 Flyback\nDiode
-Wire Wire Line
-	14250 6475 14250 6625
-$Comp
-L Connector:TestPoint TP?
-U 1 1 60D4CBAD
-P 14250 6475
-AR Path="/5FC85F57/60D4CBAD" Ref="TP?"  Part="1" 
-AR Path="/6196BF15/60D4CBAD" Ref="TP19"  Part="1" 
-F 0 "TP19" H 14200 6675 50  0000 L CNN
-F 1 "PC_Control" H 14275 6525 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D3.0mm" H 14450 6475 50  0001 C CNN
-F 3 "~" H 14450 6475 50  0001 C CNN
-	1    14250 6475
-	1    0    0    -1  
-$EndComp
 Wire Notes Line
 	19425 7325 20775 7325
 Wire Notes Line
@@ -1369,8 +1295,6 @@ Text Notes 18065 5660 0    47   ~ 0
 PC Relay (J4)\n
 Wire Wire Line
 	17500 6325 17500 6425
-Wire Wire Line
-	15100 8375 15600 8375
 Wire Wire Line
 	17500 5625 17500 5775
 Connection ~ 17050 5625
@@ -1520,29 +1444,6 @@ Wire Wire Line
 Connection ~ 16600 6425
 Wire Wire Line
 	16600 6425 16500 6425
-$Comp
-L Device:LED D6
-U 1 1 5F9CE834
-P 16600 6225
-F 0 "D6" V 16600 6400 50  0000 R CNN
-F 1 "GREEN LED" H 16825 6050 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 16600 6225 50  0001 C CNN
-F 3 "http://static.vcclite.com/pdf/VAOL-S8GT4-LED-0805-green.pdf" H 16600 6225 50  0001 C CNN
-F 4 "VAOL-S8GT4" V 16600 6225 50  0001 C CNN "Part Name"
-	1    16600 6225
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R R67
-U 1 1 5F9DBFC0
-P 16600 5825
-F 0 "R67" V 16500 5825 50  0000 C CNN
-F 1 "2.4K" V 16600 5825 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 16530 5825 50  0001 C CNN
-F 3 "~" H 16600 5825 50  0001 C CNN
-	1    16600 5825
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	16600 5625 16600 5675
 Wire Wire Line
@@ -1591,8 +1492,6 @@ F 3 "~" H 17050 6025 50  0001 C CNN
 $EndComp
 Text Label 16300 5625 0    50   ~ 0
 24HV
-Text Label 15100 8375 0    55   ~ 0
-IO_Ground
 Wire Wire Line
 	15600 8375 15600 8175
 Wire Wire Line
@@ -1757,46 +1656,6 @@ Wire Wire Line
 	19700 3000 19700 3400
 Wire Wire Line
 	19700 3400 19950 3400
-Text Notes 14750 4350 0    79   ~ 0
-~Q\n
-Wire Bus Line
-	15000 4175 14600 4175
-Text Notes 14750 4800 0    79   ~ 0
-1
-Text Notes 14750 4950 0    79   ~ 0
-X
-Text Notes 14750 4500 0    79   ~ 0
-X
-Connection ~ 14600 4175
-Connection ~ 14600 4975
-Wire Bus Line
-	14600 4175 14600 4975
-Wire Bus Line
-	14600 4975 15000 4975
-Wire Bus Line
-	15000 4375 13500 4375
-Wire Notes Line
-	13500 4525 15000 4525
-Wire Notes Line
-	13500 4675 15000 4675
-Wire Notes Line
-	13500 4825 15000 4825
-Text Notes 14425 4500 2    79   ~ 0
-X
-Text Notes 14350 4950 0    79   ~ 0
-X
-Text Notes 14750 4650 0    79   ~ 0
-0\n
-Connection ~ 13500 4375
-Wire Bus Line
-	13500 4375 13500 4975
-Connection ~ 15000 4375
-Wire Bus Line
-	15000 4375 15000 4975
-Wire Bus Line
-	13500 4175 13500 4375
-Wire Bus Line
-	15000 4175 15000 4375
 $Comp
 L Connector:TestPoint TP?
 U 1 1 6464F7D3
@@ -1913,12 +1772,6 @@ PRE-CHARGE LOGIC CIRCUIT
 Wire Notes Line
 	4750 3725 4750 7325
 Wire Notes Line
-	4750 3725 15250 3725
-Wire Notes Line
-	4750 7325 15250 7325
-Wire Notes Line
-	15250 3725 15250 7325
-Wire Notes Line
 	18075 3600 22100 3600
 Wire Notes Line
 	22100 3600 22100 1150
@@ -1959,4 +1812,162 @@ Text Notes 7925 11950 0    39   ~ 0
 Flyback\ndiode
 Text HLabel 1350 1350 0    50   Output ~ 0
 DC_RELAY+
+$Comp
+L Connector:TestPoint TP?
+U 1 1 64A39D43
+P 19350 11275
+AR Path="/5FC85F57/64A39D43" Ref="TP?"  Part="1" 
+AR Path="/6196BF15/64A39D43" Ref="TP20"  Part="1" 
+F 0 "TP20" H 19300 11475 50  0000 L CNN
+F 1 "TSV_MIN_REF" H 19125 11550 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_D3.0mm" H 19550 11275 50  0001 C CNN
+F 3 "~" H 19550 11275 50  0001 C CNN
+	1    19350 11275
+	1    0    0    -1  
+$EndComp
+Text Label 15100 8375 0    55   ~ 0
+IO_Ground
+Wire Wire Line
+	15100 8375 15600 8375
+$Comp
+L Device:LED D6
+U 1 1 5F9CE834
+P 16600 6225
+F 0 "D6" V 16600 6400 50  0000 R CNN
+F 1 "GREEN LED" H 16825 6050 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 16600 6225 50  0001 C CNN
+F 3 "http://static.vcclite.com/pdf/VAOL-S8GT4-LED-0805-green.pdf" H 16600 6225 50  0001 C CNN
+F 4 "VAOL-S8GT4" V 16600 6225 50  0001 C CNN "Part Name"
+	1    16600 6225
+	0    -1   -1   0   
+$EndComp
+Wire Notes Line
+	4750 3725 15250 3725
+Wire Notes Line
+	4750 7325 15250 7325
+Text Label 14600 6625 0    59   ~ 0
+PC_Control
+Connection ~ 14250 6625
+Wire Wire Line
+	14250 6625 15600 6625
+Wire Wire Line
+	13550 6625 14250 6625
+$Comp
+L Connector:TestPoint TP?
+U 1 1 60D4CBAD
+P 14250 6475
+AR Path="/5FC85F57/60D4CBAD" Ref="TP?"  Part="1" 
+AR Path="/6196BF15/60D4CBAD" Ref="TP19"  Part="1" 
+F 0 "TP19" H 14200 6675 50  0000 L CNN
+F 1 "PC_Control" H 14275 6525 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D3.0mm" H 14450 6475 50  0001 C CNN
+F 3 "~" H 14450 6475 50  0001 C CNN
+	1    14250 6475
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14250 6475 14250 6625
+Wire Notes Line
+	15250 3725 15250 7325
+Wire Bus Line
+	15000 4175 15000 4375
+Wire Bus Line
+	13500 4175 13500 4375
+Wire Bus Line
+	15000 4375 15000 4975
+Connection ~ 15000 4375
+Wire Bus Line
+	13500 4375 13500 4975
+Connection ~ 13500 4375
+Text Notes 14750 4650 0    79   ~ 0
+0\n
+Text Notes 14350 4950 0    79   ~ 0
+X
+Text Notes 14425 4500 2    79   ~ 0
+X
+Wire Notes Line
+	13500 4825 15000 4825
+Wire Notes Line
+	13500 4675 15000 4675
+Wire Notes Line
+	13500 4525 15000 4525
+Wire Bus Line
+	15000 4375 13500 4375
+Wire Bus Line
+	14600 4975 15000 4975
+Wire Bus Line
+	14600 4175 14600 4975
+Connection ~ 14600 4975
+Connection ~ 14600 4175
+Text Notes 14750 4500 0    79   ~ 0
+X
+Text Notes 14750 4950 0    79   ~ 0
+X
+Text Notes 14750 4800 0    79   ~ 0
+1
+Wire Bus Line
+	15000 4175 14600 4175
+Text Notes 14750 4350 0    79   ~ 0
+~Q\n
+Text Notes 13700 4125 0    79   ~ 0
+SR Latching Logic\n
+Wire Bus Line
+	14200 4975 14600 4975
+Wire Bus Line
+	14200 4175 14200 4975
+Connection ~ 14200 4975
+Text Notes 14350 4800 0    79   ~ 0
+0
+Text Notes 14350 4650 0    79   ~ 0
+1\n
+Text Notes 13950 4650 0    79   ~ 0
+1\n
+Text Notes 13600 4950 0    79   ~ 0
+1\n
+Text Notes 13600 4800 0    79   ~ 0
+1\n
+Text Notes 13950 4950 0    79   ~ 0
+1\n
+Text Notes 13950 4500 0    79   ~ 0
+0
+Text Notes 13950 4800 0    79   ~ 0
+0
+Text Notes 13600 4650 0    79   ~ 0
+0
+Text Notes 13600 4500 0    79   ~ 0
+0
+Wire Bus Line
+	14200 4175 13800 4175
+Connection ~ 14200 4175
+Wire Bus Line
+	13800 4975 14200 4975
+Connection ~ 13800 4975
+Wire Bus Line
+	13800 4175 13500 4175
+Connection ~ 13800 4175
+Wire Bus Line
+	13800 4175 13800 4975
+Wire Bus Line
+	13500 4975 13800 4975
+Wire Bus Line
+	14600 4175 14200 4175
+Text Notes 14350 4350 0    79   ~ 0
+Q\n
+Text Notes 13950 4350 0    79   ~ 0
+~R\n
+Text Notes 13600 4350 0    79   ~ 0
+~S
+$Comp
+L Device:R R67
+U 1 1 5F9DBFC0
+P 16600 5825
+F 0 "R67" V 16500 5825 50  0000 C CNN
+F 1 "2.4K" V 16600 5825 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 16530 5825 50  0001 C CNN
+F 3 "~" H 16600 5825 50  0001 C CNN
+	1    16600 5825
+	-1   0    0    1   
+$EndComp
+Text Label 8720 12025 2    50   ~ 0
+IO_Ground
 $EndSCHEMATC
