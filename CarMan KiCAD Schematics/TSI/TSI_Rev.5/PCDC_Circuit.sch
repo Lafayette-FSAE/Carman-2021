@@ -1807,20 +1807,8 @@ F 3 "~" H 19550 11275 50  0001 C CNN
 	1    19350 11275
 	1    0    0    -1  
 $EndComp
-Text Label 15050 8375 0    55   ~ 0
+Text Label 15100 8375 0    55   ~ 0
 IO_Ground
-$Comp
-L Device:LED D6
-U 1 1 5F9CE834
-P 14875 7725
-F 0 "D6" V 14875 7900 50  0000 R CNN
-F 1 "GREEN LED" V 14725 8200 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 14875 7725 50  0001 C CNN
-F 3 "http://static.vcclite.com/pdf/VAOL-S8GT4-LED-0805-green.pdf" H 14875 7725 50  0001 C CNN
-F 4 "VAOL-S8GT4" V 14875 7725 50  0001 C CNN "Part Name"
-	1    14875 7725
-	0    -1   -1   0   
-$EndComp
 Text Label 14450 6625 2    59   ~ 0
 PC_Control
 Wire Wire Line
@@ -1928,57 +1916,58 @@ Text Notes 13350 4225 0    79   ~ 0
 ~R\n
 Text Notes 13000 4225 0    79   ~ 0
 ~S
-$Comp
-L Device:R R67
-U 1 1 5F9DBFC0
-P 14875 6950
-F 0 "R67" V 14775 6950 50  0000 C CNN
-F 1 "1K" V 14875 6950 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 14805 6950 50  0001 C CNN
-F 3 "~" H 14875 6950 50  0001 C CNN
-	1    14875 6950
-	-1   0    0    1   
-$EndComp
 Text Label 8720 12025 2    50   ~ 0
 IO_Ground
 Connection ~ 13925 6625
-Wire Wire Line
-	13925 6625 14875 6625
 Wire Notes Line
 	14575 7325 4750 7325
 Wire Notes Line
 	4750 3725 4750 7325
 Wire Wire Line
-	16300 5625 17050 5625
+	16300 5625 16650 5625
 Wire Wire Line
-	16500 6425 17050 6425
-Wire Wire Line
-	14875 6625 14875 6800
-Connection ~ 14875 6625
-Wire Wire Line
-	14875 6625 15600 6625
-Wire Wire Line
-	14875 8375 15600 8375
-Wire Wire Line
-	14875 7875 14875 8375
-Wire Wire Line
-	14875 7100 14875 7575
-Text Notes 14325 7475 0    39   ~ 0
-Pre-Charge LED
-Wire Notes Line
-	14300 7400 15050 7400
-Wire Notes Line
-	14850 7400 14850 7500
+	16500 6425 16650 6425
 Wire Notes Line
 	14575 7325 14575 3725
 Wire Notes Line
 	4750 3725 14575 3725
-Wire Notes Line
-	14300 7500 14850 7500
-Wire Notes Line
-	15050 7400 15050 8000
-Wire Notes Line
-	14300 8000 15050 8000
-Wire Notes Line
-	14300 7400 14300 8000
+$Comp
+L Device:R R67
+U 1 1 652A5927
+P 16650 5800
+F 0 "R67" V 16750 5725 50  0000 L CNN
+F 1 "2.4K" V 16650 5725 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 16580 5800 50  0001 C CNN
+F 3 "~" H 16650 5800 50  0001 C CNN
+	1    16650 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D6
+U 1 1 652D6959
+P 16650 6200
+F 0 "D6" V 16650 6375 50  0000 R CNN
+F 1 "GREEN LED" H 16850 6050 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 16650 6200 50  0001 C CNN
+F 3 "http://static.vcclite.com/pdf/VAOL-S8GT4-LED-0805-green.pdf" H 16650 6200 50  0001 C CNN
+F 4 "VAOL-S8GT4" V 16650 6200 50  0001 C CNN "Part Name"
+	1    16650 6200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	16650 5950 16650 6050
+Wire Wire Line
+	16650 6350 16650 6425
+Connection ~ 16650 6425
+Wire Wire Line
+	16650 6425 17050 6425
+Wire Wire Line
+	16650 5650 16650 5625
+Connection ~ 16650 5625
+Wire Wire Line
+	16650 5625 17050 5625
+Wire Wire Line
+	13925 6625 15600 6625
+Wire Wire Line
+	15600 8375 15100 8375
 $EndSCHEMATC

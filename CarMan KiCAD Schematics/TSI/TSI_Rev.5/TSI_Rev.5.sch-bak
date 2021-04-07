@@ -31,7 +31,7 @@ Text Label 3125 1500 0    50   ~ 0
 AIRS-
 Text Label 3125 1600 0    50   ~ 0
 AIRS+
-Text Notes 3000 1100 0    50   ~ 0
+Text Notes 2990 1080 0    50   ~ 0
 Precharge Relay (NO)\n\n\n
 Text Label 4000 1700 0    50   ~ 0
 GLV_RTN
@@ -1560,4 +1560,6 @@ Wire Notes Line
 	5150 3550 7075 3550
 Text Label 4025 775  0    50   ~ 0
 IO_Ground
+Text Notes 3100 1060 0    39   ~ 0
+(250 mA > to open, \n 90mA nominal draw)
 $EndSCHEMATC

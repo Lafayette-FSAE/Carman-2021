@@ -1809,18 +1809,6 @@ F 3 "~" H 19550 11275 50  0001 C CNN
 $EndComp
 Text Label 15050 8375 0    55   ~ 0
 IO_Ground
-$Comp
-L Device:LED D6
-U 1 1 5F9CE834
-P 14875 7725
-F 0 "D6" V 14875 7900 50  0000 R CNN
-F 1 "GREEN LED" V 14725 8200 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 14875 7725 50  0001 C CNN
-F 3 "http://static.vcclite.com/pdf/VAOL-S8GT4-LED-0805-green.pdf" H 14875 7725 50  0001 C CNN
-F 4 "VAOL-S8GT4" V 14875 7725 50  0001 C CNN "Part Name"
-	1    14875 7725
-	0    -1   -1   0   
-$EndComp
 Text Label 14450 6625 2    59   ~ 0
 PC_Control
 Wire Wire Line
@@ -1928,17 +1916,6 @@ Text Notes 13350 4225 0    79   ~ 0
 ~R\n
 Text Notes 13000 4225 0    79   ~ 0
 ~S
-$Comp
-L Device:R R67
-U 1 1 5F9DBFC0
-P 14875 6950
-F 0 "R67" V 14775 6950 50  0000 C CNN
-F 1 "1K" V 14875 6950 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 14805 6950 50  0001 C CNN
-F 3 "~" H 14875 6950 50  0001 C CNN
-	1    14875 6950
-	-1   0    0    1   
-$EndComp
 Text Label 8720 12025 2    50   ~ 0
 IO_Ground
 Connection ~ 13925 6625
@@ -1981,4 +1958,38 @@ Wire Notes Line
 	14300 8000 15050 8000
 Wire Notes Line
 	14300 7400 14300 8000
+$Comp
+L Device:LED D6
+U 1 1 5F9CE834
+P 16645 6170
+F 0 "D6" V 16645 6345 50  0000 R CNN
+F 1 "GREEN LED" V 16495 6645 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 16645 6170 50  0001 C CNN
+F 3 "http://static.vcclite.com/pdf/VAOL-S8GT4-LED-0805-green.pdf" H 16645 6170 50  0001 C CNN
+F 4 "VAOL-S8GT4" V 16645 6170 50  0001 C CNN "Part Name"
+	1    16645 6170
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R67
+U 1 1 652A5927
+P 16650 5800
+F 0 "R67" H 16720 5846 50  0000 L CNN
+F 1 "2.4K" V 16650 5725 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 16580 5800 50  0001 C CNN
+F 3 "~" H 16650 5800 50  0001 C CNN
+	1    16650 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R67
+U 1 1 5F9DBFC0
+P 16090 5785
+F 0 "R67" V 15995 5785 50  0000 C CNN
+F 1 "2.4K" V 16085 5785 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 16020 5785 50  0001 C CNN
+F 3 "~" H 16090 5785 50  0001 C CNN
+	1    16090 5785
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC
