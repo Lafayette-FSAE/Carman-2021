@@ -1286,7 +1286,7 @@ U 1 1 60FD9311
 P 16350 6625
 F 0 "U9" H 16100 6525 55  0000 L CNN
 F 1 "STN3NF06L" H 15900 6425 55  0000 L CNN
-F 2 "TSI_Rev_2021_Footprint_Lib:SOT230P700X180-4N-speical" H 15950 6975 55  0001 C CNN
+F 2 "TSI_Rev_2021_Footprint_Lib:SOT230P700X180-4N" H 15950 6975 55  0001 C CNN
 F 3 "https://www.st.com/content/ccc/resource/technical/document/datasheet/b1/52/93/f0/a9/a9/40/d7/CD00002430.pdf/files/CD00002430.pdf/jcr:content/translations/en.CD00002430.pdf" H 15950 6975 55  0001 C CNN
 	1    16350 6625
 	1    0    0    -1  
