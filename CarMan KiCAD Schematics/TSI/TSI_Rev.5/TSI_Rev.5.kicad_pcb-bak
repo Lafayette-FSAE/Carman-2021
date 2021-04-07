@@ -10577,7 +10577,7 @@
   )
 
   (module TestPoint:TestPoint_Pad_D3.0mm (layer F.Cu) (tedit 5A0F774F) (tstamp 606600D4)
-    (at 75.5904 57.912)
+    (at 84.6328 211.9376)
     (descr "SMD pad as test Point, diameter 3.0mm")
     (tags "test point SMD pad")
     (path /6196BF15/60D4CBAD)
