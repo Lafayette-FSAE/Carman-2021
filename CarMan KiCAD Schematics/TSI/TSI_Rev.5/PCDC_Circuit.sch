@@ -199,8 +199,6 @@ Text Label 1850 11450 2    50   ~ 0
 Safety_Loop
 Text Label 1850 11150 2    50   ~ 0
 3.3V
-Text Label 1850 11050 2    50   ~ 0
-5V
 Text Notes 675  10825 0    79   ~ 0
 LOW VOLTAGE SIGNALS\n
 Text HLabel 1150 11450 0    50   Input ~ 0
@@ -209,8 +207,6 @@ Text HLabel 1150 11350 0    50   Input ~ 0
 GLV_RTN
 Text HLabel 1150 10950 0    50   Input ~ 0
 24V
-Text HLabel 1150 11050 0    50   Input ~ 0
-5V
 Text Label 1850 11250 2    50   ~ 0
 AIRS+
 Text HLabel 1150 11250 0    50   Input ~ 0
@@ -442,8 +438,6 @@ Wire Wire Line
 	1150 11250 1850 11250
 Wire Wire Line
 	1150 11150 1850 11150
-Wire Wire Line
-	1150 11050 1850 11050
 Wire Wire Line
 	1150 10950 1850 10950
 Text Label 4600 15850 0    59   ~ 0
