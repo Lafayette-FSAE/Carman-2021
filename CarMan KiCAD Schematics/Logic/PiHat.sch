@@ -331,7 +331,7 @@ Text Label 2000 2025 2    50   ~ 0
 PI_SPI_CEO
 Text Label 2000 1925 2    50   ~ 0
 PI_SPI_SCLK
-Text HLabel 1300 2225 0    50   Output ~ 0
+Text HLabel 1300 2225 0    50   Input ~ 0
 PI_SPI_MOSI
 Text HLabel 1300 2125 0    50   Output ~ 0
 PI_SPI_MISO

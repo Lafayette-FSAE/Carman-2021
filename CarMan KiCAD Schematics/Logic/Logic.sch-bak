@@ -16,196 +16,196 @@ $EndDescr
 $Comp
 L Logic-rescue:Conn_01x04-Connector_Generic-Logic-rescue J3
 U 1 1 5F95B303
-P 13925 1025
-F 0 "J3" H 13875 725 50  0000 L CNN
-F 1 "IMU" H 13850 1225 50  0001 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 13925 1025 50  0001 C CNN
-F 3 "~" H 13925 1025 50  0001 C CNN
-	1    13925 1025
+P 13875 1275
+F 0 "J3" H 13825 975 50  0000 L CNN
+F 1 "IMU" H 13800 1475 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 13875 1275 50  0001 C CNN
+F 3 "~" H 13875 1275 50  0001 C CNN
+	1    13875 1275
 	-1   0    0    1   
 $EndComp
 $Comp
 L Logic-rescue:Conn_01x04-Connector_Generic-Logic-rescue J4
 U 1 1 5F95B763
-P 15025 1025
-F 0 "J4" H 14975 725 50  0000 L CNN
-F 1 "RTC" H 14950 1250 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 15025 1025 50  0001 C CNN
-F 3 "~" H 15025 1025 50  0001 C CNN
-	1    15025 1025
+P 15000 1275
+F 0 "J4" H 14950 975 50  0000 L CNN
+F 1 "RTC" H 14925 1500 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 15000 1275 50  0001 C CNN
+F 3 "~" H 15000 1275 50  0001 C CNN
+	1    15000 1275
 	-1   0    0    1   
 $EndComp
-Text Label 11800 1100 2    50   ~ 0
+Text Label 11400 1325 2    50   ~ 0
 CAN_H
-Text Label 11500 900  0    50   ~ 0
+Text Label 11100 1125 0    50   ~ 0
 CAN_GND
-Text Label 12325 900  2    50   ~ 0
+Text Label 11925 1125 2    50   ~ 0
 ISO_RTN
-NoConn ~ 11450 800 
+NoConn ~ 11050 1025
 Wire Wire Line
-	14125 1125 14575 1125
+	14075 1375 14525 1375
 Wire Wire Line
-	15225 1025 15675 1025
+	15200 1275 15650 1275
 Wire Wire Line
-	15225 1125 15675 1125
-Text Label 15675 825  2    50   ~ 0
+	15200 1375 15650 1375
+Text Label 15650 1075 2    50   ~ 0
 SCL_ISO_PI
-Text Label 15675 1025 2    50   ~ 0
+Text Label 15650 1275 2    50   ~ 0
 ISO_RTN
-Text Label 15675 1125 2    50   ~ 0
+Text Label 15650 1375 2    50   ~ 0
 3.3V_ISO
-Text Label 15675 925  2    50   ~ 0
+Text Label 15650 1175 2    50   ~ 0
 SDA_ISO_PI
-Text Label 14575 825  2    50   ~ 0
+Text Label 14525 1075 2    50   ~ 0
 SCL_ISO_PI
-Text Label 14575 925  2    50   ~ 0
+Text Label 14525 1175 2    50   ~ 0
 SDA_ISO_PI
-Text Label 14575 1025 2    50   ~ 0
+Text Label 14525 1275 2    50   ~ 0
 ISO_RTN
-Text Label 14575 1125 2    50   ~ 0
+Text Label 14525 1375 2    50   ~ 0
 3.3V_ISO
-Text Label 15225 2825 2    50   ~ 0
+Text Label 15600 3175 2    50   ~ 0
 5V_ISO
-Text Label 15225 3025 2    50   ~ 0
+Text Label 15600 3375 2    50   ~ 0
 ISO_RTN
 $Comp
 L Logic-rescue:RaspberryPi3-Lafayette_Electric_Car_Internals U?
 U 1 1 5F9FC061
-P 13725 3775
+P 14100 4125
 AR Path="/5F9665AE/5F9FC061" Ref="U?"  Part="1" 
 AR Path="/5F9FC061" Ref="U6"  Part="1" 
-F 0 "U6" H 13750 4990 50  0000 C CNN
-F 1 "RaspberryPi3" H 13750 4899 50  0000 C CNN
-F 2 "CarMan General Footprints:Raspberry_Pi_3_B" H 13975 4975 50  0001 C CNN
-F 3 "" H 13975 4975 50  0001 C CNN
-	1    13725 3775
+F 0 "U6" H 14125 5340 50  0000 C CNN
+F 1 "RaspberryPi3" H 14125 5249 50  0000 C CNN
+F 2 "CarMan General Footprints:Raspberry_Pi_3_B" H 14350 5325 50  0001 C CNN
+F 3 "" H 14350 5325 50  0001 C CNN
+	1    14100 4125
 	1    0    0    -1  
 $EndComp
-NoConn ~ 13225 2825
-NoConn ~ 13225 3125
-NoConn ~ 13225 3325
-NoConn ~ 13225 3425
-NoConn ~ 13225 3525
-NoConn ~ 13225 3625
+NoConn ~ 13600 3175
+NoConn ~ 13600 3475
+NoConn ~ 13600 3675
+NoConn ~ 13600 3775
+NoConn ~ 13600 3875
+NoConn ~ 13600 3975
 $Comp
 L Logic-rescue:Conn_01x08-Connector_Generic-Logic-rescue J6
 U 1 1 5FA1FE07
-P 13675 5625
-F 0 "J6" H 13755 5617 50  0000 L CNN
-F 1 "You're Welcome -Ethan" H 13755 5526 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical" H 13675 5625 50  0001 C CNN
-F 3 "~" H 13675 5625 50  0001 C CNN
-	1    13675 5625
+P 14050 5975
+F 0 "J6" H 14130 5967 50  0000 L CNN
+F 1 "You're Welcome -Ethan" H 14130 5876 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical" H 14050 5975 50  0001 C CNN
+F 3 "~" H 14050 5975 50  0001 C CNN
+	1    14050 5975
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	13225 4125 12625 4125
+	13600 4475 13000 4475
 Wire Wire Line
-	12625 4125 12625 6025
+	13000 4475 13000 6375
 Wire Wire Line
-	12625 6025 13475 6025
+	13000 6375 13850 6375
 Wire Wire Line
-	13225 4225 12675 4225
+	13600 4575 13050 4575
 Wire Wire Line
-	12675 4225 12675 5925
+	13050 4575 13050 6275
 Wire Wire Line
-	12675 5925 13475 5925
+	13050 6275 13850 6275
 Wire Wire Line
-	13225 4425 12725 4425
+	13600 4775 13100 4775
 Wire Wire Line
-	12725 4425 12725 5825
+	13100 4775 13100 6175
 Wire Wire Line
-	12725 5825 13475 5825
+	13100 6175 13850 6175
 Wire Wire Line
-	13225 4525 12775 4525
+	13600 4875 13150 4875
 Wire Wire Line
-	12775 4525 12775 5725
+	13150 4875 13150 6075
 Wire Wire Line
-	12775 5725 13475 5725
+	13150 6075 13850 6075
 Wire Wire Line
-	13225 4625 12825 4625
+	13600 4975 13200 4975
 Wire Wire Line
-	12825 4625 12825 5625
+	13200 4975 13200 5975
 Wire Wire Line
-	12825 5625 13475 5625
+	13200 5975 13850 5975
 Wire Wire Line
-	14275 4725 14275 4875
+	14650 5075 14650 5225
 Wire Wire Line
-	14275 4875 13225 4875
+	14650 5225 13600 5225
 Wire Wire Line
-	13225 4875 13225 5525
+	13600 5225 13600 5875
 Wire Wire Line
-	13225 5525 13475 5525
+	13600 5875 13850 5875
 Wire Wire Line
-	14275 4625 14325 4625
+	14650 4975 14700 4975
 Wire Wire Line
-	14325 4625 14325 4925
+	14700 4975 14700 5275
 Wire Wire Line
-	14325 4925 13275 4925
+	14700 5275 13650 5275
 Wire Wire Line
-	13275 4925 13275 5425
+	13650 5275 13650 5775
 Wire Wire Line
-	13275 5425 13475 5425
+	13650 5775 13850 5775
 Wire Wire Line
-	14275 4525 14375 4525
+	14650 4875 14750 4875
 Wire Wire Line
-	14375 4525 14375 4975
+	14750 4875 14750 5325
 Wire Wire Line
-	14375 4975 13325 4975
+	14750 5325 13700 5325
 Wire Wire Line
-	13325 4975 13325 5325
+	13700 5325 13700 5675
 Wire Wire Line
-	13325 5325 13475 5325
-NoConn ~ 14275 4325
-NoConn ~ 14275 4125
-NoConn ~ 14275 4025
-NoConn ~ 14275 3625
-NoConn ~ 14275 3325
-NoConn ~ 14275 3225
-NoConn ~ 14275 3125
+	13700 5675 13850 5675
+NoConn ~ 14650 4675
+NoConn ~ 14650 4475
+NoConn ~ 14650 4375
+NoConn ~ 14650 3975
+NoConn ~ 14650 3675
+NoConn ~ 14650 3575
+NoConn ~ 14650 3475
 Wire Wire Line
-	14425 2825 14425 2925
-Connection ~ 14425 2825
+	14800 3175 14800 3275
+Connection ~ 14800 3175
 Wire Wire Line
-	14425 3025 14425 3425
+	14800 3375 14800 3775
 Wire Wire Line
-	14425 3425 14425 3725
-Connection ~ 14425 3425
+	14800 3775 14800 4075
+Connection ~ 14800 3775
 Wire Wire Line
-	14425 3725 14425 4225
-Connection ~ 14425 3725
+	14800 4075 14800 4575
+Connection ~ 14800 4075
 Wire Wire Line
-	14425 4225 14425 4425
-Connection ~ 14425 4225
-Connection ~ 14425 3025
+	14800 4575 14800 4775
+Connection ~ 14800 4575
+Connection ~ 14800 3375
 Wire Wire Line
-	14275 3025 14425 3025
+	14650 3375 14800 3375
 Wire Wire Line
-	14275 4225 14425 4225
+	14650 4575 14800 4575
 Wire Wire Line
-	14275 4425 14425 4425
+	14650 4775 14800 4775
 Wire Wire Line
-	14275 3725 14425 3725
+	14650 4075 14800 4075
 Wire Wire Line
-	14275 3425 14425 3425
+	14650 3775 14800 3775
 Wire Wire Line
-	14275 2825 14425 2825
+	14650 3175 14800 3175
 Wire Wire Line
-	14275 2925 14425 2925
+	14650 3275 14800 3275
 Wire Wire Line
-	13225 4025 13125 4025
+	13600 4375 13500 4375
 Wire Wire Line
-	13125 4025 13125 4725
+	13500 4375 13500 5075
 Wire Wire Line
-	13125 4725 13225 4725
+	13500 5075 13600 5075
 Wire Wire Line
-	14425 4425 14425 5025
+	14800 4775 14800 5375
 Wire Wire Line
-	14425 5025 13125 5025
+	14800 5375 13500 5375
 Wire Wire Line
-	13125 5025 13125 4725
-Connection ~ 14425 4425
-Connection ~ 13125 4725
+	13500 5375 13500 5075
+Connection ~ 14800 4775
+Connection ~ 13500 5075
 Text Label 1475 2525 0    50   ~ 0
 3.3V_ISO
 Wire Wire Line
@@ -312,16 +312,12 @@ NoConn ~ 3075 4875
 NoConn ~ 3075 4775
 NoConn ~ 3075 4575
 NoConn ~ 3075 4075
-Text Label 2575 3475 0    50   ~ 0
+Text Label 2400 3475 0    50   ~ 0
 Cooling_CTRL
-Text Label 2575 3375 0    50   ~ 0
-Safety_Loop_iso
+Text Label 2400 3375 0    50   ~ 0
+Safety_Loop_ISO
 Wire Wire Line
 	3075 3975 2575 3975
-Wire Wire Line
-	3075 3475 2575 3475
-Wire Wire Line
-	3075 3375 2575 3375
 Text Label 2575 4375 0    50   ~ 0
 PGED
 Text Label 2575 4275 0    50   ~ 0
@@ -535,24 +531,24 @@ Wire Wire Line
 Wire Wire Line
 	5475 1975 5475 1925
 Wire Wire Line
-	14125 825  14575 825 
+	14075 1075 14525 1075
 Wire Wire Line
-	14125 925  14575 925 
+	14075 1175 14525 1175
 Wire Wire Line
-	15225 825  15675 825 
+	15200 1075 15650 1075
 Wire Wire Line
-	15225 925  15675 925 
-Text Label 12475 3025 0    50   ~ 0
+	15200 1175 15650 1175
+Text Label 12850 3375 0    50   ~ 0
 SCL_ISO_PI
-Text Label 12475 2925 0    50   ~ 0
+Text Label 12850 3275 0    50   ~ 0
 SDA_ISO_PI
 Wire Wire Line
-	13225 3225 13125 3225
+	13600 3575 13500 3575
 Wire Wire Line
-	13125 3225 13125 4025
-Connection ~ 13125 4025
+	13500 3575 13500 4375
+Connection ~ 13500 4375
 Wire Wire Line
-	11450 1100 11800 1100
+	11050 1325 11400 1325
 Text Label 9675 3275 2    50   ~ 0
 CAN_L
 Text Label 2225 1925 0    50   ~ 0
@@ -575,7 +571,7 @@ F3 "ISO_RTN" I L 8200 8575 50
 F4 "CAN_L" I L 8200 8775 50 
 F5 "CAN_H" I L 8200 8675 50 
 F6 "GPIO25" O R 9425 8475 50 
-F7 "PI_SPI_MOSI" O R 9425 8575 50 
+F7 "PI_SPI_MOSI" I R 9425 8575 50 
 F8 "PI_SPI_MISO" O R 9425 8675 50 
 F9 "PI_SPI_CEO" O R 9425 8875 50 
 F10 "PI_SPI_SCLK" O R 9425 8775 50 
@@ -586,9 +582,9 @@ Text Label 10050 8475 2    50   ~ 0
 GPIO25
 Text Label 10050 8875 2    50   ~ 0
 PI_SPI_CEO
-Text Label 15225 3825 2    50   ~ 0
+Text Label 15600 4175 2    50   ~ 0
 GPIO25
-Text Label 15225 3925 2    50   ~ 0
+Text Label 15600 4275 2    50   ~ 0
 PI_SPI_CEO
 Text Label 7600 8475 0    50   ~ 0
 5V_ISO
@@ -614,42 +610,42 @@ NoConn ~ 6725 5075
 $Comp
 L Logic-rescue:Conn_01x06-Connector_Generic-Logic-rescue J8
 U 1 1 5FDCB4A9
-P 15050 1750
-F 0 "J8" H 15050 2050 50  0000 C CNN
-F 1 "PIC program" H 15050 1325 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 15050 1750 50  0001 C CNN
-F 3 "~" H 15050 1750 50  0001 C CNN
-	1    15050 1750
+P 14950 2100
+F 0 "J8" H 14950 2400 50  0000 C CNN
+F 1 "PIC program" H 14950 1675 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 14950 2100 50  0001 C CNN
+F 3 "~" H 14950 2100 50  0001 C CNN
+	1    14950 2100
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	15250 1550 15700 1550
+	15150 1900 15600 1900
 Wire Wire Line
-	15250 1650 15700 1650
+	15150 2000 15600 2000
 Wire Wire Line
-	15250 1750 15700 1750
+	15150 2100 15600 2100
 Wire Wire Line
-	15250 1850 15700 1850
+	15150 2200 15600 2200
 Wire Wire Line
-	15250 1950 15700 1950
-NoConn ~ 15250 2050
-Text Label 15700 1650 2    50   ~ 0
+	15150 2300 15600 2300
+NoConn ~ 15150 2400
+Text Label 15600 2000 2    50   ~ 0
 3.3V_ISO
-Text Label 15700 1550 2    50   ~ 0
+Text Label 15600 1900 2    50   ~ 0
 ~MCLR~
-Text Label 15700 1750 2    50   ~ 0
+Text Label 15600 2100 2    50   ~ 0
 ISO_RTN
-Text Label 15700 1850 2    50   ~ 0
+Text Label 15600 2200 2    50   ~ 0
 PGEC
-Text Label 15700 1950 2    50   ~ 0
+Text Label 15600 2300 2    50   ~ 0
 PGED
 Text Label 7600 8875 0    50   ~ 0
 5V_NON_ISO
 Text Label 7600 8975 0    50   ~ 0
 GLV_RTN
-Text Label 12950 1825 2    50   ~ 0
+Text Label 12700 2175 2    50   ~ 0
 CAN_H
-Text Label 12950 1725 2    50   ~ 0
+Text Label 12700 2075 2    50   ~ 0
 CAN_L
 Text Label 7825 3475 0    50   ~ 0
 5V_ISO
@@ -760,7 +756,7 @@ Wire Wire Line
 	3950 10025 3950 9925
 Text Label 4375 9925 2    50   ~ 0
 SDA_ISO_PI
-Text Label 12250 4325 0    50   ~ 0
+Text Label 12625 4675 0    50   ~ 0
 SR_CTRL
 Text Label 7675 9800 0    50   ~ 0
 24V
@@ -821,19 +817,19 @@ $EndComp
 $Comp
 L Logic-rescue:Conn_01x04-Connector_Generic-Logic-rescue J7
 U 1 1 5FB30D0C
-P 13675 1750
-F 0 "J7" H 13625 1450 50  0000 L CNN
-F 1 "GLV BOB" H 13500 1975 50  0000 L CNN
-F 2 "CarMan General Footprints:Molex_MiniFit-JR-5556-04A_2x02x4.20mm_Straight" H 13675 1750 50  0001 C CNN
-F 3 "~" H 13675 1750 50  0001 C CNN
-	1    13675 1750
+P 13400 2075
+F 0 "J7" H 13350 1775 50  0000 L CNN
+F 1 "GLV BOB" H 13225 2300 50  0001 L CNN
+F 2 "CarMan General Footprints:Molex_MiniFit-JR-5556-04A_2x02x4.20mm_Straight" H 13400 2075 50  0001 C CNN
+F 3 "~" H 13400 2075 50  0001 C CNN
+	1    13400 2075
 	-1   0    0    1   
 $EndComp
-Text Label 14575 1850 2    50   ~ 0
+Text Label 14300 2175 2    50   ~ 0
 SCL_TSI_GLV
-Text Label 14575 1650 2    50   ~ 0
+Text Label 14300 1975 2    50   ~ 0
 GLV_RTN
-Text Label 14575 1550 2    50   ~ 0
+Text Label 14300 1875 2    50   ~ 0
 24V
 $Comp
 L Device:C C?
@@ -932,47 +928,47 @@ NoConn ~ 3075 4475
 NoConn ~ 6725 4875
 NoConn ~ 6725 3875
 NoConn ~ 6725 3975
-Text Label 12950 1925 2    50   ~ 0
+Text Label 12700 2275 2    50   ~ 0
 RTDS_CTRL
-Text Label 12250 1725 0    50   ~ 0
+Text Label 12000 2075 0    50   ~ 0
 BP_CAN-
-Text Label 12250 1825 0    50   ~ 0
+Text Label 12000 2175 0    50   ~ 0
 BP_CAN+
 $Comp
 L Connector_Generic:Conn_01x06 J5.2
 U 1 1 5FB98586
-P 12000 1725
-F 0 "J5.2" H 11900 2025 50  0000 L CNN
-F 1 "Conn_01x06" H 12080 1626 50  0001 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 12000 1725 50  0001 C CNN
-F 3 "~" H 12000 1725 50  0001 C CNN
-	1    12000 1725
+P 11750 2075
+F 0 "J5.2" H 11650 2375 50  0000 L CNN
+F 1 "Conn_01x06" H 11830 1976 50  0001 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 11750 2075 50  0001 C CNN
+F 3 "~" H 11750 2075 50  0001 C CNN
+	1    11750 2075
 	-1   0    0    -1  
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x06 J5.1
 U 1 1 5FB8432E
-P 11800 1725
-F 0 "J5.1" H 11700 2025 50  0000 L CNN
-F 1 "Conn_01x06" H 11880 1626 50  0001 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 11800 1725 50  0001 C CNN
-F 3 "~" H 11800 1725 50  0001 C CNN
-	1    11800 1725
+P 11550 2075
+F 0 "J5.1" H 11450 2375 50  0000 L CNN
+F 1 "Conn_01x06" H 11630 1976 50  0001 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 11550 2075 50  0001 C CNN
+F 3 "~" H 11550 2075 50  0001 C CNN
+	1    11550 2075
 	1    0    0    -1  
 $EndComp
-Text Label 12950 2025 2    50   ~ 0
+Text Label 12700 2375 2    50   ~ 0
 PC_ready
-Text Label 10850 2025 0    50   ~ 0
+Text Label 10600 2375 0    50   ~ 0
 Throttle_SEL
-Text Label 10850 1825 0    50   ~ 0
+Text Label 10600 2175 0    50   ~ 0
 Safety_Loop
-Text Label 10850 1725 0    50   ~ 0
+Text Label 10600 2075 0    50   ~ 0
 ISO_RTN
-Text Label 10850 1925 0    50   ~ 0
+Text Label 10600 2275 0    50   ~ 0
 Cooling_CTRL
-Text Label 12950 1525 2    50   ~ 0
+Text Label 12700 1875 2    50   ~ 0
 AMS_Fault
-Text Label 12950 1625 2    50   ~ 0
+Text Label 12700 1975 2    50   ~ 0
 SR_CTRL
 $Comp
 L Device:LED D5
@@ -1095,41 +1091,41 @@ Text Label 2925 9925 2    50   ~ 0
 5V_ISO
 Wire Wire Line
 	3300 10825 3950 10825
-Text Label 15225 3525 2    50   ~ 0
+Text Label 15600 3875 2    50   ~ 0
 Safety_Loop_ISO
 $Comp
 L Connector_Generic:Conn_01x02 J2
 U 1 1 6025C7CF
-P 13175 850
-F 0 "J2" H 13125 950 50  0000 L CNN
-F 1 "IMU PS" H 13025 625 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 13175 850 50  0001 C CNN
-F 3 "~" H 13175 850 50  0001 C CNN
-	1    13175 850 
-	1    0    0    -1  
+P 12625 1150
+F 0 "J2" H 12575 1250 50  0000 L CNN
+F 1 "IMU PS" H 12475 925 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 12625 1150 50  0001 C CNN
+F 3 "~" H 12625 1150 50  0001 C CNN
+	1    12625 1150
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	13875 1650 14575 1650
+	13600 1975 14300 1975
 Wire Notes Line
 	2225 9450 600  9450
 Text Notes 675  9625 0    71   ~ 0
 Non-Isolated Voltage LEDs
 Text Notes 2850 9625 0    79   ~ 0
 Isolated Status LEDs
-Text Notes 11300 2250 0    79   ~ 0
+Text Notes 11250 2550 0    50   ~ 0
 Logic-TSI Connector
 Wire Wire Line
-	12525 850  12525 950 
-Text Label 12525 850  0    50   ~ 0
+	13275 1150 13275 1250
+Text Label 13275 1150 2    50   ~ 0
 ISO_RTN
 Wire Wire Line
-	14125 1025 14575 1025
+	14075 1275 14525 1275
 Wire Wire Line
-	13875 1750 14575 1750
+	13600 2075 14300 2075
 Wire Wire Line
-	13875 1550 14575 1550
+	13600 1875 14300 1875
 Wire Wire Line
-	13875 1850 14575 1850
+	13600 2175 14300 2175
 Wire Wire Line
 	1250 8050 1875 8050
 Wire Wire Line
@@ -1147,10 +1143,6 @@ Wire Wire Line
 	2850 7575 2850 7625
 Wire Wire Line
 	2850 7575 3525 7575
-Wire Notes Line
-	10425 475  10425 2350
-Wire Notes Line
-	10425 2350 16050 2350
 Wire Wire Line
 	9425 8475 10050 8475
 Wire Wire Line
@@ -1168,21 +1160,21 @@ Wire Wire Line
 Wire Wire Line
 	9425 8875 10050 8875
 Wire Wire Line
-	12250 4325 13225 4325
+	12625 4675 13600 4675
 Wire Wire Line
-	12475 3025 13225 3025
+	12850 3375 13600 3375
 Wire Wire Line
-	12475 2925 13225 2925
+	12850 3275 13600 3275
 Wire Wire Line
-	14275 3525 15225 3525
+	14650 3875 15600 3875
 Wire Wire Line
-	14425 2825 15225 2825
+	14800 3175 15600 3175
 Wire Wire Line
-	14425 3025 15225 3025
+	14800 3375 15600 3375
 Wire Wire Line
-	14275 3825 15225 3825
+	14650 4175 15600 4175
 Wire Wire Line
-	14275 3925 15225 3925
+	14650 4275 15600 4275
 Wire Wire Line
 	9675 3475 9675 3675
 Wire Wire Line
@@ -1368,11 +1360,11 @@ Wire Wire Line
 Wire Wire Line
 	6050 9975 5450 9975
 Wire Wire Line
-	11450 900  12325 900 
+	11050 1125 11925 1125
 Wire Wire Line
-	12525 850  12975 850 
+	13275 1150 12825 1150
 Wire Wire Line
-	12525 950  12975 950 
+	13275 1250 12825 1250
 Wire Wire Line
 	7825 4175 8325 4175
 Text Notes 7700 10800 0    79   ~ 0
@@ -1387,47 +1379,37 @@ Wire Wire Line
 	7675 9800 8200 9800
 Wire Wire Line
 	7675 10200 8200 10200
-Text Label 14575 1750 2    50   ~ 0
+Text Label 14300 2075 2    50   ~ 0
 SDA_TSI_GLV
 Text Label 12650 9275 0    50   ~ 0
 SDA_TSI_GLV
-Text Label 10850 1625 0    50   ~ 0
+Text Label 10600 1975 0    50   ~ 0
 SDA_TSI_GLV
-Text Label 10850 1525 0    50   ~ 0
+Text Label 10600 1875 0    50   ~ 0
 SCL_TSI_GLV
 $Comp
 L Logic-rescue:Conn_01x04-Connector_Generic-Logic-rescue J1
 U 1 1 5F95E453
-P 11250 1000
-F 0 "J1" H 11200 700 50  0000 L CNN
-F 1 "Motor Controller Can Line" H 10675 1200 50  0001 L CNN
-F 2 "CarMan General Footprints:Molex_MiniFit-JR-5556-04A_2x02x4.20mm_Straight" H 11250 1000 50  0001 C CNN
-F 3 "~" H 11250 1000 50  0001 C CNN
-	1    11250 1000
+P 10850 1225
+F 0 "J1" H 10800 925 50  0000 L CNN
+F 1 "Motor Controller Can Line" H 10275 1425 50  0001 L CNN
+F 2 "CarMan General Footprints:Molex_MiniFit-JR-5556-04A_2x02x4.20mm_Straight" H 10850 1225 50  0001 C CNN
+F 3 "~" H 10850 1225 50  0001 C CNN
+	1    10850 1225
 	-1   0    0    1   
 $EndComp
-Text Notes 11050 1275 0    47   ~ 0
+Text Notes 10650 1500 0    47   ~ 0
 MC Can Line
-Text Label 11800 1000 2    50   ~ 0
+Text Label 11400 1225 2    50   ~ 0
 CAN_L
 Wire Wire Line
-	11450 1000 11800 1000
-Wire Notes Line
-	12475 1175 13400 1175
-Wire Notes Line
-	13400 1175 13400 550 
-Wire Notes Line
-	13400 550  12475 550 
-Wire Notes Line
-	12475 550  12475 1175
-Text Notes 12850 700  0    79   ~ 0
-?
-Text Notes 13850 1275 0    47   ~ 0
+	11050 1225 11400 1225
+Text Notes 13800 1525 0    47   ~ 0
 IMU
 Wire Wire Line
-	12200 1725 12950 1725
+	11950 2075 12700 2075
 Wire Wire Line
-	12950 1825 12200 1825
+	12700 2175 11950 2175
 Wire Wire Line
 	2650 10825 3300 10825
 Wire Wire Line
@@ -1448,25 +1430,25 @@ Wire Wire Line
 Wire Wire Line
 	1300 10975 1650 10975
 Wire Wire Line
-	11600 1525 10850 1525
+	11350 1875 10600 1875
 Wire Wire Line
-	10850 1625 11600 1625
+	10600 1975 11350 1975
 Wire Wire Line
-	10850 1725 11600 1725
+	10600 2075 11350 2075
 Wire Wire Line
-	10850 1825 11600 1825
+	10600 2175 11350 2175
 Wire Wire Line
-	10850 1925 11600 1925
+	10600 2275 11350 2275
 Wire Wire Line
-	10850 2025 11600 2025
+	10600 2375 11350 2375
 Wire Wire Line
-	12950 1925 12200 1925
+	12700 2275 11950 2275
 Wire Wire Line
-	12200 2025 12950 2025
+	11950 2375 12700 2375
 Wire Wire Line
-	12950 1525 12200 1525
+	12700 1875 11950 1875
 Wire Wire Line
-	12200 1625 12950 1625
+	11950 1975 12700 1975
 Wire Notes Line
 	2225 9450 2225 11100
 Wire Notes Line
@@ -1502,11 +1484,11 @@ Wire Notes Line
 	12150 8425 12150 9875
 Wire Notes Line
 	12150 8425 15975 8425
-Text Label 12475 3725 0    50   ~ 0
+Text Label 12850 4075 0    50   ~ 0
 PI_SPI_MOSI
-Text Label 12475 3825 0    50   ~ 0
+Text Label 12850 4175 0    50   ~ 0
 PI_SPI_MISO
-Text Label 12475 3925 0    50   ~ 0
+Text Label 12850 4275 0    50   ~ 0
 PI_SPI_SCLK
 Text Label 10050 8575 2    50   ~ 0
 PI_SPI_MOSI
@@ -1521,9 +1503,60 @@ Wire Wire Line
 Wire Wire Line
 	9425 8775 10050 8775
 Wire Wire Line
-	12475 3825 13225 3825
+	12850 4175 13600 4175
 Wire Wire Line
-	12475 3725 13225 3725
+	12850 4075 13600 4075
 Wire Wire Line
-	12475 3925 13225 3925
+	12850 4275 13600 4275
+Wire Wire Line
+	2400 3375 3075 3375
+Wire Wire Line
+	2400 3475 3075 3475
+$Comp
+L Logic-rescue:MCP9700AT-HTT-Sensor_Temperature-Logic-rescue U1
+U 1 1 6126F219
+P 1075 1300
+F 0 "U1" H 745 1300 50  0000 R CNN
+F 1 "MCP9700AT-HTT-Sensor_Temperature-Logic-rescue" H 745 1255 50  0001 R CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 1075 900 50  0001 C CNN
+F 3 "" H 925 1550 50  0001 C CNN
+	1    1075 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1075 1000 1075 900 
+Wire Wire Line
+	3075 2875 1925 2875
+Wire Wire Line
+	1925 2875 1925 1300
+Wire Wire Line
+	1925 1300 1475 1300
+Text Label 1450 900  2    59   ~ 0
+5V_ISO
+Wire Wire Line
+	1075 900  1450 900 
+Wire Wire Line
+	1075 1600 1075 1725
+Text Label 1450 1725 2    50   ~ 0
+ISO_RTN
+Wire Wire Line
+	1075 1725 1450 1725
+Wire Notes Line
+	10350 525  10350 2700
+Wire Notes Line
+	10350 2700 16000 2700
+Text Notes 10425 775  0    118  ~ 0
+LOGIC HEADERS
+Text Notes 13250 2350 0    50   ~ 0
+GLV 24V and I2C to logic
+Wire Notes Line
+	10350 825  11900 825 
+Wire Notes Line
+	11900 825  11900 525 
+Wire Notes Line
+	16000 2700 16000 525 
+Wire Notes Line
+	10350 525  16000 525 
+Text Notes 14650 2550 0    50   ~ 0
+PICKit Programming Header
 $EndSCHEMATC
