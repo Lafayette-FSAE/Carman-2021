@@ -777,36 +777,26 @@ Text Label 4225 9650 0    50   ~ 0
 SDA_ISO_PI
 Text Label 12250 4325 0    50   ~ 0
 SR_CTRL
-Wire Wire Line
-	9700 9900 9500 9900
-Wire Wire Line
-	9700 10075 9500 10075
-Wire Wire Line
-	10875 9800 10675 9800
-Wire Wire Line
-	10875 10000 10675 10000
-Wire Wire Line
-	10875 10100 10675 10100
-Text Label 9500 9900 2    50   ~ 0
+Text Label 9525 9900 0    50   ~ 0
 24V
-Text Label 9500 10075 2    50   ~ 0
+Text Label 9525 10075 0    50   ~ 0
 GLV_RTN
-Text Label 10875 9800 0    50   ~ 0
+Text Label 11550 9875 2    50   ~ 0
 5V_ISO
-Text Label 10875 10000 0    50   ~ 0
+Text Label 11550 10000 2    50   ~ 0
 3.3V_ISO
-Text Label 10875 10100 0    50   ~ 0
+Text Label 11550 10125 2    50   ~ 0
 ISO_RTN
 $Sheet
-S 9700 9750 975  475 
+S 10050 9750 975  475 
 U 5FAD1CB8
 F0 "LogicPower" 50
 F1 "LogicPower.sch" 50
-F2 "24V" I L 9700 9900 50 
-F3 "GLV_RTN" I L 9700 10075 50 
-F4 "5V_ISO" I R 10675 9800 50 
-F5 "3.3V_ISO" I R 10675 10000 50 
-F6 "ISO_RTN" I R 10675 10100 50 
+F2 "24V" I L 10050 9900 50 
+F3 "GLV_RTN" I L 10050 10075 50 
+F4 "5V_ISO" I R 11025 9875 50 
+F5 "3.3V_ISO" I R 11025 10000 50 
+F6 "ISO_RTN" I R 11025 10125 50 
 $EndSheet
 $Comp
 L Device:R R8
@@ -1502,4 +1492,14 @@ Wire Wire Line
 	7825 4175 8325 4175
 Text Notes 9325 10450 0    79   ~ 0
 5V & 3.3V have same isolated return
+Wire Wire Line
+	11025 9875 11550 9875
+Wire Wire Line
+	11025 10125 11550 10125
+Wire Wire Line
+	11025 10000 11550 10000
+Wire Wire Line
+	9525 9900 10050 9900
+Wire Wire Line
+	9525 10075 10050 10075
 $EndSCHEMATC
