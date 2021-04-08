@@ -13,7 +13,7 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 1350 1675 0    50   Input ~ 0
+Text HLabel 1300 1625 0    50   Input ~ 0
 5V_ISO
 $Comp
 L Logic-rescue:MCP2515-xSO-Interface_CAN_LIN-Logic-rescue U8
@@ -26,27 +26,15 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21801e.pdf" H 7675 3325 50 
 	1    7575 4125
 	-1   0    0    -1  
 $EndComp
-Text HLabel 1325 1800 0    50   Input ~ 0
+Text HLabel 1300 1725 0    50   Input ~ 0
 ISO_RTN
-Text HLabel 2850 3675 0    50   Input ~ 0
-CAN_L
-Text HLabel 2850 3475 0    50   Input ~ 0
+Text Label 3450 3525 0    50   ~ 0
 CAN_H
-Wire Wire Line
-	2850 3475 3100 3475
-Wire Wire Line
-	2850 3675 3000 3675
-Wire Wire Line
-	1350 1675 1750 1675
-Wire Wire Line
-	1325 1800 1675 1800
-Text Label 3450 3475 0    50   ~ 0
-CAN_H
-Text Label 3450 3675 0    50   ~ 0
+Text Label 3450 3625 0    50   ~ 0
 CAN_L
-Text Label 1750 1675 0    50   ~ 0
+Text Label 2000 1625 2    50   ~ 0
 5V_ISO
-Text Label 1675 1800 0    50   ~ 0
+Text Label 2000 1725 2    50   ~ 0
 ISO_RTN
 $Comp
 L Logic-rescue:Conn_01x02_Male-Connector-Logic-rescue J7
@@ -75,13 +63,7 @@ F 3 "~" H 3100 2925 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3100 3075 3100 3475
-Connection ~ 3100 3475
-Wire Wire Line
-	3100 3475 3700 3475
-Wire Wire Line
-	3000 2775 3000 3675
-Connection ~ 3000 3675
+	3000 2775 3000 3625
 Wire Wire Line
 	4900 2675 5200 2675
 $Comp
@@ -105,10 +87,8 @@ Text Label 5000 2675 0    50   ~ 0
 5V_ISO
 Text Label 5300 3025 0    50   ~ 0
 ISO_RTN
-Text Label 4950 3725 0    50   ~ 0
+Text Label 5450 3725 2    50   ~ 0
 ISO_RTN
-Wire Wire Line
-	4850 3725 4950 3725
 NoConn ~ 8175 4525
 Text Label 7675 5075 0    50   ~ 0
 ISO_RTN
@@ -143,9 +123,7 @@ Text Label 7975 3225 0    50   ~ 0
 ISO_RTN
 Wire Wire Line
 	6975 4125 6475 4125
-Text Label 6625 4125 0    50   ~ 0
-GPIO25
-Text HLabel 6475 4125 0    50   Input ~ 0
+Text Label 6475 4125 0    50   ~ 0
 GPIO25
 NoConn ~ 6975 4225
 NoConn ~ 6975 4325
@@ -171,21 +149,13 @@ Wire Wire Line
 	6425 4725 6025 4725
 Text Label 6025 4725 0    50   ~ 0
 5V_ISO
-Wire Wire Line
-	8175 3525 8675 3525
-Wire Wire Line
-	8175 3625 8675 3625
-Wire Wire Line
-	8175 3725 8675 3725
-Wire Wire Line
-	8175 3825 8675 3825
-Text Label 8225 3525 0    50   ~ 0
+Text Label 8825 3525 2    50   ~ 0
 PI_SPI_MOSI
-Text Label 8225 3625 0    50   ~ 0
+Text Label 8825 3625 2    50   ~ 0
 PI_SPI_MISO
-Text Label 8225 3725 0    50   ~ 0
+Text Label 8825 3725 2    50   ~ 0
 PI_SPI_CEO
-Text Label 8225 3825 0    50   ~ 0
+Text Label 8825 3825 2    50   ~ 0
 PI_SPI_SCLK
 $Comp
 L Logic-rescue:Crystal-Device-Logic-rescue Y1
@@ -251,25 +221,6 @@ Wire Wire Line
 	9725 4375 9725 4525
 Text Label 9925 4375 0    50   ~ 0
 ISO_RTN
-Text HLabel 8675 3525 2    50   Input ~ 0
-PI_SPI_MOSI
-Text HLabel 8675 3625 2    50   Input ~ 0
-PI_SPI_MISO
-Text HLabel 8675 3725 2    50   Input ~ 0
-PI_SPI_CEO
-Text HLabel 8675 3825 2    50   Input ~ 0
-PI_SPI_SCLK
-$Comp
-L Logic-rescue:ISO1050DUB-Interface_CAN_LIN-Logic-rescue U2
-U 1 1 5FAD2713
-P 4450 3525
-F 0 "U2" H 4450 3892 50  0000 C CNN
-F 1 "ISO1050DUB" H 4450 3801 50  0000 C CNN
-F 2 "Package_SO:SOP-8_6.62x9.15mm_P2.54mm" H 4450 3175 50  0001 C CIN
-F 3 "http://www.ti.com/lit/ds/symlink/iso1050.pdf" H 4450 3475 50  0001 C CNN
-	1    4450 3525
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	4900 3425 4850 3425
 Wire Wire Line
@@ -294,39 +245,120 @@ Wire Wire Line
 Wire Wire Line
 	4350 2975 4450 2975
 Text Label 4150 2625 0    50   ~ 0
-5V_non_iso
+5V_NON_ISO
 Text Label 4450 2975 0    50   ~ 0
 GLV_RTN
-Text HLabel 1375 1125 0    50   Input ~ 0
-5V_non_iso
-Wire Wire Line
-	1375 1125 1725 1125
-Text Label 1725 1125 0    50   ~ 0
-5V_non_iso
-Wire Wire Line
-	3000 3675 3700 3675
-Wire Wire Line
-	4050 3525 3700 3525
-Wire Wire Line
-	3700 3525 3700 3475
-Wire Wire Line
-	3700 3675 3700 3625
-Wire Wire Line
-	3700 3625 4050 3625
+Text HLabel 1275 975  0    50   Input ~ 0
+5V_NON_ISO
+Text Label 1975 975  2    50   ~ 0
+5V_NON_ISO
 Wire Wire Line
 	4050 2625 4050 3425
-Text HLabel 1375 1275 0    50   Input ~ 0
+Text HLabel 1275 1075 0    50   Input ~ 0
 GLV_RTN
-Wire Wire Line
-	1375 1275 1725 1275
-Text Label 1725 1275 0    50   ~ 0
+Text Label 1975 1075 2    50   ~ 0
 GLV_RTN
-Text Label 4050 3825 3    50   ~ 0
+Text Label 3450 3725 0    50   ~ 0
 GLV_RTN
-Wire Wire Line
-	4050 3725 4050 3825
 Wire Wire Line
 	6975 3525 4850 3525
 Wire Wire Line
 	4850 3625 6975 3625
+Text Notes 1200 700  0    79   ~ 0
+SIGNALS
+Wire Notes Line
+	2350 550  550  550 
+Wire Wire Line
+	1275 975  1975 975 
+Wire Wire Line
+	1275 1075 1975 1075
+Wire Wire Line
+	3000 3625 4050 3625
+Wire Wire Line
+	3100 3075 3100 3525
+Wire Wire Line
+	3100 3525 4050 3525
+Wire Wire Line
+	3450 3725 4050 3725
+$Comp
+L Logic-rescue:ISO1050DUB-Interface_CAN_LIN-Logic-rescue U2
+U 1 1 5FAD2713
+P 4450 3525
+F 0 "U2" H 4450 3892 50  0000 C CNN
+F 1 "ISO1050DUB" H 4450 3801 50  0000 C CNN
+F 2 "Package_SO:SOP-8_6.62x9.15mm_P2.54mm" H 4450 3175 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/iso1050.pdf" H 4450 3475 50  0001 C CNN
+	1    4450 3525
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 3725 5450 3725
+Wire Wire Line
+	1300 1625 2000 1625
+Wire Wire Line
+	1300 1725 2000 1725
+Text Label 1975 1175 2    50   ~ 0
+CAN_H
+Text Label 1975 1275 2    50   ~ 0
+CAN_L
+Wire Wire Line
+	1275 1175 1975 1175
+Wire Wire Line
+	1275 1275 1975 1275
+Text HLabel 1275 1275 0    50   Input ~ 0
+CAN_L
+Text HLabel 1275 1175 0    50   Input ~ 0
+CAN_H
+Wire Notes Line
+	550  1375 2350 1375
+Text Notes 625  875  0    59   ~ 0
+NON-ISO
+Wire Notes Line
+	2350 750  550  750 
+Text Notes 625  1525 0    59   ~ 0
+ISO
+Text Label 2000 1825 2    50   ~ 0
+GPIO25
+Text HLabel 1300 1825 0    50   Output ~ 0
+GPIO25
+Wire Wire Line
+	1300 1825 2000 1825
+Text Label 2000 2225 2    50   ~ 0
+PI_SPI_MOSI
+Text Label 2000 2125 2    50   ~ 0
+PI_SPI_MISO
+Text Label 2000 2025 2    50   ~ 0
+PI_SPI_CEO
+Text Label 2000 1925 2    50   ~ 0
+PI_SPI_SCLK
+Text HLabel 1300 2225 0    50   Output ~ 0
+PI_SPI_MOSI
+Text HLabel 1300 2125 0    50   Output ~ 0
+PI_SPI_MISO
+Text HLabel 1300 2025 0    50   Output ~ 0
+PI_SPI_CEO
+Text HLabel 1300 1925 0    50   Output ~ 0
+PI_SPI_SCLK
+Wire Wire Line
+	1300 1925 2000 1925
+Wire Wire Line
+	1300 2025 2000 2025
+Wire Wire Line
+	1300 2125 2000 2125
+Wire Wire Line
+	1300 2225 2000 2225
+Wire Wire Line
+	8175 3525 8825 3525
+Wire Wire Line
+	8175 3625 8825 3625
+Wire Wire Line
+	8175 3725 8825 3725
+Wire Wire Line
+	8175 3825 8825 3825
+Wire Notes Line
+	2350 2375 550  2375
+Wire Notes Line
+	550  550  550  2375
+Wire Notes Line
+	2350 550  2350 2375
 $EndSCHEMATC
