@@ -14,9 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 Text Label 6050 2050 0    50   ~ 0
-5V
-Text Label 6050 2650 0    50   ~ 0
-5V_rtn
+5V_ISO
 Wire Wire Line
 	7200 2550 7100 2550
 Wire Wire Line
@@ -80,31 +78,26 @@ Wire Wire Line
 Wire Wire Line
 	6700 2150 7100 2150
 Connection ~ 7100 2150
-Wire Wire Line
-	7100 2750 7100 3100
-Connection ~ 7100 2750
-Text Label 7100 3100 1    50   ~ 0
-3.3V_rtn
+Text Label 6575 2650 2    50   ~ 0
+ISO_RTN
 Text Label 8400 1400 0    50   ~ 0
-3.3V
+3.3V_ISO
 Wire Wire Line
 	5950 2050 5500 2050
 Connection ~ 5950 2050
 Wire Wire Line
 	5950 2650 5500 2650
 Connection ~ 5950 2650
-Wire Wire Line
-	5950 2650 7100 2650
 $Comp
 L power:PWR_FLAG #FLG03
 U 1 1 5FAF663E
-P 7100 3100
-F 0 "#FLG03" H 7100 3175 50  0001 C CNN
-F 1 "PWR_FLAG" V 7100 3228 50  0000 L CNN
-F 2 "" H 7100 3100 50  0001 C CNN
-F 3 "~" H 7100 3100 50  0001 C CNN
-	1    7100 3100
-	0    1    1    0   
+P 6150 2875
+F 0 "#FLG03" H 6150 2950 50  0001 C CNN
+F 1 "PWR_FLAG" H 5975 3050 50  0000 L CNN
+F 2 "" H 6150 2875 50  0001 C CNN
+F 3 "~" H 6150 2875 50  0001 C CNN
+	1    6150 2875
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	7100 1400 8600 1400
@@ -129,11 +122,9 @@ $EndComp
 Text HLabel 1150 650  0    50   Input ~ 0
 24V
 Text HLabel 1150 800  0    50   Input ~ 0
-24V_rtn
-Text HLabel 1150 950  0    50   Input ~ 0
-5V
-Text HLabel 1150 1100 0    50   Input ~ 0
-5V_rtn
+GLV_RTN
+Text HLabel 1125 1350 0    50   Output ~ 0
+5V_ISO
 $Comp
 L CarMan_KiCAD_Library:PYB20-Q24-S5 U4
 U 1 1 5FAF8405
@@ -147,34 +138,30 @@ F 5 "1.04" H 4900 2350 50  0001 L BNN "Field5"
 	1    4900 2350
 	1    0    0    -1  
 $EndComp
-Text HLabel 1150 1250 0    50   Input ~ 0
-3.3V
-Text HLabel 1150 1400 0    50   Input ~ 0
-3.3V_rtn
+Text HLabel 1125 1450 0    50   Output ~ 0
+3.3V_ISO
+Text HLabel 1125 1550 0    50   Output ~ 0
+ISO_RTN
 Wire Wire Line
 	1150 650  1500 650 
 Wire Wire Line
 	1150 800  1500 800 
 Wire Wire Line
-	1150 950  1500 950 
+	1125 1350 1475 1350
 Wire Wire Line
-	1150 1100 1500 1100
+	1125 1450 1475 1450
 Wire Wire Line
-	1150 1250 1500 1250
-Wire Wire Line
-	1150 1400 1500 1400
+	1125 1550 1475 1550
 Text Label 1500 650  0    50   ~ 0
 24V
 Text Label 1500 800  0    50   ~ 0
-24V_rtn
-Text Label 1500 950  0    50   ~ 0
-5V
-Text Label 1500 1100 0    50   ~ 0
-5V_rtn
-Text Label 1500 1250 0    50   ~ 0
-3.3V
-Text Label 1500 1400 0    50   ~ 0
-3.3V_rtn
+GLV_RTN
+Text Label 1475 1350 0    50   ~ 0
+5V_ISO
+Text Label 1475 1450 0    50   ~ 0
+3.3V_ISO
+Text Label 1475 1550 0    50   ~ 0
+ISO_RTN
 NoConn ~ 5500 2450
 NoConn ~ 4300 2250
 $Comp
@@ -197,7 +184,7 @@ Wire Wire Line
 Wire Wire Line
 	3800 2650 4300 2650
 Text Label 3900 2650 0    50   ~ 0
-24V_rtn
+GLV_RTN
 Text Label 3950 2050 0    50   ~ 0
 24V
 $Comp
@@ -226,4 +213,11 @@ F 3 "~" H 3800 2650 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Connection ~ 3800 2650
+Wire Wire Line
+	5950 2650 6150 2650
+Wire Wire Line
+	6150 2650 6150 2875
+Connection ~ 6150 2650
+Wire Wire Line
+	6150 2650 7100 2650
 $EndSCHEMATC
