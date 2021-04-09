@@ -586,8 +586,6 @@ Wire Wire Line
 	7700 6250 7700 4050
 Text Label 8450 5800 0    28   ~ 0
 U8_Pin9
-Text Label 8400 5900 2    50   ~ 0
-Throttle_PL
 Wire Wire Line
 	6800 6850 6800 6750
 Text Label 6800 6850 0    50   ~ 0
@@ -678,8 +676,6 @@ Wire Wire Line
 	7800 5800 8650 5800
 Wire Wire Line
 	7900 5700 8650 5700
-Wire Wire Line
-	8400 5900 8650 5900
 Wire Wire Line
 	8000 5600 8650 5600
 Wire Wire Line
@@ -1210,34 +1206,18 @@ Text HLabel 1550 2000 0    50   Input ~ 0
 IMD_Status
 Text Label 2325 2000 2    50   ~ 0
 IMD_Status
-Wire Wire Line
-	8650 6000 8450 6000
-Text Label 8450 6000 2    50   ~ 0
-IMD_Status
-Text Label 10300 6000 0    50   ~ 0
+Text Label 10975 6000 2    50   ~ 0
 Brake_Pressed_uC
-Wire Wire Line
-	10300 6000 10250 6000
-Text Label 10350 6100 0    50   ~ 0
+Text Label 10975 6100 2    50   ~ 0
 APPS
-Wire Wire Line
-	10350 6100 10250 6100
-Text Label 10350 6200 0    50   ~ 0
-CoolTemp
-Wire Wire Line
-	10350 6200 10250 6200
-Text Label 10350 6300 0    50   ~ 0
+Text Label 10975 6200 2    50   ~ 0
 D_LED_CTRL
-Wire Wire Line
-	10250 6300 10350 6300
 Text HLabel 1550 2300 0    50   Input ~ 0
 D_LED_CTRL
 Text Label 2325 2300 2    50   ~ 0
 D_LED_CTRL
-Text Label 10350 6400 0    50   ~ 0
+Text Label 10975 6300 2    50   ~ 0
 Flowrate
-Wire Wire Line
-	10250 6400 10350 6400
 Wire Wire Line
 	10250 7000 10250 7100
 $Comp
@@ -2112,4 +2092,15 @@ Wire Wire Line
 	1550 900  2325 900 
 Wire Wire Line
 	1550 800  2325 800 
+NoConn ~ 8650 5900
+NoConn ~ 8650 6000
+Wire Wire Line
+	10250 6000 10975 6000
+Wire Wire Line
+	10250 6100 10975 6100
+Wire Wire Line
+	10250 6200 10975 6200
+Wire Wire Line
+	10250 6300 10975 6300
+NoConn ~ 10250 6400
 $EndSCHEMATC

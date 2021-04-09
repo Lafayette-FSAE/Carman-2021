@@ -99,11 +99,11 @@ Text Label 5025 1500 0    50   ~ 0
 SCL_TSI
 Text Label 5025 1600 0    50   ~ 0
 SDA_TSI
-Text Label 5025 1800 0    50   ~ 0
-Safety_Loop
 Text Label 5025 1900 0    50   ~ 0
-Cooling_CTRL
+Safety_Loop
 Text Label 5025 2000 0    50   ~ 0
+Cooling_CTRL
+Text Label 5025 2100 0    50   ~ 0
 Throttle_SEL
 Text Label 1200 2575 0    50   ~ 0
 5V
@@ -111,8 +111,6 @@ Text Label 7050 825  2    50   ~ 0
 GLV_RTN
 Text Label 700  7225 0    50   ~ 0
 3.3V
-Text Label 700  7125 0    50   ~ 0
-5V
 Text Label 700  7425 0    50   ~ 0
 AIRS+
 $Comp
@@ -232,7 +230,7 @@ Text Label 2800 625  2    50   ~ 0
 IO_Ground
 Text Label 11100 3350 2    50   ~ 0
 TSAL
-Text Notes 5725 2150 0    50   ~ 0
+Text Notes 5625 2350 0    50   ~ 0
 TSI-Logic Connection\n
 Text Label 7250 1075 0    50   ~ 0
 BP_CAN+
@@ -354,36 +352,26 @@ Text Label 700  5475 0    50   ~ 0
 Flowrate
 Text Label 11100 3150 2    50   ~ 0
 RTDS
-Text Label 7300 2000 2    50   ~ 0
-PC_Ready
-Text Label 7300 1600 2    50   ~ 0
-SR_CTRL
-Text Label 7300 1700 2    50   ~ 0
-CAN-_Logic
-Text Label 7300 1800 2    50   ~ 0
-CAN+_Logic
-Text Label 7300 1900 2    50   ~ 0
-RTDS_CTRL
 $Comp
-L Connector_Generic:Conn_01x06 J14.2
+L Connector_Generic:Conn_01x08 J14.2
 U 1 1 5FC777B8
-P 6175 1700
-F 0 "J14.2" H 6025 2000 50  0000 L CNN
-F 1 "Logic Conn. 2" H 6255 1601 50  0001 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 6175 1700 50  0001 C CNN
-F 3 "~" H 6175 1700 50  0001 C CNN
-	1    6175 1700
+P 6175 1800
+F 0 "J14.2" H 6075 2200 50  0000 L CNN
+F 1 "Logic Conn. 2" H 6255 1701 50  0001 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical" H 6175 1800 50  0001 C CNN
+F 3 "~" H 6175 1800 50  0001 C CNN
+	1    6175 1800
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x06 J14.1
+L Connector_Generic:Conn_01x08 J14.1
 U 1 1 5FC77F26
-P 5925 1700
-F 0 "J14.1" H 5775 2000 50  0000 L CNN
-F 1 "Logic Conn. 1" H 6005 1601 50  0001 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 5925 1700 50  0001 C CNN
-F 3 "~" H 5925 1700 50  0001 C CNN
-	1    5925 1700
+P 5925 1800
+F 0 "J14.1" H 5825 2200 50  0000 L CNN
+F 1 "Logic Conn. 1" H 6005 1701 50  0001 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical" H 5925 1800 50  0001 C CNN
+F 3 "~" H 5925 1800 50  0001 C CNN
+	1    5925 1800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -594,8 +582,6 @@ Wire Wire Line
 Wire Wire Line
 	700  7025 1550 7025
 Wire Wire Line
-	700  7125 1550 7125
-Wire Wire Line
 	700  7225 1550 7225
 Wire Wire Line
 	700  7425 1550 7425
@@ -646,11 +632,11 @@ Wire Wire Line
 Wire Wire Line
 	5725 1600 5025 1600
 Wire Wire Line
-	5025 1800 5725 1800
-Wire Wire Line
 	5025 1900 5725 1900
 Wire Wire Line
 	5025 2000 5725 2000
+Wire Wire Line
+	5025 2100 5725 2100
 Wire Wire Line
 	10200 775  10650 775 
 $Comp
@@ -1151,8 +1137,8 @@ Wire Notes Line
 Wire Wire Line
 	8100 3750 8850 3750
 Wire Wire Line
-	5725 1700 5025 1700
-Text Label 5025 1700 0    49   ~ 0
+	5725 1800 5025 1800
+Text Label 5025 1800 0    49   ~ 0
 5V_ISO_RTN
 Text Label 8100 3750 0    49   ~ 0
 5V_ISO_RTN
@@ -1267,22 +1253,12 @@ Wire Notes Line
 	1950 1300 4875 1300
 Wire Notes Line
 	4875 475  4875 1300
-Text Label 6750 1700 2    50   ~ 0
+Text Label 6750 1800 2    50   ~ 0
 BP_CAN-
-Text Label 6400 1800 0    50   ~ 0
+Text Label 6400 1900 0    50   ~ 0
 BP_CAN+
 Wire Wire Line
-	7300 1700 6375 1700
-Wire Wire Line
 	6375 1500 7300 1500
-Wire Wire Line
-	6375 1600 7300 1600
-Wire Wire Line
-	6375 1800 7300 1800
-Wire Wire Line
-	6375 1900 7300 1900
-Wire Wire Line
-	7300 2000 6375 2000
 Text Notes 2225 1150 0    43   ~ 0
 MC: FW = 13 RW = 14\n(active low)
 Text Notes 5500 2650 0    79   ~ 0
@@ -1348,15 +1324,16 @@ F5 "5HV" I L 1550 6275 50
 F6 "Safety_Loop" I L 1550 7525 50 
 F7 "GLV_RTN" I L 1550 7325 50 
 F8 "24V" I L 1550 7025 50 
-F9 "5V" I L 1550 7125 50 
-F10 "AIRS+" I L 1550 7425 50 
-F11 "3.3V" I L 1550 7225 50 
-F12 "PC_Ready" O R 3100 7100 50 
-F13 "DC_RELAY-" O R 3100 6575 50 
-F14 "DC_RELAY+" O R 3100 6475 50 
-F15 "PC_RELAY-" O R 3100 6375 50 
-F16 "PC_RELAY+" O R 3100 6275 50 
-F17 "IGNI_VCC" O R 3100 6675 50 
+F9 "AIRS+" I L 1550 7425 50 
+F10 "3.3V" I L 1550 7225 50 
+F11 "PC_Ready" O R 3100 7100 50 
+F12 "DC_RELAY-" O R 3100 6575 50 
+F13 "DC_RELAY+" O R 3100 6475 50 
+F14 "PC_RELAY-" O R 3100 6375 50 
+F15 "PC_RELAY+" O R 3100 6275 50 
+F16 "IGNI_VCC" O R 3100 6675 50 
+F17 "5V_ISO" I R 3100 7200 50 
+F18 "5V_ISO_RTN" I R 3100 7300 50 
 $EndSheet
 $Sheet
 S 8850 4525 1500 1825
@@ -1562,4 +1539,48 @@ Text Label 4025 775  0    50   ~ 0
 IO_Ground
 Text Notes 3100 1060 0    39   ~ 0
     (2A > to open, \n 90mA nominal draw)
+Wire Wire Line
+	5725 1700 5025 1700
+Text Label 5025 1700 0    49   ~ 0
+5V_ISO
+Wire Wire Line
+	6375 2100 7300 2100
+Wire Wire Line
+	6375 2000 7300 2000
+Wire Wire Line
+	6375 1900 7300 1900
+Wire Wire Line
+	6375 1700 7300 1700
+Wire Wire Line
+	7300 1800 6375 1800
+Text Label 7300 2000 2    50   ~ 0
+RTDS_CTRL
+Text Label 7300 1900 2    50   ~ 0
+CAN+_Logic
+Text Label 7300 1800 2    50   ~ 0
+CAN-_Logic
+Text Label 7300 1700 2    50   ~ 0
+SR_CTRL
+Text Label 7300 2100 2    50   ~ 0
+PC_Ready
+Text Label 7300 1600 2    50   ~ 0
+IMD_FAULT_LED
+Wire Wire Line
+	6375 1600 7300 1600
+Wire Wire Line
+	3100 7200 3950 7200
+Wire Wire Line
+	3100 7300 3950 7300
+Text Label 3950 7200 2    49   ~ 0
+5V_ISO
+Text Label 3950 7300 2    49   ~ 0
+5V_ISO_RTN
+Text Label 5025 2200 0    50   ~ 0
+Throttle_PL
+Wire Wire Line
+	5025 2200 5725 2200
+Wire Wire Line
+	6375 2200 7300 2200
+Text Label 7300 2200 2    50   ~ 0
+CoolTemp
 $EndSCHEMATC

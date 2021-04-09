@@ -191,33 +191,33 @@ Text Label 2150 825  2    50   ~ 0
 5HV
 Text HLabel 1350 825  0    50   Input ~ 0
 5HV
-Text Label 1850 11350 2    50   ~ 0
+Text Label 1850 11250 2    50   ~ 0
 GLV_RTN
 Text Label 1850 10950 2    50   ~ 0
 24V
-Text Label 1850 11450 2    50   ~ 0
+Text Label 1850 11350 2    50   ~ 0
 Safety_Loop
-Text Label 1850 11150 2    50   ~ 0
+Text Label 1850 11050 2    50   ~ 0
 3.3V
 Text Notes 675  10825 0    79   ~ 0
 LOW VOLTAGE SIGNALS\n
-Text HLabel 1150 11450 0    50   Input ~ 0
-Safety_Loop
 Text HLabel 1150 11350 0    50   Input ~ 0
+Safety_Loop
+Text HLabel 1150 11250 0    50   Input ~ 0
 GLV_RTN
 Text HLabel 1150 10950 0    50   Input ~ 0
 24V
-Text Label 1850 11250 2    50   ~ 0
-AIRS+
-Text HLabel 1150 11250 0    50   Input ~ 0
+Text Label 1850 11150 2    50   ~ 0
 AIRS+
 Text HLabel 1150 11150 0    50   Input ~ 0
+AIRS+
+Text HLabel 1150 11050 0    50   Input ~ 0
 3.3V
 Wire Notes Line
 	550  10650 2100 10650
-Text Label 1850 11625 2    50   ~ 0
+Text Label 1850 11675 2    50   ~ 0
 PC_Ready
-Text HLabel 1150 11625 0    50   Output ~ 0
+Text HLabel 1150 11675 0    50   Output ~ 0
 PC_Ready
 Text Notes 5250 14550 0    47   ~ 0
 24V (GLV) --> 24V (ISO)\n
@@ -429,15 +429,15 @@ Wire Wire Line
 Wire Wire Line
 	1350 1025 2150 1025
 Wire Wire Line
-	1150 11350 1850 11350
-Wire Wire Line
-	1150 11625 1850 11625
-Wire Wire Line
-	1150 11450 1850 11450
-Wire Wire Line
 	1150 11250 1850 11250
 Wire Wire Line
+	1150 11675 1850 11675
+Wire Wire Line
+	1150 11350 1850 11350
+Wire Wire Line
 	1150 11150 1850 11150
+Wire Wire Line
+	1150 11050 1850 11050
 Wire Wire Line
 	1150 10950 1850 10950
 Text Label 4600 15850 0    59   ~ 0
@@ -455,8 +455,6 @@ F 3 "~" H 5325 15650 50  0001 C CNN
 	1    5325 15650
 	1    0    0    -1  
 $EndComp
-Text Label 4600 15275 0    59   ~ 0
-5V_ISO
 $Comp
 L TSI_Rev.5-rescue:TLP293-CarMan_KiCAD_Library-TSI_Rev.5-rescue U27
 U 1 1 60546534
@@ -500,16 +498,6 @@ Wire Wire Line
 	5325 15475 5400 15475
 Wire Wire Line
 	5325 15800 5325 15850
-Wire Notes Line
-	5075 15050 5075 15325
-Wire Notes Line
-	5075 15325 4400 15325
-Wire Notes Line
-	4400 15325 4400 15050
-Wire Notes Line
-	4400 15050 5075 15050
-Text Notes 2950 15300 0    79   ~ 0
-NEEDS ADDED TO LOGIC
 Wire Wire Line
 	6400 11425 6800 11425
 Connection ~ 6800 11425
@@ -1964,4 +1952,18 @@ Wire Wire Line
 	13925 6625 15600 6625
 Wire Wire Line
 	15600 8375 15100 8375
+Text Label 4600 15275 0    49   ~ 0
+5V_ISO
+Text Label 1850 11450 2    50   ~ 0
+5V_ISO
+Text HLabel 1150 11450 0    50   Input ~ 0
+5V_ISO
+Wire Wire Line
+	1150 11450 1850 11450
+Text Label 1850 11550 2    50   ~ 0
+5V_ISO_RTN
+Text HLabel 1150 11550 0    50   Input ~ 0
+5V_ISO_RTN
+Wire Wire Line
+	1150 11550 1850 11550
 $EndSCHEMATC
