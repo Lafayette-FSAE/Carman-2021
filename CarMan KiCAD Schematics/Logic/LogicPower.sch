@@ -104,21 +104,15 @@ Text HLabel 1275 1550 0    50   Output ~ 0
 3.3V_ISO
 Text HLabel 1275 1650 0    50   Output ~ 0
 ISO_RTN
-Wire Wire Line
-	1275 1450 1625 1450
-Wire Wire Line
-	1275 1550 1625 1550
-Wire Wire Line
-	1275 1650 1625 1650
 Text Label 1825 1000 2    50   ~ 0
 24V
 Text Label 1825 1100 2    50   ~ 0
 GLV_RTN
-Text Label 1625 1450 0    50   ~ 0
+Text Label 1825 1450 2    50   ~ 0
 5V_ISO
-Text Label 1625 1550 0    50   ~ 0
+Text Label 1825 1550 2    50   ~ 0
 3.3V_ISO
-Text Label 1625 1650 0    50   ~ 0
+Text Label 1825 1650 2    50   ~ 0
 ISO_RTN
 NoConn ~ 5050 3875
 NoConn ~ 3850 3675
@@ -252,4 +246,10 @@ Wire Wire Line
 	3350 3250 3350 3475
 Text Notes 3450 2975 0    79   ~ 0
 24V_NON_ISO -> 5V_ISO
+Wire Wire Line
+	1275 1450 1825 1450
+Wire Wire Line
+	1275 1550 1825 1550
+Wire Wire Line
+	1275 1650 1825 1650
 $EndSCHEMATC
