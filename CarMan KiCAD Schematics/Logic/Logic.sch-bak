@@ -597,15 +597,15 @@ Text Label 4375 9925 2    50   ~ 0
 SDA_ISO_PI
 Text Label 7825 10075 0    50   ~ 0
 SR_CTRL
-Text Label 1200 8125 0    50   ~ 0
+Text Label 4625 6900 0    50   ~ 0
 24V
-Text Label 1200 8525 0    50   ~ 0
+Text Label 4625 7300 0    50   ~ 0
 GLV_RTN
-Text Label 3500 8050 2    50   ~ 0
+Text Label 6925 6825 2    50   ~ 0
 5V_ISO
-Text Label 3500 8350 2    50   ~ 0
+Text Label 6925 7125 2    50   ~ 0
 3.3V_ISO
-Text Label 3500 8675 2    50   ~ 0
+Text Label 6925 7450 2    50   ~ 0
 ISO_RTN
 $Comp
 L Logic-rescue:Conn_01x04-Connector_Generic-Logic-rescue J7
@@ -1076,18 +1076,18 @@ Wire Notes Line
 	12150 9875 15975 9875
 Text Notes 13000 5375 0    79   ~ 0
 Isolation of TSI Safety Loop Signal
-Text Notes 1225 9125 0    79   ~ 0
+Text Notes 4650 7900 0    79   ~ 0
 5V & 3.3V have same isolated return
 Wire Wire Line
-	2975 8050 3500 8050
+	6400 6825 6925 6825
 Wire Wire Line
-	2975 8675 3500 8675
+	6400 7450 6925 7450
 Wire Wire Line
-	2975 8350 3500 8350
+	6400 7125 6925 7125
 Wire Wire Line
-	1200 8125 1725 8125
+	4625 6900 5150 6900
 Wire Wire Line
-	1200 8525 1725 8525
+	4625 7300 5150 7300
 Text Label 14850 2100 2    50   ~ 0
 SDA_TSI_GLV
 Text Label 12650 9275 0    50   ~ 0
@@ -1167,15 +1167,15 @@ Wire Notes Line
 Wire Notes Line
 	4450 9450 4450 11100
 $Sheet
-S 1725 7850 1250 1025
+S 5150 6625 1250 1025
 U 5FAD1CB8
 F0 "LogicPower" 50
 F1 "LogicPower.sch" 50
-F2 "24V" I L 1725 8125 50 
-F3 "GLV_RTN" I L 1725 8525 50 
-F4 "5V_ISO" O R 2975 8050 50 
-F5 "3.3V_ISO" O R 2975 8350 50 
-F6 "ISO_RTN" O R 2975 8675 50 
+F2 "24V" I L 5150 6900 50 
+F3 "GLV_RTN" I L 5150 7300 50 
+F4 "5V_ISO" O R 6400 6825 50 
+F5 "3.3V_ISO" O R 6400 7125 50 
+F6 "ISO_RTN" O R 6400 7450 50 
 $EndSheet
 Wire Notes Line
 	15975 9875 15975 8425
@@ -1505,4 +1505,25 @@ Wire Wire Line
 	1525 9900 1975 9900
 Wire Wire Line
 	1000 9900 1150 9900
+$Comp
+L Logic-rescue:Conn_01x04-Connector_Generic-Logic-rescue J?
+U 1 1 60721A5C
+P 12925 3100
+F 0 "J?" H 12875 3300 50  0000 L CNN
+F 1 "Motor Controller Can Line" H 12350 3300 50  0001 L CNN
+F 2 "CarMan General Footprints:Molex_MiniFit-JR-5556-04A_2x02x4.20mm_Straight" H 12925 3100 50  0001 C CNN
+F 3 "~" H 12925 3100 50  0001 C CNN
+	1    12925 3100
+	-1   0    0    -1  
+$EndComp
+Text Notes 12775 3475 0    47   ~ 0
+MC Can Line
+Text Label 13650 3000 2    50   ~ 0
+5V_NON_ISO
+Text Label 13650 3300 2    50   ~ 0
+GLV_RTN
+Wire Wire Line
+	13125 3000 13650 3000
+Wire Wire Line
+	13125 3300 13650 3300
 $EndSCHEMATC

@@ -26,33 +26,18 @@ Text Label 2000 1625 2    50   ~ 0
 Text Label 2000 1725 2    50   ~ 0
 ISO_RTN
 $Comp
-L Logic-rescue:Conn_01x02_Male-Connector-Logic-rescue J7
-U 1 1 5F9AE3B8
-P 2850 2575
-AR Path="/5F9AE3B8" Ref="J7"  Part="1" 
-AR Path="/5F9A7CF0/5F9AE3B8" Ref="J9"  Part="1" 
-F 0 "J9" V 2912 2619 50  0000 L CNN
-F 1 "Conn_01x02_Male" V 3050 1725 50  0001 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 2850 2575 50  0001 C CNN
-F 3 "~" H 2850 2575 50  0001 C CNN
-	1    2850 2575
-	0    1    1    0   
-$EndComp
-$Comp
 L Logic-rescue:R-Device-Logic-rescue R7
 U 1 1 5F9AF7D2
-P 2850 2925
+P 2825 3525
 AR Path="/5F9AF7D2" Ref="R7"  Part="1" 
 AR Path="/5F9A7CF0/5F9AF7D2" Ref="R7"  Part="1" 
-F 0 "R7" H 2920 2971 50  0000 L CNN
-F 1 "120" V 2850 2875 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2780 2925 50  0001 C CNN
-F 3 "~" H 2850 2925 50  0001 C CNN
-	1    2850 2925
-	1    0    0    -1  
+F 0 "R7" V 2900 3475 50  0000 L CNN
+F 1 "120" V 2825 3450 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2755 3525 50  0001 C CNN
+F 3 "~" H 2825 3525 50  0001 C CNN
+	1    2825 3525
+	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	2750 2775 2750 3625
 Wire Wire Line
 	5425 3375 5425 3425
 Text Label 5075 3025 0    50   ~ 0
@@ -197,8 +182,6 @@ Wire Wire Line
 	1275 975  1975 975 
 Wire Wire Line
 	1275 1075 1975 1075
-Wire Wire Line
-	2850 3075 2850 3525
 $Comp
 L Logic-rescue:ISO1050DUB-Interface_CAN_LIN-Logic-rescue U2
 U 1 1 5FAD2713
@@ -289,10 +272,6 @@ Wire Wire Line
 Text Label 5375 3425 2    50   ~ 0
 5V_ISO
 Wire Wire Line
-	2850 3525 4050 3525
-Wire Wire Line
-	2750 3625 4050 3625
-Wire Wire Line
 	3475 3425 4050 3425
 Text Label 3475 3425 0    50   ~ 0
 5V_NON_ISO
@@ -379,4 +358,23 @@ Wire Notes Line
 	3250 2500 5800 2500
 Wire Notes Line
 	3250 2500 3250 3975
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 609288D9
+P 2250 3525
+AR Path="/609288D9" Ref="J?"  Part="1" 
+AR Path="/5F9A7CF0/609288D9" Ref="J9"  Part="1" 
+F 0 "J9" H 2200 3625 50  0000 L CNN
+F 1 "IMU PS" H 2100 3300 50  0001 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 2250 3525 50  0001 C CNN
+F 3 "~" H 2250 3525 50  0001 C CNN
+	1    2250 3525
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 3625 4050 3625
+Wire Wire Line
+	2450 3525 2675 3525
+Wire Wire Line
+	2975 3525 4050 3525
 $EndSCHEMATC
