@@ -69,19 +69,17 @@ Text Label 700  7325 0    50   ~ 0
 GLV_RTN
 Text Notes 2025 6825 0    50   ~ 0
 HIGH VOLTAGE\n
-Text Label 700  4875 0    50   ~ 0
+Text Label 700  4650 0    50   ~ 0
 BRAKE_IN
-Text Label 700  4275 0    50   ~ 0
+Text Label 700  4050 0    50   ~ 0
 10V
-Text Label 700  4575 0    50   ~ 0
+Text Label 700  4350 0    50   ~ 0
 GLV_RTN
-Text Label 700  4375 0    50   ~ 0
+Text Label 700  4150 0    50   ~ 0
 5V
-Text Label 700  4975 0    50   ~ 0
-Throttle_SEL
-Text Label 700  5075 0    50   ~ 0
+Text Label 700  4850 0    50   ~ 0
 SDA_uC
-Text Label 700  5175 0    50   ~ 0
+Text Label 700  4950 0    50   ~ 0
 SCL_uC
 Text Label 6725 6825 2    50   ~ 0
 5V
@@ -95,16 +93,12 @@ Text Label 8100 5225 0    50   ~ 0
 AIRS+
 Text Label 8100 5325 0    50   ~ 0
 AIRS-
-Text Label 5025 1500 0    50   ~ 0
+Text Label 7250 1600 2    50   ~ 0
 SCL_TSI
-Text Label 5025 1600 0    50   ~ 0
+Text Label 7250 1500 2    50   ~ 0
 SDA_TSI
-Text Label 5025 1900 0    50   ~ 0
-Safety_Loop
-Text Label 5025 2000 0    50   ~ 0
+Text Label 5025 1500 0    50   ~ 0
 Cooling_CTRL
-Text Label 5025 2100 0    50   ~ 0
-Throttle_SEL
 Text Label 1200 2575 0    50   ~ 0
 5V
 Text Label 7050 825  2    50   ~ 0
@@ -251,9 +245,9 @@ Text Label 1800 1625 2    50   ~ 0
 A2_HV
 Text Label 1800 1525 2    50   ~ 0
 A1_HV
-Text Label 700  4775 0    50   ~ 0
+Text Label 700  4550 0    50   ~ 0
 APPS2
-Text Label 700  4675 0    50   ~ 0
+Text Label 700  4450 0    50   ~ 0
 APPS1
 Text Label 11100 5525 2    50   ~ 0
 MRESET_Contact
@@ -344,34 +338,32 @@ Text Label 9150 775  0    49   ~ 0
 GLV_RTN
 Text Label 10200 975  0    49   ~ 0
 COOL_24V
-Text Label 700  5275 0    50   ~ 0
-IMD_Status
-Text Label 700  5375 0    50   ~ 0
-CoolTemp
-Text Label 700  5475 0    50   ~ 0
-Flowrate
+Text Label 700  5150 0    50   ~ 0
+Drive_BTN
+Text Label 700  5250 0    50   ~ 0
+Safety_Loop
 Text Label 11100 3150 2    50   ~ 0
 RTDS
 $Comp
-L Connector_Generic:Conn_01x08 J14.2
+L Connector_Generic:Conn_01x06 J14.2
 U 1 1 5FC777B8
-P 6175 1800
-F 0 "J14.2" H 6075 2200 50  0000 L CNN
-F 1 "Logic Conn. 2" H 6255 1701 50  0001 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical" H 6175 1800 50  0001 C CNN
-F 3 "~" H 6175 1800 50  0001 C CNN
-	1    6175 1800
+P 6150 1700
+F 0 "J14.2" H 6000 2000 50  0000 L CNN
+F 1 "Logic Conn. 2" H 6230 1601 50  0001 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 6150 1700 50  0001 C CNN
+F 3 "~" H 6150 1700 50  0001 C CNN
+	1    6150 1700
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x08 J14.1
+L Connector_Generic:Conn_01x06 J14.1
 U 1 1 5FC77F26
-P 5925 1800
-F 0 "J14.1" H 5825 2200 50  0000 L CNN
-F 1 "Logic Conn. 1" H 6005 1701 50  0001 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical" H 5925 1800 50  0001 C CNN
-F 3 "~" H 5925 1800 50  0001 C CNN
-	1    5925 1800
+P 5925 1700
+F 0 "J14.1" H 5775 2000 50  0000 L CNN
+F 1 "Logic Conn. 1" H 6005 1601 50  0001 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 5925 1700 50  0001 C CNN
+F 3 "~" H 5925 1700 50  0001 C CNN
+	1    5925 1700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -423,7 +415,7 @@ SL1_Out
 Text Label 8100 5025 0    50   ~ 0
 SR_CTRL
 Text Label 8100 4925 0    50   ~ 0
-5V_ISO_RTN
+LOGIC_ISO_RTN
 Text Label 8100 5125 0    50   ~ 0
 BOT_Out
 Text Label 11100 4925 2    50   ~ 0
@@ -529,7 +521,7 @@ Text Label 3125 1700 0    50   ~ 0
 24V_AMS_RTN
 Text Label 8100 5625 0    50   ~ 0
 24V_AMS_RTN
-Text Label 7300 1500 2    50   ~ 0
+Text Label 700  5650 0    50   ~ 0
 AMS_FAULT_LED
 Wire Wire Line
 	11100 5125 10350 5125
@@ -604,39 +596,27 @@ Wire Wire Line
 Wire Wire Line
 	1550 6375 700  6375
 Wire Wire Line
-	700  5375 1550 5375
+	700  5150 1550 5150
 Wire Wire Line
-	700  5475 1550 5475
+	700  5250 1550 5250
 Wire Wire Line
-	700  5275 1550 5275
-Wire Wire Line
-	700  4875 1550 4875
-Text Label 700  4175 0    50   ~ 0
+	700  4650 1550 4650
+Text Label 700  3950 0    50   ~ 0
 24V
 Wire Wire Line
-	700  4175 1550 4175
+	700  3950 1550 3950
 Wire Wire Line
-	700  5175 1550 5175
+	700  4950 1550 4950
 Wire Wire Line
-	700  5075 1550 5075
+	700  4850 1550 4850
 Wire Wire Line
-	700  4975 1550 4975
+	700  4150 1550 4150
 Wire Wire Line
-	700  4375 1550 4375
+	700  4350 1550 4350
 Wire Wire Line
-	700  4575 1550 4575
+	700  4050 1550 4050
 Wire Wire Line
-	700  4275 1550 4275
-Wire Wire Line
-	5725 1500 5025 1500
-Wire Wire Line
-	5725 1600 5025 1600
-Wire Wire Line
-	5025 1900 5725 1900
-Wire Wire Line
-	5025 2000 5725 2000
-Wire Wire Line
-	5025 2100 5725 2100
+	5025 1500 5725 1500
 Wire Wire Line
 	10200 775  10650 775 
 $Comp
@@ -859,71 +839,37 @@ F 3 "~" H 3550 2600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1550 4675 700  4675
+	1550 4450 700  4450
 Wire Wire Line
-	1550 4775 700  4775
+	1550 4550 700  4550
 Wire Wire Line
-	3100 4775 3950 4775
+	3075 4550 3925 4550
 Wire Wire Line
-	3100 4875 3950 4875
+	3075 4650 3925 4650
 Wire Wire Line
-	3100 4975 3950 4975
+	3075 4750 3925 4750
 Wire Wire Line
-	3100 4175 3950 4175
+	3075 4450 3925 4450
 Wire Wire Line
-	3100 4675 3950 4675
+	3075 4150 3925 4150
 Wire Wire Line
-	3100 4375 3950 4375
+	3075 4050 3925 4050
 Wire Wire Line
-	3100 4275 3950 4275
-Wire Wire Line
-	1550 5575 700  5575
-Text Label 700  5575 0    50   ~ 0
+	1550 5350 700  5350
+Text Label 700  5350 0    50   ~ 0
 D_LED_CTRL
-Text Label 3950 4775 2    50   ~ 0
+Text Label 3925 4550 2    50   ~ 0
 APPS1_RTN
-Text Label 3950 4975 2    50   ~ 0
+Text Label 3925 4750 2    50   ~ 0
 APPS2_RTN
-Text Label 3950 4675 2    50   ~ 0
+Text Label 3925 4450 2    50   ~ 0
 APPS1_10V
-Text Label 3950 4875 2    50   ~ 0
+Text Label 3925 4650 2    50   ~ 0
 APPS2_5V
-Text Label 3950 4275 2    50   ~ 0
+Text Label 3925 4050 2    50   ~ 0
 Throttle_LV
-Text Label 3950 4175 2    50   ~ 0
-Throttle_PL
-Text Label 3950 4375 2    50   ~ 0
+Text Label 3925 4150 2    50   ~ 0
 BRAKE_OUT
-$Sheet
-S 1550 4075 1550 1600
-U 5FC85F57
-F0 "Throttle_Plausibility" 63
-F1 "TSI_Throttle_Plausibility.sch" 63
-F2 "24V" I L 1550 4175 50 
-F3 "10V" I L 1550 4275 50 
-F4 "GLV_RTN" I L 1550 4575 50 
-F5 "5V" I L 1550 4375 50 
-F6 "Throttle_SEL" I L 1550 4975 50 
-F7 "SDA" I L 1550 5075 50 
-F8 "SCL" I L 1550 5175 50 
-F9 "Throttle_PL" O R 3100 4175 50 
-F10 "Throttle_LV" O R 3100 4275 50 
-F11 "BRAKE_OUT" O R 3100 4375 50 
-F12 "BRAKE_IN" I L 1550 4875 50 
-F13 "APPS1" I L 1550 4675 50 
-F14 "APPS1_RTN" O R 3100 4775 50 
-F15 "APPS1_10V" O R 3100 4675 50 
-F16 "APPS2_RTN" O R 3100 4975 50 
-F17 "APPS2" I L 1550 4775 50 
-F18 "APPS2_5V" O R 3100 4875 50 
-F19 "IMD_Status" I L 1550 5275 50 
-F20 "CoolTemp" I L 1550 5375 50 
-F21 "D_LED_CTRL" I L 1550 5575 50 
-F22 "Flowrate" I L 1550 5475 50 
-F23 "Brake_Light_RTN" O R 3100 4575 51 
-F24 "Brake_Light" O R 3100 4475 50 
-F25 "3.3V" I L 1550 4475 47 
-$EndSheet
 Text Label 11100 3450 2    50   ~ 0
 TSAL_Cockpit
 Wire Wire Line
@@ -1082,8 +1028,8 @@ Wire Wire Line
 Text Label 10200 1600 0    50   ~ 0
 Brake_Light_RTN
 Wire Wire Line
-	3100 4575 3950 4575
-Text Label 3950 4575 2    50   ~ 0
+	3075 4350 3925 4350
+Text Label 3925 4350 2    50   ~ 0
 Brake_Light_RTN
 Text Notes 9875 4025 2    50   ~ 0
 LOW VOLTAGE\n\n\n
@@ -1103,8 +1049,8 @@ $EndComp
 Text Notes 675  2125 0    47   ~ 0
 Current Sensor
 Wire Wire Line
-	3100 4475 3950 4475
-Text Label 3950 4475 2    50   ~ 0
+	3075 4250 3925 4250
+Text Label 3925 4250 2    50   ~ 0
 Brake_Light
 Text Label 9775 1700 2    50   ~ 0
 AIRS+
@@ -1136,12 +1082,10 @@ Wire Notes Line
 	1950 1300 1950 2225
 Wire Wire Line
 	8100 3750 8850 3750
-Wire Wire Line
-	5725 1800 5025 1800
-Text Label 5025 1800 0    49   ~ 0
-5V_ISO_RTN
+Text Label 7275 1900 2    49   ~ 0
+LOGIC_ISO_RTN
 Text Label 8100 3750 0    49   ~ 0
-5V_ISO_RTN
+LOGIC_ISO_RTN
 Text Label 5850 3150 0    50   ~ 0
 Flowrate_RTN
 Wire Wire Line
@@ -1207,10 +1151,10 @@ Wire Wire Line
 	2900 2500 3350 2500
 Text Label 2900 2700 0    49   ~ 0
 5V
-Text Label 700  4475 0    50   ~ 0
+Text Label 700  4250 0    50   ~ 0
 3.3V
 Wire Wire Line
-	700  4475 1550 4475
+	700  4250 1550 4250
 Text Notes 4125 1000 0    39   ~ 0
 (120 mA to open)
 Wire Wire Line
@@ -1253,12 +1197,10 @@ Wire Notes Line
 	1950 1300 4875 1300
 Wire Notes Line
 	4875 475  4875 1300
-Text Label 6750 1800 2    50   ~ 0
+Text Label 6750 1700 2    50   ~ 0
 BP_CAN-
-Text Label 6400 1900 0    50   ~ 0
+Text Label 6400 1800 0    50   ~ 0
 BP_CAN+
-Wire Wire Line
-	6375 1500 7300 1500
 Text Notes 2225 1150 0    43   ~ 0
 MC: FW = 13 RW = 14\n(active low)
 Text Notes 5500 2650 0    79   ~ 0
@@ -1310,7 +1252,7 @@ F13 "Drive_BTN" I L 8850 3350 50
 F14 "RTDS" O R 10350 3150 50 
 F15 "RTDS_RTN" O R 10350 3250 50 
 F16 "Drive_LED" O R 10350 3050 50 
-F17 "5V_ISO_RTN" I L 8850 3750 50 
+F17 "LOGIC_ISO_RTN" I L 8850 3750 50 
 $EndSheet
 $Sheet
 S 1550 6175 1550 1425
@@ -1332,8 +1274,7 @@ F13 "DC_RELAY+" O R 3100 6475 50
 F14 "PC_RELAY-" O R 3100 6375 50 
 F15 "PC_RELAY+" O R 3100 6275 50 
 F16 "IGNI_VCC" O R 3100 6675 50 
-F17 "5V_ISO" I R 3100 7200 50 
-F18 "5V_ISO_RTN" I R 3100 7300 50 
+F17 "5V" I L 1550 7125 50 
 $EndSheet
 $Sheet
 S 8850 4525 1500 1825
@@ -1355,7 +1296,7 @@ F13 "SL1_Out" O R 10350 5425 50
 F14 "SL1_In" I L 8850 5425 50 
 F15 "SR_CTRL" I L 8850 5025 50 
 F16 "MRESET_Contact" O R 10350 5525 50 
-F17 "5V_ISO_RTN" I L 8850 4925 50 
+F17 "LOGIC_ISO_RTN" I L 8850 4925 50 
 F18 "BOT_Out" I L 8850 5125 50 
 F19 "12V_Cooling" O R 10350 4925 50 
 F20 "IMD_FAULT_LED" O R 10350 5025 50 
@@ -1540,47 +1481,89 @@ IO_Ground
 Text Notes 3100 1060 0    39   ~ 0
     (2A > to open, \n 90mA nominal draw)
 Wire Wire Line
-	5725 1700 5025 1700
-Text Label 5025 1700 0    49   ~ 0
-5V_ISO
+	6350 1800 7275 1800
 Wire Wire Line
-	6375 2100 7300 2100
-Wire Wire Line
-	6375 2000 7300 2000
-Wire Wire Line
-	6375 1900 7300 1900
-Wire Wire Line
-	6375 1700 7300 1700
-Wire Wire Line
-	7300 1800 6375 1800
-Text Label 7300 2000 2    50   ~ 0
+	7275 1700 6350 1700
+Text Label 700  5450 0    50   ~ 0
 RTDS_CTRL
-Text Label 7300 1900 2    50   ~ 0
+Text Label 7275 1800 2    50   ~ 0
 CAN+_Logic
-Text Label 7300 1800 2    50   ~ 0
+Text Label 7275 1700 2    50   ~ 0
 CAN-_Logic
-Text Label 7300 1700 2    50   ~ 0
+Text Label 5025 1600 0    50   ~ 0
 SR_CTRL
-Text Label 7300 2100 2    50   ~ 0
-PC_Ready
-Text Label 7300 1600 2    50   ~ 0
+Text Label 700  5750 0    50   ~ 0
 IMD_FAULT_LED
 Wire Wire Line
-	6375 1600 7300 1600
+	1550 7125 700  7125
+Text Label 700  7125 0    49   ~ 0
+5V
+$Sheet
+S 1550 3850 1525 2000
+U 5FC85F57
+F0 "Throttle_Plausibility" 63
+F1 "TSI_Throttle_Plausibility.sch" 63
+F2 "24V" I L 1550 3950 50 
+F3 "10V" I L 1550 4050 50 
+F4 "GLV_RTN" I L 1550 4350 50 
+F5 "5V" I L 1550 4150 50 
+F6 "SDA" I L 1550 4850 50 
+F7 "SCL" I L 1550 4950 50 
+F8 "Throttle_LV" O R 3075 4050 50 
+F9 "BRAKE_OUT" O R 3075 4150 50 
+F10 "BRAKE_IN" I L 1550 4650 50 
+F11 "APPS1" I L 1550 4450 50 
+F12 "APPS1_RTN" O R 3075 4550 50 
+F13 "APPS1_10V" O R 3075 4450 50 
+F14 "APPS2_RTN" O R 3075 4750 50 
+F15 "APPS2" I L 1550 4550 50 
+F16 "APPS2_5V" O R 3075 4650 50 
+F17 "Drive_BTN" I L 1550 5150 50 
+F18 "D_LED_CTRL" I L 1550 5350 50 
+F19 "Safety_Loop" I L 1550 5250 50 
+F20 "Brake_Light_RTN" O R 3075 4350 51 
+F21 "Brake_Light" O R 3075 4250 50 
+F22 "3.3V" I L 1550 4250 47 
+F23 "RTDS_CTRL" I L 1550 5450 50 
+F24 "PC_Ready" I L 1550 5550 50 
+F25 "AMS_FAULT_LED" I L 1550 5650 50 
+F26 "IMD_FAULT_LED" I L 1550 5750 50 
+F27 "APPS" O R 3075 3950 50 
+$EndSheet
+Text Label 700  5550 0    50   ~ 0
+PC_Ready
 Wire Wire Line
-	3100 7200 3950 7200
+	1550 5550 700  5550
 Wire Wire Line
-	3100 7300 3950 7300
-Text Label 3950 7200 2    49   ~ 0
-5V_ISO
-Text Label 3950 7300 2    49   ~ 0
-5V_ISO_RTN
-Text Label 5025 2200 0    50   ~ 0
-Throttle_PL
+	1550 5450 700  5450
 Wire Wire Line
-	5025 2200 5725 2200
+	1550 5750 700  5750
 Wire Wire Line
-	6375 2200 7300 2200
-Text Label 7300 2200 2    50   ~ 0
+	1550 5650 700  5650
+Wire Wire Line
+	5025 1600 5725 1600
+Wire Wire Line
+	5025 1800 5725 1800
+Wire Wire Line
+	5025 1700 5725 1700
+Text Label 5025 1700 0    50   ~ 0
+APPS
+Text Label 5025 1800 0    50   ~ 0
 CoolTemp
+Wire Wire Line
+	5025 1900 5725 1900
+Text Label 5025 1900 0    50   ~ 0
+Flowrate
+Wire Wire Line
+	3075 3950 3925 3950
+Text Label 3925 3950 2    50   ~ 0
+APPS
+Wire Wire Line
+	6350 1500 7250 1500
+Wire Wire Line
+	6350 1600 7250 1600
+Wire Wire Line
+	6350 1900 7275 1900
+NoConn ~ 5725 2000
+NoConn ~ 6350 2000
 $EndSCHEMATC

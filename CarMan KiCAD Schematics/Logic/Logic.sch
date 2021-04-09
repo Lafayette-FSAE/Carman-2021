@@ -214,8 +214,6 @@ F 3 "~" H 2575 2375 50  0001 C CNN
 $EndComp
 Text Label 2800 2375 0    50   ~ 0
 ~MCLR~
-Text Label 2400 3975 0    50   ~ 0
-Throttle_SEL
 NoConn ~ 3075 3075
 NoConn ~ 3075 2975
 NoConn ~ 3075 2775
@@ -233,18 +231,10 @@ NoConn ~ 3075 4575
 NoConn ~ 3075 4075
 Text Label 2400 3475 0    50   ~ 0
 Cooling_CTRL
-Text Label 2400 3375 0    50   ~ 0
-Safety_Loop_ISO
 Text Label 2400 4375 0    50   ~ 0
 PGED
 Text Label 2400 4275 0    50   ~ 0
 PGEC
-Text Label 7225 4775 2    50   ~ 0
-RTDS_CTRL
-Text Label 7225 3575 2    50   ~ 0
-PC_ready
-Text Label 2400 5475 0    50   ~ 0
-PC_ready
 Text Label 7225 2375 2    50   ~ 0
 3.3V_ISO
 $Comp
@@ -260,7 +250,7 @@ F 3 "~" H 7625 4025 50  0001 C CNN
 $EndComp
 Text Label 7225 5425 2    50   ~ 0
 ISO_RTN
-Text Label 13250 4250 0    50   ~ 0
+Text Label 13250 5600 0    50   ~ 0
 ISO_RTN
 Wire Wire Line
 	6375 1975 6375 1175
@@ -414,7 +404,7 @@ Wire Wire Line
 Wire Wire Line
 	8475 8975 8475 9775
 Connection ~ 8475 9775
-Text Label 15100 4350 2    50   ~ 0
+Text Label 15100 5700 2    50   ~ 0
 CAN_L
 Text Label 2375 1925 0    50   ~ 0
 3.3V_ISO
@@ -510,29 +500,27 @@ Text Label 12575 2225 2    50   ~ 0
 CAN_H
 Text Label 12575 2125 2    50   ~ 0
 CAN_L
-Text Label 13250 4550 0    50   ~ 0
+Text Label 13250 5900 0    50   ~ 0
 5V_ISO
-Text Label 15100 4450 2    50   ~ 0
+Text Label 15100 5800 2    50   ~ 0
 CAN_H
 $Comp
 L Logic-rescue:C-Device-Logic-rescue C?
 U 1 1 5FADD500
-P 15100 4775
+P 15100 6125
 AR Path="/5F9A7CF0/5FADD500" Ref="C?"  Part="1" 
 AR Path="/5FADD500" Ref="C12"  Part="1" 
-F 0 "C12" H 15225 4700 50  0000 L CNN
-F 1 "0.1uF" H 15200 4800 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 15138 4625 50  0001 C CNN
-F 3 "~" H 15100 4775 50  0001 C CNN
-	1    15100 4775
+F 0 "C12" H 15225 6050 50  0000 L CNN
+F 1 "0.1uF" H 15200 6150 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 15138 5975 50  0001 C CNN
+F 3 "~" H 15100 6125 50  0001 C CNN
+	1    15100 6125
 	-1   0    0    1   
 $EndComp
-Text Label 15100 4550 2    50   ~ 0
+Text Label 15100 5900 2    50   ~ 0
 5V_NON_ISO
-Text Label 15100 4250 2    50   ~ 0
+Text Label 15100 5600 2    50   ~ 0
 GLV_RTN
-Wire Wire Line
-	6725 4775 7225 4775
 Wire Wire Line
 	6725 2375 6750 2375
 $Comp
@@ -668,63 +656,14 @@ F 3 "https://www.ti.com/lit/ds/symlink/iso1541.pdf?HQS=TI-null-null-digikeymode-
 	1    13175 9175
 	1    0    0    -1  
 $EndComp
-$Comp
-L CarMan_KiCAD_Library:TLP293 U10
-U 1 1 5FBF77BA
-P 14175 6250
-F 0 "U10" H 14175 6575 50  0000 C CNN
-F 1 "TLP293" H 14175 6484 50  0000 C CNN
-F 2 "Package_SO:SOIC-4_4.55x2.6mm_P1.27mm" H 13975 6050 50  0001 L CIN
-F 3 "https://toshiba.semicon-storage.com/info/docget.jsp?did=12884&prodName=TLP291" H 14175 6250 50  0001 L CNN
-	1    14175 6250
-	1    0    0    -1  
-$EndComp
-Text Label 15225 6350 2    50   ~ 0
-ISO_RTN
-$Comp
-L Device:R R12
-U 1 1 5FC0CCAA
-P 14550 5875
-F 0 "R12" H 14325 5875 50  0000 L CNN
-F 1 "2.4k" V 14550 5800 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 14480 5875 50  0001 C CNN
-F 3 "~" H 14550 5875 50  0001 C CNN
-	1    14550 5875
-	-1   0    0    1   
-$EndComp
-Text Label 15225 5675 2    50   ~ 0
-5V_ISO
-Text Label 15225 6150 2    50   ~ 0
-Safety_Loop_ISO
-$Comp
-L Device:R R11
-U 1 1 5FC4741F
-P 13725 6150
-F 0 "R11" V 13800 6075 50  0000 L CNN
-F 1 "1k" V 13725 6100 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 13655 6150 50  0001 C CNN
-F 3 "~" H 13725 6150 50  0001 C CNN
-	1    13725 6150
-	0    -1   -1   0   
-$EndComp
-Text Label 12950 6150 0    50   ~ 0
-Safety_Loop
-Text Label 12950 6350 0    50   ~ 0
-GLV_RTN
 NoConn ~ 3075 3675
 NoConn ~ 3075 3775
 NoConn ~ 3075 3875
 NoConn ~ 6725 4875
 NoConn ~ 6725 3875
 NoConn ~ 6725 3975
-Text Label 12575 2325 2    50   ~ 0
-RTDS_CTRL
-Text Label 11875 2125 0    50   ~ 0
-BP_CAN-
-Text Label 11875 2225 0    50   ~ 0
-BP_CAN+
 $Comp
-L Connector_Generic:Conn_01x08 J5.2
+L Connector_Generic:Conn_01x06 J5.2
 U 1 1 5FB98586
 P 11625 2125
 F 0 "J5.2" H 11550 2525 50  0000 L CNN
@@ -735,29 +674,21 @@ F 3 "~" H 11625 2125 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x08 J5.1
+L Connector_Generic:Conn_01x06 J5.1
 U 1 1 5FB8432E
 P 11425 2125
 F 0 "J5.1" H 11350 2525 50  0000 L CNN
-F 1 "Conn_01x08" H 11505 2026 50  0001 L CNN
+F 1 "Conn_01x06" H 11505 2026 50  0001 L CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 11425 2125 50  0001 C CNN
 F 3 "~" H 11425 2125 50  0001 C CNN
 	1    11425 2125
 	1    0    0    -1  
 $EndComp
-Text Label 12575 2425 2    50   ~ 0
-PC_ready
-Text Label 10475 2425 0    50   ~ 0
-Throttle_SEL
-Text Label 10475 2225 0    50   ~ 0
-Safety_Loop
-Text Label 10475 2125 0    50   ~ 0
+Text Label 12575 2325 2    50   ~ 0
 ISO_RTN
-Text Label 10475 2325 0    50   ~ 0
+Text Label 10475 1925 0    50   ~ 0
 Cooling_CTRL
-Text Label 12575 1825 2    50   ~ 0
-AMS_Fault
-Text Label 12575 2025 2    50   ~ 0
+Text Label 10475 2025 0    50   ~ 0
 SR_CTRL
 $Comp
 L Device:LED D5
@@ -849,8 +780,6 @@ Text Label 2925 9925 2    50   ~ 0
 5V_ISO
 Wire Wire Line
 	3300 10825 3950 10825
-Text Label 10575 9275 2    50   ~ 0
-Safety_Loop_ISO
 $Comp
 L Connector_Generic:Conn_01x02 J2
 U 1 1 6025C7CF
@@ -883,23 +812,6 @@ Wire Wire Line
 Wire Wire Line
 	14150 2200 14850 2200
 Wire Wire Line
-	12950 6150 13575 6150
-Wire Wire Line
-	13875 6350 12950 6350
-Wire Wire Line
-	14475 6350 15225 6350
-Wire Wire Line
-	14475 6150 14550 6150
-Wire Wire Line
-	14550 6025 14550 6150
-Connection ~ 14550 6150
-Wire Wire Line
-	14550 6150 15225 6150
-Wire Wire Line
-	14550 5675 14550 5725
-Wire Wire Line
-	14550 5675 15225 5675
-Wire Wire Line
 	2975 6825 3600 6825
 Wire Wire Line
 	1150 6825 1750 6825
@@ -920,8 +832,6 @@ Wire Wire Line
 Wire Wire Line
 	7825 8675 8575 8675
 Wire Wire Line
-	9625 9275 10575 9275
-Wire Wire Line
 	9775 8575 10575 8575
 Wire Wire Line
 	9775 8775 10575 8775
@@ -930,43 +840,43 @@ Wire Wire Line
 Wire Wire Line
 	9625 9675 10575 9675
 Wire Wire Line
-	14575 4550 15100 4550
+	14575 5900 15100 5900
 Wire Wire Line
-	14575 4250 15100 4250
+	14575 5600 15100 5600
 Wire Wire Line
-	14575 4450 15100 4450
+	14575 5800 15100 5800
 Wire Wire Line
-	14575 4350 15100 4350
+	14575 5700 15100 5700
 Wire Wire Line
-	13250 4250 13775 4250
-Text Label 13600 5000 2    50   ~ 0
+	13250 5600 13775 5600
+Text Label 13600 6350 2    50   ~ 0
 ISO_RTN
 $Comp
 L Device:C C?
 U 1 1 5FA132AF
-P 13250 4775
+P 13250 6125
 AR Path="/5F9A7CF0/5FA132AF" Ref="C?"  Part="1" 
 AR Path="/5FA132AF" Ref="C11"  Part="1" 
-F 0 "C11" H 13365 4821 50  0000 L CNN
-F 1 "0.1uF" H 13365 4730 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 13288 4625 50  0001 C CNN
-F 3 "~" H 13250 4775 50  0001 C CNN
-	1    13250 4775
+F 0 "C11" H 13365 6171 50  0000 L CNN
+F 1 "0.1uF" H 13365 6080 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 13288 5975 50  0001 C CNN
+F 3 "~" H 13250 6125 50  0001 C CNN
+	1    13250 6125
 	1    0    0    -1  
 $EndComp
 $Comp
 L Interface_CAN_LIN:ISO1050DUB U5
 U 1 1 5F9EC23F
-P 14175 4450
-F 0 "U5" H 14125 4100 50  0000 L CNN
-F 1 "ISO1050DUB" H 13950 4725 50  0000 L CNN
-F 2 "Package_SO:SOP-8_6.62x9.15mm_P2.54mm" H 14175 4100 50  0001 C CIN
-F 3 "http://www.ti.com/lit/ds/symlink/iso1050.pdf" H 14175 4400 50  0001 C CNN
-	1    14175 4450
+P 14175 5800
+F 0 "U5" H 14125 5450 50  0000 L CNN
+F 1 "ISO1050DUB" H 13950 6075 50  0000 L CNN
+F 2 "Package_SO:SOP-8_6.62x9.15mm_P2.54mm" H 14175 5450 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/iso1050.pdf" H 14175 5750 50  0001 C CNN
+	1    14175 5800
 	1    0    0    1   
 $EndComp
 Wire Wire Line
-	13250 4550 13775 4550
+	13250 5900 13775 5900
 Wire Wire Line
 	14775 9275 15300 9275
 Wire Wire Line
@@ -1066,8 +976,6 @@ Text Notes 13275 8650 0    79   ~ 0
 Bi-Directional I2C Isolator
 Wire Notes Line
 	12150 9875 15975 9875
-Text Notes 13000 5375 0    79   ~ 0
-Isolation of TSI Safety Loop Signal
 Text Notes 4650 7900 0    79   ~ 0
 5V & 3.3V have same isolated return
 Wire Wire Line
@@ -1084,9 +992,9 @@ Text Label 14850 2100 2    50   ~ 0
 SDA_TSI_GLV
 Text Label 15300 9275 2    50   ~ 0
 SDA_TSI_GLV
-Text Label 10475 1925 0    50   ~ 0
+Text Label 12575 1925 2    50   ~ 0
 SDA_TSI_GLV
-Text Label 10475 1825 0    50   ~ 0
+Text Label 12575 2025 2    50   ~ 0
 SCL_TSI_GLV
 $Comp
 L Logic-rescue:Conn_01x04-Connector_Generic-Logic-rescue J1
@@ -1106,10 +1014,6 @@ CAN_L
 Text Notes 12325 1475 0    47   ~ 0
 IMU
 Wire Wire Line
-	11825 2125 12575 2125
-Wire Wire Line
-	12575 2225 11825 2225
-Wire Wire Line
 	2650 10825 3300 10825
 Wire Wire Line
 	3300 10825 3300 10975
@@ -1127,25 +1031,15 @@ Wire Notes Line
 Wire Wire Line
 	1275 10950 1625 10950
 Wire Wire Line
-	11225 1825 10475 1825
+	11825 2025 12575 2025
 Wire Wire Line
-	10475 1925 11225 1925
-Wire Wire Line
-	10475 2125 11225 2125
-Wire Wire Line
-	10475 2225 11225 2225
-Wire Wire Line
-	10475 2325 11225 2325
-Wire Wire Line
-	10475 2425 11225 2425
+	11825 1925 12575 1925
 Wire Wire Line
 	12575 2325 11825 2325
 Wire Wire Line
-	11825 2425 12575 2425
+	10475 1925 11225 1925
 Wire Wire Line
-	12575 1825 11825 1825
-Wire Wire Line
-	11825 2025 12575 2025
+	11225 2025 10475 2025
 Wire Notes Line
 	2225 9450 2225 11100
 Wire Notes Line
@@ -1199,8 +1093,6 @@ Wire Wire Line
 	7825 9475 8575 9475
 Wire Wire Line
 	7825 9675 8575 9675
-Wire Wire Line
-	2400 3375 3075 3375
 Wire Wire Line
 	2400 3475 3075 3475
 $Comp
@@ -1326,56 +1218,46 @@ Wire Wire Line
 	7825 10275 8575 10275
 Wire Wire Line
 	7825 10375 8575 10375
-Wire Notes Line
-	15975 6475 15975 5200
-Wire Notes Line
-	12150 6475 12150 5200
-Wire Notes Line
-	12150 5200 15975 5200
-Wire Notes Line
-	12150 6475 15975 6475
 Text Notes 11475 1425 0    50   ~ 0
 IMU PS
 Text Notes 13325 1500 0    50   ~ 0
 RTC
 Wire Wire Line
-	6725 3575 7225 3575
-Wire Wire Line
 	6725 3375 7225 3375
 Text Label 7225 3375 2    50   ~ 0
 PIC_RXD
 Wire Wire Line
-	13775 4450 13250 4450
-Text Label 13250 4450 0    50   ~ 0
+	13775 5800 13250 5800
+Text Label 13250 5800 0    50   ~ 0
 PIC_RXD
 Wire Wire Line
 	6725 3275 7225 3275
 Text Label 7225 3275 2    50   ~ 0
 PIC_TXD
 Wire Wire Line
-	13775 4350 13250 4350
-Text Label 13250 4350 0    50   ~ 0
+	13775 5700 13250 5700
+Text Label 13250 5700 0    50   ~ 0
 PIC_TXD
 Wire Wire Line
-	13250 4550 13250 4625
+	13250 5900 13250 5975
 Wire Wire Line
-	13250 4925 13250 5000
+	13250 6275 13250 6350
 Wire Wire Line
-	13250 5000 13600 5000
+	13250 6350 13600 6350
 Wire Wire Line
-	15100 4550 15100 4625
+	15100 5900 15100 5975
 Wire Wire Line
-	15100 4925 15100 5000
+	15100 6275 15100 6350
 Wire Wire Line
-	14750 5000 15100 5000
-Text Label 14750 5000 0    50   ~ 0
+	14750 6350 15100 6350
+Text Label 14750 6350 0    50   ~ 0
 GLV_RTN
 Wire Notes Line
-	15975 5100 15975 3825
+	15975 6450 15975 5175
 Wire Notes Line
-	12150 5100 12150 3825
+	12150 6450 12150 5175
 Wire Notes Line
-	12150 5100 15975 5100
+	12150 6450 15975 6450
 Wire Wire Line
 	6725 2475 7225 2475
 Text Label 7225 2475 2    50   ~ 0
@@ -1423,16 +1305,12 @@ Wire Wire Line
 	2400 4275 3075 4275
 Wire Wire Line
 	2400 4375 3075 4375
-Wire Wire Line
-	2400 3975 3075 3975
-Wire Wire Line
-	2400 5475 3075 5475
 Text Notes 13150 10375 0    197  ~ 0
 TOP LEVEL
-Text Notes 13425 3975 0    79   ~ 0
+Text Notes 13425 5325 0    79   ~ 0
 Isolated Can Transceiver
 Wire Notes Line
-	12150 3825 15975 3825
+	12150 5175 15975 5175
 Text Label 6225 10350 2    47   ~ 0
 V_OUT_TEMP
 Text Label 2400 2875 0    47   ~ 0
@@ -1539,38 +1417,34 @@ Wire Wire Line
 	14775 9175 15500 9175
 Wire Wire Line
 	14775 9475 15500 9475
-Text Label 10475 2025 0    50   ~ 0
-5V_ISO
-Wire Wire Line
-	10475 2025 11225 2025
-Text Label 12575 1925 2    50   ~ 0
-IMD_Fault
-Wire Wire Line
-	12575 1925 11825 1925
-Wire Notes Line
-	12100 1950 12675 1950
-Wire Notes Line
-	12675 1950 12675 1675
-Wire Notes Line
-	12675 1675 12100 1675
-Wire Notes Line
-	12100 1675 12100 1950
-Text Notes 12025 1650 0    47   ~ 0
-Currently 24V Signals
-Text Label 10475 2525 0    50   ~ 0
-Throttle_PL
-Wire Wire Line
-	10475 2525 11225 2525
-Text Label 12575 2525 2    50   ~ 0
+Text Label 10475 2225 0    50   ~ 0
 CoolTemp
 Wire Wire Line
-	11825 2525 12575 2525
+	10475 2225 11225 2225
+Text Label 10475 2325 0    50   ~ 0
+FlowRate
 Wire Wire Line
-	2400 3575 3075 3575
-Text Label 2400 3575 0    50   ~ 0
-Throttle_PL
-Text Label 2400 4475 0    50   ~ 0
-CoolTemp
+	10475 2325 11225 2325
+Text Label 10475 2125 0    50   ~ 0
+APPS
 Wire Wire Line
-	2400 4475 3075 4475
+	10475 2125 11225 2125
+NoConn ~ 9625 9275
+NoConn ~ 3075 3975
+NoConn ~ 3075 3375
+Wire Wire Line
+	12575 2225 11825 2225
+Wire Wire Line
+	11825 2125 12575 2125
+Text Label 11875 2225 0    50   ~ 0
+BP_CAN+
+Text Label 11875 2125 0    50   ~ 0
+BP_CAN-
+NoConn ~ 11825 2425
+NoConn ~ 11225 2425
+NoConn ~ 3075 3575
+NoConn ~ 6725 4775
+NoConn ~ 3075 5475
+NoConn ~ 6725 3575
+NoConn ~ 3075 4475
 $EndSCHEMATC

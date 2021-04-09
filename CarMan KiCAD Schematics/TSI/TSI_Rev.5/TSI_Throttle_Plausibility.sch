@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 2 6
+Sheet 6 6
 Title ""
 Date ""
 Rev ""
@@ -22,10 +22,8 @@ GLV_RTN
 Text HLabel 1550 1000 0    50   Input ~ 0
 5V
 Text HLabel 1550 1600 0    50   Input ~ 0
-Throttle_SEL
-Text HLabel 1550 1700 0    50   Input ~ 0
 SDA
-Text HLabel 1550 1800 0    50   Input ~ 0
+Text HLabel 1550 1700 0    50   Input ~ 0
 SCL
 Text Notes 975  650  0    79   ~ 0
 LOW VOLTAGE SIGNALS\n
@@ -34,10 +32,8 @@ GLV_RTN
 Text Label 2325 900  2    50   ~ 0
 10V
 Text Label 2325 1600 2    50   ~ 0
-Throttle_SEL
-Text Label 2325 1700 2    50   ~ 0
 SDA_uC
-Text Label 2325 1800 2    50   ~ 0
+Text Label 2325 1700 2    50   ~ 0
 SCL_uC
 Text Label 2325 800  2    50   ~ 0
 24V
@@ -879,11 +875,11 @@ Wire Wire Line
 	4100 2050 4250 2050
 Wire Wire Line
 	4100 2250 4250 2250
-Text Label 2325 3125 2    50   ~ 0
+Text Label 2350 3250 2    50   ~ 0
 APPS1_RTN
 Text Label 2325 1300 2    50   ~ 0
 APPS1
-Text Label 2325 3025 2    50   ~ 0
+Text Label 2350 3150 2    50   ~ 0
 APPS1_10V
 Text Label 2325 1400 2    50   ~ 0
 APPS2
@@ -1159,15 +1155,15 @@ Text HLabel 1550 1500 0    50   Input ~ 0
 BRAKE_IN
 Text HLabel 1550 1300 0    50   Input ~ 0
 APPS1
-Text HLabel 1525 3125 0    50   Output ~ 0
+Text HLabel 1550 3250 0    50   Output ~ 0
 APPS1_RTN
-Text HLabel 1525 3025 0    50   Output ~ 0
+Text HLabel 1550 3150 0    50   Output ~ 0
 APPS1_10V
-Text HLabel 1525 3325 0    50   Output ~ 0
+Text HLabel 1550 3450 0    50   Output ~ 0
 APPS2_RTN
 Text HLabel 1550 1400 0    50   Input ~ 0
 APPS2
-Text HLabel 1525 3225 0    50   Output ~ 0
+Text HLabel 1550 3350 0    50   Output ~ 0
 APPS2_5V
 Wire Notes Line
 	2950 3725 550  3725
@@ -1175,9 +1171,9 @@ Text Notes 1200 4025 0    79   ~ 0
 APPS1 STEPDOWN\n\n
 Wire Notes Line
 	2950 3725 2950 6175
-Text Label 2325 3325 2    50   ~ 0
+Text Label 2350 3450 2    50   ~ 0
 APPS2_RTN
-Text Label 2325 3225 2    50   ~ 0
+Text Label 2350 3350 2    50   ~ 0
 APPS2_5V
 Wire Notes Line
 	500  500  2750 500 
@@ -1202,22 +1198,14 @@ Text Notes 14100 2075 0    79   ~ 0
 AUTO TURN OFF SWITCH
 Wire Wire Line
 	13300 3350 14150 3350
-Text HLabel 1550 2000 0    50   Input ~ 0
-IMD_Status
-Text Label 2325 2000 2    50   ~ 0
-IMD_Status
 Text Label 10975 6000 2    50   ~ 0
 Brake_Pressed_uC
 Text Label 10975 6100 2    50   ~ 0
-APPS
-Text Label 10975 6200 2    50   ~ 0
 D_LED_CTRL
-Text HLabel 1550 2300 0    50   Input ~ 0
+Text HLabel 1550 1950 0    50   Input ~ 0
 D_LED_CTRL
-Text Label 2325 2300 2    50   ~ 0
+Text Label 2325 1950 2    50   ~ 0
 D_LED_CTRL
-Text Label 10975 6300 2    50   ~ 0
-Flowrate
 Wire Wire Line
 	10250 7000 10250 7100
 $Comp
@@ -1487,9 +1475,6 @@ Wire Wire Line
 Connection ~ 6600 2150
 Wire Wire Line
 	6600 2150 6600 2250
-NoConn ~ 10250 6500
-NoConn ~ 10250 6600
-NoConn ~ 10250 6700
 Wire Wire Line
 	5900 1100 5900 1400
 Wire Wire Line
@@ -1674,46 +1659,46 @@ F 3 "~" H 5450 10550 50  0001 C CNN
 	1    5450 10550
 	1    0    0    -1  
 $EndComp
-Text HLabel 1550 2100 0    50   Input ~ 0
-CoolTemp
-Text Label 2325 2100 2    50   ~ 0
-CoolTemp
-Text HLabel 1550 2200 0    50   Input ~ 0
-Flowrate
-Text Label 2325 2200 2    50   ~ 0
-Flowrate
-Text Label 2325 2725 2    50   ~ 0
+Text HLabel 1550 1850 0    50   Input ~ 0
+Drive_BTN
+Text Label 2325 1850 2    50   ~ 0
+Drive_BTN
+Text HLabel 1550 2050 0    50   Input ~ 0
+Safety_Loop
+Text Label 2325 2050 2    50   ~ 0
+Safety_Loop
+Text Label 2350 2750 2    50   ~ 0
 BRAKE_OUT
-Text HLabel 1525 2725 0    50   Output ~ 0
+Text HLabel 1550 2750 0    50   Output ~ 0
 BRAKE_OUT
 Wire Wire Line
 	12700 8700 12700 8600
 Text Label 12850 9575 0    50   ~ 0
 Brake_Light_RTN
-Text Label 2325 2925 2    50   ~ 0
+Text Label 2350 2950 2    50   ~ 0
 Brake_Light_RTN
-Text HLabel 1525 2925 0    50   Output ~ 0
+Text HLabel 1550 2950 0    50   Output ~ 0
 Brake_Light_RTN
 Text Notes 14275 4000 0    51   ~ 0
 A switch that is controlled by\nThrottle_SEL. Pin 1 shorted to\npin 4 when pin 6 HIGH
 Wire Wire Line
-	2325 2925 1525 2925
+	2350 2950 1550 2950
 Wire Wire Line
-	2325 3325 1525 3325
+	2350 3450 1550 3450
 Wire Wire Line
-	2325 3225 1525 3225
+	2350 3350 1550 3350
 Wire Wire Line
-	2325 3125 1525 3125
+	2350 3250 1550 3250
 Wire Wire Line
-	2325 3025 1525 3025
+	2350 3150 1550 3150
 Text Notes 9050 4550 0    79   ~ 0
 GPIO Expander\n
 Connection ~ 14050 9000
 Text Label 13425 9000 0    50   ~ 0
 Brake_Light
-Text HLabel 1525 2825 0    50   Output ~ 0
+Text HLabel 1550 2850 0    50   Output ~ 0
 Brake_Light
-Text Label 2325 2825 2    50   ~ 0
+Text Label 2350 2850 2    50   ~ 0
 Brake_Light
 Wire Wire Line
 	12700 9000 14050 9000
@@ -1723,10 +1708,6 @@ Text Notes 6575 6375 0    47   ~ 0
 0.24V
 Text Notes 6950 2600 0    47   ~ 0
 Voltage Comparator
-Wire Notes Line
-	2750 500  2750 3450
-Wire Notes Line
-	500  3450 2750 3450
 Text HLabel 1550 1100 0    50   Input ~ 0
 3.3V
 Text Label 2325 1100 2    50   ~ 0
@@ -2034,19 +2015,11 @@ Wire Wire Line
 	12150 2900 12150 3325
 Wire Wire Line
 	11450 3000 11450 3325
-Wire Notes Line
-	500  500  500  3450
 Wire Wire Line
-	2325 2625 1525 2625
-Wire Wire Line
-	2325 2525 1525 2525
-Text HLabel 1525 2625 0    50   Output ~ 0
+	2350 2650 1550 2650
+Text HLabel 1550 2650 0    50   Output ~ 0
 Throttle_LV
-Text HLabel 1525 2525 0    50   Output ~ 0
-Throttle_PL
-Text Label 2325 2525 2    50   ~ 0
-Throttle_PL
-Text Label 2325 2625 2    50   ~ 0
+Text Label 2350 2650 2    50   ~ 0
 Throttle_LV
 Wire Notes Line
 	550  6575 2950 6575
@@ -2059,19 +2032,15 @@ Wire Wire Line
 Wire Wire Line
 	2250 7100 2675 7100
 Wire Wire Line
-	1525 2725 2325 2725
+	1550 2750 2350 2750
 Wire Wire Line
-	1525 2825 2325 2825
+	1550 2850 2350 2850
 Wire Wire Line
-	1550 2300 2325 2300
+	1550 1950 2325 1950
 Wire Wire Line
-	1550 2200 2325 2200
+	1550 2050 2325 2050
 Wire Wire Line
-	1550 2100 2325 2100
-Wire Wire Line
-	1550 2000 2325 2000
-Wire Wire Line
-	1550 1800 2325 1800
+	1550 1850 2325 1850
 Wire Wire Line
 	1550 1700 2325 1700
 Wire Wire Line
@@ -2092,15 +2061,218 @@ Wire Wire Line
 	1550 900  2325 900 
 Wire Wire Line
 	1550 800  2325 800 
-NoConn ~ 8650 5900
-NoConn ~ 8650 6000
 Wire Wire Line
 	10250 6000 10975 6000
 Wire Wire Line
 	10250 6100 10975 6100
 Wire Wire Line
+	7925 5900 8650 5900
+Wire Wire Line
+	7925 6000 8650 6000
+Text Label 7925 5900 0    50   ~ 0
+Throttle_PL
+Text Label 7925 6000 0    50   ~ 0
+Throttle_SEL
+Wire Wire Line
 	10250 6200 10975 6200
 Wire Wire Line
 	10250 6300 10975 6300
-NoConn ~ 10250 6400
+Text Label 10975 6300 2    50   ~ 0
+Safety_Loop
+Text Label 10975 6200 2    50   ~ 0
+Drive_BTN
+Text HLabel 1550 2150 0    50   Input ~ 0
+RTDS_CTRL
+Text Label 2325 2150 2    50   ~ 0
+RTDS_CTRL
+Text HLabel 1550 2250 0    50   Input ~ 0
+PC_Ready
+Text Label 2325 2250 2    50   ~ 0
+PC_Ready
+Wire Wire Line
+	1550 2150 2325 2150
+Wire Wire Line
+	1550 2250 2325 2250
+Wire Wire Line
+	10250 6400 10975 6400
+Wire Wire Line
+	10250 6500 10975 6500
+Text Label 10975 6400 2    50   ~ 0
+RTDS_CTRL
+Text Label 10975 6500 2    50   ~ 0
+PC_Ready
+Text HLabel 1550 2350 0    50   Input ~ 0
+AMS_FAULT_LED
+Text Label 2325 2350 2    50   ~ 0
+AMS_FAULT_LED
+Text HLabel 1550 2450 0    50   Input ~ 0
+IMD_FAULT_LED
+Text Label 2325 2450 2    50   ~ 0
+IMD_FAULT_LED
+Wire Wire Line
+	1550 2350 2325 2350
+Wire Wire Line
+	1550 2450 2325 2450
+$Comp
+L TSI_Rev.5-rescue:TLP293-CarMan_KiCAD_Library-TSI_Rev.5-rescue U?
+U 1 1 616A81A5
+P 14150 7600
+AR Path="/5FE1DE7D/616A81A5" Ref="U?"  Part="1" 
+AR Path="/5FC85F57/616A81A5" Ref="U31"  Part="1" 
+F 0 "U31" H 14150 7800 50  0000 C CNN
+F 1 "TLP293" H 14150 7400 50  0000 C CNN
+F 2 "Package_SO:SOIC-4_4.55x2.6mm_P1.27mm" H 13950 7400 50  0001 L CIN
+F 3 "https://www.mouser.com/ProductDetail/Toshiba/TLP293GB-TPLE/?qs=OLJpxlzHOSSc5RAOktTSWw%3D%3D" H 14150 7600 50  0001 L CNN
+	1    14150 7600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 616A81AB
+P 13700 7500
+AR Path="/5FE1DE7D/616A81AB" Ref="R?"  Part="1" 
+AR Path="/5FC85F57/616A81AB" Ref="R79"  Part="1" 
+F 0 "R79" V 13600 7500 50  0000 C CNN
+F 1 "2.4K" V 13700 7500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 13630 7500 50  0001 C CNN
+F 3 "~" H 13700 7500 50  0001 C CNN
+	1    13700 7500
+	0    1    1    0   
+$EndComp
+Text Label 14325 8100 2    50   ~ 0
+GLV_RTN
+$Comp
+L Device:R R?
+U 1 1 616A81B5
+P 14600 7900
+AR Path="/5FE1DE7D/616A81B5" Ref="R?"  Part="1" 
+AR Path="/5FC85F57/616A81B5" Ref="R110"  Part="1" 
+F 0 "R110" V 14500 7850 50  0000 L CNN
+F 1 "1.5K" V 14600 7825 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 14530 7900 50  0001 C CNN
+F 3 "~" H 14600 7900 50  0001 C CNN
+	1    14600 7900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12850 7500 13550 7500
+Text Label 15125 7500 2    50   ~ 0
+5V
+Text Label 12850 7500 0    50   ~ 0
+AMS_FAULT_LED
+Wire Wire Line
+	13725 8100 14600 8100
+Wire Wire Line
+	13725 7700 13850 7700
+Text Label 15125 7700 2    50   ~ 0
+AMS_FAULT
+Wire Wire Line
+	14450 7500 15125 7500
+Wire Wire Line
+	14450 7700 14600 7700
+Wire Wire Line
+	14600 7700 14600 7750
+Connection ~ 14600 7700
+Wire Wire Line
+	14600 7700 15125 7700
+Wire Wire Line
+	14600 8050 14600 8100
+Wire Wire Line
+	13725 7700 13725 8100
+Wire Wire Line
+	10250 6600 10975 6600
+Wire Wire Line
+	10250 6700 10975 6700
+Text Label 10975 6600 2    50   ~ 0
+AMS_FAULT
+$Comp
+L TSI_Rev.5-rescue:TLP293-CarMan_KiCAD_Library-TSI_Rev.5-rescue U?
+U 1 1 61B9C863
+P 14150 6675
+AR Path="/5FE1DE7D/61B9C863" Ref="U?"  Part="1" 
+AR Path="/5FC85F57/61B9C863" Ref="U29"  Part="1" 
+F 0 "U29" H 14150 6875 50  0000 C CNN
+F 1 "TLP293" H 14150 6475 50  0000 C CNN
+F 2 "Package_SO:SOIC-4_4.55x2.6mm_P1.27mm" H 13950 6475 50  0001 L CIN
+F 3 "https://www.mouser.com/ProductDetail/Toshiba/TLP293GB-TPLE/?qs=OLJpxlzHOSSc5RAOktTSWw%3D%3D" H 14150 6675 50  0001 L CNN
+	1    14150 6675
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61B9C869
+P 13700 6575
+AR Path="/5FE1DE7D/61B9C869" Ref="R?"  Part="1" 
+AR Path="/5FC85F57/61B9C869" Ref="R2"  Part="1" 
+F 0 "R2" V 13600 6575 50  0000 C CNN
+F 1 "2.4K" V 13700 6575 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 13630 6575 50  0001 C CNN
+F 3 "~" H 13700 6575 50  0001 C CNN
+	1    13700 6575
+	0    1    1    0   
+$EndComp
+Text Label 14325 7175 2    50   ~ 0
+GLV_RTN
+$Comp
+L Device:R R?
+U 1 1 61B9C870
+P 14600 6975
+AR Path="/5FE1DE7D/61B9C870" Ref="R?"  Part="1" 
+AR Path="/5FC85F57/61B9C870" Ref="R109"  Part="1" 
+F 0 "R109" V 14500 6925 50  0000 L CNN
+F 1 "1.5K" V 14600 6900 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 14530 6975 50  0001 C CNN
+F 3 "~" H 14600 6975 50  0001 C CNN
+	1    14600 6975
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12850 6575 13550 6575
+Text Label 15125 6575 2    50   ~ 0
+5V
+Text Label 12850 6575 0    50   ~ 0
+IMD_FAULT_LED
+Wire Wire Line
+	13725 7175 14600 7175
+Wire Wire Line
+	13725 6775 13850 6775
+Text Label 15125 6775 2    50   ~ 0
+IMD_FAULT
+Wire Wire Line
+	14450 6575 15125 6575
+Wire Wire Line
+	14450 6775 14600 6775
+Wire Wire Line
+	14600 6775 14600 6825
+Connection ~ 14600 6775
+Wire Wire Line
+	14600 6775 15125 6775
+Wire Wire Line
+	14600 7125 14600 7175
+Wire Wire Line
+	13725 6775 13725 7175
+Text Label 10975 6700 2    50   ~ 0
+IMD_FAULT
+Wire Notes Line
+	15950 8175 11950 8175
+Wire Notes Line
+	15950 5925 15950 8175
+Wire Notes Line
+	11950 5925 11950 8175
+Wire Notes Line
+	11950 5925 15950 5925
+Text Notes 12600 6150 0    79   ~ 0
+24 -> 5V Conversion for AMS & IMD Faults
+Text Label 2350 3050 2    50   ~ 0
+APPS
+Wire Wire Line
+	2350 3050 1550 3050
+Text HLabel 1550 3050 0    50   Output ~ 0
+APPS
+Wire Notes Line
+	2750 500  2750 3525
+Wire Notes Line
+	500  500  500  3525
+Wire Notes Line
+	500  3525 2750 3525
 $EndSCHEMATC

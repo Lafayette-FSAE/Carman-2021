@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 6 6
+Sheet 5 6
 Title ""
 Date ""
 Rev ""
@@ -287,7 +287,7 @@ Wire Notes Line
 Wire Notes Line
 	2250 3950 4000 3950
 Text Label 12650 6625 0    50   ~ 0
-5V_ISO_RTN
+LOGIC_ISO_RTN
 $Comp
 L TSI_Rev.5-rescue:TLP293-CarMan_KiCAD_Library-TSI_Rev.5-rescue U32
 U 1 1 5FA61B5B
@@ -343,7 +343,7 @@ F 3 "https://www.mouser.com/datasheet/2/408/Toshiba_TLP293_datasheet-1209449.pdf
 	1    0    0    -1  
 $EndComp
 Text Label 3350 1250 0    50   ~ 0
-5V_ISO_RTN
+LOGIC_ISO_RTN
 Text Label 12975 8525 0    50   ~ 0
 MRESET_Contact
 Text Notes 6275 800  2    89   ~ 0
@@ -404,11 +404,11 @@ $EndComp
 Text Label 15800 1400 2    50   ~ 0
 BOT_Out
 Text Label 15800 1200 2    50   ~ 0
-5V_ISO_RTN
+LOGIC_ISO_RTN
 Text Label 15800 3625 2    50   ~ 0
 MRESET_Contact
 Text HLabel 14950 1200 0    50   Input ~ 0
-5V_ISO_RTN
+LOGIC_ISO_RTN
 Text HLabel 14950 3625 0    50   Output ~ 0
 MRESET_Contact
 Text Label 15800 1300 2    50   ~ 0

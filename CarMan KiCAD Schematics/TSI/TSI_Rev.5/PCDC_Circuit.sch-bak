@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A2 23386 16535
 encoding utf-8
-Sheet 5 6
+Sheet 4 6
 Title ""
 Date ""
 Rev ""
@@ -223,23 +223,23 @@ Text Notes 5250 14550 0    47   ~ 0
 24V (GLV) --> 24V (ISO)\n
 Text Notes 19175 15175 0    118  ~ 0
 PRECHARGE & DISCHARGE CIRCUIT
-Text Label 2150 1450 2    50   ~ 0
+Text Label 2150 1525 2    50   ~ 0
 IO_Ground
-Text Label 2150 1350 2    50   ~ 0
+Text Label 2150 1425 2    50   ~ 0
 DC_RELAY+
-Text HLabel 1350 1450 0    50   Output ~ 0
+Text HLabel 1350 1525 0    50   Output ~ 0
 DC_RELAY-
-Text Label 2150 1650 2    50   ~ 0
+Text Label 2150 1725 2    50   ~ 0
 PC_RELAY-
-Text Label 2150 1550 2    50   ~ 0
+Text Label 2150 1625 2    50   ~ 0
 PC_RELAY+
-Text HLabel 1350 1650 0    50   Output ~ 0
+Text HLabel 1350 1725 0    50   Output ~ 0
 PC_RELAY-
-Text HLabel 1350 1550 0    50   Output ~ 0
+Text HLabel 1350 1625 0    50   Output ~ 0
 PC_RELAY+
-Text Label 2150 1750 2    50   ~ 0
+Text Label 2150 1825 2    50   ~ 0
 IGNI_VCC
-Text HLabel 1350 1750 0    50   Output ~ 0
+Text HLabel 1350 1825 0    50   Output ~ 0
 IGNI_VCC
 Text Notes 2250 10500 0    197  ~ 0
 HIGH VOLTAGE\n
@@ -411,15 +411,15 @@ Wire Wire Line
 Wire Wire Line
 	19350 11425 20750 11425
 Wire Wire Line
-	1350 1750 2150 1750
+	1350 1825 2150 1825
 Wire Wire Line
-	1350 1650 2150 1650
+	1350 1725 2150 1725
 Wire Wire Line
-	1350 1550 2150 1550
+	1350 1625 2150 1625
 Wire Wire Line
-	1350 1450 2150 1450
+	1350 1525 2150 1525
 Wire Wire Line
-	1350 1350 2150 1350
+	1350 1425 2150 1425
 Wire Wire Line
 	1350 825  2150 825 
 Wire Wire Line
@@ -440,8 +440,6 @@ Wire Wire Line
 	1150 11050 1850 11050
 Wire Wire Line
 	1150 10950 1850 10950
-Text Label 4600 15850 0    59   ~ 0
-5V_ISO_RTN
 Text Label 4600 15475 0    59   ~ 0
 PC_Ready
 $Comp
@@ -455,38 +453,6 @@ F 3 "~" H 5325 15650 50  0001 C CNN
 	1    5325 15650
 	1    0    0    -1  
 $EndComp
-$Comp
-L TSI_Rev.5-rescue:TLP293-CarMan_KiCAD_Library-TSI_Rev.5-rescue U27
-U 1 1 60546534
-P 5700 15375
-F 0 "U27" H 5600 15575 50  0000 C CNN
-F 1 "TLP293" H 5850 15575 50  0000 C CNN
-F 2 "Package_SO:SOIC-4_4.55x2.6mm_P1.27mm" H 5500 15175 50  0001 L CIN
-F 3 "https://www.mouser.com/datasheet/2/408/Toshiba_TLP293_datasheet-1209449.pdf" H 5700 15375 50  0001 L CNN
-	1    5700 15375
-	-1   0    0    -1  
-$EndComp
-Text Label 7100 15475 2    59   ~ 0
-IO_Ground
-Text Notes 6500 15175 0    47   ~ 0
-(Pre charge ready)
-Wire Wire Line
-	6000 15475 7100 15475
-Wire Wire Line
-	6100 15275 6000 15275
-$Comp
-L Device:R R102
-U 1 1 60546542
-P 6250 15275
-F 0 "R102" V 6350 15175 50  0000 L CNN
-F 1 "2.4K" V 6250 15175 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6180 15275 50  0001 C CNN
-F 3 "~" H 6250 15275 50  0001 C CNN
-	1    6250 15275
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	6400 15275 7100 15275
 Wire Wire Line
 	4600 15275 5400 15275
 Wire Wire Line
@@ -1715,8 +1681,6 @@ F 3 "~" H 2675 4575 50  0001 C CNN
 	1    2675 4575
 	1    0    0    1   
 $EndComp
-Text Label 7100 15275 2    59   ~ 0
-MC_95%
 Wire Notes Line
 	4600 4750 4600 5475
 Wire Notes Line
@@ -1774,7 +1738,7 @@ Wire Notes Line
 	550  11750 550  10650
 Text Notes 7925 11950 0    39   ~ 0
 Flyback\ndiode
-Text HLabel 1350 1350 0    50   Output ~ 0
+Text HLabel 1350 1425 0    50   Output ~ 0
 DC_RELAY+
 $Comp
 L Connector:TestPoint TP?
@@ -1953,17 +1917,47 @@ Wire Wire Line
 Wire Wire Line
 	15600 8375 15100 8375
 Text Label 4600 15275 0    49   ~ 0
-5V_ISO
+5V
 Text Label 1850 11450 2    50   ~ 0
-5V_ISO
+5V
 Text HLabel 1150 11450 0    50   Input ~ 0
-5V_ISO
+5V
 Wire Wire Line
 	1150 11450 1850 11450
-Text Label 1850 11550 2    50   ~ 0
-5V_ISO_RTN
-Text HLabel 1150 11550 0    50   Input ~ 0
-5V_ISO_RTN
+Text Label 7100 15275 2    59   ~ 0
+MC_95%
 Wire Wire Line
-	1150 11550 1850 11550
+	6400 15275 7100 15275
+$Comp
+L Device:R R102
+U 1 1 60546542
+P 6250 15275
+F 0 "R102" V 6350 15175 50  0000 L CNN
+F 1 "2.4K" V 6250 15175 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6180 15275 50  0001 C CNN
+F 3 "~" H 6250 15275 50  0001 C CNN
+	1    6250 15275
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6100 15275 6000 15275
+Wire Wire Line
+	6000 15475 7100 15475
+Text Notes 6500 15175 0    47   ~ 0
+(Pre charge ready)
+Text Label 7100 15475 2    59   ~ 0
+IO_Ground
+$Comp
+L TSI_Rev.5-rescue:TLP293-CarMan_KiCAD_Library-TSI_Rev.5-rescue U27
+U 1 1 60546534
+P 5700 15375
+F 0 "U27" H 5600 15575 50  0000 C CNN
+F 1 "TLP293" H 5850 15575 50  0000 C CNN
+F 2 "Package_SO:SOIC-4_4.55x2.6mm_P1.27mm" H 5500 15175 50  0001 L CIN
+F 3 "https://www.mouser.com/datasheet/2/408/Toshiba_TLP293_datasheet-1209449.pdf" H 5700 15375 50  0001 L CNN
+	1    5700 15375
+	-1   0    0    -1  
+$EndComp
+Text Label 4600 15850 0    59   ~ 0
+GLV_RTN
 $EndSCHEMATC
