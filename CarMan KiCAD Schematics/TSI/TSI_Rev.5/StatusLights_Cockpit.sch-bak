@@ -16,19 +16,19 @@ $EndDescr
 $Comp
 L Device:R R3
 U 1 1 5F9997DD
-P 10200 1300
-F 0 "R3" H 10100 1300 50  0000 C CNN
-F 1 "2.4K" V 10200 1300 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 10130 1300 50  0001 C CNN
-F 3 "~" H 10200 1300 50  0001 C CNN
-	1    10200 1300
+P 10500 1175
+F 0 "R3" H 10400 1175 50  0000 C CNN
+F 1 "2.4K" V 10500 1175 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 10430 1175 50  0001 C CNN
+F 3 "~" H 10500 1175 50  0001 C CNN
+	1    10500 1175
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10200 1950 10200 2350
+	10500 1825 10500 2225
 Wire Wire Line
-	10200 1150 10200 900 
-Text Label 10200 900  2    50   ~ 0
+	10500 1025 10500 775 
+Text Label 10500 775  2    50   ~ 0
 3.3V
 $Comp
 L TSI_Rev.5-rescue:TLP293-CarMan_KiCAD_Library-TSI_Rev.5-rescue U11
@@ -41,25 +41,25 @@ F 3 "https://www.mouser.com/datasheet/2/408/Toshiba_TLP293_datasheet-1209449.pdf
 	1    8875 3550
 	1    0    0    -1  
 $EndComp
-Text HLabel 1250 1350 0    50   Input ~ 0
-RTDS_CTRL
 Text HLabel 1250 1450 0    50   Input ~ 0
+RTDS_CTRL
+Text HLabel 1250 1550 0    50   Input ~ 0
 D_LED_CTRL
 Text HLabel 1250 850  0    50   Input ~ 0
 24V
-Text HLabel 1250 1050 0    50   Input ~ 0
+Text HLabel 1250 1150 0    50   Input ~ 0
 GLV_RTN
-Text HLabel 1250 950  0    50   Input ~ 0
+Text HLabel 1250 1050 0    50   Input ~ 0
 3.3V
-Text Label 1950 1350 2    50   ~ 0
-RTDS_CTRL
 Text Label 1950 1450 2    50   ~ 0
+RTDS_CTRL
+Text Label 1950 1550 2    50   ~ 0
 D_LED_CTRL
 Text Label 1950 850  2    50   ~ 0
 24V
-Text Label 1950 1050 2    50   ~ 0
+Text Label 1950 1150 2    50   ~ 0
 GLV_RTN
-Text Label 1950 950  2    50   ~ 0
+Text Label 1950 1050 2    50   ~ 0
 3.3V
 $Comp
 L Device:R R15
@@ -214,47 +214,47 @@ Text Notes 2800 5900 0    50   ~ 0
 HIGH VOLTAGE\n
 Text Label 10150 5275 2    50   ~ 0
 Drive_BTN_RTN
-Text HLabel 1250 2050 0    50   Output ~ 0
-TSAL
-Text HLabel 1250 2250 0    50   Output ~ 0
-TSAL_RTN
-Text Label 1950 2050 2    50   ~ 0
-TSAL
-Text Label 1950 2250 2    50   ~ 0
-TSAL_RTN
 Text HLabel 1250 2150 0    50   Output ~ 0
-TSAL_Cockpit
+TSAL
+Text HLabel 1250 2350 0    50   Output ~ 0
+TSAL_RTN
 Text Label 1950 2150 2    50   ~ 0
+TSAL
+Text Label 1950 2350 2    50   ~ 0
+TSAL_RTN
+Text HLabel 1250 2250 0    50   Output ~ 0
 TSAL_Cockpit
-Text Label 10200 2350 2    50   ~ 0
+Text Label 1950 2250 2    50   ~ 0
+TSAL_Cockpit
+Text Label 10500 2225 2    50   ~ 0
 GLV_RTN
 Wire Wire Line
-	10200 1450 10200 1650
+	10500 1325 10500 1525
+Text HLabel 1250 1350 0    50   Input ~ 0
+Drive_BTN_RTN
+Text Label 1950 1350 2    50   ~ 0
+Drive_BTN_RTN
 Text HLabel 1250 1250 0    50   Input ~ 0
-Drive_BTN_RTN
-Text Label 1950 1250 2    50   ~ 0
-Drive_BTN_RTN
-Text HLabel 1250 1150 0    50   Input ~ 0
 Drive_BTN
-Text Label 1950 1150 2    50   ~ 0
+Text Label 1950 1250 2    50   ~ 0
 Drive_BTN
 Wire Wire Line
 	8575 3450 8375 3450
 Text Notes 7100 6950 0    177  ~ 0
 STATUS LIGHTS, TSAL & RTDS
-Text HLabel 1250 1850 0    50   Output ~ 0
-RTDS
-Text Label 1950 1850 2    50   ~ 0
+Text HLabel 1250 1950 0    50   Output ~ 0
 RTDS
 Text Label 1950 1950 2    50   ~ 0
+RTDS
+Text Label 1950 2050 2    50   ~ 0
 RTDS_RTN
-Text HLabel 1250 1950 0    50   Output ~ 0
+Text HLabel 1250 2050 0    50   Output ~ 0
 RTDS_RTN
 Text Notes 675  650  0    79   ~ 0
  LOW VOLTAGE SIGNALS\n
-Text HLabel 1250 1750 0    50   Output ~ 0
+Text HLabel 1250 1850 0    50   Output ~ 0
 Drive_LED
-Text Label 1950 1750 2    50   ~ 0
+Text Label 1950 1850 2    50   ~ 0
 Drive_LED
 Text Label 5600 6400 2    50   ~ 0
 TSAL
@@ -350,31 +350,31 @@ F 3 "~" H 2100 3900 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	1250 1250 1950 1250
-Wire Wire Line
-	1250 1750 1950 1750
-Wire Wire Line
-	1250 1150 1950 1150
-Wire Wire Line
 	1250 1350 1950 1350
-Wire Wire Line
-	1250 1450 1950 1450
 Wire Wire Line
 	1250 1850 1950 1850
 Wire Wire Line
+	1250 1250 1950 1250
+Wire Wire Line
+	1250 1450 1950 1450
+Wire Wire Line
+	1250 1550 1950 1550
+Wire Wire Line
 	1250 1950 1950 1950
+Wire Wire Line
+	1250 2050 1950 2050
 Wire Wire Line
 	1250 850  1950 850 
 Wire Wire Line
-	1250 950  1950 950 
-Wire Wire Line
 	1250 1050 1950 1050
 Wire Wire Line
-	1250 2050 1950 2050
+	1250 1150 1950 1150
 Wire Wire Line
 	1250 2150 1950 2150
 Wire Wire Line
 	1250 2250 1950 2250
+Wire Wire Line
+	1250 2350 1950 2350
 Wire Notes Line
 	500  500  2250 500 
 Wire Wire Line
@@ -398,12 +398,12 @@ Wire Wire Line
 	5000 7000 5600 7000
 Text Label 5600 7200 2    50   ~ 0
 GLV_RTN
-Text HLabel 1250 1550 0    50   Input ~ 0
+Text HLabel 1250 1650 0    50   Input ~ 0
 LOGIC_ISO_RTN
-Text Label 1950 1550 2    50   ~ 0
+Text Label 1950 1650 2    50   ~ 0
 LOGIC_ISO_RTN
 Wire Wire Line
-	1250 1550 1950 1550
+	1250 1650 1950 1650
 $Comp
 L Device:R R68
 U 1 1 5FA84662
@@ -415,8 +415,8 @@ F 3 "~" H 8175 5050 50  0001 C CNN
 	1    8175 5050
 	-1   0    0    1   
 $EndComp
-Text Label 8375 4850 2    50   ~ 0
-3.3V
+Text Label 8175 4850 0    50   ~ 0
+5V
 Wire Notes Line
 	8525 5175 8525 5375
 Wire Notes Line
@@ -445,13 +445,13 @@ GLV_RTN
 $Comp
 L Device:LED D1
 U 1 1 605FE51C
-P 10200 1800
-F 0 "D1" V 10239 1682 50  0000 R CNN
-F 1 "GREEN LED" V 10148 1682 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 10200 1800 50  0001 C CNN
-F 3 "http://static.vcclite.com/pdf/VAOL-S8GT4-LED-0805-green.pdf" H 10200 1800 50  0001 C CNN
-F 4 "VAOL-S8GT4" V 10200 1800 50  0001 C CNN "Part Name"
-	1    10200 1800
+P 10500 1675
+F 0 "D1" V 10539 1557 50  0000 R CNN
+F 1 "GREEN LED" V 10448 1557 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 10500 1675 50  0001 C CNN
+F 3 "http://static.vcclite.com/pdf/VAOL-S8GT4-LED-0805-green.pdf" H 10500 1675 50  0001 C CNN
+F 4 "VAOL-S8GT4" V 10500 1675 50  0001 C CNN "Part Name"
+	1    10500 1675
 	0    -1   -1   0   
 $EndComp
 Wire Notes Line
@@ -517,12 +517,6 @@ Wire Notes Line
 	3975 500  3975 1100
 Wire Notes Line
 	2325 500  3975 500 
-Wire Notes Line
-	2250 500  2250 2350
-Wire Notes Line
-	500  500  500  2350
-Wire Notes Line
-	500  2350 2250 2350
 Text Label 7375 3650 0    50   ~ 0
 GLV_RTN
 Text Label 1300 4100 0    50   ~ 0
@@ -558,4 +552,16 @@ Wire Wire Line
 	9250 3650 9725 3650
 Wire Wire Line
 	9250 4000 9250 4050
+Text HLabel 1250 950  0    50   Input ~ 0
+5V
+Text Label 1950 950  2    50   ~ 0
+5V
+Wire Wire Line
+	1250 950  1950 950 
+Wire Notes Line
+	500  500  500  2450
+Wire Notes Line
+	2250 500  2250 2450
+Wire Notes Line
+	500  2450 2250 2450
 $EndSCHEMATC

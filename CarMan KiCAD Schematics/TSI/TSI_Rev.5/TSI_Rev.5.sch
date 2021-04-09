@@ -78,9 +78,9 @@ GLV_RTN
 Text Label 700  4150 0    50   ~ 0
 5V
 Text Label 700  4850 0    50   ~ 0
-SDA_uC
+SDA
 Text Label 700  4950 0    50   ~ 0
-SCL_uC
+SCL
 Text Label 6725 6825 2    50   ~ 0
 5V
 Text Label 8100 4625 0    50   ~ 0
@@ -93,10 +93,10 @@ Text Label 8100 5225 0    50   ~ 0
 AIRS+
 Text Label 8100 5325 0    50   ~ 0
 AIRS-
-Text Label 7250 1600 2    50   ~ 0
-SCL_TSI
-Text Label 7250 1500 2    50   ~ 0
-SDA_TSI
+Text Label 7275 1600 2    50   ~ 0
+SCL_TSI_GLV
+Text Label 7275 1500 2    50   ~ 0
+SDA_TSI_GLV
 Text Label 5025 1500 0    50   ~ 0
 Cooling_CTRL
 Text Label 1200 2575 0    50   ~ 0
@@ -224,7 +224,7 @@ Text Label 2800 625  2    50   ~ 0
 IO_Ground
 Text Label 11100 3350 2    50   ~ 0
 TSAL
-Text Notes 5625 2350 0    50   ~ 0
+Text Notes 5625 2150 0    50   ~ 0
 TSI-Logic Connection\n
 Text Label 7250 1075 0    50   ~ 0
 BP_CAN+
@@ -963,9 +963,9 @@ MC_Voltage
 Wire Wire Line
 	4300 7375 4900 7375
 Text Label 6725 7025 2    50   ~ 0
-SCL_uC
+SCL
 Text Label 6725 7125 2    50   ~ 0
-SDA_uC
+SDA
 Wire Wire Line
 	7250 775  7750 775 
 Wire Wire Line
@@ -1086,57 +1086,41 @@ Text Label 7275 1900 2    49   ~ 0
 LOGIC_ISO_RTN
 Text Label 8100 3750 0    49   ~ 0
 LOGIC_ISO_RTN
-Text Label 5850 3150 0    50   ~ 0
+Text Label 5820 3350 0    50   ~ 0
 Flowrate_RTN
 Wire Wire Line
-	5353 3260 6903 3260
-Text Label 5353 3260 0    50   ~ 0
-SCL_uC
-Text Label 6903 3260 2    50   ~ 0
-SCL_TSI
-Text Label 6053 3260 0    50   ~ 0
-SCL
-Wire Wire Line
-	5353 3360 6903 3360
-Text Label 5353 3360 0    50   ~ 0
-SDA_uC
-Text Label 6053 3360 0    50   ~ 0
-SDA
-Text Label 6903 3360 2    50   ~ 0
-SDA_TSI
-Wire Wire Line
-	5350 3150 6900 3150
-Text Label 5350 3150 0    50   ~ 0
+	5320 3350 6870 3350
+Text Label 5320 3350 0    50   ~ 0
 AIRS-
-Text Label 6900 3150 2    50   ~ 0
+Text Label 6870 3350 2    50   ~ 0
 GLV_RTN
-Text Label 5350 3050 0    50   ~ 0
+Text Label 5320 3250 0    50   ~ 0
 24V
-Text Label 6900 3050 2    50   ~ 0
+Text Label 6870 3250 2    50   ~ 0
 24V_AMS_IN
 Wire Wire Line
-	5350 3050 6900 3050
-Text Label 6300 3050 2    50   ~ 0
+	5320 3250 6870 3250
+Text Label 6270 3250 2    50   ~ 0
 24V_IMD_IN
 Wire Wire Line
-	5350 2925 5800 2925
+	5320 3125 5770 3125
 Wire Wire Line
-	6900 2925 6400 2925
-Text Label 6900 2925 2    50   ~ 0
+	6870 3125 6370 3125
+Text Label 6870 3125 2    50   ~ 0
 Chassis_GND
-Text Label 5350 2925 0    50   ~ 0
+Text Label 5320 3125 0    50   ~ 0
 CAN_Shield
 $Comp
 L Device:Jumper JP?
 U 1 1 601967AD
-P 6100 2925
+P 6070 3125
 AR Path="/6196BF15/601967AD" Ref="JP?"  Part="1" 
 AR Path="/601967AD" Ref="JP3"  Part="1" 
-F 0 "JP3" H 6175 3075 50  0000 R CNN
-F 1 "If CAN_Shield & Chassis_GND need to be shorted together, weren't sure" H 6800 2925 50  0001 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6100 2925 50  0001 C CNN
-F 3 "~" H 6100 2925 50  0001 C CNN
-	1    6100 2925
+F 0 "JP3" H 6145 3275 50  0000 R CNN
+F 1 "If CAN_Shield & Chassis_GND need to be shorted together, weren't sure" H 6770 3125 50  0001 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6070 3125 50  0001 C CNN
+F 3 "~" H 6070 3125 50  0001 C CNN
+	1    6070 3125
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1197,16 +1181,14 @@ Wire Notes Line
 	1950 1300 4875 1300
 Wire Notes Line
 	4875 475  4875 1300
-Text Label 6750 1700 2    50   ~ 0
+Text Label 6400 1700 0    50   ~ 0
 BP_CAN-
 Text Label 6400 1800 0    50   ~ 0
 BP_CAN+
 Text Notes 2225 1150 0    43   ~ 0
 MC: FW = 13 RW = 14\n(active low)
-Text Notes 5500 2650 0    79   ~ 0
+Text Notes 5510 2840 0    79   ~ 0
 Jumpers and Shorts
-Wire Notes Line
-	7025 2500 5200 2500
 Text Notes 2050 7000 0    50   ~ 0
 LOW VOLTAGE\n
 $Sheet
@@ -1408,12 +1390,6 @@ Text Label 5300 5225 0    50   ~ 0
 SL1_In
 Text Label 6950 5225 2    49   ~ 0
 COOL_24V
-Wire Notes Line
-	7025 3450 7025 2500
-Wire Notes Line
-	5200 2500 5200 3450
-Wire Notes Line
-	5200 3450 7025 3450
 $Comp
 L Device:Jumper JP?
 U 1 1 60D11F30
@@ -1559,11 +1535,25 @@ Wire Wire Line
 Text Label 3925 3950 2    50   ~ 0
 APPS
 Wire Wire Line
-	6350 1500 7250 1500
-Wire Wire Line
-	6350 1600 7250 1600
-Wire Wire Line
 	6350 1900 7275 1900
 NoConn ~ 5725 2000
 NoConn ~ 6350 2000
+Text Label 6403 1600 0    50   ~ 0
+SCL
+Text Label 6403 1500 0    50   ~ 0
+SDA
+Wire Notes Line
+	7070 2690 7070 3440
+Wire Notes Line
+	5220 3440 7070 3440
+Wire Notes Line
+	5210 3440 5150 3440
+Wire Notes Line
+	5150 3440 5150 2690
+Wire Notes Line
+	5150 2690 7070 2690
+Wire Wire Line
+	6350 1600 7275 1600
+Wire Wire Line
+	6350 1500 7275 1500
 $EndSCHEMATC

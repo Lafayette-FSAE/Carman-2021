@@ -666,7 +666,7 @@ $Comp
 L Connector_Generic:Conn_01x06 J5.2
 U 1 1 5FB98586
 P 11625 2125
-F 0 "J5.2" H 11550 2525 50  0000 L CNN
+F 0 "J5.2" H 11525 2425 50  0000 L CNN
 F 1 "Conn_01x06" H 11705 2026 50  0001 L CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical" H 11625 2125 50  0001 C CNN
 F 3 "~" H 11625 2125 50  0001 C CNN
@@ -677,7 +677,7 @@ $Comp
 L Connector_Generic:Conn_01x06 J5.1
 U 1 1 5FB8432E
 P 11425 2125
-F 0 "J5.1" H 11350 2525 50  0000 L CNN
+F 0 "J5.1" H 11325 2425 50  0000 L CNN
 F 1 "Conn_01x06" H 11505 2026 50  0001 L CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 11425 2125 50  0001 C CNN
 F 3 "~" H 11425 2125 50  0001 C CNN
@@ -799,7 +799,7 @@ Text Notes 675  9625 0    71   ~ 0
 Non-Isolated Voltage LEDs
 Text Notes 2850 9625 0    79   ~ 0
 Isolated Status LEDs
-Text Notes 11075 2675 0    50   ~ 0
+Text Notes 11150 2575 0    50   ~ 0
 Logic-TSI Connector
 Text Label 12150 1075 2    50   ~ 0
 ISO_RTN

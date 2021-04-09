@@ -1110,7 +1110,7 @@ Wire Wire Line
 Wire Wire Line
 	11550 2100 11350 2100
 Text Label 12950 1200 2    50   ~ 0
-3.3V
+5V
 Wire Wire Line
 	12950 2100 12150 2100
 Wire Notes Line

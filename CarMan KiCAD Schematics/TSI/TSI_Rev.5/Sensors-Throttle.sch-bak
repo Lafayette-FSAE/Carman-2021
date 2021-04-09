@@ -472,17 +472,11 @@ NoConn ~ 8100 6150
 NoConn ~ 8100 6000
 NoConn ~ 8100 5850
 NoConn ~ 8100 5400
-Wire Wire Line
-	8200 5550 8100 5550
-Wire Wire Line
-	8200 5700 8100 5700
-Text Label 8200 5700 0    50   ~ 0
+Text Label 8450 5700 2    50   ~ 0
 A2_HV
-Text Label 8200 5550 0    50   ~ 0
+Text Label 8450 5550 2    50   ~ 0
 A1_HV
-Wire Wire Line
-	6750 6000 6850 6000
-Text Label 6750 6000 2    50   ~ 0
+Text Label 6375 6000 0    50   ~ 0
 5HV
 Wire Notes Line
 	4000 450  4000 11100
@@ -507,32 +501,22 @@ Text Label 8200 5100 0    50   ~ 0
 MC_Voltage
 Text Label 8200 5250 0    50   ~ 0
 TS_Voltage
-Text Label 5750 5400 2    50   ~ 0
+Text Label 5425 5400 2    50   ~ 0
 SDA_HV
-Text Label 5750 5550 2    50   ~ 0
+Text Label 5425 5550 2    50   ~ 0
 SCL_HV
 Wire Wire Line
 	6850 5850 6850 6000
 Connection ~ 6850 6000
-Text Label 6750 5700 2    50   ~ 0
+Text Label 6375 5700 0    50   ~ 0
 IO_Ground
-Wire Wire Line
-	6750 5700 6850 5700
-Wire Wire Line
-	4550 5750 4450 5750
-Text Label 4550 5750 0    50   ~ 0
+Text Label 4900 5750 2    50   ~ 0
 IO_Ground
-Wire Wire Line
-	4550 5200 4450 5200
-Text Label 4550 5200 0    50   ~ 0
+Text Label 4900 5200 2    50   ~ 0
 5HV
-Wire Wire Line
-	3400 5200 3500 5200
-Text Label 3400 5200 2    50   ~ 0
+Text Label 3175 5200 0    50   ~ 0
 5V
-Wire Wire Line
-	3400 5750 3500 5750
-Text Label 3400 5750 2    50   ~ 0
+Text Label 3175 5750 0    50   ~ 0
 GLV_RTN
 $Comp
 L TSI_Rev.5-rescue:ACPL-C870-CarMan_KiCAD_Library-TSI_Rev.5-rescue U4
@@ -875,23 +859,11 @@ Text Label 6400 9100 2    50   ~ 0
 HV-
 Text HLabel 5750 9100 0    50   Input ~ 0
 HV-
-Wire Wire Line
-	2500 5400 3500 5400
-Wire Wire Line
-	2500 5550 3500 5550
-Wire Notes Line
-	2900 5850 2900 5000
-Text Notes 2000 5150 0    59   ~ 0
+Text Notes 2075 4775 0    59   ~ 0
 Hooks up to PIC32\n
-Wire Notes Line
-	1900 5000 1900 5850
-Wire Notes Line
-	1900 5850 2900 5850
-Wire Notes Line
-	1900 5000 2900 5000
-Text Label 2500 5400 2    47   ~ 0
+Text Label 2225 5400 0    47   ~ 0
 SDA
-Text Label 2500 5550 2    47   ~ 0
+Text Label 2225 5550 0    47   ~ 0
 SCL
 Text Notes 6950 6600 0    98   ~ 0
 Binary Address:\n1001010
@@ -927,7 +899,7 @@ L Device:R R50
 U 1 1 5FD47889
 P 5850 5250
 F 0 "R50" H 5780 5204 50  0000 R CNN
-F 1 "10k" H 5780 5295 50  0000 R CNN
+F 1 "10K" H 5780 5295 50  0000 R CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5780 5250 50  0001 C CNN
 F 3 "~" H 5850 5250 50  0001 C CNN
 	1    5850 5250
@@ -941,7 +913,7 @@ L Device:R R51
 U 1 1 5FD4AF51
 P 5850 5700
 F 0 "R51" H 5920 5746 50  0000 L CNN
-F 1 "10k" H 5920 5655 50  0000 L CNN
+F 1 "10K" H 5920 5655 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5780 5700 50  0001 C CNN
 F 3 "~" H 5850 5700 50  0001 C CNN
 	1    5850 5700
@@ -954,9 +926,9 @@ Wire Wire Line
 	5850 5100 5850 5000
 Wire Wire Line
 	5850 5850 5850 5950
-Text Label 5850 5000 2    50   ~ 0
+Text Label 5700 5000 0    50   ~ 0
 5HV
-Text Label 5850 5950 2    50   ~ 0
+Text Label 5675 5950 0    50   ~ 0
 5HV
 $Comp
 L pspice:CAP C?
@@ -991,10 +963,8 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 11550 4900 50
 	4    11500 4700
 	-1   0    0    -1  
 $EndComp
-Text Label 6550 5250 0    50   ~ 0
+Text Label 6375 5250 0    50   ~ 0
 5HV
-Wire Wire Line
-	6550 5250 6850 5250
 Wire Wire Line
 	5750 9400 6400 9400
 Wire Wire Line
@@ -1351,4 +1321,78 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 11550 5800 50
 $EndComp
 Wire Wire Line
 	11100 5900 11950 5900
+$Comp
+L Device:R R112
+U 1 1 607C4DFA
+P 2525 5700
+F 0 "R112" H 2595 5746 50  0000 L CNN
+F 1 "10K" H 2595 5655 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2455 5700 50  0001 C CNN
+F 3 "~" H 2525 5700 50  0001 C CNN
+	1    2525 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2525 5850 2525 5950
+Text Label 2425 5950 0    50   ~ 0
+5V
+Connection ~ 2525 5550
+$Comp
+L Device:R R111
+U 1 1 60807C37
+P 2525 5250
+F 0 "R111" H 2595 5296 50  0000 L CNN
+F 1 "10K" H 2595 5205 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2455 5250 50  0001 C CNN
+F 3 "~" H 2525 5250 50  0001 C CNN
+	1    2525 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2525 5000 2525 5100
+Text Label 2425 5000 0    50   ~ 0
+5V
+Connection ~ 2525 5400
+Wire Wire Line
+	2525 5000 2425 5000
+Wire Wire Line
+	2525 5950 2425 5950
+Wire Notes Line
+	3050 4650 3050 6025
+Wire Notes Line
+	2000 4650 3050 4650
+Wire Notes Line
+	2000 4650 2000 6025
+Wire Notes Line
+	2000 6025 3050 6025
+Wire Wire Line
+	3175 5750 3500 5750
+Wire Wire Line
+	2525 5400 3500 5400
+Wire Wire Line
+	2525 5550 3500 5550
+Wire Wire Line
+	2225 5400 2525 5400
+Wire Wire Line
+	2225 5550 2525 5550
+Wire Wire Line
+	3175 5200 3500 5200
+Wire Wire Line
+	4450 5750 4900 5750
+Wire Wire Line
+	4450 5200 4900 5200
+Wire Wire Line
+	6375 5700 6850 5700
+Wire Wire Line
+	6375 6000 6850 6000
+Wire Wire Line
+	6375 5250 6850 5250
+Wire Wire Line
+	8100 5700 8450 5700
+Wire Wire Line
+	8100 5550 8450 5550
+Wire Wire Line
+	5850 5000 5700 5000
+Wire Wire Line
+	5675 5950 5850 5950
 $EndSCHEMATC

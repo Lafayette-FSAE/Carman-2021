@@ -32,9 +32,9 @@ GLV_RTN
 Text Label 2325 900  2    50   ~ 0
 10V
 Text Label 2325 1600 2    50   ~ 0
-SDA_uC
+SDA
 Text Label 2325 1700 2    50   ~ 0
-SCL_uC
+SCL
 Text Label 2325 800  2    50   ~ 0
 24V
 Text Label 2325 1000 2    50   ~ 0
@@ -311,8 +311,8 @@ Wire Wire Line
 	8300 3550 8550 3550
 Wire Wire Line
 	8300 3550 8300 5300
-Text Label 8650 5100 2    50   ~ 0
-SDA_uC
+Text Label 8375 5100 0    50   ~ 0
+SDA
 Wire Wire Line
 	7700 4050 8100 4050
 Wire Notes Line
@@ -611,8 +611,8 @@ Wire Wire Line
 	7900 3850 7900 5700
 Wire Wire Line
 	7800 3750 7800 5800
-Text Label 10250 5300 0    50   ~ 0
-SCL_uC
+Text Label 10525 5300 2    50   ~ 0
+SCL
 Text Label 10300 5000 0    50   ~ 0
 5V
 Wire Wire Line
@@ -733,9 +733,9 @@ F 5 "Texas Instruments" H 13900 4750 50  0001 L BNN "Man."
 	-1   0    0    -1  
 $EndComp
 Text Label 14950 4850 2    50   ~ 0
-SDA_uC
+SDA
 Text Label 14950 4750 2    50   ~ 0
-SCL_uC
+SCL
 Text Label 8950 4000 0    50   ~ 0
 GLV_RTN
 Text Label 14950 4950 2    50   ~ 0
@@ -1713,7 +1713,7 @@ Text HLabel 1550 1100 0    50   Input ~ 0
 Text Label 2325 1100 2    50   ~ 0
 3.3V
 Text Label 15850 9000 2    50   ~ 0
-3.3V
+5V
 Wire Wire Line
 	15000 9200 15050 9200
 Wire Wire Line
@@ -2275,4 +2275,8 @@ Wire Notes Line
 	500  500  500  3525
 Wire Notes Line
 	500  3525 2750 3525
+Wire Wire Line
+	8375 5100 8650 5100
+Wire Wire Line
+	10525 5300 10250 5300
 $EndSCHEMATC
