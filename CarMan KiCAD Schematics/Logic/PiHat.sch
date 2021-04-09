@@ -377,4 +377,6 @@ Wire Wire Line
 	2450 3525 2675 3525
 Wire Wire Line
 	2975 3525 4050 3525
+Text Notes 2025 3875 0    47   ~ 0
+NON-ISO CAN\nTesting Header
 $EndSCHEMATC

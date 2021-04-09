@@ -37,8 +37,6 @@ F 3 "~" H 13375 1250 50  0001 C CNN
 $EndComp
 Text Label 11350 1325 2    50   ~ 0
 CAN_H
-Text Label 11350 1125 2    50   ~ 0
-CAN_GND
 NoConn ~ 10900 1025
 Wire Wire Line
 	12600 1350 13050 1350
@@ -1308,12 +1306,8 @@ Text Label 7825 9875 0    47   ~ 0
 GPIO_0
 Text Notes 12775 2625 0    50   ~ 0
 Extra GPIO Pins
-Text Label 13075 675  2    50   ~ 0
+Text Label 11350 1125 2    50   ~ 0
 ISO_RTN
-Text Label 12150 675  0    50   ~ 0
-CAN_GND
-Wire Wire Line
-	12150 675  13075 675 
 Wire Wire Line
 	11350 1125 10900 1125
 Wire Wire Line
@@ -1511,27 +1505,27 @@ U 1 1 60721A5C
 P 14525 1125
 F 0 "J10" H 14475 1325 50  0000 L CNN
 F 1 "Motor Controller Can Line" H 13950 1325 50  0001 L CNN
-F 2 "CarMan General Footprints:Molex_MiniFit-JR-5556-04A_2x02x4.20mm_Straight" H 14525 1125 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 14525 1125 50  0001 C CNN
 F 3 "~" H 14525 1125 50  0001 C CNN
 	1    14525 1125
 	-1   0    0    -1  
 $EndComp
 Text Notes 14325 1575 0    47   ~ 0
 NON-ISO I2C\nTesting Header
-Text Label 15250 1025 2    50   ~ 0
+Text Label 15250 1225 2    50   ~ 0
 5V_NON_ISO
 Text Label 15250 1325 2    50   ~ 0
 GLV_RTN
 Wire Wire Line
-	14725 1025 15250 1025
+	14725 1225 15250 1225
 Wire Wire Line
 	14725 1325 15250 1325
-Text Label 15250 1125 2    50   ~ 0
+Text Label 15250 1025 2    50   ~ 0
 SDA_TSI_GLV
 Wire Wire Line
-	14725 1125 15250 1125
-Text Label 15250 1225 2    50   ~ 0
+	14725 1025 15250 1025
+Text Label 15250 1125 2    50   ~ 0
 SCL_TSI_GLV
 Wire Wire Line
-	15250 1225 14725 1225
+	15250 1125 14725 1125
 $EndSCHEMATC
