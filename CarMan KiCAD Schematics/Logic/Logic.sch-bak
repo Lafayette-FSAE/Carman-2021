@@ -1432,8 +1432,6 @@ Text Label 11875 2225 0    50   ~ 0
 BP_CAN+
 Text Label 11875 2125 0    50   ~ 0
 BP_CAN-
-NoConn ~ 11825 2425
-NoConn ~ 11225 2425
 NoConn ~ 3075 3575
 NoConn ~ 6725 4775
 NoConn ~ 3075 5475
@@ -1576,4 +1574,12 @@ Text Label 2400 4475 0    50   ~ 0
 CoolTemp
 Text Label 2400 4575 0    50   ~ 0
 FlowRate
+Text Label 12575 2425 2    50   ~ 0
+3.3V_ISO
+Wire Wire Line
+	12575 2425 11825 2425
+Text Label 10475 2425 0    50   ~ 0
+ADC_RTN
+Wire Wire Line
+	10475 2425 11225 2425
 $EndSCHEMATC

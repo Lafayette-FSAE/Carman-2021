@@ -1235,6 +1235,7 @@ F14 "RTDS" O R 10350 3150 50
 F15 "RTDS_RTN" O R 10350 3250 50 
 F16 "Drive_LED" O R 10350 3050 50 
 F17 "LOGIC_ISO_RTN" I L 8850 3750 50 
+F18 "5V" I L 8850 3850 50 
 $EndSheet
 $Sheet
 S 1550 6175 1550 1425
@@ -1536,7 +1537,6 @@ Text Label 3925 3950 2    50   ~ 0
 APPS
 Wire Wire Line
 	6350 1900 7275 1900
-NoConn ~ 5725 2000
 Text Label 6403 1600 0    50   ~ 0
 SCL
 Text Label 6403 1500 0    50   ~ 0
@@ -1564,8 +1564,8 @@ L Device:R R?
 U 1 1 60821220
 P 5700 2700
 AR Path="/5FE1DE7D/60821220" Ref="R?"  Part="1" 
-AR Path="/60821220" Ref="R?"  Part="1" 
-F 0 "R?" V 5600 2700 50  0000 C CNN
+AR Path="/60821220" Ref="R113"  Part="1" 
+F 0 "R113" V 5600 2700 50  0000 C CNN
 F 1 "500" V 5700 2700 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5630 2700 50  0001 C CNN
 F 3 "~" H 5700 2700 50  0001 C CNN
@@ -1575,10 +1575,10 @@ $EndComp
 Text Label 5175 2700 0    50   ~ 0
 Flowrate
 $Comp
-L TSI_Rev.5-rescue:TLP293-CarMan_KiCAD_Library-TSI_Rev.5-rescue U?
+L TSI_Rev.5-rescue:TLP293-CarMan_KiCAD_Library-TSI_Rev.5-rescue U39
 U 1 1 60821228
 P 6150 2800
-F 0 "U?" H 6150 3000 50  0000 C CNN
+F 0 "U39" H 6150 3000 50  0000 C CNN
 F 1 "TLP293" H 6150 2600 50  0000 C CNN
 F 2 "Package_SO:SOIC-4_4.55x2.6mm_P1.27mm" H 5950 2600 50  0001 L CIN
 F 3 "https://www.mouser.com/datasheet/2/408/Toshiba_TLP293_datasheet-1209449.pdf" H 6150 2800 50  0001 L CNN
@@ -1592,8 +1592,8 @@ L Device:R R?
 U 1 1 60821231
 P 6500 3100
 AR Path="/5FE1DE7D/60821231" Ref="R?"  Part="1" 
-AR Path="/60821231" Ref="R?"  Part="1" 
-F 0 "R?" H 6570 3146 50  0000 L CNN
+AR Path="/60821231" Ref="R114"  Part="1" 
+F 0 "R114" H 6570 3146 50  0000 L CNN
 F 1 "10k" V 6500 3025 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6430 3100 50  0001 C CNN
 F 3 "~" H 6500 3100 50  0001 C CNN
@@ -1631,4 +1631,12 @@ Wire Notes Line
 	7075 2350 7075 3375
 Wire Notes Line
 	5125 2350 7075 2350
+Wire Wire Line
+	5025 2000 5725 2000
+Text Label 5025 2000 0    50   ~ 0
+GLV_RTN
+Wire Wire Line
+	8100 3850 8850 3850
+Text Label 8100 3850 0    49   ~ 0
+5V
 $EndSCHEMATC

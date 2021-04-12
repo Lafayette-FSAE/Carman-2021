@@ -1240,7 +1240,7 @@ F 3 "https://www.st.com/content/ccc/resource/technical/document/datasheet/b1/52/
 	1    0    0    -1  
 $EndComp
 Text Notes 18065 5660 0    47   ~ 0
-PC Relay (J4)\n
+PC Relay (J3)\n
 Wire Wire Line
 	17500 6325 17500 6425
 Wire Wire Line
@@ -1483,7 +1483,7 @@ Wire Notes Line
 Text Notes 3200 3875 0    59   ~ 0
 TSV Minimum Voltage Check
 Wire Wire Line
-	4900 5425 5950 5425
+	4900 5425 5425 5425
 Connection ~ 5950 5425
 Wire Wire Line
 	5500 4900 5500 5000
@@ -1692,10 +1692,10 @@ Wire Notes Line
 Text Notes 3300 4875 0    59   ~ 0
 MC Voltage 95% Check
 Wire Wire Line
-	4500 5000 5500 5000
+	4500 5000 4850 5000
 Connection ~ 5500 5000
 Wire Wire Line
-	4225 5200 5725 5200
+	4225 5200 4875 5200
 Connection ~ 5725 5200
 Text Notes 7925 4075 0    197  ~ 0
 PRE-CHARGE LOGIC CIRCUIT
@@ -1960,4 +1960,123 @@ F 3 "https://www.mouser.com/datasheet/2/408/Toshiba_TLP293_datasheet-1209449.pdf
 $EndComp
 Text Label 4600 15850 0    59   ~ 0
 GLV_RTN
+$Comp
+L Device:R R?
+U 1 1 6084A6AF
+P 5425 5800
+AR Path="/5FE1DCBA/6084A6AF" Ref="R?"  Part="1" 
+AR Path="/6196BF15/6084A6AF" Ref="R117"  Part="1" 
+F 0 "R117" H 5325 5800 50  0000 C CNN
+F 1 "2.4K" V 5425 5800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5355 5800 50  0001 C CNN
+F 3 "~" H 5425 5800 50  0001 C CNN
+	1    5425 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 6084A6B8
+P 5425 6175
+AR Path="/5FE1DCBA/6084A6B8" Ref="D?"  Part="1" 
+AR Path="/6196BF15/6084A6B8" Ref="D17"  Part="1" 
+F 0 "D17" V 5464 6057 50  0000 R CNN
+F 1 "GREEN LED" V 5373 6057 50  0001 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5425 6175 50  0001 C CNN
+F 3 "http://static.vcclite.com/pdf/VAOL-S8GT4-LED-0805-green.pdf" H 5425 6175 50  0001 C CNN
+F 4 "VAOL-S8GT4" V 5425 6175 50  0001 C CNN "Part Name"
+	1    5425 6175
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 608661FE
+P 5125 5800
+AR Path="/5FE1DCBA/608661FE" Ref="R?"  Part="1" 
+AR Path="/6196BF15/608661FE" Ref="R116"  Part="1" 
+F 0 "R116" H 5025 5800 50  0000 C CNN
+F 1 "2.4K" V 5125 5800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5055 5800 50  0001 C CNN
+F 3 "~" H 5125 5800 50  0001 C CNN
+	1    5125 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 60866207
+P 5125 6175
+AR Path="/5FE1DCBA/60866207" Ref="D?"  Part="1" 
+AR Path="/6196BF15/60866207" Ref="D16"  Part="1" 
+F 0 "D16" V 5164 6057 50  0000 R CNN
+F 1 "GREEN LED" V 5073 6057 50  0001 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5125 6175 50  0001 C CNN
+F 3 "http://static.vcclite.com/pdf/VAOL-S8GT4-LED-0805-green.pdf" H 5125 6175 50  0001 C CNN
+F 4 "VAOL-S8GT4" V 5125 6175 50  0001 C CNN "Part Name"
+	1    5125 6175
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5125 5950 5125 6025
+Wire Wire Line
+	5425 5950 5425 6025
+$Comp
+L Device:R R?
+U 1 1 608EB273
+P 4850 5800
+AR Path="/5FE1DCBA/608EB273" Ref="R?"  Part="1" 
+AR Path="/6196BF15/608EB273" Ref="R115"  Part="1" 
+F 0 "R115" H 4750 5800 50  0000 C CNN
+F 1 "2.4K" V 4850 5800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4780 5800 50  0001 C CNN
+F 3 "~" H 4850 5800 50  0001 C CNN
+	1    4850 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 608EB27A
+P 4850 6175
+AR Path="/5FE1DCBA/608EB27A" Ref="D?"  Part="1" 
+AR Path="/6196BF15/608EB27A" Ref="D15"  Part="1" 
+F 0 "D15" V 4889 6057 50  0000 R CNN
+F 1 "GREEN LED" V 4798 6057 50  0001 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4850 6175 50  0001 C CNN
+F 3 "http://static.vcclite.com/pdf/VAOL-S8GT4-LED-0805-green.pdf" H 4850 6175 50  0001 C CNN
+F 4 "VAOL-S8GT4" V 4850 6175 50  0001 C CNN "Part Name"
+	1    4850 6175
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4850 5950 4850 6025
+Wire Wire Line
+	4850 6325 4850 6400
+Wire Wire Line
+	4850 6400 5125 6400
+Wire Wire Line
+	5425 6400 5425 6325
+Wire Wire Line
+	5125 6325 5125 6400
+Connection ~ 5125 6400
+Wire Wire Line
+	5125 6400 5425 6400
+Wire Wire Line
+	5125 6400 5125 6500
+Text Label 5125 6500 0    39   ~ 0
+IO_Ground
+Wire Wire Line
+	4850 5000 4850 5650
+Connection ~ 4850 5000
+Wire Wire Line
+	4850 5000 5500 5000
+Wire Wire Line
+	4875 5200 4875 5650
+Wire Wire Line
+	4875 5650 5125 5650
+Connection ~ 4875 5200
+Wire Wire Line
+	4875 5200 5725 5200
+Wire Wire Line
+	5425 5425 5425 5650
+Connection ~ 5425 5425
+Wire Wire Line
+	5425 5425 5950 5425
 $EndSCHEMATC

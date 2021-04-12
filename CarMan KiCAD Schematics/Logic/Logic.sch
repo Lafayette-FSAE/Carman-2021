@@ -222,8 +222,6 @@ NoConn ~ 3075 5275
 NoConn ~ 3075 5175
 NoConn ~ 3075 5075
 NoConn ~ 3075 4975
-NoConn ~ 3075 4875
-NoConn ~ 3075 4775
 NoConn ~ 3075 4075
 Text Label 2400 3475 0    50   ~ 0
 Cooling_CTRL
@@ -1432,7 +1430,6 @@ Text Label 11875 2225 0    50   ~ 0
 BP_CAN+
 Text Label 11875 2125 0    50   ~ 0
 BP_CAN-
-NoConn ~ 11225 2425
 NoConn ~ 3075 3575
 NoConn ~ 6725 4775
 NoConn ~ 3075 5475
@@ -1579,4 +1576,16 @@ Text Label 12575 2425 2    50   ~ 0
 3.3V_ISO
 Wire Wire Line
 	12575 2425 11825 2425
+Text Label 10475 2425 0    50   ~ 0
+ADC_RTN
+Wire Wire Line
+	10475 2425 11225 2425
+Wire Wire Line
+	2400 4775 3075 4775
+Wire Wire Line
+	2400 4875 3075 4875
+Text Label 2400 4775 0    50   ~ 0
+ADC_RTN
+Wire Wire Line
+	2400 4775 2400 4875
 $EndSCHEMATC

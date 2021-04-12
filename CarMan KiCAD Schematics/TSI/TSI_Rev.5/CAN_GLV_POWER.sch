@@ -358,7 +358,7 @@ Wire Wire Line
 	13675 8825 13725 8825
 Text Notes 11050 11200 0    39   ~ 0
 Zacky Bear Doesn't Like
-Text Label 7050 2250 2    49   ~ 0
+Text Label 7175 2250 2    49   ~ 0
 12V_Cooling
 Text Label 10750 1400 0    50   ~ 0
 AIRs-
@@ -567,67 +567,37 @@ Text Label 15800 1900 2    50   ~ 0
 24V_AMS_RTN
 Text Label 3250 5500 2    50   ~ 0
 GLV_RTN
-Connection ~ 6650 2250
 Wire Wire Line
-	7050 2250 6650 2250
-Wire Wire Line
-	4500 2450 5050 2450
+	4500 2550 5050 2550
 Text Notes 3700 2050 0    49   ~ 0
 DC/DC Converter 24V to 12V 10A
 Text Label 3250 2850 0    49   ~ 0
 GLV_RTN
 Text Label 3250 2250 0    49   ~ 0
 COOL_24V
-Connection ~ 6250 2650
 Wire Wire Line
-	6650 2650 6250 2650
-Wire Wire Line
-	6650 2550 6650 2650
-Wire Wire Line
-	4950 2650 5050 2650
+	6650 2850 6250 2850
 Wire Wire Line
 	4950 3150 4950 2850
 Wire Wire Line
 	6250 3150 4950 3150
-Wire Wire Line
-	6250 2650 6250 3150
-NoConn ~ 6250 2450
-NoConn ~ 5050 2950
-NoConn ~ 5050 2850
 $Comp
 L Device:C C18
 U 1 1 5FB588C1
-P 6650 2400
-F 0 "C18" H 6765 2446 50  0000 L CNN
-F 1 "10u" H 6765 2355 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6688 2250 50  0001 C CNN
-F 3 "~" H 6650 2400 50  0001 C CNN
-	1    6650 2400
+P 6650 2550
+F 0 "C18" H 6765 2596 50  0000 L CNN
+F 1 "10u" H 6765 2505 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6688 2400 50  0001 C CNN
+F 3 "~" H 6650 2550 50  0001 C CNN
+	1    6650 2550
 	1    0    0    -1  
 $EndComp
-$Comp
-L CarMan_KiCAD_Library:EHHD010A0B41-HZ PS2
-U 1 1 5FB4FED7
-P 5650 2650
-F 0 "PS2" H 5650 3317 50  0000 C CNN
-F 1 "EHHD010A0B41-HZ" H 5650 3226 50  0000 C CNN
-F 2 "TSI_Rev_2021_Footprint_Lib:CONV_EHHD010A0B41-HZ" H 5650 2650 50  0001 L BNN
-F 3 "https://library.industrialsolutions.abb.com/publibrary/checkout/DS-EHHD010A0B?TNR=Data%20Sheets|DS-EHHD010A0B|PDF" H 5650 2650 50  0001 L BNN
-F 4 "Manufacturer Recommendations" H 5650 2650 50  0001 L BNN "STANDARD"
-F 5 "April 6, 2016" H 5650 2650 50  0001 L BNN "PARTREV"
-F 6 "GE" H 5650 2650 50  0001 L BNN "MANUFACTURER"
-F 7 "12.7mm" H 5650 2650 50  0001 L BNN "MAXIMUM_PACKAGE_HEIGHT"
-	1    5650 2650
-	1    0    0    -1  
-$EndComp
-Text Label 4500 2450 0    50   ~ 0
+Text Label 4500 2550 0    50   ~ 0
 Cooling_power
 Text Notes 3650 3050 0    55   ~ 0
 Control Signal used as a \npsuedo relay
 Wire Wire Line
 	1400 700  1850 700 
-Wire Wire Line
-	6250 2250 6650 2250
 Wire Wire Line
 	3650 4800 4700 4800
 Wire Wire Line
@@ -680,9 +650,6 @@ Wire Wire Line
 	3250 2250 4050 2250
 Wire Wire Line
 	3250 2850 4050 2850
-Connection ~ 4950 2850
-Wire Wire Line
-	4950 2650 4950 2850
 $Comp
 L pspice:CAP C13
 U 1 1 60B2B21B
@@ -1452,4 +1419,35 @@ Wire Wire Line
 	750  5050 1150 5050
 Wire Wire Line
 	750  4550 1350 4550
+Wire Wire Line
+	6250 2850 6250 3150
+Connection ~ 6250 2850
+$Comp
+L CarMan_KiCAD_Library:KUB4812QB-10A PS2
+U 1 1 6077968F
+P 5650 2600
+F 0 "PS2" H 5650 3267 50  0000 C CNN
+F 1 "KUB4812QB-10A" H 5650 3176 50  0000 C CNN
+F 2 "TSI_Rev_2021_Footprint_Lib:24V-12V-NON-ISO-COOLING-CONVERTER" H 4750 3300 50  0001 L BNN
+F 3 "https://www.mornsun-power.com/html/pdf/KUB4812QB-10A.html" H 5650 2600 50  0001 L BNN
+F 4 "https://www.digikey.com/en/products/detail/mornsun-america-llc/KUB4812QB-10A/13531092" H 5650 2600 50  0001 C CNN "Digikey"
+	1    5650 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 2850 5050 2850
+Connection ~ 4950 2850
+Wire Wire Line
+	6250 2250 6650 2250
+Wire Wire Line
+	6650 2700 6650 2850
+Wire Wire Line
+	6650 2400 6650 2250
+Connection ~ 6650 2250
+Wire Wire Line
+	6650 2250 7175 2250
+Wire Wire Line
+	6250 2400 6250 2250
+Connection ~ 6250 2250
+NoConn ~ 6250 2550
 $EndSCHEMATC

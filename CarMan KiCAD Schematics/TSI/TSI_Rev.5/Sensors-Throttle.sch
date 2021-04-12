@@ -801,28 +801,6 @@ Wire Wire Line
 Connection ~ 6800 2150
 Wire Wire Line
 	6800 2150 6700 2150
-$Comp
-L pspice:CAP C?
-U 1 1 5FA6EAF2
-P 7900 1700
-AR Path="/5FC85F57/5FA6EAF2" Ref="C?"  Part="1" 
-AR Path="/6196BF15/5FA6EAF2" Ref="C?"  Part="1" 
-AR Path="/5F98EBE9/5FA6EAF2" Ref="C42"  Part="1" 
-F 0 "C42" H 8000 1800 50  0000 C CNN
-F 1 "0.1u" H 8000 1600 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7900 1700 50  0001 C CNN
-F 3 "~" H 7900 1700 50  0001 C CNN
-	1    7900 1700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7900 1350 7900 1450
-Text Label 7900 1350 0    47   ~ 0
-5HV
-Wire Wire Line
-	7900 1950 7900 2050
-Text Label 7900 2050 0    47   ~ 0
-IO_Ground
 Text Notes 1500 8550 0    79   ~ 0
 LOW VOLTAGE SIGNALS\n
 Text HLabel 5750 8800 0    50   Input ~ 0
