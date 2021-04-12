@@ -1208,8 +1208,8 @@ Wire Wire Line
 	7825 10275 8575 10275
 Wire Wire Line
 	7825 10375 8575 10375
-Text Notes 11475 1425 0    50   ~ 0
-IMU PS
+Text Notes 11450 1375 0    50   ~ 0
+IMU Addressing Pins
 Text Notes 13325 1500 0    50   ~ 0
 RTC
 Wire Wire Line

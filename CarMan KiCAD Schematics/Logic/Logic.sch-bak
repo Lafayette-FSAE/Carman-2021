@@ -222,8 +222,6 @@ NoConn ~ 3075 5275
 NoConn ~ 3075 5175
 NoConn ~ 3075 5075
 NoConn ~ 3075 4975
-NoConn ~ 3075 4875
-NoConn ~ 3075 4775
 NoConn ~ 3075 4075
 Text Label 2400 3475 0    50   ~ 0
 Cooling_CTRL
@@ -1582,4 +1580,12 @@ Text Label 10475 2425 0    50   ~ 0
 ADC_RTN
 Wire Wire Line
 	10475 2425 11225 2425
+Wire Wire Line
+	2400 4775 3075 4775
+Wire Wire Line
+	2400 4875 3075 4875
+Text Label 2400 4775 0    50   ~ 0
+ADC_RTN
+Wire Wire Line
+	2400 4775 2400 4875
 $EndSCHEMATC
