@@ -1,4 +1,4 @@
-update=4/12/2021 3:05:29 PM
+update=4/13/2021 2:47:02 PM
 version=1
 last_client=kicad
 [general]
@@ -241,6 +241,17 @@ Enabled=0
 Name=Default
 Clearance=0.2
 TrackWidth=0.25
+ViaDiameter=0.8
+ViaDrill=0.4
+uViaDiameter=0.3
+uViaDrill=0.1
+dPairWidth=0.2
+dPairGap=0.25
+dPairViaGap=0.25
+[pcbnew/Netclasses/1]
+Name=Sloop
+Clearance=0.2
+TrackWidth=1.8
 ViaDiameter=0.8
 ViaDrill=0.4
 uViaDiameter=0.3
