@@ -151,8 +151,6 @@ HV+
 Text Label 1550 7000 0    50   ~ 0
 HV-
 Wire Wire Line
-	3850 7000 4200 7000
-Wire Wire Line
 	3850 6400 4200 6400
 Wire Wire Line
 	5000 6400 5000 6200
@@ -181,11 +179,6 @@ Wire Wire Line
 Connection ~ 4200 6400
 Wire Wire Line
 	4200 6400 4400 6400
-Wire Wire Line
-	4200 7000 4200 7250
-Connection ~ 4200 7000
-Wire Wire Line
-	4200 7000 4400 7000
 Text Label 5600 7000 2    50   ~ 0
 TSAL_RTN
 $Comp
@@ -198,17 +191,6 @@ F 2 "TestPoint:TestPoint_Pad_D3.0mm" H 4400 6200 50  0001 C CNN
 F 3 "~" H 4400 6200 50  0001 C CNN
 	1    4200 6200
 	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:TestPoint TP14
-U 1 1 5FA8198D
-P 4200 7250
-F 0 "TP14" H 4142 7276 50  0000 R CNN
-F 1 "TSAL_RTN" H 4142 7367 50  0000 R CNN
-F 2 "TestPoint:TestPoint_Pad_D3.0mm" H 4400 7250 50  0001 C CNN
-F 3 "~" H 4400 7250 50  0001 C CNN
-	1    4200 7250
-	-1   0    0    1   
 $EndComp
 Text Notes 2800 5900 0    50   ~ 0
 HIGH VOLTAGE\n
@@ -564,4 +546,6 @@ Wire Notes Line
 	2250 500  2250 2450
 Wire Notes Line
 	500  2450 2250 2450
+Wire Wire Line
+	3850 7000 4400 7000
 $EndSCHEMATC

@@ -366,21 +366,6 @@ Wire Wire Line
 	4450 11425 4950 11425
 Wire Wire Line
 	4450 11625 5400 11625
-$Comp
-L Connector_Generic:Conn_01x01 J?
-U 1 1 60319B93
-P 3600 14400
-AR Path="/5F98EBE9/60319B93" Ref="J?"  Part="1" 
-AR Path="/6196BF15/60319B93" Ref="J30"  Part="1" 
-F 0 "J30" V 3700 14350 50  0000 L CNN
-F 1 "GLV Hook-up Pin" V 3700 14200 50  0001 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 3600 14400 50  0001 C CNN
-F 3 "~" H 3600 14400 50  0001 C CNN
-	1    3600 14400
-	0    1    1    0   
-$EndComp
-Text Notes 2900 14550 0    47   ~ 0
-Diagnostics Pin:\nEasy hookup to \nAIRS-/GLV RTN
 Wire Notes Line
 	500  1900 2350 1900
 Wire Notes Line
@@ -1240,7 +1225,7 @@ F 3 "https://www.st.com/content/ccc/resource/technical/document/datasheet/b1/52/
 	1    0    0    -1  
 $EndComp
 Text Notes 18065 5660 0    47   ~ 0
-PC Relay (J4)\n
+PC Relay (J3)\n
 Wire Wire Line
 	17500 6325 17500 6425
 Wire Wire Line
@@ -1496,7 +1481,7 @@ P 5500 4900
 AR Path="/5FC85F57/63DE42FD" Ref="TP?"  Part="1" 
 AR Path="/6196BF15/63DE42FD" Ref="TP4"  Part="1" 
 F 0 "TP4" H 5425 5100 50  0000 L CNN
-F 1 "TSV_MIN" H 5150 5025 50  0001 L CNN
+F 1 "TSV_Ready" H 5150 5025 50  0001 L CNN
 F 2 "TestPoint:TestPoint_Pad_D3.0mm" H 5700 4900 50  0001 C CNN
 F 3 "~" H 5700 4900 50  0001 C CNN
 	1    5500 4900
@@ -1745,8 +1730,8 @@ L Connector:TestPoint TP?
 U 1 1 64A39D43
 P 19350 11275
 AR Path="/5FC85F57/64A39D43" Ref="TP?"  Part="1" 
-AR Path="/6196BF15/64A39D43" Ref="TP20"  Part="1" 
-F 0 "TP20" H 19300 11475 50  0000 L CNN
+AR Path="/6196BF15/64A39D43" Ref="TP14"  Part="1" 
+F 0 "TP14" H 19300 11475 50  0000 L CNN
 F 1 "TSV_MIN_REF" H 19125 11550 50  0001 L CNN
 F 2 "TestPoint:TestPoint_Pad_D3.0mm" H 19550 11275 50  0001 C CNN
 F 3 "~" H 19550 11275 50  0001 C CNN
