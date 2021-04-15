@@ -93,9 +93,9 @@ Text Label 8100 5225 0    50   ~ 0
 AIRS+
 Text Label 8100 5325 0    50   ~ 0
 AIRS-
-Text Label 7275 1600 2    50   ~ 0
+Text Label 7150 1600 2    50   ~ 0
 SCL_TSI_GLV
-Text Label 7275 1500 2    50   ~ 0
+Text Label 7150 1500 2    50   ~ 0
 SDA_TSI_GLV
 Text Label 5025 1500 0    50   ~ 0
 Cooling_CTRL
@@ -333,28 +333,6 @@ Text Label 700  5250 0    50   ~ 0
 Safety_Loop
 Text Label 11100 3150 2    50   ~ 0
 RTDS
-$Comp
-L Connector_Generic:Conn_01x06 J14.2
-U 1 1 5FC777B8
-P 6150 1700
-F 0 "J14.2" H 6000 2000 50  0000 L CNN
-F 1 "Logic Conn. 2" H 6230 1601 50  0001 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 6150 1700 50  0001 C CNN
-F 3 "~" H 6150 1700 50  0001 C CNN
-	1    6150 1700
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x06 J14.1
-U 1 1 5FC77F26
-P 5925 1700
-F 0 "J14.1" H 5775 2000 50  0000 L CNN
-F 1 "Logic Conn. 1" H 6005 1601 50  0001 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 5925 1700 50  0001 C CNN
-F 3 "~" H 5925 1700 50  0001 C CNN
-	1    5925 1700
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	525  775  725  775 
 Wire Wire Line
@@ -1071,7 +1049,7 @@ Wire Notes Line
 	1950 1300 1950 2225
 Wire Wire Line
 	8100 3750 8850 3750
-Text Label 7275 1900 2    49   ~ 0
+Text Label 7150 1900 2    49   ~ 0
 LOGIC_ISO_RTN
 Text Label 8100 3750 0    49   ~ 0
 LOGIC_ISO_RTN
@@ -1170,9 +1148,9 @@ Wire Notes Line
 	1950 1300 4875 1300
 Wire Notes Line
 	4875 475  4875 1300
-Text Label 6400 1700 0    50   ~ 0
+Text Label 6275 1700 0    50   ~ 0
 BP_CAN-
-Text Label 6400 1800 0    50   ~ 0
+Text Label 6275 1800 0    50   ~ 0
 BP_CAN+
 Text Notes 2225 1150 0    43   ~ 0
 MC: FW = 13 RW = 14\n(active low)
@@ -1447,14 +1425,14 @@ IO_Ground
 Text Notes 3100 1060 0    39   ~ 0
     (2A > to open, \n 90mA nominal draw)
 Wire Wire Line
-	6350 1800 7275 1800
+	6225 1800 7150 1800
 Wire Wire Line
-	7275 1700 6350 1700
+	7150 1700 6225 1700
 Text Label 700  5450 0    50   ~ 0
 RTDS_CTRL
-Text Label 7275 1800 2    50   ~ 0
+Text Label 7150 1800 2    50   ~ 0
 CAN+_Logic
-Text Label 7275 1700 2    50   ~ 0
+Text Label 7150 1700 2    50   ~ 0
 CAN-_Logic
 Text Label 5025 1600 0    50   ~ 0
 SR_CTRL
@@ -1525,10 +1503,10 @@ Wire Wire Line
 Text Label 3925 3950 2    50   ~ 0
 APPS
 Wire Wire Line
-	6350 1900 7275 1900
-Text Label 6403 1600 0    50   ~ 0
+	6225 1900 7150 1900
+Text Label 6278 1600 0    50   ~ 0
 SCL
-Text Label 6403 1500 0    50   ~ 0
+Text Label 6278 1500 0    50   ~ 0
 SDA
 Wire Notes Line
 	7070 3465 7070 4215
@@ -1541,13 +1519,13 @@ Wire Notes Line
 Wire Notes Line
 	5150 3465 7070 3465
 Wire Wire Line
-	6350 1600 7275 1600
+	6225 1600 7150 1600
 Wire Wire Line
-	6350 1500 7275 1500
-Text Label 7275 2000 2    49   ~ 0
+	6225 1500 7150 1500
+Text Label 7150 2000 2    49   ~ 0
 3.3V_ISO
 Wire Wire Line
-	6350 2000 7275 2000
+	6225 2000 7150 2000
 $Comp
 L Device:R R?
 U 1 1 60821220
@@ -1637,6 +1615,17 @@ F 1 "J6 IMD" H 5750 975 50  0001 C CNN
 F 2 "TSI_Rev_2021_Footprint_Lib:Molex_MiniFit-JR-5556-08A_2x04x4.20mm_Straight" H 5700 775 50  0001 C CNN
 F 3 "~" H 5700 775 50  0001 C CNN
 	1    5700 775 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x06_Odd_Even J14
+U 1 1 608971D0
+P 5925 1700
+F 0 "J14" H 5975 2025 50  0000 C CNN
+F 1 "Conn_02x06_Odd_Even" H 5975 2026 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x06_P2.54mm_Vertical" H 5925 1700 50  0001 C CNN
+F 3 "~" H 5925 1700 50  0001 C CNN
+	1    5925 1700
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
