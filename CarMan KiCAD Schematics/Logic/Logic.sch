@@ -489,9 +489,9 @@ Text Label 3550 6775 0    50   ~ 0
 5V_NON_ISO
 Text Label 3550 6875 0    50   ~ 0
 GLV_RTN
-Text Label 12575 2225 2    50   ~ 0
+Text Label 12475 2225 2    50   ~ 0
 CAN_H
-Text Label 12575 2125 2    50   ~ 0
+Text Label 12475 2125 2    50   ~ 0
 CAN_L
 Text Label 13250 5900 0    50   ~ 0
 5V_ISO
@@ -652,29 +652,7 @@ $EndComp
 NoConn ~ 3075 3675
 NoConn ~ 3075 3775
 NoConn ~ 6725 4875
-$Comp
-L Connector_Generic:Conn_01x06 J5.2
-U 1 1 5FB98586
-P 11625 2125
-F 0 "J5.2" H 11525 2425 50  0000 L CNN
-F 1 "Conn_01x06" H 11705 2026 50  0001 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical" H 11625 2125 50  0001 C CNN
-F 3 "~" H 11625 2125 50  0001 C CNN
-	1    11625 2125
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x06 J5.1
-U 1 1 5FB8432E
-P 11425 2125
-F 0 "J5.1" H 11325 2425 50  0000 L CNN
-F 1 "Conn_01x06" H 11505 2026 50  0001 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 11425 2125 50  0001 C CNN
-F 3 "~" H 11425 2125 50  0001 C CNN
-	1    11425 2125
-	1    0    0    -1  
-$EndComp
-Text Label 12575 2325 2    50   ~ 0
+Text Label 12475 2325 2    50   ~ 0
 ISO_RTN
 Text Label 10475 1925 0    50   ~ 0
 Cooling_CTRL
@@ -982,9 +960,9 @@ Text Label 14850 2100 2    50   ~ 0
 SDA_TSI_GLV
 Text Label 15300 9275 2    50   ~ 0
 SDA_TSI_GLV
-Text Label 12575 1925 2    50   ~ 0
+Text Label 12475 1925 2    50   ~ 0
 SDA_TSI_GLV
-Text Label 12575 2025 2    50   ~ 0
+Text Label 12475 2025 2    50   ~ 0
 SCL_TSI_GLV
 $Comp
 L Logic-rescue:Conn_01x04-Connector_Generic-Logic-rescue J1
@@ -1021,11 +999,11 @@ Wire Notes Line
 Wire Wire Line
 	3475 10950 3825 10950
 Wire Wire Line
-	11825 2025 12575 2025
+	11725 2025 12475 2025
 Wire Wire Line
-	11825 1925 12575 1925
+	11725 1925 12475 1925
 Wire Wire Line
-	12575 2325 11825 2325
+	12475 2325 11725 2325
 Wire Wire Line
 	10475 1925 11225 1925
 Wire Wire Line
@@ -1423,12 +1401,12 @@ NoConn ~ 9625 9275
 NoConn ~ 3075 3975
 NoConn ~ 3075 3375
 Wire Wire Line
-	12575 2225 11825 2225
+	12475 2225 11725 2225
 Wire Wire Line
-	11825 2125 12575 2125
-Text Label 11875 2225 0    50   ~ 0
+	11725 2125 12475 2125
+Text Label 11775 2225 0    50   ~ 0
 BP_CAN+
-Text Label 11875 2125 0    50   ~ 0
+Text Label 11775 2125 0    50   ~ 0
 BP_CAN-
 NoConn ~ 3075 3575
 NoConn ~ 6725 4775
@@ -1572,10 +1550,10 @@ Text Label 2400 4475 0    50   ~ 0
 CoolTemp
 Text Label 2400 4575 0    50   ~ 0
 FlowRate
-Text Label 12575 2425 2    50   ~ 0
+Text Label 12475 2425 2    50   ~ 0
 3.3V_ISO
 Wire Wire Line
-	12575 2425 11825 2425
+	12475 2425 11725 2425
 Text Label 10475 2425 0    50   ~ 0
 ADC_RTN
 Wire Wire Line
@@ -1588,4 +1566,15 @@ Text Label 2400 4775 0    50   ~ 0
 ADC_RTN
 Wire Wire Line
 	2400 4775 2400 4875
+$Comp
+L Connector_Generic:Conn_02x06_Odd_Even J5
+U 1 1 607A60D6
+P 11425 2125
+F 0 "J5" H 11475 2450 50  0000 C CNN
+F 1 "Conn_02x06_Odd_Even" H 11475 2451 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x06_P2.54mm_Vertical" H 11425 2125 50  0001 C CNN
+F 3 "~" H 11425 2125 50  0001 C CNN
+	1    11425 2125
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
