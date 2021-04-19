@@ -14,17 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Logic-rescue:Conn_01x04-Connector_Generic-Logic-rescue J3
-U 1 1 5F95B303
-P 12400 1250
-F 0 "J3" H 12350 950 50  0000 L CNN
-F 1 "Insulation Monitoring Unit" H 12325 1450 50  0001 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 12400 1250 50  0001 C CNN
-F 3 "~" H 12400 1250 50  0001 C CNN
-	1    12400 1250
-	-1   0    0    1   
-$EndComp
-$Comp
 L Logic-rescue:Conn_01x04-Connector_Generic-Logic-rescue J4
 U 1 1 5F95B763
 P 13375 1250
@@ -39,8 +28,6 @@ Text Label 11350 1325 2    50   ~ 0
 CAN_H
 NoConn ~ 10900 1025
 Wire Wire Line
-	12600 1350 13050 1350
-Wire Wire Line
 	13575 1250 14025 1250
 Wire Wire Line
 	13575 1350 14025 1350
@@ -52,14 +39,12 @@ Text Label 14025 1350 2    50   ~ 0
 3.3V_ISO
 Text Label 14025 1150 2    50   ~ 0
 SDA_ISO_PI
-Text Label 13050 1050 2    50   ~ 0
+Text Label 11650 1250 0    50   ~ 0
 SCL_ISO_PI
-Text Label 13050 1150 2    50   ~ 0
+Text Label 11650 1350 0    50   ~ 0
 SDA_ISO_PI
-Text Label 13050 1250 2    50   ~ 0
+Text Label 11650 1150 0    50   ~ 0
 ISO_RTN
-Text Label 13050 1350 2    50   ~ 0
-3.3V_ISO
 Text Label 10575 8575 2    50   ~ 0
 5V_ISO
 Text Label 10575 8775 2    50   ~ 0
@@ -382,9 +367,9 @@ Wire Wire Line
 Wire Wire Line
 	5475 1975 5475 1925
 Wire Wire Line
-	12600 1050 13050 1050
+	12100 1250 11650 1250
 Wire Wire Line
-	12600 1150 13050 1150
+	12100 1350 11650 1350
 Wire Wire Line
 	13575 1050 14025 1050
 Wire Wire Line
@@ -748,17 +733,6 @@ Text Label 1025 9925 2    50   ~ 0
 5V_ISO
 Wire Wire Line
 	1400 10825 2050 10825
-$Comp
-L Connector_Generic:Conn_01x02 J2
-U 1 1 6025C7CF
-P 11625 1075
-F 0 "J2" H 11575 1175 50  0000 L CNN
-F 1 "IMU PS" H 11475 850 50  0001 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 11625 1075 50  0001 C CNN
-F 3 "~" H 11625 1075 50  0001 C CNN
-	1    11625 1075
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	14150 2000 14850 2000
 Wire Notes Line
@@ -769,10 +743,10 @@ Text Notes 950  9625 0    79   ~ 0
 Isolated Status LEDs
 Text Notes 11150 2575 0    50   ~ 0
 Logic-TSI Connector
-Text Label 12150 1075 2    50   ~ 0
+Text Label 13025 1150 2    50   ~ 0
 ISO_RTN
 Wire Wire Line
-	12600 1250 13050 1250
+	12100 1150 11650 1150
 Wire Wire Line
 	14150 2100 14850 2100
 Wire Wire Line
@@ -979,7 +953,7 @@ Text Notes 10500 1500 0    47   ~ 0
 MC Can Line
 Text Label 11350 1225 2    50   ~ 0
 CAN_L
-Text Notes 12325 1475 0    47   ~ 0
+Text Notes 12325 1525 0    47   ~ 0
 IMU
 Wire Wire Line
 	750  10825 1400 10825
@@ -1169,11 +1143,11 @@ Wire Wire Line
 Wire Wire Line
 	10900 1325 11350 1325
 Wire Wire Line
-	11825 1075 12150 1075
+	12700 1150 13025 1150
 Wire Wire Line
-	12150 1075 12150 1175
+	13025 1150 13025 1250
 Wire Wire Line
-	12150 1175 11825 1175
+	13025 1250 12700 1250
 Wire Wire Line
 	7825 9875 8575 9875
 Wire Wire Line
@@ -1186,8 +1160,6 @@ Wire Wire Line
 	7825 10275 8575 10275
 Wire Wire Line
 	7825 10375 8575 10375
-Text Notes 11450 1375 0    50   ~ 0
-IMU Addressing Pins
 Text Notes 13325 1500 0    50   ~ 0
 RTC
 Wire Wire Line
@@ -1577,4 +1549,20 @@ F 3 "~" H 11425 2125 50  0001 C CNN
 	1    11425 2125
 	1    0    0    -1  
 $EndComp
+$Comp
+L CarMan_KiCAD_Library:BNO_055 U10
+U 1 1 6081110B
+P 12400 1150
+F 0 "U10" V 11981 1150 47  0000 C CNN
+F 1 "BNO_055" V 12068 1150 47  0000 C CNN
+F 2 "CarMan General Footprints:BNO_055" H 12400 1150 47  0001 C CNN
+F 3 "" H 12400 1150 47  0001 C CNN
+	1    12400 1150
+	0    1    1    0   
+$EndComp
+Text Label 11650 950  0    50   ~ 0
+3.3V_ISO
+Wire Wire Line
+	12100 950  11650 950 
+NoConn ~ 12100 1050
 $EndSCHEMATC
