@@ -637,7 +637,7 @@ $EndComp
 NoConn ~ 3075 3675
 NoConn ~ 3075 3775
 NoConn ~ 6725 4875
-Text Label 12475 2325 2    50   ~ 0
+Text Label 10475 2125 0    50   ~ 0
 ISO_RTN
 Text Label 10475 1925 0    50   ~ 0
 Cooling_CTRL
@@ -976,8 +976,6 @@ Wire Wire Line
 	11725 2025 12475 2025
 Wire Wire Line
 	11725 1925 12475 1925
-Wire Wire Line
-	12475 2325 11725 2325
 Wire Wire Line
 	10475 1925 11225 1925
 Wire Wire Line
@@ -1357,18 +1355,10 @@ Wire Wire Line
 	14775 9175 15500 9175
 Wire Wire Line
 	14775 9475 15500 9475
-Text Label 10475 2225 0    50   ~ 0
-CoolTemp
-Wire Wire Line
-	10475 2225 11225 2225
 Text Label 10475 2325 0    50   ~ 0
 FlowRate
 Wire Wire Line
 	10475 2325 11225 2325
-Text Label 10475 2125 0    50   ~ 0
-APPS
-Wire Wire Line
-	10475 2125 11225 2125
 NoConn ~ 9625 9275
 NoConn ~ 3075 3975
 NoConn ~ 3075 3375
@@ -1491,18 +1481,6 @@ Wire Notes Line
 	600  7650 600  9300
 Wire Notes Line
 	2550 7650 2550 9300
-Text Label 7400 3875 2    47   ~ 0
-STATE_OUT_1
-Wire Wire Line
-	7400 3875 6725 3875
-Text Label 7400 3975 2    47   ~ 0
-STATE_OUT_2
-Wire Wire Line
-	7400 3975 6725 3975
-Text Label 7400 4075 2    47   ~ 0
-STATE_OUT_3
-Wire Wire Line
-	7400 4075 6725 4075
 Text Label 1400 8125 0    50   ~ 0
 STATE_OUT_2
 Text Label 2050 8125 0    50   ~ 0
@@ -1510,50 +1488,17 @@ STATE_OUT_3
 NoConn ~ 3075 2775
 NoConn ~ 3075 2675
 NoConn ~ 3075 2575
-Text Label 2400 3875 0    50   ~ 0
-APPS
-Wire Wire Line
-	2400 3875 3075 3875
-Wire Wire Line
-	2400 4475 3075 4475
 Wire Wire Line
 	2400 4575 3075 4575
-Text Label 2400 4475 0    50   ~ 0
-CoolTemp
 Text Label 2400 4575 0    50   ~ 0
 FlowRate
-Text Label 12475 2425 2    50   ~ 0
+Text Label 10475 2225 0    50   ~ 0
 3.3V_ISO
-Wire Wire Line
-	12475 2425 11725 2425
-Text Label 10475 2425 0    50   ~ 0
-ADC_RTN
-Wire Wire Line
-	10475 2425 11225 2425
-Wire Wire Line
-	2400 4775 3075 4775
-Wire Wire Line
-	2400 4875 3075 4875
-Text Label 2400 4775 0    50   ~ 0
-ADC_RTN
-Wire Wire Line
-	2400 4775 2400 4875
 $Comp
-L Connector_Generic:Conn_02x06_Odd_Even J5
-U 1 1 607A60D6
-P 11425 2125
-F 0 "J5" H 11475 2450 50  0000 C CNN
-F 1 "Conn_02x06_Odd_Even" H 11475 2451 50  0001 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x06_P2.54mm_Vertical" H 11425 2125 50  0001 C CNN
-F 3 "~" H 11425 2125 50  0001 C CNN
-	1    11425 2125
-	1    0    0    -1  
-$EndComp
-$Comp
-L CarMan_KiCAD_Library:BNO_055 U?
+L CarMan_KiCAD_Library:BNO_055 U10
 U 1 1 6081110B
 P 12400 1150
-F 0 "U?" V 11981 1150 47  0000 C CNN
+F 0 "U10" V 11981 1150 47  0000 C CNN
 F 1 "BNO_055" V 12068 1150 47  0000 C CNN
 F 2 "CarMan General Footprints:BNO_055" H 12400 1150 47  0001 C CNN
 F 3 "" H 12400 1150 47  0001 C CNN
@@ -1565,4 +1510,36 @@ Text Label 11650 950  0    50   ~ 0
 Wire Wire Line
 	12100 950  11650 950 
 NoConn ~ 12100 1050
+Wire Wire Line
+	7400 4075 6725 4075
+Text Label 7400 4075 2    47   ~ 0
+STATE_OUT_3
+Wire Wire Line
+	7400 3975 6725 3975
+Text Label 7400 3975 2    47   ~ 0
+STATE_OUT_2
+Wire Wire Line
+	7400 3875 6725 3875
+Text Label 7400 3875 2    47   ~ 0
+STATE_OUT_1
+NoConn ~ 11725 2325
+NoConn ~ 3075 4775
+NoConn ~ 3075 4875
+NoConn ~ 3075 4475
+NoConn ~ 3075 3875
+Wire Wire Line
+	10475 2125 11225 2125
+Wire Wire Line
+	10475 2225 11225 2225
+$Comp
+L Connector_Generic:Conn_02x05_Odd_Even J14
+U 1 1 609BCAC7
+P 11425 2125
+F 0 "J14" H 11475 2542 50  0000 C CNN
+F 1 "Conn_02x05_Odd_Even" H 11475 2451 50  0000 C CNN
+F 2 "" H 11425 2125 50  0001 C CNN
+F 3 "~" H 11425 2125 50  0001 C CNN
+	1    11425 2125
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
