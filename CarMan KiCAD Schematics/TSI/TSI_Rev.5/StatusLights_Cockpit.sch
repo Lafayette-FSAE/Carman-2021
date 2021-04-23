@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 6
+Sheet 6 6
 Title ""
 Date ""
 Rev ""
@@ -93,7 +93,7 @@ Wire Wire Line
 Wire Wire Line
 	1550 6400 2000 6400
 $Comp
-L CarMan_KiCAD_Library:RDE03110S12 U1
+L TSI_Rev.5-rescue:RDE03110S12-CarMan_KiCAD_Library U1
 U 1 1 5FA31407
 P 3450 6700
 F 0 "U1" H 3650 7100 50  0000 C CNN
@@ -194,7 +194,7 @@ F 3 "~" H 4400 6200 50  0001 C CNN
 $EndComp
 Text Notes 2800 5900 0    50   ~ 0
 HIGH VOLTAGE\n
-Text Label 10150 5275 2    50   ~ 0
+Text Label 10250 5275 2    50   ~ 0
 Drive_BTN_RTN
 Text HLabel 1250 2150 0    50   Output ~ 0
 TSAL
@@ -246,21 +246,19 @@ Wire Wire Line
 	5000 6200 5600 6200
 Wire Wire Line
 	5000 6400 5600 6400
-Text Label 9150 5275 0    50   ~ 0
+Text Label 9250 5275 0    50   ~ 0
 GLV_RTN
 $Comp
 L pspice:CAP C6
 U 1 1 5FBC364D
-P 8625 4850
-F 0 "C6" H 8675 4950 50  0000 L CNN
-F 1 "0.1u" H 8675 4750 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8625 4850 50  0001 C CNN
-F 3 "~" H 8625 4850 50  0001 C CNN
-	1    8625 4850
+P 8700 4850
+F 0 "C6" H 8750 4950 50  0000 L CNN
+F 1 "0.1u" H 8750 4750 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8700 4850 50  0001 C CNN
+F 3 "~" H 8700 4850 50  0001 C CNN
+	1    8700 4850
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	8025 5275 8175 5275
 Text Label 7125 5275 0    50   ~ 0
 Drive_BTN
 $Comp
@@ -389,24 +387,16 @@ Wire Wire Line
 $Comp
 L Device:R R68
 U 1 1 5FA84662
-P 8175 5050
-F 0 "R68" V 8075 5050 50  0000 C CNN
-F 1 "10K" V 8175 5050 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 8105 5050 50  0001 C CNN
-F 3 "~" H 8175 5050 50  0001 C CNN
-	1    8175 5050
+P 8250 5050
+F 0 "R68" V 8150 5050 50  0000 C CNN
+F 1 "10K" V 8250 5050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 8180 5050 50  0001 C CNN
+F 3 "~" H 8250 5050 50  0001 C CNN
+	1    8250 5050
 	-1   0    0    1   
 $EndComp
-Text Label 8175 4850 0    50   ~ 0
+Text Label 8250 4850 0    50   ~ 0
 5V
-Wire Notes Line
-	8525 5175 8525 5375
-Wire Notes Line
-	8525 5375 8875 5375
-Wire Notes Line
-	8875 5375 8875 5175
-Wire Notes Line
-	8875 5175 8525 5175
 Text Notes 8875 5550 2    50   ~ 0
 COCKPIT\n(J8)\n
 $Comp
@@ -506,23 +496,11 @@ GLV_RTN
 Wire Wire Line
 	7125 5275 7725 5275
 Wire Wire Line
-	8175 5275 8175 5200
+	8250 4850 8250 4900
 Wire Wire Line
-	8175 4850 8175 4900
+	8250 4850 8450 4850
 Wire Wire Line
-	8175 4850 8375 4850
-Wire Wire Line
-	8175 5275 8600 5275
-Connection ~ 8175 5275
-Wire Wire Line
-	9050 4850 9050 5275
-Connection ~ 9050 5275
-Wire Wire Line
-	8800 5275 9050 5275
-Wire Wire Line
-	8875 4850 9050 4850
-Wire Wire Line
-	9050 5275 10150 5275
+	8950 4850 9125 4850
 Wire Wire Line
 	9250 4050 9725 4050
 Wire Wire Line
@@ -548,4 +526,26 @@ Wire Notes Line
 	500  2450 2250 2450
 Wire Wire Line
 	3850 7000 4400 7000
+Wire Wire Line
+	8025 5275 8250 5275
+Connection ~ 8250 5275
+Wire Wire Line
+	8250 5275 8600 5275
+Connection ~ 9125 5275
+Wire Wire Line
+	9125 5275 10250 5275
+Wire Wire Line
+	8250 5200 8250 5275
+Wire Wire Line
+	8775 5275 9125 5275
+Wire Wire Line
+	9125 4850 9125 5275
+Wire Notes Line
+	8850 5175 8525 5175
+Wire Notes Line
+	8525 5175 8525 5375
+Wire Notes Line
+	8850 5175 8850 5375
+Wire Notes Line
+	8525 5375 8850 5375
 $EndSCHEMATC

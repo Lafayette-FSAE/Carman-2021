@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 5 6
+Sheet 4 6
 Title ""
 Date ""
 Rev ""
@@ -47,9 +47,11 @@ F 3 "~" H 1300 1200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CarMan_KiCAD_Library:PDQ10-Q24-D5-D U38
+L TSI_Rev.5-rescue:PDQ10-Q24-D5-D-CarMan_KiCAD_Library U38
 U 1 1 5FB24FE8
 P 3100 4800
+AR Path="/5FB24FE8" Ref="U38"  Part="1" 
+AR Path="/5FE1DE7D/5FB24FE8" Ref="U38"  Part="1" 
 F 0 "U38" H 3100 5100 50  0000 C CNN
 F 1 "PDQ10-Q24-D5-D" H 3100 4600 50  0000 C CNN
 F 2 "TSI_Rev_2021_Footprint_Lib:CONV_PDQ10-Q24-D5-D" H 3100 4450 50  0001 C CNN
@@ -226,8 +228,6 @@ Wire Wire Line
 NoConn ~ 13725 8325
 Text Notes 14475 725  0    79   ~ 0
 LOW VOLTAGE SIGNALS
-Wire Notes Line
-	16000 550  14150 550 
 Text Notes 2750 5250 0    47   ~ 0
 DC/DC Converter\n9V-36V to 5V/-5V
 Wire Wire Line
@@ -319,35 +319,35 @@ SR_CTRL_Boosted
 $Comp
 L Device:R R71
 U 1 1 5FA34D6C
-P 4000 1050
-F 0 "R71" V 3900 1050 50  0000 C CNN
-F 1 "2.1K" V 4000 1050 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3930 1050 50  0001 C CNN
-F 3 "~" H 4000 1050 50  0001 C CNN
-	1    4000 1050
+P 3125 950
+F 0 "R71" V 3025 950 50  0000 C CNN
+F 1 "2.1K" V 3125 950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3055 950 50  0001 C CNN
+F 3 "~" H 3125 950 50  0001 C CNN
+	1    3125 950 
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	4350 1050 4150 1050
-Text Label 3350 1050 0    50   ~ 0
+	3475 950  3275 950 
+Text Label 2475 950  0    50   ~ 0
 Cooling_CTRL
 $Comp
 L TSI_Rev.5-rescue:TLP293-CarMan_KiCAD_Library-TSI_Rev.5-rescue U33
 U 1 1 5FA22056
-P 4650 1150
-F 0 "U33" H 4650 1350 50  0000 C CNN
-F 1 "TLP293" H 4650 950 50  0000 C CNN
-F 2 "Package_SO:SOIC-4_4.55x2.6mm_P1.27mm" H 4450 950 50  0001 L CIN
-F 3 "https://www.mouser.com/datasheet/2/408/Toshiba_TLP293_datasheet-1209449.pdf" H 4650 1150 50  0001 L CNN
-	1    4650 1150
+P 3775 1050
+F 0 "U33" H 3775 1250 50  0000 C CNN
+F 1 "TLP293" H 3775 850 50  0000 C CNN
+F 2 "Package_SO:SOIC-4_4.55x2.6mm_P1.27mm" H 3575 850 50  0001 L CIN
+F 3 "https://www.mouser.com/datasheet/2/408/Toshiba_TLP293_datasheet-1209449.pdf" H 3775 1050 50  0001 L CNN
+	1    3775 1050
 	1    0    0    -1  
 $EndComp
-Text Label 3350 1250 0    50   ~ 0
+Text Label 2475 1150 0    50   ~ 0
 LOGIC_ISO_RTN
 Text Label 12975 8525 0    50   ~ 0
 MRESET_Contact
-Text Notes 6275 800  2    89   ~ 0
-Cooling Control & Sensors\n
+Text Notes 5400 700  2    89   ~ 0
+COOLING CONTROL & SENSORS\n
 Text Label 15075 8825 2    50   ~ 0
 24V
 Wire Wire Line
@@ -358,7 +358,7 @@ Wire Wire Line
 	13675 8825 13725 8825
 Text Notes 11050 11200 0    39   ~ 0
 Zacky Bear Doesn't Like
-Text Label 7175 2250 2    49   ~ 0
+Text Label 6300 2150 2    49   ~ 0
 12V_Cooling
 Text Label 10750 1400 0    50   ~ 0
 AIRs-
@@ -405,11 +405,11 @@ Text Label 15800 1400 2    50   ~ 0
 BOT_Out
 Text Label 15800 1200 2    50   ~ 0
 LOGIC_ISO_RTN
-Text Label 15800 3625 2    50   ~ 0
+Text Label 15800 4000 2    50   ~ 0
 MRESET_Contact
 Text HLabel 14950 1200 0    50   Input ~ 0
 LOGIC_ISO_RTN
-Text HLabel 14950 3625 0    50   Output ~ 0
+Text HLabel 14950 4000 0    50   Output ~ 0
 MRESET_Contact
 Text Label 15800 1300 2    50   ~ 0
 SR_CTRL
@@ -417,15 +417,15 @@ Text HLabel 14950 1300 0    50   Input ~ 0
 SR_CTRL
 Text Label 15800 1700 2    50   ~ 0
 SL1_In
-Text Label 15800 3525 2    50   ~ 0
+Text Label 15800 3900 2    50   ~ 0
 SL1_Out
 Text Label 15800 2000 2    50   ~ 0
 IMD_Status
-Text Label 15800 3725 2    50   ~ 0
+Text Label 15800 4100 2    50   ~ 0
 Safety_Loop
 Text HLabel 14950 2000 0    50   Input ~ 0
 IMD_Status
-Text HLabel 14950 3725 0    50   Output ~ 0
+Text HLabel 14950 4100 0    50   Output ~ 0
 Safety_Loop
 Text Label 15800 1600 2    50   ~ 0
 AIRs-
@@ -439,19 +439,19 @@ Text Label 15800 1000 2    50   ~ 0
 GLV_RTN
 Text Label 15800 900  2    50   ~ 0
 24V
-Text Label 15800 2925 2    50   ~ 0
+Text Label 15800 3300 2    50   ~ 0
 3.3V
-Text Label 15800 2825 2    50   ~ 0
+Text Label 15800 3200 2    50   ~ 0
 5V
 Text HLabel 14950 900  0    50   Input ~ 0
 24V
-Text HLabel 14950 2925 0    50   Output ~ 0
+Text HLabel 14950 3300 0    50   Output ~ 0
 3.3V
-Text HLabel 14950 2825 0    50   Output ~ 0
+Text HLabel 14950 3200 0    50   Output ~ 0
 5V
-Text Label 15800 2725 2    50   ~ 0
+Text Label 15800 3100 2    50   ~ 0
 10V
-Text HLabel 14950 2725 0    50   Output ~ 0
+Text HLabel 14950 3100 0    50   Output ~ 0
 10V
 $Comp
 L Device:R R52
@@ -469,37 +469,37 @@ Wire Wire Line
 Wire Wire Line
 	12650 6425 13350 6425
 Wire Wire Line
-	3350 1050 3850 1050
+	2475 950  2975 950 
 Wire Wire Line
-	3350 1250 4350 1250
+	2475 1150 3475 1150
 $Comp
 L Device:R R57
 U 1 1 5FD164DD
-P 5200 1450
-F 0 "R57" H 5270 1496 50  0000 L CNN
-F 1 "40K" V 5200 1350 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5130 1450 50  0001 C CNN
-F 3 "~" H 5200 1450 50  0001 C CNN
-	1    5200 1450
+P 4325 1350
+F 0 "R57" H 4395 1396 50  0000 L CNN
+F 1 "40K" V 4325 1250 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4255 1350 50  0001 C CNN
+F 3 "~" H 4325 1350 50  0001 C CNN
+	1    4325 1350
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	5200 1700 5200 1600
+	4325 1600 4325 1500
 Wire Wire Line
-	4950 1250 5200 1250
+	4075 1150 4325 1150
 Wire Wire Line
-	5200 1250 5200 1300
-Connection ~ 5200 1250
+	4325 1150 4325 1200
+Connection ~ 4325 1150
 Wire Wire Line
-	5200 1250 5900 1250
-Text Label 5900 1050 2    50   ~ 0
+	4325 1150 5025 1150
+Text Label 5025 950  2    50   ~ 0
 5V
-Text Label 5900 1250 2    50   ~ 0
+Text Label 5025 1150 2    50   ~ 0
 Cooling_power
-Text Label 5200 1700 0    47   ~ 0
+Text Label 4325 1600 0    47   ~ 0
 GLV_RTN
 Wire Wire Line
-	4950 1050 5900 1050
+	4075 950  5025 950 
 Text Label 4550 8900 2    50   ~ 0
 IMD_Status
 Text Notes 3750 6850 2    197  ~ 0
@@ -516,7 +516,7 @@ Text Label 15800 1800 2    50   ~ 0
 COOL_24V
 Text HLabel 14950 1800 0    50   Input ~ 0
 COOL_24V
-Text Label 15800 3025 2    50   ~ 0
+Text Label 15800 3400 2    50   ~ 0
 12V_Cooling
 Wire Notes Line
 	4650 8000 4650 8200
@@ -568,33 +568,33 @@ Text Label 15800 1900 2    50   ~ 0
 Text Label 3250 5500 2    50   ~ 0
 GLV_RTN
 Wire Wire Line
-	4500 2550 5050 2550
-Text Notes 3700 2050 0    49   ~ 0
+	3625 2450 4175 2450
+Text Notes 2825 1950 0    49   ~ 0
 DC/DC Converter 24V to 12V 10A
-Text Label 3250 2850 0    49   ~ 0
+Text Label 2375 2750 0    49   ~ 0
 GLV_RTN
-Text Label 3250 2250 0    49   ~ 0
+Text Label 2375 2150 0    49   ~ 0
 COOL_24V
 Wire Wire Line
-	6650 2850 6250 2850
+	5775 2750 5375 2750
 Wire Wire Line
-	4950 3150 4950 2850
+	4075 3050 4075 2750
 Wire Wire Line
-	6250 3150 4950 3150
+	5375 3050 4075 3050
 $Comp
 L Device:C C18
 U 1 1 5FB588C1
-P 6650 2550
-F 0 "C18" H 6765 2596 50  0000 L CNN
-F 1 "10u" H 6765 2505 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6688 2400 50  0001 C CNN
-F 3 "~" H 6650 2550 50  0001 C CNN
-	1    6650 2550
+P 5775 2450
+F 0 "C18" H 5890 2496 50  0000 L CNN
+F 1 "10u" H 5890 2405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5813 2300 50  0001 C CNN
+F 3 "~" H 5775 2450 50  0001 C CNN
+	1    5775 2450
 	1    0    0    -1  
 $EndComp
-Text Label 4500 2550 0    50   ~ 0
+Text Label 3625 2450 0    50   ~ 0
 Cooling_power
-Text Notes 3650 3050 0    55   ~ 0
+Text Notes 2775 2950 0    55   ~ 0
 Control Signal used as a \npsuedo relay
 Wire Wire Line
 	1400 700  1850 700 
@@ -605,7 +605,7 @@ Wire Wire Line
 Wire Wire Line
 	7900 4350 7900 4800
 $Comp
-L CarMan_KiCAD_Library:LT1763CS8-3.3PBF U36
+L TSI_Rev.5-rescue:LT1763CS8-3.3PBF-CarMan_KiCAD_Library U36
 U 1 1 5FB354FD
 P 7300 5250
 F 0 "U36" H 7300 5850 50  0000 C CNN
@@ -626,9 +626,9 @@ F 3 "~" H 1300 700 50  0001 C CNN
 	1    1300 700 
 	0    -1   -1   0   
 $EndComp
-Text Label 15800 3225 2    50   ~ 0
+Text Label 15800 3600 2    50   ~ 0
 AMS_FAULT_LED
-Text HLabel 14950 3225 0    50   Output ~ 0
+Text HLabel 14950 3600 0    50   Output ~ 0
 AMS_FAULT_LED
 Text Label 15800 2500 2    50   ~ 0
 AMS_Button_RTN
@@ -642,45 +642,43 @@ Text Label 15800 2300 2    50   ~ 0
 Cooling_CTRL
 Text HLabel 14950 2300 0    50   Input ~ 0
 Cooling_CTRL
-Text Label 15800 3125 2    50   ~ 0
+Text Label 15800 3500 2    50   ~ 0
 IMD_FAULT_LED
-Text HLabel 14950 3125 0    50   Output ~ 0
+Text HLabel 14950 3500 0    50   Output ~ 0
 IMD_FAULT_LED
 Wire Wire Line
-	3250 2250 4050 2250
+	2375 2150 3175 2150
 Wire Wire Line
-	3250 2850 4050 2850
+	2375 2750 3175 2750
 $Comp
 L pspice:CAP C13
 U 1 1 60B2B21B
-P 4050 2550
-F 0 "C13" H 4100 2650 50  0000 L CNN
-F 1 "100uF" H 4100 2450 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm" H 4050 2550 50  0001 C CNN
-F 3 "https://www.mouser.com/ProductDetail/United-Chemi-Con/ELXY350ETC101MH12D?qs=%2Fha2pyFadugQjx3h2g7%252BREFLGgGKGmo%2FpkpvB1MQ1O4cLCxEA9OccQ%3D%3D" H 4050 2550 50  0001 C CNN
-F 4 "ELXY350ETC101MH12D" H 4050 2550 50  0001 C CNN "PART"
-	1    4050 2550
+P 3175 2450
+F 0 "C13" H 3225 2550 50  0000 L CNN
+F 1 "100uF" H 3225 2350 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm" H 3175 2450 50  0001 C CNN
+F 3 "https://www.mouser.com/ProductDetail/United-Chemi-Con/ELXY350ETC101MH12D?qs=%2Fha2pyFadugQjx3h2g7%252BREFLGgGKGmo%2FpkpvB1MQ1O4cLCxEA9OccQ%3D%3D" H 3175 2450 50  0001 C CNN
+F 4 "ELXY350ETC101MH12D" H 3175 2450 50  0001 C CNN "PART"
+	1    3175 2450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4050 2300 4050 2250
-Connection ~ 4050 2250
+	3175 2200 3175 2150
+Connection ~ 3175 2150
 Wire Wire Line
-	4050 2250 5050 2250
+	3175 2150 4175 2150
 Wire Wire Line
-	4050 2800 4050 2850
-Connection ~ 4050 2850
+	3175 2700 3175 2750
+Connection ~ 3175 2750
 Wire Wire Line
-	4050 2850 4950 2850
-Wire Notes Line
-	2950 650  2950 3250
+	3175 2750 4075 2750
 Text Label 10575 3325 0    50   ~ 0
 MRESET_Contact
-Text HLabel 14950 3925 0    50   Output ~ 0
+Text HLabel 14950 4300 0    50   Output ~ 0
 GEN_FAULT_EPAL
-Text Label 15800 3825 2    50   ~ 0
+Text Label 15800 4200 2    50   ~ 0
 Safety_Loop_EPAL
-Text Label 15800 3925 2    50   ~ 0
+Text Label 15800 4300 2    50   ~ 0
 GEN_FAULT_EPAL
 Text Label 12350 1800 0    50   ~ 0
 GLV_RTN
@@ -718,7 +716,7 @@ Wire Wire Line
 	11575 3525 11525 3525
 Wire Wire Line
 	11525 3525 11525 3875
-Text Label 7250 900  0    50   ~ 0
+Text Label 5775 850  0    50   ~ 0
 5V
 $Comp
 L Connector:TestPoint TP13
@@ -814,17 +812,17 @@ Wire Notes Line
 Wire Wire Line
 	14950 2300 15800 2300
 Wire Wire Line
-	14950 3125 15800 3125
+	14950 3500 15800 3500
 Wire Wire Line
-	14950 3225 15800 3225
+	14950 3600 15800 3600
 Wire Wire Line
 	14950 2400 15800 2400
 Wire Wire Line
 	14950 2500 15800 2500
 Wire Wire Line
-	14950 3825 15800 3825
+	14950 4200 15800 4200
 Wire Wire Line
-	14950 3925 15800 3925
+	14950 4300 15800 4300
 $Comp
 L Device:R R61
 U 1 1 601328F4
@@ -894,111 +892,101 @@ Wire Wire Line
 	14125 7250 14200 7250
 Text Notes 13450 9650 0    51   ~ 0
 NC relay, if SR_CTRL_Boosted \nis high the Safety Loop opens
-Text Label 7900 1375 0    50   ~ 0
+Text Label 8100 725  0    50   ~ 0
 3.3V
-Text Label 8350 1925 2    50   ~ 0
+Text Label 8550 1275 2    50   ~ 0
 CoolTemp
 $Comp
 L pspice:CAP C?
 U 1 1 608CA5BD
-P 8500 2325
+P 8700 1675
 AR Path="/608CA5BD" Ref="C?"  Part="1" 
 AR Path="/5FE1DE7D/608CA5BD" Ref="C19"  Part="1" 
-F 0 "C19" H 8500 2425 50  0000 L CNN
-F 1 "0.1u" H 8500 2225 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8500 2325 50  0001 C CNN
-F 3 "~" H 8500 2325 50  0001 C CNN
-	1    8500 2325
+F 0 "C19" H 8700 1775 50  0000 L CNN
+F 1 "0.1u" H 8700 1575 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8700 1675 50  0001 C CNN
+F 3 "~" H 8700 1675 50  0001 C CNN
+	1    8700 1675
 	1    0    0    -1  
 $EndComp
-Text Label 8950 2725 2    50   ~ 0
+Text Label 9150 2075 2    50   ~ 0
 GLV_RTN
 Wire Wire Line
-	7900 1375 7900 1575
+	8100 725  8100 925 
 $Comp
 L Device:R R?
 U 1 1 608CA5C5
-P 7900 1725
+P 8100 1075
 AR Path="/608CA5C5" Ref="R?"  Part="1" 
 AR Path="/5FE1DE7D/608CA5C5" Ref="R65"  Part="1" 
-F 0 "R65" H 7970 1771 50  0000 L CNN
-F 1 "2K" V 7900 1675 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7830 1725 50  0001 C CNN
-F 3 "~" H 7900 1725 50  0001 C CNN
-	1    7900 1725
+F 0 "R65" H 8170 1121 50  0000 L CNN
+F 1 "2K" V 8100 1025 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 8030 1075 50  0001 C CNN
+F 3 "~" H 8100 1075 50  0001 C CNN
+	1    8100 1075
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R?
 U 1 1 608CA5CB
-P 7900 2125
+P 8100 1475
 AR Path="/608CA5CB" Ref="R?"  Part="1" 
 AR Path="/5FE1DE7D/608CA5CB" Ref="R80"  Part="1" 
-F 0 "R80" H 7970 2171 50  0000 L CNN
-F 1 "1.6K" V 7900 2025 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7830 2125 50  0001 C CNN
-F 3 "~" H 7900 2125 50  0001 C CNN
-	1    7900 2125
+F 0 "R80" H 8170 1521 50  0000 L CNN
+F 1 "1.6K" V 8100 1375 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 8030 1475 50  0001 C CNN
+F 3 "~" H 8100 1475 50  0001 C CNN
+	1    8100 1475
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7900 1975 7900 1925
-Connection ~ 7900 1925
+	8100 1325 8100 1275
+Connection ~ 8100 1275
 Wire Wire Line
-	7900 1925 7900 1875
+	8100 1275 8100 1225
 Wire Wire Line
-	7900 2725 7900 2625
-Text Label 7900 2375 2    50   ~ 0
+	8100 2075 8100 1975
+Text Label 8100 1725 2    50   ~ 0
 CoolTemp_In
-Text Label 7900 2725 0    47   ~ 0
+Text Label 8100 2075 0    47   ~ 0
 CoolTemp_RTN
 Wire Wire Line
-	7900 1925 8500 1925
+	8100 1275 8700 1275
 Wire Notes Line
-	7950 2425 7950 2625
+	8150 1775 8150 1975
 Wire Notes Line
-	7950 2625 7850 2625
+	8150 1975 8050 1975
 Wire Notes Line
-	7850 2625 7850 2425
+	8050 1975 8050 1775
 Wire Notes Line
-	7850 2425 7950 2425
+	8050 1775 8150 1775
 Wire Wire Line
-	7900 2275 7900 2425
-Text Notes 7975 2600 0    47   ~ 0
+	8100 1625 8100 1775
+Text Notes 8175 1950 0    47   ~ 0
 Cooling\nR1
 Wire Wire Line
-	7900 2725 8500 2725
+	8100 2075 8700 2075
 Wire Wire Line
-	8500 2075 8500 1925
+	8700 1425 8700 1275
 Wire Wire Line
-	8500 2725 8500 2575
-Connection ~ 8500 2725
+	8700 2075 8700 1925
+Connection ~ 8700 2075
 Wire Wire Line
-	8500 2725 8950 2725
-Wire Notes Line
-	2950 3250 9225 3250
-Wire Notes Line
-	2950 650  9225 650 
-Wire Notes Line
-	9225 650  9225 3250
+	8700 2075 9150 2075
 Text Label 15800 2200 2    50   ~ 0
 CoolTemp
 Text HLabel 14950 2200 0    50   Input ~ 0
 CoolTemp
-Text Label 15800 3325 2    50   ~ 0
+Text Label 15800 3700 2    50   ~ 0
 CoolTemp_In
-Text HLabel 14950 3325 0    50   Output ~ 0
+Text HLabel 14950 3700 0    50   Output ~ 0
 CoolTemp_In
-Text Label 15800 3425 2    50   ~ 0
+Text Label 15800 3800 2    50   ~ 0
 CoolTemp_RTN
-Text HLabel 14950 3425 0    50   Output ~ 0
+Text HLabel 14950 3800 0    50   Output ~ 0
 CoolTemp_RTN
 Wire Notes Line
-	16000 550  16000 4075
-Wire Notes Line
-	14150 550  14150 4075
-Wire Notes Line
-	14150 4075 16000 4075
+	14150 4550 16000 4550
 Text Notes 13350 7575 0    51   ~ 0
 Lights up when coils are not conducting\n(SCADA Relay Closed)
 $Comp
@@ -1119,7 +1107,7 @@ Wire Wire Line
 Wire Wire Line
 	14375 8825 15075 8825
 Connection ~ 14375 8825
-Text Notes 7850 2575 2    43   ~ 0
+Text Notes 8050 1925 2    43   ~ 0
 Cooling Sensors\n(J19)
 Text Notes 4475 8300 0    47   ~ 0
 Dashboard (J11)\n
@@ -1154,25 +1142,25 @@ MRESET_Contact
 $Comp
 L Device:Jumper JP?
 U 1 1 60A2B406
-P 8125 900
+P 6650 850
 AR Path="/6196BF15/60A2B406" Ref="JP?"  Part="1" 
 AR Path="/60A2B406" Ref="JP?"  Part="1" 
 AR Path="/5FE1DE7D/60A2B406" Ref="JP9"  Part="1" 
-F 0 "JP9" H 8200 1050 50  0000 R CNN
-F 1 "If CAN_Shield & Chassis_GND need to be shorted together, weren't sure" H 8825 900 50  0001 R CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 8125 900 50  0001 C CNN
-F 3 "~" H 8125 900 50  0001 C CNN
-	1    8125 900 
+F 0 "JP9" H 6725 1000 50  0000 R CNN
+F 1 "If CAN_Shield & Chassis_GND need to be shorted together, weren't sure" H 7350 850 50  0001 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 6650 850 50  0001 C CNN
+F 3 "~" H 6650 850 50  0001 C CNN
+	1    6650 850 
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9025 900  8425 900 
-Text Label 9025 900  2    50   ~ 0
+	7550 850  6950 850 
+Text Label 7550 850  2    50   ~ 0
 Cooling_power
-Text Notes 7475 1150 0    47   ~ 0
+Text Notes 6000 1100 0    47   ~ 0
 Jumper to force voltage to be sent to \ncooling if Cooling_CTRl isn't working
 Wire Wire Line
-	7250 900  7825 900 
+	5775 850  6350 850 
 Wire Notes Line
 	5700 6550 5700 11150
 Wire Notes Line
@@ -1184,7 +1172,7 @@ Wire Notes Line
 Text Notes 2250 10450 0    51   ~ 0
 Lights up when coils are conducting
 $Comp
-L CarMan_KiCAD_Library:SFS2-DC24V K3
+L TSI_Rev.5-rescue:SFS2-DC24V-CarMan_KiCAD_Library K3
 U 1 1 6014EB6D
 P 3050 8500
 F 0 "K3" H 3050 9950 60  0000 C CNN
@@ -1263,7 +1251,7 @@ Wire Wire Line
 Text Label 7125 10275 0    50   ~ 0
 AMS_Button_RTN
 $Comp
-L CarMan_KiCAD_Library:SFS2-DC24V K4
+L TSI_Rev.5-rescue:SFS2-DC24V-CarMan_KiCAD_Library K4
 U 1 1 5FC41168
 P 8150 8475
 F 0 "K4" H 8150 9925 60  0000 C CNN
@@ -1359,13 +1347,13 @@ Text Label 15800 1100 2    50   ~ 0
 Chassis_GND
 Text HLabel 14950 1400 0    50   Input ~ 0
 BOT_Out
-Text HLabel 14950 3825 0    50   Output ~ 0
+Text HLabel 14950 4200 0    50   Output ~ 0
 Safety_Loop_EPAL
-Text HLabel 14950 3525 0    50   Output ~ 0
+Text HLabel 14950 3900 0    50   Output ~ 0
 SL1_Out
 Text HLabel 14950 1700 0    50   Input ~ 0
 SL1_In
-Text HLabel 14950 3025 0    50   Output ~ 0
+Text HLabel 14950 3400 0    50   Output ~ 0
 12V_Cooling
 Wire Wire Line
 	14950 2000 15800 2000
@@ -1396,23 +1384,23 @@ Wire Wire Line
 Wire Wire Line
 	14950 1000 15800 1000
 Wire Wire Line
-	14950 2825 15800 2825
+	14950 3200 15800 3200
 Wire Wire Line
-	14950 2925 15800 2925
+	14950 3300 15800 3300
 Wire Wire Line
-	14950 3025 15800 3025
+	14950 3400 15800 3400
 Wire Wire Line
-	14950 2725 15800 2725
+	14950 3100 15800 3100
 Wire Wire Line
-	14950 3425 15800 3425
+	14950 3800 15800 3800
 Wire Wire Line
-	14950 3525 15800 3525
+	14950 3900 15800 3900
 Wire Wire Line
-	14950 3625 15800 3625
+	14950 4000 15800 4000
 Wire Wire Line
-	14950 3325 15800 3325
+	14950 3700 15800 3700
 Wire Wire Line
-	14950 3725 15800 3725
+	14950 4100 15800 4100
 Wire Wire Line
 	8300 4800 8750 4800
 Wire Wire Line
@@ -1420,34 +1408,140 @@ Wire Wire Line
 Wire Wire Line
 	750  4550 1350 4550
 Wire Wire Line
-	6250 2850 6250 3150
-Connection ~ 6250 2850
+	5375 2750 5375 3050
+Connection ~ 5375 2750
 $Comp
-L CarMan_KiCAD_Library:KUB4812QB-10A PS2
+L TSI_Rev.5-rescue:KUB4812QB-10A-CarMan_KiCAD_Library PS2
 U 1 1 6077968F
-P 5650 2600
-F 0 "PS2" H 5650 3267 50  0000 C CNN
-F 1 "KUB4812QB-10A" H 5650 3176 50  0000 C CNN
-F 2 "TSI_Rev_2021_Footprint_Lib:24V-12V-NON-ISO-COOLING-CONVERTER" H 4750 3300 50  0001 L BNN
-F 3 "https://www.mornsun-power.com/html/pdf/KUB4812QB-10A.html" H 5650 2600 50  0001 L BNN
-F 4 "https://www.digikey.com/en/products/detail/mornsun-america-llc/KUB4812QB-10A/13531092" H 5650 2600 50  0001 C CNN "Digikey"
-	1    5650 2600
+P 4775 2500
+F 0 "PS2" H 4775 3167 50  0000 C CNN
+F 1 "KUB4812QB-10A" H 4775 3076 50  0000 C CNN
+F 2 "TSI_Rev_2021_Footprint_Lib:24V-12V-NON-ISO-COOLING-CONVERTER" H 3875 3200 50  0001 L BNN
+F 3 "https://www.mornsun-power.com/html/pdf/KUB4812QB-10A.html" H 4775 2500 50  0001 L BNN
+F 4 "https://www.digikey.com/en/products/detail/mornsun-america-llc/KUB4812QB-10A/13531092" H 4775 2500 50  0001 C CNN "Digikey"
+	1    4775 2500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4950 2850 5050 2850
-Connection ~ 4950 2850
+	4075 2750 4175 2750
+Connection ~ 4075 2750
 Wire Wire Line
-	6250 2250 6650 2250
+	5375 2150 5775 2150
 Wire Wire Line
-	6650 2700 6650 2850
+	5775 2600 5775 2750
 Wire Wire Line
-	6650 2400 6650 2250
-Connection ~ 6650 2250
+	5775 2300 5775 2150
+Connection ~ 5775 2150
 Wire Wire Line
-	6650 2250 7175 2250
+	5775 2150 6300 2150
 Wire Wire Line
-	6250 2400 6250 2250
-Connection ~ 6250 2250
-NoConn ~ 6250 2550
+	5375 2300 5375 2150
+Connection ~ 5375 2150
+NoConn ~ 5375 2450
+Text Label 15800 2800 2    50   ~ 0
+3.3V_ISO
+Text HLabel 14950 2800 0    50   Input ~ 0
+3.3V_ISO
+Text Label 15800 2700 2    50   ~ 0
+GLV_RTN
+Text HLabel 14950 2700 0    50   Input ~ 0
+Flowrate_RTN
+Text Label 15800 2600 2    50   ~ 0
+Flowrate
+Text HLabel 14950 2600 0    50   Input ~ 0
+Flowrate
+Wire Wire Line
+	14950 2600 15800 2600
+Wire Wire Line
+	14950 2700 15800 2700
+Wire Wire Line
+	14950 2800 15800 2800
+Text Label 15800 4400 2    50   ~ 0
+Flowrate_LOGIC
+Wire Wire Line
+	14950 4400 15800 4400
+Text HLabel 14950 4400 0    50   Output ~ 0
+Flowrate_LOGIC
+Wire Notes Line
+	16000 550  16000 4525
+Wire Notes Line
+	14150 550  16000 550 
+Wire Notes Line
+	14150 550  14150 4525
+$Comp
+L Device:R R113
+U 1 1 60C0C9C0
+P 7000 2550
+AR Path="/5FE1DE7D/60C0C9C0" Ref="R113"  Part="1" 
+AR Path="/60C0C9C0" Ref="R?"  Part="1" 
+F 0 "R113" V 6900 2550 50  0000 C CNN
+F 1 "500" V 7000 2550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6930 2550 50  0001 C CNN
+F 3 "~" H 7000 2550 50  0001 C CNN
+	1    7000 2550
+	0    1    1    0   
+$EndComp
+Text Label 6475 2550 0    50   ~ 0
+Flowrate
+$Comp
+L TSI_Rev.5-rescue:TLP293-CarMan_KiCAD_Library-TSI_Rev.5-rescue U?
+U 1 1 60C0C9C7
+P 7450 2650
+AR Path="/60C0C9C7" Ref="U?"  Part="1" 
+AR Path="/5FE1DE7D/60C0C9C7" Ref="U39"  Part="1" 
+F 0 "U39" H 7450 2850 50  0000 C CNN
+F 1 "TLP293" H 7450 2450 50  0000 C CNN
+F 2 "Package_SO:SOIC-4_4.55x2.6mm_P1.27mm" H 7250 2450 50  0001 L CIN
+F 3 "https://www.mouser.com/datasheet/2/408/Toshiba_TLP293_datasheet-1209449.pdf" H 7450 2650 50  0001 L CNN
+	1    7450 2650
+	1    0    0    -1  
+$EndComp
+Text Label 6475 2750 0    50   ~ 0
+Flowrate_RTN
+$Comp
+L Device:R R114
+U 1 1 60C0C9CE
+P 7825 2975
+AR Path="/5FE1DE7D/60C0C9CE" Ref="R114"  Part="1" 
+AR Path="/60C0C9CE" Ref="R?"  Part="1" 
+F 0 "R114" H 7895 3021 50  0000 L CNN
+F 1 "10K" V 7825 2900 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7755 2975 50  0001 C CNN
+F 3 "~" H 7825 2975 50  0001 C CNN
+	1    7825 2975
+	-1   0    0    1   
+$EndComp
+Text Label 8450 2750 2    50   ~ 0
+Flowrate_LOGIC
+Text Label 8450 3200 2    47   ~ 0
+LOGIC_ISO_RTN
+Text Label 8450 2550 2    50   ~ 0
+3.3V_ISO
+Wire Wire Line
+	6850 2550 6475 2550
+Wire Wire Line
+	6475 2750 7150 2750
+Text Notes 7125 2350 0    47   ~ 0
+Flowrate Isolation
+Wire Wire Line
+	7750 2550 8450 2550
+Connection ~ 7825 2750
+Wire Wire Line
+	7825 2750 8450 2750
+Wire Wire Line
+	7750 2750 7825 2750
+Wire Wire Line
+	7825 2750 7825 2825
+Wire Wire Line
+	7825 3125 7825 3200
+Wire Wire Line
+	7825 3200 8450 3200
+Wire Notes Line
+	2075 550  2075 3350
+Wire Notes Line
+	2075 3350 9300 3350
+Wire Notes Line
+	2075 550  9300 550 
+Wire Notes Line
+	9300 550  9300 3350
 $EndSCHEMATC

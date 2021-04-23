@@ -1117,7 +1117,7 @@ NoConn ~ 13950 9100
 Text Notes 13525 9850 0    59   ~ 0
 1.24HV Diff-Amp Reference\n\n\n
 $Comp
-L CarMan_KiCAD_Library:TS431ILT IC?
+L TSI_Rev.5-rescue:TS431ILT-CarMan_KiCAD_Library IC?
 U 1 1 6082F485
 P 14300 9100
 AR Path="/6196BF15/6082F485" Ref="IC?"  Part="1" 
