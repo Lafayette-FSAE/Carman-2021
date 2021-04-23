@@ -13,31 +13,20 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L Logic-rescue:Conn_01x04-Connector_Generic-Logic-rescue J666
-U 1 1 5F95B763
-P 14425 4475
-F 0 "J666" H 14375 4175 50  0000 L CNN
-F 1 "Real Time Clock" H 14350 4700 50  0001 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 14425 4475 50  0001 C CNN
-F 3 "~" H 14425 4475 50  0001 C CNN
-	1    14425 4475
-	-1   0    0    1   
-$EndComp
 Text Label 12850 1350 2    50   ~ 0
 CAN_H
 NoConn ~ 12400 1050
 Wire Wire Line
-	14625 4475 15075 4475
+	15350 4550 15800 4550
 Wire Wire Line
-	14625 4575 15075 4575
-Text Label 15075 4275 2    50   ~ 0
+	14750 4250 14300 4250
+Text Label 14300 4550 0    50   ~ 0
 SCL_ISO_PI
-Text Label 15075 4475 2    50   ~ 0
+Text Label 15800 4550 2    50   ~ 0
 ISO_RTN
-Text Label 15075 4575 2    50   ~ 0
+Text Label 14300 4250 0    50   ~ 0
 3.3V_ISO
-Text Label 15075 4375 2    50   ~ 0
+Text Label 14300 4400 0    50   ~ 0
 SDA_ISO_PI
 Text Label 12450 4525 0    50   ~ 0
 SCL_ISO_PI
@@ -69,10 +58,10 @@ NoConn ~ 8575 9175
 NoConn ~ 8575 9275
 NoConn ~ 8575 9375
 $Comp
-L Logic-rescue:Conn_01x08-Connector_Generic-Logic-rescue J6
+L Logic-rescue:Conn_01x08-Connector_Generic-Logic-rescue J7
 U 1 1 5FA1FE07
 P 15225 2025
-F 0 "J6" H 15175 2425 50  0000 L CNN
+F 0 "J7" H 15175 2425 50  0000 L CNN
 F 1 "You're Welcome -Ethan" H 15305 1926 50  0001 L CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical" H 15225 2025 50  0001 C CNN
 F 3 "~" H 15225 2025 50  0001 C CNN
@@ -371,9 +360,9 @@ Wire Wire Line
 Wire Wire Line
 	12900 4625 12450 4625
 Wire Wire Line
-	14625 4275 15075 4275
+	14750 4550 14300 4550
 Wire Wire Line
-	14625 4375 15075 4375
+	14750 4400 14300 4400
 Text Label 7825 8775 0    50   ~ 0
 SCL_ISO_PI
 Text Label 7825 8675 0    50   ~ 0
@@ -441,34 +430,34 @@ NoConn ~ 6725 5075
 $Comp
 L Logic-rescue:Conn_01x06-Connector_Generic-Logic-rescue J5
 U 1 1 5FDCB4A9
-P 13750 2075
-F 0 "J5" H 13750 2375 50  0000 C CNN
-F 1 "PIC program" H 13750 1650 50  0001 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 13750 2075 50  0001 C CNN
-F 3 "~" H 13750 2075 50  0001 C CNN
-	1    13750 2075
+P 13450 2075
+F 0 "J5" H 13450 2375 50  0000 C CNN
+F 1 "PIC program" H 13450 1650 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 13450 2075 50  0001 C CNN
+F 3 "~" H 13450 2075 50  0001 C CNN
+	1    13450 2075
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	13950 1875 14400 1875
+	13650 1875 14100 1875
 Wire Wire Line
-	13950 1975 14400 1975
+	13650 1975 14100 1975
 Wire Wire Line
-	13950 2075 14400 2075
+	13650 2075 14100 2075
 Wire Wire Line
-	13950 2175 14400 2175
+	13650 2175 14100 2175
 Wire Wire Line
-	13950 2275 14400 2275
-NoConn ~ 13950 2375
-Text Label 14400 1975 2    50   ~ 0
+	13650 2275 14100 2275
+NoConn ~ 13650 2375
+Text Label 14100 1975 2    50   ~ 0
 3.3V_ISO
-Text Label 14400 1875 2    50   ~ 0
+Text Label 14100 1875 2    50   ~ 0
 ~MCLR~
-Text Label 14400 2075 2    50   ~ 0
+Text Label 14100 2075 2    50   ~ 0
 ISO_RTN
-Text Label 14400 2175 2    50   ~ 0
+Text Label 14100 2175 2    50   ~ 0
 PGEC
-Text Label 14400 2275 2    50   ~ 0
+Text Label 14100 2275 2    50   ~ 0
 PGED
 Text Label 3550 6775 0    50   ~ 0
 5V_NON_ISO
@@ -1058,7 +1047,7 @@ Text Notes 12000 2425 0    50   ~ 0
 GLV 24V and I2C to logic
 Wire Notes Line
 	11800 825  13350 825 
-Text Notes 13450 2525 0    50   ~ 0
+Text Notes 13150 2525 0    50   ~ 0
 PICKit Programming Header
 Text Label 15825 1725 2    47   ~ 0
 GPIO_16
@@ -1142,8 +1131,6 @@ Wire Wire Line
 	7825 10275 8575 10275
 Wire Wire Line
 	7825 10375 8575 10375
-Text Notes 14375 4725 0    50   ~ 0
-RTC
 Wire Wire Line
 	6725 3375 7225 3375
 Text Label 7225 3375 2    50   ~ 0
@@ -1546,20 +1533,25 @@ Wire Notes Line
 	11775 525  11775 2700
 Wire Notes Line
 	11775 2700 16000 2700
-Wire Notes Line
-	14200 4775 15200 4775
-Wire Notes Line
-	15200 4775 15200 4025
-Wire Notes Line
-	15200 4025 14200 4025
-Wire Notes Line
-	14200 4025 14200 4775
-Text Notes 14375 4875 0    47   ~ 0
-Needs to be chnaged
 Wire Wire Line
 	750  8125 1225 8125
 Wire Wire Line
 	1400 8125 1875 8125
 Wire Wire Line
 	2050 8125 2525 8125
+$Comp
+L CarMan_KiCAD_Library:Raspberry_Pi_RTC U11
+U 1 1 60875061
+P 15050 4400
+F 0 "U11" H 15050 4700 47  0000 C CNN
+F 1 "Raspberry_Pi_RTC" H 15050 4100 47  0000 C CNN
+F 2 "CarMan General Footprints:Raspberry_Pi_RTC" V 15050 4400 47  0001 C CNN
+F 3 "" V 15050 4400 47  0001 C CNN
+	1    15050 4400
+	1    0    0    -1  
+$EndComp
+NoConn ~ 15350 4400
+NoConn ~ 15350 4250
+Text Notes 14375 4925 0    47   ~ 0
+Symbol & Footprint for Pi RTC to\nbe mounted to the Logic board
 $EndSCHEMATC

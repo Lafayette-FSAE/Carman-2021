@@ -25,19 +25,6 @@ Text Label 2000 1625 2    50   ~ 0
 5V_ISO
 Text Label 2000 1725 2    50   ~ 0
 ISO_RTN
-$Comp
-L Logic-rescue:R-Device-Logic-rescue R7
-U 1 1 5F9AF7D2
-P 2825 3525
-AR Path="/5F9AF7D2" Ref="R7"  Part="1" 
-AR Path="/5F9A7CF0/5F9AF7D2" Ref="R7"  Part="1" 
-F 0 "R7" V 2900 3475 50  0000 L CNN
-F 1 "120" V 2825 3450 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2755 3525 50  0001 C CNN
-F 3 "~" H 2825 3525 50  0001 C CNN
-	1    2825 3525
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	5425 3375 5425 3425
 Text Label 5075 3025 0    50   ~ 0
@@ -358,25 +345,8 @@ Wire Notes Line
 	3250 2500 5800 2500
 Wire Notes Line
 	3250 2500 3250 3975
-$Comp
-L Connector_Generic:Conn_01x02 J?
-U 1 1 609288D9
-P 2250 3525
-AR Path="/609288D9" Ref="J?"  Part="1" 
-AR Path="/5F9A7CF0/609288D9" Ref="J7"  Part="1" 
-F 0 "J7" H 2200 3625 50  0000 L CNN
-F 1 "NON-ISO CAN Testing" H 2100 3300 50  0001 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 2250 3525 50  0001 C CNN
-F 3 "~" H 2250 3525 50  0001 C CNN
-	1    2250 3525
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
-	2450 3625 4050 3625
+	3475 3525 4050 3525
 Wire Wire Line
-	2450 3525 2675 3525
-Wire Wire Line
-	2975 3525 4050 3525
-Text Notes 2025 3875 0    47   ~ 0
-NON-ISO CAN\nTesting Header
+	3475 3625 4050 3625
 $EndSCHEMATC
