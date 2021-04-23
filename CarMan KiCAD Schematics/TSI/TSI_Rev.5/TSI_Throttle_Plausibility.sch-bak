@@ -968,8 +968,6 @@ Wire Wire Line
 	2300 10450 2350 10450
 Text Label 2550 9500 2    50   ~ 0
 10V
-Wire Wire Line
-	3000 10350 3300 10350
 Connection ~ 3000 10350
 Wire Wire Line
 	3000 10850 3000 10350
@@ -979,7 +977,7 @@ Wire Wire Line
 	2300 10450 2300 10850
 Wire Wire Line
 	2950 10350 3000 10350
-Text Label 3300 10350 0    50   ~ 0
+Text Label 3575 10350 2    50   ~ 0
 APPS1_b
 $Comp
 L Device:R R21
@@ -1029,8 +1027,6 @@ Wire Wire Line
 	5450 11000 5450 10800
 Wire Wire Line
 	5700 10450 5750 10450
-Wire Wire Line
-	6400 10350 6700 10350
 Connection ~ 6400 10350
 Wire Wire Line
 	6400 10850 6400 10350
@@ -1040,7 +1036,7 @@ Wire Wire Line
 	5700 10450 5700 10850
 Wire Wire Line
 	6350 10350 6400 10350
-Text Label 6700 10350 0    50   ~ 0
+Text Label 6975 10350 2    50   ~ 0
 APPS2_b
 $Comp
 L Device:R R27
@@ -2281,4 +2277,8 @@ Wire Wire Line
 	2375 9500 2550 9500
 Wire Wire Line
 	1400 9500 1875 9500
+Wire Wire Line
+	3000 10350 3575 10350
+Wire Wire Line
+	6400 10350 6975 10350
 $EndSCHEMATC

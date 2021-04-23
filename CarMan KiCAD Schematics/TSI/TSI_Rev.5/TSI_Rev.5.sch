@@ -83,15 +83,15 @@ Text Label 700  4950 0    50   ~ 0
 SCL
 Text Label 6725 6825 2    50   ~ 0
 5V
-Text Label 8075 4100 0    50   ~ 0
+Text Label 8075 4375 0    50   ~ 0
 24V
-Text Label 8075 4200 0    50   ~ 0
+Text Label 8075 4475 0    50   ~ 0
 GLV_RTN
-Text Label 8075 4300 0    50   ~ 0
+Text Label 8075 4575 0    50   ~ 0
 Chassis_GND
-Text Label 8075 4700 0    50   ~ 0
+Text Label 8075 4975 0    50   ~ 0
 AIRS+
-Text Label 8075 4800 0    50   ~ 0
+Text Label 8075 5075 0    50   ~ 0
 AIRS-
 Text Label 7150 1600 2    50   ~ 0
 SCL_TSI_GLV
@@ -232,7 +232,7 @@ Text Label 700  4550 0    50   ~ 0
 APPS2
 Text Label 700  4450 0    50   ~ 0
 APPS1
-Text Label 11075 5000 2    50   ~ 0
+Text Label 11075 5275 2    50   ~ 0
 MRESET_Contact
 Text Notes 9200 1000 0    50   ~ 0
 Cooling Subsystem\nPower
@@ -361,25 +361,25 @@ Wire Wire Line
 	10200 875  10650 875 
 Wire Wire Line
 	10200 975  10650 975 
-Text Label 8075 5500 0    50   ~ 0
+Text Label 8075 5775 0    50   ~ 0
 Cooling_CTRL
-Text Label 8075 5200 0    50   ~ 0
+Text Label 8075 5475 0    50   ~ 0
 IMD_Status
-Text Label 11075 5100 2    50   ~ 0
+Text Label 11075 5375 2    50   ~ 0
 Safety_Loop
-Text Label 8075 4900 0    50   ~ 0
+Text Label 8075 5175 0    50   ~ 0
 SL1_In
-Text Label 11075 4900 2    50   ~ 0
+Text Label 11075 5175 2    50   ~ 0
 SL1_Out
-Text Label 8075 4500 0    50   ~ 0
+Text Label 8075 4775 0    50   ~ 0
 SR_CTRL
-Text Label 8075 4400 0    50   ~ 0
+Text Label 8075 4675 0    50   ~ 0
 LOGIC_ISO_RTN
-Text Label 8075 4600 0    50   ~ 0
+Text Label 8075 4875 0    50   ~ 0
 BOT_Out
-Text Label 11075 4400 2    50   ~ 0
+Text Label 11075 4675 2    50   ~ 0
 12V_Cooling
-Text Label 11075 4500 2    50   ~ 0
+Text Label 11075 4775 2    50   ~ 0
 IMD_FAULT_LED
 Text Notes 1825 3050 0    50   ~ 0
 LSP IMD & AMS Reset \nButton\n
@@ -391,9 +391,9 @@ Wire Wire Line
 	1825 2600 2475 2600
 Wire Wire Line
 	1825 2500 2475 2500
-Text Label 8075 5600 0    50   ~ 0
+Text Label 8075 5875 0    50   ~ 0
 IMD_Button_RTN
-Text Label 8075 5000 0    50   ~ 0
+Text Label 8075 5275 0    50   ~ 0
 COOL_24V
 $Comp
 L Connector_Generic:Conn_01x06 J7
@@ -450,11 +450,11 @@ Wire Wire Line
 	1825 2700 2475 2700
 Wire Wire Line
 	2450 625  2800 625 
-Text Label 8075 5300 0    50   ~ 0
+Text Label 8075 5575 0    50   ~ 0
 AMS_Status
-Text Label 8075 5700 0    50   ~ 0
+Text Label 8075 5975 0    50   ~ 0
 AMS_Button_RTN
-Text Label 11075 4600 2    50   ~ 0
+Text Label 11075 4875 2    50   ~ 0
 AMS_FAULT_LED
 Wire Wire Line
 	8150 875  8750 875 
@@ -474,52 +474,52 @@ Wire Wire Line
 	3125 1700 3625 1700
 Text Label 3125 1700 0    50   ~ 0
 24V_AMS_RTN
-Text Label 8075 5100 0    50   ~ 0
+Text Label 8075 5375 0    50   ~ 0
 24V_AMS_RTN
 Text Label 700  5650 0    50   ~ 0
 AMS_FAULT_LED
 Wire Wire Line
-	11075 4600 10325 4600
+	11075 4875 10325 4875
 Wire Wire Line
-	8075 5300 8825 5300
+	8075 5575 8825 5575
 Wire Wire Line
-	8075 5700 8825 5700
+	8075 5975 8825 5975
 Wire Wire Line
-	8075 4700 8825 4700
+	8075 4975 8825 4975
 Wire Wire Line
-	8075 4800 8825 4800
+	8075 5075 8825 5075
 Wire Wire Line
-	8075 4100 8825 4100
+	8075 4375 8825 4375
 Wire Wire Line
-	8075 4200 8825 4200
+	8075 4475 8825 4475
 Wire Wire Line
-	8075 4300 8825 4300
+	8075 4575 8825 4575
 Wire Wire Line
-	11075 5000 10325 5000
+	11075 5275 10325 5275
 Wire Wire Line
-	8075 5000 8825 5000
+	8075 5275 8825 5275
 Wire Wire Line
-	8075 5500 8825 5500
+	8075 5775 8825 5775
 Wire Wire Line
-	8825 4900 8075 4900
+	8825 5175 8075 5175
 Wire Wire Line
-	8825 4500 8075 4500
+	8825 4775 8075 4775
 Wire Wire Line
-	10325 5100 11075 5100
+	10325 5375 11075 5375
 Wire Wire Line
-	8825 5200 8075 5200
+	8825 5475 8075 5475
 Wire Wire Line
-	8825 4400 8075 4400
+	8825 4675 8075 4675
 Wire Wire Line
-	8825 4600 8075 4600
+	8825 4875 8075 4875
 Wire Wire Line
-	10325 4400 11075 4400
+	10325 4675 11075 4675
 Wire Wire Line
-	8825 5600 8075 5600
+	8825 5875 8075 5875
 Wire Wire Line
-	10325 4500 11075 4500
+	10325 4775 11075 4775
 Wire Wire Line
-	8825 5100 8075 5100
+	8825 5375 8075 5375
 Wire Wire Line
 	700  6475 1550 6475
 Wire Wire Line
@@ -792,12 +792,12 @@ Throttle_LV
 Text Label 3925 4150 2    50   ~ 0
 BRAKE_OUT
 Wire Wire Line
-	10325 5200 11075 5200
+	10325 5475 11075 5475
 Wire Wire Line
-	10325 5300 11075 5300
-Text Label 11075 5200 2    50   ~ 0
+	10325 5575 11075 5575
+Text Label 11075 5475 2    50   ~ 0
 Safety_Loop_EPAL
-Text Label 11075 5300 2    50   ~ 0
+Text Label 11075 5575 2    50   ~ 0
 GEN_FAULT_EPAL
 Text Label 2075 1600 0    50   ~ 0
 Safety_Loop_EPAL
@@ -964,54 +964,54 @@ Wire Wire Line
 Text Notes 3100 1250 0    89   ~ 18
 High Voltage Connectors
 Wire Wire Line
-	8075 5400 8825 5400
-Text Label 8075 5400 0    50   ~ 0
+	8075 5675 8825 5675
+Text Label 8075 5675 0    50   ~ 0
 CoolTemp
 Wire Wire Line
-	11075 4800 10325 4800
-Text Label 11075 4800 2    50   ~ 0
+	11075 5075 10325 5075
+Text Label 11075 5075 2    50   ~ 0
 CoolTemp_RTN
 Wire Wire Line
-	11075 4700 10325 4700
-Text Label 11075 4700 2    50   ~ 0
+	11075 4975 10325 4975
+Text Label 11075 4975 2    50   ~ 0
 CoolTemp_In
 Wire Notes Line
 	1950 2225 475  2225
 Wire Notes Line
 	1950 1300 1950 2225
 Wire Wire Line
-	6070 3025 7620 3025
-Text Label 6070 3025 0    50   ~ 0
+	5045 3225 6595 3225
+Text Label 5045 3225 0    50   ~ 0
 AIRS-
-Text Label 7620 3025 2    50   ~ 0
+Text Label 6595 3225 2    50   ~ 0
 GLV_RTN
-Text Label 6070 2925 0    50   ~ 0
+Text Label 5045 3125 0    50   ~ 0
 24V
-Text Label 7620 2925 2    50   ~ 0
+Text Label 6595 3125 2    50   ~ 0
 24V_AMS_IN
 Wire Wire Line
-	6070 2925 7620 2925
-Text Label 7020 2925 2    50   ~ 0
+	5045 3125 6595 3125
+Text Label 5995 3125 2    50   ~ 0
 24V_IMD_IN
 Wire Wire Line
-	6070 2800 6520 2800
+	5045 3000 5495 3000
 Wire Wire Line
-	7620 2800 7120 2800
-Text Label 7620 2800 2    50   ~ 0
+	6595 3000 6095 3000
+Text Label 6595 3000 2    50   ~ 0
 Chassis_GND
-Text Label 6070 2800 0    50   ~ 0
+Text Label 5045 3000 0    50   ~ 0
 CAN_Shield
 $Comp
 L Device:Jumper JP?
 U 1 1 601967AD
-P 6820 2800
+P 5795 3000
 AR Path="/6196BF15/601967AD" Ref="JP?"  Part="1" 
 AR Path="/601967AD" Ref="JP3"  Part="1" 
-F 0 "JP3" H 6895 2950 50  0000 R CNN
-F 1 "If CAN_Shield & Chassis_GND need to be shorted together, weren't sure" H 7520 2800 50  0001 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6820 2800 50  0001 C CNN
-F 3 "~" H 6820 2800 50  0001 C CNN
-	1    6820 2800
+F 0 "JP3" H 5870 3150 50  0000 R CNN
+F 1 "If CAN_Shield & Chassis_GND need to be shorted together, weren't sure" H 6495 3000 50  0001 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5795 3000 50  0001 C CNN
+F 3 "~" H 5795 3000 50  0001 C CNN
+	1    5795 3000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1033,22 +1033,22 @@ Wire Wire Line
 Text Notes 4125 1000 0    39   ~ 0
 (120 mA to open)
 Wire Wire Line
-	6050 3850 6500 3850
-Text Label 7700 3850 2    50   ~ 0
+	5025 4050 5475 4050
+Text Label 6675 4050 2    50   ~ 0
 IMD_Status
-Text Label 6050 3850 0    50   ~ 0
+Text Label 5025 4050 0    50   ~ 0
 24V_IMD_IN
 $Comp
 L Device:Jumper JP?
 U 1 1 6071AD5F
-P 6800 3850
+P 5775 4050
 AR Path="/6196BF15/6071AD5F" Ref="JP?"  Part="1" 
 AR Path="/6071AD5F" Ref="JP11"  Part="1" 
-F 0 "JP11" H 6875 3975 39  0000 R CNN
-F 1 "Safety Loop Jumper: IMD" H 7500 3850 50  0001 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6800 3850 50  0001 C CNN
-F 3 "~" H 6800 3850 50  0001 C CNN
-	1    6800 3850
+F 0 "JP11" H 5850 4175 39  0000 R CNN
+F 1 "Safety Loop Jumper: IMD" H 6475 4050 50  0001 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5775 4050 50  0001 C CNN
+F 3 "~" H 5775 4050 50  0001 C CNN
+	1    5775 4050
 	1    0    0    -1  
 $EndComp
 NoConn ~ 2050 675 
@@ -1078,7 +1078,7 @@ Text Label 6275 1800 0    50   ~ 0
 BP_CAN+
 Text Notes 2225 1150 0    43   ~ 0
 MC: FW = 13 RW = 14\n(active low)
-Text Notes 6260 2515 0    79   ~ 0
+Text Notes 5235 2715 0    79   ~ 0
 Jumpers and Shorts
 Text Notes 2050 7000 0    50   ~ 0
 LOW VOLTAGE\n
@@ -1128,203 +1128,199 @@ F16 "IGNI_VCC" O R 3100 6675 50
 F17 "5V" I L 1550 7125 50 
 $EndSheet
 $Sheet
-S 8825 4000 1500 2100
+S 8825 4275 1500 2100
 U 5FE1DE7D
 F0 "Relays_Cooling_Voltage_Refs" 47
 F1 "CAN_GLV_POWER.sch" 47
-F2 "10V" O R 10325 4100 50 
-F3 "5V" O R 10325 4200 50 
-F4 "3.3V" O R 10325 4300 50 
-F5 "24V" I L 8825 4100 50 
-F6 "GLV_RTN" I L 8825 4200 50 
-F7 "Chassis_GND" I L 8825 4300 50 
-F8 "AIRs+" I L 8825 4700 50 
-F9 "AIRs-" I L 8825 4800 50 
-F10 "Safety_Loop" O R 10325 5100 50 
-F11 "IMD_Status" I L 8825 5200 50 
-F12 "Cooling_CTRL" I L 8825 5500 50 
-F13 "SL1_Out" O R 10325 4900 50 
-F14 "SL1_In" I L 8825 4900 50 
-F15 "SR_CTRL" I L 8825 4500 50 
-F16 "MRESET_Contact" O R 10325 5000 50 
-F17 "LOGIC_ISO_RTN" I L 8825 4400 50 
-F18 "BOT_Out" I L 8825 4600 50 
-F19 "12V_Cooling" O R 10325 4400 50 
-F20 "IMD_FAULT_LED" O R 10325 4500 50 
-F21 "IMD_Button_RTN" I L 8825 5600 50 
-F22 "COOL_24V" I L 8825 5000 50 
-F23 "AMS_FAULT_LED" O R 10325 4600 50 
-F24 "AMS_Status" I L 8825 5300 47 
-F25 "AMS_Button_RTN" I L 8825 5700 50 
-F26 "24V_AMS_RTN" I L 8825 5100 50 
-F27 "Safety_Loop_EPAL" O R 10325 5200 50 
-F28 "GEN_FAULT_EPAL" O R 10325 5300 50 
-F29 "CoolTemp" I L 8825 5400 50 
-F30 "CoolTemp_In" O R 10325 4700 50 
-F31 "CoolTemp_RTN" O R 10325 4800 50 
-F32 "3.3V_ISO" I L 8825 5800 50 
-F33 "Flowrate_RTN" I L 8825 5900 50 
-F34 "Flowrate" I L 8825 6000 50 
-F35 "Flowrate_LOGIC" O R 10325 5400 50 
+F2 "10V" O R 10325 4375 50 
+F3 "5V" O R 10325 4475 50 
+F4 "3.3V" O R 10325 4575 50 
+F5 "24V" I L 8825 4375 50 
+F6 "GLV_RTN" I L 8825 4475 50 
+F7 "Chassis_GND" I L 8825 4575 50 
+F8 "AIRs+" I L 8825 4975 50 
+F9 "AIRs-" I L 8825 5075 50 
+F10 "Safety_Loop" O R 10325 5375 50 
+F11 "IMD_Status" I L 8825 5475 50 
+F12 "Cooling_CTRL" I L 8825 5775 50 
+F13 "SL1_Out" O R 10325 5175 50 
+F14 "SL1_In" I L 8825 5175 50 
+F15 "SR_CTRL" I L 8825 4775 50 
+F16 "MRESET_Contact" O R 10325 5275 50 
+F17 "LOGIC_ISO_RTN" I L 8825 4675 50 
+F18 "BOT_Out" I L 8825 4875 50 
+F19 "12V_Cooling" O R 10325 4675 50 
+F20 "IMD_FAULT_LED" O R 10325 4775 50 
+F21 "IMD_Button_RTN" I L 8825 5875 50 
+F22 "COOL_24V" I L 8825 5275 50 
+F23 "AMS_FAULT_LED" O R 10325 4875 50 
+F24 "AMS_Status" I L 8825 5575 47 
+F25 "AMS_Button_RTN" I L 8825 5975 50 
+F26 "24V_AMS_RTN" I L 8825 5375 50 
+F27 "Safety_Loop_EPAL" O R 10325 5475 50 
+F28 "GEN_FAULT_EPAL" O R 10325 5575 50 
+F29 "CoolTemp" I L 8825 5675 50 
+F30 "CoolTemp_In" O R 10325 4975 50 
+F31 "CoolTemp_RTN" O R 10325 5075 50 
+F32 "3.3V_ISO" I L 8825 6075 50 
+F33 "Flowrate_RTN" I L 8825 6175 50 
+F34 "Flowrate" I L 8825 6275 50 
+F35 "Flowrate_LOGIC" O R 10325 5675 50 
 $EndSheet
 Wire Wire Line
-	10325 4900 11075 4900
+	10325 5175 11075 5175
 Wire Wire Line
-	11075 4300 10325 4300
+	11075 4575 10325 4575
 Wire Wire Line
-	11075 4200 10325 4200
+	11075 4475 10325 4475
 Wire Wire Line
-	11075 4100 10325 4100
-Text Label 11075 4300 2    50   ~ 0
+	11075 4375 10325 4375
+Text Label 11075 4575 2    50   ~ 0
 3.3V
-Text Label 11075 4200 2    50   ~ 0
+Text Label 11075 4475 2    50   ~ 0
 5V
-Text Label 11075 4100 2    50   ~ 0
+Text Label 11075 4375 2    50   ~ 0
 10V
-Text Notes 6100 3400 0    71   ~ 0
+Text Notes 5075 3600 0    71   ~ 0
 Safety Loop Testing Jumpers
 Wire Wire Line
-	6050 3650 6500 3650
-Text Label 6050 3650 0    50   ~ 0
+	5025 3850 5475 3850
+Text Label 5025 3850 0    50   ~ 0
 24V_AMS_IN
 $Comp
 L Device:Jumper JP?
 U 1 1 608346BC
-P 6800 3650
+P 5775 3850
 AR Path="/6196BF15/608346BC" Ref="JP?"  Part="1" 
 AR Path="/608346BC" Ref="JP10"  Part="1" 
-F 0 "JP10" H 6875 3775 39  0000 R CNN
-F 1 "Safety Loop Jumper: Battery Packs" H 7500 3650 50  0001 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6800 3650 50  0001 C CNN
-F 3 "~" H 6800 3650 50  0001 C CNN
-	1    6800 3650
+F 0 "JP10" H 5850 3975 39  0000 R CNN
+F 1 "Safety Loop Jumper: Battery Packs" H 6475 3850 50  0001 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5775 3850 50  0001 C CNN
+F 3 "~" H 5775 3850 50  0001 C CNN
+	1    5775 3850
 	1    0    0    -1  
 $EndComp
-Text Label 7700 3650 2    50   ~ 0
+Text Label 6675 3850 2    50   ~ 0
 24V_AMS_RTN
 Wire Wire Line
-	6050 4475 6500 4475
+	5025 4675 5475 4675
 $Comp
 L Device:Jumper JP?
 U 1 1 6092356F
-P 6800 4475
+P 5775 4675
 AR Path="/6196BF15/6092356F" Ref="JP?"  Part="1" 
 AR Path="/6092356F" Ref="JP14"  Part="1" 
-F 0 "JP14" H 6875 4600 39  0000 R CNN
-F 1 "Safety Loop Jumper: BOT Switch" H 7500 4475 50  0001 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6800 4475 50  0001 C CNN
-F 3 "~" H 6800 4475 50  0001 C CNN
-	1    6800 4475
+F 0 "JP14" H 5850 4800 39  0000 R CNN
+F 1 "Safety Loop Jumper: BOT Switch" H 6475 4675 50  0001 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5775 4675 50  0001 C CNN
+F 3 "~" H 5775 4675 50  0001 C CNN
+	1    5775 4675
 	1    0    0    -1  
 $EndComp
-Text Label 6050 4475 0    50   ~ 0
+Text Label 5025 4675 0    50   ~ 0
 SL1_Out
-Text Label 7700 4475 2    50   ~ 0
+Text Label 6675 4675 2    50   ~ 0
 BOT_Out
 Wire Wire Line
-	6050 4675 6500 4675
+	5025 4875 5475 4875
 $Comp
 L Device:Jumper JP?
 U 1 1 609CEE50
-P 6800 4675
+P 5775 4875
 AR Path="/6196BF15/609CEE50" Ref="JP?"  Part="1" 
 AR Path="/609CEE50" Ref="JP15"  Part="1" 
-F 0 "JP15" H 6875 4800 39  0000 R CNN
-F 1 "Safety Loop Jumper: RSP" H 7500 4675 50  0001 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6800 4675 50  0001 C CNN
-F 3 "~" H 6800 4675 50  0001 C CNN
-	1    6800 4675
+F 0 "JP15" H 5850 5000 39  0000 R CNN
+F 1 "Safety Loop Jumper: RSP" H 6475 4875 50  0001 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5775 4875 50  0001 C CNN
+F 3 "~" H 5775 4875 50  0001 C CNN
+	1    5775 4875
 	1    0    0    -1  
 $EndComp
-Text Label 7700 4675 2    50   ~ 0
+Text Label 6675 4875 2    50   ~ 0
 MRESET_Contact
-Text Label 6050 4675 0    50   ~ 0
+Text Label 5025 4875 0    50   ~ 0
 AIRS+
 $Comp
 L Device:Jumper_NC_Dual JP16
 U 1 1 60B2AFAE
-P 6800 4900
-F 0 "JP16" H 6800 5000 39  0000 C CNN
-F 1 "Safety Loop Jumper: J10 - Voltage" H 6800 5048 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 6800 4900 50  0001 C CNN
-F 3 "~" H 6800 4900 50  0001 C CNN
-	1    6800 4900
+P 5775 5100
+F 0 "JP16" H 5775 5200 39  0000 C CNN
+F 1 "Safety Loop Jumper: J10 - Voltage" H 5775 5248 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 5775 5100 50  0001 C CNN
+F 3 "~" H 5775 5100 50  0001 C CNN
+	1    5775 5100
 	1    0    0    -1  
 $EndComp
-Text Label 7025 5075 2    50   ~ 0
+Text Label 6000 5275 2    50   ~ 0
 24V
 Wire Wire Line
-	6800 5000 6800 5075
+	5775 5200 5775 5275
 Wire Wire Line
-	6800 5075 7025 5075
+	5775 5275 6000 5275
 Wire Wire Line
-	6050 4900 6550 4900
-Text Label 6050 4900 0    50   ~ 0
+	5025 5100 5525 5100
+Text Label 5025 5100 0    50   ~ 0
 SL1_In
-Text Label 7700 4900 2    49   ~ 0
+Text Label 6675 5100 2    49   ~ 0
 COOL_24V
 $Comp
 L Device:Jumper JP?
 U 1 1 60D11F30
-P 6800 4275
+P 5775 4475
 AR Path="/6196BF15/60D11F30" Ref="JP?"  Part="1" 
 AR Path="/60D11F30" Ref="JP13"  Part="1" 
 AR Path="/5FE1DE7D/60D11F30" Ref="JP?"  Part="1" 
-F 0 "JP13" H 6875 4400 39  0000 R CNN
-F 1 "Safety Loop Jumper: AMS Relay" H 7500 4275 50  0001 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6800 4275 50  0001 C CNN
-F 3 "~" H 6800 4275 50  0001 C CNN
-	1    6800 4275
+F 0 "JP13" H 5850 4600 39  0000 R CNN
+F 1 "Safety Loop Jumper: AMS Relay" H 6475 4475 50  0001 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5775 4475 50  0001 C CNN
+F 3 "~" H 5775 4475 50  0001 C CNN
+	1    5775 4475
 	1    0    0    -1  
 $EndComp
-Text Label 6050 4275 0    50   ~ 0
+Text Label 5025 4475 0    50   ~ 0
 AMS_Status
-Text Label 7700 4275 2    50   ~ 0
+Text Label 6675 4475 2    50   ~ 0
 AMS_Button_RTN
 $Comp
 L Device:Jumper JP?
 U 1 1 60D2D031
-P 6800 4075
+P 5775 4275
 AR Path="/6196BF15/60D2D031" Ref="JP?"  Part="1" 
 AR Path="/60D2D031" Ref="JP12"  Part="1" 
 AR Path="/5FE1DE7D/60D2D031" Ref="JP?"  Part="1" 
-F 0 "JP12" H 6875 4200 39  0000 R CNN
-F 1 "Safety Loop Jumper: IMD Relay" H 7500 4075 50  0001 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6800 4075 50  0001 C CNN
-F 3 "~" H 6800 4075 50  0001 C CNN
-	1    6800 4075
+F 0 "JP12" H 5850 4400 39  0000 R CNN
+F 1 "Safety Loop Jumper: IMD Relay" H 6475 4275 50  0001 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5775 4275 50  0001 C CNN
+F 3 "~" H 5775 4275 50  0001 C CNN
+	1    5775 4275
 	1    0    0    -1  
 $EndComp
-Text Label 7700 4075 2    50   ~ 0
+Text Label 6675 4275 2    50   ~ 0
 IMD_Button_RTN
-Text Label 6050 4075 0    50   ~ 0
+Text Label 5025 4275 0    50   ~ 0
 IMD_Status
 Wire Wire Line
-	7100 4075 7700 4075
+	6075 4275 6675 4275
 Wire Wire Line
-	7100 4275 7700 4275
+	6075 4475 6675 4475
 Wire Wire Line
-	7100 3850 7700 3850
+	6075 4050 6675 4050
 Wire Wire Line
-	7100 3650 7700 3650
+	6075 3850 6675 3850
 Wire Wire Line
-	7100 4475 7700 4475
+	6075 4675 6675 4675
 Wire Wire Line
-	7100 4675 7700 4675
+	6075 4875 6675 4875
 Wire Wire Line
-	7050 4900 7700 4900
+	6025 5100 6675 5100
 Wire Wire Line
-	6050 4075 6500 4075
+	5025 4275 5475 4275
 Wire Wire Line
-	6050 4275 6500 4275
+	5025 4475 5475 4475
 Wire Notes Line
-	5900 5125 7825 5125
+	6800 5325 6800 3425
 Wire Notes Line
-	7825 5125 7825 3225
-Wire Notes Line
-	5900 5125 5900 3225
-Wire Notes Line
-	5900 3225 7825 3225
+	4875 3425 6800 3425
 Text Label 4025 775  0    50   ~ 0
 IO_Ground
 Text Notes 3100 1060 0    39   ~ 0
@@ -1391,10 +1387,6 @@ Wire Wire Line
 	1550 5650 700  5650
 Wire Wire Line
 	5025 1600 5725 1600
-Text Label 5875 6025 2    50   ~ 0
-APPS
-Text Label 5900 5875 2    50   ~ 0
-CoolTemp
 Wire Wire Line
 	5025 1900 5725 1900
 Text Label 5025 1900 0    50   ~ 0
@@ -1408,15 +1400,15 @@ SCL
 Text Label 6278 1500 0    50   ~ 0
 SDA
 Wire Notes Line
-	7820 2365 7820 3115
+	6795 2565 6795 3315
 Wire Notes Line
-	5970 3115 7820 3115
+	4945 3315 6795 3315
 Wire Notes Line
-	5960 3115 5900 3115
+	4935 3315 4875 3315
 Wire Notes Line
-	5900 3115 5900 2365
+	4875 3315 4875 2565
 Wire Notes Line
-	5900 2365 7820 2365
+	4875 2565 6795 2565
 Wire Wire Line
 	6225 1600 7150 1600
 Wire Wire Line
@@ -1434,64 +1426,6 @@ F 3 "~" H 5700 775 50  0001 C CNN
 	1    5700 775 
 	1    0    0    -1  
 $EndComp
-$Comp
-L TSI_Rev.5-rescue:NCD9830DBR2G-CarMan_KiCAD_Library-TSI_Rev.5-rescue U?
-U 1 1 6094FA1C
-P 4900 5425
-AR Path="/5F98EBE9/6094FA1C" Ref="U?"  Part="1" 
-AR Path="/6094FA1C" Ref="U43"  Part="1" 
-F 0 "U43" H 4900 6125 50  0000 C CNN
-F 1 "NCD9830DBR2G" H 4900 4725 50  0000 C CNN
-F 2 "TSI_Rev_2021_Footprint_Lib:SOP65P640X120-16N" H 4950 5675 50  0001 C CNN
-F 3 "https://www.snapeda.com/parts/NCD9830DBR2G/ON%20Semiconductor/datasheet/" H 4950 5675 50  0001 C CNN
-	1    4900 5425
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4250 4975 4200 4975
-Wire Wire Line
-	4200 4975 4200 4600
-Wire Wire Line
-	4200 4600 5550 4600
-Wire Wire Line
-	5550 4600 5550 4825
-Wire Wire Line
-	5550 4825 5500 4825
-Text Label 4775 4600 0    39   ~ 0
-GLV_RTN
-Wire Wire Line
-	4250 5875 4100 5875
-Wire Wire Line
-	4100 5875 4100 5725
-Wire Wire Line
-	4100 5725 4250 5725
-Wire Wire Line
-	4100 5725 4100 5575
-Wire Wire Line
-	4100 5575 4250 5575
-Connection ~ 4100 5725
-Wire Wire Line
-	4250 5125 4000 5125
-Wire Wire Line
-	4100 5725 3900 5725
-Text Label 4000 5125 0    39   ~ 0
-5V
-Text Label 3900 5725 0    39   ~ 0
-5V
-NoConn ~ 5500 4975
-NoConn ~ 5500 5125
-NoConn ~ 5500 5275
-NoConn ~ 5500 5425
-NoConn ~ 5500 5575
-NoConn ~ 5500 5725
-Text Label 3400 5275 0    50   ~ 0
-SDA
-Text Label 3400 5425 0    50   ~ 0
-SCL
-Wire Wire Line
-	3400 5425 4250 5425
-Wire Wire Line
-	3400 5275 4250 5275
 Text Label 5025 1700 0    49   ~ 0
 LOGIC_ISO_RTN
 Wire Wire Line
@@ -1522,9 +1456,9 @@ Text Label 8075 3150 0    49   ~ 0
 LOGIC_ISO_RTN
 Wire Wire Line
 	8075 3150 8825 3150
-Text Notes 9875 3400 2    50   ~ 0
+Text Notes 9825 3650 2    50   ~ 0
 HIGH VOLTAGE
-Text Notes 9850 3425 2    50   ~ 0
+Text Notes 9825 3675 2    50   ~ 0
 LOW VOLTAGE\n\n\n
 Text Label 8075 2650 0    50   ~ 0
 GLV_RTN
@@ -1553,7 +1487,7 @@ Wire Wire Line
 Wire Wire Line
 	10325 2550 11075 2550
 Wire Notes Line
-	8825 3300 10325 3300
+	8825 3550 10325 3550
 Wire Wire Line
 	11075 2650 10325 2650
 Text Label 11075 2650 2    50   ~ 0
@@ -1571,12 +1505,12 @@ D_LED_CTRL
 Text Label 8075 2950 0    50   ~ 0
 RTDS_CTRL
 Wire Wire Line
-	8075 3550 8825 3550
+	8075 3725 8825 3725
 Wire Wire Line
-	8075 3450 8825 3450
-Text Label 8075 3550 0    50   ~ 0
+	8075 3625 8825 3625
+Text Label 8075 3725 0    50   ~ 0
 HV-
-Text Label 8075 3450 0    50   ~ 0
+Text Label 8075 3625 0    50   ~ 0
 HV+
 Text Label 8075 2550 0    50   ~ 0
 3.3V
@@ -1585,7 +1519,7 @@ Text Label 8075 2450 0    50   ~ 0
 Text Label 8075 2750 0    50   ~ 0
 Drive_BTN
 $Sheet
-S 8825 2350 1500 1300
+S 8825 2350 1500 1475
 U 5FE1DCBA
 F0 "Status_Lights_TSAL_RTDS" 47
 F1 "StatusLights_Cockpit.sch" 47
@@ -1594,8 +1528,8 @@ F3 "D_LED_CTRL" I L 8825 3050 50
 F4 "24V" I L 8825 2450 50 
 F5 "GLV_RTN" I L 8825 2650 50 
 F6 "3.3V" I L 8825 2550 50 
-F7 "HV+" I L 8825 3450 50 
-F8 "HV-" I L 8825 3550 50 
+F7 "HV+" I L 8825 3625 50 
+F8 "HV-" I L 8825 3725 50 
 F9 "TSAL" O R 10325 2750 50 
 F10 "TSAL_RTN" O R 10325 2950 50 
 F11 "TSAL_Cockpit" O R 10325 2850 50 
@@ -1606,27 +1540,47 @@ F15 "RTDS_RTN" O R 10325 2650 50
 F16 "Drive_LED" O R 10325 2450 50 
 F17 "LOGIC_ISO_RTN" I L 8825 3150 50 
 F18 "5V" I L 8825 3250 50 
+F19 "CoolTemp" I L 8825 3350 50 
+F20 "APPS" I L 8825 3450 50 
+F21 "SDA" I R 10325 3300 50 
+F22 "SCL" I R 10325 3400 50 
 $EndSheet
 Text Notes 5550 2050 0    50   ~ 0
 TSI-Logic Connection\n
-Text Label 8075 5900 0    50   ~ 0
+Text Label 8075 6175 0    50   ~ 0
 Flowrate_RTN
 Wire Wire Line
-	8075 5900 8825 5900
-Text Label 8075 6000 0    50   ~ 0
+	8075 6175 8825 6175
+Text Label 8075 6275 0    50   ~ 0
 Flowrate
 Wire Wire Line
-	8075 6000 8825 6000
-Text Label 8075 5800 0    50   ~ 0
+	8075 6275 8825 6275
+Text Label 8075 6075 0    50   ~ 0
 3.3V_ISO
 Wire Wire Line
-	8075 5800 8825 5800
-Text Label 11075 5400 2    50   ~ 0
+	8075 6075 8825 6075
+Text Label 11075 5675 2    50   ~ 0
 Flowrate_LOGIC
 Wire Wire Line
-	10325 5400 11075 5400
+	10325 5675 11075 5675
+Wire Notes Line
+	4875 5325 4875 3425
+Wire Notes Line
+	4875 5325 6800 5325
+Text Label 8075 3450 0    50   ~ 0
+APPS
+Text Label 8075 3350 0    50   ~ 0
+CoolTemp
 Wire Wire Line
-	5500 5875 5900 5875
+	8075 3450 8825 3450
 Wire Wire Line
-	5500 6025 5875 6025
+	8075 3350 8825 3350
+Wire Wire Line
+	10325 3400 11075 3400
+Wire Wire Line
+	10325 3300 11075 3300
+Text Label 11075 3300 2    50   ~ 0
+SDA
+Text Label 11075 3400 2    50   ~ 0
+SCL
 $EndSCHEMATC
