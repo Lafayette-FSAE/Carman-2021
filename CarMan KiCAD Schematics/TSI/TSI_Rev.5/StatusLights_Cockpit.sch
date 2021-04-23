@@ -78,7 +78,7 @@ Text Label 5475 2225 2    50   ~ 0
 Drive_LED
 Text Label 3125 2025 0    50   ~ 0
 D_LED_CTRL
-Text Label 3875 3900 2    50   ~ 0
+Text Label 3250 4025 2    50   ~ 0
 24V
 Text HLabel 3050 825  0    50   Input ~ 0
 HV+
@@ -273,60 +273,60 @@ F 3 "~" H 8200 6125 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	2450 3900 2250 3900
-Text Notes 4375 4450 0    50   ~ 0
+	1825 4025 1625 4025
+Text Notes 3750 4575 0    50   ~ 0
 STA20502 RTDS BUZZER (.6A MAX)\n3/1/21 - Pulsed at max of 90mA\n3/1/21 - Tested RTDS, w/Xsistor, worked\n
 Wire Notes Line
-	4300 4425 4300 4475
+	3675 4550 3675 4600
 Wire Notes Line
-	4250 4225 4350 4225
+	3625 4350 3725 4350
 Wire Notes Line
-	4250 4425 4250 4225
+	3625 4550 3625 4350
 Wire Notes Line
-	4350 4425 4250 4425
+	3725 4550 3625 4550
 Wire Notes Line
-	4350 4225 4350 4425
+	3725 4350 3725 4550
 Wire Notes Line
-	4300 4175 4300 4225
-Text Label 3350 4575 0    50   ~ 0
+	3675 4300 3675 4350
+Text Label 2725 4700 0    50   ~ 0
 GLV_RTN
-Text Label 4275 4575 2    50   ~ 0
+Text Label 3650 4700 2    50   ~ 0
 RTDS_RTN
-Text Label 3900 4100 2    50   ~ 0
+Text Label 3275 4225 2    50   ~ 0
 RTDS
 $Comp
 L TSI_Rev.5-rescue:TLP293-CarMan_KiCAD_Library-TSI_Rev.5-rescue U13
 U 1 1 5F9B7294
-P 2750 4000
-F 0 "U13" H 2750 4325 50  0000 C CNN
-F 1 "TLP293" H 2750 4234 50  0000 C CNN
-F 2 "Package_SO:SOIC-4_4.55x2.6mm_P1.27mm" H 2550 3800 50  0001 L CIN
-F 3 "https://www.mouser.com/datasheet/2/408/Toshiba_TLP293_datasheet-1209449.pdf" H 2750 4000 50  0001 L CNN
-	1    2750 4000
+P 2125 4125
+F 0 "U13" H 2125 4450 50  0000 C CNN
+F 1 "TLP293" H 2125 4359 50  0000 C CNN
+F 2 "Package_SO:SOIC-4_4.55x2.6mm_P1.27mm" H 1925 3925 50  0001 L CIN
+F 3 "https://www.mouser.com/datasheet/2/408/Toshiba_TLP293_datasheet-1209449.pdf" H 2125 4125 50  0001 L CNN
+	1    2125 4125
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R74
 U 1 1 5F9BBE04
-P 3300 4325
-F 0 "R74" V 3200 4325 50  0000 C CNN
-F 1 "10K" V 3300 4325 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3230 4325 50  0001 C CNN
-F 3 "~" H 3300 4325 50  0001 C CNN
-	1    3300 4325
+P 2675 4450
+F 0 "R74" V 2575 4450 50  0000 C CNN
+F 1 "10K" V 2675 4450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2605 4450 50  0001 C CNN
+F 3 "~" H 2675 4450 50  0001 C CNN
+	1    2675 4450
 	1    0    0    -1  
 $EndComp
-Text Label 1300 3900 0    50   ~ 0
+Text Label 675  4025 0    50   ~ 0
 RTDS_CTRL
 $Comp
 L Device:R R12
 U 1 1 5F9BA8EE
-P 2100 3900
-F 0 "R12" V 2000 3900 50  0000 C CNN
-F 1 "120" V 2100 3900 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2030 3900 50  0001 C CNN
-F 3 "~" H 2100 3900 50  0001 C CNN
-	1    2100 3900
+P 1475 4025
+F 0 "R12" V 1375 4025 50  0000 C CNN
+F 1 "120" V 1475 4025 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1405 4025 50  0001 C CNN
+F 3 "~" H 1475 4025 50  0001 C CNN
+	1    1475 4025
 	0    1    1    0   
 $EndComp
 Wire Wire Line
@@ -358,9 +358,9 @@ Wire Wire Line
 Wire Notes Line
 	500  500  2250 500 
 Wire Wire Line
-	1300 3900 1950 3900
+	675  4025 1325 4025
 Wire Wire Line
-	1300 4100 2450 4100
+	675  4225 1825 4225
 Wire Wire Line
 	4400 7000 5000 7000
 Wire Wire Line
@@ -457,23 +457,23 @@ Wire Notes Line
 Wire Notes Line
 	500  7750 6400 7750
 Wire Wire Line
-	3050 3900 3875 3900
+	2425 4025 3250 4025
 Wire Wire Line
-	3050 4100 3300 4100
+	2425 4225 2675 4225
 Wire Wire Line
-	3300 4175 3300 4100
-Connection ~ 3300 4100
+	2675 4300 2675 4225
+Connection ~ 2675 4225
 Wire Wire Line
-	3300 4575 3300 4475
+	2675 4700 2675 4600
 Wire Wire Line
-	4300 4575 4300 4475
+	3675 4700 3675 4600
 Wire Wire Line
-	3300 4575 4300 4575
+	2675 4700 3675 4700
 Wire Wire Line
-	4300 4175 4300 4100
+	3675 4300 3675 4225
 Wire Wire Line
-	3300 4100 4300 4100
-Text Notes 4225 4375 2    43   ~ 0
+	2675 4225 3675 4225
+Text Notes 3600 4500 2    43   ~ 0
 Brake Light & RTDS\n(J18)\n
 Wire Wire Line
 	3050 825  3450 825 
@@ -491,7 +491,7 @@ Wire Notes Line
 	2325 500  3975 500 
 Text Label 3125 2225 0    50   ~ 0
 GLV_RTN
-Text Label 1300 4100 0    50   ~ 0
+Text Label 675  4225 0    50   ~ 0
 GLV_RTN
 Wire Wire Line
 	7450 6125 8050 6125
@@ -653,4 +653,27 @@ Wire Notes Line
 	2250 2800 500  2800
 Wire Notes Line
 	500  500  500  2800
+Wire Wire Line
+	5550 4025 6150 4025
+$Comp
+L Switch:SW_Push SW?
+U 1 1 60FCFBFC
+P 5350 4025
+AR Path="/60FCFBFC" Ref="SW?"  Part="1" 
+AR Path="/5FE1DCBA/60FCFBFC" Ref="SW4"  Part="1" 
+F 0 "SW4" H 5350 4200 50  0000 C CNN
+F 1 "SW_Push" H 5350 4219 50  0001 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm" H 5350 4225 50  0001 C CNN
+F 3 "~" H 5350 4225 50  0001 C CNN
+	1    5350 4025
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 4025 5150 4025
+Text Label 4550 4025 0    50   ~ 0
+RTDS
+Text Label 6150 4025 2    50   ~ 0
+24V
+Text Notes 5025 4150 0    39   ~ 0
+RTDS Button for testing
 $EndSCHEMATC
