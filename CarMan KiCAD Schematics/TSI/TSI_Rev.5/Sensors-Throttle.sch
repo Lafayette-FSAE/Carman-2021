@@ -843,8 +843,6 @@ Text Label 2225 5400 0    47   ~ 0
 SDA
 Text Label 2225 5550 0    47   ~ 0
 SCL
-Text Notes 6950 6600 0    98   ~ 0
-Binary Address:\n1001010
 Text Notes 12200 10350 0    157  ~ 0
 THROTTLE VOLTAGE ISOLATOR
 Text Label 6400 9300 2    50   ~ 0
@@ -1373,4 +1371,6 @@ Wire Wire Line
 	5850 5000 5700 5000
 Wire Wire Line
 	5675 5950 5850 5950
+Text Notes 6950 6500 0    59   ~ 0
+I2C Address: 0x4A\n(1001010-10010[A1,A0])
 $EndSCHEMATC

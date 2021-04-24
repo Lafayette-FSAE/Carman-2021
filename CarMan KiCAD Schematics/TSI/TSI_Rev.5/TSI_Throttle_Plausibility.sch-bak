@@ -274,7 +274,7 @@ P 9450 5900
 F 0 "U22" H 9450 7165 50  0000 C CNN
 F 1 "MCP23016-I_SO" H 9450 7074 50  0000 C CNN
 F 2 "TSI_Rev_2021_Footprint_Lib:SOIC127P1030X265-28N" H 9450 5900 50  0001 L BNN
-F 3 "MCP23016-I/SO" H 9450 5900 50  0001 L BNN
+F 3 "https://ww1.microchip.com/downloads/en/DeviceDoc/20090C.pdf" H 9450 5900 50  0001 L BNN
 F 4 "SOIC-28 Microchip" H 9450 5900 50  0001 L BNN "Field6"
 F 5 "MCP23016 Series 5.5 V 400 kHz SMT 16-Bit I2C I/O Expander - SOIC-28" H 9450 5900 50  0001 L BNN "Field7"
 	1    9450 5900
@@ -311,8 +311,6 @@ Wire Notes Line
 	4900 3425 6150 3425
 Wire Notes Line
 	7750 6950 4900 6950
-Text Notes 8950 7550 0    79   ~ 0
-Binary Address\n0100000
 Wire Wire Line
 	8750 3200 8950 3200
 Connection ~ 8750 3200
@@ -695,8 +693,6 @@ F 3 "~" H 13200 3350 50  0001 C CNN
 $EndComp
 Text Label 14900 4550 2    50   ~ 0
 5V
-Text Notes 13675 5650 0    50   ~ 0
-Binary Address:\n1001101\n
 Wire Wire Line
 	13200 3600 13200 4550
 Text Label 15900 3550 2    50   ~ 0
@@ -2281,4 +2277,8 @@ Wire Wire Line
 	3000 10350 3575 10350
 Wire Wire Line
 	6400 10350 6975 10350
+Text Notes 8875 7500 0    59   ~ 0
+I2C Address: 0x40\n(0100000-0100[A2,A1,A0])
+Text Notes 13375 5650 0    59   ~ 0
+I2C Address: 0x4D\n(1001101-10011[A1,A0])
 $EndSCHEMATC

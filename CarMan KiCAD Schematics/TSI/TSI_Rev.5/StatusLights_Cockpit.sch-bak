@@ -554,74 +554,74 @@ Wire Notes Line
 	6975 5250 11175 5250
 Text Notes 8625 5400 0    79   ~ 0
 DRIVE BUTTON
-Text Label 9950 4225 2    50   ~ 0
+Text Label 10025 4475 2    50   ~ 0
 CoolTemp
 $Comp
 L TSI_Rev.5-rescue:NCD9830DBR2G-CarMan_KiCAD_Library-TSI_Rev.5-rescue U?
 U 1 1 6089B51A
-P 8875 3775
+P 8950 4025
 AR Path="/5F98EBE9/6089B51A" Ref="U?"  Part="1" 
 AR Path="/6089B51A" Ref="U?"  Part="1" 
 AR Path="/5FE1DCBA/6089B51A" Ref="U43"  Part="1" 
-F 0 "U43" H 8850 4575 50  0000 C CNN
-F 1 "NCD9830DBR2G" H 8875 2975 50  0000 C CNN
-F 2 "TSI_Rev_2021_Footprint_Lib:SOP65P640X120-16N" H 8925 4025 50  0001 C CNN
-F 3 "https://www.snapeda.com/parts/NCD9830DBR2G/ON%20Semiconductor/datasheet/" H 8925 4025 50  0001 C CNN
-	1    8875 3775
+F 0 "U43" H 8925 4825 50  0000 C CNN
+F 1 "NCD9830DBR2G" H 8950 3225 50  0000 C CNN
+F 2 "TSI_Rev_2021_Footprint_Lib:SOP65P640X120-16N" H 9000 4275 50  0001 C CNN
+F 3 "https://www.snapeda.com/parts/NCD9830DBR2G/ON%20Semiconductor/datasheet/" H 9000 4275 50  0001 C CNN
+	1    8950 4025
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8225 3325 8175 3325
+	8300 3575 8250 3575
 Wire Wire Line
-	8175 2825 9525 2825
+	8250 3075 9600 3075
 Wire Wire Line
-	9525 3175 9475 3175
-Text Label 8750 2825 0    39   ~ 0
+	9600 3425 9550 3425
+Text Label 8825 3075 0    39   ~ 0
 GLV_RTN
 Wire Wire Line
-	8225 4225 8075 4225
+	8300 4475 8150 4475
 Wire Wire Line
-	8075 4225 8075 4075
+	8150 4475 8150 4325
 Wire Wire Line
-	8075 4075 8225 4075
+	8150 4325 8300 4325
 Wire Wire Line
-	8075 4075 8075 3925
+	8150 4325 8150 4175
 Wire Wire Line
-	8075 3925 8225 3925
-Connection ~ 8075 4075
-Text Label 7850 3475 0    39   ~ 0
+	8150 4175 8300 4175
+Connection ~ 8150 4325
+Text Label 7925 3725 0    39   ~ 0
 5V
-NoConn ~ 9475 3325
-NoConn ~ 9475 3475
-NoConn ~ 9475 3625
-NoConn ~ 9475 3775
-NoConn ~ 9475 3925
-NoConn ~ 9475 4075
-Text Label 7850 3775 0    50   ~ 0
+NoConn ~ 9550 3575
+NoConn ~ 9550 3725
+NoConn ~ 9550 3875
+NoConn ~ 9550 4025
+NoConn ~ 9550 4175
+NoConn ~ 9550 4325
+Text Label 7925 4025 0    50   ~ 0
 SCL
-Text Label 7850 3625 0    50   ~ 0
+Text Label 7925 3875 0    50   ~ 0
 SDA
-Text Label 7850 4075 0    39   ~ 0
+Text Label 7925 4325 0    39   ~ 0
 5V
-Text Label 9950 4375 2    50   ~ 0
+Text Label 10025 4625 2    50   ~ 0
 APPS
 Wire Wire Line
-	9525 2825 9525 3175
+	9600 3075 9600 3425
 Wire Wire Line
-	8175 2825 8175 3325
+	8250 3075 8250 3575
 Wire Wire Line
-	8225 3625 7850 3625
+	8300 3875 7925 3875
 Wire Wire Line
-	7850 3775 8225 3775
+	7925 4025 8300 4025
 Wire Wire Line
-	7850 4075 8075 4075
+	7925 4325 8150 4325
 Wire Wire Line
-	7850 3475 8225 3475
+	7925 3725 8300 3725
 Wire Wire Line
-	9475 4225 9950 4225
+	9550 4475 10025 4475
 Wire Wire Line
-	9475 4375 9950 4375
-Text Notes 8450 4725 0    59   ~ 0
+	9550 4625 10025 4625
+Text Notes 8525 4975 0    59   ~ 0
 I2C Address: 0x4B
 Text HLabel 1250 1750 0    50   Input ~ 0
 CoolTemp

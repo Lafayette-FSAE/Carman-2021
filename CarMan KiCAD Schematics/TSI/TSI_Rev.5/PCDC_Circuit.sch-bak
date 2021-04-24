@@ -72,7 +72,7 @@ Text Label 4450 11425 0    59   ~ 0
 AIRS+
 Text Label 4450 11625 0    59   ~ 0
 GLV_RTN
-Text Label 3600 14200 0    59   ~ 0
+Text Label 3925 14450 0    59   ~ 0
 GLV_RTN
 Text Label 6950 14200 2    59   ~ 0
 IO_Ground
@@ -276,13 +276,6 @@ F 3 "https://www.snapeda.com/parts/ZVP1320FTA/Diodes%20Inc./datasheet/" H 7500 1
 	1    7500 11425
 	1    0    0    1   
 $EndComp
-Wire Wire Line
-	4150 14150 4150 14200
-Connection ~ 4150 14200
-Wire Wire Line
-	4150 14200 4950 14200
-Wire Wire Line
-	4900 14050 4950 14050
 Text Label 6950 14350 2    59   ~ 0
 24HV
 Wire Wire Line
@@ -360,8 +353,6 @@ Wire Wire Line
 	18775 13700 19275 13700
 Wire Wire Line
 	18650 12025 18950 12025
-Wire Wire Line
-	3600 14200 4150 14200
 Wire Wire Line
 	4450 11425 4950 11425
 Wire Wire Line
@@ -635,27 +626,20 @@ Wire Wire Line
 	4300 12350 4350 12350
 Wire Wire Line
 	5050 12350 5450 12350
-Wire Wire Line
-	3650 13650 4150 13650
-Wire Wire Line
-	4150 13650 4900 13650
-Wire Wire Line
-	4900 13650 4900 14050
-Connection ~ 4150 13650
 $Comp
 L pspice:CAP C?
 U 1 1 5FBC069E
-P 4150 13900
+P 4475 14200
 AR Path="/5FC85F57/5FBC069E" Ref="C?"  Part="1" 
 AR Path="/6196BF15/5FBC069E" Ref="C2"  Part="1" 
-F 0 "C2" H 4250 13800 50  0000 C CNN
-F 1 "4.7u" H 4250 14000 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4150 13900 50  0001 C CNN
-F 3 "~" H 4150 13900 50  0001 C CNN
-	1    4150 13900
+F 0 "C2" H 4575 14100 50  0000 C CNN
+F 1 "4.7u" H 4575 14300 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4475 14200 50  0001 C CNN
+F 3 "~" H 4475 14200 50  0001 C CNN
+	1    4475 14200
 	1    0    0    -1  
 $EndComp
-Text Label 3650 13650 0    59   ~ 0
+Text Label 3925 13950 0    59   ~ 0
 24V
 Wire Notes Line
 	5700 10550 5700 16050
@@ -2066,4 +2050,22 @@ Wire Wire Line
 Connection ~ 5425 5425
 Wire Wire Line
 	5425 5425 5950 5425
+Wire Wire Line
+	3925 14450 4475 14450
+Wire Wire Line
+	3925 13950 4475 13950
+Wire Wire Line
+	4475 13950 4775 13950
+Connection ~ 4475 13950
+Wire Wire Line
+	4475 14450 4800 14450
+Wire Wire Line
+	4800 14450 4800 14200
+Wire Wire Line
+	4800 14200 4950 14200
+Connection ~ 4475 14450
+Wire Wire Line
+	4775 13950 4775 14050
+Wire Wire Line
+	4775 14050 4950 14050
 $EndSCHEMATC
