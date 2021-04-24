@@ -691,7 +691,7 @@ F 3 "~" H 13200 3350 50  0001 C CNN
 	1    13200 3350
 	0    -1   -1   0   
 $EndComp
-Text Label 14900 4550 2    50   ~ 0
+Text Label 15000 4550 2    50   ~ 0
 5V
 Wire Wire Line
 	13200 3600 13200 4550
@@ -701,26 +701,13 @@ Text Label 15900 2750 2    50   ~ 0
 5V
 Text Label 13475 3150 0    50   ~ 0
 Throttle_LV
-$Comp
-L TSI_Rev.5-rescue:DAC5574IDGS-CarMan_KiCAD_Library-TSI_Rev.5-rescue U23
-U 1 1 609B748C
-P 13900 4750
-F 0 "U23" H 13900 5200 50  0000 C CNN
-F 1 "DAC5574IDGS" H 13900 4100 50  0000 C CNN
-F 2 "TSI_Rev_2021_Footprint_Lib:DAC5574IDGS" H 13900 4750 50  0001 L BNN
-F 3 "https://www.ti.com/lit/ds/symlink/dac5574.pdf?HQS=dis-mous-null-mousermode-dsf-pf-null-wwe&ts=1617329757843&ref_url=https%253A%252F%252Fwww.mouser.com%252F" H 13900 4750 50  0001 L BNN
-F 4 "8-bit, Quad, Digital-to-Analog Converter with I2C interface 10-VSSOP -40 to 105" H 13900 4750 50  0001 L BNN "Details"
-F 5 "Texas Instruments" H 13900 4750 50  0001 L BNN "Man."
-	1    13900 4750
-	-1   0    0    -1  
-$EndComp
-Text Label 14950 4850 2    50   ~ 0
+Text Label 15000 4850 2    50   ~ 0
 SDA
-Text Label 14950 4750 2    50   ~ 0
+Text Label 15000 4750 2    50   ~ 0
 SCL
 Text Label 8950 4000 0    50   ~ 0
 GLV_RTN
-Text Label 14950 4950 2    50   ~ 0
+Text Label 15000 4950 2    50   ~ 0
 5V
 Text Notes 3750 725  0    79   ~ 0
 Plausibility Window (0.5V)\n
@@ -1466,10 +1453,6 @@ Wire Wire Line
 Connection ~ 6750 3350
 Wire Notes Line
 	4900 3250 4900 6950
-Wire Notes Line
-	10000 3850 10000 4000
-Wire Notes Line
-	10650 4000 10650 3850
 Wire Wire Line
 	11600 2400 11700 2400
 Connection ~ 11700 2400
@@ -1489,14 +1472,6 @@ Text Label 15000 5150 2    50   ~ 0
 GLV_RTN
 Wire Wire Line
 	14600 5150 15000 5150
-Wire Wire Line
-	14950 4950 14600 4950
-Wire Wire Line
-	14950 4850 14600 4850
-Wire Wire Line
-	14600 4750 14950 4750
-Wire Wire Line
-	14900 4550 14600 4550
 Wire Wire Line
 	13750 2400 14050 2400
 Wire Wire Line
@@ -1920,12 +1895,6 @@ Wire Wire Line
 	14050 2950 14150 2950
 Wire Wire Line
 	9750 3700 9875 3700
-Wire Notes Line
-	10650 3850 10000 3850
-Wire Notes Line
-	10000 4000 10650 4000
-Text Notes 10000 4000 0    47   ~ 0
-Connects to\nMCP23016 Pin 12
 $Comp
 L Device:R R42
 U 1 1 5FCAFB48
@@ -1937,14 +1906,11 @@ F 3 "~" H 10750 3250 50  0001 C CNN
 	1    10750 3250
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	10550 3700 10550 3900
 Connection ~ 9875 3700
 Wire Wire Line
 	10550 3250 10550 3700
 Wire Wire Line
 	9875 3700 10550 3700
-Connection ~ 10550 3700
 Text Label 10475 3700 2    50   ~ 0
 Throttle_PL
 $Comp
@@ -2281,4 +2247,25 @@ Text Notes 8875 7500 0    59   ~ 0
 I2C Address: 0x40\n(0100000-0100[A2,A1,A0])
 Text Notes 13375 5650 0    59   ~ 0
 I2C Address: 0x4D\n(1001101-10011[A1,A0])
+Wire Wire Line
+	14600 4550 15000 4550
+Wire Wire Line
+	14600 4750 15000 4750
+Wire Wire Line
+	14600 4850 15000 4850
+Wire Wire Line
+	14600 4950 15000 4950
+$Comp
+L TSI_Rev.5-rescue:DAC5574IDGS-CarMan_KiCAD_Library-TSI_Rev.5-rescue U23
+U 1 1 609B748C
+P 13900 4750
+F 0 "U23" H 13900 5200 50  0000 C CNN
+F 1 "DAC5574IDGS" H 13900 4100 50  0000 C CNN
+F 2 "TSI_Rev_2021_Footprint_Lib:DAC5574IDGS" H 13900 4750 50  0001 L BNN
+F 3 "https://www.ti.com/lit/ds/symlink/dac5574.pdf?HQS=dis-mous-null-mousermode-dsf-pf-null-wwe&ts=1617329757843&ref_url=https%253A%252F%252Fwww.mouser.com%252F" H 13900 4750 50  0001 L BNN
+F 4 "8-bit, Quad, Digital-to-Analog Converter with I2C interface 10-VSSOP -40 to 105" H 13900 4750 50  0001 L BNN "Details"
+F 5 "Texas Instruments" H 13900 4750 50  0001 L BNN "Man."
+	1    13900 4750
+	-1   0    0    -1  
+$EndComp
 $EndSCHEMATC

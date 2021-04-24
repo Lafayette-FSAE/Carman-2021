@@ -1371,6 +1371,6 @@ Wire Wire Line
 	5850 5000 5700 5000
 Wire Wire Line
 	5675 5950 5850 5950
-Text Notes 7075 6425 0    59   ~ 0
-I2C Address: 0x4A
+Text Notes 6950 6500 0    59   ~ 0
+I2C Address: 0x4A\n(1001010-10010[A1,A0])
 $EndSCHEMATC
