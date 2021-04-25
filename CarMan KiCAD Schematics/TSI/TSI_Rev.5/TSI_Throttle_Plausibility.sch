@@ -2031,7 +2031,7 @@ Wire Wire Line
 Wire Wire Line
 	1550 2450 2325 2450
 $Comp
-L TSI_Rev.5-rescue:TLP293-CarMan_KiCAD_Library-TSI_Rev.5-rescue U?
+L CarMan_KiCAD_Library:TLP293 U?
 U 1 1 616A81A5
 P 14150 7600
 AR Path="/5FE1DE7D/616A81A5" Ref="U?"  Part="1" 

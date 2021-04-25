@@ -1453,10 +1453,6 @@ Wire Wire Line
 Connection ~ 6750 3350
 Wire Notes Line
 	4900 3250 4900 6950
-Wire Notes Line
-	10000 3850 10000 4000
-Wire Notes Line
-	10650 4000 10650 3850
 Wire Wire Line
 	11600 2400 11700 2400
 Connection ~ 11700 2400
@@ -1899,12 +1895,6 @@ Wire Wire Line
 	14050 2950 14150 2950
 Wire Wire Line
 	9750 3700 9875 3700
-Wire Notes Line
-	10650 3850 10000 3850
-Wire Notes Line
-	10000 4000 10650 4000
-Text Notes 10000 4000 0    47   ~ 0
-Connects to\nMCP23016 Pin 12
 $Comp
 L Device:R R42
 U 1 1 5FCAFB48
@@ -1916,14 +1906,11 @@ F 3 "~" H 10750 3250 50  0001 C CNN
 	1    10750 3250
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	10550 3700 10550 3900
 Connection ~ 9875 3700
 Wire Wire Line
 	10550 3250 10550 3700
 Wire Wire Line
 	9875 3700 10550 3700
-Connection ~ 10550 3700
 Text Label 10475 3700 2    50   ~ 0
 Throttle_PL
 $Comp
@@ -2044,7 +2031,7 @@ Wire Wire Line
 Wire Wire Line
 	1550 2450 2325 2450
 $Comp
-L TSI_Rev.5-rescue:TLP293-CarMan_KiCAD_Library-TSI_Rev.5-rescue U?
+L CarMan_KiCAD_Library:TLP293 U?
 U 1 1 616A81A5
 P 14150 7600
 AR Path="/5FE1DE7D/616A81A5" Ref="U?"  Part="1" 

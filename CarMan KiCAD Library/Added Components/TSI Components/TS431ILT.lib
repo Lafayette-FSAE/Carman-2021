@@ -1,0 +1,30 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#SamacSys ECAD Model TS431ILT
+#/222601/69269/2.34/5/3/Integrated Circuit
+DEF TS431ILT IC 0 30 Y Y 1 F N
+F0 "IC" 950 300 50 H V L CNN
+F1 "TS431ILT" 950 200 50 H V L CNN
+F2 "SOT95P280X145-5N" 950 100 50 H I L CNN
+F3 "http://www.st.com/web/en/resource/technical/document/datasheet/CD00001336.pdf" 950 0 50 H I L CNN
+F4 "" 950 -100 50 H I L CNN "Description"
+F5 "1.45" 950 -200 50 H I L CNN "Height"
+F6 "STMicroelectronics" 950 -300 50 H I L CNN "Manufacturer_Name"
+F7 "TS431ILT" 950 -400 50 H I L CNN "Manufacturer_Part_Number"
+F8 "7957017P" 950 -500 50 H I L CNN "RS Part Number"
+F9 "http://uk.rs-online.com/web/p/products/7957017P" 950 -600 50 H I L CNN "RS Price/Stock"
+F10 "70521197" 950 -700 50 H I L CNN "Allied_Number"
+F11 "http://www.alliedelec.com/stmicroelectronics-ts431ilt/70521197/" 950 -800 50 H I L CNN "Allied Price/Stock"
+F12 "TS431ILT" 950 -900 50 H I L CNN "Arrow Part Number"
+F13 "https://www.arrow.com/en/products/ts431ilt/stmicroelectronics" 950 -1000 50 H I L CNN "Arrow Price/Stock"
+DRAW
+X NC_1 1 0 0 200 R 50 50 0 0 B
+X NC_2 2 0 -100 200 R 50 50 0 0 B
+X K 3 0 -200 200 R 50 50 0 0 B
+X REF 4 1100 0 200 L 50 50 0 0 B
+X A 5 1100 -100 200 L 50 50 0 0 B
+P 5 0 1 6 200 100 900 100 900 -300 200 -300 200 100 N
+ENDDRAW
+ENDDEF
+#
+#End Library
