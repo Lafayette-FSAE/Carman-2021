@@ -450,9 +450,9 @@ Text Label 6350 10550 0    50   ~ 0
 5V_NON_ISO
 Text Label 6350 10700 0    50   ~ 0
 GLV_RTN
-Text Label 15875 1275 2    50   ~ 0
+Text Label 15900 1325 2    50   ~ 0
 CAN_H
-Text Label 15875 1175 2    50   ~ 0
+Text Label 15900 1225 2    50   ~ 0
 CAN_L
 Text Label 13250 5900 0    50   ~ 0
 5V_ISO
@@ -613,11 +613,11 @@ $EndComp
 NoConn ~ 2875 3350
 NoConn ~ 2875 3450
 NoConn ~ 6525 4550
-Text Label 13975 1175 0    50   ~ 0
+Text Label 14000 1225 0    50   ~ 0
 ISO_RTN
-Text Label 13975 975  0    50   ~ 0
+Text Label 14000 1025 0    50   ~ 0
 Cooling_CTRL
-Text Label 13975 1075 0    50   ~ 0
+Text Label 14000 1125 0    50   ~ 0
 SR_CTRL
 $Comp
 L Device:LED D5
@@ -715,7 +715,7 @@ Text Notes 2700 9675 0    71   ~ 0
 Non-Isolated Voltage LEDs
 Text Notes 900  9675 0    79   ~ 0
 Isolated Status LEDs
-Text Notes 14450 1525 0    50   ~ 0
+Text Notes 14475 1575 0    50   ~ 0
 Logic-TSI Connector
 Text Label 13825 4425 2    50   ~ 0
 ISO_RTN
@@ -900,9 +900,9 @@ Text Label 12975 2125 2    50   ~ 0
 SDA_TSI_GLV
 Text Label 15300 9275 2    50   ~ 0
 SDA_TSI_GLV
-Text Label 15875 975  2    50   ~ 0
+Text Label 15900 1025 2    50   ~ 0
 SDA_TSI_GLV
-Text Label 15875 1075 2    50   ~ 0
+Text Label 15900 1125 2    50   ~ 0
 SCL_TSI_GLV
 $Comp
 L Logic-rescue:Conn_01x04-Connector_Generic-Logic-rescue J1
@@ -937,9 +937,9 @@ Wire Notes Line
 Wire Wire Line
 	3300 11000 3650 11000
 Wire Wire Line
-	15125 1075 15875 1075
+	15150 1125 15900 1125
 Wire Wire Line
-	15125 975  15875 975 
+	15150 1025 15900 1025
 Wire Notes Line
 	4250 9500 4250 11150
 Wire Notes Line
@@ -1237,18 +1237,18 @@ Wire Wire Line
 	14775 9175 15500 9175
 Wire Wire Line
 	14775 9475 15500 9475
-Text Label 13975 1375 0    50   ~ 0
+Text Label 14000 1425 0    50   ~ 0
 FlowRate
 NoConn ~ 9575 7275
 NoConn ~ 2875 3650
 NoConn ~ 2875 3050
 Wire Wire Line
-	15875 1275 15125 1275
+	15900 1325 15150 1325
 Wire Wire Line
-	15125 1175 15875 1175
-Text Label 15200 1275 0    50   ~ 0
+	15150 1225 15900 1225
+Text Label 15225 1325 0    50   ~ 0
 BP_CAN+
-Text Label 15200 1175 0    50   ~ 0
+Text Label 15225 1225 0    50   ~ 0
 BP_CAN-
 NoConn ~ 2875 3250
 NoConn ~ 6525 4450
@@ -1366,7 +1366,7 @@ Wire Wire Line
 	2200 4250 2875 4250
 Text Label 2200 4250 0    50   ~ 0
 FlowRate
-Text Label 13975 1275 0    50   ~ 0
+Text Label 14000 1325 0    50   ~ 0
 3.3V_ISO
 $Comp
 L CarMan_KiCAD_Library:BNO_055 U10
@@ -1396,7 +1396,7 @@ Wire Wire Line
 	7200 3550 6525 3550
 Text Label 7200 3550 2    47   ~ 0
 STATE_OUT_1
-NoConn ~ 15125 1375
+NoConn ~ 15150 1425
 NoConn ~ 2875 4450
 NoConn ~ 2875 4550
 NoConn ~ 2875 4150
@@ -1404,12 +1404,12 @@ NoConn ~ 2875 3550
 $Comp
 L Connector_Generic:Conn_02x05_Odd_Even J3
 U 1 1 609BCAC7
-P 14825 1175
-F 0 "J3" H 14875 1475 50  0000 C CNN
-F 1 "Logic-TSI Connector" H 14875 1501 50  0001 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x05_P2.54mm_Vertical" H 14825 1175 50  0001 C CNN
-F 3 "~" H 14825 1175 50  0001 C CNN
-	1    14825 1175
+P 14850 1225
+F 0 "J3" H 14900 1525 50  0000 C CNN
+F 1 "Logic-TSI Connector" H 14900 1551 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x05_P2.54mm_Vertical" H 14850 1225 50  0001 C CNN
+F 3 "~" H 14850 1225 50  0001 C CNN
+	1    14850 1225
 	1    0    0    -1  
 $EndComp
 Wire Notes Line
@@ -1425,15 +1425,15 @@ Mounted External Components
 Text Notes 12525 4950 0    47   ~ 0
 Symbol & Footprint for IMU to\nbe mounted to the Logic board
 Wire Wire Line
-	14625 1075 13975 1075
+	14650 1125 14000 1125
 Wire Wire Line
-	13975 975  14625 975 
+	14000 1025 14650 1025
 Wire Wire Line
-	13975 1175 14625 1175
+	14000 1225 14650 1225
 Wire Wire Line
-	14625 1275 13975 1275
+	14650 1325 14000 1325
 Wire Wire Line
-	13975 1375 14625 1375
+	14000 1425 14650 1425
 Wire Notes Line
 	13350 525  13350 825 
 Wire Notes Line
