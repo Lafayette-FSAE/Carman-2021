@@ -1,4 +1,4 @@
-27304866218680
+33965268033696
 CarMan General Footprints
 511-HCF40106YM013TR
 
@@ -6,6 +6,13 @@ CarMan General Footprints
 0
 14
 14
+CarMan General Footprints
+BNO_055
+
+
+0
+7
+7
 CarMan General Footprints
 CONV_PYB20-Q24-S5
 
@@ -63,6 +70,20 @@ Laf_Racing_Logo
 0
 0
 CarMan General Footprints
+Molex_Mega-Fit_76829-0102_2x01_P5.70mm_Vertical
+Molex Mega-Fit Power Connectors, 76829-0102 (compatible alternatives: 172065-0202, 172065-0302), 1 Pins per row (http://www.molex.com/pdm_docs/sd/768290102_sd.pdf), generated with kicad-footprint-generator
+connector Molex Mega-Fit side entry
+0
+2
+2
+CarMan General Footprints
+Molex_Mega-Fit_76829-0106_2x03_P5.70mm_Vertical
+Molex Mega-Fit Power Connectors, 76829-0106 (compatible alternatives: 172065-0206, 172065-0306), 3 Pins per row (http://www.molex.com/pdm_docs/sd/768290102_sd.pdf), generated with kicad-footprint-generator
+connector Molex Mega-Fit side entry
+0
+6
+6
+CarMan General Footprints
 Molex_MiniFit-JR-5556-02A_2x01x4.20mm_Straight
 Molex Mini-Fit JR, PN:5556-02A, dual row, top entry type, through hole
 connector molex mini-fit 5556
@@ -97,6 +118,13 @@ Raspberry_Pi_3_B
 0
 40
 40
+CarMan General Footprints
+Raspberry_Pi_RTC
+Through hole straight socket strip, 2x03, 2.54mm pitch, double cols (from Kicad 4.0.7), script generated
+Through hole socket strip THT 2x03 2.54mm double row
+0
+6
+6
 CarMan General Footprints
 SOIC127P600X175-8N
 

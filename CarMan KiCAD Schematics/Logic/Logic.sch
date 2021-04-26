@@ -57,17 +57,6 @@ NoConn ~ 8525 7075
 NoConn ~ 8525 7175
 NoConn ~ 8525 7275
 NoConn ~ 8525 7375
-$Comp
-L Logic-rescue:Conn_01x08-Connector_Generic-Logic-rescue J7
-U 1 1 5FA1FE07
-P 15225 2025
-F 0 "J7" H 15175 2425 50  0000 L CNN
-F 1 "You're Welcome -Ethan" H 15305 1926 50  0001 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical" H 15225 2025 50  0001 C CNN
-F 3 "~" H 15225 2025 50  0001 C CNN
-	1    15225 2025
-	-1   0    0    -1  
-$EndComp
 NoConn ~ 9575 8075
 NoConn ~ 9575 7875
 NoConn ~ 9575 7775
@@ -403,8 +392,6 @@ Text Label 8675 9950 2    50   ~ 0
 GPIO25
 Text Label 8675 10550 2    50   ~ 0
 PI_SPI_CEO
-Text Label 10525 7575 2    50   ~ 0
-GPIO25
 Text Label 10525 7675 2    50   ~ 0
 PI_SPI_CEO
 Text Label 6350 9950 0    50   ~ 0
@@ -430,34 +417,34 @@ NoConn ~ 6525 4750
 $Comp
 L Logic-rescue:Conn_01x06-Connector_Generic-Logic-rescue J5
 U 1 1 5FDCB4A9
-P 13200 2125
-F 0 "J5" H 13200 2425 50  0000 C CNN
-F 1 "PIC program" H 13200 1700 50  0001 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 13200 2125 50  0001 C CNN
-F 3 "~" H 13200 2125 50  0001 C CNN
-	1    13200 2125
+P 13625 2125
+F 0 "J5" H 13625 2425 50  0000 C CNN
+F 1 "PIC program" H 13625 1700 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 13625 2125 50  0001 C CNN
+F 3 "~" H 13625 2125 50  0001 C CNN
+	1    13625 2125
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	13400 1925 13850 1925
+	13825 1925 14275 1925
 Wire Wire Line
-	13400 2025 13850 2025
+	13825 2025 14275 2025
 Wire Wire Line
-	13400 2125 13850 2125
+	13825 2125 14275 2125
 Wire Wire Line
-	13400 2225 13850 2225
+	13825 2225 14275 2225
 Wire Wire Line
-	13400 2325 13850 2325
-NoConn ~ 13400 2425
-Text Label 13850 2025 2    50   ~ 0
+	13825 2325 14275 2325
+NoConn ~ 13825 2425
+Text Label 14275 2025 2    50   ~ 0
 3.3V_ISO
-Text Label 13850 1925 2    50   ~ 0
+Text Label 14275 1925 2    50   ~ 0
 ~MCLR~
-Text Label 13850 2125 2    50   ~ 0
+Text Label 14275 2125 2    50   ~ 0
 ISO_RTN
-Text Label 13850 2225 2    50   ~ 0
+Text Label 14275 2225 2    50   ~ 0
 PGEC
-Text Label 13850 2325 2    50   ~ 0
+Text Label 14275 2325 2    50   ~ 0
 PGED
 Text Label 6350 10550 0    50   ~ 0
 5V_NON_ISO
@@ -563,19 +550,19 @@ ISO_RTN
 $Comp
 L Logic-rescue:Conn_01x04-Connector_Generic-Logic-rescue J4
 U 1 1 5FB30D0C
-P 12025 2150
-F 0 "J4" H 11975 1850 50  0000 L CNN
-F 1 "GLV BOB" H 11850 2375 50  0001 L CNN
-F 2 "CarMan General Footprints:Molex_MiniFit-JR-5556-04A_2x02x4.20mm_Straight" H 12025 2150 50  0001 C CNN
-F 3 "~" H 12025 2150 50  0001 C CNN
-	1    12025 2150
+P 12175 2125
+F 0 "J4" H 12125 1825 50  0000 L CNN
+F 1 "GLV BOB" H 12000 2350 50  0001 L CNN
+F 2 "CarMan General Footprints:Molex_MiniFit-JR-5556-04A_2x02x4.20mm_Straight" H 12175 2125 50  0001 C CNN
+F 3 "~" H 12175 2125 50  0001 C CNN
+	1    12175 2125
 	-1   0    0    1   
 $EndComp
-Text Label 12825 2250 2    50   ~ 0
+Text Label 12975 2225 2    50   ~ 0
 SCL_TSI_GLV
-Text Label 12825 2050 2    50   ~ 0
+Text Label 12975 2025 2    50   ~ 0
 GLV_RTN
-Text Label 12825 1950 2    50   ~ 0
+Text Label 12975 1925 2    50   ~ 0
 24V
 $Comp
 L Device:C C?
@@ -759,8 +746,6 @@ Wire Wire Line
 Wire Wire Line
 	9725 6775 10525 6775
 Wire Wire Line
-	9575 7575 10525 7575
-Wire Wire Line
 	9575 7675 10525 7675
 Wire Wire Line
 	14575 5900 15100 5900
@@ -911,7 +896,7 @@ Wire Wire Line
 	9450 10100 9975 10100
 Wire Wire Line
 	9450 10500 9975 10500
-Text Label 12825 2150 2    50   ~ 0
+Text Label 12975 2125 2    50   ~ 0
 SDA_TSI_GLV
 Text Label 15300 9275 2    50   ~ 0
 SDA_TSI_GLV
@@ -1035,68 +1020,12 @@ Wire Wire Line
 	5050 10825 5425 10825
 Text Notes 11875 775  0    118  ~ 0
 LOGIC HEADERS
-Text Notes 11875 2400 0    50   ~ 0
+Text Notes 12025 2375 0    50   ~ 0
 GLV 24V and I2C to logic
 Wire Notes Line
 	11800 825  13350 825 
-Text Notes 12900 2575 0    50   ~ 0
+Text Notes 13325 2575 0    50   ~ 0
 PICKit Programming Header
-Text Label 15825 1725 2    47   ~ 0
-GPIO_16
-Wire Wire Line
-	15425 1725 15825 1725
-Wire Wire Line
-	9575 8275 10525 8275
-Text Label 10525 8275 2    47   ~ 0
-GPIO_16
-Text Label 15825 1825 2    47   ~ 0
-GPIO_20
-Wire Wire Line
-	15425 1825 15825 1825
-Wire Wire Line
-	9575 8375 10525 8375
-Text Label 10525 8375 2    47   ~ 0
-GPIO_20
-Text Label 15825 1925 2    47   ~ 0
-GPIO_21
-Wire Wire Line
-	15425 1925 15825 1925
-Wire Wire Line
-	9575 8475 10525 8475
-Text Label 10525 8475 2    47   ~ 0
-GPIO_21
-Wire Wire Line
-	15425 2025 15825 2025
-Text Label 15825 2025 2    47   ~ 0
-GPIO_26
-Text Label 7775 8375 0    47   ~ 0
-GPIO_26
-Wire Wire Line
-	15425 2125 15825 2125
-Text Label 15825 2125 2    47   ~ 0
-GPIO_19
-Text Label 7775 8275 0    47   ~ 0
-GPIO_19
-Wire Wire Line
-	15425 2225 15825 2225
-Text Label 15825 2225 2    47   ~ 0
-GPIO_13
-Text Label 7775 8175 0    47   ~ 0
-GPIO_13
-Wire Wire Line
-	15425 2325 15825 2325
-Text Label 15825 2325 2    47   ~ 0
-GPIO_5
-Text Label 7775 7975 0    47   ~ 0
-GPIO_5
-Wire Wire Line
-	15425 2425 15825 2425
-Text Label 15825 2425 2    47   ~ 0
-GPIO_0
-Text Label 7775 7875 0    47   ~ 0
-GPIO_0
-Text Notes 15025 2600 0    50   ~ 0
-Extra GPIO Pins
 Text Label 12750 1125 2    50   ~ 0
 ISO_RTN
 Wire Wire Line
@@ -1112,17 +1041,7 @@ Wire Wire Line
 Wire Wire Line
 	13825 4525 13500 4525
 Wire Wire Line
-	7775 7875 8525 7875
-Wire Wire Line
-	7775 7975 8525 7975
-Wire Wire Line
 	7775 8075 8525 8075
-Wire Wire Line
-	7775 8175 8525 8175
-Wire Wire Line
-	7775 8275 8525 8275
-Wire Wire Line
-	7775 8375 8525 8375
 Wire Wire Line
 	6525 3050 7025 3050
 Text Label 7025 3050 2    50   ~ 0
@@ -1549,49 +1468,49 @@ Symbol & Footprint for Pi RTC to\nbe mounted to the Logic board
 $Comp
 L Logic-rescue:R-Device-Logic-rescue R7
 U 1 1 6099A2A5
-P 14500 1900
+P 15325 1900
 AR Path="/6099A2A5" Ref="R7"  Part="1" 
 AR Path="/5F9A7CF0/6099A2A5" Ref="R?"  Part="1" 
-F 0 "R7" V 14575 1850 50  0000 L CNN
-F 1 "120" V 14500 1825 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 14430 1900 50  0001 C CNN
-F 3 "~" H 14500 1900 50  0001 C CNN
-	1    14500 1900
+F 0 "R7" V 15400 1850 50  0000 L CNN
+F 1 "120" V 15325 1825 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 15255 1900 50  0001 C CNN
+F 3 "~" H 15325 1900 50  0001 C CNN
+	1    15325 1900
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x02 J6
 U 1 1 6099A2AB
-P 14075 1900
+P 14900 1900
 AR Path="/6099A2AB" Ref="J6"  Part="1" 
 AR Path="/5F9A7CF0/6099A2AB" Ref="J?"  Part="1" 
-F 0 "J6" H 14025 2000 50  0000 L CNN
-F 1 "NON-ISO CAN Testing" H 13925 1675 50  0001 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 14075 1900 50  0001 C CNN
-F 3 "~" H 14075 1900 50  0001 C CNN
-	1    14075 1900
+F 0 "J6" H 14850 2000 50  0000 L CNN
+F 1 "NON-ISO CAN Testing" H 14750 1675 50  0001 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 14900 1900 50  0001 C CNN
+F 3 "~" H 14900 1900 50  0001 C CNN
+	1    14900 1900
 	-1   0    0    -1  
 $EndComp
-Text Notes 14275 2200 0    47   ~ 0
+Text Notes 15100 2200 0    47   ~ 0
 NON-ISO CAN\nTesting Header
 Wire Wire Line
-	14650 1900 14925 1900
-Text Label 14925 1900 2    50   ~ 0
+	15475 1900 15750 1900
+Text Label 15750 1900 2    50   ~ 0
 CAN_H
 Wire Wire Line
-	14275 2000 14925 2000
+	15100 2000 15750 2000
 Wire Wire Line
-	14350 1900 14275 1900
-Text Label 14925 2000 2    50   ~ 0
+	15175 1900 15100 1900
+Text Label 15750 2000 2    50   ~ 0
 CAN_L
 Wire Wire Line
-	12225 1950 12825 1950
+	12375 1925 12975 1925
 Wire Wire Line
-	12825 2050 12225 2050
+	12975 2025 12375 2025
 Wire Wire Line
-	12225 2150 12825 2150
+	12375 2125 12975 2125
 Wire Wire Line
-	12825 2250 12225 2250
+	12975 2225 12375 2225
 Wire Notes Line
 	11700 9500 6225 9500
 Text Notes 8400 9675 0    79   ~ 0
@@ -1602,4 +1521,16 @@ Wire Notes Line
 	6225 9500 6225 11150
 Wire Notes Line
 	11700 9500 11700 11150
+NoConn ~ 8525 8175
+NoConn ~ 8525 8275
+NoConn ~ 8525 8375
+NoConn ~ 8525 7975
+NoConn ~ 8525 7875
+NoConn ~ 9575 8275
+NoConn ~ 9575 8375
+NoConn ~ 9575 8475
+Text Label 10525 7575 2    50   ~ 0
+GPIO25
+Wire Wire Line
+	9575 7575 10525 7575
 $EndSCHEMATC

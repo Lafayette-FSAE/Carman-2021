@@ -1501,8 +1501,6 @@ F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 21125 1850 50  0001 C CNN
 $EndComp
 Text Label 19300 3000 0    47   ~ 0
 IO_Ground
-Wire Wire Line
-	19700 3000 19300 3000
 Text Label 18175 1850 0    47   ~ 0
 IO_Ground
 Wire Wire Line
@@ -1554,8 +1552,6 @@ Wire Wire Line
 	21625 1850 21625 2300
 Connection ~ 21625 1850
 Wire Wire Line
-	19700 3000 19700 3400
-Wire Wire Line
 	19700 3400 19950 3400
 $Comp
 L Connector:TestPoint TP?
@@ -1579,21 +1575,8 @@ Wire Wire Line
 	6250 12900 6800 12900
 Wire Wire Line
 	4600 15850 5325 15850
-Connection ~ 19700 3000
-Connection ~ 20700 3000
 Wire Wire Line
 	20700 3000 20700 3400
-$Comp
-L 74xx:74HC00 U41
-U 5 1 63EC134F
-P 20200 3000
-F 0 "U41" V 20350 3000 50  0000 C CNN
-F 1 "SN74HC00APWR" V 19950 3000 50  0000 C CNN
-F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 20200 3000 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 20200 3000 50  0001 C CNN
-	5    20200 3000
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	20700 3400 20450 3400
 Wire Wire Line
@@ -2068,4 +2051,21 @@ Wire Notes Line
 	4400 7325 14575 7325
 Wire Notes Line
 	4400 3725 4400 7325
+Connection ~ 20700 3000
+Wire Wire Line
+	19700 3000 19300 3000
+$Comp
+L 74xx:74HC00 U41
+U 5 1 63EC134F
+P 20200 3000
+F 0 "U41" V 20350 3000 50  0000 C CNN
+F 1 "SN74HC00APWR" V 19950 3000 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 20200 3000 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 20200 3000 50  0001 C CNN
+	5    20200 3000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	19700 3000 19700 3400
+Connection ~ 19700 3000
 $EndSCHEMATC

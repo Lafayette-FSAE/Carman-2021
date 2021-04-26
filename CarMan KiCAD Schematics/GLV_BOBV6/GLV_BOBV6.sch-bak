@@ -36,7 +36,7 @@ F 3 "~" H 5200 3750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 5200 4250 0    50   ~ 0
-5V_NOT_ISO
+5V_NON_ISO
 Text Label 2700 3250 2    50   ~ 0
 GLV_RTN
 $Comp
@@ -65,67 +65,63 @@ SL Breaker\n
 $Comp
 L Device:LED D2
 U 1 1 5F9B456F
-P 10100 2200
-F 0 "D2" V 10139 2082 50  0000 R CNN
-F 1 "LED" V 10048 2082 50  0000 R CNN
-F 2 "CarMan General Footprints:VAOL-S8GT4" H 10100 2200 50  0001 C CNN
-F 3 "http://static.vcclite.com/pdf/VAOL-S8GT4-LED-0805-green.pdf" H 10100 2200 50  0001 C CNN
-	1    10100 2200
+P 9875 2325
+F 0 "D2" V 9914 2207 50  0000 R CNN
+F 1 "LED" V 9823 2207 50  0000 R CNN
+F 2 "CarMan General Footprints:VAOL-S8GT4" H 9875 2325 50  0001 C CNN
+F 3 "http://static.vcclite.com/pdf/VAOL-S8GT4-LED-0805-green.pdf" H 9875 2325 50  0001 C CNN
+	1    9875 2325
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:LED D3
 U 1 1 5F9B4BC9
-P 10600 2200
-F 0 "D3" V 10639 2082 50  0000 R CNN
-F 1 "LED" V 10548 2082 50  0000 R CNN
-F 2 "CarMan General Footprints:VAOL-S8GT4" H 10600 2200 50  0001 C CNN
-F 3 "http://static.vcclite.com/pdf/VAOL-S8GT4-LED-0805-green.pdf" H 10600 2200 50  0001 C CNN
-	1    10600 2200
+P 10375 2325
+F 0 "D3" V 10414 2207 50  0000 R CNN
+F 1 "LED" V 10323 2207 50  0000 R CNN
+F 2 "CarMan General Footprints:VAOL-S8GT4" H 10375 2325 50  0001 C CNN
+F 3 "http://static.vcclite.com/pdf/VAOL-S8GT4-LED-0805-green.pdf" H 10375 2325 50  0001 C CNN
+	1    10375 2325
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	10100 2350 10100 2500
+	9875 2475 9875 2625
 Wire Wire Line
-	10600 2350 10600 2500
-Text Label 10100 1500 1    50   ~ 0
-5V_NOT_ISO
-Text Label 10600 1450 1    50   ~ 0
+	10375 2475 10375 2625
+Text Label 9875 1625 1    50   ~ 0
+5V_NON_ISO
+Text Label 10375 1575 1    50   ~ 0
 24V
 $Comp
 L Device:R R8
 U 1 1 5F9BDC2B
-P 10100 1800
-F 0 "R8" V 9893 1800 50  0000 C CNN
-F 1 "10K" V 9984 1800 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 10030 1800 50  0001 C CNN
-F 3 "~" H 10100 1800 50  0001 C CNN
-	1    10100 1800
+P 9875 1925
+F 0 "R8" V 9668 1925 50  0000 C CNN
+F 1 "10K" V 9759 1925 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9805 1925 50  0001 C CNN
+F 3 "~" H 9875 1925 50  0001 C CNN
+	1    9875 1925
 	-1   0    0    1   
 $EndComp
 $Comp
 L Device:R R9
 U 1 1 5F9BE076
-P 10600 1800
-F 0 "R9" V 10393 1800 50  0000 C CNN
-F 1 "10K" V 10484 1800 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 10530 1800 50  0001 C CNN
-F 3 "~" H 10600 1800 50  0001 C CNN
-	1    10600 1800
+P 10375 1925
+F 0 "R9" V 10168 1925 50  0000 C CNN
+F 1 "10K" V 10259 1925 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 10305 1925 50  0001 C CNN
+F 3 "~" H 10375 1925 50  0001 C CNN
+	1    10375 1925
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	10100 1500 10100 1650
+	9875 1625 9875 1775
 Wire Wire Line
-	10600 1450 10600 1650
-Text Label 10100 2500 3    50   ~ 0
+	10375 1575 10375 1775
+Text Label 9875 2625 3    50   ~ 0
 GLV_RTN
-Text Label 10600 2500 3    50   ~ 0
+Text Label 10375 2625 3    50   ~ 0
 GLV_RTN
-Wire Notes Line width 20
-	10950 750  10950 3250
-Wire Notes Line width 20
-	10950 3250 9300 3250
 Wire Notes Line width 20
 	9300 3250 9300 750 
 Wire Notes Line width 20
@@ -154,29 +150,14 @@ F 3 "~" H 1250 800 50  0001 C CNN
 	1    1250 800 
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:PWR_FLAG #FLG02
-U 1 1 5F9D033A
-P 1700 800
-F 0 "#FLG02" H 1700 875 50  0001 C CNN
-F 1 "PWR_FLAG" H 1700 973 50  0000 C CNN
-F 2 "" H 1700 800 50  0001 C CNN
-F 3 "~" H 1700 800 50  0001 C CNN
-	1    1700 800 
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	800  800  800  1000
 Wire Wire Line
 	1250 800  1250 1000
-Wire Wire Line
-	1700 800  1700 1000
 Text Label 800  1000 3    59   ~ 12
 24V
 Text Label 1250 1000 3    59   ~ 12
 GLV_RTN
-Text Label 1700 1000 3    59   ~ 12
-3.3V_NOT_ISO
 Text Notes 4850 3150 2    79   ~ 16
 Non-Isolated DC/DC 24V to 5V
 Text Notes 5200 5600 2    79   ~ 16
@@ -185,8 +166,6 @@ Text Notes 7800 2550 0    50   ~ 10
 Cooling Breaker
 Text Notes 8250 2300 0    50   ~ 10
 TSI, Dash, Logic,\nBatt Pack Breaker
-Text Label 5950 1950 2    50   ~ 0
-BATT+
 Wire Wire Line
 	5950 1950 6250 1950
 Wire Wire Line
@@ -387,7 +366,7 @@ Text Label 4250 7000 0    50   ~ 0
 GLV_RTN
 Text Label 6200 6400 0    50   ~ 0
 SDA_NOT_ISO
-Text Label 6200 6200 0    50   ~ 0
+Text Label 6200 6300 0    50   ~ 0
 SCL_NOT_ISO
 $Comp
 L Device:R R?
@@ -417,57 +396,16 @@ F 3 "~" H 5850 5900 50  0001 C CNN
 	1    5850 5900
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R R?
-U 1 1 5FAC45C5
-P 6550 3900
-AR Path="/5F962E37/5FAC45C5" Ref="R?"  Part="1" 
-AR Path="/5FAC45C5" Ref="R4"  Part="1" 
-F 0 "R4" H 6620 3946 50  0000 L CNN
-F 1 "2K" H 6620 3855 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6480 3900 50  0001 C CNN
-F 3 "~" H 6550 3900 50  0001 C CNN
-	1    6550 3900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5FAC4E73
-P 6550 4350
-AR Path="/5F962E37/5FAC4E73" Ref="R?"  Part="1" 
-AR Path="/5FAC4E73" Ref="R5"  Part="1" 
-F 0 "R5" H 6620 4396 50  0000 L CNN
-F 1 "3.9K" H 6620 4305 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6480 4350 50  0001 C CNN
-F 3 "~" H 6550 4350 50  0001 C CNN
-	1    6550 4350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6550 4050 6550 4100
-Text Label 6550 4500 3    50   ~ 0
-GLV_RTN
-Text Label 6550 3750 0    50   ~ 0
-5V_NOT_ISO
-Wire Wire Line
-	6550 4100 6900 4100
-Connection ~ 6550 4100
-Wire Wire Line
-	6550 4100 6550 4200
-Text Label 6900 4100 0    50   ~ 0
-3.3V_NOT_ISO
 Text Label 1300 5350 2    50   ~ 0
-3.3V_NOT_ISO
+5V_NON_ISO
 Text Label 1300 5650 2    50   ~ 0
 GLV_RTN
 Text Label 1250 6400 2    50   ~ 0
-24V
+24V_NOT_BREAKERED
 Text Label 1300 6700 2    50   ~ 0
 BATT+
 Wire Wire Line
 	5550 6400 5850 6400
-Wire Wire Line
-	5550 6300 5550 6200
 Wire Wire Line
 	5850 6050 5850 6400
 Wire Wire Line
@@ -479,10 +417,7 @@ Connection ~ 2150 5750
 Wire Wire Line
 	2150 5750 2150 6300
 Wire Wire Line
-	5550 6200 6200 6200
-Connection ~ 5550 6200
-Wire Wire Line
-	5550 6200 5550 6050
+	5550 6300 6200 6300
 Wire Wire Line
 	5850 6400 6200 6400
 Connection ~ 5850 6400
@@ -582,46 +517,14 @@ Wire Wire Line
 	2550 4300 2550 3900
 Connection ~ 2550 3900
 Wire Wire Line
-	10600 1950 10600 2050
+	10375 2075 10375 2175
 Wire Wire Line
-	10100 1950 10100 2050
+	9875 2075 9875 2175
 Wire Wire Line
 	4700 3850 5050 3850
 Wire Wire Line
 	5550 6700 5550 6600
 Connection ~ 5550 6700
-Wire Wire Line
-	9450 1650 9450 1500
-Wire Wire Line
-	9450 1950 9450 2050
-$Comp
-L Device:R R7
-U 1 1 5F9BCE19
-P 9450 1800
-F 0 "R7" V 9243 1800 50  0000 C CNN
-F 1 "10K" V 9334 1800 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9380 1800 50  0001 C CNN
-F 3 "~" H 9450 1800 50  0001 C CNN
-	1    9450 1800
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:LED D1
-U 1 1 5F9B3B55
-P 9450 2200
-F 0 "D1" V 9489 2082 50  0000 R CNN
-F 1 "LED" V 9398 2082 50  0000 R CNN
-F 2 "CarMan General Footprints:VAOL-S8GT4" H 9450 2200 50  0001 C CNN
-F 3 "http://static.vcclite.com/pdf/VAOL-S8GT4-LED-0805-green.pdf" H 9450 2200 50  0001 C CNN
-	1    9450 2200
-	0    -1   -1   0   
-$EndComp
-Text Label 9450 1500 1    50   ~ 0
-3.3V_NOT_ISO
-Wire Wire Line
-	9450 2350 9450 2500
-Text Label 9450 2500 3    50   ~ 0
-GLV_RTN
 $Comp
 L Connector_Generic:Conn_01x06 J6
 U 1 1 5FBB1F11
@@ -727,4 +630,13 @@ F 3 "~" H 9000 4750 50  0001 C CNN
 	1    9000 4750
 	1    0    0    -1  
 $EndComp
+Text Label 5950 1950 2    50   ~ 0
+24V_NOT_BREAKERED
+Wire Notes Line width 20
+	10950 3250 9300 3250
+Wire Notes Line width 20
+	10950 750  10950 3250
+Connection ~ 5550 6300
+Wire Wire Line
+	5550 6050 5550 6300
 $EndSCHEMATC
