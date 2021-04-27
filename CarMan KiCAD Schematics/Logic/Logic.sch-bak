@@ -419,7 +419,7 @@ L Logic-rescue:Conn_01x06-Connector_Generic-Logic-rescue J5
 U 1 1 5FDCB4A9
 P 13625 2125
 F 0 "J5" H 13625 2425 50  0000 C CNN
-F 1 "PIC program" H 13625 1700 50  0001 C CNN
+F 1 "J5 PICKit 3" H 13625 1700 50  0001 C CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 13625 2125 50  0001 C CNN
 F 3 "~" H 13625 2125 50  0001 C CNN
 	1    13625 2125
@@ -450,9 +450,9 @@ Text Label 6350 10550 0    50   ~ 0
 5V_NON_ISO
 Text Label 6350 10700 0    50   ~ 0
 GLV_RTN
-Text Label 15875 1275 2    50   ~ 0
+Text Label 15900 1325 2    50   ~ 0
 CAN_H
-Text Label 15875 1175 2    50   ~ 0
+Text Label 15900 1225 2    50   ~ 0
 CAN_L
 Text Label 13250 5900 0    50   ~ 0
 5V_ISO
@@ -481,8 +481,8 @@ $Comp
 L Device:LED D1
 U 1 1 5FAD3933
 P 1350 10525
-F 0 "D1" V 1389 10407 50  0000 R CNN
-F 1 "LED" V 1298 10407 50  0000 R CNN
+F 0 "D1" V 1350 10450 50  0000 R CNN
+F 1 "3.3V ISO LED" V 1298 10407 50  0001 R CNN
 F 2 "CarMan General Footprints:VAOL-S8GT4" H 1350 10525 50  0001 C CNN
 F 3 "~" H 1350 10525 50  0001 C CNN
 	1    1350 10525
@@ -492,8 +492,8 @@ $Comp
 L Device:LED D2
 U 1 1 5FAD3FB3
 P 2000 10525
-F 0 "D2" V 2039 10407 50  0000 R CNN
-F 1 "LED" V 1948 10407 50  0000 R CNN
+F 0 "D2" V 2000 10450 50  0000 R CNN
+F 1 "SDA ISO LED" V 1948 10407 50  0001 R CNN
 F 2 "CarMan General Footprints:VAOL-S8GT4" H 2000 10525 50  0001 C CNN
 F 3 "~" H 2000 10525 50  0001 C CNN
 	1    2000 10525
@@ -552,7 +552,7 @@ L Logic-rescue:Conn_01x04-Connector_Generic-Logic-rescue J4
 U 1 1 5FB30D0C
 P 12175 2125
 F 0 "J4" H 12125 1825 50  0000 L CNN
-F 1 "GLV BOB" H 12000 2350 50  0001 L CNN
+F 1 "J4 GLV BOB" H 12000 2350 50  0001 L CNN
 F 2 "CarMan General Footprints:Molex_MiniFit-JR-5556-04A_2x02x4.20mm_Straight" H 12175 2125 50  0001 C CNN
 F 3 "~" H 12175 2125 50  0001 C CNN
 	1    12175 2125
@@ -613,18 +613,18 @@ $EndComp
 NoConn ~ 2875 3350
 NoConn ~ 2875 3450
 NoConn ~ 6525 4550
-Text Label 13975 1175 0    50   ~ 0
+Text Label 14000 1225 0    50   ~ 0
 ISO_RTN
-Text Label 13975 975  0    50   ~ 0
+Text Label 14000 1025 0    50   ~ 0
 Cooling_CTRL
-Text Label 13975 1075 0    50   ~ 0
+Text Label 14000 1125 0    50   ~ 0
 SR_CTRL
 $Comp
 L Device:LED D5
 U 1 1 5FB8CE84
 P 3550 10500
-F 0 "D5" V 3589 10382 50  0000 R CNN
-F 1 "LED" V 3498 10382 50  0000 R CNN
+F 0 "D5" V 3550 10425 50  0000 R CNN
+F 1 "5V NI" V 3498 10382 50  0001 R CNN
 F 2 "CarMan General Footprints:VAOL-S8GT4" H 3550 10500 50  0001 C CNN
 F 3 "~" H 3550 10500 50  0001 C CNN
 	1    3550 10500
@@ -653,8 +653,8 @@ $Comp
 L Device:LED D3
 U 1 1 5FBB7D0B
 P 3025 10500
-F 0 "D3" V 3064 10382 50  0000 R CNN
-F 1 "LED" V 2973 10382 50  0000 R CNN
+F 0 "D3" V 3025 10425 50  0000 R CNN
+F 1 "24V" V 2973 10382 50  0001 R CNN
 F 2 "CarMan General Footprints:VAOL-S8GT4" H 3025 10500 50  0001 C CNN
 F 3 "~" H 3025 10500 50  0001 C CNN
 	1    3025 10500
@@ -683,8 +683,8 @@ $Comp
 L Device:LED D6
 U 1 1 5FC4882F
 P 700 10525
-F 0 "D6" V 739 10407 50  0000 R CNN
-F 1 "LED" V 648 10407 50  0000 R CNN
+F 0 "D6" V 700 10450 50  0000 R CNN
+F 1 "5V ISO LED" V 648 10407 50  0001 R CNN
 F 2 "CarMan General Footprints:VAOL-S8GT4" H 700 10525 50  0001 C CNN
 F 3 "~" H 700 10525 50  0001 C CNN
 	1    700  10525
@@ -715,7 +715,7 @@ Text Notes 2700 9675 0    71   ~ 0
 Non-Isolated Voltage LEDs
 Text Notes 900  9675 0    79   ~ 0
 Isolated Status LEDs
-Text Notes 14450 1525 0    50   ~ 0
+Text Notes 14475 1575 0    50   ~ 0
 Logic-TSI Connector
 Text Label 13825 4425 2    50   ~ 0
 ISO_RTN
@@ -900,23 +900,23 @@ Text Label 12975 2125 2    50   ~ 0
 SDA_TSI_GLV
 Text Label 15300 9275 2    50   ~ 0
 SDA_TSI_GLV
-Text Label 15875 975  2    50   ~ 0
+Text Label 15900 1025 2    50   ~ 0
 SDA_TSI_GLV
-Text Label 15875 1075 2    50   ~ 0
+Text Label 15900 1125 2    50   ~ 0
 SCL_TSI_GLV
 $Comp
 L Logic-rescue:Conn_01x04-Connector_Generic-Logic-rescue J1
 U 1 1 5F95E453
 P 12100 1225
 F 0 "J1" H 12050 925 50  0000 L CNN
-F 1 "Motor Controller Can Line" H 11525 1425 50  0001 L CNN
+F 1 "J1 MC Can Line" H 11525 1425 50  0001 L CNN
 F 2 "CarMan General Footprints:Molex_MiniFit-JR-5556-04A_2x02x4.20mm_Straight" H 12100 1225 50  0001 C CNN
 F 3 "~" H 12100 1225 50  0001 C CNN
 	1    12100 1225
 	-1   0    0    1   
 $EndComp
-Text Notes 11900 1500 0    47   ~ 0
-MC Can Line
+Text Notes 12025 1575 0    47   ~ 0
+Motor Controller\nCan Line
 Text Label 12750 1225 2    50   ~ 0
 CAN_L
 Wire Wire Line
@@ -937,9 +937,9 @@ Wire Notes Line
 Wire Wire Line
 	3300 11000 3650 11000
 Wire Wire Line
-	15125 1075 15875 1075
+	15150 1125 15900 1125
 Wire Wire Line
-	15125 975  15875 975 
+	15150 1025 15900 1025
 Wire Notes Line
 	4250 9500 4250 11150
 Wire Notes Line
@@ -1196,7 +1196,7 @@ L Logic-rescue:Conn_01x04-Connector_Generic-Logic-rescue J2
 U 1 1 60721A5C
 P 13075 1125
 F 0 "J2" H 13025 1325 50  0000 L CNN
-F 1 "NON-ISO I2C Testing Header" H 12500 1325 50  0001 L CNN
+F 1 "J2 NI I2C" H 12500 1325 50  0001 L CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 13075 1125 50  0001 C CNN
 F 3 "~" H 13075 1125 50  0001 C CNN
 	1    13075 1125
@@ -1237,18 +1237,18 @@ Wire Wire Line
 	14775 9175 15500 9175
 Wire Wire Line
 	14775 9475 15500 9475
-Text Label 13975 1375 0    50   ~ 0
+Text Label 14000 1425 0    50   ~ 0
 FlowRate
 NoConn ~ 9575 7275
 NoConn ~ 2875 3650
 NoConn ~ 2875 3050
 Wire Wire Line
-	15875 1275 15125 1275
+	15900 1325 15150 1325
 Wire Wire Line
-	15125 1175 15875 1175
-Text Label 15200 1275 0    50   ~ 0
+	15150 1225 15900 1225
+Text Label 15225 1325 0    50   ~ 0
 BP_CAN+
-Text Label 15200 1175 0    50   ~ 0
+Text Label 15225 1225 0    50   ~ 0
 BP_CAN-
 NoConn ~ 2875 3250
 NoConn ~ 6525 4450
@@ -1258,8 +1258,8 @@ $Comp
 L Device:LED D7
 U 1 1 6074CAEC
 P 1350 8750
-F 0 "D7" V 1389 8632 50  0000 R CNN
-F 1 "LED" V 1298 8632 50  0000 R CNN
+F 0 "D7" V 1350 8675 50  0000 R CNN
+F 1 "STATE_OUT_2" V 1298 8632 50  0001 R CNN
 F 2 "CarMan General Footprints:VAOL-S8GT4" H 1350 8750 50  0001 C CNN
 F 3 "~" H 1350 8750 50  0001 C CNN
 	1    1350 8750
@@ -1269,8 +1269,8 @@ $Comp
 L Device:LED D8
 U 1 1 6074CAF2
 P 2000 8750
-F 0 "D8" V 2039 8632 50  0000 R CNN
-F 1 "LED" V 1948 8632 50  0000 R CNN
+F 0 "D8" V 2000 8675 50  0000 R CNN
+F 1 "STATE_OUT_3" V 1948 8632 50  0001 R CNN
 F 2 "CarMan General Footprints:VAOL-S8GT4" H 2000 8750 50  0001 C CNN
 F 3 "~" H 2000 8750 50  0001 C CNN
 	1    2000 8750
@@ -1312,8 +1312,8 @@ $Comp
 L Device:LED D4
 U 1 1 6074CB0B
 P 700 8750
-F 0 "D4" V 739 8632 50  0000 R CNN
-F 1 "LED" V 648 8632 50  0000 R CNN
+F 0 "D4" V 700 8675 50  0000 R CNN
+F 1 "STATE_OUT_1" V 648 8632 50  0001 R CNN
 F 2 "CarMan General Footprints:VAOL-S8GT4" H 700 8750 50  0001 C CNN
 F 3 "~" H 700 8750 50  0001 C CNN
 	1    700  8750
@@ -1366,7 +1366,7 @@ Wire Wire Line
 	2200 4250 2875 4250
 Text Label 2200 4250 0    50   ~ 0
 FlowRate
-Text Label 13975 1275 0    50   ~ 0
+Text Label 14000 1325 0    50   ~ 0
 3.3V_ISO
 $Comp
 L CarMan_KiCAD_Library:BNO_055 U10
@@ -1376,6 +1376,7 @@ F 0 "U10" V 12900 4425 47  0000 C CNN
 F 1 "BNO_055" V 13500 4425 47  0000 C CNN
 F 2 "CarMan General Footprints:BNO_055" H 13200 4425 47  0001 C CNN
 F 3 "" H 13200 4425 47  0001 C CNN
+F 4 "U10 - IMU" V 13200 4425 50  0001 C CNN "Board Name"
 	1    13200 4425
 	0    1    1    0   
 $EndComp
@@ -1396,7 +1397,7 @@ Wire Wire Line
 	7200 3550 6525 3550
 Text Label 7200 3550 2    47   ~ 0
 STATE_OUT_1
-NoConn ~ 15125 1375
+NoConn ~ 15150 1425
 NoConn ~ 2875 4450
 NoConn ~ 2875 4550
 NoConn ~ 2875 4150
@@ -1404,12 +1405,12 @@ NoConn ~ 2875 3550
 $Comp
 L Connector_Generic:Conn_02x05_Odd_Even J3
 U 1 1 609BCAC7
-P 14825 1175
-F 0 "J3" H 14875 1475 50  0000 C CNN
-F 1 "Logic-TSI Connector" H 14875 1501 50  0001 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x05_P2.54mm_Vertical" H 14825 1175 50  0001 C CNN
-F 3 "~" H 14825 1175 50  0001 C CNN
-	1    14825 1175
+P 14850 1225
+F 0 "J3" H 14900 1525 50  0000 C CNN
+F 1 "J3 Logic-TSI" H 14900 1551 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x05_P2.54mm_Vertical" H 14850 1225 50  0001 C CNN
+F 3 "~" H 14850 1225 50  0001 C CNN
+	1    14850 1225
 	1    0    0    -1  
 $EndComp
 Wire Notes Line
@@ -1425,15 +1426,15 @@ Mounted External Components
 Text Notes 12525 4950 0    47   ~ 0
 Symbol & Footprint for IMU to\nbe mounted to the Logic board
 Wire Wire Line
-	14625 1075 13975 1075
+	14650 1125 14000 1125
 Wire Wire Line
-	13975 975  14625 975 
+	14000 1025 14650 1025
 Wire Wire Line
-	13975 1175 14625 1175
+	14000 1225 14650 1225
 Wire Wire Line
-	14625 1275 13975 1275
+	14650 1325 14000 1325
 Wire Wire Line
-	13975 1375 14625 1375
+	14000 1425 14650 1425
 Wire Notes Line
 	13350 525  13350 825 
 Wire Notes Line
@@ -1450,17 +1451,6 @@ Wire Wire Line
 	1350 8200 1825 8200
 Wire Wire Line
 	2000 8200 2475 8200
-$Comp
-L CarMan_KiCAD_Library:Raspberry_Pi_RTC U11
-U 1 1 60875061
-P 15050 4400
-F 0 "U11" H 15050 4700 47  0000 C CNN
-F 1 "Raspberry_Pi_RTC" H 15050 4100 47  0000 C CNN
-F 2 "CarMan General Footprints:Raspberry_Pi_RTC" V 15050 4400 47  0001 C CNN
-F 3 "" V 15050 4400 47  0001 C CNN
-	1    15050 4400
-	1    0    0    -1  
-$EndComp
 NoConn ~ 15350 4400
 NoConn ~ 15350 4250
 Text Notes 14375 4925 0    47   ~ 0
@@ -1485,7 +1475,7 @@ P 14900 1900
 AR Path="/6099A2AB" Ref="J6"  Part="1" 
 AR Path="/5F9A7CF0/6099A2AB" Ref="J?"  Part="1" 
 F 0 "J6" H 14850 2000 50  0000 L CNN
-F 1 "NON-ISO CAN Testing" H 14750 1675 50  0001 L CNN
+F 1 "J6 NI CAN" H 14750 1675 50  0001 L CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 14900 1900 50  0001 C CNN
 F 3 "~" H 14900 1900 50  0001 C CNN
 	1    14900 1900
@@ -1533,4 +1523,16 @@ Text Label 10525 7575 2    50   ~ 0
 GPIO25
 Wire Wire Line
 	9575 7575 10525 7575
+$Comp
+L CarMan_KiCAD_Library:Raspberry_Pi_RTC U11
+U 1 1 60875061
+P 15050 4400
+F 0 "U11" H 15050 4700 47  0000 C CNN
+F 1 "Raspberry_Pi_RTC" H 15050 4100 47  0000 C CNN
+F 2 "CarMan General Footprints:Raspberry_Pi_RTC" V 15050 4400 47  0001 C CNN
+F 3 "" V 15050 4400 47  0001 C CNN
+F 4 "U11 - Pi RTC" H 15050 4400 50  0001 C CNN "Board Label"
+	1    15050 4400
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
