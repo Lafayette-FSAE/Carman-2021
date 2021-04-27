@@ -3,7 +3,7 @@
   (general
     (thickness 1.6)
     (drawings 32)
-    (tracks 842)
+    (tracks 840)
     (zones 0)
     (modules 63)
     (nets 46)
@@ -4135,7 +4135,7 @@
   (segment (start 179.832 97.536) (end 179.832 93.484798) (width 0.4) (layer F.Cu) (net 37) (status 10))
   (segment (start 174.573801 92.868799) (end 179.216001 92.868799) (width 0.4) (layer F.Cu) (net 37))
   (segment (start 184.9024 106.5688) (end 184.912 106.5784) (width 0.25) (layer F.Cu) (net 37))
-  (segment (start 175.9358 106.5688) (end 180.7052 106.5688) (width 0.25) (layer F.Cu) (net 37) (status 10))
+  (segment (start 175.9358 106.5688) (end 184.9024 106.5688) (width 0.25) (layer F.Cu) (net 37) (status 10))
   (segment (start 184.912 105.5624) (end 184.912 106.5784) (width 0.25) (layer F.Cu) (net 37))
   (segment (start 184.912 106.5784) (end 184.912 112.776) (width 0.25) (layer F.Cu) (net 37) (status 20))
   (via (at 176.7332 77.4192) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 37))
@@ -4148,8 +4148,6 @@
   (segment (start 176.7332 77.4192) (end 174.7266 77.4192) (width 0.25) (layer B.Cu) (net 37))
   (segment (start 174.6376 74.6126) (end 174.6376 77.5082) (width 0.25) (layer B.Cu) (net 37))
   (segment (start 174.6376 77.5082) (end 174.6376 80.105) (width 0.25) (layer B.Cu) (net 37))
-  (segment (start 180.7052 106.5688) (end 184.9024 106.5688) (width 0.25) (layer F.Cu) (net 37) (tstamp 6088977A) (status 10))
-  (via (at 180.7052 106.5688) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 37))
   (segment (start 209.0434 93.4734) (end 208.1304 94.3864) (width 0.25) (layer F.Cu) (net 38))
   (via (at 201.0664 93.0148) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 38))
   (segment (start 208.1304 94.3864) (end 202.438 94.3864) (width 0.25) (layer F.Cu) (net 38))
@@ -4195,7 +4193,7 @@
   (zone (net 37) (net_name /ISO_RTN) (layer B.Cu) (tstamp 60880B71) (hatch edge 0.508)
     (connect_pads (clearance 0.508))
     (min_thickness 0.254)
-    (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
+    (fill (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
     (polygon
       (pts
         (xy 228.1428 115.6716) (xy 170.6118 115.565608) (xy 170.6626 39.238608) (xy 228.219 39.399793)

@@ -197,8 +197,6 @@ COOL_24V
 Wire Notes Line
 	7300 550  7300 2950
 Wire Notes Line
-	9025 2850 9025 450 
-Wire Notes Line
 	9000 550  7300 550 
 Text Notes 7825 2800 0    59   ~ 12
 Circuit Breakers
@@ -635,4 +633,8 @@ Wire Notes Line
 	8800 3725 11150 3725
 Wire Notes Line
 	8800 3725 8800 5075
+Wire Notes Line
+	7300 2950 9025 2950
+Wire Notes Line
+	9025 450  9025 2950
 $EndSCHEMATC

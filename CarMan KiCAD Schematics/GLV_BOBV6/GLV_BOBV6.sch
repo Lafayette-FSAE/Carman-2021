@@ -41,13 +41,11 @@ F 3 "~" H 2400 5325 50  0001 C CNN
 $EndComp
 Text Label 2000 5475 0    50   ~ 0
 24V
-Text Notes 4450 1500 0    50   ~ 10
-Connection to Logic Board\nfor the I2C line. \n
-Text Notes 1800 1400 0    50   ~ 10
+Text Notes 3750 1425 0    50   ~ 10
 From LSP/Ammeter
-Text Notes 2200 2750 0    50   ~ 10
+Text Notes 5525 2625 0    50   ~ 10
 24V to TSI/Analog\nBoard and SL. \nTSI calls SLOOP_TO_IMD Sl1_in\n24V to Cooling for switchable power.
-Text Notes 3350 1500 0    50   ~ 10
+Text Notes 5300 1525 0    50   ~ 10
 24V to Can ISO\nfor Motor Controller
 Text Notes 7650 2250 0    50   ~ 10
 SL Breaker\n
@@ -165,34 +163,34 @@ BREAKER_OUT_COOL
 $Comp
 L Connector_Generic:Conn_01x02 J1
 U 1 1 5FA26A47
-P 2250 1250
-F 0 "J1" V 2168 1330 50  0000 L CNB
-F 1 "Conn_01x02" V 2213 1330 50  0001 L CNN
-F 2 "CarMan General Footprints:Molex_Mega-Fit_76829-0102_2x01_P5.70mm_Vertical" H 2250 1250 50  0001 C CNN
-F 3 "~" H 2250 1250 50  0001 C CNN
-	1    2250 1250
+P 4200 1275
+F 0 "J1" V 4118 1355 50  0000 L CNB
+F 1 "Conn_01x02" V 4163 1355 50  0001 L CNN
+F 2 "CarMan General Footprints:Molex_Mega-Fit_76829-0102_2x01_P5.70mm_Vertical" H 4200 1275 50  0001 C CNN
+F 3 "~" H 4200 1275 50  0001 C CNN
+	1    4200 1275
 	0    1    1    0   
 $EndComp
-Text Label 2250 1050 1    50   ~ 0
+Text Label 4200 1075 1    50   ~ 0
 GLV_RTN
-Text Label 2150 1050 1    50   ~ 0
+Text Label 4100 1075 1    50   ~ 0
 BATT+
 $Comp
 L Connector_Generic:Conn_01x02 J3
 U 1 1 5FA2B432
-P 3700 1250
-F 0 "J3" V 3618 1330 50  0000 L CNB
-F 1 "Conn_01x02" V 3663 1330 50  0001 L CNN
-F 2 "CarMan General Footprints:Molex_MiniFit-JR-5556-02A_2x01x4.20mm_Straight" H 3700 1250 50  0001 C CNN
-F 3 "~" H 3700 1250 50  0001 C CNN
-	1    3700 1250
+P 5650 1275
+F 0 "J3" V 5568 1355 50  0000 L CNB
+F 1 "Conn_01x02" V 5613 1355 50  0001 L CNN
+F 2 "CarMan General Footprints:Molex_MiniFit-JR-5556-02A_2x01x4.20mm_Straight" H 5650 1275 50  0001 C CNN
+F 3 "~" H 5650 1275 50  0001 C CNN
+	1    5650 1275
 	0    1    1    0   
 $EndComp
-Text Label 3700 1050 1    50   ~ 0
+Text Label 5650 1075 1    50   ~ 0
 GLV_RTN
-Text Label 3600 1050 1    50   ~ 0
+Text Label 5550 1075 1    50   ~ 0
 24V
-Text Label 3000 2350 0    50   ~ 0
+Text Label 6325 2225 0    50   ~ 0
 COOL_24V
 Wire Notes Line
 	7300 550  7300 2950
@@ -218,19 +216,19 @@ SLOOP_TO_IMD is the 24V \nsafety loop connection from \nthe LSP and ammeter to \
 $Comp
 L Connector_Generic:Conn_01x02 J2
 U 1 1 5FAB4D0A
-P 3000 1250
-F 0 "J2" V 2918 1330 50  0000 L CNB
-F 1 "Conn_01x02" V 2963 1330 50  0001 L CNN
-F 2 "CarMan General Footprints:Molex_MiniFit-JR-5556-02A_2x01x4.20mm_Straight" H 3000 1250 50  0001 C CNN
-F 3 "~" H 3000 1250 50  0001 C CNN
-	1    3000 1250
+P 4950 1275
+F 0 "J2" V 4868 1355 50  0000 L CNB
+F 1 "Conn_01x02" V 4913 1355 50  0001 L CNN
+F 2 "CarMan General Footprints:Molex_MiniFit-JR-5556-02A_2x01x4.20mm_Straight" H 4950 1275 50  0001 C CNN
+F 3 "~" H 4950 1275 50  0001 C CNN
+	1    4950 1275
 	0    1    1    0   
 $EndComp
-Text Label 2900 1050 1    50   ~ 0
+Text Label 4850 1075 1    50   ~ 0
 24V
-Text Label 3000 1050 1    50   ~ 0
+Text Label 4950 1075 1    50   ~ 0
 GLV_RTN
-Text Notes 3100 1400 2    50   ~ 10
+Text Notes 5050 1425 2    50   ~ 10
 Extra 24V
 $Comp
 L Device:R R?
@@ -315,40 +313,25 @@ F 3 "~" H 1200 1725 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_02x02_Odd_Even J4
-U 1 1 5FB21308
-P 4800 1100
-F 0 "J4" H 4850 1225 50  0000 C CNB
-F 1 "Conn_02x02_Odd_Even" H 4850 1226 50  0001 C CNN
-F 2 "CarMan General Footprints:Molex_MiniFit-JR-5556-04A_2x02x4.20mm_Straight" H 4800 1100 50  0001 C CNN
-F 3 "~" H 4800 1100 50  0001 C CNN
-	1    4800 1100
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector_Generic:Conn_02x02_Odd_Even J5
 U 1 1 5FB2255E
-P 2700 2250
-F 0 "J5" H 2750 2375 50  0000 C CNB
-F 1 "Conn_02x02_Odd_Even" H 2750 2376 50  0001 C CNN
-F 2 "CarMan General Footprints:Molex_MiniFit-JR-5556-04A_2x02x4.20mm_Straight" H 2700 2250 50  0001 C CNN
-F 3 "~" H 2700 2250 50  0001 C CNN
-	1    2700 2250
+P 6025 2125
+F 0 "J5" H 6075 2250 50  0000 C CNB
+F 1 "Conn_02x02_Odd_Even" H 6075 2251 50  0001 C CNN
+F 2 "CarMan General Footprints:Molex_MiniFit-JR-5556-04A_2x02x4.20mm_Straight" H 6025 2125 50  0001 C CNN
+F 3 "~" H 6025 2125 50  0001 C CNN
+	1    6025 2125
 	1    0    0    -1  
 $EndComp
-Text Label 4600 1100 2    50   ~ 0
+Text Label 3975 2150 2    50   ~ 0
 SCL_NOT_ISO
-Text Label 5100 1100 0    50   ~ 0
-SDA_NOT_ISO
-Text Label 4600 1200 2    50   ~ 0
+Text Label 3975 2250 2    50   ~ 0
 GLV_RTN
-Text Label 5100 1200 0    50   ~ 0
+Text Label 5825 2125 2    50   ~ 0
 24V
-Text Label 2500 2250 2    50   ~ 0
-24V
-Text Label 3000 2250 0    50   ~ 0
+Text Label 6325 2125 0    50   ~ 0
 GLV_RTN
-Text Label 2500 2350 2    50   ~ 0
+Text Label 5825 2225 2    50   ~ 0
 SLOOP_TO_IMD
 Wire Wire Line
 	2950 5275 2850 5275
@@ -637,4 +620,21 @@ Wire Notes Line
 	7300 2950 9025 2950
 Wire Notes Line
 	9025 450  9025 2950
+Text Label 4475 2250 0    50   ~ 0
+24V
+Text Label 4475 2150 0    50   ~ 0
+SDA_NOT_ISO
+$Comp
+L Connector_Generic:Conn_02x02_Odd_Even J4
+U 1 1 5FB21308
+P 4175 2150
+F 0 "J4" H 4225 2275 50  0000 C CNB
+F 1 "Conn_02x02_Odd_Even" H 4225 2276 50  0001 C CNN
+F 2 "CarMan General Footprints:Molex_MiniFit-JR-5556-04A_2x02x4.20mm_Straight" H 4175 2150 50  0001 C CNN
+F 3 "~" H 4175 2150 50  0001 C CNN
+	1    4175 2150
+	1    0    0    -1  
+$EndComp
+Text Notes 3825 2550 0    50   ~ 10
+Connection to Logic Board\nfor the I2C line. \n
 $EndSCHEMATC
