@@ -1866,8 +1866,6 @@ Text HLabel 1150 11450 0    50   Input ~ 0
 5V
 Wire Wire Line
 	1150 11450 1850 11450
-Text Label 7100 15275 2    59   ~ 0
-MC_95%
 Wire Wire Line
 	6400 15275 7100 15275
 $Comp
@@ -2068,4 +2066,6 @@ $EndComp
 Wire Wire Line
 	19700 3000 19700 3400
 Connection ~ 19700 3000
+Text Label 7100 15275 2    59   ~ 0
+PC_Control
 $EndSCHEMATC
