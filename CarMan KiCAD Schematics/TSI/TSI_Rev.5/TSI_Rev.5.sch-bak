@@ -919,7 +919,7 @@ U 1 1 61E4E7D1
 P 10225 675
 F 0 "J10" H 10175 775 50  0000 L CNN
 F 1 "J10 COOL PWR" H 10175 775 50  0001 L CNN
-F 2 "TSI_Rev_2021_Footprint_Lib:Molex_MiniFit-JR-5556-02A_2x01x4.20mm_Straight" H 10225 675 50  0001 C CNN
+F 2 "CarMan General Footprints:Molex_Mega-Fit_76829-0102_2x01_P5.70mm_Vertical" H 10225 675 50  0001 C CNN
 F 3 "~" H 10225 675 50  0001 C CNN
 	1    10225 675 
 	1    0    0    -1  

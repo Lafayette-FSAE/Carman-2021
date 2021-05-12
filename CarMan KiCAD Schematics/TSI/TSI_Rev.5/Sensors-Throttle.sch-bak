@@ -483,14 +483,14 @@ Wire Notes Line
 Wire Notes Line
 	2950 11150 3000 11150
 $Comp
-L TSI_Rev.5-rescue:SI8600AB-B-IS-CarMan_KiCAD_Library-TSI_Rev.5-rescue U5
+L CarMan_KiCAD_Library:SI8600AB-B-IS U5
 U 1 1 5FBF8C01
-P 3950 5450
-F 0 "U5" H 4150 5850 50  0000 C CNN
-F 1 "SI8600AB-B-IS" H 3950 5000 50  0000 C CNN
-F 2 "TSI_Rev_2021_Footprint_Lib:SOIC127P600X175-8N" H 3950 5850 50  0001 C CNN
-F 3 "https://www.snapeda.com/parts/SI8600AB-B-IS/Silicon%20Labs/datasheet/" H 3950 5850 50  0001 C CNN
-	1    3950 5450
+P 4000 5450
+F 0 "U5" H 4200 5850 50  0000 C CNN
+F 1 "SI8600AB-B-IS" H 4000 5000 50  0000 C CNN
+F 2 "TSI_Rev_2021_Footprint_Lib:SOIC127P600X175-8N" H 4000 5850 50  0001 C CNN
+F 3 "https://www.snapeda.com/parts/SI8600AB-B-IS/Silicon%20Labs/datasheet/" H 4000 5850 50  0001 C CNN
+	1    4000 5450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
