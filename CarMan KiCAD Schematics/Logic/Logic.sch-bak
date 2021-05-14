@@ -575,9 +575,9 @@ Text Label 12725 9475 0    50   ~ 0
 ISO_RTN
 Text Label 12725 9175 0    50   ~ 0
 3.3V_ISO
-Text Label 15300 9475 2    50   ~ 0
+Text Label 15325 9475 2    50   ~ 0
 GLV_RTN
-Text Label 15300 9175 2    50   ~ 0
+Text Label 15325 9175 2    50   ~ 0
 5V_NON_ISO
 Wire Wire Line
 	13175 9275 12725 9275
@@ -587,19 +587,8 @@ Text Label 12725 9275 0    50   ~ 0
 SDA_ISO_PI
 Text Label 12725 9375 0    50   ~ 0
 SCL_ISO_PI
-Text Label 15300 9375 2    50   ~ 0
+Text Label 15325 9375 2    50   ~ 0
 SCL_TSI_GLV
-$Comp
-L CarMan_KiCAD_Library:ISO1541DR U9
-U 1 1 5FBB1A99
-P 13175 9175
-F 0 "U9" H 14000 9425 60  0000 C CNN
-F 1 "ISO1541DR" H 13975 8625 60  0000 C CNN
-F 2 "CarMan General Footprints:ISO1541DR" H 13975 9415 60  0001 C CNN
-F 3 "https://www.ti.com/lit/ds/symlink/iso1541.pdf?HQS=TI-null-null-digikeymode-df-pf-null-wwe&ts=1606082283174" H 13175 9175 60  0001 C CNN
-	1    13175 9175
-	1    0    0    -1  
-$EndComp
 NoConn ~ 2875 3350
 NoConn ~ 2875 3450
 NoConn ~ 6525 4550
@@ -776,10 +765,6 @@ $EndComp
 Wire Wire Line
 	13250 5900 13775 5900
 Wire Wire Line
-	14775 9275 15300 9275
-Wire Wire Line
-	14775 9375 15300 9375
-Wire Wire Line
 	15575 7425 15575 7300
 Connection ~ 15000 7500
 Wire Wire Line
@@ -888,7 +873,7 @@ Wire Wire Line
 	9450 10500 9975 10500
 Text Label 12975 2125 2    50   ~ 0
 SDA_TSI_GLV
-Text Label 15300 9275 2    50   ~ 0
+Text Label 15325 9275 2    50   ~ 0
 SDA_TSI_GLV
 Text Label 15900 1025 2    50   ~ 0
 SDA_TSI_GLV
@@ -1210,23 +1195,6 @@ Text Label 13800 1125 2    50   ~ 0
 SCL_TSI_GLV
 Wire Wire Line
 	13800 1125 13275 1125
-$Comp
-L Device:C C?
-U 1 1 6093F83D
-P 15500 9325
-AR Path="/5FAD1CB8/6093F83D" Ref="C?"  Part="1" 
-AR Path="/6093F83D" Ref="C21"  Part="1" 
-F 0 "C21" H 15300 9425 50  0000 L CNN
-F 1 "0.1uF" H 15250 9250 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 15538 9175 50  0001 C CNN
-F 3 "~" H 15500 9325 50  0001 C CNN
-	1    15500 9325
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	14775 9175 15500 9175
-Wire Wire Line
-	14775 9475 15500 9475
 Text Label 14000 1425 0    50   ~ 0
 FlowRate
 NoConn ~ 9575 7275
@@ -1251,7 +1219,7 @@ P 1350 8750
 F 0 "D5" V 1350 8675 50  0000 R CNN
 F 1 "STATE_OUT_2" V 1298 8632 50  0001 R CNN
 F 2 "CarMan General Footprints:VAOL-S8GT4" H 1350 8750 50  0001 C CNN
-F 3 "~" H 1350 8750 50  0001 C CNN
+F 3 "http://static.vcclite.com/pdf/VAOL-S8GT4-LED-0805-green.pdf" H 1350 8750 50  0001 C CNN
 	1    1350 8750
 	0    -1   -1   0   
 $EndComp
@@ -1262,7 +1230,7 @@ P 2000 8750
 F 0 "D6" V 2000 8675 50  0000 R CNN
 F 1 "STATE_OUT_3" V 1948 8632 50  0001 R CNN
 F 2 "CarMan General Footprints:VAOL-S8GT4" H 2000 8750 50  0001 C CNN
-F 3 "~" H 2000 8750 50  0001 C CNN
+F 3 "http://static.vcclite.com/pdf/VAOL-S8GT4-LED-0805-green.pdf" H 2000 8750 50  0001 C CNN
 	1    2000 8750
 	0    -1   -1   0   
 $EndComp
@@ -1305,7 +1273,7 @@ P 700 8750
 F 0 "D4" V 700 8675 50  0000 R CNN
 F 1 "STATE_OUT_1" V 648 8632 50  0001 R CNN
 F 2 "CarMan General Footprints:VAOL-S8GT4" H 700 8750 50  0001 C CNN
-F 3 "~" H 700 8750 50  0001 C CNN
+F 3 "http://static.vcclite.com/pdf/VAOL-S8GT4-LED-0805-green.pdf" H 700 8750 50  0001 C CNN
 	1    700  8750
 	0    -1   -1   0   
 $EndComp
@@ -1535,4 +1503,71 @@ Wire Wire Line
 	8375 8475 8525 8475
 Wire Wire Line
 	8375 8775 9725 8775
+$Comp
+L Device:R R?
+U 1 1 609EC3AE
+P 15725 9225
+F 0 "R?" H 15800 9325 50  0000 L CNN
+F 1 "10k" V 15725 9175 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 15655 9225 50  0001 C CNN
+F 3 "~" H 15725 9225 50  0001 C CNN
+	1    15725 9225
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 609EC3B4
+P 15525 9125
+F 0 "R?" H 15375 9200 50  0000 L CNN
+F 1 "10k" V 15525 9075 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 15455 9125 50  0001 C CNN
+F 3 "~" H 15525 9125 50  0001 C CNN
+	1    15525 9125
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15525 8975 15725 8975
+Wire Wire Line
+	15725 8975 15725 9075
+Text Label 15525 8975 0    39   ~ 0
+5V_NON_ISO
+Wire Wire Line
+	14775 9475 15325 9475
+Wire Wire Line
+	14775 9375 15725 9375
+Wire Wire Line
+	14775 9275 15525 9275
+Wire Wire Line
+	15325 9175 14775 9175
+Text Label 15325 8950 2    50   ~ 0
+GLV_RTN
+$Comp
+L CarMan_KiCAD_Library:ISO1541DR U9
+U 1 1 5FBB1A99
+P 13175 9175
+F 0 "U9" H 14000 9425 60  0000 C CNN
+F 1 "ISO1541DR" H 13975 8625 60  0000 C CNN
+F 2 "CarMan General Footprints:ISO1541DR" H 13975 9415 60  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/iso1541.pdf?HQS=TI-null-null-digikeymode-df-pf-null-wwe&ts=1606082283174" H 13175 9175 60  0001 C CNN
+	1    13175 9175
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6093F83D
+P 14925 8950
+AR Path="/5FAD1CB8/6093F83D" Ref="C?"  Part="1" 
+AR Path="/6093F83D" Ref="C21"  Part="1" 
+F 0 "C21" V 15050 8875 50  0000 L CNN
+F 1 "0.1uF" V 14975 8650 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 14963 8800 50  0001 C CNN
+F 3 "~" H 14925 8950 50  0001 C CNN
+	1    14925 8950
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	14775 9175 14775 8950
+Connection ~ 14775 9175
+Wire Wire Line
+	15075 8950 15325 8950
 $EndSCHEMATC

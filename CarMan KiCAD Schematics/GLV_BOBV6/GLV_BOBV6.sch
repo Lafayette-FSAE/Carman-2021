@@ -41,13 +41,13 @@ F 3 "~" H 2400 5325 50  0001 C CNN
 $EndComp
 Text Label 2000 5475 0    50   ~ 0
 24V
-Text Notes 3750 1425 0    50   ~ 10
+Text Notes 5775 1325 0    50   ~ 0
 From LSP/Ammeter
-Text Notes 5525 2625 0    50   ~ 10
-24V to TSI/Analog\nBoard and SL. \nTSI calls SLOOP_TO_IMD Sl1_in\n24V to Cooling for switchable power.
-Text Notes 5300 1525 0    50   ~ 10
+Text Notes 7650 2100 0    50   ~ 0
+24V to TSI Board and SL. \nTSI calls SLOOP_TO_IMD Sl1_in\n24V to Cooling for switchable power.
+Text Notes 7925 1375 0    50   ~ 0
 24V to Can ISO\nfor Motor Controller
-Text Notes 7650 2250 0    50   ~ 10
+Text Notes 9425 850  0    50   ~ 10
 SL Breaker\n
 $Comp
 L Device:LED D2
@@ -104,40 +104,34 @@ GLV_RTN
 $Comp
 L power:PWR_FLAG #24V02
 U 1 1 5F9CF8CF
-P 800 800
-F 0 "#24V02" H 868 888 50  0001 L CNN
-F 1 "PWR_FLAG" H 800 1000 50  0000 C TNN
-F 2 "" H 800 800 50  0001 C CNN
-F 3 "~" H 800 800 50  0001 C CNN
-	1    800  800 
-	1    0    0    -1  
+P 1175 850
+F 0 "#24V02" H 1243 938 50  0001 L CNN
+F 1 "PWR_FLAG" V 1150 1175 50  0000 C TNN
+F 2 "" H 1175 850 50  0001 C CNN
+F 3 "~" H 1175 850 50  0001 C CNN
+	1    1175 850 
+	0    -1   -1   0   
 $EndComp
 $Comp
 L power:PWR_FLAG #FLG01
 U 1 1 5F9CFC42
-P 1250 800
-F 0 "#FLG01" H 1250 875 50  0001 C CNN
-F 1 "PWR_FLAG" H 1250 973 50  0000 C CNN
-F 2 "" H 1250 800 50  0001 C CNN
-F 3 "~" H 1250 800 50  0001 C CNN
-	1    1250 800 
-	1    0    0    -1  
+P 1175 1300
+F 0 "#FLG01" H 1175 1375 50  0001 C CNN
+F 1 "PWR_FLAG" V 1175 1625 50  0000 C CNN
+F 2 "" H 1175 1300 50  0001 C CNN
+F 3 "~" H 1175 1300 50  0001 C CNN
+	1    1175 1300
+	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	800  800  800  1000
-Wire Wire Line
-	1250 800  1250 1000
-Text Label 800  1000 3    59   ~ 12
+Text Label 1925 850  2    59   ~ 0
 24V
-Text Label 1250 1000 3    59   ~ 12
+Text Label 1925 1300 2    59   ~ 0
 GLV_RTN
-Text Notes 4600 4750 2    79   ~ 16
+Text Notes 4700 4775 2    79   ~ 16
 Non-Isolated DC/DC 24V to 5V
 Text Notes 4650 6425 2    79   ~ 16
 Current/Voltage Sensor 
-Text Notes 7800 2550 0    50   ~ 10
-Cooling Breaker
-Text Notes 8250 2300 0    50   ~ 10
+Text Notes 9350 1800 0    50   ~ 10
 TSI, Dash, Logic,\nBatt Pack Breaker
 Text Label 10950 5675 2    50   ~ 0
 BREAKER_IN_SL
@@ -163,72 +157,68 @@ BREAKER_OUT_COOL
 $Comp
 L Connector_Generic:Conn_01x02 J1
 U 1 1 5FA26A47
-P 4200 1275
-F 0 "J1" V 4118 1355 50  0000 L CNB
-F 1 "Conn_01x02" V 4163 1355 50  0001 L CNN
-F 2 "CarMan General Footprints:Molex_Mega-Fit_76829-0102_2x01_P5.70mm_Vertical" H 4200 1275 50  0001 C CNN
-F 3 "~" H 4200 1275 50  0001 C CNN
-	1    4200 1275
-	0    1    1    0   
+P 6275 1025
+F 0 "J1" H 6225 1125 50  0000 L CNN
+F 1 "Conn_01x02" V 6238 1105 50  0001 L CNN
+F 2 "CarMan General Footprints:Molex_Mega-Fit_76829-0102_2x01_P5.70mm_Vertical" H 6275 1025 50  0001 C CNN
+F 3 "~" H 6275 1025 50  0001 C CNN
+	1    6275 1025
+	1    0    0    -1  
 $EndComp
-Text Label 4200 1075 1    50   ~ 0
+Text Label 5675 1025 0    50   ~ 0
 GLV_RTN
-Text Label 4100 1075 1    50   ~ 0
+Text Label 5675 1125 0    50   ~ 0
 BATT+
 $Comp
 L Connector_Generic:Conn_01x02 J3
 U 1 1 5FA2B432
-P 5650 1275
-F 0 "J3" V 5568 1355 50  0000 L CNB
-F 1 "Conn_01x02" V 5613 1355 50  0001 L CNN
-F 2 "CarMan General Footprints:Molex_MiniFit-JR-5556-02A_2x01x4.20mm_Straight" H 5650 1275 50  0001 C CNN
-F 3 "~" H 5650 1275 50  0001 C CNN
-	1    5650 1275
-	0    1    1    0   
+P 8300 1025
+F 0 "J3" H 8250 1125 50  0000 L CNN
+F 1 "Conn_01x02" V 8263 1105 50  0001 L CNN
+F 2 "CarMan General Footprints:Molex_MiniFit-JR-5556-02A_2x01x4.20mm_Straight" H 8300 1025 50  0001 C CNN
+F 3 "~" H 8300 1025 50  0001 C CNN
+	1    8300 1025
+	1    0    0    -1  
 $EndComp
-Text Label 5650 1075 1    50   ~ 0
+Text Label 7700 1025 0    50   ~ 0
 GLV_RTN
-Text Label 5550 1075 1    50   ~ 0
+Text Label 7700 1125 0    50   ~ 0
 24V
-Text Label 6325 2225 0    50   ~ 0
+Text Label 9000 1750 2    50   ~ 0
 COOL_24V
-Wire Notes Line
-	7300 550  7300 2950
-Wire Notes Line
-	9000 550  7300 550 
-Text Notes 7825 2800 0    59   ~ 12
+Text Notes 9925 650  0    59   ~ 12
 Circuit Breakers
 $Comp
 L power:PWR_FLAG #24V03
 U 1 1 5FAB4422
-P 750 1725
-F 0 "#24V03" H 818 1813 50  0001 L CNN
-F 1 "PWR_FLAG" H 750 1925 50  0000 C TNN
-F 2 "" H 750 1725 50  0001 C CNN
-F 3 "~" H 750 1725 50  0001 C CNN
-	1    750  1725
-	1    0    0    -1  
+P 1175 1000
+F 0 "#24V03" H 1243 1088 50  0001 L CNN
+F 1 "PWR_FLAG" V 1150 1325 50  0000 C TNN
+F 2 "" H 1175 1000 50  0001 C CNN
+F 3 "~" H 1175 1000 50  0001 C CNN
+	1    1175 1000
+	0    -1   -1   0   
 $EndComp
-Text Label 750  1875 3    50   ~ 10
+Text Label 1925 1000 2    59   ~ 0
 COOL_24V
-Text Notes 1700 3100 2    50   ~ 0
+Text Notes 775  1775 0    50   ~ 0
 SLOOP_TO_IMD is the 24V \nsafety loop connection from \nthe LSP and ammeter to \nCarman's IMD relay.
 $Comp
 L Connector_Generic:Conn_01x02 J2
 U 1 1 5FAB4D0A
-P 4950 1275
-F 0 "J2" V 4868 1355 50  0000 L CNB
-F 1 "Conn_01x02" V 4913 1355 50  0001 L CNN
-F 2 "CarMan General Footprints:Molex_MiniFit-JR-5556-02A_2x01x4.20mm_Straight" H 4950 1275 50  0001 C CNN
-F 3 "~" H 4950 1275 50  0001 C CNN
-	1    4950 1275
-	0    1    1    0   
+P 7275 1025
+F 0 "J2" H 7225 1125 50  0000 L CNN
+F 1 "Conn_01x02" V 7238 1105 50  0001 L CNN
+F 2 "CarMan General Footprints:Molex_MiniFit-JR-5556-02A_2x01x4.20mm_Straight" H 7275 1025 50  0001 C CNN
+F 3 "~" H 7275 1025 50  0001 C CNN
+	1    7275 1025
+	1    0    0    -1  
 $EndComp
-Text Label 4850 1075 1    50   ~ 0
+Text Label 6675 1125 0    50   ~ 0
 24V
-Text Label 4950 1075 1    50   ~ 0
+Text Label 6675 1025 0    50   ~ 0
 GLV_RTN
-Text Notes 5050 1425 2    50   ~ 10
+Text Notes 7075 1300 0    50   ~ 0
 Extra 24V
 $Comp
 L Device:R R?
@@ -299,39 +289,39 @@ Text Label 1450 7400 0    50   ~ 0
 BATT+
 Wire Wire Line
 	5075 6800 5625 6800
-Text Label 1200 1875 3    50   ~ 10
+Text Label 1925 1150 2    59   ~ 0
 SLOOP_TO_IMD
 $Comp
 L power:PWR_FLAG #24V04
 U 1 1 5FAEB165
-P 1200 1725
-F 0 "#24V04" H 1268 1813 50  0001 L CNN
-F 1 "PWR_FLAG" H 1200 1925 50  0000 C TNN
-F 2 "" H 1200 1725 50  0001 C CNN
-F 3 "~" H 1200 1725 50  0001 C CNN
-	1    1200 1725
-	1    0    0    -1  
+P 1175 1150
+F 0 "#24V04" H 1243 1238 50  0001 L CNN
+F 1 "PWR_FLAG" V 1150 1475 50  0000 C TNN
+F 2 "" H 1175 1150 50  0001 C CNN
+F 3 "~" H 1175 1150 50  0001 C CNN
+	1    1175 1150
+	0    -1   -1   0   
 $EndComp
 $Comp
 L Connector_Generic:Conn_02x02_Odd_Even J5
 U 1 1 5FB2255E
-P 6025 2125
-F 0 "J5" H 6075 2250 50  0000 C CNB
-F 1 "Conn_02x02_Odd_Even" H 6075 2251 50  0001 C CNN
-F 2 "CarMan General Footprints:Molex_MiniFit-JR-5556-04A_2x02x4.20mm_Straight" H 6025 2125 50  0001 C CNN
-F 3 "~" H 6025 2125 50  0001 C CNN
-	1    6025 2125
+P 8175 1650
+F 0 "J5" H 8225 1750 50  0000 C CNN
+F 1 "Conn_02x02_Odd_Even" H 8225 1776 50  0001 C CNN
+F 2 "CarMan General Footprints:Molex_MiniFit-JR-5556-04A_2x02x4.20mm_Straight" H 8175 1650 50  0001 C CNN
+F 3 "~" H 8175 1650 50  0001 C CNN
+	1    8175 1650
 	1    0    0    -1  
 $EndComp
-Text Label 3975 2150 2    50   ~ 0
+Text Label 5650 1650 0    50   ~ 0
 SCL_NOT_ISO
-Text Label 3975 2250 2    50   ~ 0
+Text Label 5650 1750 0    50   ~ 0
 GLV_RTN
-Text Label 5825 2125 2    50   ~ 0
+Text Label 7450 1650 0    50   ~ 0
 24V
-Text Label 6325 2125 0    50   ~ 0
+Text Label 9000 1650 2    50   ~ 0
 GLV_RTN
-Text Label 5825 2225 2    50   ~ 0
+Text Label 7450 1750 0    50   ~ 0
 SLOOP_TO_IMD
 Wire Wire Line
 	2950 5275 2850 5275
@@ -345,44 +335,26 @@ Wire Wire Line
 $Comp
 L Connector_Generic:Conn_01x06 J6
 U 1 1 5FBB1F11
-P 8200 1750
-F 0 "J6" V 8118 2030 50  0000 L CNB
-F 1 "J6" V 8163 2030 50  0001 L CNN
-F 2 "CarMan General Footprints:Molex_Mega-Fit_76829-0106_2x03_P5.70mm_Vertical" H 8200 1750 50  0001 C CNN
-F 3 "~" H 8200 1750 50  0001 C CNN
-	1    8200 1750
-	0    1    1    0   
+P 10050 1300
+F 0 "J6" H 10000 900 50  0000 L CNN
+F 1 "J6" V 10013 1580 50  0001 L CNN
+F 2 "CarMan General Footprints:Molex_Mega-Fit_76829-0106_2x03_P5.70mm_Vertical" H 10050 1300 50  0001 C CNN
+F 3 "~" H 10050 1300 50  0001 C CNN
+	1    10050 1300
+	-1   0    0    1   
 $EndComp
-Text Label 8400 1550 1    50   ~ 0
+Text Label 10250 1500 0    50   ~ 0
 BREAKER_IN_GENERAL
-Text Label 8100 1550 1    50   ~ 0
+Text Label 10250 1200 0    50   ~ 0
 BREAKER_OUT_GENERAL
-Text Label 8300 1550 1    50   ~ 0
+Text Label 10250 1400 0    50   ~ 0
 BREAKER_IN_COOL
-Text Label 8000 1550 1    50   ~ 0
+Text Label 10250 1100 0    50   ~ 0
 BREAKER_OUT_COOL
-Text Label 8200 1550 1    50   ~ 0
+Text Label 10250 1300 0    50   ~ 0
 BREAKER_IN_SL
-Text Label 7900 1550 1    50   ~ 0
+Text Label 10250 1000 0    50   ~ 0
 BREAKER_OUT_SL
-Wire Notes Line
-	7950 2000 7950 1800
-Wire Notes Line
-	8150 1800 8150 2450
-Wire Notes Line
-	8500 2100 8500 2000
-Wire Notes Line
-	8350 2000 8350 1800
-Wire Notes Line
-	8500 2000 8350 2000
-Wire Notes Line
-	7950 2000 7800 2000
-Wire Notes Line
-	7800 2000 7800 2100
-Wire Wire Line
-	1200 1875 1200 1725
-Wire Wire Line
-	750  1875 750  1725
 $Comp
 L power:PWR_FLAG #24V0101
 U 1 1 5FB6078A
@@ -397,59 +369,59 @@ $EndComp
 $Comp
 L Mechanical:MountingHole H1
 U 1 1 5FBABE36
-P 9500 3075
-F 0 "H1" H 9600 3121 50  0000 L CNN
-F 1 "MountingHole" H 9600 3030 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.5mm_Pad" H 9500 3075 50  0001 C CNN
-F 3 "~" H 9500 3075 50  0001 C CNN
-	1    9500 3075
+P 9275 3025
+F 0 "H1" H 9375 3071 50  0000 L CNN
+F 1 "MountingHole" H 9375 2980 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.5mm_Pad" H 9275 3025 50  0001 C CNN
+F 3 "~" H 9275 3025 50  0001 C CNN
+	1    9275 3025
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H4
 U 1 1 5FBADD6E
-P 10375 3075
-F 0 "H4" H 10475 3121 50  0000 L CNN
-F 1 "MountingHole" H 10475 3030 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.5mm_Pad" H 10375 3075 50  0001 C CNN
-F 3 "~" H 10375 3075 50  0001 C CNN
-	1    10375 3075
+P 10150 3025
+F 0 "H4" H 10250 3071 50  0000 L CNN
+F 1 "MountingHole" H 10250 2980 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.5mm_Pad" H 10150 3025 50  0001 C CNN
+F 3 "~" H 10150 3025 50  0001 C CNN
+	1    10150 3025
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H3
 U 1 1 5FBAE047
-P 10375 3525
-F 0 "H3" H 10475 3571 50  0000 L CNN
-F 1 "MountingHole" H 10475 3480 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.5mm_Pad" H 10375 3525 50  0001 C CNN
-F 3 "~" H 10375 3525 50  0001 C CNN
-	1    10375 3525
+P 10150 3475
+F 0 "H3" H 10250 3521 50  0000 L CNN
+F 1 "MountingHole" H 10250 3430 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.5mm_Pad" H 10150 3475 50  0001 C CNN
+F 3 "~" H 10150 3475 50  0001 C CNN
+	1    10150 3475
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H2
 U 1 1 5FBAE1E6
-P 9500 3525
-F 0 "H2" H 9600 3571 50  0000 L CNN
-F 1 "MountingHole" H 9600 3480 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.5mm_Pad" H 9500 3525 50  0001 C CNN
-F 3 "~" H 9500 3525 50  0001 C CNN
-	1    9500 3525
+P 9275 3475
+F 0 "H2" H 9375 3521 50  0000 L CNN
+F 1 "MountingHole" H 9375 3430 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.5mm_Pad" H 9275 3475 50  0001 C CNN
+F 3 "~" H 9275 3475 50  0001 C CNN
+	1    9275 3475
 	1    0    0    -1  
 $EndComp
 Text Label 9000 5825 0    50   ~ 0
 24V_NOT_BREAKERED
 Wire Notes Line
-	9300 3675 11150 3675
+	9075 3625 10925 3625
 Wire Notes Line
-	11150 3675 11150 2750
+	10925 3625 10925 2700
 Wire Notes Line
-	9300 2750 9300 3675
-Text Notes 9700 2900 0    79   ~ 0
+	9075 2700 9075 3625
+Text Notes 9475 2850 0    79   ~ 0
 MOUNTING HOLES
 Wire Notes Line
-	11150 2750 9300 2750
+	10925 2700 9075 2700
 Wire Wire Line
 	5625 6650 5625 6800
 Connection ~ 5625 6800
@@ -616,25 +588,115 @@ Wire Notes Line
 	8800 3725 11150 3725
 Wire Notes Line
 	8800 3725 8800 5075
-Wire Notes Line
-	7300 2950 9025 2950
-Wire Notes Line
-	9025 450  9025 2950
-Text Label 4475 2250 0    50   ~ 0
+Text Label 7200 1750 2    50   ~ 0
 24V
-Text Label 4475 2150 0    50   ~ 0
+Text Label 7200 1650 2    50   ~ 0
 SDA_NOT_ISO
 $Comp
 L Connector_Generic:Conn_02x02_Odd_Even J4
 U 1 1 5FB21308
-P 4175 2150
-F 0 "J4" H 4225 2275 50  0000 C CNB
-F 1 "Conn_02x02_Odd_Even" H 4225 2276 50  0001 C CNN
-F 2 "CarMan General Footprints:Molex_MiniFit-JR-5556-04A_2x02x4.20mm_Straight" H 4175 2150 50  0001 C CNN
-F 3 "~" H 4175 2150 50  0001 C CNN
-	1    4175 2150
+P 6375 1650
+F 0 "J4" H 6425 1750 50  0000 C CNN
+F 1 "Conn_02x02_Odd_Even" H 6425 1776 50  0001 C CNN
+F 2 "CarMan General Footprints:Molex_MiniFit-JR-5556-04A_2x02x4.20mm_Straight" H 6375 1650 50  0001 C CNN
+F 3 "~" H 6375 1650 50  0001 C CNN
+	1    6375 1650
 	1    0    0    -1  
 $EndComp
-Text Notes 3825 2550 0    50   ~ 10
+Wire Wire Line
+	6075 1025 5675 1025
+Wire Wire Line
+	6075 1125 5675 1125
+Wire Wire Line
+	7075 1125 6675 1125
+Wire Wire Line
+	7075 1025 6675 1025
+Wire Wire Line
+	8100 1125 7700 1125
+Wire Wire Line
+	8100 1025 7700 1025
+Wire Wire Line
+	5650 1650 6175 1650
+Wire Wire Line
+	5650 1750 6175 1750
+Wire Wire Line
+	6675 1750 7200 1750
+Wire Wire Line
+	6675 1650 7200 1650
+Wire Wire Line
+	7450 1650 7975 1650
+Wire Wire Line
+	7450 1750 7975 1750
+Wire Wire Line
+	8475 1750 9000 1750
+Wire Wire Line
+	8475 1650 9000 1650
+Text Notes 5600 725  0    118  ~ 0
+GLV HEADERS
+Wire Notes Line
+	5525 775  6875 775 
+Wire Notes Line
+	6875 775  6875 500 
+Wire Notes Line
+	9925 1100 9925 1000
+Wire Notes Line
+	9925 1000 10000 1000
+Wire Notes Line
+	10000 1100 9925 1100
+Wire Notes Line
+	9800 1050 9925 1050
+Wire Notes Line
+	10000 1200 9925 1200
+Wire Notes Line
+	9925 1200 9925 1300
+Wire Notes Line
+	9925 1300 10000 1300
+Wire Notes Line
+	10000 1400 9925 1400
+Wire Notes Line
+	9925 1400 9925 1500
+Wire Notes Line
+	9925 1500 10000 1500
+Wire Notes Line
+	9925 1450 9800 1450
+Wire Notes Line
+	9800 1450 9800 1600
+Text Notes 9075 1275 0    50   ~ 10
+Cooling Breaker
+Wire Notes Line
+	9800 1600 9550 1600
+Wire Notes Line
+	9800 900  9550 900 
+Text Notes 5975 2000 0    50   ~ 0
 Connection to Logic Board\nfor the I2C line. \n
+Wire Notes Line
+	5525 500  5525 2325
+Wire Notes Line
+	5525 500  11200 500 
+Wire Notes Line
+	11200 500  11200 2325
+Wire Notes Line
+	5525 2325 11200 2325
+Wire Notes Line
+	9925 1250 9725 1250
+Wire Notes Line
+	9800 900  9800 1050
+Wire Wire Line
+	1175 1300 1925 1300
+Wire Wire Line
+	1175 1150 1925 1150
+Wire Wire Line
+	1175 1000 1925 1000
+Wire Wire Line
+	1175 850  1925 850 
+Wire Notes Line
+	500  1875 2100 1875
+Wire Notes Line
+	500  500  500  1875
+Wire Notes Line
+	500  500  2100 500 
+Wire Notes Line
+	2100 500  2100 1875
+Text Notes 875  675  0    79   ~ 0
+POWER FLAGS
 $EndSCHEMATC
