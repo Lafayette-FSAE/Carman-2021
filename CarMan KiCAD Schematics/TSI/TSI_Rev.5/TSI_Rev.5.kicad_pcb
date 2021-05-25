@@ -11,8 +11,8 @@
 
   (page A3)
   (layers
-    (0 F.Cu signal hide)
-    (31 B.Cu signal hide)
+    (0 F.Cu signal)
+    (31 B.Cu signal)
     (32 B.Adhes user)
     (33 F.Adhes user)
     (34 B.Paste user)
@@ -8063,7 +8063,7 @@
   (module TSI_Rev_2021_Footprint_Lib:SOIC127P600X175-14N (layer F.Cu) (tedit 5FB32B92) (tstamp 5FFFBAFA)
     (at 137.16 153.67 90)
     (path /6196BF15/6135E725)
-    (fp_text reference U35 (at 0.0215 4.953 90) (layer F.SilkS)
+    (fp_text reference U35 (at 0.0215 5.588 90) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value MCP6004 (at 8.215 5.242 90) (layer F.Fab)

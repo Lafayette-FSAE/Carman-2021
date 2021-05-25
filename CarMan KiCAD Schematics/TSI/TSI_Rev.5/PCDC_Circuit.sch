@@ -191,27 +191,27 @@ Text Label 2150 825  2    50   ~ 0
 5HV
 Text HLabel 1350 825  0    50   Input ~ 0
 5HV
-Text Label 1850 11250 2    50   ~ 0
+Text Label 1850 11350 2    50   ~ 0
 GLV_RTN
 Text Label 1850 10950 2    50   ~ 0
 24V
-Text Label 1850 11350 2    50   ~ 0
+Text Label 1850 11450 2    50   ~ 0
 Safety_Loop
-Text Label 1850 11050 2    50   ~ 0
+Text Label 1850 11150 2    50   ~ 0
 3.3V
 Text Notes 675  10825 0    79   ~ 0
 LOW VOLTAGE SIGNALS\n
-Text HLabel 1150 11350 0    50   Input ~ 0
+Text HLabel 1150 11450 0    50   Input ~ 0
 Safety_Loop
-Text HLabel 1150 11250 0    50   Input ~ 0
+Text HLabel 1150 11350 0    50   Input ~ 0
 GLV_RTN
 Text HLabel 1150 10950 0    50   Input ~ 0
 24V
-Text Label 1850 11150 2    50   ~ 0
+Text Label 1850 11250 2    50   ~ 0
+AIRS+
+Text HLabel 1150 11250 0    50   Input ~ 0
 AIRS+
 Text HLabel 1150 11150 0    50   Input ~ 0
-AIRS+
-Text HLabel 1150 11050 0    50   Input ~ 0
 3.3V
 Wire Notes Line
 	550  10650 2100 10650
@@ -405,15 +405,15 @@ Wire Wire Line
 Wire Wire Line
 	1350 1025 2150 1025
 Wire Wire Line
-	1150 11250 1850 11250
+	1150 11350 1850 11350
 Wire Wire Line
 	1150 11675 1850 11675
 Wire Wire Line
-	1150 11350 1850 11350
+	1150 11450 1850 11450
+Wire Wire Line
+	1150 11250 1850 11250
 Wire Wire Line
 	1150 11150 1850 11150
-Wire Wire Line
-	1150 11050 1850 11050
 Wire Wire Line
 	1150 10950 1850 10950
 Text Label 4600 15475 0    59   ~ 0
@@ -509,59 +509,32 @@ Wire Wire Line
 	6250 12900 6250 12950
 Text Label 4900 12900 0    59   ~ 0
 GLV_RTN
-Wire Wire Line
-	4000 12700 4150 12700
-Wire Wire Line
-	3400 12800 3250 12800
-Wire Wire Line
-	3250 12800 3250 13150
-Wire Wire Line
-	3250 13150 4150 13150
-Text Label 3900 13000 2    47   ~ 0
-GLV_RTN
-Text Label 3600 12400 0    50   ~ 0
-3.3V
 $Comp
 L Device:LED D14
 U 1 1 5FE7D099
-P 4900 12350
-F 0 "D14" H 4900 12250 50  0000 C CNN
-F 1 "SL_Status" H 4900 12450 50  0000 C CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4900 12350 50  0001 C CNN
-F 3 "~" H 4900 12350 50  0001 C CNN
-	1    4900 12350
+P 5000 12350
+F 0 "D14" H 5000 12250 50  0000 C CNN
+F 1 "SL_Status" H 5000 12450 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5000 12350 50  0001 C CNN
+F 3 "~" H 5000 12350 50  0001 C CNN
+	1    5000 12350
 	-1   0    0    1   
 $EndComp
 $Comp
 L Device:R R105
 U 1 1 5FE3889A
-P 4500 12350
-F 0 "R105" V 4600 12250 50  0000 L CNN
-F 1 "330" V 4500 12300 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4430 12350 50  0001 C CNN
-F 3 "~" H 4500 12350 50  0001 C CNN
-	1    4500 12350
+P 4600 12350
+F 0 "R105" V 4700 12250 50  0000 L CNN
+F 1 "330" V 4600 12275 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4530 12350 50  0001 C CNN
+F 3 "~" H 4600 12350 50  0001 C CNN
+	1    4600 12350
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	4650 12350 4750 12350
-Text Label 5450 12350 2    50   ~ 0
+	4750 12350 4850 12350
+Text Label 5550 12350 2    50   ~ 0
 GLV_RTN
-Text Label 1900 12600 0    67   ~ 0
-Safety_Loop
-$Comp
-L Connector:TestPoint TP?
-U 1 1 5FEC0838
-P 2750 12450
-AR Path="/5FC85F57/5FEC0838" Ref="TP?"  Part="1" 
-AR Path="/6196BF15/5FEC0838" Ref="TP7"  Part="1" 
-F 0 "TP7" H 2750 12500 50  0000 L CNN
-F 1 "Safety_Loop" H 2650 12650 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D3.0mm" H 2950 12450 50  0001 C CNN
-F 3 "~" H 2950 12450 50  0001 C CNN
-	1    2750 12450
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:R R47
 U 1 1 608786E7
@@ -576,56 +549,17 @@ $EndComp
 Wire Wire Line
 	5400 12700 5250 12700
 Wire Wire Line
-	4150 13150 4150 12700
-Wire Wire Line
-	3900 13000 3600 13000
-$Comp
-L Amplifier_Operational:MCP6004 U35
-U 1 1 6135E725
-P 3700 12700
-F 0 "U35" H 3700 12700 50  0000 C CNN
-F 1 "MCP6004" H 3900 12850 50  0000 C CNN
-F 2 "TSI_Rev_2021_Footprint_Lib:SOIC127P600X175-14N" H 3650 12800 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 3750 12900 50  0001 C CNN
-	1    3700 12700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Amplifier_Operational:MCP6004 U35
-U 5 1 613AB3DB
-P 3700 12700
-F 0 "U35" H 3658 12700 50  0001 L CNN
-F 1 "MCP6004" H 3658 12655 50  0001 L CNN
-F 2 "TSI_Rev_2021_Footprint_Lib:SOIC127P600X175-14N" H 3650 12800 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 3750 12900 50  0001 C CNN
-	5    3700 12700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1900 12600 2750 12600
-Connection ~ 2750 12600
-Wire Wire Line
-	2750 12450 2750 12600
-Wire Wire Line
 	6000 12700 6800 12700
 Wire Wire Line
 	6250 13300 6800 13300
 Wire Wire Line
 	5400 12900 4900 12900
-Connection ~ 4150 12700
 Wire Wire Line
-	2750 12600 3400 12600
+	4400 12700 4400 12350
 Wire Wire Line
-	4150 12700 4300 12700
+	4400 12350 4450 12350
 Wire Wire Line
-	4300 12700 4300 12350
-Connection ~ 4300 12700
-Wire Wire Line
-	4300 12700 4950 12700
-Wire Wire Line
-	4300 12350 4350 12350
-Wire Wire Line
-	5050 12350 5450 12350
+	5150 12350 5550 12350
 $Comp
 L pspice:CAP C?
 U 1 1 5FBC069E
@@ -1860,12 +1794,12 @@ Wire Wire Line
 	15600 8375 15100 8375
 Text Label 4600 15275 0    49   ~ 0
 5V
-Text Label 1850 11450 2    50   ~ 0
+Text Label 1850 11050 2    50   ~ 0
 5V
-Text HLabel 1150 11450 0    50   Input ~ 0
+Text HLabel 1150 11050 0    50   Input ~ 0
 5V
 Wire Wire Line
-	1150 11450 1850 11450
+	1150 11050 1850 11050
 Wire Wire Line
 	6400 15275 7100 15275
 $Comp
@@ -2068,4 +2002,72 @@ Wire Wire Line
 Connection ~ 19700 3000
 Text Label 7100 15275 2    59   ~ 0
 PC_Control
+Wire Wire Line
+	2750 12450 2750 12600
+Wire Wire Line
+	1900 12600 2750 12600
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5FEC0838
+P 2750 12450
+AR Path="/5FC85F57/5FEC0838" Ref="TP?"  Part="1" 
+AR Path="/6196BF15/5FEC0838" Ref="TP7"  Part="1" 
+F 0 "TP7" H 2750 12500 50  0000 L CNN
+F 1 "Safety_Loop" H 2650 12650 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D3.0mm" H 2950 12450 50  0001 C CNN
+F 3 "~" H 2950 12450 50  0001 C CNN
+	1    2750 12450
+	1    0    0    -1  
+$EndComp
+Text Label 1900 12600 0    67   ~ 0
+Safety_Loop
+Connection ~ 2750 12600
+Wire Wire Line
+	4000 12700 4150 12700
+Wire Wire Line
+	3400 12800 3250 12800
+Wire Wire Line
+	3250 13150 4150 13150
+Text Label 3900 13000 2    47   ~ 0
+GLV_RTN
+Text Label 3900 12400 2    50   ~ 0
+5V
+Wire Wire Line
+	4150 13150 4150 12700
+Wire Wire Line
+	3900 13000 3600 13000
+$Comp
+L Amplifier_Operational:MCP6004 U35
+U 1 1 6135E725
+P 3700 12700
+F 0 "U35" H 3700 12700 50  0000 C CNN
+F 1 "MCP6004" H 3900 12850 50  0000 C CNN
+F 2 "TSI_Rev_2021_Footprint_Lib:SOIC127P600X175-14N" H 3650 12800 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 3750 12900 50  0001 C CNN
+	1    3700 12700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:MCP6004 U35
+U 5 1 613AB3DB
+P 3700 12700
+F 0 "U35" H 3658 12700 50  0001 L CNN
+F 1 "MCP6004" H 3658 12655 50  0001 L CNN
+F 2 "TSI_Rev_2021_Footprint_Lib:SOIC127P600X175-14N" H 3650 12800 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 3750 12900 50  0001 C CNN
+	5    3700 12700
+	1    0    0    -1  
+$EndComp
+Connection ~ 4150 12700
+Wire Wire Line
+	2750 12600 3400 12600
+Wire Wire Line
+	3250 12800 3250 13150
+Connection ~ 4400 12700
+Wire Wire Line
+	4400 12700 4950 12700
+Wire Wire Line
+	4150 12700 4400 12700
+Wire Wire Line
+	3900 12400 3600 12400
 $EndSCHEMATC

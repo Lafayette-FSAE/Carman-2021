@@ -1110,7 +1110,7 @@ Connection ~ 14375 8825
 Text Notes 8050 1925 2    43   ~ 0
 Cooling Sensors\n(J19)
 Text Notes 4475 8300 0    47   ~ 0
-Dashboard (J11)\n
+Dashboard (J12)\n
 Text Notes 2850 11100 0    47   ~ 0
 LSP (J20)\n
 Text Notes 8125 11100 0    47   ~ 0
@@ -1262,7 +1262,7 @@ F 3 "https://www.digikey.com/en/products/detail/panasonic-electric-works/SFS2-DC
 	1    0    0    -1  
 $EndComp
 Text Notes 9525 8300 0    47   ~ 0
-Dashboard (J11)\n
+Dashboard (J12)\n
 Text Notes 8800 7200 0    47   ~ 0
 15 mA through coil
 Wire Notes Line
