@@ -88,7 +88,7 @@ GLV_RTN
 Text HLabel 1275 1450 0    50   Output ~ 0
 5V_ISO
 $Comp
-L CarMan_KiCAD_Library:PYB20-Q24-S5 U4
+L Logic-rescue:PYB20-Q24-S5-CarMan_KiCAD_Library U4
 U 1 1 5FAF8405
 P 4450 3775
 F 0 "U4" H 4450 4325 50  0000 C CNN
