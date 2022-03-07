@@ -382,4 +382,163 @@ Wire Notes Line
 	11500 1000 15500 1000
 Wire Notes Line
 	13050 1000 13050 1425
+$Comp
+L SamacSys_Parts:P783-Q24-S5-S PS?
+U 1 1 62268053
+P 7650 2850
+F 0 "PS?" H 8478 2346 50  0000 L CNN
+F 1 "P783-Q24-S5-S" H 8478 2255 50  0000 L CNN
+F 2 "P783Q24S5S" H 8500 2950 50  0001 L CNN
+F 3 "https://www.cui.com/product/resource/digikeypdf/p783-s.pdf" H 8500 2850 50  0001 L CNN
+F 4 "Non-Isolated DC/DC Converters 5 Vdc, 3 A, 15 W, 8~36 Vdc Input Range" H 8500 2750 50  0001 L CNN "Description"
+F 5 "15.35" H 8500 2650 50  0001 L CNN "Height"
+F 6 "490-P783-Q24-S5-S" H 8500 2550 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/CUI-Inc/P783-Q24-S5-S?qs=sPbYRqrBIVlCN3ziQDuGDA%3D%3D" H 8500 2450 50  0001 L CNN "Mouser Price/Stock"
+F 8 "CUI Inc." H 8500 2350 50  0001 L CNN "Manufacturer_Name"
+F 9 "P783-Q24-S5-S" H 8500 2250 50  0001 L CNN "Manufacturer_Part_Number"
+	1    7650 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7650 3250 7450 3250
+Wire Wire Line
+	7450 3350 7650 3350
+Wire Wire Line
+	7650 3450 7450 3450
+Wire Wire Line
+	7450 3250 7450 3350
+Connection ~ 7450 3350
+Wire Wire Line
+	7450 3350 7450 3450
+Wire Wire Line
+	7650 3550 7450 3550
+Wire Wire Line
+	7450 3550 7450 3450
+Connection ~ 7450 3450
+Wire Wire Line
+	7650 2950 7400 2950
+Wire Wire Line
+	7400 2950 7400 3050
+Wire Wire Line
+	7400 3050 7650 3050
+Wire Wire Line
+	7650 3150 7400 3150
+Wire Wire Line
+	7400 3150 7400 3050
+Connection ~ 7400 3050
+Wire Wire Line
+	7650 3650 7450 3650
+Wire Wire Line
+	7450 3650 7450 3750
+Wire Wire Line
+	7450 3750 7650 3750
+Wire Wire Line
+	7650 3850 7450 3850
+Wire Wire Line
+	7450 3850 7450 3750
+Connection ~ 7450 3750
+$Comp
+L SamacSys_Parts:ESH107M050AG3KA C?
+U 1 1 62284A0F
+P 6100 3050
+F 0 "C?" V 6304 3180 50  0000 L CNN
+F 1 "ESH107M050AG3KA" V 6395 3180 50  0000 L CNN
+F 2 "CAPPRD350W60D800H1250" H 6450 3100 50  0001 L CNN
+F 3 "https://connect.kemet.com:7667/gateway/IntelliData-ComponentDocumentation/1.0/download/specsheet/ESH107M050AG3KA" H 6450 3000 50  0001 L CNN
+F 4 "ESH, Aluminum Electrolytic, 100 uF, 20%, 50 VDC, -40/+105C, Lead Spacing = 3.5mm" H 6450 2900 50  0001 L CNN "Description"
+F 5 "12.5" H 6450 2800 50  0001 L CNN "Height"
+F 6 "" H 6450 2700 50  0001 L CNN "Mouser Part Number"
+F 7 "" H 6450 2600 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Kemet" H 6450 2500 50  0001 L CNN "Manufacturer_Name"
+F 9 "ESH107M050AG3KA" H 6450 2400 50  0001 L CNN "Manufacturer_Part_Number"
+	1    6100 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L SamacSys_Parts:VLS4012HBX-220M-N L?
+U 1 1 6228A76D
+P 5300 3050
+F 0 "L?" H 5700 3275 50  0000 C CNN
+F 1 "VLS4012HBX-220M-N" H 5700 3184 50  0000 C CNN
+F 2 "VLS4012HBX220MN" H 5950 3100 50  0001 L CNN
+F 3 "https://product.tdk.com/system/files/dam/doc/product/inductor/inductor/smd/catalog/inductor_commercial_power_vls4012hbx-n_en.pdf" H 5950 3000 50  0001 L CNN
+F 4 "SMD / SMT Inductors (Coils), L=22?H, L x W x T :" H 5950 2900 50  0001 L CNN "Description"
+F 5 "1.2" H 5950 2800 50  0001 L CNN "Height"
+F 6 "810-VLS4012HBX220M-N" H 5950 2700 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/TDK/VLS4012HBX-220M-N?qs=A6eO%252BMLsxmR3U%2FS6%252BaW3qw%3D%3D" H 5950 2600 50  0001 L CNN "Mouser Price/Stock"
+F 8 "TDK" H 5950 2500 50  0001 L CNN "Manufacturer_Name"
+F 9 "VLS4012HBX-220M-N" H 5950 2400 50  0001 L CNN "Manufacturer_Part_Number"
+	1    5300 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L SamacSys_Parts:ESH107M050AG3KA C?
+U 1 1 6228C858
+P 5300 3050
+F 0 "C?" V 5504 3180 50  0000 L CNN
+F 1 "ESH107M050AG3KA" V 5595 3180 50  0000 L CNN
+F 2 "CAPPRD350W60D800H1250" H 5650 3100 50  0001 L CNN
+F 3 "https://connect.kemet.com:7667/gateway/IntelliData-ComponentDocumentation/1.0/download/specsheet/ESH107M050AG3KA" H 5650 3000 50  0001 L CNN
+F 4 "ESH, Aluminum Electrolytic, 100 uF, 20%, 50 VDC, -40/+105C, Lead Spacing = 3.5mm" H 5650 2900 50  0001 L CNN "Description"
+F 5 "12.5" H 5650 2800 50  0001 L CNN "Height"
+F 6 "" H 5650 2700 50  0001 L CNN "Mouser Part Number"
+F 7 "" H 5650 2600 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Kemet" H 5650 2500 50  0001 L CNN "Manufacturer_Name"
+F 9 "ESH107M050AG3KA" H 5650 2400 50  0001 L CNN "Manufacturer_Part_Number"
+	1    5300 3050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7400 3050 6100 3050
+Connection ~ 6100 3050
+Connection ~ 5300 3050
+Text Label 4850 3050 0    50   ~ 0
+24V
+Wire Wire Line
+	4800 3050 5300 3050
+Wire Wire Line
+	7050 3450 7050 3550
+Wire Wire Line
+	5300 3550 6100 3550
+Connection ~ 6100 3550
+Wire Wire Line
+	5300 3550 4900 3550
+Connection ~ 5300 3550
+Wire Wire Line
+	7450 3450 7050 3450
+Text Label 4950 3550 0    50   ~ 0
+GLV_RTN
+Wire Wire Line
+	7050 3550 6250 3550
+$Comp
+L SamacSys_Parts:ESH107M050AG3KA C?
+U 1 1 622A6061
+P 6250 4050
+F 0 "C?" V 6546 3920 50  0000 R CNN
+F 1 "ESH107M050AG3KA" V 6455 3920 50  0000 R CNN
+F 2 "CAPPRD350W60D800H1250" H 6600 4100 50  0001 L CNN
+F 3 "https://connect.kemet.com:7667/gateway/IntelliData-ComponentDocumentation/1.0/download/specsheet/ESH107M050AG3KA" H 6600 4000 50  0001 L CNN
+F 4 "ESH, Aluminum Electrolytic, 100 uF, 20%, 50 VDC, -40/+105C, Lead Spacing = 3.5mm" H 6600 3900 50  0001 L CNN "Description"
+F 5 "12.5" H 6600 3800 50  0001 L CNN "Height"
+F 6 "" H 6600 3700 50  0001 L CNN "Mouser Part Number"
+F 7 "" H 6600 3600 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Kemet" H 6600 3500 50  0001 L CNN "Manufacturer_Name"
+F 9 "ESH107M050AG3KA" H 6600 3400 50  0001 L CNN "Manufacturer_Part_Number"
+	1    6250 4050
+	0    -1   -1   0   
+$EndComp
+Connection ~ 6250 3550
+Wire Wire Line
+	6250 3550 6100 3550
+Wire Wire Line
+	7450 3750 7300 3750
+Wire Wire Line
+	7300 3750 7300 4050
+Wire Wire Line
+	7300 4050 6250 4050
+Wire Wire Line
+	6250 4050 5500 4050
+Connection ~ 6250 4050
+Text Label 5600 4050 0    50   ~ 0
+5V_ISO
 $EndSCHEMATC
