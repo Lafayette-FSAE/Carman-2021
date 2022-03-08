@@ -1,28 +1,33 @@
 EESchema-DOCLIB  Version 2.0
 #
-$CMP ESH107M050AG3KA
-D ESH, Aluminum Electrolytic, 100 uF, 20%, 50 VDC, -40/+105C, Lead Spacing = 3.5mm
-F https://connect.kemet.com:7667/gateway/IntelliData-ComponentDocumentation/1.0/download/specsheet/ESH107M050AG3KA
-$ENDCMP
-#
-$CMP LMJ316BB7226KLHT
-D Taiyo Yuden LMJ316BB7226KLHT 22F MLCC 10V dc +/-10% Tolerance SMD
-F https://ds.yuden.co.jp/TYCOMPAS/ut/detail?pn=LMJ316BB7226KLHT  &u=M
-$ENDCMP
-#
 $CMP NE555DR
 D Single Precision Timer
+K
 F http://www.ti.com/lit/ds/symlink/ne555.pdf
 $ENDCMP
 #
 $CMP P783-Q24-S5-S
 D Non-Isolated DC/DC Converters 5 Vdc, 3 A, 15 W, 8~36 Vdc Input Range
+K
 F https://www.cui.com/product/resource/digikeypdf/p783-s.pdf
+$ENDCMP
+#
+$CMP LMJ316BB7226KLHT
+D Taiyo Yuden LMJ316BB7226KLHT 22F MLCC 10V dc +/-10% Tolerance SMD
+K
+F https://ds.yuden.co.jp/TYCOMPAS/ut/detail?pn=LMJ316BB7226KLHT  &u=M
 $ENDCMP
 #
 $CMP VLS4012HBX-220M-N
 D SMD / SMT Inductors (Coils), L=22?H, L x W x T :
+K
 F https://product.tdk.com/system/files/dam/doc/product/inductor/inductor/smd/catalog/inductor_commercial_power_vls4012hbx-n_en.pdf
+$ENDCMP
+#
+$CMP ESH107M050AG3KA
+D ESH, Aluminum Electrolytic, 100 uF, 20%, 50 VDC, -40/+105C, Lead Spacing = 3.5mm
+K
+F https://connect.kemet.com:7667/gateway/IntelliData-ComponentDocumentation/1.0/download/specsheet/ESH107M050AG3KA
 $ENDCMP
 #
 #End Doc Library
