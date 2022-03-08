@@ -260,7 +260,7 @@ U 1 1 62268053
 P 8700 6005
 F 0 "PS1" H 9145 4715 50  0000 L CNN
 F 1 "Regulator" H 9050 6205 50  0000 L CNN
-F 2 "P783Q24S5S" H 9550 6105 50  0001 L CNN
+F 2 "SamacSys_Parts:P783Q24S5S" H 9550 6105 50  0001 L CNN
 F 3 "https://www.cui.com/product/resource/digikeypdf/p783-s.pdf" H 9550 6005 50  0001 L CNN
 F 4 "Non-Isolated DC/DC Converters 5 Vdc, 3 A, 15 W, 8~36 Vdc Input Range" H 9550 5905 50  0001 L CNN "Description"
 F 5 "15.35" H 9550 5805 50  0001 L CNN "Height"
@@ -315,7 +315,7 @@ U 1 1 62284A0F
 P 7150 5805
 F 0 "C3" V 7410 5550 50  0000 L CNN
 F 1 "100uF" V 7395 5945 50  0000 L CNN
-F 2 "CAPPRD350W60D800H1250" H 7500 5855 50  0001 L CNN
+F 2 "SamacSys_Parts:CAPPRD350W60D800H1250" H 7500 5855 50  0001 L CNN
 F 3 "https://connect.kemet.com:7667/gateway/IntelliData-ComponentDocumentation/1.0/download/specsheet/ESH107M050AG3KA" H 7500 5755 50  0001 L CNN
 F 4 "ESH, Aluminum Electrolytic, 100 uF, 20%, 50 VDC, -40/+105C, Lead Spacing = 3.5mm" H 7500 5655 50  0001 L CNN "Description"
 F 5 "12.5" H 7500 5555 50  0001 L CNN "Height"
@@ -332,7 +332,7 @@ U 1 1 6228A76D
 P 6350 5805
 F 0 "L1" H 6750 6030 50  0000 C CNN
 F 1 "22uH" H 6750 5939 50  0000 C CNN
-F 2 "VLS4012HBX220MN" H 7000 5855 50  0001 L CNN
+F 2 "SamacSys_Parts:VLS4012HBX220MN" H 7000 5855 50  0001 L CNN
 F 3 "https://product.tdk.com/system/files/dam/doc/product/inductor/inductor/smd/catalog/inductor_commercial_power_vls4012hbx-n_en.pdf" H 7000 5755 50  0001 L CNN
 F 4 "SMD / SMT Inductors (Coils), L=22?H, L x W x T :" H 7000 5655 50  0001 L CNN "Description"
 F 5 "1.2" H 7000 5555 50  0001 L CNN "Height"
@@ -349,7 +349,7 @@ U 1 1 6228C858
 P 6350 5805
 F 0 "C2" V 6610 5535 50  0000 L CNN
 F 1 "100uF" V 6605 5955 50  0000 L CNN
-F 2 "CAPPRD350W60D800H1250" H 6700 5855 50  0001 L CNN
+F 2 "SamacSys_Parts:CAPPRD350W60D800H1250" H 6700 5855 50  0001 L CNN
 F 3 "https://connect.kemet.com:7667/gateway/IntelliData-ComponentDocumentation/1.0/download/specsheet/ESH107M050AG3KA" H 6700 5755 50  0001 L CNN
 F 4 "ESH, Aluminum Electrolytic, 100 uF, 20%, 50 VDC, -40/+105C, Lead Spacing = 3.5mm" H 6700 5655 50  0001 L CNN "Description"
 F 5 "12.5" H 6700 5555 50  0001 L CNN "Height"
@@ -387,7 +387,7 @@ U 1 1 62312630
 P 7600 5305
 F 0 "C1" V 7850 5570 50  0000 C CNN
 F 1 "22uF" V 7850 5080 50  0000 C CNN
-F 2 "CAPC3216X180N" H 7950 5355 50  0001 L CNN
+F 2 "SamacSys_Parts:CAPC3216X180N" H 7950 5355 50  0001 L CNN
 F 3 "https://ds.yuden.co.jp/TYCOMPAS/ut/detail?pn=LMJ316BB7226KLHT  &u=M" H 7950 5255 50  0001 L CNN
 F 4 "Taiyo Yuden LMJ316BB7226KLHT 22F MLCC 10V dc +/-10% Tolerance SMD" H 7950 5155 50  0001 L CNN "Description"
 F 5 "1.8" H 7950 5055 50  0001 L CNN "Height"
