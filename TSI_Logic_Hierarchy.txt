@@ -1,0 +1,85 @@
+** Root Page:
+Inputs:
+
+Outputs:
+- Drive_BTN
+- A1_HV
+- A2_HV
+
+** Throttle_Plausibility Page:
+Inputs:
+- D_LED_CTRL
+- RTDS_CTRL
+- Throttle_SEL
+- Throttle_Logic_OC (?)
+- Throttle_Logic_DAC (?)
+Outputs:
+- Throttle_PL
+- U8 pins
+	- 3 --> APPS_WIN1
+	- 8 --> APPS_WIN2
+	- 9 --> APPS1_ISO_NS
+	- 12 --> APPS1_ISO_NG
+	- 13 --> APPS2_ISO_NS
+	- 14 --> APPS2_ISO_NG
+- Brake_Pressed_uC
+- AMS_Fault
+- IMD_Fault
+- APPS
+
+
+
+** Relays_Cooling_Voltage_Refs Page:
+Inputs:
+
+Outputs:
+- Safety_loop
+- Flowrate_LOGIC
+
+
+
+** PCDC_Circuit Page:
+Inputs:
+
+Outputs:
+- PC_Ready
+
+
+
+** Throttle_Voltage_Isolator / Sensor_Throttle_Voltage Page:
+Inputs:
+
+Outputs:
+- MC_Voltage
+- TS_Voltage
+
+
+
+** PIC32 Page:
+Inputs:
+- Every output from other pages above
+- MCLR
+- PGEC
+- PGED
+- C1RX
+- U1RX
+
+Outputs:
+- Cooling_CTRL
+- D_LED_CTRL
+- RTDS_CTRL
+- Throttle_SEL
+- Throttle_Logic_OC (?)
+- Throttle_Logic_DAC (?)
+- All Test_Pinx
+- C1TX
+- U1TX
+
+TO DO:
+* NEED TO DECIDE ON THE METHOD FOR GENERATING Throttle_Logic *
+* NEED TO ADD ANOTHER JUMPER FOR THE NEW SELECT SIGNAL IN Throttle_Plausibility - if we end up keeping both *
+* NEED TO CHECK IMD_FAULT and AMS_FAULT *
+* CHECK 3.3V Signal *
+* ADD CAN OPTOISOLATOR *
+
+
