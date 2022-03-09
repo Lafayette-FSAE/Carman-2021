@@ -144,8 +144,6 @@ Wire Wire Line
 	6470 2660 5945 2660
 NoConn ~ 4275 5175
 Wire Wire Line
-	7210 2570 7810 2570
-Wire Wire Line
 	7810 2670 7210 2670
 Wire Wire Line
 	7210 2770 7810 2770
@@ -176,84 +174,84 @@ Wire Wire Line
 $Comp
 L Logic-rescue:Raspberry_Pi_RTC-CarMan_KiCAD_Library U11
 U 1 1 60875061
-P 12660 2545
-F 0 "U11" H 12660 2845 47  0000 C CNN
-F 1 "Raspberry_Pi_RTC" H 12660 2245 47  0000 C CNN
-F 2 "CarMan General Footprints:Raspberry_Pi_RTC" V 12660 2545 47  0001 C CNN
-F 3 "" V 12660 2545 47  0001 C CNN
-F 4 "U11 - Pi RTC" H 12660 2545 50  0001 C CNN "Board Label"
-	1    12660 2545
+P 13960 2595
+F 0 "U11" H 13960 2895 47  0000 C CNN
+F 1 "Raspberry_Pi_RTC" H 13960 2295 47  0000 C CNN
+F 2 "CarMan General Footprints:Raspberry_Pi_RTC" V 13960 2595 47  0001 C CNN
+F 3 "" V 13960 2595 47  0001 C CNN
+F 4 "U11 - Pi RTC" H 13960 2595 50  0001 C CNN "Board Label"
+	1    13960 2595
 	1    0    0    -1  
 $EndComp
-Text Notes 11985 3070 0    47   ~ 0
+Text Notes 13285 3120 0    47   ~ 0
 Symbol & Footprint for Pi RTC to\nbe mounted to the Logic board
-NoConn ~ 12960 2395
-NoConn ~ 12960 2545
-Text Notes 10135 3095 0    47   ~ 0
+NoConn ~ 14260 2445
+NoConn ~ 14260 2595
+Text Notes 11435 3145 0    47   ~ 0
 Symbol & Footprint for IMU to\nbe mounted to the Logic board
-Text Notes 10785 2045 0    79   ~ 0
+Text Notes 12085 2095 0    79   ~ 0
 Mounted External Components
 Wire Notes Line
-	13585 3170 13585 1895
+	14885 3220 14885 1945
 Wire Notes Line
-	9760 1895 13585 1895
+	11060 1945 14885 1945
 Wire Notes Line
-	9760 3170 13585 3170
+	11060 3220 14885 3220
 Wire Notes Line
-	9760 3170 9760 1895
-NoConn ~ 10510 2470
+	11060 3220 11060 1945
+NoConn ~ 11810 2520
 Wire Wire Line
-	10510 2370 10060 2370
-Text Label 10060 2370 0    50   ~ 0
+	11810 2420 11360 2420
+Text Label 11360 2420 0    50   ~ 0
 3V3
 $Comp
 L Logic-rescue:BNO_055-CarMan_KiCAD_Library U10
 U 1 1 6081110B
-P 10810 2570
-F 0 "U10" V 10510 2570 47  0000 C CNN
-F 1 "BNO_055" V 11110 2570 47  0000 C CNN
-F 2 "CarMan General Footprints:BNO_055" H 10810 2570 47  0001 C CNN
-F 3 "" H 10810 2570 47  0001 C CNN
-F 4 "U10 - IMU" V 10810 2570 50  0001 C CNN "Board Name"
-	1    10810 2570
+P 12110 2620
+F 0 "U10" V 11810 2620 47  0000 C CNN
+F 1 "BNO_055" V 12410 2620 47  0000 C CNN
+F 2 "CarMan General Footprints:BNO_055" H 12110 2620 47  0001 C CNN
+F 3 "" H 12110 2620 47  0001 C CNN
+F 4 "U10 - IMU" V 12110 2620 50  0001 C CNN "Board Name"
+	1    12110 2620
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	11435 2670 11110 2670
+	12735 2720 12410 2720
 Wire Wire Line
-	11435 2570 11435 2670
+	12735 2620 12735 2720
 Wire Wire Line
-	11110 2570 11435 2570
+	12410 2620 12735 2620
 Wire Wire Line
-	10510 2570 10060 2570
-Text Label 11435 2570 2    50   ~ 0
+	11810 2620 11360 2620
+Text Label 12735 2620 2    50   ~ 0
 GLV_RTN
 Wire Wire Line
-	12360 2545 11910 2545
+	13660 2595 13210 2595
 Wire Wire Line
-	12360 2695 11910 2695
+	13660 2745 13210 2745
 Wire Wire Line
-	10510 2770 10060 2770
+	11810 2820 11360 2820
 Wire Wire Line
-	10510 2670 10060 2670
-Text Label 10060 2570 0    50   ~ 0
+	11810 2720 11360 2720
+Text Label 11360 2620 0    50   ~ 0
 GLV_RTN
-Text Label 10060 2770 0    50   ~ 0
+Text Label 11360 2820 0    50   ~ 0
 SDA_PI
-Text Label 10060 2670 0    50   ~ 0
+Text Label 11360 2720 0    50   ~ 0
 SCL_PI
-Text Label 11910 2545 0    50   ~ 0
+Text Label 13210 2595 0    50   ~ 0
 SDA_PI
-Text Label 11910 2395 0    50   ~ 0
+Text Label 13210 2445 0    50   ~ 0
 3V3
-Text Label 13410 2695 2    50   ~ 0
+Text Label 14710 2745 2    50   ~ 0
 GLV_RTN
-Text Label 11910 2695 0    50   ~ 0
+Text Label 13210 2745 0    50   ~ 0
 SCL_PI
 Wire Wire Line
-	12360 2395 11910 2395
+	13660 2445 13210 2445
 Wire Wire Line
-	12960 2695 13410 2695
+	14260 2745 14710 2745
 $Comp
 L SamacSys_Parts:P783-Q24-S5-S PS1
 U 1 1 62268053
@@ -650,7 +648,7 @@ Text Label 4955 2705 0    50   ~ 0
 CAN_L
 Text Label 4955 2805 0    50   ~ 0
 CAN_H
-Text Notes 4935 2120 0    79   ~ 0
+Text Notes 5955 2110 0    79   ~ 0
 Shield Headers
 NoConn ~ 5205 2705
 NoConn ~ 5205 2805
@@ -684,8 +682,6 @@ GPIO24
 Wire Notes Line
 	1950 1730 9105 1730
 Wire Notes Line
-	9105 1730 9105 3345
-Wire Notes Line
 	9105 3345 1940 3345
 Wire Notes Line
 	1940 3345 1940 1710
@@ -693,4 +689,66 @@ NoConn ~ 8840 2640
 NoConn ~ 8840 2740
 NoConn ~ 5225 5475
 NoConn ~ 5210 5275
+$Comp
+L Connector_Generic:Conn_01x02 J7
+U 1 1 6228F919
+P 9385 2740
+F 0 "J7" H 9303 2415 50  0000 C CNN
+F 1 "CAN Testing Header" H 9335 2910 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 9385 2740 50  0001 C CNN
+F 3 "~" H 9385 2740 50  0001 C CNN
+	1    9385 2740
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9585 2640 9670 2640
+$Comp
+L Logic-rescue:R-Device-Logic-rescue R4
+U 1 1 622B4E7B
+P 9820 2640
+F 0 "R4" V 9613 2640 50  0000 C CNN
+F 1 "120" V 9704 2640 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 9750 2640 50  0001 C CNN
+F 3 "" H 9820 2640 50  0001 C CNN
+	1    9820 2640
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9970 2640 10325 2640
+Wire Wire Line
+	9585 2740 10330 2740
+Text Label 10140 2640 0    50   ~ 0
+CAN_H
+Text Label 10115 2740 0    50   ~ 0
+CAN_L
+Wire Notes Line
+	9130 1730 10610 1730
+Wire Notes Line
+	9120 3345 10610 3345
+Wire Notes Line
+	10620 1715 10620 3370
+$Comp
+L power:PWR_FLAG F1
+U 1 1 62289588
+P 7810 2570
+F 0 "F1" H 7810 2645 50  0001 C CNN
+F 1 "PWR_FLAG" V 7810 2698 50  0000 L CNN
+F 2 "" H 7810 2570 50  0001 C CNN
+F 3 "~" H 7810 2570 50  0001 C CNN
+	1    7810 2570
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7810 2570 7210 2570
+$Comp
+L power:PWR_FLAG F2
+U 1 1 62298F01
+P 7810 2670
+F 0 "F2" H 7810 2745 50  0001 C CNN
+F 1 "PWR_FLAG" V 7810 2798 50  0000 L CNN
+F 2 "" H 7810 2670 50  0001 C CNN
+F 3 "~" H 7810 2670 50  0001 C CNN
+	1    7810 2670
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
