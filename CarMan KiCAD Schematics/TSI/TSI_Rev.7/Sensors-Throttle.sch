@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 2 7
+Sheet 7 7
 Title ""
 Date ""
 Rev ""
@@ -103,19 +103,6 @@ Text Notes 11600 4150 2    55   ~ 0
 Bypass Cap for U26\n\n
 Wire Wire Line
 	10100 4800 10100 4700
-Text Label 10100 5450 2    50   ~ 0
-IO_Ground
-$Comp
-L TSI_Rev.5-rescue:MCP6004-Amplifier_Operational U21
-U 2 1 5F995327
-P 10000 5100
-F 0 "U21" H 10000 5100 50  0000 C CNN
-F 1 "MCP6004" H 10125 5300 50  0000 C CNN
-F 2 "TSI_Rev_2021_Footprint_Lib:SOIC127P600X175-14N" H 9950 5200 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 10050 5300 50  0001 C CNN
-	2    10000 5100
-	-1   0    0    -1  
-$EndComp
 Text Label 10100 4700 0    50   ~ 0
 5HV
 Wire Wire Line
@@ -264,39 +251,6 @@ Wire Wire Line
 	11950 6750 11100 6750
 Wire Wire Line
 	11800 6500 11950 6500
-$Comp
-L TSI_Rev.5-rescue:MCP6004-Amplifier_Operational U21
-U 5 1 5F997C97
-P 10200 5100
-F 0 "U21" H 10158 5146 50  0001 L CNN
-F 1 "MCP6004" H 10158 5100 50  0001 L CNN
-F 2 "TSI_Rev_2021_Footprint_Lib:SOIC127P600X175-14N" H 10150 5200 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 10250 5300 50  0001 C CNN
-	5    10200 5100
-	1    0    0    -1  
-$EndComp
-$Comp
-L TSI_Rev.5-rescue:MCP6004-Amplifier_Operational U21
-U 1 1 5F995FD0
-P 10000 6300
-F 0 "U21" H 10000 6300 50  0000 C CNN
-F 1 "MCP6004" H 10150 6150 50  0000 C CNN
-F 2 "TSI_Rev_2021_Footprint_Lib:SOIC127P600X175-14N" H 9950 6400 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 10050 6500 50  0001 C CNN
-	1    10000 6300
-	-1   0    0    -1  
-$EndComp
-$Comp
-L TSI_Rev.5-rescue:MCP6004-Amplifier_Operational U26
-U 3 1 5F993611
-P 11500 6400
-F 0 "U26" H 11450 6400 50  0000 C CNN
-F 1 "MCP6004" H 11650 6550 50  0000 C CNN
-F 2 "TSI_Rev_2021_Footprint_Lib:SOIC127P600X175-14N" H 11450 6500 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 11550 6600 50  0001 C CNN
-	3    11500 6400
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	13150 4600 13200 4600
 Wire Wire Line
@@ -454,17 +408,6 @@ F 1 "ACPL-C870" H 4000 1750 50  0000 C CNN
 F 2 "TSI_Rev_2021_Footprint_Lib:SOIC127P1150X330-8N" H 4000 2500 50  0001 C CNN
 F 3 "https://docs.broadcom.com/doc/AV02-3563EN" H 4000 2500 50  0001 C CNN
 	1    4000 2150
-	1    0    0    -1  
-$EndComp
-$Comp
-L TSI_Rev.5-rescue:MCP6004-Amplifier_Operational U40
-U 3 1 5FC72793
-P 6300 2150
-F 0 "U40" H 6250 2150 50  0000 C CNN
-F 1 "MCP6004" H 6450 2300 50  0000 C CNN
-F 2 "TSI_Rev_2021_Footprint_Lib:SOIC127P600X175-14N" H 6250 2250 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 6350 2350 50  0001 C CNN
-	3    6300 2150
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -728,7 +671,7 @@ Wire Wire Line
 Connection ~ 6800 2150
 Wire Wire Line
 	6800 2150 6700 2150
-Text Notes 1500 8550 0    79   ~ 0
+Text Notes 1500 8500 0    79   ~ 0
 LOW VOLTAGE SIGNALS\n
 Text HLabel 5750 8800 0    50   Input ~ 0
 IO_Ground
@@ -774,17 +717,6 @@ Text HLabel 5750 9200 0    50   Input ~ 0
 A1_HV
 Text HLabel 5750 9300 0    50   Input ~ 0
 A2_HV
-$Comp
-L TSI_Rev.5-rescue:MCP6004-Amplifier_Operational U26
-U 5 1 5F994131
-P 11500 4700
-F 0 "U26" H 11458 4746 50  0001 L CNN
-F 1 "MCP6004" H 11458 4700 50  0001 L CNN
-F 2 "TSI_Rev_2021_Footprint_Lib:SOIC127P600X175-14N" H 11450 4800 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 11550 4900 50  0001 C CNN
-	5    11500 4700
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	11600 5100 11600 5000
 Text Label 4800 1350 0    50   ~ 0
@@ -811,17 +743,6 @@ Text Label 6400 9500 2    50   ~ 0
 MC_Voltage
 Text HLabel 5750 9500 0    50   Output ~ 0
 MC_Voltage
-$Comp
-L TSI_Rev.5-rescue:MCP6004-Amplifier_Operational U26
-U 4 1 601D0B35
-P 11500 4700
-F 0 "U26" H 11450 4700 50  0000 C CNN
-F 1 "MCP6004" H 11650 4850 50  0000 C CNN
-F 2 "TSI_Rev_2021_Footprint_Lib:SOIC127P600X175-14N" H 11450 4800 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 11550 4900 50  0001 C CNN
-	4    11500 4700
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	5750 9400 6400 9400
 Wire Wire Line
@@ -846,8 +767,6 @@ Wire Notes Line
 	2950 9250 2950 8350
 Wire Notes Line
 	1400 8350 1400 9250
-Wire Wire Line
-	10100 5450 10100 5400
 Wire Wire Line
 	10400 4575 10400 4625
 $Comp
@@ -1165,17 +1084,6 @@ Wire Wire Line
 	11950 5900 11950 5700
 Wire Wire Line
 	11950 5700 11800 5700
-$Comp
-L TSI_Rev.5-rescue:MCP6004-Amplifier_Operational U26
-U 2 1 5F992CF1
-P 11500 5600
-F 0 "U26" H 11450 5600 50  0000 C CNN
-F 1 "MCP6004" H 11650 5750 50  0000 C CNN
-F 2 "TSI_Rev_2021_Footprint_Lib:SOIC127P600X175-14N" H 11450 5700 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 11550 5800 50  0001 C CNN
-	2    11500 5600
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	11100 5900 11950 5900
 Connection ~ 9550 5100
@@ -1196,19 +1104,11 @@ Wire Wire Line
 Wire Wire Line
 	6375 5700 6850 5700
 Wire Wire Line
-	4450 5200 4900 5200
+	4450 5200 4500 5200
 Wire Wire Line
 	4450 5750 4900 5750
 Wire Wire Line
-	3175 5200 3500 5200
-Wire Wire Line
-	2225 5550 2525 5550
-Wire Wire Line
-	2225 5400 2525 5400
-Wire Wire Line
-	2525 5550 3500 5550
-Wire Wire Line
-	2525 5400 3500 5400
+	3175 5200 3450 5200
 Wire Wire Line
 	3175 5750 3500 5750
 Wire Notes Line
@@ -1219,42 +1119,6 @@ Wire Notes Line
 	2000 4650 3050 4650
 Wire Notes Line
 	3050 4650 3050 6025
-Wire Wire Line
-	2525 5950 2425 5950
-Wire Wire Line
-	2525 5000 2425 5000
-Connection ~ 2525 5400
-Text Label 2425 5000 0    50   ~ 0
-5V
-Wire Wire Line
-	2525 5000 2525 5100
-$Comp
-L TSI_Rev.5-rescue:R-Device R111
-U 1 1 60807C37
-P 2525 5250
-F 0 "R111" H 2595 5296 50  0000 L CNN
-F 1 "10K" H 2595 5205 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2455 5250 50  0001 C CNN
-F 3 "~" H 2525 5250 50  0001 C CNN
-	1    2525 5250
-	1    0    0    -1  
-$EndComp
-Connection ~ 2525 5550
-Text Label 2425 5950 0    50   ~ 0
-5V
-Wire Wire Line
-	2525 5850 2525 5950
-$Comp
-L TSI_Rev.5-rescue:R-Device R112
-U 1 1 607C4DFA
-P 2525 5700
-F 0 "R112" H 2595 5746 50  0000 L CNN
-F 1 "10K" H 2595 5655 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2455 5700 50  0001 C CNN
-F 3 "~" H 2525 5700 50  0001 C CNN
-	1    2525 5700
-	1    0    0    -1  
-$EndComp
 Text Label 6375 5250 0    50   ~ 0
 5HV
 Text Label 5675 5950 0    50   ~ 0
@@ -1304,7 +1168,7 @@ Hooks up to PIC32\n
 Text Label 3175 5750 0    50   ~ 0
 GLV_RTN
 Text Label 3175 5200 0    50   ~ 0
-5V
+3.3V
 Text Label 4900 5200 2    50   ~ 0
 5HV
 Text Label 4900 5750 2    50   ~ 0
@@ -1372,5 +1236,167 @@ F 2 "TSI_Rev_2021_Footprint_Lib:SOP65P640X120-16N" H 7550 5800 50  0001 C CNN
 F 3 "https://www.snapeda.com/parts/NCD9830DBR2G/ON%20Semiconductor/datasheet/" H 7550 5800 50  0001 C CNN
 	1    7500 5550
 	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2225 5400 3500 5400
+Wire Wire Line
+	2225 5550 3500 5550
+Wire Wire Line
+	2025 8625 2525 8625
+Text HLabel 2025 8625 0    50   Input ~ 0
+3.3V
+Text Label 2525 8625 2    50   ~ 0
+3.3V
+$Comp
+L Device:C C51
+U 1 1 6248B1E4
+P 3450 4800
+F 0 "C51" H 3565 4846 50  0000 L CNN
+F 1 "0.1u" H 3565 4755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 3488 4650 50  0001 C CNN
+F 3 "~" H 3450 4800 50  0001 C CNN
+	1    3450 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C50
+U 1 1 6249A9F7
+P 4500 4800
+F 0 "C50" H 4615 4846 50  0000 L CNN
+F 1 "0.1u" H 4615 4755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 4538 4650 50  0001 C CNN
+F 3 "~" H 4500 4800 50  0001 C CNN
+	1    4500 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 5200 3450 4950
+Connection ~ 3450 5200
+Wire Wire Line
+	3450 5200 3500 5200
+Wire Wire Line
+	4500 4950 4500 5200
+Connection ~ 4500 5200
+Wire Wire Line
+	4500 5200 4900 5200
+Wire Wire Line
+	3450 4650 3450 4450
+Wire Wire Line
+	3450 4450 3200 4450
+Wire Wire Line
+	4500 4650 4500 4450
+Wire Wire Line
+	4500 4450 4750 4450
+Text Label 4750 4450 2    50   ~ 0
+IO_Ground
+Text Label 3200 4450 0    50   ~ 0
+GLV_RTN
+Text Notes 1500 3200 0    50   ~ 0
+From simulation- Lowpass cutoff: 268kHz
+$Comp
+L CarMan_KiCAD_Library:TLV2464CDR U?
+U 1 1 63021BEB
+P 10000 6300
+AR Path="/5FC85F57/63021BEB" Ref="U?"  Part="1" 
+AR Path="/5F98EBE9/63021BEB" Ref="U21"  Part="1" 
+F 0 "U21" H 10000 6300 50  0000 C CNN
+F 1 "TLV2464CDR" H 10150 6550 50  0001 C CNN
+F 2 "CarMan General Footprints:SOIC127P600X175-14N" H 9950 6400 50  0001 C CNN
+F 3 "" H 10050 6500 50  0001 C CNN
+	1    10000 6300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CarMan_KiCAD_Library:TLV2464CDR U?
+U 5 1 63021BF1
+P 10000 5100
+AR Path="/5FC85F57/63021BF1" Ref="U?"  Part="5" 
+AR Path="/5F98EBE9/63021BF1" Ref="U21"  Part="5" 
+F 0 "U21" H 9950 5550 50  0001 L CNN
+F 1 "TLV2464CDR" H 9900 3700 50  0000 L CNN
+F 2 "CarMan General Footprints:SOIC127P600X175-14N" H 9950 5200 50  0001 C CNN
+F 3 "" H 10050 5300 50  0001 C CNN
+	5    10000 5100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CarMan_KiCAD_Library:TLV2464CDR U?
+U 2 1 63021BF7
+P 10000 5100
+AR Path="/5FC85F57/63021BF7" Ref="U?"  Part="2" 
+AR Path="/5F98EBE9/63021BF7" Ref="U21"  Part="2" 
+F 0 "U21" H 10000 5100 50  0000 C CNN
+F 1 "TLV2464CDR" H 10250 5250 50  0000 C CNN
+F 2 "CarMan General Footprints:SOIC127P600X175-14N" H 9950 5200 50  0001 C CNN
+F 3 "" H 10050 5300 50  0001 C CNN
+	2    10000 5100
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	10100 5450 10100 5400
+Text Label 10100 5450 2    50   ~ 0
+IO_Ground
+$Comp
+L CarMan_KiCAD_Library:TLV2464CDR U?
+U 2 1 630BBC3D
+P 11500 5600
+AR Path="/5FC85F57/630BBC3D" Ref="U?"  Part="2" 
+AR Path="/5F98EBE9/630BBC3D" Ref="U26"  Part="2" 
+F 0 "U26" H 11500 5600 50  0000 C CNN
+F 1 "TLV2464CDR" H 11700 5750 50  0000 C CNN
+F 2 "CarMan General Footprints:SOIC127P600X175-14N" H 11450 5700 50  0001 C CNN
+F 3 "" H 11550 5800 50  0001 C CNN
+	2    11500 5600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CarMan_KiCAD_Library:TLV2464CDR U?
+U 3 1 630BBC43
+P 6300 2150
+AR Path="/5FC85F57/630BBC43" Ref="U?"  Part="3" 
+AR Path="/5F98EBE9/630BBC43" Ref="U40"  Part="3" 
+F 0 "U40" H 6300 2150 50  0000 C CNN
+F 1 "TLV2464CDR" H 6450 1950 50  0000 C CNN
+F 2 "CarMan General Footprints:SOIC127P600X175-14N" H 6250 2250 50  0001 C CNN
+F 3 "" H 6350 2350 50  0001 C CNN
+	3    6300 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L CarMan_KiCAD_Library:TLV2464CDR U?
+U 3 1 630F74F5
+P 11500 6400
+AR Path="/5FC85F57/630F74F5" Ref="U?"  Part="3" 
+AR Path="/5F98EBE9/630F74F5" Ref="U26"  Part="3" 
+F 0 "U26" H 11500 6400 50  0000 C CNN
+F 1 "TLV2464CDR" H 11600 6600 50  0000 C CNN
+F 2 "CarMan General Footprints:SOIC127P600X175-14N" H 11450 6500 50  0001 C CNN
+F 3 "" H 11550 6600 50  0001 C CNN
+	3    11500 6400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CarMan_KiCAD_Library:TLV2464CDR U?
+U 4 1 630F74FB
+P 11500 4700
+AR Path="/5FC85F57/630F74FB" Ref="U?"  Part="4" 
+AR Path="/5F98EBE9/630F74FB" Ref="U26"  Part="4" 
+F 0 "U26" H 11500 4700 50  0000 C CNN
+F 1 "TLV2464CDR" H 11700 4850 50  0000 C CNN
+F 2 "CarMan General Footprints:SOIC127P600X175-14N" H 11450 4800 50  0001 C CNN
+F 3 "" H 11550 4900 50  0001 C CNN
+	4    11500 4700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CarMan_KiCAD_Library:TLV2464CDR U26
+U 5 1 6314FDBC
+P 11500 4700
+F 0 "U26" H 11500 5050 50  0001 L CNN
+F 1 "TLV2464CDR" H 11650 4900 50  0001 L CNN
+F 2 "CarMan General Footprints:SOIC127P600X175-14N" H 11450 4800 50  0001 C CNN
+F 3 "" H 11550 4900 50  0001 C CNN
+	5    11500 4700
+	-1   0    0    -1  
 $EndComp
 $EndSCHEMATC

@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 7
+Sheet 3 7
 Title ""
 Date ""
 Rev ""
@@ -16,29 +16,29 @@ $EndDescr
 $Comp
 L TSI_Rev.5-rescue:R-Device R3
 U 1 1 5F9997DD
-P 10500 1225
-F 0 "R3" H 10400 1225 50  0000 C CNN
-F 1 "2.4K" V 10500 1225 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 10430 1225 50  0001 C CNN
-F 3 "~" H 10500 1225 50  0001 C CNN
-	1    10500 1225
+P 5600 1425
+F 0 "R3" H 5500 1425 50  0000 C CNN
+F 1 "2.4K" V 5600 1425 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5530 1425 50  0001 C CNN
+F 3 "~" H 5600 1425 50  0001 C CNN
+	1    5600 1425
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10500 1875 10500 2275
+	5600 2075 5600 2475
 Wire Wire Line
-	10500 1075 10500 825 
-Text Label 10500 825  2    50   ~ 0
+	5600 1275 5600 1025
+Text Label 5600 1025 2    50   ~ 0
 3.3V
 $Comp
 L TSI_Rev.5-rescue:TLP293-CarMan_KiCAD_Library-TSI_Rev.5-rescue U11
 U 1 1 5F9A966C
-P 4625 2125
-F 0 "U11" H 4625 2325 50  0000 C CNN
-F 1 "TLP293" H 4625 1925 50  0000 C CNN
-F 2 "Package_SO:SOIC-4_4.55x2.6mm_P1.27mm" H 4425 1925 50  0001 L CIN
-F 3 "https://www.mouser.com/datasheet/2/408/Toshiba_TLP293_datasheet-1209449.pdf" H 4625 2125 50  0001 L CNN
-	1    4625 2125
+P 3925 1875
+F 0 "U11" H 3925 2075 50  0000 C CNN
+F 1 "TLP293" H 3925 1675 50  0000 C CNN
+F 2 "Package_SO:SOIC-4_4.55x2.6mm_P1.27mm" H 3725 1675 50  0001 L CIN
+F 3 "https://www.mouser.com/datasheet/2/408/Toshiba_TLP293_datasheet-1209449.pdf" H 3925 1875 50  0001 L CNN
+	1    3925 1875
 	1    0    0    -1  
 $EndComp
 Text HLabel 1250 1375 0    50   Input ~ 0
@@ -64,19 +64,19 @@ Text Label 1950 975  2    50   ~ 0
 $Comp
 L TSI_Rev.5-rescue:R-Device R15
 U 1 1 5F9DEF51
-P 3975 2025
-F 0 "R15" V 3875 2025 50  0000 C CNN
-F 1 "300" V 3975 2025 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3905 2025 50  0001 C CNN
-F 3 "~" H 3975 2025 50  0001 C CNN
-	1    3975 2025
+P 3275 1775
+F 0 "R15" V 3175 1775 50  0000 C CNN
+F 1 "300" V 3275 1775 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3205 1775 50  0001 C CNN
+F 3 "~" H 3275 1775 50  0001 C CNN
+	1    3275 1775
 	0    1    1    0   
 $EndComp
-Text Label 5475 2025 2    50   ~ 0
+Text Label 4775 1775 2    50   ~ 0
 24V
-Text Label 5475 2225 2    50   ~ 0
+Text Label 4775 1975 2    50   ~ 0
 Drive_LED
-Text Label 3125 2025 0    50   ~ 0
+Text Label 2425 1775 0    50   ~ 0
 D_LED_CTRL
 Text Label 3250 4025 2    50   ~ 0
 24V
@@ -208,10 +208,10 @@ Text HLabel 1250 2600 0    50   Output ~ 0
 TSAL_Cockpit
 Text Label 1950 2600 2    50   ~ 0
 TSAL_Cockpit
-Text Label 10500 2275 2    50   ~ 0
+Text Label 5600 2475 2    50   ~ 0
 GLV_RTN
 Wire Wire Line
-	10500 1375 10500 1575
+	5600 1575 5600 1775
 Text HLabel 1250 1275 0    50   Input ~ 0
 Drive_BTN_RTN
 Text Label 1950 1275 2    50   ~ 0
@@ -221,7 +221,7 @@ Drive_BTN
 Text Label 1950 1175 2    50   ~ 0
 Drive_BTN
 Wire Wire Line
-	4325 2025 4125 2025
+	3625 1775 3425 1775
 Text Notes 7025 6925 0    157  ~ 0
 STATUS LIGHTS, TSAL, RTDS & ADC
 Text HLabel 1250 2300 0    50   Output ~ 0
@@ -364,11 +364,11 @@ Wire Wire Line
 Wire Wire Line
 	4400 7000 5000 7000
 Wire Wire Line
-	3125 2025 3825 2025
+	2425 1775 3125 1775
 Wire Wire Line
-	3125 2225 4325 2225
+	2425 1975 3625 1975
 Wire Wire Line
-	4925 2025 5475 2025
+	4225 1775 4775 1775
 Wire Wire Line
 	5000 7000 5000 7200
 Wire Wire Line
@@ -396,28 +396,28 @@ COCKPIT\n(J9)\n
 $Comp
 L TSI_Rev.5-rescue:R-Device R?
 U 1 1 605792C2
-P 5000 2425
+P 4300 2175
 AR Path="/5FE1DE7D/605792C2" Ref="R?"  Part="1" 
 AR Path="/5FE1DCBA/605792C2" Ref="R99"  Part="1" 
-F 0 "R99" V 4900 2425 50  0000 C CNN
-F 1 "1K" V 5000 2425 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4930 2425 50  0001 C CNN
-F 3 "~" H 5000 2425 50  0001 C CNN
-	1    5000 2425
+F 0 "R99" V 4200 2175 50  0000 C CNN
+F 1 "1K" V 4300 2175 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4230 2175 50  0001 C CNN
+F 3 "~" H 4300 2175 50  0001 C CNN
+	1    4300 2175
 	1    0    0    -1  
 $EndComp
-Text Label 5475 2625 2    50   ~ 0
+Text Label 4775 2375 2    50   ~ 0
 GLV_RTN
 $Comp
 L TSI_Rev.5-rescue:LED-Device D1
 U 1 1 605FE51C
-P 10500 1725
-F 0 "D1" V 10539 1607 50  0000 R CNN
-F 1 "GREEN LED" V 10448 1607 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 10500 1725 50  0001 C CNN
-F 3 "http://static.vcclite.com/pdf/VAOL-S8GT4-LED-0805-green.pdf" H 10500 1725 50  0001 C CNN
-F 4 "VAOL-S8GT4" V 10500 1725 50  0001 C CNN "Part Name"
-	1    10500 1725
+P 5600 1925
+F 0 "D1" V 5639 1807 50  0000 R CNN
+F 1 "GREEN LED" V 5548 1807 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5600 1925 50  0001 C CNN
+F 3 "http://static.vcclite.com/pdf/VAOL-S8GT4-LED-0805-green.pdf" H 5600 1925 50  0001 C CNN
+F 4 "VAOL-S8GT4" V 5600 1925 50  0001 C CNN "Part Name"
+	1    5600 1925
 	0    -1   -1   0   
 $EndComp
 Wire Notes Line
@@ -483,23 +483,23 @@ Wire Notes Line
 	3975 500  3975 1100
 Wire Notes Line
 	2325 500  3975 500 
-Text Label 3125 2225 0    50   ~ 0
+Text Label 2425 1975 0    50   ~ 0
 GLV_RTN
 Text Label 675  4225 0    50   ~ 0
 GLV_RTN
 Wire Wire Line
 	8000 5700 8000 5750
 Wire Wire Line
-	5000 2625 5475 2625
+	4300 2375 4775 2375
 Wire Wire Line
-	4925 2225 5000 2225
+	4225 1975 4300 1975
 Wire Wire Line
-	5000 2225 5000 2275
-Connection ~ 5000 2225
+	4300 1975 4300 2025
+Connection ~ 4300 1975
 Wire Wire Line
-	5000 2225 5475 2225
+	4300 1975 4775 1975
 Wire Wire Line
-	5000 2575 5000 2625
+	4300 2325 4300 2375
 Text HLabel 1250 875  0    50   Input ~ 0
 5V
 Text Label 1950 875  2    50   ~ 0
@@ -576,67 +576,59 @@ RTDS Button for testing
 $Comp
 L CarMan_KiCAD_Library:NCD9830DBR2G U43
 U 1 1 624D32A1
-P 8975 3500
-F 0 "U43" H 8950 4415 50  0000 C CNN
-F 1 "NCD9830DBR2G" H 8950 4324 50  0000 C CNN
-F 2 "TSI_Rev_2021_Footprint_Lib:SOP65P640X120-16N" H 9025 3750 50  0001 C CNN
-F 3 "" H 9025 3750 50  0001 C CNN
-	1    8975 3500
+P 9575 1950
+F 0 "U43" H 9550 2865 50  0000 C CNN
+F 1 "NCD9830DBR2G" H 9550 2774 50  0000 C CNN
+F 2 "TSI_Rev_2021_Footprint_Lib:SOP65P640X120-16N" H 9625 2200 50  0001 C CNN
+F 3 "" H 9625 2200 50  0001 C CNN
+	1    9575 1950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8325 3200 7500 3200
+	8925 1650 8100 1650
 Wire Wire Line
-	8325 3350 7500 3350
+	11000 2550 10175 2550
 Wire Wire Line
-	8325 3500 7500 3500
-Wire Wire Line
-	10400 4100 9575 4100
-Wire Wire Line
-	9575 3950 10400 3950
-Text Label 8850 2325 0    39   ~ 0
+	10175 2400 11000 2400
+Text Label 9450 775  0    39   ~ 0
 GLV_RTN
-NoConn ~ 9575 3050
-NoConn ~ 9575 3200
-NoConn ~ 9575 3350
-NoConn ~ 9575 3500
-NoConn ~ 9575 3650
-NoConn ~ 9575 3800
-Text Label 10400 3950 2    39   ~ 0
+NoConn ~ 10175 1500
+NoConn ~ 10175 1650
+NoConn ~ 10175 1800
+NoConn ~ 10175 1950
+NoConn ~ 10175 2100
+NoConn ~ 10175 2250
+Text Label 11000 2400 2    39   ~ 0
 CoolTemp
-Text Label 10400 4100 2    39   ~ 0
+Text Label 11000 2550 2    39   ~ 0
 APPS
-Text Label 7500 3200 0    39   ~ 0
-5V
-Text Label 7500 3350 0    39   ~ 0
-SDA
-Text Label 7500 3500 0    39   ~ 0
-SCL
-Wire Wire Line
-	8325 3650 8000 3650
-Wire Wire Line
-	8000 3650 8000 3800
-Wire Wire Line
-	8000 3800 8325 3800
-Wire Wire Line
-	8000 3800 8000 3950
-Wire Wire Line
-	8000 3950 8325 3950
-Connection ~ 8000 3800
-Wire Wire Line
-	8000 3800 7500 3800
-Text Label 7500 3800 0    39   ~ 0
+Text Label 8100 1650 0    39   ~ 0
 5V
 Wire Wire Line
-	9575 2900 9750 2900
+	8925 2100 8600 2100
 Wire Wire Line
-	9750 2900 9750 2325
+	8600 2100 8600 2250
 Wire Wire Line
-	9750 2325 8125 2325
+	8600 2250 8925 2250
 Wire Wire Line
-	8125 2325 8125 3050
+	8600 2250 8600 2400
 Wire Wire Line
-	8125 3050 8325 3050
+	8600 2400 8925 2400
+Connection ~ 8600 2250
+Wire Wire Line
+	8600 2250 8100 2250
+Text Label 8100 2250 0    39   ~ 0
+5V
+Wire Wire Line
+	10175 1350 10350 1350
+Wire Wire Line
+	10350 1350 10350 775 
+Wire Wire Line
+	10350 775  8725 775 
+Wire Wire Line
+	8725 775  8725 1500
+Wire Wire Line
+	8725 1500 8925 1500
 Wire Wire Line
 	8000 6125 8125 6125
 Wire Wire Line
@@ -659,4 +651,149 @@ Text Label 1950 1775 2    50   ~ 0
 APPS
 Wire Wire Line
 	1250 1775 1950 1775
+Wire Wire Line
+	8550 3850 8500 3850
+Wire Wire Line
+	8550 4400 8100 4400
+Wire Wire Line
+	9825 3850 9550 3850
+Wire Wire Line
+	9825 4400 9500 4400
+Text Notes 9450 3750 2    47   ~ 0
+I2C Isolator\n
+Text Label 9825 4400 2    50   ~ 0
+GLV_RTN
+Text Label 9825 3850 2    50   ~ 0
+3.3V
+Text Label 8100 3850 0    50   ~ 0
+5V
+Text Label 8100 4400 0    50   ~ 0
+GLV_RTN
+$Comp
+L CarMan_KiCAD_Library:SI8600AB-B-IS U?
+U 1 1 624FE129
+P 9050 4100
+AR Path="/5F98EBE9/624FE129" Ref="U?"  Part="1" 
+AR Path="/5FE1DCBA/624FE129" Ref="U46"  Part="1" 
+F 0 "U46" H 8850 4500 50  0000 C CNN
+F 1 "SI8600AB-B-IS" H 9050 3650 50  0000 C CNN
+F 2 "TSI_Rev_2021_Footprint_Lib:SOIC127P600X175-8N" H 9050 4500 50  0001 C CNN
+F 3 "https://www.snapeda.com/parts/SI8600AB-B-IS/Silicon%20Labs/datasheet/" H 9050 4500 50  0001 C CNN
+	1    9050 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 624FE132
+P 9550 3450
+AR Path="/5F98EBE9/624FE132" Ref="C?"  Part="1" 
+AR Path="/5FE1DCBA/624FE132" Ref="C53"  Part="1" 
+F 0 "C53" H 9435 3496 50  0000 R CNN
+F 1 "0.1u" H 9435 3405 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 9588 3300 50  0001 C CNN
+F 3 "~" H 9550 3450 50  0001 C CNN
+	1    9550 3450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 624FE138
+P 8500 3450
+AR Path="/5F98EBE9/624FE138" Ref="C?"  Part="1" 
+AR Path="/5FE1DCBA/624FE138" Ref="C52"  Part="1" 
+F 0 "C52" H 8385 3496 50  0000 R CNN
+F 1 "0.1u" H 8385 3405 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 8538 3300 50  0001 C CNN
+F 3 "~" H 8500 3450 50  0001 C CNN
+	1    8500 3450
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9550 3850 9550 3600
+Connection ~ 9550 3850
+Wire Wire Line
+	9550 3850 9500 3850
+Wire Wire Line
+	8500 3600 8500 3850
+Connection ~ 8500 3850
+Wire Wire Line
+	8500 3850 8100 3850
+Wire Wire Line
+	9550 3100 9800 3100
+Wire Wire Line
+	8500 3100 8250 3100
+Text Label 8250 3100 0    50   ~ 0
+GLV_RTN
+Text Label 9800 3100 2    50   ~ 0
+GLV_RTN
+Wire Wire Line
+	8550 4200 7700 4200
+Wire Wire Line
+	7700 4200 7700 2700
+Wire Wire Line
+	7700 1950 8925 1950
+Wire Wire Line
+	7450 1800 7450 2700
+Wire Wire Line
+	7450 4050 8550 4050
+Wire Wire Line
+	7450 1800 8925 1800
+Wire Wire Line
+	9500 4050 10350 4050
+Wire Wire Line
+	9500 4200 10350 4200
+Text Label 10350 4050 2    50   ~ 0
+SDA
+Text Label 10350 4200 2    50   ~ 0
+SCL
+$Comp
+L Device:R R114
+U 1 1 62558206
+P 8000 2700
+F 0 "R114" V 7793 2700 50  0000 C CNN
+F 1 "10K" V 7884 2700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 7930 2700 50  0001 C CNN
+F 3 "~" H 8000 2700 50  0001 C CNN
+	1    8000 2700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R113
+U 1 1 62558A72
+P 7150 2700
+F 0 "R113" V 6943 2700 50  0000 C CNN
+F 1 "10K" V 7034 2700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 7080 2700 50  0001 C CNN
+F 3 "~" H 7150 2700 50  0001 C CNN
+	1    7150 2700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7850 2700 7700 2700
+Connection ~ 7700 2700
+Wire Wire Line
+	7700 2700 7700 1950
+Wire Wire Line
+	7300 2700 7450 2700
+Connection ~ 7450 2700
+Wire Wire Line
+	7450 2700 7450 4050
+Wire Wire Line
+	8150 2700 8350 2700
+Wire Wire Line
+	7000 2700 6800 2700
+Text Label 8350 2700 2    50   ~ 0
+5V
+Text Label 6800 2700 0    50   ~ 0
+5V
+Text Notes 6750 1450 0    50   ~ 0
+Isolator is required because the Ref_In must\n be equal to the max value of the analog inputs \nand cannot be greater than by VDD. At the same\ntime, however, SDA and SCL are considered high \nif they are > 0.7*VDD. Since SDA and SCL \nare 3.3V, they would never be considered high.
+Text Label 7550 1800 0    50   ~ 0
+SDA_5V
+Text Label 7800 1950 0    50   ~ 0
+SCL_5V
+Wire Wire Line
+	8500 3300 8500 3100
+Wire Wire Line
+	9550 3100 9550 3300
 $EndSCHEMATC

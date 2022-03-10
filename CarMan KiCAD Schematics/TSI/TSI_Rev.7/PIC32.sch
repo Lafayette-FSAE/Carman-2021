@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 7
+Sheet 6 7
 Title ""
 Date ""
 Rev ""
@@ -127,8 +127,6 @@ Wire Wire Line
 	2550 4200 2050 4200
 Wire Wire Line
 	2550 4300 2050 4300
-Wire Wire Line
-	2550 3200 2050 3200
 Text Label 6700 3200 2    39   ~ 0
 CAN_TXD
 Text Label 6700 3300 2    39   ~ 0
@@ -159,8 +157,6 @@ Wire Wire Line
 	2550 3600 2050 3600
 Text Label 2050 3600 0    39   ~ 0
 APPS2_ISO_NS
-Wire Wire Line
-	2550 3100 2050 3100
 Text Label 2050 3100 0    39   ~ 0
 SCL
 Wire Wire Line
@@ -234,7 +230,7 @@ Test_Pin2
 Text Label 6700 3100 2    39   ~ 0
 Test_Pin9
 Text Label 6700 4100 2    39   ~ 0
-Throttle_SEL
+Throttle_EN
 Text Label 2050 2700 0    39   ~ 0
 Test_Pin6
 Text Label 2050 2600 0    39   ~ 0
@@ -303,7 +299,7 @@ D_LED_CTRL
 Text HLabel 8725 2600 0    39   Output ~ 0
 RTDS_CTRL
 Text HLabel 8725 2675 0    39   Output ~ 0
-Throttle_SEL
+Throttle_EN
 Text HLabel 8725 2750 0    39   Output ~ 0
 Throttle_LOGIC
 Text HLabel 8725 2825 0    39   Output ~ 0
@@ -408,7 +404,7 @@ AR Path="/6196BF15/63362EC7" Ref="R?"  Part="1"
 AR Path="/623B2FCE/63362EC7" Ref="R123"  Part="1" 
 F 0 "R123" V 10000 4850 50  0000 C CNN
 F 1 "1K" V 9900 4850 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9830 4850 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 9830 4850 50  0001 C CNN
 F 3 "~" H 9900 4850 50  0001 C CNN
 	1    9900 4850
 	0    -1   -1   0   
@@ -422,7 +418,7 @@ AR Path="/6196BF15/633723E4" Ref="R?"  Part="1"
 AR Path="/623B2FCE/633723E4" Ref="R121"  Part="1" 
 F 0 "R121" V 2225 2300 50  0000 C CNN
 F 1 "1K" V 2300 2300 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2230 2300 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 2230 2300 50  0001 C CNN
 F 3 "~" H 2300 2300 50  0001 C CNN
 	1    2300 2300
 	0    -1   -1   0   
@@ -436,7 +432,7 @@ AR Path="/6196BF15/63375196" Ref="R?"  Part="1"
 AR Path="/623B2FCE/63375196" Ref="R120"  Part="1" 
 F 0 "R120" V 1925 2050 50  0000 C CNN
 F 1 "10K" V 2000 2050 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1930 2050 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 1930 2050 50  0001 C CNN
 F 3 "~" H 2000 2050 50  0001 C CNN
 	1    2000 2050
 	-1   0    0    1   
@@ -455,7 +451,7 @@ AR Path="/5F98EBE9/6338E0C1" Ref="C?"  Part="1"
 AR Path="/623B2FCE/6338E0C1" Ref="C49"  Part="1" 
 F 0 "C49" V 1400 2150 50  0000 C CNN
 F 1 "0.1u" V 1400 2450 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1500 2300 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 1500 2300 50  0001 C CNN
 F 3 "~" H 1500 2300 50  0001 C CNN
 	1    1500 2300
 	0    1    1    0   
@@ -470,7 +466,7 @@ AR Path="/5F98EBE9/633A52AE" Ref="C?"  Part="1"
 AR Path="/623B2FCE/633A52AE" Ref="C43"  Part="1" 
 F 0 "C43" V 3050 1225 50  0000 C CNN
 F 1 "0.1u" V 3050 1525 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3150 1375 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 3150 1375 50  0001 C CNN
 F 3 "~" H 3150 1375 50  0001 C CNN
 	1    3150 1375
 	1    0    0    -1  
@@ -503,7 +499,7 @@ AR Path="/5F98EBE9/633C8B19" Ref="C?"  Part="1"
 AR Path="/623B2FCE/633C8B19" Ref="C44"  Part="1" 
 F 0 "C44" V 3650 1225 50  0000 C CNN
 F 1 "0.1u" V 3650 1525 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3750 1375 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 3750 1375 50  0001 C CNN
 F 3 "~" H 3750 1375 50  0001 C CNN
 	1    3750 1375
 	1    0    0    -1  
@@ -518,7 +514,7 @@ AR Path="/5F98EBE9/633CB0B6" Ref="C?"  Part="1"
 AR Path="/623B2FCE/633CB0B6" Ref="C45"  Part="1" 
 F 0 "C45" V 4250 1225 50  0000 C CNN
 F 1 "0.1u" V 4250 1525 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4350 1375 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 4350 1375 50  0001 C CNN
 F 3 "~" H 4350 1375 50  0001 C CNN
 	1    4350 1375
 	1    0    0    -1  
@@ -533,7 +529,7 @@ AR Path="/5F98EBE9/633CD9B0" Ref="C?"  Part="1"
 AR Path="/623B2FCE/633CD9B0" Ref="C46"  Part="1" 
 F 0 "C46" V 4850 1225 50  0000 C CNN
 F 1 "0.1u" V 4850 1525 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4950 1375 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 4950 1375 50  0001 C CNN
 F 3 "~" H 4950 1375 50  0001 C CNN
 	1    4950 1375
 	1    0    0    -1  
@@ -548,7 +544,7 @@ AR Path="/5F98EBE9/633D055A" Ref="C?"  Part="1"
 AR Path="/623B2FCE/633D055A" Ref="C47"  Part="1" 
 F 0 "C47" V 5450 1225 50  0000 C CNN
 F 1 "0.1u" V 5450 1525 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5550 1375 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 5550 1375 50  0001 C CNN
 F 3 "~" H 5550 1375 50  0001 C CNN
 	1    5550 1375
 	1    0    0    -1  
@@ -592,7 +588,7 @@ AR Path="/5F98EBE9/633EFF8E" Ref="C?"  Part="1"
 AR Path="/623B2FCE/633EFF8E" Ref="C48"  Part="1" 
 F 0 "C48" V 6900 3700 50  0000 C CNN
 F 1 "0.1u" V 6900 4000 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7000 3850 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 7000 3850 50  0001 C CNN
 F 3 "~" H 7000 3850 50  0001 C CNN
 	1    7000 3850
 	-1   0    0    1   
@@ -601,4 +597,44 @@ Wire Wire Line
 	7000 4100 7000 5350
 Wire Wire Line
 	4950 1625 4950 1800
+Wire Wire Line
+	1550 3100 2550 3100
+Wire Wire Line
+	1550 3200 2550 3200
+$Comp
+L Device:R R111
+U 1 1 6241050D
+P 1550 2950
+F 0 "R111" H 1620 2996 50  0000 L CNN
+F 1 "10k" H 1620 2905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 1480 2950 50  0001 C CNN
+F 3 "~" H 1550 2950 50  0001 C CNN
+	1    1550 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 2800 1550 2700
+Wire Wire Line
+	1550 2700 1325 2700
+$Comp
+L Device:R R112
+U 1 1 624149A2
+P 1550 3350
+F 0 "R112" H 1481 3304 50  0000 R CNN
+F 1 "10k" H 1481 3395 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 1480 3350 50  0001 C CNN
+F 3 "~" H 1550 3350 50  0001 C CNN
+	1    1550 3350
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	1550 3500 1550 3600
+Wire Wire Line
+	1550 3600 1325 3600
+Text Label 1325 2700 0    39   ~ 0
+5V
+Text Label 1325 3600 0    39   ~ 0
+5V
+Text Notes 1100 3900 0    50   ~ 0
+NS=Not Shorted\nNG=Not Grounded
 $EndSCHEMATC

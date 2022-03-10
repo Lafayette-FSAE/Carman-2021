@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A2 23386 16535
 encoding utf-8
-Sheet 3 7
+Sheet 2 7
 Title ""
 Date ""
 Rev ""
@@ -624,17 +624,6 @@ Text Label 6425 6375 0    69   ~ 0
 TSV_Ready
 Text Label 6425 6575 0    69   ~ 0
 MC_95%
-$Comp
-L TSI_Rev.5-rescue:MCP6004-Amplifier_Operational U40
-U 2 1 616E5BE5
-P 5150 6575
-F 0 "U40" H 5150 6575 50  0000 C CNN
-F 1 "MCP6004" H 5350 6450 50  0000 C CNN
-F 2 "TSI_Rev_2021_Footprint_Lib:SOIC127P600X175-14N" H 5100 6675 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 5200 6775 50  0001 C CNN
-	2    5150 6575
-	1    0    0    1   
-$EndComp
 Wire Wire Line
 	5725 5650 5725 6375
 Wire Wire Line
@@ -770,28 +759,6 @@ Wire Wire Line
 	2100 6575 2950 6575
 Text Label 5050 5950 0    50   ~ 0
 IO_Ground
-$Comp
-L TSI_Rev.5-rescue:MCP6004-Amplifier_Operational U40
-U 1 1 616E5BDE
-P 5150 5650
-F 0 "U40" H 5200 5650 50  0000 C CNN
-F 1 "MCP6004" H 5300 5800 50  0000 C CNN
-F 2 "TSI_Rev_2021_Footprint_Lib:SOIC127P600X175-14N" H 5100 5750 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 5200 5850 50  0001 C CNN
-	1    5150 5650
-	1    0    0    -1  
-$EndComp
-$Comp
-L TSI_Rev.5-rescue:MCP6004-Amplifier_Operational U40
-U 5 1 616E5BD8
-P 5150 5650
-F 0 "U40" H 5108 5696 50  0001 L CNN
-F 1 "MCP6004" H 5108 5650 50  0001 L CNN
-F 2 "TSI_Rev_2021_Footprint_Lib:SOIC127P600X175-14N" H 5100 5750 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 5200 5850 50  0001 C CNN
-	5    5150 5650
-	1    0    0    -1  
-$EndComp
 Text Label 5050 5350 0    50   ~ 0
 5HV
 Text Notes 3925 5850 0    47   ~ 0
@@ -835,32 +802,6 @@ Wire Wire Line
 	2950 5650 2800 5650
 Text Label 2100 5450 0    79   ~ 0
 TS_Voltage
-$Comp
-L TSI_Rev.5-rescue:MCP6004-Amplifier_Operational U?
-U 3 1 616E5BB2
-P 3250 5550
-AR Path="/5FC85F57/616E5BB2" Ref="U?"  Part="3" 
-AR Path="/6196BF15/616E5BB2" Ref="U21"  Part="3" 
-F 0 "U21" H 3200 5550 50  0000 C CNN
-F 1 "MCP6004" H 3400 5400 50  0000 C CNN
-F 2 "TSI_Rev_2021_Footprint_Lib:SOIC127P600X175-14N" H 3200 5650 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 3300 5750 50  0001 C CNN
-	3    3250 5550
-	1    0    0    -1  
-$EndComp
-$Comp
-L TSI_Rev.5-rescue:MCP6004-Amplifier_Operational U?
-U 4 1 616E5BAC
-P 3250 6675
-AR Path="/5FC85F57/616E5BAC" Ref="U?"  Part="4" 
-AR Path="/6196BF15/616E5BAC" Ref="U21"  Part="4" 
-F 0 "U21" H 3200 6675 50  0000 C CNN
-F 1 "MCP6004" H 3400 6525 50  0000 C CNN
-F 2 "TSI_Rev_2021_Footprint_Lib:SOIC127P600X175-14N" H 3200 6775 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 3300 6875 50  0001 C CNN
-	4    3250 6675
-	1    0    0    -1  
-$EndComp
 Text Notes 15875 6725 0    35   ~ 0
 Flyback\nDiode
 Wire Notes Line
@@ -916,9 +857,9 @@ L TSI_Rev.5-rescue:MCP6004-Amplifier_Operational U40
 U 4 1 610276BD
 P 15450 8250
 F 0 "U40" H 15450 8250 50  0000 C CNN
-F 1 "MCP6004" H 15450 8526 50  0000 C CNN
-F 2 "TSI_Rev_2021_Footprint_Lib:SOIC127P600X175-14N" H 15400 8350 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 15500 8450 50  0001 C CNN
+F 1 "TLV2464CDR" H 15450 8526 50  0000 C CNN
+F 2 "CarMan General Footprints:SOIC127P600X175-14N" H 15400 8350 50  0001 C CNN
+F 3 "" H 15500 8450 50  0001 C CNN
 	4    15450 8250
 	1    0    0    -1  
 $EndComp
@@ -1813,28 +1754,6 @@ Wire Wire Line
 	4150 13150 4150 12700
 Wire Wire Line
 	3900 13000 3600 13000
-$Comp
-L TSI_Rev.5-rescue:MCP6004-Amplifier_Operational U35
-U 1 1 6135E725
-P 3700 12700
-F 0 "U35" H 3700 12700 50  0000 C CNN
-F 1 "MCP6004" H 3900 12850 50  0000 C CNN
-F 2 "TSI_Rev_2021_Footprint_Lib:SOIC127P600X175-14N" H 3650 12800 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 3750 12900 50  0001 C CNN
-	1    3700 12700
-	1    0    0    -1  
-$EndComp
-$Comp
-L TSI_Rev.5-rescue:MCP6004-Amplifier_Operational U35
-U 5 1 613AB3DB
-P 3700 12700
-F 0 "U35" H 3658 12700 50  0001 L CNN
-F 1 "MCP6004" H 3658 12655 50  0001 L CNN
-F 2 "TSI_Rev_2021_Footprint_Lib:SOIC127P600X175-14N" H 3650 12800 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 3750 12900 50  0001 C CNN
-	5    3700 12700
-	1    0    0    -1  
-$EndComp
 Connection ~ 4150 12700
 Wire Wire Line
 	2750 12600 3400 12600
@@ -1877,4 +1796,95 @@ Wire Wire Line
 Connection ~ 11750 7150
 Text Notes 16100 5775 2    31   ~ 0
 This state is not possible since whenver Safety_Loop_HV is low, the output of U19C must be high
+$Comp
+L CarMan_KiCAD_Library:TLV2464CDR U?
+U 1 1 62FA2AD2
+P 5150 5650
+AR Path="/5FC85F57/62FA2AD2" Ref="U?"  Part="1" 
+AR Path="/6196BF15/62FA2AD2" Ref="U40"  Part="1" 
+F 0 "U40" H 5150 5650 50  0000 C CNN
+F 1 "TLV2464CDR" H 5300 5900 50  0001 C CNN
+F 2 "CarMan General Footprints:SOIC127P600X175-14N" H 5100 5750 50  0001 C CNN
+F 3 "" H 5200 5850 50  0001 C CNN
+	1    5150 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L CarMan_KiCAD_Library:TLV2464CDR U?
+U 5 1 62FA2AD8
+P 5150 5650
+AR Path="/5FC85F57/62FA2AD8" Ref="U?"  Part="5" 
+AR Path="/6196BF15/62FA2AD8" Ref="U40"  Part="5" 
+F 0 "U40" H 5100 6100 50  0001 L CNN
+F 1 "TLV2464CDR" H 5150 5500 50  0000 L CNN
+F 2 "CarMan General Footprints:SOIC127P600X175-14N" H 5100 5750 50  0001 C CNN
+F 3 "" H 5200 5850 50  0001 C CNN
+	5    5150 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L CarMan_KiCAD_Library:TLV2464CDR U?
+U 2 1 62FA2ADE
+P 5150 6575
+AR Path="/5FC85F57/62FA2ADE" Ref="U?"  Part="2" 
+AR Path="/6196BF15/62FA2ADE" Ref="U40"  Part="2" 
+F 0 "U40" H 5150 6575 50  0000 C CNN
+F 1 "TLV2464CDR" H 5250 6375 50  0000 C CNN
+F 2 "CarMan General Footprints:SOIC127P600X175-14N" H 5100 6675 50  0001 C CNN
+F 3 "" H 5200 6775 50  0001 C CNN
+	2    5150 6575
+	1    0    0    -1  
+$EndComp
+$Comp
+L CarMan_KiCAD_Library:TLV2464CDR U?
+U 3 1 62FA2AE4
+P 3250 5550
+AR Path="/5FC85F57/62FA2AE4" Ref="U?"  Part="3" 
+AR Path="/6196BF15/62FA2AE4" Ref="U21"  Part="3" 
+F 0 "U21" H 3250 5550 50  0000 C CNN
+F 1 "TLV2464CDR" H 3400 5350 50  0000 C CNN
+F 2 "CarMan General Footprints:SOIC127P600X175-14N" H 3200 5650 50  0001 C CNN
+F 3 "" H 3300 5750 50  0001 C CNN
+	3    3250 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L CarMan_KiCAD_Library:TLV2464CDR U?
+U 4 1 62FA2AEA
+P 3250 6675
+AR Path="/5FC85F57/62FA2AEA" Ref="U?"  Part="4" 
+AR Path="/6196BF15/62FA2AEA" Ref="U21"  Part="4" 
+F 0 "U21" H 3250 6675 50  0000 C CNN
+F 1 "TLV2464CDR" H 3400 6475 50  0000 C CNN
+F 2 "CarMan General Footprints:SOIC127P600X175-14N" H 3200 6775 50  0001 C CNN
+F 3 "" H 3300 6875 50  0001 C CNN
+	4    3250 6675
+	1    0    0    -1  
+$EndComp
+$Comp
+L CarMan_KiCAD_Library:TLV2464CDR U?
+U 1 1 631E6F5A
+P 3700 12700
+AR Path="/5FC85F57/631E6F5A" Ref="U?"  Part="1" 
+AR Path="/6196BF15/631E6F5A" Ref="U35"  Part="1" 
+F 0 "U35" H 3700 12700 50  0000 C CNN
+F 1 "TLV2464CDR" H 3850 12950 50  0001 C CNN
+F 2 "CarMan General Footprints:SOIC127P600X175-14N" H 3650 12800 50  0001 C CNN
+F 3 "" H 3750 12900 50  0001 C CNN
+	1    3700 12700
+	1    0    0    -1  
+$EndComp
+$Comp
+L CarMan_KiCAD_Library:TLV2464CDR U?
+U 5 1 631E6F60
+P 3700 12700
+AR Path="/5FC85F57/631E6F60" Ref="U?"  Part="5" 
+AR Path="/6196BF15/631E6F60" Ref="U35"  Part="5" 
+F 0 "U35" H 3650 13150 50  0001 L CNN
+F 1 "TLV2464CDR" H 3700 12550 50  0000 L CNN
+F 2 "CarMan General Footprints:SOIC127P600X175-14N" H 3650 12800 50  0001 C CNN
+F 3 "" H 3750 12900 50  0001 C CNN
+	5    3700 12700
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name TSI_Rev_2021_Footprint_Lib)(type KiCad)(uri ${KIPRJMOD}/TSI_Rev_2021_Footprint_Lib.pretty)(options "")(descr ""))
+  (lib (name "CarMan General Footprints")(type KiCad)(uri "C:/Users/Eli/Documents/21Semester1/ECE 491/GitHub_Repositories/Carman-2021/CarMan KiCAD Library/CarMan General Footprints.pretty")(options "")(descr ""))
+  (lib (name footprints)(type KiCad)(uri "C:/Users/Eli/Documents/21Semester1/ECE 491/GitHub_Repositories/Carman-2021/CarMan KiCAD Library/footprints.pretty")(options "")(descr ""))
+)
