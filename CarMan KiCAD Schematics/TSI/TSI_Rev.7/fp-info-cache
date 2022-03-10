@@ -1,4 +1,4 @@
-19306141488811736
+19307788351005930
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -6257,6 +6257,13 @@ SOIC127P600X175-8N
 0
 8
 8
+CarMan General Footprints
+SOIC127P600X175-14N
+
+
+0
+14
+14
 CarMan General Footprints
 SOP50P490X110-10N
 
