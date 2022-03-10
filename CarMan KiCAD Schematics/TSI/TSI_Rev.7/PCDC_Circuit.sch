@@ -913,7 +913,7 @@ AR Path="/5F9E72DA" Ref="K1"  Part="1"
 AR Path="/6196BF15/5F9E72DA" Ref="K1"  Part="1" 
 F 0 "K1" H 18800 8000 50  0000 L CNN
 F 1 "APAN3105" H 18650 7900 50  0000 L CNN
-F 2 "TSI_Rev_2021_Footprint_Lib:RELAY_APAN3105" H 20070 7520 50  0001 C CNN
+F 2 "RELAY_APAN3105" H 20070 7520 50  0001 C CNN
 F 3 "http://gfinder.findernet.com/assets/Series/356/S36EN.pdf" H 18800 7550 50  0001 C CNN
 	1    18800 7550
 	1    0    0    -1  
@@ -1166,8 +1166,6 @@ F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 21125 1850 50  0001 C CNN
 	5    21125 1850
 	0    1    1    0   
 $EndComp
-Text Label 19300 3000 0    47   ~ 0
-IO_Ground
 Text Label 18175 1850 0    47   ~ 0
 IO_Ground
 Wire Wire Line
@@ -1220,8 +1218,6 @@ Wire Wire Line
 Wire Wire Line
 	21625 1850 21625 2300
 Connection ~ 21625 1850
-Wire Wire Line
-	19700 3400 19950 3400
 $Comp
 L TSI_Rev.5-rescue:TestPoint-Connector TP?
 U 1 1 6464F7D3
@@ -1244,27 +1240,6 @@ Wire Wire Line
 	6250 12900 6800 12900
 Wire Wire Line
 	4600 15850 5325 15850
-Wire Wire Line
-	20700 3000 20700 3400
-Wire Wire Line
-	20700 3400 20450 3400
-Wire Wire Line
-	20700 3000 21000 3000
-$Comp
-L TSI_Rev.5-rescue:CAP-pspice C?
-U 1 1 63EC1341
-P 20200 3400
-AR Path="/5FC85F57/63EC1341" Ref="C?"  Part="1" 
-AR Path="/6196BF15/63EC1341" Ref="C42"  Part="1" 
-F 0 "C42" V 20100 3550 50  0000 C CNN
-F 1 "0.1u" V 20100 3250 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 20200 3400 50  0001 C CNN
-F 3 "~" H 20200 3400 50  0001 C CNN
-	1    20200 3400
-	0    -1   -1   0   
-$EndComp
-Text Label 21000 3000 2    47   ~ 0
-5HV
 Text Notes 19250 1325 0    79   ~ 0
 NAND Package Power Supplies
 $Comp
@@ -1699,25 +1674,6 @@ Wire Wire Line
 	6350 7775 6350 7925
 Wire Wire Line
 	6350 7925 6700 7925
-Connection ~ 20700 3000
-Wire Wire Line
-	19700 3000 19300 3000
-$Comp
-L TSI_Rev.5-rescue:74HC00-74xx U41
-U 5 1 63EC134F
-P 20200 3000
-AR Path="/63EC134F" Ref="U41"  Part="5" 
-AR Path="/6196BF15/63EC134F" Ref="U41"  Part="5" 
-F 0 "U41" V 20350 3000 50  0000 C CNN
-F 1 "SN74HC00APWR" V 19950 3000 50  0000 C CNN
-F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 20200 3000 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74hc00" H 20200 3000 50  0001 C CNN
-	5    20200 3000
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	19700 3000 19700 3400
-Connection ~ 19700 3000
 Text Label 7100 15275 2    59   ~ 0
 PC_Control
 Wire Wire Line
