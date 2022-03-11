@@ -194,19 +194,19 @@ F 3 "~" H 4400 6200 50  0001 C CNN
 $EndComp
 Text Notes 2800 5900 0    50   ~ 0
 HIGH VOLTAGE\n
-Text Label 10125 6125 2    50   ~ 0
+Text Label 9450 6075 2    50   ~ 0
 Drive_BTN_RTN
-Text HLabel 1250 2500 0    50   Output ~ 0
-TSAL
-Text HLabel 1250 2700 0    50   Output ~ 0
-TSAL_RTN
-Text Label 1950 2500 2    50   ~ 0
-TSAL
-Text Label 1950 2700 2    50   ~ 0
-TSAL_RTN
 Text HLabel 1250 2600 0    50   Output ~ 0
-TSAL_Cockpit
+TSAL
+Text HLabel 1250 2800 0    50   Output ~ 0
+TSAL_RTN
 Text Label 1950 2600 2    50   ~ 0
+TSAL
+Text Label 1950 2800 2    50   ~ 0
+TSAL_RTN
+Text HLabel 1250 2700 0    50   Output ~ 0
+TSAL_Cockpit
+Text Label 1950 2700 2    50   ~ 0
 TSAL_Cockpit
 Text Label 5600 2475 2    50   ~ 0
 GLV_RTN
@@ -224,19 +224,19 @@ Wire Wire Line
 	3625 1775 3425 1775
 Text Notes 7025 6925 0    157  ~ 0
 STATUS LIGHTS, TSAL, RTDS & ADC
-Text HLabel 1250 2300 0    50   Output ~ 0
-RTDS
-Text Label 1950 2300 2    50   ~ 0
+Text HLabel 1250 2400 0    50   Output ~ 0
 RTDS
 Text Label 1950 2400 2    50   ~ 0
+RTDS
+Text Label 1950 2500 2    50   ~ 0
 RTDS_RTN
-Text HLabel 1250 2400 0    50   Output ~ 0
+Text HLabel 1250 2500 0    50   Output ~ 0
 RTDS_RTN
 Text Notes 675  650  0    79   ~ 0
  LOW VOLTAGE SIGNALS\n
-Text HLabel 1250 2200 0    50   Output ~ 0
+Text HLabel 1250 2300 0    50   Output ~ 0
 Drive_LED
-Text Label 1950 2200 2    50   ~ 0
+Text Label 1950 2300 2    50   ~ 0
 Drive_LED
 Text Label 5600 6400 2    50   ~ 0
 TSAL
@@ -246,31 +246,18 @@ Wire Wire Line
 	5000 6200 5600 6200
 Wire Wire Line
 	5000 6400 5600 6400
-Text Label 9200 6125 0    50   ~ 0
+Text Label 8500 6075 0    50   ~ 0
 GLV_RTN
 $Comp
 L TSI_Rev.5-rescue:CAP-pspice C6
 U 1 1 5FBC364D
-P 9025 5700
-F 0 "C6" H 9075 5800 50  0000 L CNN
-F 1 "0.1u" H 9075 5600 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 9025 5700 50  0001 C CNN
-F 3 "~" H 9025 5700 50  0001 C CNN
-	1    9025 5700
-	0    1    1    0   
-$EndComp
-Text Label 8825 6125 2    50   ~ 0
-Drive_BTN
-$Comp
-L TSI_Rev.5-rescue:R-Device R97
-U 1 1 5FA84F23
-P 8275 6125
-F 0 "R97" V 8175 6125 50  0000 C CNN
-F 1 "10K" V 8275 6125 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 8205 6125 50  0001 C CNN
-F 3 "~" H 8275 6125 50  0001 C CNN
-	1    8275 6125
-	0    -1   1    0   
+P 9775 5750
+F 0 "C6" H 9825 5850 50  0000 L CNN
+F 1 "0.1u" H 9825 5650 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 9775 5750 50  0001 C CNN
+F 3 "~" H 9775 5750 50  0001 C CNN
+	1    9775 5750
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	1825 4025 1625 4025
@@ -332,7 +319,7 @@ $EndComp
 Wire Wire Line
 	1250 1275 1950 1275
 Wire Wire Line
-	1250 2200 1950 2200
+	1250 2300 1950 2300
 Wire Wire Line
 	1250 1175 1950 1175
 Wire Wire Line
@@ -340,9 +327,9 @@ Wire Wire Line
 Wire Wire Line
 	1250 1475 1950 1475
 Wire Wire Line
-	1250 2300 1950 2300
-Wire Wire Line
 	1250 2400 1950 2400
+Wire Wire Line
+	1250 2500 1950 2500
 Wire Wire Line
 	1250 775  1950 775 
 Wire Wire Line
@@ -350,11 +337,11 @@ Wire Wire Line
 Wire Wire Line
 	1250 1075 1950 1075
 Wire Wire Line
-	1250 2500 1950 2500
-Wire Wire Line
 	1250 2600 1950 2600
 Wire Wire Line
 	1250 2700 1950 2700
+Wire Wire Line
+	1250 2800 1950 2800
 Wire Notes Line
 	500  500  2250 500 
 Wire Wire Line
@@ -381,17 +368,17 @@ GLV_RTN
 $Comp
 L TSI_Rev.5-rescue:R-Device R68
 U 1 1 5FA84662
-P 8000 5900
-F 0 "R68" V 7900 5900 50  0000 C CNN
-F 1 "10K" V 8000 5900 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 7930 5900 50  0001 C CNN
-F 3 "~" H 8000 5900 50  0001 C CNN
-	1    8000 5900
+P 7725 5275
+F 0 "R68" V 7800 5275 50  0000 C CNN
+F 1 "100K" V 7725 5275 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 7655 5275 50  0001 C CNN
+F 3 "~" H 7725 5275 50  0001 C CNN
+	1    7725 5275
 	-1   0    0    1   
 $EndComp
-Text Label 8000 5700 0    50   ~ 0
-5V
-Text Notes 9200 6400 2    50   ~ 0
+Text Label 7725 5075 0    50   ~ 0
+3.3V
+Text Notes 8500 6350 2    50   ~ 0
 COCKPIT\n(J9)\n
 $Comp
 L TSI_Rev.5-rescue:R-Device R?
@@ -468,7 +455,7 @@ Wire Wire Line
 Wire Wire Line
 	2675 4225 3675 4225
 Text Notes 3600 4500 2    43   ~ 0
-Brake Light & RTDS\n(J18)\n
+RTDS\n(J18)\n
 Wire Wire Line
 	3050 825  3450 825 
 Wire Wire Line
@@ -488,7 +475,7 @@ GLV_RTN
 Text Label 675  4225 0    50   ~ 0
 GLV_RTN
 Wire Wire Line
-	8000 5700 8000 5750
+	7725 5075 7725 5125
 Wire Wire Line
 	4300 2375 4775 2375
 Wire Wire Line
@@ -509,47 +496,33 @@ Wire Wire Line
 Wire Wire Line
 	3850 7000 4400 7000
 Wire Wire Line
-	8000 6050 8000 6125
+	7725 5425 7725 5500
 Wire Wire Line
-	10150 5700 10150 6125
+	9775 6000 10200 6000
 Wire Notes Line
-	9175 6025 8850 6025
+	8475 5975 8150 5975
 Wire Notes Line
-	8850 6025 8850 6225
+	8150 5975 8150 6175
 Wire Notes Line
-	9175 6025 9175 6225
+	8475 5975 8475 6175
 Wire Notes Line
-	8850 6225 9175 6225
-Wire Notes Line
-	6975 6475 7550 6475
-Wire Notes Line
-	7625 6475 11175 6475
-Wire Notes Line
-	11175 6475 11175 5275
-Wire Notes Line
-	6975 5275 6975 6475
-Wire Notes Line
-	6975 5250 11175 5250
-Text Notes 8625 5400 0    79   ~ 0
+	8150 6175 8475 6175
+Text Notes 8700 4975 0    79   ~ 0
 DRIVE BUTTON
-Text HLabel 1250 1875 0    50   Input ~ 0
-SDA
-Text Label 1950 1875 2    50   ~ 0
-SDA
-Wire Wire Line
-	1250 1875 1950 1875
 Text HLabel 1250 1975 0    50   Input ~ 0
-SCL
+SDA
+Text Label 1950 1975 2    50   ~ 0
+SDA
 Wire Wire Line
 	1250 1975 1950 1975
-Text Label 1950 1975 2    50   ~ 0
+Text HLabel 1250 2075 0    50   Input ~ 0
+SCL
+Wire Wire Line
+	1250 2075 1950 2075
+Text Label 1950 2075 2    50   ~ 0
 SCL
 Wire Notes Line
-	2250 500  2250 2800
-Wire Notes Line
-	2250 2800 500  2800
-Wire Notes Line
-	500  500  500  2800
+	2250 2900 500  2900
 Wire Wire Line
 	5550 4025 6150 4025
 $Comp
@@ -590,7 +563,7 @@ Wire Wire Line
 	11000 2550 10175 2550
 Wire Wire Line
 	10175 2400 11000 2400
-Text Label 9450 775  0    39   ~ 0
+Text Label 10350 775  2    39   ~ 0
 GLV_RTN
 NoConn ~ 10175 1500
 NoConn ~ 10175 1650
@@ -624,33 +597,23 @@ Wire Wire Line
 Wire Wire Line
 	10350 1350 10350 775 
 Wire Wire Line
-	10350 775  8725 775 
-Wire Wire Line
 	8725 775  8725 1500
 Wire Wire Line
 	8725 1500 8925 1500
 Wire Wire Line
-	8000 6125 8125 6125
-Wire Wire Line
-	9100 6125 10150 6125
-Wire Wire Line
-	9275 5700 10150 5700
-Wire Wire Line
-	8000 5700 8775 5700
-Wire Wire Line
-	8425 6125 8925 6125
-Text HLabel 1250 1675 0    50   Input ~ 0
-CoolTemp
-Text Label 1950 1675 2    50   ~ 0
-CoolTemp
-Wire Wire Line
-	1250 1675 1950 1675
+	8400 6075 9450 6075
 Text HLabel 1250 1775 0    50   Input ~ 0
-APPS
+CoolTemp
 Text Label 1950 1775 2    50   ~ 0
-APPS
+CoolTemp
 Wire Wire Line
 	1250 1775 1950 1775
+Text HLabel 1250 1875 0    50   Input ~ 0
+APPS
+Text Label 1950 1875 2    50   ~ 0
+APPS
+Wire Wire Line
+	1250 1875 1950 1875
 Wire Wire Line
 	8550 3850 8500 3850
 Wire Wire Line
@@ -751,7 +714,7 @@ L Device:R R114
 U 1 1 62558206
 P 8000 2700
 F 0 "R114" V 7793 2700 50  0000 C CNN
-F 1 "10K" V 7884 2700 50  0000 C CNN
+F 1 "4.7K" V 7884 2700 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 7930 2700 50  0001 C CNN
 F 3 "~" H 8000 2700 50  0001 C CNN
 	1    8000 2700
@@ -762,7 +725,7 @@ L Device:R R113
 U 1 1 62558A72
 P 7150 2700
 F 0 "R113" V 6943 2700 50  0000 C CNN
-F 1 "10K" V 7034 2700 50  0000 C CNN
+F 1 "4.7K" V 7034 2700 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 7080 2700 50  0001 C CNN
 F 3 "~" H 7150 2700 50  0001 C CNN
 	1    7150 2700
@@ -796,4 +759,65 @@ Wire Wire Line
 	8500 3300 8500 3100
 Wire Wire Line
 	9550 3100 9550 3300
+Text Label 8725 775  0    39   ~ 0
+GLV_RTN
+Wire Notes Line
+	6975 6475 11175 6475
+Wire Wire Line
+	7725 6075 8225 6075
+$Comp
+L TSI_Rev.5-rescue:R-Device R97
+U 1 1 5FA84F23
+P 7725 5750
+F 0 "R97" V 7650 5750 50  0000 C CNN
+F 1 "1K" V 7725 5750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 7655 5750 50  0001 C CNN
+F 3 "~" H 7725 5750 50  0001 C CNN
+	1    7725 5750
+	1    0    0    1   
+$EndComp
+Text Label 8125 6075 2    50   ~ 0
+Drive_BTN
+Wire Wire Line
+	7725 5900 7725 6075
+Wire Wire Line
+	7725 5600 7725 5500
+Connection ~ 7725 5500
+Wire Wire Line
+	7725 5500 9775 5500
+Text Label 10200 6000 2    39   ~ 0
+GLV_RTN
+Text Label 10325 5500 0    39   ~ 0
+Drive_BTN_LOGIC
+Wire Wire Line
+	9775 5500 10325 5500
+Connection ~ 9775 5500
+Wire Notes Line
+	11175 4750 11175 6475
+Wire Notes Line
+	6975 4750 6975 6475
+Wire Notes Line
+	11175 4750 6975 4750
+Text HLabel 1250 2200 0    50   Output ~ 0
+Drive_BTN_LOGIC
+Text Label 1950 2200 2    50   ~ 0
+Drive_BTN_LOGIC
+Wire Wire Line
+	1250 2200 1950 2200
+Text HLabel 1250 1575 0    50   Input ~ 0
+SDA_5V
+Text HLabel 1250 1675 0    50   Input ~ 0
+SCL_5V
+Text Label 1950 1575 2    50   ~ 0
+SDA_5V
+Text Label 1950 1675 2    50   ~ 0
+SCL_5V
+Wire Wire Line
+	1250 1575 1950 1575
+Wire Wire Line
+	1250 1675 1950 1675
+Wire Notes Line
+	2250 500  2250 2900
+Wire Notes Line
+	500  500  500  2900
 $EndSCHEMATC

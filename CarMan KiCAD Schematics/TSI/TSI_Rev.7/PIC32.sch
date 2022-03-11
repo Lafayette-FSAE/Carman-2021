@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 7
+Sheet 7 7
 Title ""
 Date ""
 Rev ""
@@ -138,10 +138,6 @@ Test_Pin0
 Text Label 2050 3200 0    39   ~ 0
 SDA
 Wire Wire Line
-	6200 3500 6700 3500
-Text Label 6700 3500 2    39   ~ 0
-Throttle_LOGIC
-Wire Wire Line
 	6200 3600 6700 3600
 Wire Wire Line
 	6200 3700 6700 3700
@@ -152,37 +148,13 @@ UART_TXD
 Wire Wire Line
 	2550 3500 2050 3500
 Text Label 2050 3500 0    39   ~ 0
-Throttle_PL
-Wire Wire Line
-	2550 3600 2050 3600
-Text Label 2050 3600 0    39   ~ 0
-APPS2_ISO_NS
+Throttle_PL_LOGIC
 Text Label 2050 3100 0    39   ~ 0
 SCL
 Wire Wire Line
-	6200 4700 6700 4700
-Wire Wire Line
-	6200 4800 6700 4800
-Wire Wire Line
-	6200 4900 6700 4900
-Wire Wire Line
-	6200 5000 6700 5000
-Wire Wire Line
-	2550 3700 2050 3700
-Text Label 6700 4700 2    39   ~ 0
-APPS_WIN1
-Text Label 6700 4800 2    39   ~ 0
-APPS_WIN2
-Text Label 6700 4900 2    39   ~ 0
-APPS1_ISO_NS
-Text Label 6700 5000 2    39   ~ 0
-APPS1_ISO_NG
-Text Label 2050 3700 0    39   ~ 0
-APPS2_ISO_NG
-Wire Wire Line
 	2550 4500 2050 4500
 Text Label 2050 4500 0    39   ~ 0
-Flowrate
+Flowrate_LOGIC
 Wire Wire Line
 	2550 5100 2050 5100
 Wire Wire Line
@@ -198,7 +170,7 @@ PC_Ready
 Text Label 2050 5300 0    39   ~ 0
 Safety_Loop
 Text Label 2050 5400 0    39   ~ 0
-Drive_BTN
+Drive_BTN_LOGIC
 Wire Wire Line
 	6200 3800 6700 3800
 Wire Wire Line
@@ -256,41 +228,25 @@ Text Label 2450 2300 0    39   ~ 0
 ~MCLR
 NoConn ~ 6200 4500
 NoConn ~ 6200 4600
-Text HLabel 8725 725  0    39   Input ~ 0
-APPS_WIN1
-Text HLabel 8725 800  0    39   Input ~ 0
-APPS_WIN2
-Text HLabel 8725 875  0    39   Input ~ 0
-APPS1_ISO_NS
-Text HLabel 8725 950  0    39   Input ~ 0
-APPS1_ISO_NG
-Text HLabel 8725 1025 0    39   Input ~ 0
-APPS2_ISO_NS
-Text HLabel 8725 1100 0    39   Input ~ 0
-APPS2_ISO_NG
-Text HLabel 8725 1175 0    39   Input ~ 0
-Throttle_PL
-Text HLabel 8725 1250 0    39   Input ~ 0
+Text HLabel 8725 1200 0    39   Input ~ 0
 Brake_Pressed_uC
-Text HLabel 8725 1325 0    39   Input ~ 0
-Drive_BTN
-Text HLabel 8725 1400 0    39   Input ~ 0
+Text HLabel 8725 1275 0    39   Input ~ 0
 Safety_Loop
-Text HLabel 8725 1475 0    39   Input ~ 0
+Text HLabel 8725 1350 0    39   Input ~ 0
 PC_Ready
-Text HLabel 8725 1550 0    39   Input ~ 0
-Flowrate
-Text HLabel 8725 1625 0    39   Input ~ 0
+Text HLabel 8725 1425 0    39   Input ~ 0
+Flowrate_LOGIC
+Text HLabel 8725 1500 0    39   Input ~ 0
 ~MCLR
-Text HLabel 8725 1700 0    39   Input ~ 0
+Text HLabel 8725 1575 0    39   Input ~ 0
 PGEC
-Text HLabel 8725 1775 0    39   Input ~ 0
+Text HLabel 8725 1650 0    39   Input ~ 0
 PGED
-Text HLabel 8725 1850 0    39   Input ~ 0
+Text HLabel 8725 1725 0    39   Input ~ 0
 UART_RXD
-Text HLabel 8725 1925 0    39   Input ~ 0
+Text HLabel 8725 1800 0    39   Input ~ 0
 3.3V
-Text HLabel 8725 2000 0    39   Input ~ 0
+Text HLabel 8725 1875 0    39   Input ~ 0
 GLV_RTN
 Text HLabel 8725 2450 0    39   Output ~ 0
 Cooling_CTRL
@@ -301,28 +257,26 @@ RTDS_CTRL
 Text HLabel 8725 2675 0    39   Output ~ 0
 Throttle_EN
 Text HLabel 8725 2750 0    39   Output ~ 0
-Throttle_LOGIC
-Text HLabel 8725 2825 0    39   Output ~ 0
 Test_Pin0
-Text HLabel 8725 2900 0    39   Output ~ 0
+Text HLabel 8725 2825 0    39   Output ~ 0
 Test_Pin1
-Text HLabel 8725 2975 0    39   Output ~ 0
+Text HLabel 8725 2900 0    39   Output ~ 0
 Test_Pin2
-Text HLabel 8725 3050 0    39   Output ~ 0
+Text HLabel 8725 2975 0    39   Output ~ 0
 Test_Pin3
-Text HLabel 8725 3125 0    39   Output ~ 0
+Text HLabel 8725 3050 0    39   Output ~ 0
 Test_Pin4
-Text HLabel 8725 3200 0    39   Output ~ 0
+Text HLabel 8725 3125 0    39   Output ~ 0
 Test_Pin5
-Text HLabel 8725 3275 0    39   Output ~ 0
+Text HLabel 8725 3200 0    39   Output ~ 0
 Test_Pin6
-Text HLabel 8725 3350 0    39   Output ~ 0
+Text HLabel 8725 3275 0    39   Output ~ 0
 Test_Pin7
-Text HLabel 8725 3425 0    39   Output ~ 0
+Text HLabel 8725 3350 0    39   Output ~ 0
 Test_Pin8
-Text HLabel 8725 3500 0    39   Output ~ 0
+Text HLabel 8725 3425 0    39   Output ~ 0
 Test_Pin9
-Text HLabel 8725 3650 0    39   Output ~ 0
+Text HLabel 8725 3500 0    39   Output ~ 0
 UART_TXD
 NoConn ~ 2550 2200
 NoConn ~ 2550 4700
@@ -337,13 +291,9 @@ Text Label 2050 2900 0    39   ~ 0
 Test_Pin4
 Text Label 2050 2800 0    39   ~ 0
 Test_Pin5
-Text HLabel 8725 3725 0    39   Output ~ 0
-SDA
-Text HLabel 8725 3800 0    39   Output ~ 0
-SCL
-Text HLabel 8725 2075 0    39   Input ~ 0
+Text HLabel 8725 1950 0    39   Input ~ 0
 CAN_H
-Text HLabel 8725 2150 0    39   Input ~ 0
+Text HLabel 8725 2025 0    39   Input ~ 0
 CAN_L
 $Comp
 L CarMan_KiCAD_Library:MCP2551-I_SN U45
@@ -393,7 +343,7 @@ Text Label 10500 4850 2    39   ~ 0
 GLV_RTN
 Text Label 8125 5050 0    39   ~ 0
 5V
-Text HLabel 8725 2225 0    39   Input ~ 0
+Text HLabel 8725 2100 0    39   Input ~ 0
 5V
 $Comp
 L TSI_Rev.5-rescue:R-Device R?
@@ -606,7 +556,7 @@ L Device:R R111
 U 1 1 6241050D
 P 1550 2950
 F 0 "R111" H 1620 2996 50  0000 L CNN
-F 1 "10k" H 1620 2905 50  0000 L CNN
+F 1 "4.7K" H 1620 2905 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 1480 2950 50  0001 C CNN
 F 3 "~" H 1550 2950 50  0001 C CNN
 	1    1550 2950
@@ -621,7 +571,7 @@ L Device:R R112
 U 1 1 624149A2
 P 1550 3350
 F 0 "R112" H 1481 3304 50  0000 R CNN
-F 1 "10k" H 1481 3395 50  0000 R CNN
+F 1 "4.7K" H 1481 3395 50  0000 R CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 1480 3350 50  0001 C CNN
 F 3 "~" H 1550 3350 50  0001 C CNN
 	1    1550 3350
@@ -632,9 +582,71 @@ Wire Wire Line
 Wire Wire Line
 	1550 3600 1325 3600
 Text Label 1325 2700 0    39   ~ 0
-5V
+3.3V
 Text Label 1325 3600 0    39   ~ 0
-5V
+3.3V
 Text Notes 1100 3900 0    50   ~ 0
 NS=Not Shorted\nNG=Not Grounded
+Text HLabel 8725 2175 0    39   Input ~ 0
+Drive_BTN_LOGIC
+Text HLabel 8725 1050 0    39   Input ~ 0
+SDA
+Text HLabel 8725 1125 0    39   Input ~ 0
+SCL
+NoConn ~ 6200 4700
+NoConn ~ 6200 4800
+NoConn ~ 6200 4900
+NoConn ~ 6200 5000
+NoConn ~ 2550 3600
+NoConn ~ 2550 3700
+Text HLabel 8725 2250 0    39   Input ~ 0
+Throttle_PL
+NoConn ~ 6200 3500
+Text Label 1125 5900 0    50   ~ 0
+Throttle_PL
+$Comp
+L TSI_Rev.5-rescue:R-Device R?
+U 1 1 63434879
+P 1125 6200
+AR Path="/63434879" Ref="R?"  Part="1" 
+AR Path="/5FE1DE7D/63434879" Ref="R?"  Part="1" 
+AR Path="/623B2FCE/63434879" Ref="R126"  Part="1" 
+F 0 "R126" H 1195 6246 50  0000 L CNN
+F 1 "1.8K" V 1125 6125 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 1055 6200 50  0001 C CNN
+F 3 "~" H 1125 6200 50  0001 C CNN
+	1    1125 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L TSI_Rev.5-rescue:R-Device R?
+U 1 1 6343487F
+P 1125 6600
+AR Path="/6343487F" Ref="R?"  Part="1" 
+AR Path="/5FE1DE7D/6343487F" Ref="R?"  Part="1" 
+AR Path="/623B2FCE/6343487F" Ref="R127"  Part="1" 
+F 0 "R127" H 1195 6646 50  0000 L CNN
+F 1 "3.3K" V 1125 6500 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 1055 6600 50  0001 C CNN
+F 3 "~" H 1125 6600 50  0001 C CNN
+	1    1125 6600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1125 6450 1125 6400
+Connection ~ 1125 6400
+Wire Wire Line
+	1125 6400 1125 6350
+Wire Wire Line
+	1125 6400 1725 6400
+Wire Wire Line
+	1125 6750 1125 6900
+Text Label 1125 6900 0    50   ~ 0
+GLV_RTN
+Wire Wire Line
+	1125 5900 1125 6050
+Text Notes 1575 6700 0    50   ~ 0
+5V-3.3V Voltage Divider
+Text Label 1725 6400 0    50   ~ 0
+Throttle_PL_LOGIC
 $EndSCHEMATC

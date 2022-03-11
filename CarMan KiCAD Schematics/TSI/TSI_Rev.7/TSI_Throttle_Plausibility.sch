@@ -264,20 +264,12 @@ Wire Wire Line
 	2250 6550 2250 6300
 Wire Wire Line
 	2100 6550 2250 6550
-NoConn ~ 13350 2000
-NoConn ~ 13350 1900
-NoConn ~ 13350 1800
 Wire Notes Line
 	4200 4325 5450 4325
 Wire Notes Line
 	7050 7850 4200 7850
 Wire Wire Line
-	5750 4250 6050 4250
-Wire Wire Line
 	6050 4250 6050 4350
-Connection ~ 5750 4550
-Text Label 9650 2600 2    50   ~ 0
-APPS2_b
 Wire Wire Line
 	10450 4800 10450 4900
 Text Label 10450 5600 0    50   ~ 0
@@ -349,66 +341,42 @@ Text Label 10850 4900 2    50   ~ 0
 GLV_RTN
 Connection ~ 11350 4250
 Wire Wire Line
-	5750 5150 5750 5500
-Wire Wire Line
 	5400 4950 5400 5300
 Wire Wire Line
 	5400 5300 5850 5300
 Wire Wire Line
 	5850 5500 5750 5500
-Wire Wire Line
-	5750 5500 5750 5600
-Wire Wire Line
-	5750 6000 5750 5900
-Text Label 5750 6000 2    50   ~ 0
-GLV_RTN
-$Comp
-L TSI_Rev.5-rescue:R-Device R31
-U 1 1 5FB2401B
-P 5750 5750
-F 0 "R31" V 5700 5700 50  0000 L BNN
-F 1 "499" V 5750 5745 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 5680 5750 50  0001 C CNN
-F 3 "~" H 5750 5750 50  0001 C CNN
-	1    5750 5750
-	1    0    0    -1  
-$EndComp
 Text Label 5225 6700 0    50   ~ 0
 APPS2_b
-Connection ~ 5750 5500
 Wire Wire Line
 	6600 4750 6600 5400
 Wire Wire Line
 	6600 5400 6450 5400
-Connection ~ 6100 7250
+Connection ~ 11750 7250
 Wire Wire Line
-	6100 7250 6100 7350
+	11750 7250 11750 7350
 Wire Wire Line
-	6100 5850 6100 5900
-Connection ~ 6100 6300
+	11750 5850 11750 5900
+Connection ~ 11750 6300
 Wire Wire Line
-	6100 6300 6100 6200
+	11750 6300 11750 6200
 $Comp
 L TSI_Rev.5-rescue:R-Device R32
 U 1 1 5FC854E3
-P 6100 6050
-F 0 "R32" V 6050 6000 50  0000 L BNN
-F 1 "499" V 6100 6045 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 6030 6050 50  0001 C CNN
-F 3 "~" H 6100 6050 50  0001 C CNN
-	1    6100 6050
+P 11750 6050
+F 0 "R32" V 11700 6000 50  0000 L BNN
+F 1 "499" V 11750 6045 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 11680 6050 50  0001 C CNN
+F 3 "~" H 11750 6050 50  0001 C CNN
+	1    11750 6050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6200 7250 6100 7250
+	11850 7250 11750 7250
 Wire Wire Line
-	5750 7050 6200 7050
+	11750 6300 11750 6600
 Wire Wire Line
-	6200 6500 5750 6500
-Wire Wire Line
-	6100 6300 6100 6600
-Wire Wire Line
-	6200 6300 6100 6300
+	11850 6300 11750 6300
 Wire Wire Line
 	5750 6500 5750 6700
 Connection ~ 5750 6700
@@ -417,19 +385,19 @@ Wire Wire Line
 $Comp
 L TSI_Rev.5-rescue:R-Device R34
 U 1 1 5FC854D2
-P 6100 6750
-F 0 "R34" V 6050 6700 50  0000 L BNN
-F 1 "9.31K" V 6100 6745 43  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 6030 6750 50  0001 C CNN
-F 3 "~" H 6100 6750 50  0001 C CNN
-	1    6100 6750
+P 11750 6750
+F 0 "R34" V 11700 6700 50  0000 L BNN
+F 1 "9.31K" V 11750 6745 43  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 11680 6750 50  0001 C CNN
+F 3 "~" H 11750 6750 50  0001 C CNN
+	1    11750 6750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6100 6900 6100 7250
+	11750 6900 11750 7250
 Wire Wire Line
 	6800 6400 6900 6400
-Text Label 6100 5850 2    50   ~ 0
+Text Label 11750 5850 2    50   ~ 0
 5V
 Wire Wire Line
 	6800 7150 7000 7150
@@ -438,85 +406,40 @@ Wire Wire Line
 Wire Wire Line
 	7000 7150 7000 4950
 Wire Wire Line
-	6100 7750 6100 7650
-Text Label 6100 7750 0    50   ~ 0
+	11750 7750 11750 7650
+Text Label 11750 7750 0    50   ~ 0
 GLV_RTN
 $Comp
 L TSI_Rev.5-rescue:R-Device R35
 U 1 1 5FC854F5
-P 6100 7500
-F 0 "R35" V 6050 7450 50  0000 L BNN
-F 1 "499" V 6100 7495 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 6030 7500 50  0001 C CNN
-F 3 "~" H 6100 7500 50  0001 C CNN
-	1    6100 7500
+P 11750 7500
+F 0 "R35" V 11700 7450 50  0000 L BNN
+F 1 "499" V 11750 7495 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 11680 7500 50  0001 C CNN
+F 3 "~" H 11750 7500 50  0001 C CNN
+	1    11750 7500
 	1    0    0    -1  
 $EndComp
 Connection ~ 5400 4950
-$Comp
-L TSI_Rev.5-rescue:Jumper_NC_Dual-Device JP1
-U 1 1 6005BCD8
-P 10450 2600
-F 0 "JP1" H 10400 2900 50  0000 L CNN
-F 1 "Jumper_NC_Dual" H 10250 2800 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 10450 2600 50  0001 C CNN
-F 3 "~" H 10450 2600 50  0001 C CNN
-	1    10450 2600
-	1    0    0    -1  
-$EndComp
-Text Label 15150 1700 2    50   ~ 0
-3.3V
 Text Label 15150 4900 2    50   ~ 0
 GLV_RTN
 Text Label 15150 4100 2    50   ~ 0
 5V
 Text Label 12725 4500 0    50   ~ 0
 Throttle_LV
-Text Label 15150 2000 2    50   ~ 0
-SDA
-Text Label 15150 1900 2    50   ~ 0
-SCL
-Text Label 15150 2100 2    50   ~ 0
-3.3V
 Text Notes 3050 675  0    79   ~ 0
 Plausibility Window (0.5V)\n
 Text Notes 4250 4275 0    79   ~ 0
 Open/Short Window\n(90% Travel)
-$Comp
-L TSI_Rev.5-rescue:R-Device R60
-U 1 1 5FB24009
-P 5750 4400
-F 0 "R60" V 5700 4350 50  0000 L BNN
-F 1 "499" V 5750 4395 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 5680 4400 50  0001 C CNN
-F 3 "~" H 5750 4400 50  0001 C CNN
-	1    5750 4400
-	1    0    0    -1  
-$EndComp
 Text Label 6050 4950 0    50   ~ 0
 GLV_RTN
 Wire Wire Line
 	5850 4750 5400 4750
 Wire Wire Line
-	5750 4550 5750 4850
-Wire Wire Line
-	5850 4550 5750 4550
-Wire Wire Line
 	5400 4750 5400 4950
 Text Label 4875 4950 0    50   ~ 0
 APPS1_ISO
-$Comp
-L TSI_Rev.5-rescue:R-Device R30
-U 1 1 5FBA5B77
-P 5750 5000
-F 0 "R30" V 5700 4950 50  0000 L BNN
-F 1 "9.31K" V 5750 4995 43  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 5680 5000 50  0001 C CNN
-F 3 "~" H 5750 5000 50  0001 C CNN
-	1    5750 5000
-	1    0    0    -1  
-$EndComp
-Text Label 5900 4250 0    50   ~ 0
+Text Label 6050 4250 0    50   ~ 0
 5V
 $Comp
 L TSI_Rev.5-rescue:CAP-pspice C22
@@ -790,8 +713,6 @@ Wire Notes Line
 	7200 8800 550  8800
 Text Notes 4650 9000 2    79   ~ 0
 APPS1_b & APPS2_b
-Wire Wire Line
-	14050 9000 14050 8900
 $Comp
 L TSI_Rev.5-rescue:R-Device R49
 U 1 1 60975D89
@@ -843,8 +764,6 @@ Wire Wire Line
 	12150 9575 12700 9575
 Wire Wire Line
 	12150 8600 12700 8600
-Text Notes 13225 8400 0    87   ~ 0
-BRAKE PRESSED
 Text Notes 8550 9175 0    59   ~ 0
 THROTTLE PLAUSIBILITY STATUS LIGHTS
 Text Label 10550 9500 2    50   ~ 0
@@ -886,8 +805,6 @@ Text Label 2350 3450 2    50   ~ 0
 APPS2_RTN
 Text Label 2350 3350 2    50   ~ 0
 APPS2_5V
-Wire Notes Line
-	500  500  2750 500 
 Text Notes 12650 10350 0    157  ~ 0
 THROTTLE PLAUSIBILITY
 $Comp
@@ -907,9 +824,9 @@ Text Label 12700 4300 0    50   ~ 0
 Throttle_EN
 Text Notes 13050 3450 0    79   ~ 0
 PIC THROTTLE ENABLE SWITCH
-Text HLabel 1550 1900 0    50   Input ~ 0
+Text HLabel 1550 1800 0    50   Input ~ 0
 D_LED_CTRL
-Text Label 2325 1900 2    50   ~ 0
+Text Label 2325 1800 2    50   ~ 0
 D_LED_CTRL
 Text Label 1750 6050 0    50   ~ 0
 GLV_RTN
@@ -1150,7 +1067,6 @@ Wire Wire Line
 	7000 4250 6650 4250
 Wire Wire Line
 	6150 4250 6050 4250
-Connection ~ 6050 4250
 Wire Notes Line
 	4200 4150 4200 7850
 Wire Wire Line
@@ -1163,15 +1079,6 @@ Wire Wire Line
 	10450 4900 10450 4950
 Wire Wire Line
 	10900 4550 11250 4550
-Connection ~ 14750 2300
-Wire Wire Line
-	14750 2200 14750 2300
-Wire Wire Line
-	14750 2300 14750 2400
-Text Label 15150 2300 2    50   ~ 0
-GLV_RTN
-Wire Wire Line
-	14750 2300 15150 2300
 Wire Wire Line
 	13000 3750 13300 3750
 Wire Wire Line
@@ -1197,7 +1104,7 @@ Wire Notes Line
 Wire Wire Line
 	12700 9575 13900 9575
 Text Notes 12825 9325 0    31   ~ 0
-Brake Light & RTDS\n(J18)
+Brake Light\n(J18)
 Wire Notes Line
 	12600 8900 12800 8900
 Wire Notes Line
@@ -1212,7 +1119,7 @@ Connection ~ 12700 9000
 Wire Wire Line
 	12700 9000 12700 9200
 Text Notes 12825 8825 0    31   ~ 0
-Brake & BOT\n(J17)
+Brake Pressed Switch\n(J17)
 Wire Wire Line
 	5100 850  5200 850 
 Text Label 5700 850  0    50   ~ 0
@@ -1309,7 +1216,6 @@ Wire Wire Line
 	2350 3250 1550 3250
 Wire Wire Line
 	2350 3150 1550 3150
-Connection ~ 14050 9000
 Text Label 13425 9000 0    50   ~ 0
 Brake_Light
 Text HLabel 1550 2850 0    50   Output ~ 0
@@ -1318,10 +1224,6 @@ Text Label 2350 2850 2    50   ~ 0
 Brake_Light
 Wire Wire Line
 	12700 9000 14050 9000
-Text Notes 5875 6325 0    47   ~ 0
-4.76V
-Text Notes 5875 7275 0    47   ~ 0
-0.24V
 Text Notes 6250 2350 0    47   ~ 0
 Voltage Comparator
 Text HLabel 1550 1100 0    50   Input ~ 0
@@ -1329,7 +1231,7 @@ Text HLabel 1550 1100 0    50   Input ~ 0
 Text Label 2325 1100 2    50   ~ 0
 3.3V
 Text Label 15850 9000 2    50   ~ 0
-5V
+3.3V
 Wire Wire Line
 	15000 9200 15050 9200
 Wire Wire Line
@@ -1391,10 +1293,6 @@ Text Notes 6475 10475 0    47   ~ 0
 *0-5V Range*
 Wire Wire Line
 	12725 4500 13400 4500
-Text Notes 5500 4575 0    47   ~ 0
-4.76V
-Text Notes 5525 5525 0    47   ~ 0
-0.24V
 Text Notes 4300 7750 0    47   ~ 0
 *If the APPS1_ISO and APPS2_b fall \noutside the range of 0.24V-4.76V a \nshort/open is assumed*
 $Comp
@@ -1421,8 +1319,6 @@ F 3 "~" H 12300 4250 50  0001 C CNN
 $EndComp
 Text Label 10550 10200 2    50   ~ 0
 GLV_RTN
-Wire Wire Line
-	8750 10300 8800 10300
 Wire Wire Line
 	9550 10200 9400 10200
 $Comp
@@ -1463,23 +1359,6 @@ Text Notes 8250 9500 0    43   ~ 0
 (Implausible)
 Text Notes 5000 10500 2    47   ~ 0
 TP \n(J16)
-Wire Wire Line
-	14050 8550 14400 8550
-$Comp
-L TSI_Rev.5-rescue:R-Device R48
-U 1 1 609E809D
-P 14050 8750
-F 0 "R48" V 13950 8750 50  0000 C CNN
-F 1 "100K" V 14050 8750 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 13980 8750 50  0001 C CNN
-F 3 "~" H 14050 8750 50  0001 C CNN
-	1    14050 8750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	14050 8550 14050 8600
-Text Label 14400 8550 2    50   ~ 0
-GLV_RTN
 Connection ~ 12700 9575
 Wire Wire Line
 	12150 8600 12150 8850
@@ -1572,7 +1451,7 @@ Wire Wire Line
 Wire Wire Line
 	1550 2850 2350 2850
 Wire Wire Line
-	1550 1900 2325 1900
+	1550 1800 2325 1800
 Wire Wire Line
 	1550 1700 2325 1700
 Wire Wire Line
@@ -1593,24 +1472,24 @@ Wire Wire Line
 	1550 900  2325 900 
 Wire Wire Line
 	1550 800  2325 800 
+Text HLabel 1550 1900 0    50   Input ~ 0
+RTDS_CTRL
+Text Label 2325 1900 2    50   ~ 0
+RTDS_CTRL
+Wire Wire Line
+	1550 1900 2325 1900
+Text HLabel 1550 2000 0    50   Input ~ 0
+AMS_FAULT_LED
+Text Label 2325 2000 2    50   ~ 0
+AMS_FAULT_LED
 Text HLabel 1550 2100 0    50   Input ~ 0
-RTDS_CTRL
+IMD_FAULT_LED
 Text Label 2325 2100 2    50   ~ 0
-RTDS_CTRL
+IMD_FAULT_LED
+Wire Wire Line
+	1550 2000 2325 2000
 Wire Wire Line
 	1550 2100 2325 2100
-Text HLabel 1550 2300 0    50   Input ~ 0
-AMS_FAULT_LED
-Text Label 2325 2300 2    50   ~ 0
-AMS_FAULT_LED
-Text HLabel 1550 2400 0    50   Input ~ 0
-IMD_FAULT_LED
-Text Label 2325 2400 2    50   ~ 0
-IMD_FAULT_LED
-Wire Wire Line
-	1550 2300 2325 2300
-Wire Wire Line
-	1550 2400 2325 2400
 Text Label 2350 3050 2    50   ~ 0
 APPS
 Wire Wire Line
@@ -1618,7 +1497,7 @@ Wire Wire Line
 Text HLabel 1550 3050 0    50   Output ~ 0
 APPS
 Wire Notes Line
-	500  4500 2750 4500
+	500  3975 2750 3975
 Wire Wire Line
 	5225 6700 5750 6700
 Wire Wire Line
@@ -1651,29 +1530,6 @@ Wire Wire Line
 	3000 10350 3575 10350
 Wire Wire Line
 	6400 10350 6975 10350
-Text Notes 13525 2800 0    59   ~ 0
-I2C Address: 0x4D\n(1001101-10011[A1,A0])
-Wire Wire Line
-	14750 1700 15150 1700
-Wire Wire Line
-	14750 1900 15150 1900
-Wire Wire Line
-	14750 2000 15150 2000
-Wire Wire Line
-	14750 2100 15150 2100
-$Comp
-L TSI_Rev.5-rescue:DAC5574IDGS-CarMan_KiCAD_Library-TSI_Rev.5-rescue U23
-U 1 1 609B748C
-P 14050 1900
-F 0 "U23" H 14050 2350 50  0000 C CNN
-F 1 "DAC5574IDGS" H 14050 1250 50  0000 C CNN
-F 2 "CarMan General Footprints:SOP50P490X110-10N" H 14050 1900 50  0001 L BNN
-F 3 "https://www.ti.com/lit/ds/symlink/dac5574.pdf?HQS=dis-mous-null-mousermode-dsf-pf-null-wwe&ts=1617329757843&ref_url=https%253A%252F%252Fwww.mouser.com%252F" H 14050 1900 50  0001 L BNN
-F 4 "8-bit, Quad, Digital-to-Analog Converter with I2C interface 10-VSSOP -40 to 105" H 14050 1900 50  0001 L BNN "Details"
-F 5 "Texas Instruments" H 14050 1900 50  0001 L BNN "Man."
-	1    14050 1900
-	-1   0    0    -1  
-$EndComp
 Wire Notes Line
 	2950 8675 2950 7125
 Wire Notes Line
@@ -1685,213 +1541,39 @@ Throttle_PL
 Wire Wire Line
 	2350 3550 1550 3550
 Text HLabel 1550 3650 0    50   Output ~ 0
-APPS_WIN1
+SDA_5V
 Text Label 2350 3650 2    50   ~ 0
-APPS_WIN1
+SDA_5V
 Wire Wire Line
 	2350 3650 1550 3650
 Text HLabel 1550 3750 0    50   Output ~ 0
-APPS_WIN2
+SCL_5V
 Text Label 2350 3750 2    50   ~ 0
-APPS_WIN2
+SCL_5V
 Wire Wire Line
 	2350 3750 1550 3750
 Text HLabel 1550 3850 0    50   Output ~ 0
-APPS1_ISO_NS
+Brake_Pressed_uC
 Text Label 2350 3850 2    50   ~ 0
-APPS1_ISO_NS
+Brake_Pressed_uC
 Wire Wire Line
 	2350 3850 1550 3850
-Text HLabel 1550 3950 0    50   Output ~ 0
-APPS1_ISO_NG
-Text Label 2350 3950 2    50   ~ 0
-APPS1_ISO_NG
-Wire Wire Line
-	2350 3950 1550 3950
-Text HLabel 1550 4050 0    50   Output ~ 0
-APPS2_ISO_NS
-Text Label 2350 4050 2    50   ~ 0
-APPS2_ISO_NS
-Wire Wire Line
-	2350 4050 1550 4050
-Text HLabel 1550 4150 0    50   Output ~ 0
-APPS2_ISO_NG
-Text Label 2350 4150 2    50   ~ 0
-APPS2_ISO_NG
-Wire Wire Line
-	2350 4150 1550 4150
-Wire Notes Line
-	2750 500  2750 4500
-Wire Notes Line
-	500  500  500  4500
-Text Label 11500 1800 2    39   ~ 0
-Throttle_LOGIC
-Text HLabel 1550 4350 0    50   Output ~ 0
-Brake_Pressed_uC
-Text Label 2350 4350 2    50   ~ 0
-Brake_Pressed_uC
-Wire Wire Line
-	2350 4350 1550 4350
-Text HLabel 1550 2500 0    50   Input ~ 0
+Text HLabel 1550 2200 0    50   Input ~ 0
 Throttle_EN
-Text Label 2325 2500 2    50   ~ 0
+Text Label 2325 2200 2    50   ~ 0
 Throttle_EN
 Wire Wire Line
-	1550 2500 2325 2500
-$Comp
-L TSI_Rev.5-rescue:R-Device R124
-U 1 1 62E28DBC
-P 8475 10525
-F 0 "R124" H 8545 10571 50  0000 L CNN
-F 1 "59.7K" V 8400 10400 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 8405 10525 50  0001 C CNN
-F 3 "" H 8475 10525 50  0001 C CNN
-	1    8475 10525
-	1    0    0    -1  
-$EndComp
-$Comp
-L TSI_Rev.5-rescue:R-Device R125
-U 1 1 62E58669
-P 8475 10825
-F 0 "R125" H 8545 10871 50  0000 L CNN
-F 1 "4.7K" V 8475 10725 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 8405 10825 50  0001 C CNN
-F 3 "" H 8475 10825 50  0001 C CNN
-	1    8475 10825
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8475 10975 8475 11050
-Text Label 8475 11050 2    50   ~ 0
-GLV_RTN
+	1550 2200 2325 2200
 Wire Notes Line
 	11050 9050 11050 11100
 Wire Notes Line
 	8150 9050 8150 11100
-Wire Wire Line
-	8750 10675 8475 10675
-Wire Wire Line
-	8750 10300 8750 10675
-Connection ~ 8475 10675
-Wire Wire Line
-	8475 10375 8475 10300
-Text Label 8475 10300 2    50   ~ 0
-3.3V
 Text Notes 8825 10825 0    35   ~ 0
 If RED LED is on, GREEN LED is off --> APPS shorted to GLV_RTN\nIf RED LED is off, GREEN LED is on --> Throttle is plausible\nIf RED LED is on, GREEN LED is on --> APPS shorted to 5V supply\nIf RED LED is off, GREEN LED is off --> Board is off OR major malfunction
 Wire Notes Line
 	8150 11100 11050 11100
 Wire Notes Line
 	8150 9050 11050 9050
-Wire Wire Line
-	2350 2000 1550 2000
-Text Label 2350 2000 2    50   ~ 0
-Throttle_LOGIC
-Text HLabel 1550 2000 0    50   Input ~ 0
-Throttle_LOGIC
-$Comp
-L CarMan_KiCAD_Library:TLV2464CDR U18
-U 4 1 6264CEB9
-P 12600 1800
-F 0 "U18" H 12550 1800 50  0000 C CNN
-F 1 "TLV2464CDR" H 12600 2076 50  0000 C CNN
-F 2 "CarMan General Footprints:SOIC127P600X175-14N" H 12550 1900 50  0001 C CNN
-F 3 "" H 12650 2000 50  0001 C CNN
-	4    12600 1800
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	12900 1700 13350 1700
-$Comp
-L Device:R R126
-U 1 1 62667AA0
-P 12500 2250
-F 0 "R126" V 12293 2250 50  0000 C CNN
-F 1 "5.1K" V 12384 2250 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 12430 2250 50  0001 C CNN
-F 3 "~" H 12500 2250 50  0001 C CNN
-	1    12500 2250
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R127
-U 1 1 62669305
-P 12950 2500
-F 0 "R127" H 13020 2546 50  0000 L CNN
-F 1 "10K" H 13020 2455 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 12880 2500 50  0001 C CNN
-F 3 "~" H 12950 2500 50  0001 C CNN
-	1    12950 2500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	12900 1900 12950 1900
-Wire Wire Line
-	12950 1900 12950 2250
-Wire Wire Line
-	12950 2650 12950 3050
-Wire Wire Line
-	12950 3050 12550 3050
-Wire Wire Line
-	12650 2250 12950 2250
-Connection ~ 12950 2250
-Wire Wire Line
-	12950 2250 12950 2350
-Wire Wire Line
-	12300 1800 12100 1800
-Wire Wire Line
-	12100 1800 12100 2250
-Wire Wire Line
-	12100 2250 12350 2250
-Connection ~ 12100 1800
-Text Label 12550 3050 0    50   ~ 0
-GLV_RTN
-Text Notes 11750 1400 0    50   ~ 0
-Gain of 1.51 so that max output of DAC (3.3v) translates to 5V\n3.3*1.51=5
-Text Label 9950 1550 2    50   ~ 0
-GLV_RTN
-Text Label 10250 2000 2    50   ~ 0
-APPS
-$Comp
-L TSI_Rev.5-rescue:R-Device R43
-U 1 1 5FE0888A
-P 9950 1800
-F 0 "R43" V 9900 1750 50  0000 L BNN
-F 1 "3K" V 9950 1795 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 9880 1800 50  0001 C CNN
-F 3 "~" H 9950 1800 50  0001 C CNN
-	1    9950 1800
-	-1   0    0    1   
-$EndComp
-$Comp
-L TSI_Rev.5-rescue:R-Device R39
-U 1 1 5FDB9992
-P 9950 2200
-F 0 "R39" V 9900 2150 50  0000 L BNN
-F 1 "2K" V 9950 2195 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 9880 2200 50  0001 C CNN
-F 3 "~" H 9950 2200 50  0001 C CNN
-	1    9950 2200
-	-1   0    0    1   
-$EndComp
-Text Notes 9050 2000 0    50   ~ 0
-Convert to 0-3.3V\nRATIO 3/5\n
-Wire Wire Line
-	9950 1650 9950 1550
-Wire Wire Line
-	9650 2600 9950 2600
-Wire Wire Line
-	9950 2350 9950 2600
-Connection ~ 9950 2600
-Wire Wire Line
-	9950 2600 10200 2600
-Wire Wire Line
-	9950 1950 9950 2000
-Wire Wire Line
-	10250 2000 9950 2000
-Connection ~ 9950 2000
-Wire Wire Line
-	9950 2000 9950 2050
 Wire Wire Line
 	12450 4250 12450 4700
 Wire Wire Line
@@ -1902,17 +1584,13 @@ Connection ~ 12100 4250
 Wire Wire Line
 	12100 4250 12450 4250
 Wire Wire Line
-	6450 4650 7850 4650
+	6450 4650 7250 4650
 Wire Wire Line
-	6600 4750 7850 4750
+	6900 4850 7150 4850
 Wire Wire Line
-	6900 4850 7850 4850
+	7400 4550 7425 4550
 Wire Wire Line
-	7500 4450 7850 4450
-Wire Wire Line
-	7400 4550 7850 4550
-Wire Wire Line
-	7000 4950 7850 4950
+	7000 4950 7100 4950
 Text Label 7450 4950 0    39   ~ 0
 APPS2_ISO_NG
 Text Label 7450 4850 0    39   ~ 0
@@ -1978,26 +1656,6 @@ Wire Wire Line
 	7400 1900 7400 4550
 Wire Wire Line
 	7500 1300 7500 4450
-Wire Notes Line
-	10250 1950 10250 2050
-Wire Notes Line
-	10250 2050 10350 2050
-Wire Notes Line
-	10350 2050 10350 1950
-Wire Notes Line
-	10350 1950 10250 1950
-Text Notes 10100 2150 0    50   ~ 0
-Through ADC to PIC
-Text Notes 12850 1050 0    79   ~ 0
-PIC SOFTWARE THROTTLE
-Wire Notes Line
-	15400 3200 11600 3200
-Wire Notes Line
-	11600 3200 11600 750 
-Wire Notes Line
-	11600 750  15400 750 
-Wire Notes Line
-	15400 750  15400 3200
 Wire Wire Line
 	9050 4600 9175 4600
 Connection ~ 9175 4600
@@ -2006,12 +1664,6 @@ Wire Wire Line
 Connection ~ 10450 4150
 Wire Wire Line
 	10450 3100 10450 4150
-Wire Wire Line
-	11300 2600 11300 1800
-Wire Wire Line
-	11300 1800 12100 1800
-Wire Wire Line
-	10700 2600 11300 2600
 $Comp
 L CarMan_KiCAD_Library:TLV2464CDR U7
 U 1 1 62D730FE
@@ -2111,4 +1763,196 @@ F 3 "" H 9150 10400 50  0001 C CNN
 	3    9100 10200
 	1    0    0    -1  
 $EndComp
+Text Label 9900 2700 2    50   ~ 0
+APPS2_b
+Text Label 10200 1650 2    50   ~ 0
+GLV_RTN
+Text Label 10500 2100 2    50   ~ 0
+APPS
+$Comp
+L TSI_Rev.5-rescue:R-Device R43
+U 1 1 5FE0888A
+P 10200 1900
+F 0 "R43" V 10150 1850 50  0000 L BNN
+F 1 "3K" V 10200 1895 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 10130 1900 50  0001 C CNN
+F 3 "~" H 10200 1900 50  0001 C CNN
+	1    10200 1900
+	-1   0    0    1   
+$EndComp
+$Comp
+L TSI_Rev.5-rescue:R-Device R39
+U 1 1 5FDB9992
+P 10200 2300
+F 0 "R39" V 10150 2250 50  0000 L BNN
+F 1 "2K" V 10200 2295 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 10130 2300 50  0001 C CNN
+F 3 "~" H 10200 2300 50  0001 C CNN
+	1    10200 2300
+	-1   0    0    1   
+$EndComp
+Text Notes 9300 2100 0    50   ~ 0
+Convert to 0-3.3V\nRATIO 3/5\n
+Wire Wire Line
+	10200 1750 10200 1650
+Wire Wire Line
+	9900 2700 10200 2700
+Wire Wire Line
+	10200 2450 10200 2700
+Connection ~ 10200 2700
+Wire Wire Line
+	10200 2700 10450 2700
+Wire Wire Line
+	10200 2050 10200 2100
+Wire Wire Line
+	10500 2100 10200 2100
+Connection ~ 10200 2100
+Wire Wire Line
+	10200 2100 10200 2150
+Wire Notes Line
+	10500 2050 10500 2150
+Wire Notes Line
+	10500 2150 10600 2150
+Wire Notes Line
+	10600 2150 10600 2050
+Wire Notes Line
+	10600 2050 10500 2050
+Text Notes 10350 2250 0    50   ~ 0
+Through ADC to PIC
+Text Label 11850 6300 0    50   ~ 0
+4.76V_REF
+Text Label 11850 7250 0    50   ~ 0
+0.24V_REF
+Wire Wire Line
+	5750 6500 6200 6500
+Wire Wire Line
+	5750 7050 6200 7050
+Wire Wire Line
+	6200 7250 6000 7250
+Wire Wire Line
+	6200 6300 6000 6300
+Text Label 6000 6300 2    50   ~ 0
+4.76V_REF
+Text Label 6000 7250 2    50   ~ 0
+0.24V_REF
+Wire Wire Line
+	5850 4550 5750 4550
+Text Label 5750 4550 2    50   ~ 0
+4.76V_REF
+Text Label 5750 5500 2    50   ~ 0
+0.24V_REF
+Wire Wire Line
+	8625 10300 8800 10300
+Text Label 8625 10300 2    50   ~ 0
+0.24V_REF
+Wire Notes Line
+	11350 5400 12450 5400
+Wire Notes Line
+	12450 5400 12450 7925
+Wire Notes Line
+	12450 7925 11350 7925
+Wire Notes Line
+	11350 7925 11350 5400
+Text Notes 12325 5650 2    50   ~ 0
+Open/Short Window \nRef Voltage Generators
+$Comp
+L Interface_Expansion:MCP23008-xSS U47
+U 1 1 626EC3CF
+P 8750 6550
+F 0 "U47" H 9025 7100 50  0000 C CNN
+F 1 "MCP23008-xSS" H 8325 5975 50  0000 C CNN
+F 2 "Package_SO:SSOP-20_5.3x7.2mm_P0.65mm" H 8750 5500 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/MCP23008-MCP23S08-Data-Sheet-20001919F.pdf" H 10050 5350 50  0001 C CNN
+	1    8750 6550
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 4950 7100 6850
+Wire Wire Line
+	7100 6850 8250 6850
+Connection ~ 7100 4950
+Wire Wire Line
+	7100 4950 7850 4950
+Wire Wire Line
+	7150 4850 7150 6750
+Wire Wire Line
+	7150 6750 8250 6750
+Connection ~ 7150 4850
+Wire Wire Line
+	6600 4750 7200 4750
+Wire Wire Line
+	7150 4850 7850 4850
+Wire Wire Line
+	7200 4750 7200 6650
+Wire Wire Line
+	7200 6650 8250 6650
+Connection ~ 7200 4750
+Wire Wire Line
+	7200 4750 7850 4750
+Wire Wire Line
+	7250 4650 7250 6550
+Wire Wire Line
+	7250 6550 8250 6550
+Connection ~ 7250 4650
+Wire Wire Line
+	7250 4650 7850 4650
+Wire Wire Line
+	7425 4550 7425 6450
+Wire Wire Line
+	7425 6450 8250 6450
+Connection ~ 7425 4550
+Wire Wire Line
+	9250 6250 9750 6250
+Wire Wire Line
+	9250 6350 9750 6350
+Wire Wire Line
+	8750 7150 8750 7325
+Text Label 9750 6250 2    50   ~ 0
+SCL_5V
+Text Label 9750 6350 2    50   ~ 0
+SDA_5V
+Text Label 8750 7325 2    50   ~ 0
+GLV_RTN
+Wire Wire Line
+	8750 5950 8750 5675
+Text Label 8750 5675 2    50   ~ 0
+5V
+NoConn ~ 8250 6250
+NoConn ~ 8250 6150
+NoConn ~ 9250 6150
+NoConn ~ 9250 6550
+Text Notes 9325 7550 2    50   ~ 0
+I2C Address 0x20 \n(0100000 - 0100[A2 A1 A0])
+Wire Wire Line
+	9250 6750 9375 6750
+Wire Wire Line
+	9375 6750 9375 6850
+Wire Wire Line
+	9375 6850 9250 6850
+Wire Wire Line
+	9250 6950 9375 6950
+Wire Wire Line
+	9375 6950 9375 6850
+Connection ~ 9375 6850
+Wire Wire Line
+	9375 6850 9750 6850
+Text Label 9750 6850 2    50   ~ 0
+GLV_RTN
+Wire Wire Line
+	7425 4550 7850 4550
+Wire Wire Line
+	7500 4450 7525 4450
+Wire Wire Line
+	7525 4450 7525 6350
+Wire Wire Line
+	7525 6350 8250 6350
+Connection ~ 7525 4450
+Wire Wire Line
+	7525 4450 7850 4450
+Wire Notes Line
+	2750 3975 2750 500 
+Wire Notes Line
+	500  500  2750 500 
+Wire Notes Line
+	500  500  500  3975
 $EndSCHEMATC
