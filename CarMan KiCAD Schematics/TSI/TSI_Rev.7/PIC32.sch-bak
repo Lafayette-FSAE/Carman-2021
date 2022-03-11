@@ -148,13 +148,13 @@ UART_TXD
 Wire Wire Line
 	2550 3500 2050 3500
 Text Label 2050 3500 0    39   ~ 0
-Throttle_PL
+Throttle_PL_LOGIC
 Text Label 2050 3100 0    39   ~ 0
 SCL
 Wire Wire Line
 	2550 4500 2050 4500
 Text Label 2050 4500 0    39   ~ 0
-Flowrate
+Flowrate_LOGIC
 Wire Wire Line
 	2550 5100 2050 5100
 Wire Wire Line
@@ -170,18 +170,18 @@ PC_Ready
 Text Label 2050 5300 0    39   ~ 0
 Safety_Loop
 Text Label 2050 5400 0    39   ~ 0
-Drive_BTN
+Drive_BTN_LOGIC
 Wire Wire Line
 	6200 3800 6700 3800
 Wire Wire Line
 	6200 3900 6700 3900
 Wire Wire Line
-	6200 4000 6700 4000
+	6200 4700 6700 4700
 Text Label 6700 3800 2    39   ~ 0
 Cooling_CTRL
 Text Label 6700 3900 2    39   ~ 0
 D_LED_CTRL
-Text Label 6700 4000 2    39   ~ 0
+Text Label 6700 4700 2    39   ~ 0
 RTDS_CTRL
 Wire Wire Line
 	2550 3300 2050 3300
@@ -228,14 +228,14 @@ Text Label 2450 2300 0    39   ~ 0
 ~MCLR
 NoConn ~ 6200 4500
 NoConn ~ 6200 4600
-Text HLabel 8725 1125 0    39   Input ~ 0
+Text HLabel 8725 1200 0    39   Input ~ 0
 Brake_Pressed_uC
 Text HLabel 8725 1275 0    39   Input ~ 0
 Safety_Loop
 Text HLabel 8725 1350 0    39   Input ~ 0
 PC_Ready
 Text HLabel 8725 1425 0    39   Input ~ 0
-Flowrate
+Flowrate_LOGIC
 Text HLabel 8725 1500 0    39   Input ~ 0
 ~MCLR
 Text HLabel 8725 1575 0    39   Input ~ 0
@@ -582,18 +582,18 @@ Wire Wire Line
 Wire Wire Line
 	1550 3600 1325 3600
 Text Label 1325 2700 0    39   ~ 0
-5V
+3.3V
 Text Label 1325 3600 0    39   ~ 0
-5V
+3.3V
 Text Notes 1100 3900 0    50   ~ 0
 NS=Not Shorted\nNG=Not Grounded
 Text HLabel 8725 2175 0    39   Input ~ 0
 Drive_BTN_LOGIC
-Text HLabel 8725 975  0    39   Input ~ 0
-SDA
 Text HLabel 8725 1050 0    39   Input ~ 0
+SDA
+Text HLabel 8725 1125 0    39   Input ~ 0
 SCL
-NoConn ~ 6200 4700
+NoConn ~ 6200 4000
 NoConn ~ 6200 4800
 NoConn ~ 6200 4900
 NoConn ~ 6200 5000
@@ -602,4 +602,51 @@ NoConn ~ 2550 3700
 Text HLabel 8725 2250 0    39   Input ~ 0
 Throttle_PL
 NoConn ~ 6200 3500
+Text Label 1125 5900 0    50   ~ 0
+Throttle_PL
+$Comp
+L TSI_Rev.5-rescue:R-Device R?
+U 1 1 63434879
+P 1125 6200
+AR Path="/63434879" Ref="R?"  Part="1" 
+AR Path="/5FE1DE7D/63434879" Ref="R?"  Part="1" 
+AR Path="/623B2FCE/63434879" Ref="R126"  Part="1" 
+F 0 "R126" H 1195 6246 50  0000 L CNN
+F 1 "1.8K" V 1125 6125 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 1055 6200 50  0001 C CNN
+F 3 "~" H 1125 6200 50  0001 C CNN
+	1    1125 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L TSI_Rev.5-rescue:R-Device R?
+U 1 1 6343487F
+P 1125 6600
+AR Path="/6343487F" Ref="R?"  Part="1" 
+AR Path="/5FE1DE7D/6343487F" Ref="R?"  Part="1" 
+AR Path="/623B2FCE/6343487F" Ref="R127"  Part="1" 
+F 0 "R127" H 1195 6646 50  0000 L CNN
+F 1 "3.3K" V 1125 6500 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 1055 6600 50  0001 C CNN
+F 3 "~" H 1125 6600 50  0001 C CNN
+	1    1125 6600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1125 6450 1125 6400
+Connection ~ 1125 6400
+Wire Wire Line
+	1125 6400 1125 6350
+Wire Wire Line
+	1125 6400 1725 6400
+Wire Wire Line
+	1125 6750 1125 6900
+Text Label 1125 6900 0    50   ~ 0
+GLV_RTN
+Wire Wire Line
+	1125 5900 1125 6050
+Text Notes 1575 6700 0    50   ~ 0
+5V-3.3V Voltage Divider
+Text Label 1725 6400 0    50   ~ 0
+Throttle_PL_LOGIC
 $EndSCHEMATC

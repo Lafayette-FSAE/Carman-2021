@@ -996,7 +996,7 @@ MRESET_Contact
 Text Label 5800 3175 0    50   ~ 0
 AIRS+
 Text Label 2725 2700 0    49   ~ 0
-5V
+3.3V
 Wire Wire Line
 	2725 2500 3175 2500
 Wire Wire Line
@@ -1828,10 +1828,10 @@ F 3 "~" H 7900 1725 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TSI_Rev.5-rescue:Conn_01x02-Connector_Generic J26
+L TSI_Rev.5-rescue:Conn_01x02-Connector_Generic J27
 U 1 1 62B2D611
 P 7525 1200
-F 0 "J26" H 7475 1300 50  0000 L CNN
+F 0 "J27" H 7475 1300 50  0000 L CNN
 F 1 "J16 ROLL TSAL" H 7475 1300 50  0001 L CNN
 F 2 "TSI_Rev_2021_Footprint_Lib:Molex_MiniFit-JR-5556-02A_2x01x4.20mm_Straight" H 7525 1200 50  0001 C CNN
 F 3 "~" H 7525 1200 50  0001 C CNN

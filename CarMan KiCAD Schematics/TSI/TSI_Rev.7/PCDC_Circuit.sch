@@ -1119,40 +1119,6 @@ Wire Notes Line
 Text Notes 4425 5250 0    59   ~ 0
 TSV Minimum Voltage Check
 Connection ~ 7475 6800
-Wire Wire Line
-	7025 6275 7025 6375
-Wire Wire Line
-	7025 6375 7825 6375
-$Comp
-L TSI_Rev.5-rescue:TestPoint-Connector TP?
-U 1 1 63DE42FD
-P 7025 6275
-AR Path="/5FC85F57/63DE42FD" Ref="TP?"  Part="1" 
-AR Path="/6196BF15/63DE42FD" Ref="TP4"  Part="1" 
-F 0 "TP4" H 6950 6475 50  0000 L CNN
-F 1 "TSV_Ready" H 6675 6400 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_D3.0mm" H 7225 6275 50  0001 C CNN
-F 3 "~" H 7225 6275 50  0001 C CNN
-	1    7025 6275
-	1    0    0    -1  
-$EndComp
-$Comp
-L TSI_Rev.5-rescue:TestPoint-Connector TP?
-U 1 1 63E1488B
-P 7250 6275
-AR Path="/5FC85F57/63E1488B" Ref="TP?"  Part="1" 
-AR Path="/6196BF15/63E1488B" Ref="TP5"  Part="1" 
-F 0 "TP5" H 7175 6475 50  0000 L CNN
-F 1 "MC_95%" H 7300 6375 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_D3.0mm" H 7450 6275 50  0001 C CNN
-F 3 "~" H 7450 6275 50  0001 C CNN
-	1    7250 6275
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7250 6275 7250 6575
-Wire Wire Line
-	7250 6575 7825 6575
 $Comp
 L TSI_Rev.5-rescue:74HC00-74xx U19
 U 5 1 60014D73
@@ -1218,21 +1184,6 @@ Wire Wire Line
 Wire Wire Line
 	21625 1850 21625 2300
 Connection ~ 21625 1850
-$Comp
-L TSI_Rev.5-rescue:TestPoint-Connector TP?
-U 1 1 6464F7D3
-P 7475 6275
-AR Path="/5FC85F57/6464F7D3" Ref="TP?"  Part="1" 
-AR Path="/6196BF15/6464F7D3" Ref="TP6"  Part="1" 
-F 0 "TP6" H 7425 6475 50  0000 L CNN
-F 1 "SLOOP_HV" V 7550 6225 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_D3.0mm" H 7675 6275 50  0001 C CNN
-F 3 "~" H 7675 6275 50  0001 C CNN
-	1    7475 6275
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7475 6800 7475 6275
 Wire Wire Line
 	6000 12900 6250 12900
 Connection ~ 6250 12900
@@ -1276,8 +1227,6 @@ Wire Notes Line
 	4275 6125 5825 6125
 Text Notes 4525 6250 0    59   ~ 0
 MC Voltage 95% Check
-Connection ~ 7025 6375
-Connection ~ 7250 6575
 Text Notes 7575 5475 0    197  ~ 0
 PRE-CHARGE LOGIC CIRCUIT
 Wire Notes Line
@@ -1336,21 +1285,6 @@ Text Label 13900 8900 0    55   ~ 0
 IO_Ground
 Text Label 13250 7150 2    59   ~ 0
 PC_Control
-$Comp
-L TSI_Rev.5-rescue:TestPoint-Connector TP?
-U 1 1 60D4CBAD
-P 12725 7000
-AR Path="/5FC85F57/60D4CBAD" Ref="TP?"  Part="1" 
-AR Path="/6196BF15/60D4CBAD" Ref="TP19"  Part="1" 
-F 0 "TP19" H 12675 7200 50  0000 L CNN
-F 1 "PC_Control" H 12750 7050 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_D3.0mm" H 12925 7000 50  0001 C CNN
-F 3 "~" H 12925 7000 50  0001 C CNN
-	1    12725 7000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	12725 7000 12725 7150
 Wire Bus Line
 	13700 5475 13700 5675
 Wire Bus Line
@@ -1441,7 +1375,6 @@ Text Notes 12300 5650 0    79   ~ 0
 ~S
 Text Label 8720 12025 2    50   ~ 0
 IO_Ground
-Connection ~ 12725 7150
 Wire Wire Line
 	15100 6150 15450 6150
 Wire Wire Line
@@ -1483,8 +1416,6 @@ Wire Wire Line
 Connection ~ 15450 6150
 Wire Wire Line
 	15450 6150 15850 6150
-Wire Wire Line
-	12725 7150 14400 7150
 Wire Wire Line
 	14400 8900 13900 8900
 Text Label 4600 15275 0    49   ~ 0
@@ -1654,18 +1585,14 @@ Wire Wire Line
 	5725 6375 6100 6375
 Connection ~ 6350 7775
 Connection ~ 6100 6375
-Wire Wire Line
-	6100 6375 7025 6375
 Connection ~ 6350 6575
-Wire Wire Line
-	6350 6575 7250 6575
 Wire Wire Line
 	5450 6575 6350 6575
 Wire Wire Line
 	6425 6800 6625 6800
 Connection ~ 6625 6800
 Wire Wire Line
-	6625 6800 7475 6800
+	6625 6800 7300 6800
 Wire Wire Line
 	6350 7775 6625 7775
 Wire Wire Line
@@ -1745,8 +1672,6 @@ Wire Notes Line
 Wire Notes Line
 	5875 5075 14025 5075
 Connection ~ 14400 7150
-Wire Wire Line
-	11750 7150 12725 7150
 Connection ~ 11750 7150
 Text Notes 16100 5775 2    31   ~ 0
 This state is not possible since whenver Safety_Loop_HV is low, the output of U19C must be high
@@ -1843,4 +1768,50 @@ F 3 "" H 3750 12900 50  0001 C CNN
 $EndComp
 Wire Notes Line
 	18075 3600 22100 3600
+$Comp
+L Connector_Generic:Conn_01x05 J25
+U 1 1 62432C90
+P 7100 5600
+F 0 "J25" V 7275 5725 50  0000 R CNN
+F 1 "PC Test Points" V 7200 5725 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x05_P2.54mm_Vertical" H 7100 5600 50  0001 C CNN
+F 3 "~" H 7100 5600 50  0001 C CNN
+	1    7100 5600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6100 6375 7000 6375
+Wire Wire Line
+	6350 6575 7100 6575
+Wire Wire Line
+	7000 5800 7000 6375
+Connection ~ 7000 6375
+Wire Wire Line
+	7000 6375 7825 6375
+Wire Wire Line
+	7100 5800 7100 6575
+Connection ~ 7100 6575
+Wire Wire Line
+	7100 6575 7825 6575
+Wire Wire Line
+	7200 5800 7200 6275
+Wire Wire Line
+	7200 6275 7300 6275
+Wire Wire Line
+	7300 6275 7300 6800
+Connection ~ 7300 6800
+Wire Wire Line
+	7300 6800 7475 6800
+Wire Wire Line
+	7300 5800 7800 5800
+Wire Wire Line
+	6900 5800 6900 5900
+Wire Wire Line
+	6900 5900 6425 5900
+Text Label 7800 5800 2    39   ~ 0
+PC_Control
+Text Label 6425 5900 0    39   ~ 0
+IO_Ground
+Wire Wire Line
+	11750 7150 14400 7150
 $EndSCHEMATC

@@ -503,7 +503,7 @@ Text Label 3250 5500 2    50   ~ 0
 GLV_RTN
 Wire Wire Line
 	3625 2450 4175 2450
-Text Notes 2825 1950 0    49   ~ 0
+Text Notes 4200 1775 0    49   ~ 0
 DC/DC Converter 24V to 12V 10A
 Text Label 2375 2750 0    49   ~ 0
 GLV_RTN
@@ -1392,4 +1392,67 @@ Text HLabel 14950 2700 0    50   Input ~ 0
 PI_SHIELD_RTN
 Text Label 15800 2700 2    50   ~ 0
 PI_SHIELD_RTN
+Text Label 15800 3800 2    50   ~ 0
+Flowrate_LOGIC
+Text HLabel 14950 3800 0    50   Output ~ 0
+Flowrate_LOGIC
+Wire Wire Line
+	14950 3800 15800 3800
+Text Label 2700 725  0    50   ~ 0
+Flowrate
+Text Label 3300 1225 0    50   ~ 0
+Flowrate_LOGIC
+$Comp
+L TSI_Rev.5-rescue:R-Device R?
+U 1 1 633D6F1E
+P 2700 1025
+AR Path="/633D6F1E" Ref="R?"  Part="1" 
+AR Path="/5FE1DE7D/633D6F1E" Ref="R124"  Part="1" 
+F 0 "R124" H 2770 1071 50  0000 L CNN
+F 1 "1.8K" V 2700 950 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 2630 1025 50  0001 C CNN
+F 3 "~" H 2700 1025 50  0001 C CNN
+	1    2700 1025
+	1    0    0    -1  
+$EndComp
+$Comp
+L TSI_Rev.5-rescue:R-Device R?
+U 1 1 633D6F24
+P 2700 1425
+AR Path="/633D6F24" Ref="R?"  Part="1" 
+AR Path="/5FE1DE7D/633D6F24" Ref="R125"  Part="1" 
+F 0 "R125" H 2770 1471 50  0000 L CNN
+F 1 "3.3K" V 2700 1325 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 2630 1425 50  0001 C CNN
+F 3 "~" H 2700 1425 50  0001 C CNN
+	1    2700 1425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 1275 2700 1225
+Connection ~ 2700 1225
+Wire Wire Line
+	2700 1225 2700 1175
+Wire Wire Line
+	2700 1225 3300 1225
+Wire Wire Line
+	2700 1575 2700 1725
+Text Label 2700 1725 0    50   ~ 0
+Flowrate_RTN
+Wire Wire Line
+	2700 725  2700 875 
+Text Notes 3150 1525 0    50   ~ 0
+5V-3.3V Voltage Divider
+Wire Wire Line
+	14950 2800 15800 2800
+Text HLabel 14950 2800 0    50   Input ~ 0
+Flowrate
+Text Label 15800 2800 2    50   ~ 0
+Flowrate
+Wire Wire Line
+	14950 2900 15800 2900
+Text HLabel 14950 2900 0    50   Input ~ 0
+Flowrate_RTN
+Text Label 15800 2900 2    50   ~ 0
+Flowrate_RTN
 $EndSCHEMATC

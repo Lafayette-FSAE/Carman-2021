@@ -176,12 +176,12 @@ Wire Wire Line
 Wire Wire Line
 	6200 3900 6700 3900
 Wire Wire Line
-	6200 4000 6700 4000
+	6200 4700 6700 4700
 Text Label 6700 3800 2    39   ~ 0
 Cooling_CTRL
 Text Label 6700 3900 2    39   ~ 0
 D_LED_CTRL
-Text Label 6700 4000 2    39   ~ 0
+Text Label 6700 4700 2    39   ~ 0
 RTDS_CTRL
 Wire Wire Line
 	2550 3300 2050 3300
@@ -593,7 +593,7 @@ Text HLabel 8725 1050 0    39   Input ~ 0
 SDA
 Text HLabel 8725 1125 0    39   Input ~ 0
 SCL
-NoConn ~ 6200 4700
+NoConn ~ 6200 4000
 NoConn ~ 6200 4800
 NoConn ~ 6200 4900
 NoConn ~ 6200 5000

@@ -15,7 +15,7 @@
 
 
 TO DO:
-Change Sheet Names to match + be actual names not just text boxes
+*Change Sheet Names to match + be actual names not just text boxes
 -- Change R50, R51 to 4.7K
 -- Add ref voltage to U18C 
 -- Use the same ref voltage everywhere (U7A-D, U18C)
@@ -26,5 +26,8 @@ Change Sheet Names to match + be actual names not just text boxes
 (ADD TO ERRATA) U20 --> change the stupid design into a voltage divider that generates a reasonable voltage to be used with an inverter
 (ADD TO ERRATA) Consider moving MRESET_Contact from pin 4 to pin 3 of K2 + Add a jumper to give the option to connect it to either 3 or 4 to switch it between NC or NO relays
 -- Change pullup resistors for I2C
-Make sure that all digital inputs are 3.3V
-Include silkscreen for the jumpers
+-- Make sure that all digital inputs are 3.3V
+*Include silkscreen for the jumpers
+(ADD TO ERRATA) IMD_MHS isn't used anywhere, but it could be (PWM representation of isolation)
+*Add TP for voltages, ADD TP header that collects all TPs
+

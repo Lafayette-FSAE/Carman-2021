@@ -1,5 +1,5 @@
 TO DO:
-* NEED TO DECIDE ON THE METHOD FOR GENERATING Throttle_Logic *
+- NEED TO DECIDE ON THE METHOD FOR GENERATING Throttle_Logic *
 - NEED TO ADD ANOTHER JUMPER FOR THE NEW SELECT SIGNAL IN Throttle_Plausibility - if we end up keeping both 
 - NEED TO CHECK IMD_FAULT and AMS_FAULT
 - CHECK 3.3V Signal 
@@ -9,7 +9,7 @@ TO DO:
 * EDIT silkscreen for D16 and D17 labels (switch them) *
 * Edit silkscreen for D10 (BOT & SCADA OK) *
 - CHECK optoisolator for SR_CTRL & SR_CTRL_Boosted
-* CHANGE ALL MCP6004 into TLV2464CDR *
-* CHECK ALL NEW RESISTORS, CAPS & INDUCTOR(done) *
-* CHECK I2C pull-up resistors *
+- CHANGE ALL MCP6004 into TLV2464CDR *
+- CHECK ALL NEW RESISTORS, CAPS & INDUCTOR(done) *
+- CHECK I2C pull-up resistors *
 

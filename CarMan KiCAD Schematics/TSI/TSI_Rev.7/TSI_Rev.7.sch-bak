@@ -996,7 +996,7 @@ MRESET_Contact
 Text Label 5800 3175 0    50   ~ 0
 AIRS+
 Text Label 2725 2700 0    49   ~ 0
-5V
+3.3V
 Wire Wire Line
 	2725 2500 3175 2500
 Wire Wire Line
@@ -1073,8 +1073,6 @@ Wire Wire Line
 Wire Wire Line
 	6725 5475 7475 5475
 Wire Wire Line
-	4275 4850 5025 4850
-Wire Wire Line
 	5025 4450 4275 4450
 Wire Wire Line
 	5025 4350 4275 4350
@@ -1092,37 +1090,35 @@ Text Label 4275 4350 0    50   ~ 0
 Safety_Loop
 Text Label 4275 4450 0    50   ~ 0
 PC_Ready
-Text Label 4275 4850 0    39   ~ 0
-Flowrate
-Text Label 4275 4950 0    39   ~ 0
+Text Label 4275 4950 0    50   ~ 0
 ~MCLR
-Text Label 4275 5050 0    39   ~ 0
+Text Label 4275 5050 0    50   ~ 0
 PGEC
-Text Label 4275 5150 0    39   ~ 0
+Text Label 4275 5150 0    50   ~ 0
 PGED
-Text Label 7475 4175 2    39   ~ 0
+Text Label 7475 4175 2    50   ~ 0
 Cooling_CTRL
-Text Label 7475 4275 2    39   ~ 0
+Text Label 7475 4275 2    50   ~ 0
 D_LED_CTRL
-Text Label 7475 4375 2    39   ~ 0
+Text Label 7475 4375 2    50   ~ 0
 RTDS_CTRL
-Text Label 7475 4475 2    39   ~ 0
+Text Label 7475 4475 2    50   ~ 0
 Throttle_EN
-Text Label 7475 4775 2    39   ~ 0
+Text Label 7475 4775 2    50   ~ 0
 Test_Pin1
-Text Label 7475 4875 2    39   ~ 0
+Text Label 7475 4875 2    50   ~ 0
 Test_Pin2
-Text Label 7475 4975 2    39   ~ 0
+Text Label 7475 4975 2    50   ~ 0
 Test_Pin3
-Text Label 7475 5075 2    39   ~ 0
+Text Label 7475 5075 2    50   ~ 0
 Test_Pin4
-Text Label 7475 5175 2    39   ~ 0
+Text Label 7475 5175 2    50   ~ 0
 Test_Pin5
-Text Label 7475 5275 2    39   ~ 0
+Text Label 7475 5275 2    50   ~ 0
 Test_Pin6
-Text Label 7475 5375 2    39   ~ 0
+Text Label 7475 5375 2    50   ~ 0
 Test_Pin7
-Text Label 7475 5475 2    39   ~ 0
+Text Label 7475 5475 2    50   ~ 0
 Test_Pin8
 Wire Wire Line
 	3800 3400 4450 3400
@@ -1233,11 +1229,11 @@ Text Label 7025 1675 2    50   ~ 0
 Test_Pin1
 Text Label 5050 1675 0    50   ~ 0
 Test_Pin0
-Text Label 7475 5575 2    39   ~ 0
+Text Label 7475 5575 2    50   ~ 0
 Test_Pin9
 Wire Wire Line
 	6725 5575 7475 5575
-Text Label 7475 4675 2    39   ~ 0
+Text Label 7475 4675 2    50   ~ 0
 Test_Pin0
 Wire Wire Line
 	6725 4675 7475 4675
@@ -1299,16 +1295,19 @@ F25 "24V_AMS_RTN" I L 8825 5375 50
 F26 "Safety_Loop_EPAL" O R 10325 5475 50 
 F27 "GEN_FAULT_EPAL" O R 10325 5575 50 
 F28 "CoolTemp" O R 10325 4975 50 
-F29 "CoolTemp_In" I L 8825 5750 39 
-F30 "CoolTemp_RTN" I L 8825 5675 39 
+F29 "CoolTemp_In" I L 8825 5750 50 
+F30 "CoolTemp_RTN" I L 8825 5675 50 
 F31 "PI_SHIELD_RTN" I L 8825 6125 50 
+F32 "Flowrate_LOGIC" O R 10325 5675 50 
+F33 "Flowrate" I L 8825 6225 50 
+F34 "Flowrate_RTN" I L 8825 6325 50 
 $EndSheet
 Text Label 1075 2625 0    50   ~ 0
 GLV_RTN
 Text Label 9275 1375 0    50   ~ 0
 GLV_RTN
 NoConn ~ 9725 1475
-Text Label 4275 5250 0    39   ~ 0
+Text Label 4275 5250 0    50   ~ 0
 UART_RXD
 Wire Wire Line
 	5025 5250 4275 5250
@@ -1316,9 +1315,9 @@ Wire Wire Line
 	5025 5350 4275 5350
 Wire Wire Line
 	5025 5450 4275 5450
-Text Label 4275 5350 0    39   ~ 0
+Text Label 4275 5350 0    50   ~ 0
 3.3V
-Text Label 4275 5450 0    39   ~ 0
+Text Label 4275 5450 0    50   ~ 0
 GLV_RTN
 Wire Wire Line
 	5025 4550 4275 4550
@@ -1326,7 +1325,7 @@ Wire Wire Line
 	5025 4650 4275 4650
 Wire Wire Line
 	6725 5675 7475 5675
-Text Label 7475 5675 2    39   ~ 0
+Text Label 7475 5675 2    50   ~ 0
 UART_TXD
 Text Label 4275 4550 0    50   ~ 0
 CAN_H
@@ -1348,7 +1347,7 @@ Wire Wire Line
 	6675 1300 7325 1300
 Wire Wire Line
 	5025 4750 4275 4750
-Text Label 4275 4750 0    39   ~ 0
+Text Label 4275 4750 0    50   ~ 0
 5V
 Wire Wire Line
 	8825 6125 8075 6125
@@ -1829,10 +1828,10 @@ F 3 "~" H 7900 1725 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TSI_Rev.5-rescue:Conn_01x02-Connector_Generic J26
+L TSI_Rev.5-rescue:Conn_01x02-Connector_Generic J27
 U 1 1 62B2D611
 P 7525 1200
-F 0 "J26" H 7475 1300 50  0000 L CNN
+F 0 "J27" H 7475 1300 50  0000 L CNN
 F 1 "J16 ROLL TSAL" H 7475 1300 50  0001 L CNN
 F 2 "TSI_Rev_2021_Footprint_Lib:Molex_MiniFit-JR-5556-02A_2x01x4.20mm_Straight" H 7525 1200 50  0001 C CNN
 F 3 "~" H 7525 1200 50  0001 C CNN
@@ -1882,15 +1881,15 @@ Wire Wire Line
 	11075 3175 10325 3175
 Wire Wire Line
 	5025 5650 4275 5650
-Text Label 4275 5650 0    39   ~ 0
+Text Label 4275 5650 0    50   ~ 0
 Drive_BTN_LOGIC
 Wire Wire Line
 	5025 5750 4275 5750
-Text Label 4275 5750 0    39   ~ 0
+Text Label 4275 5750 0    50   ~ 0
 SDA
 Wire Wire Line
 	5025 5850 4275 5850
-Text Label 4275 5850 0    39   ~ 0
+Text Label 4275 5850 0    50   ~ 0
 SCL
 Wire Wire Line
 	3100 5275 3950 5275
@@ -1918,39 +1917,39 @@ F1 "PIC32.sch" 39
 F2 "Brake_Pressed_uC" I L 5025 4250 39 
 F3 "Safety_Loop" I L 5025 4350 39 
 F4 "PC_Ready" I L 5025 4450 39 
-F5 "Flowrate" I L 5025 4850 39 
-F6 "~MCLR" I L 5025 4950 39 
-F7 "PGEC" I L 5025 5050 39 
-F8 "PGED" I L 5025 5150 39 
-F9 "UART_RXD" I L 5025 5250 39 
-F10 "Cooling_CTRL" O R 6725 4175 39 
-F11 "D_LED_CTRL" O R 6725 4275 39 
-F12 "RTDS_CTRL" O R 6725 4375 39 
-F13 "Throttle_EN" O R 6725 4475 39 
-F14 "Test_Pin1" O R 6725 4775 39 
-F15 "Test_Pin2" O R 6725 4875 39 
-F16 "Test_Pin3" O R 6725 4975 39 
-F17 "Test_Pin4" O R 6725 5075 39 
-F18 "Test_Pin5" O R 6725 5175 39 
-F19 "Test_Pin6" O R 6725 5275 39 
-F20 "Test_Pin7" O R 6725 5375 39 
-F21 "Test_Pin8" O R 6725 5475 39 
-F22 "Test_Pin9" O R 6725 5575 39 
-F23 "Test_Pin0" O R 6725 4675 39 
-F24 "3.3V" I L 5025 5350 39 
-F25 "GLV_RTN" I L 5025 5450 39 
-F26 "UART_TXD" O R 6725 5675 39 
-F27 "CAN_H" I L 5025 4550 39 
-F28 "CAN_L" I L 5025 4650 39 
-F29 "5V" I L 5025 4750 39 
-F30 "Drive_BTN_LOGIC" I L 5025 5650 39 
-F31 "SDA" I L 5025 5750 39 
-F32 "SCL" I L 5025 5850 39 
-F33 "Throttle_PL" I L 5025 5550 39 
+F5 "~MCLR" I L 5025 4950 39 
+F6 "PGEC" I L 5025 5050 39 
+F7 "PGED" I L 5025 5150 39 
+F8 "UART_RXD" I L 5025 5250 39 
+F9 "Cooling_CTRL" O R 6725 4175 39 
+F10 "D_LED_CTRL" O R 6725 4275 39 
+F11 "RTDS_CTRL" O R 6725 4375 39 
+F12 "Throttle_EN" O R 6725 4475 39 
+F13 "Test_Pin1" O R 6725 4775 39 
+F14 "Test_Pin2" O R 6725 4875 39 
+F15 "Test_Pin3" O R 6725 4975 39 
+F16 "Test_Pin4" O R 6725 5075 39 
+F17 "Test_Pin5" O R 6725 5175 39 
+F18 "Test_Pin6" O R 6725 5275 39 
+F19 "Test_Pin7" O R 6725 5375 39 
+F20 "Test_Pin8" O R 6725 5475 39 
+F21 "Test_Pin9" O R 6725 5575 39 
+F22 "Test_Pin0" O R 6725 4675 39 
+F23 "3.3V" I L 5025 5350 39 
+F24 "GLV_RTN" I L 5025 5450 39 
+F25 "UART_TXD" O R 6725 5675 39 
+F26 "CAN_H" I L 5025 4550 39 
+F27 "CAN_L" I L 5025 4650 39 
+F28 "5V" I L 5025 4750 39 
+F29 "Drive_BTN_LOGIC" I L 5025 5650 39 
+F30 "SDA" I L 5025 5750 39 
+F31 "SCL" I L 5025 5850 39 
+F32 "Throttle_PL" I L 5025 5550 39 
+F33 "Flowrate_LOGIC" I L 5025 4150 39 
 $EndSheet
 Wire Wire Line
 	5025 5550 4275 5550
-Text Label 4275 5550 0    39   ~ 0
+Text Label 4275 5550 0    50   ~ 0
 Throttle_PL
 Wire Wire Line
 	525  2625 1375 2625
@@ -1962,4 +1961,20 @@ Wire Wire Line
 	525  2725 1375 2725
 Wire Wire Line
 	525  2825 1375 2825
+Wire Wire Line
+	10325 5675 11075 5675
+Text Label 11075 5675 2    50   ~ 0
+Flowrate_LOGIC
+Wire Wire Line
+	5025 4150 4275 4150
+Text Label 4275 4150 0    50   ~ 0
+Flowrate_LOGIC
+Text Label 8075 6225 0    50   ~ 0
+Flowrate
+Wire Wire Line
+	8075 6225 8825 6225
+Wire Wire Line
+	8825 6325 8075 6325
+Text Label 8075 6325 0    50   ~ 0
+Flowrate_RTN
 $EndSCHEMATC

@@ -4,14 +4,15 @@ R126 (5.1k) -> del
 R127 (10k) -> del
 JP1 -> del
 R48 (100k) -> del
-R68 10k -> 100k
-R97 10k -> 1k
+R68 (10k) -> 100k
+R97 (10k) -> 1k
 R68,R97,C6 have new connections (3.3V, drive logic)
 R60 (499) -> del
 R30 (9.31k)-> del
 R31 (499) -> del
 R124 (59.7k) -> del
 R125 (4.7k) -> del
+U47 (GPIO EXP) --> Add
 
 
 

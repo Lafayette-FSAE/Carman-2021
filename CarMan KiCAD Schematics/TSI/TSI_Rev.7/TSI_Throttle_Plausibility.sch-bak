@@ -272,21 +272,6 @@ Wire Wire Line
 	6050 4250 6050 4350
 Wire Wire Line
 	10450 4800 10450 4900
-Text Label 10450 5600 0    50   ~ 0
-5V
-Wire Wire Line
-	10450 5600 10450 5450
-$Comp
-L TSI_Rev.5-rescue:CAP-pspice C25
-U 1 1 6093E057
-P 10450 5200
-F 0 "C25" H 10550 5100 50  0000 C CNN
-F 1 "0.1u" H 10550 5300 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 10450 5200 50  0001 C CNN
-F 3 "~" H 10450 5200 50  0001 C CNN
-	1    10450 5200
-	1    0    0    -1  
-$EndComp
 Text Label 11350 4250 0    50   ~ 0
 Pedal_Out
 Text Label 10800 3750 0    50   ~ 0
@@ -718,7 +703,7 @@ L TSI_Rev.5-rescue:R-Device R49
 U 1 1 60975D89
 P 14200 9000
 F 0 "R49" V 14100 9000 50  0000 C CNN
-F 1 "2.4K" V 14200 9000 50  0000 C CNN
+F 1 "10K" V 14200 9000 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 14130 9000 50  0001 C CNN
 F 3 "~" H 14200 9000 50  0001 C CNN
 	1    14200 9000
@@ -1074,9 +1059,6 @@ Wire Wire Line
 Connection ~ 10900 3750
 Wire Wire Line
 	10850 4900 10450 4900
-Connection ~ 10450 4900
-Wire Wire Line
-	10450 4900 10450 4950
 Wire Wire Line
 	10900 4550 11250 4550
 Wire Wire Line
@@ -1241,7 +1223,7 @@ L TSI_Rev.5-rescue:R-Device R98
 U 1 1 605CF404
 P 15050 9500
 F 0 "R98" V 14950 9500 50  0000 C CNN
-F 1 "1K" V 15050 9500 50  0000 C CNN
+F 1 "10K" V 15050 9500 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 14980 9500 50  0001 C CNN
 F 3 "~" H 15050 9500 50  0001 C CNN
 	1    15050 9500
@@ -1305,17 +1287,6 @@ F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 9630 9500 50  0
 F 3 "~" H 9700 9500 50  0001 C CNN
 	1    9700 9500
 	0    1    1    0   
-$EndComp
-$Comp
-L TSI_Rev.5-rescue:TestPoint-Connector TP18
-U 1 1 6085F531
-P 12100 4250
-F 0 "TP18" H 12050 4450 50  0000 L CNN
-F 1 "Pedal Out" H 12225 4400 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_D3.0mm" H 12300 4250 50  0001 C CNN
-F 3 "~" H 12300 4250 50  0001 C CNN
-	1    12100 4250
-	1    0    0    -1  
 $EndComp
 Text Label 10550 10200 2    50   ~ 0
 GLV_RTN
@@ -1578,11 +1549,6 @@ Wire Wire Line
 	12450 4250 12450 4700
 Wire Wire Line
 	12450 4700 13400 4700
-Wire Wire Line
-	11350 4250 12100 4250
-Connection ~ 12100 4250
-Wire Wire Line
-	12100 4250 12450 4250
 Wire Wire Line
 	6450 4650 7250 4650
 Wire Wire Line
@@ -1913,13 +1879,10 @@ Text Label 9750 6350 2    50   ~ 0
 SDA_5V
 Text Label 8750 7325 2    50   ~ 0
 GLV_RTN
-Wire Wire Line
-	8750 5950 8750 5675
 Text Label 8750 5675 2    50   ~ 0
 5V
 NoConn ~ 8250 6250
 NoConn ~ 8250 6150
-NoConn ~ 9250 6150
 NoConn ~ 9250 6550
 Text Notes 9325 7550 2    50   ~ 0
 I2C Address 0x20 \n(0100000 - 0100[A2 A1 A0])
@@ -1955,4 +1918,54 @@ Wire Notes Line
 	500  500  2750 500 
 Wire Notes Line
 	500  500  500  3975
+Text Notes 9500 5600 2    50   ~ 0
+Decoupling Cap\n
+Text Label 9600 5800 0    50   ~ 0
+GLV_RTN
+Wire Wire Line
+	9600 5800 9450 5800
+$Comp
+L TSI_Rev.5-rescue:CAP-pspice C39
+U 1 1 62333FA0
+P 9200 5800
+F 0 "C39" V 9300 5650 50  0000 C CNN
+F 1 "0.1u" V 9300 5950 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 9200 5800 50  0001 C CNN
+F 3 "~" H 9200 5800 50  0001 C CNN
+	1    9200 5800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8750 5675 8750 5800
+Wire Wire Line
+	8750 5800 8950 5800
+Connection ~ 8750 5800
+Wire Wire Line
+	8750 5800 8750 5950
+Wire Wire Line
+	9250 6150 9750 6150
+Text Label 9750 6150 2    39   ~ 0
+5V
+Wire Wire Line
+	11350 4250 12050 4250
+$Comp
+L Connector_Generic:Conn_01x02 J28
+U 1 1 624F25DF
+P 11950 3850
+F 0 "J28" V 12050 3650 50  0000 R CNN
+F 1 "Pedal_Out TP" V 11950 3700 50  0000 R CNN
+F 2 "" H 11950 3850 50  0001 C CNN
+F 3 "~" H 11950 3850 50  0001 C CNN
+	1    11950 3850
+	0    -1   -1   0   
+$EndComp
+Connection ~ 12050 4250
+Wire Wire Line
+	12050 4250 12450 4250
+Wire Wire Line
+	11950 4050 11700 4050
+Wire Wire Line
+	12050 4050 12050 4250
+Text Label 11700 4050 2    39   ~ 0
+GLV_RTN
 $EndSCHEMATC
