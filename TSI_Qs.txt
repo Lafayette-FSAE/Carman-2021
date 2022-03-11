@@ -27,7 +27,7 @@ TO DO:
 (ADD TO ERRATA) Consider moving MRESET_Contact from pin 4 to pin 3 of K2 + Add a jumper to give the option to connect it to either 3 or 4 to switch it between NC or NO relays
 -- Change pullup resistors for I2C
 -- Make sure that all digital inputs are 3.3V
-*Include silkscreen for the jumpers
+-- Include silkscreen for the jumpers
 (ADD TO ERRATA) IMD_MHS isn't used anywhere, but it could be (PWM representation of isolation)
-*Add TP for voltages, ADD TP header that collects all TPs
+-- Add TP for voltages, ADD TP header that collects all TPs
 

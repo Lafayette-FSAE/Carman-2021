@@ -1822,7 +1822,7 @@ L Interface_Expansion:MCP23008-xSS U47
 U 1 1 626EC3CF
 P 8750 6550
 F 0 "U47" H 9025 7100 50  0000 C CNN
-F 1 "MCP23008-xSS" H 8325 5975 50  0000 C CNN
+F 1 "MCP23008-ESS" H 8325 5975 50  0000 C CNN
 F 2 "Package_SO:SSOP-20_5.3x7.2mm_P0.65mm" H 8750 5500 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/MCP23008-MCP23S08-Data-Sheet-20001919F.pdf" H 10050 5350 50  0001 C CNN
 	1    8750 6550
@@ -1942,26 +1942,44 @@ Wire Wire Line
 	9250 6150 9750 6150
 Text Label 9750 6150 2    39   ~ 0
 5V
-$Comp
-L Connector_Generic:Conn_01x02 J28
-U 1 1 624F25DF
-P 12150 3850
-F 0 "J28" V 12250 3650 50  0000 R CNN
-F 1 "Pedal_Out TP" V 12150 3700 50  0000 R CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 12150 3850 50  0001 C CNN
-F 3 "~" H 12150 3850 50  0001 C CNN
-	1    12150 3850
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	12150 4050 11900 4050
 Wire Wire Line
 	12250 4050 12250 4250
-Text Label 11900 4050 2    39   ~ 0
-GLV_RTN
 Connection ~ 12250 4250
 Wire Wire Line
 	12250 4250 13750 4250
 Wire Wire Line
 	11350 4250 12250 4250
+Text Label 10650 5450 2    50   ~ 0
+5V
+Wire Wire Line
+	10450 5450 10450 5400
+Wire Wire Line
+	10650 5450 10450 5450
+$Comp
+L TSI_Rev.5-rescue:CAP-pspice C25
+U 1 1 6237D884
+P 10450 5150
+F 0 "C25" H 10350 5250 50  0000 C CNN
+F 1 "0.1u" H 10350 5050 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 10450 5150 50  0001 C CNN
+F 3 "~" H 10450 5150 50  0001 C CNN
+	1    10450 5150
+	-1   0    0    1   
+$EndComp
+Wire Notes Line
+	12200 4000 12200 4100
+Wire Notes Line
+	12200 4100 12300 4100
+Wire Notes Line
+	12300 4100 12300 4000
+Wire Notes Line
+	12300 4000 12200 4000
+Text Notes 12150 3950 0    39   ~ 0
+TP (J28)
+Wire Wire Line
+	2350 2550 1550 2550
+Text HLabel 1550 2550 0    50   Output ~ 0
+Pedal_Out
+Text Label 2350 2550 2    50   ~ 0
+Pedal_Out
 $EndSCHEMATC

@@ -151,8 +151,6 @@ HV+
 Text Label 1550 7000 0    50   ~ 0
 HV-
 Wire Wire Line
-	3850 6400 4200 6400
-Wire Wire Line
 	5000 6400 5000 6200
 Connection ~ 5000 6400
 $Comp
@@ -170,15 +168,10 @@ Wire Wire Line
 	4400 6450 4400 6400
 Connection ~ 4400 6400
 Wire Wire Line
-	4400 6400 5000 6400
+	4400 6400 4600 6400
 Wire Wire Line
 	4400 6950 4400 7000
 Connection ~ 4400 7000
-Wire Wire Line
-	4200 6400 4200 6200
-Connection ~ 4200 6400
-Wire Wire Line
-	4200 6400 4400 6400
 Text Label 5600 7000 2    50   ~ 0
 TSAL_RTN
 Text Notes 2800 5900 0    50   ~ 0
@@ -809,21 +802,21 @@ Wire Notes Line
 	2250 500  2250 2900
 Wire Notes Line
 	500  500  500  2900
-$Comp
-L Connector_Generic:Conn_01x02 J26
-U 1 1 624D7528
-P 4200 6000
-F 0 "J26" V 4350 5950 50  0000 R CNN
-F 1 "TSAL_LV TP" V 4200 5800 50  0000 R CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 4200 6000 50  0001 C CNN
-F 3 "~" H 4200 6000 50  0001 C CNN
-	1    4200 6000
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
-	4300 6200 4300 6250
+	3850 6400 4400 6400
 Wire Wire Line
-	4300 6250 4650 6250
-Text Label 4650 6250 2    39   ~ 0
-GLV_RTN
+	4600 6400 4600 6200
+Connection ~ 4600 6400
+Wire Wire Line
+	4600 6400 5000 6400
+Wire Notes Line
+	4550 6150 4550 6250
+Wire Notes Line
+	4550 6250 4650 6250
+Wire Notes Line
+	4650 6250 4650 6150
+Wire Notes Line
+	4650 6150 4550 6150
+Text Notes 4500 6100 0    39   ~ 0
+TP (J28)
 $EndSCHEMATC

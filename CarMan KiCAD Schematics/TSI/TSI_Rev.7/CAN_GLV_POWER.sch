@@ -1064,7 +1064,7 @@ AR Path="/60A2B406" Ref="JP?"  Part="1"
 AR Path="/5FE1DE7D/60A2B406" Ref="JP9"  Part="1" 
 F 0 "JP9" H 6725 1000 50  0000 R CNN
 F 1 "If CAN_Shield & Chassis_GND need to be shorted together, weren't sure" H 7350 850 50  0001 R CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 6650 850 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6650 850 50  0001 C CNN
 F 3 "~" H 6650 850 50  0001 C CNN
 	1    6650 850 
 	1    0    0    -1  

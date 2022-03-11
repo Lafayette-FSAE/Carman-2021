@@ -990,7 +990,7 @@ L TSI_Rev.5-rescue:Jumper-Device JP4
 U 1 1 5F9A0A29
 P 17300 8300
 F 0 "JP4" V 17346 8212 50  0000 R CNN
-F 1 "Testing Jumper" V 17255 8212 50  0000 R CNN
+F 1 "MC Power Testing Jumper" V 17255 8212 50  0000 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 17300 8300 50  0001 C CNN
 F 3 "~" H 17300 8300 50  0001 C CNN
 	1    17300 8300
@@ -1037,7 +1037,7 @@ L TSI_Rev.5-rescue:Jumper-Device JP5
 U 1 1 5FA2CDA2
 P 15850 7450
 F 0 "JP5" V 15896 7362 50  0000 R CNN
-F 1 "Testing Jumper" V 15805 7362 50  0000 R CNN
+F 1 "PC Relay Testing Jumper" V 15805 7362 50  0000 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 15850 7450 50  0001 C CNN
 F 3 "~" H 15850 7450 50  0001 C CNN
 	1    15850 7450
@@ -1774,7 +1774,7 @@ U 1 1 62432C90
 P 7100 5600
 F 0 "J29" V 7275 5725 50  0000 R CNN
 F 1 "PC Test Points" V 7200 5725 50  0000 R CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x05_P2.54mm_Vertical" H 7100 5600 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 7100 5600 50  0001 C CNN
 F 3 "~" H 7100 5600 50  0001 C CNN
 	1    7100 5600
 	0    -1   -1   0   

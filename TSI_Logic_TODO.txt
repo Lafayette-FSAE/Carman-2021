@@ -5,9 +5,9 @@ TO DO:
 - CHECK 3.3V Signal 
 - ADD CAN OPTOISOLATOR
 - CHANGE ALL OPTOISOLATOR
-* CHECK U35A V+ signal (should be 5V not 3.3V on PCB)
-* EDIT silkscreen for D16 and D17 labels (switch them) *
-* Edit silkscreen for D10 (BOT & SCADA OK) *
+- CHECK U35A V+ signal (should be 5V not 3.3V on PCB)
+- EDIT silkscreen for D16 and D17 labels (switch them) *
+- Edit silkscreen for D10 (BOT & SCADA OK) *
 - CHECK optoisolator for SR_CTRL & SR_CTRL_Boosted
 - CHANGE ALL MCP6004 into TLV2464CDR *
 - CHECK ALL NEW RESISTORS, CAPS & INDUCTOR(done) *
