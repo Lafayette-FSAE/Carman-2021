@@ -2005,4 +2005,15 @@ Wire Wire Line
 	3100 5500 3950 5500
 Text Label 3950 5500 2    39   ~ 0
 Pedal_Out
+$Comp
+L Lafayette_Electric_Car_Internals:LeopardPawLogo LOGO1
+U 1 1 629DA47E
+P 10700 6250
+F 0 "LOGO1" H 10849 6256 60  0000 L CNN
+F 1 "LeopardPawLogo" H 10700 6383 60  0001 C CNN
+F 2 "Lafayette_Electric_Car_Footprints:Paw" H 10700 6250 50  0001 C CNN
+F 3 "" H 10700 6250 50  0001 C CNN
+	1    10700 6250
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

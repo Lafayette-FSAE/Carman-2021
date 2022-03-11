@@ -135,7 +135,7 @@ Wire Wire Line
 	2550 3400 2050 3400
 Text Label 2050 3400 0    39   ~ 0
 Test_Pin0
-Text Label 2050 3200 0    39   ~ 0
+Text Label 1150 3200 0    39   ~ 0
 SDA
 Wire Wire Line
 	6200 3600 6700 3600
@@ -149,7 +149,7 @@ Wire Wire Line
 	2550 3500 2050 3500
 Text Label 2050 3500 0    39   ~ 0
 Throttle_PL_LOGIC
-Text Label 2050 3100 0    39   ~ 0
+Text Label 1150 3100 0    39   ~ 0
 SCL
 Wire Wire Line
 	2550 4500 2050 4500
@@ -649,4 +649,10 @@ Text Notes 1575 6700 0    50   ~ 0
 5V-3.3V Voltage Divider
 Text Label 1725 6400 0    50   ~ 0
 Throttle_PL_LOGIC
+Wire Wire Line
+	1550 3200 1150 3200
+Connection ~ 1550 3200
+Wire Wire Line
+	1550 3100 1150 3100
+Connection ~ 1550 3100
 $EndSCHEMATC
