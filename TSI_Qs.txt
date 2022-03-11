@@ -1,0 +1,30 @@
+* Check U43 
+* Remove R97? C6?
+* JP1 moved
+* U18C
+* BRAKE PRESSED (Brake_Light doesn't work if safety loop is not on) --> against the rule anyway
+* PIC32
+* U36 3.3V signal, 500mA current, sufficient for the PIC32?
+* Consider moving MRESET_Contact from pin 4 to pin 3 of K2 + Add a jumper to give the option to always short SR_CTRL_Boosted to GLV_RTN
+* U24 Optoisolator resistor calculations
+* Is R61 a 1/2W resistor?
+* U4??
+* Throttle Voltage Isolator Page
+
+
+
+
+TO DO:
+Change Sheet Names to match + be actual names not just text boxes
+-- Change R50, R51 to 4.7K
+-- Add ref voltage to U18C 
+-- Use the same ref voltage everywhere (U7A-D, U18C)
+(ADD TO ERRATA) For APPS1_b and APPS2_b, either use a precise 5V (already there) AND a precise 10V OR use the 10V to generate the 5V so they're both as imprecise. Maybe use a 24-10V DC-to-DC converter. Maybe just write a note
+-- Dotted boxes --> specify the exact signal/device they represent 
+-- Resistor R48 unnecessary
+-- Change 5V -> 3.3V on Drive_LED circuit
+(ADD TO ERRATA) U20 --> change the stupid design into a voltage divider that generates a reasonable voltage to be used with an inverter
+(ADD TO ERRATA) Consider moving MRESET_Contact from pin 4 to pin 3 of K2 + Add a jumper to give the option to connect it to either 3 or 4 to switch it between NC or NO relays
+-- Change pullup resistors for I2C
+Make sure that all digital inputs are 3.3V
+Include silkscreen for the jumpers
