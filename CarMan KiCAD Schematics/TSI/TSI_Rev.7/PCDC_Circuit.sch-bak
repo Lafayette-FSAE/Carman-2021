@@ -1769,10 +1769,10 @@ $EndComp
 Wire Notes Line
 	18075 3600 22100 3600
 $Comp
-L Connector_Generic:Conn_01x05 J25
+L Connector_Generic:Conn_01x05 J29
 U 1 1 62432C90
 P 7100 5600
-F 0 "J25" V 7275 5725 50  0000 R CNN
+F 0 "J29" V 7275 5725 50  0000 R CNN
 F 1 "PC Test Points" V 7200 5725 50  0000 R CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x05_P2.54mm_Vertical" H 7100 5600 50  0001 C CNN
 F 3 "~" H 7100 5600 50  0001 C CNN

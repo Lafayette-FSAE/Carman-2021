@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source "C:\\Users\\Eli\\Documents\\21Semester1\\ECE 491\\GitHub_Repositories\\Carman-2021\\CarMan KiCAD Schematics\\TSI\\TSI_Rev.7\\TSI_Rev.7.sch")
-    (date "3/11/2022 12:32:48 AM")
+    (date "3/11/2022 12:40:08 AM")
     (tool "Eeschema (5.1.9)-1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -1351,6 +1351,7 @@
       (tstamp 62333FA0))
     (comp (ref J28)
       (value "Pedal_Out TP")
+      (footprint Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical)
       (datasheet ~)
       (libsource (lib Connector_Generic) (part Conn_01x02) (description "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"))
       (sheetpath (names /Throttle_Plausibility/) (tstamps /5FC85F57/))
