@@ -11,4 +11,5 @@ TO DO:
 - CHECK optoisolator for SR_CTRL & SR_CTRL_Boosted
 - CHANGE ALL MCP6004 into TLV2464CDR *
 - CHECK ALL NEW RESISTORS, CAPS & INDUCTOR(done) *
+- Add silkscreens for all jumpers
 
