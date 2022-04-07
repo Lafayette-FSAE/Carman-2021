@@ -356,9 +356,9 @@ CAN_L
 Text Label 2175 1600 0    50   ~ 0
 3.3V_ISO
 Text Label 725  2850 0    50   ~ 0
-SDA_ISO_PI
-Text Label 725  2950 0    50   ~ 0
 SCL_ISO_PI
+Text Label 725  2950 0    50   ~ 0
+SDA_ISO_PI
 Wire Wire Line
 	725  2850 1175 2850
 $Sheet
@@ -433,9 +433,9 @@ Text Label 14275 1925 2    50   ~ 0
 Text Label 14275 2125 2    50   ~ 0
 ISO_RTN
 Text Label 14275 2225 2    50   ~ 0
-PGEC
-Text Label 14275 2325 2    50   ~ 0
 PGED
+Text Label 14275 2325 2    50   ~ 0
+PGEC
 Text Label 6350 10550 0    50   ~ 0
 5V_NON_ISO
 Text Label 6350 10700 0    50   ~ 0
@@ -770,7 +770,7 @@ Connection ~ 15000 7500
 Wire Wire Line
 	14900 7500 15000 7500
 $Comp
-L CarMan_KiCAD_Library:L78L05ACD13TR CR1
+L Logic-rescue:L78L05ACD13TR-CarMan_KiCAD_Library CR1
 U 1 1 5FC9A541
 P 14900 7300
 F 0 "CR1" H 15700 7550 60  0000 C CNN
@@ -1180,19 +1180,19 @@ $EndComp
 Text Notes 12850 1500 0    47   ~ 0
 NON-ISO I2C Testing Header
 Text Label 13800 1225 2    50   ~ 0
-5V_NON_ISO
+SDA_TSI_GLV
 Text Label 13800 1325 2    50   ~ 0
-GLV_RTN
+SCL_TSI_GLV
 Wire Wire Line
 	13275 1225 13800 1225
 Wire Wire Line
 	13275 1325 13800 1325
 Text Label 13800 1025 2    50   ~ 0
-SDA_TSI_GLV
+5V_NON_ISO
 Wire Wire Line
 	13275 1025 13800 1025
 Text Label 13800 1125 2    50   ~ 0
-SCL_TSI_GLV
+GLV_RTN
 Wire Wire Line
 	13800 1125 13275 1125
 Text Label 14000 1425 0    50   ~ 0
@@ -1327,7 +1327,7 @@ FlowRate
 Text Label 14000 1325 0    50   ~ 0
 3.3V_ISO
 $Comp
-L CarMan_KiCAD_Library:BNO_055 U10
+L Logic-rescue:BNO_055-CarMan_KiCAD_Library U10
 U 1 1 6081110B
 P 13200 4425
 F 0 "U10" V 12900 4425 47  0000 C CNN
@@ -1482,7 +1482,7 @@ GPIO25
 Wire Wire Line
 	9575 7575 10525 7575
 $Comp
-L CarMan_KiCAD_Library:Raspberry_Pi_RTC U11
+L Logic-rescue:Raspberry_Pi_RTC-CarMan_KiCAD_Library U11
 U 1 1 60875061
 P 15050 4400
 F 0 "U11" H 15050 4700 47  0000 C CNN
@@ -1504,10 +1504,10 @@ Wire Wire Line
 Wire Wire Line
 	8375 8775 9725 8775
 $Comp
-L Device:R R?
+L Device:R R14
 U 1 1 609EC3AE
 P 15725 9225
-F 0 "R?" H 15800 9325 50  0000 L CNN
+F 0 "R14" H 15775 9225 50  0000 L CNN
 F 1 "10k" V 15725 9175 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 15655 9225 50  0001 C CNN
 F 3 "~" H 15725 9225 50  0001 C CNN
@@ -1515,10 +1515,10 @@ F 3 "~" H 15725 9225 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R12
 U 1 1 609EC3B4
 P 15525 9125
-F 0 "R?" H 15375 9200 50  0000 L CNN
+F 0 "R12" H 15325 9225 50  0000 L CNN
 F 1 "10k" V 15525 9075 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 15455 9125 50  0001 C CNN
 F 3 "~" H 15525 9125 50  0001 C CNN
@@ -1542,7 +1542,7 @@ Wire Wire Line
 Text Label 15325 8950 2    50   ~ 0
 GLV_RTN
 $Comp
-L CarMan_KiCAD_Library:ISO1541DR U9
+L Logic-rescue:ISO1541DR-CarMan_KiCAD_Library U9
 U 1 1 5FBB1A99
 P 13175 9175
 F 0 "U9" H 14000 9425 60  0000 C CNN

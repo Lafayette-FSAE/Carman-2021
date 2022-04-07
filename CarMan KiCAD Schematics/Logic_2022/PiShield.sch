@@ -1,0 +1,764 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 1 1
+Title "Raspberry Pi Shield Schematic"
+Date "2022-03-06"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Logic-rescue:RaspberryPi3-Lafayette_Electric_Car_Internals U?
+U 1 1 5F9FC061
+P 3725 5425
+AR Path="/5F9665AE/5F9FC061" Ref="U?"  Part="1" 
+AR Path="/5F9FC061" Ref="U1"  Part="1" 
+F 0 "U1" H 3725 6525 50  0000 C CNN
+F 1 "RaspberryPi3" H 3725 4325 50  0000 C CNN
+F 2 "CarMan General Footprints:Raspberry_Pi_3_B" H 3975 6625 50  0001 C CNN
+F 3 "" H 3975 6625 50  0001 C CNN
+	1    3725 5425
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3225 4775
+NoConn ~ 3225 4975
+NoConn ~ 3225 5075
+NoConn ~ 3225 5175
+NoConn ~ 3225 5275
+NoConn ~ 4275 5975
+NoConn ~ 4275 5775
+NoConn ~ 4275 5675
+NoConn ~ 4275 4975
+NoConn ~ 4275 4875
+NoConn ~ 4275 4775
+Wire Wire Line
+	4425 5375 4425 5875
+Connection ~ 4425 5375
+Wire Wire Line
+	4425 5875 4425 6075
+Connection ~ 4425 5875
+Wire Wire Line
+	4275 4675 4425 4675
+Wire Wire Line
+	4275 5875 4425 5875
+Wire Wire Line
+	4275 6075 4425 6075
+Wire Wire Line
+	4275 5375 4425 5375
+Wire Wire Line
+	4275 4575 4425 4575
+Wire Wire Line
+	3075 5675 3075 6375
+Wire Wire Line
+	4425 6075 4425 6675
+Wire Wire Line
+	3075 6675 3075 6375
+Connection ~ 4425 6075
+Text Label 2475 4675 0    50   ~ 0
+SCL_PI
+Text Label 2475 4575 0    50   ~ 0
+SDA_PI
+Wire Wire Line
+	3075 4875 3075 5675
+Text Label 5225 5575 2    50   ~ 0
+PI_SPI_CEO
+Text Label 2475 5975 0    50   ~ 0
+SR_CTRL
+$Comp
+L Logic-rescue:Conn_01x04-Connector_Generic-Logic-rescue J2
+U 1 1 5FB30D0C
+P 7010 2770
+F 0 "J2" H 6960 2470 50  0000 L CNN
+F 1 "J2" H 6835 2995 50  0001 L CNN
+F 2 "CarMan General Footprints:Molex_MiniFit-JR-5556-04A_2x02x4.20mm_Straight" H 7010 2770 50  0001 C CNN
+F 3 "~" H 7010 2770 50  0001 C CNN
+	1    7010 2770
+	-1   0    0    1   
+$EndComp
+Text Label 7810 2870 2    50   ~ 0
+SCL_PI
+Text Label 7810 2670 2    50   ~ 0
+GLV_RTN
+Text Label 7810 2570 2    50   ~ 0
+24V
+Wire Wire Line
+	2475 4675 3225 4675
+Wire Wire Line
+	2475 4575 3225 4575
+Wire Wire Line
+	4275 5575 5225 5575
+Text Label 7810 2770 2    50   ~ 0
+SDA_PI
+Text Label 2475 5375 0    50   ~ 0
+PI_SPI_MOSI
+Text Label 2475 5475 0    50   ~ 0
+PI_SPI_MISO
+Text Label 2475 5575 0    50   ~ 0
+PI_SPI_SCLK
+Wire Wire Line
+	2475 5475 3225 5475
+Wire Wire Line
+	2475 5375 3225 5375
+Wire Wire Line
+	2475 5575 3225 5575
+Text Notes 6855 3095 0    50   ~ 0
+GLV 24V and I2C to logic
+Wire Wire Line
+	2475 5975 3225 5975
+Text Notes 13150 10375 0    197  ~ 0
+TOP LEVEL
+$Comp
+L Logic-rescue:Conn_01x04-Connector_Generic-Logic-rescue J1
+U 1 1 60721A5C
+P 5745 2660
+F 0 "J1" H 5695 2860 50  0000 L CNN
+F 1 "I2C Testing Header" H 5170 2860 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 5745 2660 50  0001 C CNN
+F 3 "~" H 5745 2660 50  0001 C CNN
+	1    5745 2660
+	-1   0    0    -1  
+$EndComp
+Text Notes 5765 3090 0    47   ~ 0
+I2C Testing Header
+Text Label 6470 2760 2    50   ~ 0
+SDA_PI
+Text Label 6470 2860 2    50   ~ 0
+SCL_PI
+Wire Wire Line
+	5945 2760 6470 2760
+Wire Wire Line
+	5945 2860 6470 2860
+Text Label 6470 2560 2    50   ~ 0
+5V
+Wire Wire Line
+	5945 2560 6470 2560
+Text Label 6470 2660 2    50   ~ 0
+GLV_RTN
+Wire Wire Line
+	6470 2660 5945 2660
+NoConn ~ 4275 5175
+Wire Wire Line
+	7810 2670 7210 2670
+Wire Wire Line
+	7210 2770 7810 2770
+Wire Wire Line
+	7810 2870 7210 2870
+NoConn ~ 3225 6075
+NoConn ~ 3225 6175
+NoConn ~ 3225 6275
+NoConn ~ 3225 5875
+NoConn ~ 3225 5775
+NoConn ~ 4275 6175
+NoConn ~ 4275 6275
+NoConn ~ 4275 6375
+Text Label 5225 5475 2    50   ~ 0
+GPIO25
+Wire Wire Line
+	4275 5475 5225 5475
+Wire Wire Line
+	3075 4875 3225 4875
+Connection ~ 3075 5675
+Wire Wire Line
+	3075 5675 3225 5675
+Connection ~ 3075 6375
+Wire Wire Line
+	3075 6375 3225 6375
+Wire Wire Line
+	3075 6675 4425 6675
+$Comp
+L Logic-rescue:Raspberry_Pi_RTC-CarMan_KiCAD_Library U11
+U 1 1 60875061
+P 13960 2595
+F 0 "U11" H 13960 2895 47  0000 C CNN
+F 1 "Raspberry_Pi_RTC" H 13960 2295 47  0000 C CNN
+F 2 "CarMan General Footprints:Raspberry_Pi_RTC" V 13960 2595 47  0001 C CNN
+F 3 "" V 13960 2595 47  0001 C CNN
+F 4 "U11 - Pi RTC" H 13960 2595 50  0001 C CNN "Board Label"
+	1    13960 2595
+	1    0    0    -1  
+$EndComp
+Text Notes 13285 3120 0    47   ~ 0
+Symbol & Footprint for Pi RTC to\nbe mounted to the Logic board
+NoConn ~ 14260 2445
+NoConn ~ 14260 2595
+Text Notes 11435 3145 0    47   ~ 0
+Symbol & Footprint for IMU to\nbe mounted to the Logic board
+Text Notes 12085 2095 0    79   ~ 0
+Mounted External Components
+Wire Notes Line
+	14885 3220 14885 1945
+Wire Notes Line
+	11060 1945 14885 1945
+Wire Notes Line
+	11060 3220 14885 3220
+Wire Notes Line
+	11060 3220 11060 1945
+NoConn ~ 11810 2520
+Wire Wire Line
+	11810 2420 11360 2420
+Text Label 11360 2420 0    50   ~ 0
+3V3
+$Comp
+L Logic-rescue:BNO_055-CarMan_KiCAD_Library U10
+U 1 1 6081110B
+P 12110 2620
+F 0 "U10" V 11810 2620 47  0000 C CNN
+F 1 "BNO_055" V 12410 2620 47  0000 C CNN
+F 2 "CarMan General Footprints:BNO_055" H 12110 2620 47  0001 C CNN
+F 3 "" H 12110 2620 47  0001 C CNN
+F 4 "U10 - IMU" V 12110 2620 50  0001 C CNN "Board Name"
+	1    12110 2620
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	12735 2720 12410 2720
+Wire Wire Line
+	12735 2620 12735 2720
+Wire Wire Line
+	12410 2620 12735 2620
+Wire Wire Line
+	11810 2620 11360 2620
+Text Label 12735 2620 2    50   ~ 0
+GLV_RTN
+Wire Wire Line
+	13660 2595 13210 2595
+Wire Wire Line
+	13660 2745 13210 2745
+Wire Wire Line
+	11810 2820 11360 2820
+Wire Wire Line
+	11810 2720 11360 2720
+Text Label 11360 2620 0    50   ~ 0
+GLV_RTN
+Text Label 11360 2820 0    50   ~ 0
+SDA_PI
+Text Label 11360 2720 0    50   ~ 0
+SCL_PI
+Text Label 13210 2595 0    50   ~ 0
+SDA_PI
+Text Label 13210 2445 0    50   ~ 0
+3V3
+Text Label 14710 2745 2    50   ~ 0
+GLV_RTN
+Text Label 13210 2745 0    50   ~ 0
+SCL_PI
+Wire Wire Line
+	13660 2445 13210 2445
+Wire Wire Line
+	14260 2745 14710 2745
+$Comp
+L SamacSys_Parts:P783-Q24-S5-S PS1
+U 1 1 62268053
+P 8700 6005
+F 0 "PS1" H 9145 4715 50  0000 L CNN
+F 1 "PS1" H 9050 6205 50  0001 L CNN
+F 2 "SamacSys_Parts:P783Q24S5S" H 9550 6105 50  0001 L CNN
+F 3 "https://www.cui.com/product/resource/digikeypdf/p783-s.pdf" H 9550 6005 50  0001 L CNN
+F 4 "Non-Isolated DC/DC Converters 5 Vdc, 3 A, 15 W, 8~36 Vdc Input Range" H 9550 5905 50  0001 L CNN "Description"
+F 5 "15.35" H 9550 5805 50  0001 L CNN "Height"
+F 6 "490-P783-Q24-S5-S" H 9550 5705 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/CUI-Inc/P783-Q24-S5-S?qs=sPbYRqrBIVlCN3ziQDuGDA%3D%3D" H 9550 5605 50  0001 L CNN "Mouser Price/Stock"
+F 8 "CUI Inc." H 9550 5505 50  0001 L CNN "Manufacturer_Name"
+F 9 "P783-Q24-S5-S" H 9550 5405 50  0001 L CNN "Manufacturer_Part_Number"
+	1    8700 6005
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	8700 5605 8500 5605
+Wire Wire Line
+	8500 5505 8700 5505
+Wire Wire Line
+	8700 5405 8500 5405
+Wire Wire Line
+	8500 5605 8500 5505
+Connection ~ 8500 5505
+Wire Wire Line
+	8500 5505 8500 5405
+Wire Wire Line
+	8700 5305 8500 5305
+Wire Wire Line
+	8500 5305 8500 5405
+Connection ~ 8500 5405
+Wire Wire Line
+	8700 5905 8450 5905
+Wire Wire Line
+	8450 5905 8450 5805
+Wire Wire Line
+	8450 5805 8700 5805
+Wire Wire Line
+	8700 5705 8450 5705
+Wire Wire Line
+	8450 5705 8450 5805
+Connection ~ 8450 5805
+Wire Wire Line
+	8700 5205 8500 5205
+Wire Wire Line
+	8500 5205 8500 5105
+Wire Wire Line
+	8500 5105 8700 5105
+Wire Wire Line
+	8700 5005 8500 5005
+Wire Wire Line
+	8500 5005 8500 5105
+Connection ~ 8500 5105
+$Comp
+L SamacSys_Parts:ESH107M050AG3KA C3
+U 1 1 62284A0F
+P 7150 5805
+F 0 "C3" V 7410 5550 50  0000 L CNN
+F 1 "100uF" V 7395 5945 50  0000 L CNN
+F 2 "SamacSys_Parts:CAPPRD350W60D800H1250" H 7500 5855 50  0001 L CNN
+F 3 "https://connect.kemet.com:7667/gateway/IntelliData-ComponentDocumentation/1.0/download/specsheet/ESH107M050AG3KA" H 7500 5755 50  0001 L CNN
+F 4 "ESH, Aluminum Electrolytic, 100 uF, 20%, 50 VDC, -40/+105C, Lead Spacing = 3.5mm" H 7500 5655 50  0001 L CNN "Description"
+F 5 "12.5" H 7500 5555 50  0001 L CNN "Height"
+F 6 "" H 7500 5455 50  0001 L CNN "Mouser Part Number"
+F 7 "" H 7500 5355 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Kemet" H 7500 5255 50  0001 L CNN "Manufacturer_Name"
+F 9 "ESH107M050AG3KA" H 7500 5155 50  0001 L CNN "Manufacturer_Part_Number"
+	1    7150 5805
+	0    1    -1   0   
+$EndComp
+$Comp
+L SamacSys_Parts:VLS4012HBX-220M-N L1
+U 1 1 6228A76D
+P 6350 5805
+F 0 "L1" H 6750 6030 50  0000 C CNN
+F 1 "22uH" H 6750 5939 50  0000 C CNN
+F 2 "SamacSys_Parts:VLS4012HBX220MN" H 7000 5855 50  0001 L CNN
+F 3 "https://product.tdk.com/system/files/dam/doc/product/inductor/inductor/smd/catalog/inductor_commercial_power_vls4012hbx-n_en.pdf" H 7000 5755 50  0001 L CNN
+F 4 "SMD / SMT Inductors (Coils), L=22?H, L x W x T :" H 7000 5655 50  0001 L CNN "Description"
+F 5 "1.2" H 7000 5555 50  0001 L CNN "Height"
+F 6 "810-VLS4012HBX220M-N" H 7000 5455 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/TDK/VLS4012HBX-220M-N?qs=A6eO%252BMLsxmR3U%2FS6%252BaW3qw%3D%3D" H 7000 5355 50  0001 L CNN "Mouser Price/Stock"
+F 8 "TDK" H 7000 5255 50  0001 L CNN "Manufacturer_Name"
+F 9 "VLS4012HBX-220M-N" H 7000 5155 50  0001 L CNN "Manufacturer_Part_Number"
+	1    6350 5805
+	1    0    0    1   
+$EndComp
+$Comp
+L SamacSys_Parts:ESH107M050AG3KA C2
+U 1 1 6228C858
+P 6350 5805
+F 0 "C2" V 6610 5535 50  0000 L CNN
+F 1 "100uF" V 6605 5955 50  0000 L CNN
+F 2 "SamacSys_Parts:CAPPRD350W60D800H1250" H 6700 5855 50  0001 L CNN
+F 3 "https://connect.kemet.com:7667/gateway/IntelliData-ComponentDocumentation/1.0/download/specsheet/ESH107M050AG3KA" H 6700 5755 50  0001 L CNN
+F 4 "ESH, Aluminum Electrolytic, 100 uF, 20%, 50 VDC, -40/+105C, Lead Spacing = 3.5mm" H 6700 5655 50  0001 L CNN "Description"
+F 5 "12.5" H 6700 5555 50  0001 L CNN "Height"
+F 6 "" H 6700 5455 50  0001 L CNN "Mouser Part Number"
+F 7 "" H 6700 5355 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Kemet" H 6700 5255 50  0001 L CNN "Manufacturer_Name"
+F 9 "ESH107M050AG3KA" H 6700 5155 50  0001 L CNN "Manufacturer_Part_Number"
+	1    6350 5805
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	8450 5805 7150 5805
+Connection ~ 7150 5805
+Connection ~ 6350 5805
+Text Label 5900 5805 0    50   ~ 0
+24V
+Wire Wire Line
+	5850 5805 6350 5805
+Wire Wire Line
+	8100 5405 8100 5305
+Wire Wire Line
+	6350 5305 7150 5305
+Connection ~ 7150 5305
+Wire Wire Line
+	8500 5405 8100 5405
+Text Label 6010 5320 0    50   ~ 0
+GLV_RTN
+Wire Wire Line
+	8500 5105 8350 5105
+Wire Wire Line
+	8350 5105 8350 4805
+$Comp
+L SamacSys_Parts:LMJ316BB7226KLHT C1
+U 1 1 62312630
+P 7600 5305
+F 0 "C1" V 7850 5570 50  0000 C CNN
+F 1 "22uF" V 7850 5080 50  0000 C CNN
+F 2 "SamacSys_Parts:CAPC3216X180N" H 7950 5355 50  0001 L CNN
+F 3 "https://ds.yuden.co.jp/TYCOMPAS/ut/detail?pn=LMJ316BB7226KLHT  &u=M" H 7950 5255 50  0001 L CNN
+F 4 "Taiyo Yuden LMJ316BB7226KLHT 22F MLCC 10V dc +/-10% Tolerance SMD" H 7950 5155 50  0001 L CNN "Description"
+F 5 "1.8" H 7950 5055 50  0001 L CNN "Height"
+F 6 "963-LMJ316BB7226KLHT" H 7950 4955 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Taiyo-Yuden/LMJ316BB7226KLHT?qs=6oMev5NRZMHDRPj3lJ7c6A%3D%3D" H 7950 4855 50  0001 L CNN "Mouser Price/Stock"
+F 8 "TAIYO YUDEN" H 7950 4755 50  0001 L CNN "Manufacturer_Name"
+F 9 "LMJ316BB7226KLHT" H 7950 4655 50  0001 L CNN "Manufacturer_Part_Number"
+	1    7600 5305
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6525 4805 7600 4805
+Wire Wire Line
+	7150 5305 7600 5305
+Connection ~ 7600 4805
+Wire Wire Line
+	7600 4805 8350 4805
+Connection ~ 7600 5305
+Wire Wire Line
+	7600 5305 8100 5305
+Wire Wire Line
+	3230 4475 3225 4475
+Wire Wire Line
+	3225 4475 2490 4475
+Connection ~ 3225 4475
+Text Label 2510 4475 0    50   ~ 0
+3V3
+Text Label 7230 2770 0    50   ~ 0
+SDA_TSI
+Text Label 7230 2870 0    50   ~ 0
+SCL_TSI
+NoConn ~ 8700 4905
+NoConn ~ 8700 6005
+NoConn ~ 2475 5375
+NoConn ~ 5225 5575
+Wire Wire Line
+	4425 4525 4685 4525
+Wire Wire Line
+	4425 4525 4425 4575
+Wire Wire Line
+	4425 4675 4425 4850
+Connection ~ 4425 4850
+Wire Wire Line
+	4425 4850 4425 5075
+Text Label 4645 4850 0    50   ~ 0
+GND
+NoConn ~ 2475 5475
+NoConn ~ 2475 5575
+Wire Wire Line
+	4275 5075 4425 5075
+Connection ~ 4425 5075
+Wire Wire Line
+	4425 5075 4425 5375
+Wire Wire Line
+	6525 4520 6525 4805
+Wire Wire Line
+	6525 4520 4685 4520
+Wire Wire Line
+	4685 4520 4685 4525
+Wire Wire Line
+	5950 5320 6350 5320
+Wire Wire Line
+	5950 4850 5950 5320
+Wire Wire Line
+	4425 4850 5950 4850
+Connection ~ 4425 4525
+Wire Wire Line
+	4425 4475 4425 4525
+Wire Wire Line
+	4275 4475 4425 4475
+$Comp
+L Device:LED D1
+U 1 1 62279ADC
+P 11215 5555
+F 0 "D1" V 11254 5437 50  0000 R CNN
+F 1 "D1" V 11163 5437 50  0001 R CNN
+F 2 "CarMan General Footprints:VAOL-S8GT4" H 11215 5555 50  0001 C CNN
+F 3 "~" H 11215 5555 50  0001 C CNN
+	1    11215 5555
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 6227A49C
+P 11215 5255
+F 0 "R1" H 11285 5301 50  0000 L CNN
+F 1 "2K" H 11285 5210 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 11145 5255 50  0001 C CNN
+F 3 "~" H 11215 5255 50  0001 C CNN
+	1    11215 5255
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 6228F697
+P 11630 5565
+F 0 "D2" V 11669 5447 50  0000 R CNN
+F 1 "D2" V 11578 5447 50  0001 R CNN
+F 2 "CarMan General Footprints:VAOL-S8GT4" H 11630 5565 50  0001 C CNN
+F 3 "~" H 11630 5565 50  0001 C CNN
+	1    11630 5565
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 6228F69D
+P 11630 5265
+F 0 "R2" H 11700 5311 50  0000 L CNN
+F 1 "1K" H 11700 5220 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 11560 5265 50  0001 C CNN
+F 3 "~" H 11630 5265 50  0001 C CNN
+	1    11630 5265
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D3
+U 1 1 62292A10
+P 12025 5580
+F 0 "D3" V 12064 5462 50  0000 R CNN
+F 1 "D3" V 11973 5462 50  0001 R CNN
+F 2 "CarMan General Footprints:VAOL-S8GT4" H 12025 5580 50  0001 C CNN
+F 3 "~" H 12025 5580 50  0001 C CNN
+	1    12025 5580
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 62292A16
+P 12025 5280
+F 0 "R3" H 12095 5326 50  0000 L CNN
+F 1 "1K" H 12095 5235 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 11955 5280 50  0001 C CNN
+F 3 "~" H 12025 5280 50  0001 C CNN
+	1    12025 5280
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11215 5700 11215 5705
+Wire Wire Line
+	11215 5820 11630 5820
+Wire Wire Line
+	12025 5820 12025 5730
+Connection ~ 11215 5705
+Wire Wire Line
+	11215 5705 11215 5820
+Wire Wire Line
+	11630 5715 11630 5820
+Connection ~ 11630 5820
+Wire Wire Line
+	11630 5820 12025 5820
+Wire Wire Line
+	11630 5820 11625 5820
+Wire Wire Line
+	11215 4950 11445 4950
+Wire Wire Line
+	11215 4950 11215 5105
+Wire Wire Line
+	11845 4945 11845 4950
+Wire Wire Line
+	12025 4935 12260 4935
+Text Label 11245 4950 0    50   ~ 0
+5V
+Text Label 4530 4525 0    50   ~ 0
+5V
+Text Label 11665 4945 0    50   ~ 0
+3V3
+Text Label 12095 4935 0    50   ~ 0
+SDA_PI
+Wire Wire Line
+	11630 5815 11630 5820
+Wire Wire Line
+	11630 6070 11945 6070
+Wire Wire Line
+	11630 5820 11630 6070
+Text Label 11645 6070 0    50   ~ 0
+GND
+Wire Wire Line
+	11630 4945 11845 4945
+Wire Wire Line
+	11630 5115 11630 4945
+Wire Wire Line
+	12025 5130 12025 4935
+Wire Notes Line
+	10850 4540 12585 4540
+Wire Notes Line
+	12585 4540 12585 6200
+Wire Notes Line
+	12585 6200 10845 6200
+Wire Notes Line
+	10845 6200 10845 4540
+Text Notes 11375 4710 0    79   ~ 0
+Status LED
+$Comp
+L Logic-rescue:Conn_01x04-Connector_Generic-Logic-rescue J4
+U 1 1 6233B304
+P 2420 2795
+F 0 "J4" H 2338 2370 50  0000 C CNN
+F 1 "J4" H 2330 3045 50  0001 C CNN
+F 2 "CarMan General Footprints:Molex_MiniFit-JR-5556-04A_2x02x4.20mm_Straight" H 2420 2795 50  0001 C CNN
+F 3 "" H 2420 2795 50  0001 C CNN
+	1    2420 2795
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2620 2895 2990 2895
+Wire Wire Line
+	2620 2795 2990 2795
+Wire Wire Line
+	2620 2695 2990 2695
+NoConn ~ 2620 2595
+Text Label 2675 2895 0    50   ~ 0
+CAN_H
+Text Label 2645 2795 0    50   ~ 0
+CAN_L
+Text Label 2665 2695 0    50   ~ 0
+GLV_RTN
+$Comp
+L Logic-rescue:Conn_01x04-Connector_Generic-Logic-rescue J5
+U 1 1 6234CBDE
+P 3735 2800
+F 0 "J5" H 3653 2375 50  0000 C CNN
+F 1 "J5" H 3680 3045 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical" H 3735 2800 50  0001 C CNN
+F 3 "" H 3735 2800 50  0001 C CNN
+	1    3735 2800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3935 2900 4305 2900
+Wire Wire Line
+	4305 2900 4305 2895
+Wire Wire Line
+	3935 2800 4305 2800
+Wire Wire Line
+	3935 2700 4305 2700
+Wire Wire Line
+	4305 2700 4305 2695
+Text Label 4005 2900 0    50   ~ 0
+CAN_H
+Text Label 4015 2800 0    50   ~ 0
+CAN_L
+Text Label 4045 2700 0    50   ~ 0
+GLV_RTN
+$Comp
+L Connector_Generic:Conn_01x02 J6
+U 1 1 62378B09
+P 4800 2805
+F 0 "J6" H 4718 2480 50  0000 C CNN
+F 1 "J6" H 4750 2975 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4800 2805 50  0001 C CNN
+F 3 "~" H 4800 2805 50  0001 C CNN
+	1    4800 2805
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5000 2805 5205 2805
+Wire Wire Line
+	5000 2705 5205 2705
+Text Label 4955 2705 0    50   ~ 0
+CAN_L
+Text Label 4955 2805 0    50   ~ 0
+CAN_H
+Text Notes 5955 2110 0    79   ~ 0
+Shield Headers
+NoConn ~ 5205 2705
+NoConn ~ 5205 2805
+Wire Wire Line
+	3935 2600 4325 2600
+Text Label 3975 2600 0    50   ~ 0
+SR_CTRL
+$Comp
+L Connector_Generic:Conn_01x02 J3
+U 1 1 624330E8
+P 8435 2740
+F 0 "J3" H 8353 2415 50  0000 C CNN
+F 1 "J3" H 8385 2910 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8435 2740 50  0001 C CNN
+F 3 "~" H 8435 2740 50  0001 C CNN
+	1    8435 2740
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8635 2740 8840 2740
+Wire Wire Line
+	8635 2640 8840 2640
+Text Label 8590 2640 0    50   ~ 0
+GPIO25
+Text Label 8590 2740 0    50   ~ 0
+GPIO24
+Wire Wire Line
+	4275 5275 5210 5275
+Text Label 4945 5275 0    50   ~ 0
+GPIO24
+Wire Notes Line
+	1950 1730 9105 1730
+Wire Notes Line
+	9105 3345 1940 3345
+Wire Notes Line
+	1940 3345 1940 1710
+NoConn ~ 8840 2640
+NoConn ~ 8840 2740
+NoConn ~ 5225 5475
+NoConn ~ 5210 5275
+$Comp
+L Connector_Generic:Conn_01x02 J7
+U 1 1 6228F919
+P 9385 2740
+F 0 "J7" H 9303 2415 50  0000 C CNN
+F 1 "J7" H 9335 2910 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 9385 2740 50  0001 C CNN
+F 3 "~" H 9385 2740 50  0001 C CNN
+	1    9385 2740
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9585 2640 9670 2640
+$Comp
+L Logic-rescue:R-Device-Logic-rescue R4
+U 1 1 622B4E7B
+P 9820 2640
+F 0 "R4" V 9613 2640 50  0000 C CNN
+F 1 "120" V 9704 2640 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 9750 2640 50  0001 C CNN
+F 3 "" H 9820 2640 50  0001 C CNN
+	1    9820 2640
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9970 2640 10325 2640
+Wire Wire Line
+	9585 2740 10330 2740
+Text Label 10140 2640 0    50   ~ 0
+CAN_H
+Text Label 10115 2740 0    50   ~ 0
+CAN_L
+Wire Notes Line
+	9130 1730 10610 1730
+Wire Notes Line
+	9120 3345 10610 3345
+Wire Notes Line
+	10620 1715 10620 3370
+$Comp
+L power:PWR_FLAG #F01
+U 1 1 62289588
+P 7810 2570
+F 0 "#F01" H 7810 2645 50  0001 C CNN
+F 1 "PWR_FLAG" V 7810 2698 50  0000 L CNN
+F 2 "" H 7810 2570 50  0001 C CNN
+F 3 "~" H 7810 2570 50  0001 C CNN
+	1    7810 2570
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7810 2570 7210 2570
+$Comp
+L power:PWR_FLAG #F02
+U 1 1 62298F01
+P 7810 2670
+F 0 "#F02" H 7810 2745 50  0001 C CNN
+F 1 "PWR_FLAG" V 7810 2798 50  0000 L CNN
+F 2 "" H 7810 2670 50  0001 C CNN
+F 3 "~" H 7810 2670 50  0001 C CNN
+	1    7810 2670
+	0    1    1    0   
+$EndComp
+Text Notes 2235 3115 0    47   ~ 0
+Motor Controller Header\n
+Text Notes 3790 3130 0    47   ~ 0
+TSI Header\n
+Text Notes 4640 3060 0    47   ~ 0
+PICAN 2 Connector
+Text Notes 8365 3010 0    47   ~ 0
+GPIO Test
+Text Notes 9320 2960 0    47   ~ 0
+CAN Testing Header
+$EndSCHEMATC
